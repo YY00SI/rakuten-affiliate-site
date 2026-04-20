@@ -56,9 +56,10 @@ def main():
             if rel_art:
                 rel_cat = categories.get(rel_art['category_id'])
                 if rel_cat:
+                    # 記事詳細から別の記事詳細への相対パス (../../cat/art/)
                     related_articles.append({
                         "h1": rel_art['h1'],
-                        "url": f"/{rel_cat['slug']}/{rel_art['slug']}/"
+                        "url": f"../../{rel_cat['slug']}/{rel_art['slug']}/"
                     })
         
         # HTML生成
@@ -77,7 +78,7 @@ def main():
         processed_articles.append({
             "conf": art_conf,
             "category": category,
-            "url": f"/{category['slug']}/{art_conf['slug']}/"
+            "url": f"./{category['slug']}/{art_conf['slug']}/" # トップから見た相対パス
         })
         print(f"[INFO] 記事生成完了: {category['slug']}/{art_conf['slug']}/index.html")
 
@@ -90,10 +91,18 @@ def main():
         cat_dir = os.path.join(output_base, cat['slug'])
         os.makedirs(cat_dir, exist_ok=True)
         
+        # カテゴリ一覧から記事詳細への相対パス修正
+        cat_processed_articles = []
+        for a in cat_articles:
+            cat_processed_articles.append({
+                "conf": a['conf'],
+                "url": f"./{a['conf']['slug']}/"
+            })
+        
         html_content = category_list_template.render(
             site=site_config,
             category=cat,
-            articles=cat_articles,
+            articles=cat_processed_articles,
             today=today
         )
         
