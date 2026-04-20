@@ -1,78 +1,116 @@
 {% extends "base.html" %}
 
 {% block content %}
-<article>
-    <h1>【2026年最新】{{ article.h1 }}</h1>
-    <p class="updated-at">最終更新日: {{ today }}</p>
+<article class="article-content">
+    <header class="article-header">
+        <div class="updated-at">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+            </svg>
+            最終更新日: {{ today }}
+        </div>
+        <h1 class="article-title">【2026年最新】{{ article.h1 }}</h1>
+        <p class="article-intro">{{ article.intro | replace('\n', '<br>') | safe }}</p>
+    </header>
 
-    <div class="toc">
-        <strong>目次</strong>
-        <ul>
-            <li><a href="#intro">はじめに</a></li>
-            <li><a href="#criteria">選び方のポイント</a></li>
-            <li><a href="#ranking">おすすめ商品ランキング</a></li>
-            <li><a href="#summary">まとめ</a></li>
+    <nav class="toc-container">
+        <h2 style="font-size: 1.1rem; margin-top: 0; color: var(--text-main);">目次</h2>
+        <ul style="list-style: none; padding-left: 0; margin-bottom: 0;">
+            <li><a href="#criteria" style="color: var(--primary); text-decoration: none; font-weight: 500;">・{{ article.h1 }}の選び方</a></li>
+            <li><a href="#ranking" style="color: var(--primary); text-decoration: none; font-weight: 500;">・おすすめランキング（全{{ items|length }}選）</a></li>
+            <li><a href="#summary" style="color: var(--primary); text-decoration: none; font-weight: 500;">・まとめ</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <section id="intro">
-        <p>{{ article.intro | replace('\n', '<br>') | safe }}</p>
-    </section>
-
-    <section id="criteria">
-        <h2>{{ article.h1 }}の選び方</h2>
-        {% for criterion in article.selection_criteria %}
-        <h3>{{ criterion.title }}</h3>
-        <p>{{ criterion.body }}</p>
-        {% endfor %}
-    </section>
-
-    <section id="ranking">
-        <h2>おすすめ{{ items|length }}選ランキング</h2>
-        {% for item in items %}
-        <div class="product-card">
-            <div class="rank-badge {% if loop.index <= 3 %}rank-{{ loop.index }}{% else %}rank-other{% endif %}">
-                {{ loop.index }}
+    <section id="criteria" class="section">
+        <h2 class="section-title">失敗しない！{{ article.h1 }}の選び方</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            {% for criterion in article.selection_criteria %}
+            <div class="card" style="padding: 1.5rem;">
+                <h3 style="font-size: 1.1rem; color: var(--primary); margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="background: var(--primary); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem;">{{ loop.index }}</span>
+                    {{ criterion.title }}
+                </h3>
+                <p style="font-size: 0.95rem; margin-bottom: 0;">{{ criterion.body }}</p>
             </div>
-            
-            <img src="{{ item.image }}" alt="{{ item.name }}" class="product-image" loading="lazy">
-            
-            <div class="card-body">
-                <h3 class="product-name">{{ item.name }}</h3>
-                
-                <div class="price-area">
-                    {{ "{:,}".format(item.price) }}円
+            {% endfor %}
+        </div>
+    </section>
+
+    <section id="ranking" class="section">
+        <h2 class="section-title">おすすめランキング{{ items|length }}選</h2>
+        
+        {% for item in items %}
+        <div class="card ranking-card" style="margin-bottom: 3rem; display: flex; flex-direction: column;">
+            <!-- Rank Header -->
+            <div class="rank-header" style="background: #f8f8f8; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span class="badge" style="
+                        background: {% if loop.index == 1 %}var(--accent){% elif loop.index == 2 %}#C0C0C0{% elif loop.index == 3 %}#CD7F32{% else %}#666{% endif %};
+                        color: {% if loop.index == 1 %}#000{% else %}#fff{% endif %};
+                        padding: 0.2rem 1.2rem;
+                        border-radius: 4px;
+                        font-size: 1.2rem;
+                    ">{{ loop.index }}位</span>
+                    <h3 style="margin: 0; font-size: 1.2rem;">{{ item.name }}</h3>
+                </div>
+            </div>
+
+            <div class="ranking-card-body" style="padding: 1.5rem; display: flex; gap: 2rem;">
+                <div class="product-image-container" style="flex: 0 0 250px; text-align: center;">
+                    <img src="{{ item.image }}" alt="{{ item.name }}" style="max-width: 100%; height: auto; object-fit: contain;" loading="lazy">
                 </div>
                 
-                <div class="review-area">
-                    <span class="stars">★{{ item.reviewAverage }}</span>
-                    <span class="review-count">({{ "{:,}".format(item.reviewCount) }}件のレビュー)</span>
+                <div class="product-info" style="flex: 1;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <div style="color: var(--primary); font-size: 1.8rem; font-weight: 800; font-family: 'Lato';">
+                            {{ "{:,}".format(item.price) }}<span style="font-size: 0.9rem; font-weight: 500;"> 円（税込）</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+                            <span style="color: #FF9900; font-weight: 700;">★ {{ item.reviewAverage }}</span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">({{ "{:,}".format(item.reviewCount) }}件のレビュー)</span>
+                        </div>
+                    </div>
+
+                    <div style="background: #FDF2F2; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary);">
+                        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">{{ item.caption }}...</p>
+                    </div>
+
+                    <a href="{{ item.affiliateUrl }}" target="_blank" rel="noopener sponsored" class="btn-primary" style="width: 100%; max-width: 400px;">
+                        楽天市場で最新価格を確認する
+                    </a>
                 </div>
-
-                <p class="product-caption">{{ item.caption }}...</p>
-
-                <a href="{{ item.affiliateUrl }}" target="_blank" rel="noopener sponsored" class="btn-cta">
-                    楽天市場で最新価格をチェックする →
-                </a>
             </div>
         </div>
         {% endfor %}
     </section>
 
-    <section id="summary">
-        <h2>まとめ</h2>
-        <p>今回は「{{ article.h1 }}」をご紹介しました。ご自身のライフスタイルや予算にぴったりの一台を見つけて、毎日の美容ケアをより楽しく、快適なものにしてくださいね。</p>
+    <section id="summary" class="section" style="background: #fff; padding: 2rem; border-radius: var(--radius); border: 2px solid var(--primary);">
+        <h2 style="margin-top: 0; color: var(--primary);">まとめ</h2>
+        <p style="margin-bottom: 0;">いかがでしたでしょうか。今回は「{{ article.h1 }}」をご紹介しました。商品のスペックはもちろん、実際の愛用者のレビューも参考にしながら、あなたにぴったりの一台を選んでみてください。</p>
     </section>
 
     {% if related_articles %}
-    <section id="related">
-        <h2>関連記事</h2>
-        <ul class="article-list">
+    <section id="related" class="section">
+        <h2 class="section-title">こちらもおすすめ</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
             {% for rel in related_articles %}
-            <li><a href="{{ rel.url }}">{{ rel.h1 }}</a></li>
+            <a href="{{ rel.url }}" class="card" style="text-decoration: none; color: inherit; padding: 1.5rem;">
+                <h3 style="font-size: 1rem; margin: 0; color: var(--text-main);">{{ rel.h1 }}</h3>
+                <span style="color: var(--primary); font-size: 0.85rem; font-weight: 700; margin-top: 0.5rem; display: block;">記事を読む →</span>
+            </a>
             {% endfor %}
-        </ul>
+        </div>
     </section>
     {% endif %}
 </article>
+
+<style>
+    @media (max-width: 768px) {
+        .ranking-card-body { flex-direction: column; gap: 1rem; }
+        .product-image-container { flex: none; width: 100%; }
+        .rank-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    }
+</style>
 {% endblock %}

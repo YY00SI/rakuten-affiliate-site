@@ -6,204 +6,171 @@
     <title>{% if article %}{{ article.title }}{% elif category %}{{ category.name }} - {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
     <meta name="description" content="{% if article %}{{ article.meta_description }}{% else %}{{ site.description }}{% endif %}">
     
+    <!-- Google Fonts: Lato for numbers, Noto Sans JP for text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
     <style>
         :root {
-            --rakuten-red: #BF0000;
-            --gold: #FFD700;
-            --silver: #C0C0C0;
-            --bronze: #CD7F32;
-            --bg-color: #f8f8f8;
-            --card-bg: #ffffff;
-            --text-color: #333333;
-            --muted-color: #666666;
+            --primary: #BF0000; /* Rakuten Red */
+            --primary-light: #FF4D4D;
+            --primary-dark: #8C0000;
+            --accent: #FFD700; /* Gold */
+            --text-main: #2C3E50;
+            --text-muted: #5D6D7E;
+            --bg-body: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border: #E2E8F0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            --radius: 12px;
+            --max-width: 1000px;
         }
 
+        * { box-sizing: border-box; }
+
         body {
-            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            font-family: 'Noto Sans JP', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
             margin: 0;
-            line-height: 1.6;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
         }
 
         header {
-            background-color: #ffffff;
-            border-bottom: 3px solid var(--rakuten-red);
-            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 0;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
         }
 
         .header-content {
-            max-width: 1000px;
+            max-width: var(--max-width);
             margin: 0 auto;
+            padding: 0 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--rakuten-red);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
             text-decoration: none;
+            letter-spacing: -0.02em;
         }
 
         main {
-            max-width: 1000px;
+            max-width: var(--max-width);
             margin: 2rem auto;
-            padding: 0 1rem;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            padding: 0 1.5rem;
         }
 
-        /* 記事用スタイル */
+        /* 共通UIパーツ */
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 3rem 0 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: 700;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(191, 0, 0, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 20px rgba(191, 0, 0, 0.4);
+            filter: brightness(1.1);
+        }
+
+        /* 記事用リッチコンポーネント */
+        .badge {
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+        }
+
         .updated-at {
-            color: var(--muted-color);
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
-        }
-
-        .toc {
-            background: #f9f9f9;
-            border: 1px solid #eee;
-            padding: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .toc ul {
-            list-style: none;
-            padding-left: 1rem;
-        }
-
-        h1 { font-size: 1.8rem; border-bottom: 2px solid var(--rakuten-red); padding-bottom: 0.5rem; }
-        h2 { font-size: 1.5rem; border-left: 5px solid var(--rakuten-red); padding-left: 1rem; margin-top: 2.5rem; }
-
-        /* 商品カード（ランキング形式） */
-        .product-card {
-            border: 2px solid #eee;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 30px;
-            display: flex;
-            gap: 20px;
-            position: relative;
-        }
-
-        @media (max-width: 600px) {
-            .product-card { flex-direction: column; }
-        }
-
-        .rank-badge {
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
+            color: var(--text-muted);
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 1.1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            z-index: 10;
+            gap: 0.5rem;
         }
 
-        .rank-1 { background-color: var(--gold); }
-        .rank-2 { background-color: var(--silver); }
-        .rank-3 { background-color: var(--bronze); }
-        .rank-other { background-color: #666; }
-
-        .product-image {
-            width: 200px;
-            height: 200px;
-            object-fit: contain;
-            flex-shrink: 0;
+        .toc-container {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border);
         }
 
-        @media (max-width: 600px) {
-            .product-image { width: 100%; height: auto; }
-        }
-
-        .card-body {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .product-name {
-            font-size: 1.1rem;
-            font-weight: bold;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-
-        .price-area {
-            font-size: 1.4rem;
-            color: var(--rakuten-red);
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .review-area {
-            margin-bottom: 15px;
-            font-size: 0.95rem;
-        }
-
-        .stars { color: #ffa500; font-weight: bold; }
-        .review-count { color: var(--muted-color); margin-left: 5px; }
-
-        .btn-cta {
-            background-color: var(--rakuten-red);
-            color: white;
-            text-decoration: none;
-            padding: 14px 24px;
-            border-radius: 4px;
-            text-align: center;
-            font-weight: bold;
-            display: block;
-            margin-top: auto;
-            transition: background 0.2s;
-        }
-
-        .btn-cta:hover {
-            background-color: #a00000;
-        }
-
-        /* 関連記事・カテゴリ一覧 */
-        .article-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .article-list li {
-            margin-bottom: 10px;
-            padding: 10px;
-            background: #f9f9f9;
-            border-radius: 4px;
-        }
-
-        .article-list a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .article-list a:hover {
-            color: var(--rakuten-red);
-        }
-
+        /* フッター */
         footer {
-            background: #ffffff;
-            border-top: 1px solid #ddd;
-            padding: 3rem 1rem;
-            margin-top: 4rem;
+            background: #fff;
+            border-top: 1px solid var(--border);
+            padding: 4rem 1.5rem;
+            margin-top: 6rem;
             text-align: center;
+            color: var(--text-muted);
+        }
+
+        .footer-nav {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .footer-nav a {
+            color: var(--text-muted);
+            text-decoration: none;
             font-size: 0.9rem;
-            color: var(--muted-color);
+        }
+
+        .footer-nav a:hover { color: var(--primary); }
+
+        /* レスポンシブ調整 */
+        @media (max-width: 768px) {
+            :root { --max-width: 100%; }
+            main { margin-top: 1rem; padding: 0 1rem; }
+            .section-title { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -219,8 +186,15 @@
     </main>
 
     <footer>
-        <p>© 2026 {{ site.name }} - あなたにぴったりの商品選びをサポート。</p>
-        <p>当サイトは、楽天市場の商品情報を活用したアフィリエイトサイトです。最新の価格や在庫状況は楽天サイトにてご確認ください。</p>
+        <div class="footer-nav">
+            <a href="/">トップページ</a>
+            <a href="/about/">当サイトについて</a>
+            <a href="/privacy-policy/">プライバシーポリシー</a>
+        </div>
+        <p>© 2026 {{ site.name }}</p>
+        <p style="font-size: 0.8rem; max-width: 600px; margin: 1rem auto;">
+            当サイトはアフィリエイト広告を利用しています。紹介している商品の最新価格や在庫状況、正確な仕様については、リンク先の楽天市場各ショップのページにて必ずご確認ください。
+        </p>
     </footer>
 </body>
 </html>

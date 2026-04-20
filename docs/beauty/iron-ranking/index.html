@@ -6,204 +6,171 @@
     <title>【2026年最新】ヘアアイロン おすすめ10選｜痛まない・ストレート・カール用を厳選</title>
     <meta name="description" content="ヘアアイロンのおすすめ10選。髪が痛みにくいモデルや、初心者でも使いやすいストレート・カール兼用タイプをランキングで紹介。">
     
+    <!-- Google Fonts: Lato for numbers, Noto Sans JP for text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
     <style>
         :root {
-            --rakuten-red: #BF0000;
-            --gold: #FFD700;
-            --silver: #C0C0C0;
-            --bronze: #CD7F32;
-            --bg-color: #f8f8f8;
-            --card-bg: #ffffff;
-            --text-color: #333333;
-            --muted-color: #666666;
+            --primary: #BF0000; /* Rakuten Red */
+            --primary-light: #FF4D4D;
+            --primary-dark: #8C0000;
+            --accent: #FFD700; /* Gold */
+            --text-main: #2C3E50;
+            --text-muted: #5D6D7E;
+            --bg-body: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border: #E2E8F0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            --radius: 12px;
+            --max-width: 1000px;
         }
 
+        * { box-sizing: border-box; }
+
         body {
-            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            font-family: 'Noto Sans JP', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
             margin: 0;
-            line-height: 1.6;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
         }
 
         header {
-            background-color: #ffffff;
-            border-bottom: 3px solid var(--rakuten-red);
-            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 0;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
         }
 
         .header-content {
-            max-width: 1000px;
+            max-width: var(--max-width);
             margin: 0 auto;
+            padding: 0 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--rakuten-red);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
             text-decoration: none;
+            letter-spacing: -0.02em;
         }
 
         main {
-            max-width: 1000px;
+            max-width: var(--max-width);
             margin: 2rem auto;
-            padding: 0 1rem;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            padding: 0 1.5rem;
         }
 
-        /* 記事用スタイル */
+        /* 共通UIパーツ */
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 3rem 0 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: 700;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(191, 0, 0, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 20px rgba(191, 0, 0, 0.4);
+            filter: brightness(1.1);
+        }
+
+        /* 記事用リッチコンポーネント */
+        .badge {
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+        }
+
         .updated-at {
-            color: var(--muted-color);
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
-        }
-
-        .toc {
-            background: #f9f9f9;
-            border: 1px solid #eee;
-            padding: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .toc ul {
-            list-style: none;
-            padding-left: 1rem;
-        }
-
-        h1 { font-size: 1.8rem; border-bottom: 2px solid var(--rakuten-red); padding-bottom: 0.5rem; }
-        h2 { font-size: 1.5rem; border-left: 5px solid var(--rakuten-red); padding-left: 1rem; margin-top: 2.5rem; }
-
-        /* 商品カード（ランキング形式） */
-        .product-card {
-            border: 2px solid #eee;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 30px;
-            display: flex;
-            gap: 20px;
-            position: relative;
-        }
-
-        @media (max-width: 600px) {
-            .product-card { flex-direction: column; }
-        }
-
-        .rank-badge {
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
+            color: var(--text-muted);
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 1.1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            z-index: 10;
+            gap: 0.5rem;
         }
 
-        .rank-1 { background-color: var(--gold); }
-        .rank-2 { background-color: var(--silver); }
-        .rank-3 { background-color: var(--bronze); }
-        .rank-other { background-color: #666; }
-
-        .product-image {
-            width: 200px;
-            height: 200px;
-            object-fit: contain;
-            flex-shrink: 0;
+        .toc-container {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border);
         }
 
-        @media (max-width: 600px) {
-            .product-image { width: 100%; height: auto; }
-        }
-
-        .card-body {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .product-name {
-            font-size: 1.1rem;
-            font-weight: bold;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-
-        .price-area {
-            font-size: 1.4rem;
-            color: var(--rakuten-red);
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .review-area {
-            margin-bottom: 15px;
-            font-size: 0.95rem;
-        }
-
-        .stars { color: #ffa500; font-weight: bold; }
-        .review-count { color: var(--muted-color); margin-left: 5px; }
-
-        .btn-cta {
-            background-color: var(--rakuten-red);
-            color: white;
-            text-decoration: none;
-            padding: 14px 24px;
-            border-radius: 4px;
-            text-align: center;
-            font-weight: bold;
-            display: block;
-            margin-top: auto;
-            transition: background 0.2s;
-        }
-
-        .btn-cta:hover {
-            background-color: #a00000;
-        }
-
-        /* 関連記事・カテゴリ一覧 */
-        .article-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .article-list li {
-            margin-bottom: 10px;
-            padding: 10px;
-            background: #f9f9f9;
-            border-radius: 4px;
-        }
-
-        .article-list a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .article-list a:hover {
-            color: var(--rakuten-red);
-        }
-
+        /* フッター */
         footer {
-            background: #ffffff;
-            border-top: 1px solid #ddd;
-            padding: 3rem 1rem;
-            margin-top: 4rem;
+            background: #fff;
+            border-top: 1px solid var(--border);
+            padding: 4rem 1.5rem;
+            margin-top: 6rem;
             text-align: center;
+            color: var(--text-muted);
+        }
+
+        .footer-nav {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .footer-nav a {
+            color: var(--text-muted);
+            text-decoration: none;
             font-size: 0.9rem;
-            color: var(--muted-color);
+        }
+
+        .footer-nav a:hover { color: var(--primary); }
+
+        /* レスポンシブ調整 */
+        @media (max-width: 768px) {
+            :root { --max-width: 100%; }
+            main { margin-top: 1rem; padding: 0 1rem; }
+            .section-title { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -216,335 +183,525 @@
 
     <main>
         
-<article>
-    <h1>【2026年最新】ヘアアイロン おすすめ10選</h1>
-    <p class="updated-at">最終更新日: 2026年04月21日</p>
+<article class="article-content">
+    <header class="article-header">
+        <div class="updated-at">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+            </svg>
+            最終更新日: 2026年04月21日
+        </div>
+        <h1 class="article-title">【2026年最新】ヘアアイロン おすすめ10選</h1>
+        <p class="article-intro">スタイリングの質を左右するヘアアイロン。<br>温度調節の細かさやプレートの素材によって、髪へのダメージは大きく変わります。<br>ここでは、楽天市場で高評価を得ている最新の人気モデルを比較しました。<br></p>
+    </header>
 
-    <div class="toc">
-        <strong>目次</strong>
-        <ul>
-            <li><a href="#intro">はじめに</a></li>
-            <li><a href="#criteria">選び方のポイント</a></li>
-            <li><a href="#ranking">おすすめ商品ランキング</a></li>
-            <li><a href="#summary">まとめ</a></li>
+    <nav class="toc-container">
+        <h2 style="font-size: 1.1rem; margin-top: 0; color: var(--text-main);">目次</h2>
+        <ul style="list-style: none; padding-left: 0; margin-bottom: 0;">
+            <li><a href="#criteria" style="color: var(--primary); text-decoration: none; font-weight: 500;">・ヘアアイロン おすすめ10選の選び方</a></li>
+            <li><a href="#ranking" style="color: var(--primary); text-decoration: none; font-weight: 500;">・おすすめランキング（全10選）</a></li>
+            <li><a href="#summary" style="color: var(--primary); text-decoration: none; font-weight: 500;">・まとめ</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <section id="intro">
-        <p>スタイリングの質を左右するヘアアイロン。<br>温度調節の細かさやプレートの素材によって、髪へのダメージは大きく変わります。<br>ここでは、楽天市場で高評価を得ている最新の人気モデルを比較しました。<br></p>
+    <section id="criteria" class="section">
+        <h2 class="section-title">失敗しない！ヘアアイロン おすすめ10選の選び方</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            
+            <div class="card" style="padding: 1.5rem;">
+                <h3 style="font-size: 1.1rem; color: var(--primary); margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="background: var(--primary); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem;">1</span>
+                    プレートの素材で選ぶ
+                </h3>
+                <p style="font-size: 0.95rem; margin-bottom: 0;">摩擦の少ないセラミックやチタンコーティングは、髪へのダメージを抑えられます。滑りの良さがスタイリングのしやすさに直結します。</p>
+            </div>
+            
+            <div class="card" style="padding: 1.5rem;">
+                <h3 style="font-size: 1.1rem; color: var(--primary); margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="background: var(--primary); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem;">2</span>
+                    温度調節機能で選ぶ
+                </h3>
+                <p style="font-size: 0.95rem; margin-bottom: 0;">細かく温度設定（120〜200℃など）ができるモデルなら、髪質やコンディションに合わせて最適なスタイリングが可能です。</p>
+            </div>
+            
+            <div class="card" style="padding: 1.5rem;">
+                <h3 style="font-size: 1.1rem; color: var(--primary); margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="background: var(--primary); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem;">3</span>
+                    形状と用途で選ぶ
+                </h3>
+                <p style="font-size: 0.95rem; margin-bottom: 0;">ストレート専用、カール専用、両方使える2WAYタイプがあります。自分が一番よく使うスタイルに合わせて選びましょう。</p>
+            </div>
+            
+        </div>
     </section>
 
-    <section id="criteria">
-        <h2>ヘアアイロン おすすめ10選の選び方</h2>
+    <section id="ranking" class="section">
+        <h2 class="section-title">おすすめランキング10選</h2>
         
-        <h3>プレートの素材で選ぶ</h3>
-        <p>摩擦の少ないセラミックやチタンコーティングは、髪へのダメージを抑えられます。滑りの良さがスタイリングのしやすさに直結します。</p>
         
-        <h3>温度調節機能で選ぶ</h3>
-        <p>細かく温度設定（120〜200℃など）ができるモデルなら、髪質やコンディションに合わせて最適なスタイリングが可能です。</p>
+        <div class="card ranking-card" style="margin-bottom: 3rem; display: flex; flex-direction: column;">
+            <!-- Rank Header -->
+            <div class="rank-header" style="background: #f8f8f8; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span class="badge" style="
+                        background: var(--accent);
+                        color: #000;
+                        padding: 0.2rem 1.2rem;
+                        border-radius: 4px;
+                        font-size: 1.2rem;
+                    ">1位</span>
+                    <h3 style="margin: 0; font-size: 1.2rem;">【15%クーポンで3392円】「MONOQLO A+評価受賞」 ストレートアイロン ヘアアイロン 24mm 15mm SALONMOON サロンムーン チタニウム プレート 痛まない おすすめ ストレートヘアアイロン 美容師 おすすめ プロ仕様 海外対応 カール コテ も 2WAY</h3>
+                </div>
+            </div>
+
+            <div class="ranking-card-body" style="padding: 1.5rem; display: flex; gap: 2rem;">
+                <div class="product-image-container" style="flex: 0 0 250px; text-align: center;">
+                    <img src="https://thumbnail.image.rakuten.co.jp/@0_gold/salonmoon/slm004/flick/slm004_f_00_ra_d6_15off_3392.jpg" alt="【15%クーポンで3392円】「MONOQLO A+評価受賞」 ストレートアイロン ヘアアイロン 24mm 15mm SALONMOON サロンムーン チタニウム プレート 痛まない おすすめ ストレートヘアアイロン 美容師 おすすめ プロ仕様 海外対応 カール コテ も 2WAY" style="max-width: 100%; height: auto; object-fit: contain;" loading="lazy">
+                </div>
+                
+                <div class="product-info" style="flex: 1;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <div style="color: var(--primary); font-size: 1.8rem; font-weight: 800; font-family: 'Lato';">
+                            3,990<span style="font-size: 0.9rem; font-weight: 500;"> 円（税込）</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+                            <span style="color: #FF9900; font-weight: 700;">★ 4.64</span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">(1,433件のレビュー)</span>
+                        </div>
+                    </div>
+
+                    <div style="background: #FDF2F2; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary);">
+                        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">商品説明 メーカー名SALONMOON 商品名イオンストレートヘアアイロン サイズ 本体：約300mm x 30mm x 35mm プレート：約90mm x 24mm 重量約350g ( コード込み ) コードの長さ約2m ( 長すぎず、短すぎない、断線しにくい長さ ) 定格電圧100-240V ＜ 海外対応 ＞ 付属品本体・取扱説明書・耐熱性シリコンカバー 【 フローティング&クッションプレート...</p>
+                    </div>
+
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/g00t6tgn.1a2pr568.g00t6tgn.1a2psb8a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsalonmoon%2Fslm004%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsalonmoon%2Fi%2F10000000%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-primary" style="width: 100%; max-width: 400px;">
+                        楽天市場で最新価格を確認する
+                    </a>
+                </div>
+            </div>
+        </div>
         
-        <h3>形状と用途で選ぶ</h3>
-        <p>ストレート専用、カール専用、両方使える2WAYタイプがあります。自分が一番よく使うスタイルに合わせて選びましょう。</p>
+        <div class="card ranking-card" style="margin-bottom: 3rem; display: flex; flex-direction: column;">
+            <!-- Rank Header -->
+            <div class="rank-header" style="background: #f8f8f8; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span class="badge" style="
+                        background: #C0C0C0;
+                        color: #fff;
+                        padding: 0.2rem 1.2rem;
+                        border-radius: 4px;
+                        font-size: 1.2rem;
+                    ">2位</span>
+                    <h3 style="margin: 0; font-size: 1.2rem;">【1,584円OFFクーポン】マグネットヘアプロ カールアイロン 正規品 26mm 32mm 38mm コテ 美容師 ヘアアイロン プレゼント ギフト プロ サロン専売品 痛まない 太め ヘアアイロン 海外対応 巻き髪 前髪 軽量 持ち運び 1年保証 送料無料 公認</h3>
+                </div>
+            </div>
+
+            <div class="ranking-card-body" style="padding: 1.5rem; display: flex; gap: 2rem;">
+                <div class="product-image-container" style="flex: 0 0 250px; text-align: center;">
+                    <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/chouchou-store/cabinet/magnet/mhp_curl32_s2_pls.jpg" alt="【1,584円OFFクーポン】マグネットヘアプロ カールアイロン 正規品 26mm 32mm 38mm コテ 美容師 ヘアアイロン プレゼント ギフト プロ サロン専売品 痛まない 太め ヘアアイロン 海外対応 巻き髪 前髪 軽量 持ち運び 1年保証 送料無料 公認" style="max-width: 100%; height: auto; object-fit: contain;" loading="lazy">
+                </div>
+                
+                <div class="product-info" style="flex: 1;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <div style="color: var(--primary); font-size: 1.8rem; font-weight: 800; font-family: 'Lato';">
+                            17,600<span style="font-size: 0.9rem; font-weight: 500;"> 円（税込）</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+                            <span style="color: #FF9900; font-weight: 700;">★ 4.62</span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">(882件のレビュー)</span>
+                        </div>
+                    </div>
+
+                    <div style="background: #FDF2F2; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary);">
+                        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">CHOUCHOU楽天市場店は、マグネットヘアプロ公認正規販売店(#0012)です。 ■商品情報 ・しっかりカールの26mm ・ゆるふわカールの32mm ・顔周りのくびれヘアに最適の38mm ＜キュアクリスタルプレート&パイプ＞ ミネラルを含んだ数種類の天然鉱石をミクロパウダー化して独自配合し、アイロンのプレートとパイプ部に加工。髪にツヤと潤いを与え、弾力のある艶カールを長時間キープ ■商品特徴 ＜...</p>
+                    </div>
+
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/g00tlvin.1a2pr913.g00tlvin.1a2ps83c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchouchou-store%2Fholistic-curliron-32mm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchouchou-store%2Fi%2F10000005%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-primary" style="width: 100%; max-width: 400px;">
+                        楽天市場で最新価格を確認する
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card ranking-card" style="margin-bottom: 3rem; display: flex; flex-direction: column;">
+            <!-- Rank Header -->
+            <div class="rank-header" style="background: #f8f8f8; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span class="badge" style="
+                        background: #CD7F32;
+                        color: #fff;
+                        padding: 0.2rem 1.2rem;
+                        border-radius: 4px;
+                        font-size: 1.2rem;
+                    ">3位</span>
+                    <h3 style="margin: 0; font-size: 1.2rem;">【ヘアオイルとセットでお得！】クレイツ カールプロSR 正規品 26mm 32mm 38mm 45mm 美容師 プレゼント ギフト プロ サロン専売品 痛まない 太め コテ ヘアアイロン 巻き髪 前髪 軽量 持ち運び 1年保証 送料無料</h3>
+                </div>
+            </div>
+
+            <div class="ranking-card-body" style="padding: 1.5rem; display: flex; gap: 2rem;">
+                <div class="product-image-container" style="flex: 0 0 250px; text-align: center;">
+                    <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/chouchou-store/cabinet/create/curlpro-sr/cpsr_lp-2.jpg" alt="【ヘアオイルとセットでお得！】クレイツ カールプロSR 正規品 26mm 32mm 38mm 45mm 美容師 プレゼント ギフト プロ サロン専売品 痛まない 太め コテ ヘアアイロン 巻き髪 前髪 軽量 持ち運び 1年保証 送料無料" style="max-width: 100%; height: auto; object-fit: contain;" loading="lazy">
+                </div>
+                
+                <div class="product-info" style="flex: 1;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <div style="color: var(--primary); font-size: 1.8rem; font-weight: 800; font-family: 'Lato';">
+                            5,779<span style="font-size: 0.9rem; font-weight: 500;"> 円（税込）</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+                            <span style="color: #FF9900; font-weight: 700;">★ 4.61</span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">(794件のレビュー)</span>
+                        </div>
+                    </div>
+
+                    <div style="background: #FDF2F2; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary);">
+                        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">当店はクレイツ公式認定の正規品販売店です。 当店はクレイツ公式認定の正規品販売店で、メーカー保証が1年間ご利用いただけます。 選べる4サイズ展開。クレイツイオンカールプロSR クレイツイオンカールプロは26mm(C73308)/32mm(C73310)/38mm(C73312)/45mm(C73315)の4サイズを展開しており、自分好みのヘアスタイルに合わせて選ぶことができます。一番人気は32mm...</p>
+                    </div>
+
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/g00tlvin.1a2pr913.g00tlvin.1a2ps83c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchouchou-store%2Fcurlpro-sr-32mm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchouchou-store%2Fi%2F10001143%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-primary" style="width: 100%; max-width: 400px;">
+                        楽天市場で最新価格を確認する
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card ranking-card" style="margin-bottom: 3rem; display: flex; flex-direction: column;">
+            <!-- Rank Header -->
+            <div class="rank-header" style="background: #f8f8f8; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span class="badge" style="
+                        background: #666;
+                        color: #fff;
+                        padding: 0.2rem 1.2rem;
+                        border-radius: 4px;
+                        font-size: 1.2rem;
+                    ">4位</span>
+                    <h3 style="margin: 0; font-size: 1.2rem;">《SALONIA公式店》楽天1位【SALONIA サロニア スムースシャイン ヘアアイロン ストレート 24mm カール 32mm】コテ shb sms shsm◆30日間全額返金保証◆ rec プレゼント ギフト 痛まない ヘアアイロン slall</h3>
+                </div>
+            </div>
+
+            <div class="ranking-card-body" style="padding: 1.5rem; display: flex; gap: 2rem;">
+                <div class="product-image-container" style="flex: 0 0 250px; text-align: center;">
+                    <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kobe-beauty-labo/cabinet/1st_thum/sal014.jpg" alt="《SALONIA公式店》楽天1位【SALONIA サロニア スムースシャイン ヘアアイロン ストレート 24mm カール 32mm】コテ shb sms shsm◆30日間全額返金保証◆ rec プレゼント ギフト 痛まない ヘアアイロン slall" style="max-width: 100%; height: auto; object-fit: contain;" loading="lazy">
+                </div>
+                
+                <div class="product-info" style="flex: 1;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <div style="color: var(--primary); font-size: 1.8rem; font-weight: 800; font-family: 'Lato';">
+                            13,200<span style="font-size: 0.9rem; font-weight: 500;"> 円（税込）</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+                            <span style="color: #FF9900; font-weight: 700;">★ 4.45</span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">(693件のレビュー)</span>
+                        </div>
+                    </div>
+
+                    <div style="background: #FDF2F2; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary);">
+                        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">≫当店からのメールが届かないお客様はこちら ≫特定商取引法に基づく表記はこちら 商品名 サロニア スムースシャイン ストレートヘアアイロン サロニア スムースシャイン カールヘアアイロン サロニア スムースシャイン マルチケアブラシ 商品区分 家電 商品内容 ストレートヘアアイロン： 詳しくはこちら＞＞ カールヘアアイロン： 詳しくはこちら＞＞ スムースシャイン マルチケアブラシ： 詳しくはこちら...</p>
+                    </div>
+
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/g00r23nn.1a2pr533.g00r23nn.1a2ps6a0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkobe-beauty-labo%2Fsal014%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkobe-beauty-labo%2Fi%2F10002527%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-primary" style="width: 100%; max-width: 400px;">
+                        楽天市場で最新価格を確認する
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card ranking-card" style="margin-bottom: 3rem; display: flex; flex-direction: column;">
+            <!-- Rank Header -->
+            <div class="rank-header" style="background: #f8f8f8; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span class="badge" style="
+                        background: #666;
+                        color: #fff;
+                        padding: 0.2rem 1.2rem;
+                        border-radius: 4px;
+                        font-size: 1.2rem;
+                    ">5位</span>
+                    <h3 style="margin: 0; font-size: 1.2rem;">【公式店限定★耐熱収納ケース付】 マグネットヘアプロ ストレートアイロン クレイツ ホリスティックキュア アイロン ヘアアイロン ストレートアイロンS 正規品 プロ コテ 艶 ツヤ 美髪 美容師 延長保証1年6ヶ月 ウェーブアイロン スタイリング 海外対応 プレゼント ギフト</h3>
+                </div>
+            </div>
+
+            <div class="ranking-card-body" style="padding: 1.5rem; display: flex; gap: 2rem;">
+                <div class="product-image-container" style="flex: 0 0 250px; text-align: center;">
+                    <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/holistic-cures/cabinet/mg/0000mg_07k.jpg" alt="【公式店限定★耐熱収納ケース付】 マグネットヘアプロ ストレートアイロン クレイツ ホリスティックキュア アイロン ヘアアイロン ストレートアイロンS 正規品 プロ コテ 艶 ツヤ 美髪 美容師 延長保証1年6ヶ月 ウェーブアイロン スタイリング 海外対応 プレゼント ギフト" style="max-width: 100%; height: auto; object-fit: contain;" loading="lazy">
+                </div>
+                
+                <div class="product-info" style="flex: 1;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <div style="color: var(--primary); font-size: 1.8rem; font-weight: 800; font-family: 'Lato';">
+                            14,300<span style="font-size: 0.9rem; font-weight: 500;"> 円（税込）</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+                            <span style="color: #FF9900; font-weight: 700;">★ 4.53</span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">(559件のレビュー)</span>
+                        </div>
+                    </div>
+
+                    <div style="background: #FDF2F2; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary);">
+                        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">製品名 MAGNETHairPro ストレートアイロン／S 型名 HCS-G03DG／HCS-G06G 本体サイズ W225mm / D30mm / H30mm 本体重量 165g 温度設定 120/140/160/180/200 ℃ コード長さ 約3.0m 消費電力 30-40W 電源 単層100-240VAC(海外兼用) メーカー名 ホリスティックキュアーズ 商品説明 ※品質改良のため予告なく...</p>
+                    </div>
+
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/g00tp7vn.1a2pra91.g00tp7vn.1a2psae6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fholistic-cures%2Fhcs-g03dg%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fholistic-cures%2Fi%2F10000034%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-primary" style="width: 100%; max-width: 400px;">
+                        楽天市場で最新価格を確認する
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card ranking-card" style="margin-bottom: 3rem; display: flex; flex-direction: column;">
+            <!-- Rank Header -->
+            <div class="rank-header" style="background: #f8f8f8; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span class="badge" style="
+                        background: #666;
+                        color: #fff;
+                        padding: 0.2rem 1.2rem;
+                        border-radius: 4px;
+                        font-size: 1.2rem;
+                    ">6位</span>
+                    <h3 style="margin: 0; font-size: 1.2rem;">【30%OFFクーポン】クレイツ エレメアカール カールアイロン 正規品 26mm 32mm 38mm 美容師 プレゼント ギフト プロ サロン専売品 痛まない 太め コテ ヘアアイロン 海外対応 巻き髪 前髪 軽量 持ち運び 1年保証 送料無料</h3>
+                </div>
+            </div>
+
+            <div class="ranking-card-body" style="padding: 1.5rem; display: flex; gap: 2rem;">
+                <div class="product-image-container" style="flex: 0 0 250px; text-align: center;">
+                    <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/chouchou-store/cabinet/create/elemea/elemea-curl.jpg" alt="【30%OFFクーポン】クレイツ エレメアカール カールアイロン 正規品 26mm 32mm 38mm 美容師 プレゼント ギフト プロ サロン専売品 痛まない 太め コテ ヘアアイロン 海外対応 巻き髪 前髪 軽量 持ち運び 1年保証 送料無料" style="max-width: 100%; height: auto; object-fit: contain;" loading="lazy">
+                </div>
+                
+                <div class="product-info" style="flex: 1;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <div style="color: var(--primary); font-size: 1.8rem; font-weight: 800; font-family: 'Lato';">
+                            13,200<span style="font-size: 0.9rem; font-weight: 500;"> 円（税込）</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+                            <span style="color: #FF9900; font-weight: 700;">★ 4.59</span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">(469件のレビュー)</span>
+                        </div>
+                    </div>
+
+                    <div style="background: #FDF2F2; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary);">
+                        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">ダメージや年齢からくる「髪の悩み」にクレイツ独自の技術でアプローチ 髪の水分バランスを整え、美しい輝きとフォルムを生み出すパーソナルメイクカールアイロン。 プレート＆パイプに、従来のクレイツイオン効果を更に高めた「プレミアムクレイツイオン」を配合。 プレミアムクレイツイオンの「遠赤外線」効果により、スタイリング時に失われがちな毛髪水分の蒸散を抑え、髪内部の水分バランスを整えながらしっかりと「潤い」...</p>
+                    </div>
+
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/g00tlvin.1a2pr913.g00tlvin.1a2ps83c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchouchou-store%2Felemeacurl-32mm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchouchou-store%2Fi%2F10000912%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-primary" style="width: 100%; max-width: 400px;">
+                        楽天市場で最新価格を確認する
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card ranking-card" style="margin-bottom: 3rem; display: flex; flex-direction: column;">
+            <!-- Rank Header -->
+            <div class="rank-header" style="background: #f8f8f8; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span class="badge" style="
+                        background: #666;
+                        color: #fff;
+                        padding: 0.2rem 1.2rem;
+                        border-radius: 4px;
+                        font-size: 1.2rem;
+                    ">7位</span>
+                    <h3 style="margin: 0; font-size: 1.2rem;">【在庫処分3380円ゲット！】ヘアアイロン コードレス コードレスヘアアイロン コードレス ヘアアイロン カール ストレートアイロン ミニ 2way ヘアアイロン ミニ ストレート ストレートアイロン コードレス 前髪 充電式 海外仕様対応 ヘアーアイロン コテ</h3>
+                </div>
+            </div>
+
+            <div class="ranking-card-body" style="padding: 1.5rem; display: flex; gap: 2rem;">
+                <div class="product-image-container" style="flex: 0 0 250px; text-align: center;">
+                    <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/sunshine-store/cabinet/10430205/imgrc0159921897.jpg" alt="【在庫処分3380円ゲット！】ヘアアイロン コードレス コードレスヘアアイロン コードレス ヘアアイロン カール ストレートアイロン ミニ 2way ヘアアイロン ミニ ストレート ストレートアイロン コードレス 前髪 充電式 海外仕様対応 ヘアーアイロン コテ" style="max-width: 100%; height: auto; object-fit: contain;" loading="lazy">
+                </div>
+                
+                <div class="product-info" style="flex: 1;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <div style="color: var(--primary); font-size: 1.8rem; font-weight: 800; font-family: 'Lato';">
+                            3,380<span style="font-size: 0.9rem; font-weight: 500;"> 円（税込）</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+                            <span style="color: #FF9900; font-weight: 700;">★ 4.4</span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">(361件のレビュー)</span>
+                        </div>
+                    </div>
+
+                    <div style="background: #FDF2F2; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary);">
+                        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">ブラッドAliliyメーカーAliliy電源方式USB-C充電消費電力5W充電時間120～180分カラーホワイト、ブラック自動電源オフ機能オートオフ有海外海外仕様使用可能、機内持ち込み不可商品説明【コードレス ヘアアイロン】このストレートヘアアイロンは高品質リチウムイオン電池を内蔵し、1回のフル充電で最大40分（160℃の場合）連続使用可能です。持ち運びに便利なコードレスタイプ、USB充電式でコン...</p>
+                    </div>
+
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/g00tdhyn.1a2pr9cf.g00tdhyn.1a2psd66/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunshine-store%2Flt-22584%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsunshine-store%2Fi%2F10000389%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-primary" style="width: 100%; max-width: 400px;">
+                        楽天市場で最新価格を確認する
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card ranking-card" style="margin-bottom: 3rem; display: flex; flex-direction: column;">
+            <!-- Rank Header -->
+            <div class="rank-header" style="background: #f8f8f8; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span class="badge" style="
+                        background: #666;
+                        color: #fff;
+                        padding: 0.2rem 1.2rem;
+                        border-radius: 4px;
+                        font-size: 1.2rem;
+                    ">8位</span>
+                    <h3 style="margin: 0; font-size: 1.2rem;">【海外兼用】BAYATA ヘアアイロン カール 32mm 25mm 38mm コテ カールアイロン ヘアアイロンカール 自動電源オフ セラミックヘアアイロン カールヘアアイロン 巻き髪 太巻き カールプロ ヘアケア ウェーブ</h3>
+                </div>
+            </div>
+
+            <div class="ranking-card-body" style="padding: 1.5rem; display: flex; gap: 2rem;">
+                <div class="product-image-container" style="flex: 0 0 250px; text-align: center;">
+                    <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yangzi81/cabinet/2356/imgrc0101917304.jpg" alt="【海外兼用】BAYATA ヘアアイロン カール 32mm 25mm 38mm コテ カールアイロン ヘアアイロンカール 自動電源オフ セラミックヘアアイロン カールヘアアイロン 巻き髪 太巻き カールプロ ヘアケア ウェーブ" style="max-width: 100%; height: auto; object-fit: contain;" loading="lazy">
+                </div>
+                
+                <div class="product-info" style="flex: 1;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <div style="color: var(--primary); font-size: 1.8rem; font-weight: 800; font-family: 'Lato';">
+                            3,600<span style="font-size: 0.9rem; font-weight: 500;"> 円（税込）</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+                            <span style="color: #FF9900; font-weight: 700;">★ 4.32</span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">(282件のレビュー)</span>
+                        </div>
+                    </div>
+
+                    <div style="background: #FDF2F2; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary);">
+                        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">メーカー希望小売価格はメーカーカタログに基づいて掲載しています 商品仕様商品名：BAYATAカールアイロン品番：JK-010電源：AC100-240V（海外対応）商品電力：67W加熱方法：PTC自動オフ：60分プレート温度：100℃~220℃(25段階温度調節)プレートの長さ：25mm、32mmコードの長さ：約190cm本体重量：338g(コード込む)おすすめポイント【5段階の温度調節】最高温度2...</p>
+                    </div>
+
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/g00tt6sn.1a2praaa.g00tt6sn.1a2ps126/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyangzi81%2Flt-2356%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyangzi81%2Fi%2F10000343%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-primary" style="width: 100%; max-width: 400px;">
+                        楽天市場で最新価格を確認する
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card ranking-card" style="margin-bottom: 3rem; display: flex; flex-direction: column;">
+            <!-- Rank Header -->
+            <div class="rank-header" style="background: #f8f8f8; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span class="badge" style="
+                        background: #666;
+                        color: #fff;
+                        padding: 0.2rem 1.2rem;
+                        border-radius: 4px;
+                        font-size: 1.2rem;
+                    ">9位</span>
+                    <h3 style="margin: 0; font-size: 1.2rem;">【GW早割★クーポンで2,788円！】ヘアアイロン カールアイロン 初心者向 32mm コテ ウェーブアイロン マイナスイオン 6段階温度調節 セラミックヘアアイロン 自動電源OFF 巻き髪 太巻き カールプロ ヘアケア 海外対応 やけど防止</h3>
+                </div>
+            </div>
+
+            <div class="ranking-card-body" style="padding: 1.5rem; display: flex; gap: 2rem;">
+                <div class="product-image-container" style="flex: 0 0 250px; text-align: center;">
+                    <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/tripleshop/cabinet/11303274/0.jpg" alt="【GW早割★クーポンで2,788円！】ヘアアイロン カールアイロン 初心者向 32mm コテ ウェーブアイロン マイナスイオン 6段階温度調節 セラミックヘアアイロン 自動電源OFF 巻き髪 太巻き カールプロ ヘアケア 海外対応 やけど防止" style="max-width: 100%; height: auto; object-fit: contain;" loading="lazy">
+                </div>
+                
+                <div class="product-info" style="flex: 1;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <div style="color: var(--primary); font-size: 1.8rem; font-weight: 800; font-family: 'Lato';">
+                            3,280<span style="font-size: 0.9rem; font-weight: 500;"> 円（税込）</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+                            <span style="color: #FF9900; font-weight: 700;">★ 4.31</span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">(279件のレビュー)</span>
+                        </div>
+                    </div>
+
+                    <div style="background: #FDF2F2; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary);">
+                        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">商品説明 &#128205;プロ美容師完全監修 お客様から寄せられたご要望、アドバイスを参考に、10年経験ありのプロ美容師と共同に開発しました！ &#128205;6段階温度調整 最高温度230℃のプロ仕様で、130℃～220℃まで、10℃ごとに6段階で温度調整が可能です。髪質やヘアスタイルに応じて切り替えられるのが便利です。また、耐熱使用のスタンドを搭載しており、熱が冷めるのを待つことなく置ける...</p>
+                    </div>
+
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/g00tvx2n.1a2pr8d1.g00tvx2n.1a2ps6d6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftripleshop%2Fs-jfb-669-wh%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftripleshop%2Fi%2F10000193%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-primary" style="width: 100%; max-width: 400px;">
+                        楽天市場で最新価格を確認する
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card ranking-card" style="margin-bottom: 3rem; display: flex; flex-direction: column;">
+            <!-- Rank Header -->
+            <div class="rank-header" style="background: #f8f8f8; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span class="badge" style="
+                        background: #666;
+                        color: #fff;
+                        padding: 0.2rem 1.2rem;
+                        border-radius: 4px;
+                        font-size: 1.2rem;
+                    ">10位</span>
+                    <h3 style="margin: 0; font-size: 1.2rem;">【正規店】Nobby by TESCOM ノビー バイ テスコム プロフェッショナル プロテクトイオン ストレートアイロン NIS500B ヘアアイロン ブラック スモーキーグレー ヘアアレンジ くせ毛 うねり 使いやすい ストレート 痛まない 最新モデル 旧NIS3001</h3>
+                </div>
+            </div>
+
+            <div class="ranking-card-body" style="padding: 1.5rem; display: flex; gap: 2rem;">
+                <div class="product-image-container" style="flex: 0 0 250px; text-align: center;">
+                    <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/beautypark2017/cabinet/kaden/nobby/nis500a/nis500b.jpg" alt="【正規店】Nobby by TESCOM ノビー バイ テスコム プロフェッショナル プロテクトイオン ストレートアイロン NIS500B ヘアアイロン ブラック スモーキーグレー ヘアアレンジ くせ毛 うねり 使いやすい ストレート 痛まない 最新モデル 旧NIS3001" style="max-width: 100%; height: auto; object-fit: contain;" loading="lazy">
+                </div>
+                
+                <div class="product-info" style="flex: 1;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <div style="color: var(--primary); font-size: 1.8rem; font-weight: 800; font-family: 'Lato';">
+                            13,200<span style="font-size: 0.9rem; font-weight: 500;"> 円（税込）</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+                            <span style="color: #FF9900; font-weight: 700;">★ 4.64</span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">(248件のレビュー)</span>
+                        </div>
+                    </div>
+
+                    <div style="background: #FDF2F2; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary);">
+                        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">商品名 Nobby by TESCOM ノビー バイ テスコム プロフェッショナル プロテクトイオン ストレートアイロン NIS500B 商品情報 根元から毛先まで細部の仕上がりまでこだわる、サロン帰りのような美しいストレートヘアに。 ■サロンクオリティの艶ストレートへ。シルクコーティング?で髪のうるおいを守り、ヘアカラーをキープするストレートアイロンです。細部までこだわり抜いた仕様で、スタイリン...</p>
+                    </div>
+
+                    <a href="https://hb.afl.rakuten.co.jp/hgc/g00sqjgn.1a2pr13f.g00sqjgn.1a2ps59d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbeautypark2017%2F4975302430717%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbeautypark2017%2Fi%2F10001996%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-primary" style="width: 100%; max-width: 400px;">
+                        楽天市場で最新価格を確認する
+                    </a>
+                </div>
+            </div>
+        </div>
         
     </section>
 
-    <section id="ranking">
-        <h2>おすすめ10選ランキング</h2>
-        
-        <div class="product-card">
-            <div class="rank-badge rank-1">
-                1
-            </div>
-            
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_gold/salonmoon/slm004/flick/slm004_f_00_ra_d6_15off_3392.jpg" alt="【15%クーポンで3392円】「MONOQLO A+評価受賞」 ストレートアイロン ヘアアイロン 24mm 15mm SALONMOON サロンムーン チタニウム プレート 痛まない おすすめ ストレートヘアアイロン 美容師 おすすめ プロ仕様 海外対応 カール コテ も 2WAY" class="product-image" loading="lazy">
-            
-            <div class="card-body">
-                <h3 class="product-name">【15%クーポンで3392円】「MONOQLO A+評価受賞」 ストレートアイロン ヘアアイロン 24mm 15mm SALONMOON サロンムーン チタニウム プレート 痛まない おすすめ ストレートヘアアイロン 美容師 おすすめ プロ仕様 海外対応 カール コテ も 2WAY</h3>
-                
-                <div class="price-area">
-                    3,990円
-                </div>
-                
-                <div class="review-area">
-                    <span class="stars">★4.64</span>
-                    <span class="review-count">(1,433件のレビュー)</span>
-                </div>
-
-                <p class="product-caption">商品説明 メーカー名SALONMOON 商品名イオンストレートヘアアイロン サイズ 本体：約300mm x 30mm x 35mm プレート：約90mm x 24mm 重量約350g ( コード込み ) コードの長さ約2m ( 長すぎず、短すぎない、断線しにくい長さ ) 定格電圧100-240V ＜ 海外対応 ＞ 付属品本体・取扱説明書・耐熱性シリコンカバー 【 フローティング&クッションプレート...</p>
-
-                <a href="https://hb.afl.rakuten.co.jp/hgc/g00t6tgn.1a2pr568.g00t6tgn.1a2psb8a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsalonmoon%2Fslm004%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsalonmoon%2Fi%2F10000000%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-cta">
-                    楽天市場で最新価格をチェックする →
-                </a>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <div class="rank-badge rank-2">
-                2
-            </div>
-            
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/chouchou-store/cabinet/magnet/mhp_curl32_s2_pls.jpg" alt="【1,584円OFFクーポン】マグネットヘアプロ カールアイロン 正規品 26mm 32mm 38mm コテ 美容師 ヘアアイロン プレゼント ギフト プロ サロン専売品 痛まない 太め ヘアアイロン 海外対応 巻き髪 前髪 軽量 持ち運び 1年保証 送料無料 公認" class="product-image" loading="lazy">
-            
-            <div class="card-body">
-                <h3 class="product-name">【1,584円OFFクーポン】マグネットヘアプロ カールアイロン 正規品 26mm 32mm 38mm コテ 美容師 ヘアアイロン プレゼント ギフト プロ サロン専売品 痛まない 太め ヘアアイロン 海外対応 巻き髪 前髪 軽量 持ち運び 1年保証 送料無料 公認</h3>
-                
-                <div class="price-area">
-                    17,600円
-                </div>
-                
-                <div class="review-area">
-                    <span class="stars">★4.62</span>
-                    <span class="review-count">(882件のレビュー)</span>
-                </div>
-
-                <p class="product-caption">CHOUCHOU楽天市場店は、マグネットヘアプロ公認正規販売店(#0012)です。 ■商品情報 ・しっかりカールの26mm ・ゆるふわカールの32mm ・顔周りのくびれヘアに最適の38mm ＜キュアクリスタルプレート&パイプ＞ ミネラルを含んだ数種類の天然鉱石をミクロパウダー化して独自配合し、アイロンのプレートとパイプ部に加工。髪にツヤと潤いを与え、弾力のある艶カールを長時間キープ ■商品特徴 ＜...</p>
-
-                <a href="https://hb.afl.rakuten.co.jp/hgc/g00tlvin.1a2pr913.g00tlvin.1a2ps83c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchouchou-store%2Fholistic-curliron-32mm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchouchou-store%2Fi%2F10000005%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-cta">
-                    楽天市場で最新価格をチェックする →
-                </a>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <div class="rank-badge rank-3">
-                3
-            </div>
-            
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/chouchou-store/cabinet/create/curlpro-sr/cpsr_lp-2.jpg" alt="【ヘアオイルとセットでお得！】クレイツ カールプロSR 正規品 26mm 32mm 38mm 45mm 美容師 プレゼント ギフト プロ サロン専売品 痛まない 太め コテ ヘアアイロン 巻き髪 前髪 軽量 持ち運び 1年保証 送料無料" class="product-image" loading="lazy">
-            
-            <div class="card-body">
-                <h3 class="product-name">【ヘアオイルとセットでお得！】クレイツ カールプロSR 正規品 26mm 32mm 38mm 45mm 美容師 プレゼント ギフト プロ サロン専売品 痛まない 太め コテ ヘアアイロン 巻き髪 前髪 軽量 持ち運び 1年保証 送料無料</h3>
-                
-                <div class="price-area">
-                    5,779円
-                </div>
-                
-                <div class="review-area">
-                    <span class="stars">★4.61</span>
-                    <span class="review-count">(794件のレビュー)</span>
-                </div>
-
-                <p class="product-caption">当店はクレイツ公式認定の正規品販売店です。 当店はクレイツ公式認定の正規品販売店で、メーカー保証が1年間ご利用いただけます。 選べる4サイズ展開。クレイツイオンカールプロSR クレイツイオンカールプロは26mm(C73308)/32mm(C73310)/38mm(C73312)/45mm(C73315)の4サイズを展開しており、自分好みのヘアスタイルに合わせて選ぶことができます。一番人気は32mm...</p>
-
-                <a href="https://hb.afl.rakuten.co.jp/hgc/g00tlvin.1a2pr913.g00tlvin.1a2ps83c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchouchou-store%2Fcurlpro-sr-32mm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchouchou-store%2Fi%2F10001143%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-cta">
-                    楽天市場で最新価格をチェックする →
-                </a>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <div class="rank-badge rank-other">
-                4
-            </div>
-            
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kobe-beauty-labo/cabinet/1st_thum/sal014.jpg" alt="《SALONIA公式店》楽天1位【SALONIA サロニア スムースシャイン ヘアアイロン ストレート 24mm カール 32mm】コテ shb sms shsm◆30日間全額返金保証◆ rec プレゼント ギフト 痛まない ヘアアイロン slall" class="product-image" loading="lazy">
-            
-            <div class="card-body">
-                <h3 class="product-name">《SALONIA公式店》楽天1位【SALONIA サロニア スムースシャイン ヘアアイロン ストレート 24mm カール 32mm】コテ shb sms shsm◆30日間全額返金保証◆ rec プレゼント ギフト 痛まない ヘアアイロン slall</h3>
-                
-                <div class="price-area">
-                    13,200円
-                </div>
-                
-                <div class="review-area">
-                    <span class="stars">★4.45</span>
-                    <span class="review-count">(693件のレビュー)</span>
-                </div>
-
-                <p class="product-caption">≫当店からのメールが届かないお客様はこちら ≫特定商取引法に基づく表記はこちら 商品名 サロニア スムースシャイン ストレートヘアアイロン サロニア スムースシャイン カールヘアアイロン サロニア スムースシャイン マルチケアブラシ 商品区分 家電 商品内容 ストレートヘアアイロン： 詳しくはこちら＞＞ カールヘアアイロン： 詳しくはこちら＞＞ スムースシャイン マルチケアブラシ： 詳しくはこちら...</p>
-
-                <a href="https://hb.afl.rakuten.co.jp/hgc/g00r23nn.1a2pr533.g00r23nn.1a2ps6a0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkobe-beauty-labo%2Fsal014%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkobe-beauty-labo%2Fi%2F10002527%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-cta">
-                    楽天市場で最新価格をチェックする →
-                </a>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <div class="rank-badge rank-other">
-                5
-            </div>
-            
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/holistic-cures/cabinet/mg/0000mg_07k.jpg" alt="【公式店限定★耐熱収納ケース付】 マグネットヘアプロ ストレートアイロン クレイツ ホリスティックキュア アイロン ヘアアイロン ストレートアイロンS 正規品 プロ コテ 艶 ツヤ 美髪 美容師 延長保証1年6ヶ月 ウェーブアイロン スタイリング 海外対応 プレゼント ギフト" class="product-image" loading="lazy">
-            
-            <div class="card-body">
-                <h3 class="product-name">【公式店限定★耐熱収納ケース付】 マグネットヘアプロ ストレートアイロン クレイツ ホリスティックキュア アイロン ヘアアイロン ストレートアイロンS 正規品 プロ コテ 艶 ツヤ 美髪 美容師 延長保証1年6ヶ月 ウェーブアイロン スタイリング 海外対応 プレゼント ギフト</h3>
-                
-                <div class="price-area">
-                    14,300円
-                </div>
-                
-                <div class="review-area">
-                    <span class="stars">★4.53</span>
-                    <span class="review-count">(559件のレビュー)</span>
-                </div>
-
-                <p class="product-caption">製品名 MAGNETHairPro ストレートアイロン／S 型名 HCS-G03DG／HCS-G06G 本体サイズ W225mm / D30mm / H30mm 本体重量 165g 温度設定 120/140/160/180/200 ℃ コード長さ 約3.0m 消費電力 30-40W 電源 単層100-240VAC(海外兼用) メーカー名 ホリスティックキュアーズ 商品説明 ※品質改良のため予告なく...</p>
-
-                <a href="https://hb.afl.rakuten.co.jp/hgc/g00tp7vn.1a2pra91.g00tp7vn.1a2psae6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fholistic-cures%2Fhcs-g03dg%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fholistic-cures%2Fi%2F10000034%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-cta">
-                    楽天市場で最新価格をチェックする →
-                </a>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <div class="rank-badge rank-other">
-                6
-            </div>
-            
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/chouchou-store/cabinet/create/elemea/elemea-curl.jpg" alt="【30%OFFクーポン】クレイツ エレメアカール カールアイロン 正規品 26mm 32mm 38mm 美容師 プレゼント ギフト プロ サロン専売品 痛まない 太め コテ ヘアアイロン 海外対応 巻き髪 前髪 軽量 持ち運び 1年保証 送料無料" class="product-image" loading="lazy">
-            
-            <div class="card-body">
-                <h3 class="product-name">【30%OFFクーポン】クレイツ エレメアカール カールアイロン 正規品 26mm 32mm 38mm 美容師 プレゼント ギフト プロ サロン専売品 痛まない 太め コテ ヘアアイロン 海外対応 巻き髪 前髪 軽量 持ち運び 1年保証 送料無料</h3>
-                
-                <div class="price-area">
-                    13,200円
-                </div>
-                
-                <div class="review-area">
-                    <span class="stars">★4.59</span>
-                    <span class="review-count">(469件のレビュー)</span>
-                </div>
-
-                <p class="product-caption">ダメージや年齢からくる「髪の悩み」にクレイツ独自の技術でアプローチ 髪の水分バランスを整え、美しい輝きとフォルムを生み出すパーソナルメイクカールアイロン。 プレート＆パイプに、従来のクレイツイオン効果を更に高めた「プレミアムクレイツイオン」を配合。 プレミアムクレイツイオンの「遠赤外線」効果により、スタイリング時に失われがちな毛髪水分の蒸散を抑え、髪内部の水分バランスを整えながらしっかりと「潤い」...</p>
-
-                <a href="https://hb.afl.rakuten.co.jp/hgc/g00tlvin.1a2pr913.g00tlvin.1a2ps83c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchouchou-store%2Felemeacurl-32mm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchouchou-store%2Fi%2F10000912%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-cta">
-                    楽天市場で最新価格をチェックする →
-                </a>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <div class="rank-badge rank-other">
-                7
-            </div>
-            
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/sunshine-store/cabinet/10430205/imgrc0159921897.jpg" alt="【在庫処分3380円ゲット！】ヘアアイロン コードレス コードレスヘアアイロン コードレス ヘアアイロン カール ストレートアイロン ミニ 2way ヘアアイロン ミニ ストレート ストレートアイロン コードレス 前髪 充電式 海外仕様対応 ヘアーアイロン コテ" class="product-image" loading="lazy">
-            
-            <div class="card-body">
-                <h3 class="product-name">【在庫処分3380円ゲット！】ヘアアイロン コードレス コードレスヘアアイロン コードレス ヘアアイロン カール ストレートアイロン ミニ 2way ヘアアイロン ミニ ストレート ストレートアイロン コードレス 前髪 充電式 海外仕様対応 ヘアーアイロン コテ</h3>
-                
-                <div class="price-area">
-                    3,380円
-                </div>
-                
-                <div class="review-area">
-                    <span class="stars">★4.4</span>
-                    <span class="review-count">(361件のレビュー)</span>
-                </div>
-
-                <p class="product-caption">ブラッドAliliyメーカーAliliy電源方式USB-C充電消費電力5W充電時間120～180分カラーホワイト、ブラック自動電源オフ機能オートオフ有海外海外仕様使用可能、機内持ち込み不可商品説明【コードレス ヘアアイロン】このストレートヘアアイロンは高品質リチウムイオン電池を内蔵し、1回のフル充電で最大40分（160℃の場合）連続使用可能です。持ち運びに便利なコードレスタイプ、USB充電式でコン...</p>
-
-                <a href="https://hb.afl.rakuten.co.jp/hgc/g00tdhyn.1a2pr9cf.g00tdhyn.1a2psd66/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunshine-store%2Flt-22584%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsunshine-store%2Fi%2F10000389%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-cta">
-                    楽天市場で最新価格をチェックする →
-                </a>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <div class="rank-badge rank-other">
-                8
-            </div>
-            
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yangzi81/cabinet/2356/imgrc0101917304.jpg" alt="【海外兼用】BAYATA ヘアアイロン カール 32mm 25mm 38mm コテ カールアイロン ヘアアイロンカール 自動電源オフ セラミックヘアアイロン カールヘアアイロン 巻き髪 太巻き カールプロ ヘアケア ウェーブ" class="product-image" loading="lazy">
-            
-            <div class="card-body">
-                <h3 class="product-name">【海外兼用】BAYATA ヘアアイロン カール 32mm 25mm 38mm コテ カールアイロン ヘアアイロンカール 自動電源オフ セラミックヘアアイロン カールヘアアイロン 巻き髪 太巻き カールプロ ヘアケア ウェーブ</h3>
-                
-                <div class="price-area">
-                    3,600円
-                </div>
-                
-                <div class="review-area">
-                    <span class="stars">★4.32</span>
-                    <span class="review-count">(282件のレビュー)</span>
-                </div>
-
-                <p class="product-caption">メーカー希望小売価格はメーカーカタログに基づいて掲載しています 商品仕様商品名：BAYATAカールアイロン品番：JK-010電源：AC100-240V（海外対応）商品電力：67W加熱方法：PTC自動オフ：60分プレート温度：100℃~220℃(25段階温度調節)プレートの長さ：25mm、32mmコードの長さ：約190cm本体重量：338g(コード込む)おすすめポイント【5段階の温度調節】最高温度2...</p>
-
-                <a href="https://hb.afl.rakuten.co.jp/hgc/g00tt6sn.1a2praaa.g00tt6sn.1a2ps126/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyangzi81%2Flt-2356%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyangzi81%2Fi%2F10000343%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-cta">
-                    楽天市場で最新価格をチェックする →
-                </a>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <div class="rank-badge rank-other">
-                9
-            </div>
-            
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/tripleshop/cabinet/11303274/0.jpg" alt="【GW早割★クーポンで2,788円！】ヘアアイロン カールアイロン 初心者向 32mm コテ ウェーブアイロン マイナスイオン 6段階温度調節 セラミックヘアアイロン 自動電源OFF 巻き髪 太巻き カールプロ ヘアケア 海外対応 やけど防止" class="product-image" loading="lazy">
-            
-            <div class="card-body">
-                <h3 class="product-name">【GW早割★クーポンで2,788円！】ヘアアイロン カールアイロン 初心者向 32mm コテ ウェーブアイロン マイナスイオン 6段階温度調節 セラミックヘアアイロン 自動電源OFF 巻き髪 太巻き カールプロ ヘアケア 海外対応 やけど防止</h3>
-                
-                <div class="price-area">
-                    3,280円
-                </div>
-                
-                <div class="review-area">
-                    <span class="stars">★4.31</span>
-                    <span class="review-count">(279件のレビュー)</span>
-                </div>
-
-                <p class="product-caption">商品説明 &#128205;プロ美容師完全監修 お客様から寄せられたご要望、アドバイスを参考に、10年経験ありのプロ美容師と共同に開発しました！ &#128205;6段階温度調整 最高温度230℃のプロ仕様で、130℃～220℃まで、10℃ごとに6段階で温度調整が可能です。髪質やヘアスタイルに応じて切り替えられるのが便利です。また、耐熱使用のスタンドを搭載しており、熱が冷めるのを待つことなく置ける...</p>
-
-                <a href="https://hb.afl.rakuten.co.jp/hgc/g00tvx2n.1a2pr8d1.g00tvx2n.1a2ps6d6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftripleshop%2Fs-jfb-669-wh%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftripleshop%2Fi%2F10000193%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-cta">
-                    楽天市場で最新価格をチェックする →
-                </a>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <div class="rank-badge rank-other">
-                10
-            </div>
-            
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/beautypark2017/cabinet/kaden/nobby/nis500a/nis500b.jpg" alt="【正規店】Nobby by TESCOM ノビー バイ テスコム プロフェッショナル プロテクトイオン ストレートアイロン NIS500B ヘアアイロン ブラック スモーキーグレー ヘアアレンジ くせ毛 うねり 使いやすい ストレート 痛まない 最新モデル 旧NIS3001" class="product-image" loading="lazy">
-            
-            <div class="card-body">
-                <h3 class="product-name">【正規店】Nobby by TESCOM ノビー バイ テスコム プロフェッショナル プロテクトイオン ストレートアイロン NIS500B ヘアアイロン ブラック スモーキーグレー ヘアアレンジ くせ毛 うねり 使いやすい ストレート 痛まない 最新モデル 旧NIS3001</h3>
-                
-                <div class="price-area">
-                    13,200円
-                </div>
-                
-                <div class="review-area">
-                    <span class="stars">★4.64</span>
-                    <span class="review-count">(248件のレビュー)</span>
-                </div>
-
-                <p class="product-caption">商品名 Nobby by TESCOM ノビー バイ テスコム プロフェッショナル プロテクトイオン ストレートアイロン NIS500B 商品情報 根元から毛先まで細部の仕上がりまでこだわる、サロン帰りのような美しいストレートヘアに。 ■サロンクオリティの艶ストレートへ。シルクコーティング?で髪のうるおいを守り、ヘアカラーをキープするストレートアイロンです。細部までこだわり抜いた仕様で、スタイリン...</p>
-
-                <a href="https://hb.afl.rakuten.co.jp/hgc/g00sqjgn.1a2pr13f.g00sqjgn.1a2ps59d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbeautypark2017%2F4975302430717%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbeautypark2017%2Fi%2F10001996%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f" target="_blank" rel="noopener sponsored" class="btn-cta">
-                    楽天市場で最新価格をチェックする →
-                </a>
-            </div>
-        </div>
-        
-    </section>
-
-    <section id="summary">
-        <h2>まとめ</h2>
-        <p>今回は「ヘアアイロン おすすめ10選」をご紹介しました。ご自身のライフスタイルや予算にぴったりの一台を見つけて、毎日の美容ケアをより楽しく、快適なものにしてくださいね。</p>
+    <section id="summary" class="section" style="background: #fff; padding: 2rem; border-radius: var(--radius); border: 2px solid var(--primary);">
+        <h2 style="margin-top: 0; color: var(--primary);">まとめ</h2>
+        <p style="margin-bottom: 0;">いかがでしたでしょうか。今回は「ヘアアイロン おすすめ10選」をご紹介しました。商品のスペックはもちろん、実際の愛用者のレビューも参考にしながら、あなたにぴったりの一台を選んでみてください。</p>
     </section>
 
     
-    <section id="related">
-        <h2>関連記事</h2>
-        <ul class="article-list">
+    <section id="related" class="section">
+        <h2 class="section-title">こちらもおすすめ</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
             
-            <li><a href="/beauty/dryer-ranking/">ヘアドライヤー おすすめ10選</a></li>
+            <a href="/beauty/dryer-ranking/" class="card" style="text-decoration: none; color: inherit; padding: 1.5rem;">
+                <h3 style="font-size: 1rem; margin: 0; color: var(--text-main);">ヘアドライヤー おすすめ10選</h3>
+                <span style="color: var(--primary); font-size: 0.85rem; font-weight: 700; margin-top: 0.5rem; display: block;">記事を読む →</span>
+            </a>
             
-        </ul>
+        </div>
     </section>
     
 </article>
 
+<style>
+    @media (max-width: 768px) {
+        .ranking-card-body { flex-direction: column; gap: 1rem; }
+        .product-image-container { flex: none; width: 100%; }
+        .rank-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    }
+</style>
+
     </main>
 
     <footer>
-        <p>© 2026 美活ライフ【2026年最新】 - あなたにぴったりの商品選びをサポート。</p>
-        <p>当サイトは、楽天市場の商品情報を活用したアフィリエイトサイトです。最新の価格や在庫状況は楽天サイトにてご確認ください。</p>
+        <div class="footer-nav">
+            <a href="/">トップページ</a>
+            <a href="/about/">当サイトについて</a>
+            <a href="/privacy-policy/">プライバシーポリシー</a>
+        </div>
+        <p>© 2026 美活ライフ【2026年最新】</p>
+        <p style="font-size: 0.8rem; max-width: 600px; margin: 1rem auto;">
+            当サイトはアフィリエイト広告を利用しています。紹介している商品の最新価格や在庫状況、正確な仕様については、リンク先の楽天市場各ショップのページにて必ずご確認ください。
+        </p>
     </footer>
 </body>
 </html>
