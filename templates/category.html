@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section style="margin-bottom: 3rem;">
+    <nav style="font-size: 0.875rem; margin-bottom: 1rem;">
+        <a href="{{ base_url }}/" style="color: #666; text-decoration: none;">トップ</a> &gt; {{ category_name }}
+    </nav>
+    <h2 style="font-size: 1.8rem; border-left: 5px solid var(--rakuten-red); padding-left: 15px; margin-bottom: 0.5rem;">{{ category_name }} の人気ランキング</h2>
+    <p>{{ category_name }} ジャンルでレビュー数の多い人気商品を集めました。</p>
+</section>
+
+<div class="product-grid">
+    {% for item in items %}
+    <article class="product-card">
+        <a href="{{ item.url }}" target="_blank" rel="noopener sponsored">
+            <img src="{{ item.image }}" alt="{{ item.name }}" loading="lazy">
+            <div class="card-body">
+                <h3>{{ item.name }}</h3>
+                <p class="price">{{ "{:,}".format(item.price) }}円</p>
+                <p class="review">★{{ item.reviewAverage }} ({{ item.reviewCount }}件)</p>
+                <p style="font-size:0.75rem; color:#888; margin-top:5px;">{{ item.shopName }}</p>
+                <span class="btn">楽天で見る</span>
+            </div>
+        </a>
+    </article>
+    {% endfor %}
+</div>
+{% endblock %}

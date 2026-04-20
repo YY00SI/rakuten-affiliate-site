@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+    <h1>{{ site_name }}</h1>
+    <p>{{ site_description }}</p>
+</div>
+
+{% for category in categories %}
+<section style="margin-bottom: 4rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #ddd; margin-bottom: 1.5rem;">
+        <h2 style="margin: 0;">{{ category.name }}</h2>
+    </div>
+    
+    <div class="product-grid">
+        {% for item in category.products[:12] %}
+        <article class="product-card">
+            <a href="{{ item.url }}" target="_blank" rel="noopener sponsored">
+                <img src="{{ item.image }}" alt="{{ item.name }}" class="product-image" loading="lazy">
+                <div class="card-body">
+                    <p class="product-name">{{ item.name }}</p>
+                    <p class="price">{{ "{:,}".format(item.price) }}円</p>
+                    <p class="review">
+                        {% if item.reviewAverage > 0 %}
+                            ★ {{ item.reviewAverage }} ({{ item.reviewCount }}件)
+                        {% else %}
+                            レビューなし
+                        {% endif %}
+                    </p>
+                    <span class="btn">楽天で詳細を見る</span>
+                </div>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endfor %}
+
+{% endblock %}

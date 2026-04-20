@@ -1,0 +1,48 @@
+name: Build and Deploy Affiliate Site
+
+on:
+  schedule:
+    - cron: '0 1 * * *'    # 毎日 10:00 JST (01:00 UTC)
+    - cron: '0 13 * * *'   # 毎日 22:00 JST (13:00 UTC)
+  workflow_dispatch:       # 手動実行ボタン
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch Products from Rakuten API
+        env:
+          RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
+          RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
+          RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
+        run: python src/fetch_products.py
+
+      - name: Build Static Site
+        run: python src/build_site.py
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # output/site の内容をリポジトリの docs/ フォルダに同期
+          # (GitHub Pages の設定で /docs を公開対象にするため)
+          rm -rf docs/
+          cp -r output/site/ docs/
+          
+          git add docs/
+          git diff --staged --quiet || (git commit -m "chore: auto-update $(date -u +'%Y-%m-%d %H:%M UTC')" && git push)
