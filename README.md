@@ -1,18 +1,27 @@
-# Rakuten Affiliate Auto-Update Site
+# 楽天アフィリエイト「キーワード記事型」自動生成サイト v2.0
 
-楽天商品検索APIを活用し、GitHub Actionsで毎日自動更新されるアフィリエイト静的サイトです。
-GitHub Pagesで無料でホスティングされます。
+楽天市場の商品検索APIを活用し、SEOに最適化された「おすすめ記事」を自動生成するアフィリエイトサイトです。
 
-## システム構成
-- **データ取得**: `src/fetch_products.py` (楽天API)
-- **サイト生成**: `src/build_site.py` (Jinja2)
-- **SEO管理**: `src/generate_sitemap.py`
-- **自動化**: GitHub Actions (`.github/workflows/build_and_deploy.yml`)
+## v2.0 の特徴
 
-## セットアップ
-1. 楽天デベロッパーアカウントでアプリIDを取得
-2. 楽天アフィリエイトIDを取得
-3. GitHubリポジトリのSecretsに以下を登録:
-   - `RAKUTEN_APP_ID`
-   - `RAKUTEN_AFFILIATE_ID`
-4. GitHub Pagesの設定で `main` ブランチの `docs/` フォルダをソースに指定
+- **キーワード中心の設計**: カテゴリ一覧ではなく、「ドライヤー おすすめ10選」のような検索意図に対応した記事ページを生成。
+- **SEO最適化**: H1タグ、メタディスクリプション、目次、選び方のポイント、ランキング構造を自動構成。
+- **高成約率テンプレート**: 楽天レッドを基調としたデザイン、視認性の高いランキングバッジ、強力なCTA（Call to Action）ボタンを実装。
+- **新システム対応**: 最新の楽天API仕様（UUID形式ID）に対応。
+- **完全自動更新**: GitHub Actions により、毎日最新の価格・レビュー数に基づいたランキングを維持。
+
+## ディレクトリ構造
+
+- `config/articles.yaml`: 記事の構成、キーワード、検索条件を管理
+- `src/fetch_products.py`: 楽天APIからデータを取得し `data/` に保存
+- `src/build_site.py`: `templates/` を使用して `docs/` に静的サイトを生成
+- `docs/`: 生成されたサイト（GitHub Pages 公開用）
+- `templates/`: Jinja2 テンプレートファイル
+
+## 運用方法
+
+1. `config/articles.yaml` に新しい記事の設定を追加する。
+2. GitHub にプッシュすると、GitHub Actions が自動的にデータを取得し、サイトを更新・デプロイします。
+
+## 免責事項
+当サイトはアフィリエイトリンクを含みます。商品情報は楽天市場のAPIより取得しており、最新の情報はリンク先の各ショップにてご確認ください。

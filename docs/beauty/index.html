@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if article %}{{ article.title }}{% elif category %}{{ category.name }} - {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
-    <meta name="description" content="{% if article %}{{ article.meta_description }}{% else %}{{ site.description }}{% endif %}">
+    <title>美容家電 - 美活ライフ【2026年最新】</title>
+    <meta name="description" content="美容家電の選び方とおすすめ商品を徹底比較。あなたの「なりたい」を叶えるアイテムが見つかる。">
     
     <style>
         :root {
@@ -210,16 +210,33 @@
 <body>
     <header>
         <div class="header-content">
-            <a href="/" class="logo">{{ site.name }}</a>
+            <a href="/" class="logo">美活ライフ【2026年最新】</a>
         </div>
     </header>
 
     <main>
-        {% block content %}{% endblock %}
+        
+<section>
+    <h1>美容家電の記事一覧</h1>
+    <p>最新のドライヤー、ヘアアイロン、電動歯ブラシなどを厳選。</p>
+
+    <ul class="article-list">
+        
+        <li>
+            <a href="/beauty/dryer-ranking/">ヘアドライヤー おすすめ10選</a>
+        </li>
+        
+        <li>
+            <a href="/beauty/iron-ranking/">ヘアアイロン おすすめ10選</a>
+        </li>
+        
+    </ul>
+</section>
+
     </main>
 
     <footer>
-        <p>© 2026 {{ site.name }} - あなたにぴったりの商品選びをサポート。</p>
+        <p>© 2026 美活ライフ【2026年最新】 - あなたにぴったりの商品選びをサポート。</p>
         <p>当サイトは、楽天市場の商品情報を活用したアフィリエイトサイトです。最新の価格や在庫状況は楽天サイトにてご確認ください。</p>
     </footer>
 </body>

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article>
+    <h1>【2026年最新】{{ article.h1 }}</h1>
+    <p class="updated-at">最終更新日: {{ today }}</p>
+
+    <div class="toc">
+        <strong>目次</strong>
+        <ul>
+            <li><a href="#intro">はじめに</a></li>
+            <li><a href="#criteria">選び方のポイント</a></li>
+            <li><a href="#ranking">おすすめ商品ランキング</a></li>
+            <li><a href="#summary">まとめ</a></li>
+        </ul>
+    </div>
+
+    <section id="intro">
+        <p>{{ article.intro | replace('\n', '<br>') | safe }}</p>
+    </section>
+
+    <section id="criteria">
+        <h2>{{ article.h1 }}の選び方</h2>
+        {% for criterion in article.selection_criteria %}
+        <h3>{{ criterion.title }}</h3>
+        <p>{{ criterion.body }}</p>
+        {% endfor %}
+    </section>
+
+    <section id="ranking">
+        <h2>おすすめ{{ items|length }}選ランキング</h2>
+        {% for item in items %}
+        <div class="product-card">
+            <div class="rank-badge {% if loop.index <= 3 %}rank-{{ loop.index }}{% else %}rank-other{% endif %}">
+                {{ loop.index }}
+            </div>
+            
+            <img src="{{ item.image }}" alt="{{ item.name }}" class="product-image" loading="lazy">
+            
+            <div class="card-body">
+                <h3 class="product-name">{{ item.name }}</h3>
+                
+                <div class="price-area">
+                    {{ "{:,}".format(item.price) }}円
+                </div>
+                
+                <div class="review-area">
+                    <span class="stars">★{{ item.reviewAverage }}</span>
+                    <span class="review-count">({{ "{:,}".format(item.reviewCount) }}件のレビュー)</span>
+                </div>
+
+                <p class="product-caption">{{ item.caption }}...</p>
+
+                <a href="{{ item.affiliateUrl }}" target="_blank" rel="noopener sponsored" class="btn-cta">
+                    楽天市場で最新価格をチェックする →
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+
+    <section id="summary">
+        <h2>まとめ</h2>
+        <p>今回は「{{ article.h1 }}」をご紹介しました。ご自身のライフスタイルや予算にぴったりの一台を見つけて、毎日の美容ケアをより楽しく、快適なものにしてくださいね。</p>
+    </section>
+
+    {% if related_articles %}
+    <section id="related">
+        <h2>関連記事</h2>
+        <ul class="article-list">
+            {% for rel in related_articles %}
+            <li><a href="{{ rel.url }}">{{ rel.h1 }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+</article>
+{% endblock %}

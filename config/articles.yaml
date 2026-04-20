@@ -1,0 +1,84 @@
+# 楽天アフィリエイト「キーワード記事型」自動生成サイト
+# config/articles.yaml
+
+site:
+  name: "美活ライフ【2026年最新】"
+  description: "美容家電の選び方とおすすめ商品を徹底比較。あなたの「なりたい」を叶えるアイテムが見つかる。"
+  base_url: "https://yoshio-fujimoto.github.io/antigravity-site/" # 仮。GitHubのユーザー名に合わせて変更が必要
+
+categories:
+  - id: "beauty-appliances"
+    name: "美容家電"
+    slug: "beauty"
+    description: "最新のドライヤー、ヘアアイロン、電動歯ブラシなどを厳選。"
+
+articles:
+  # =================== MVP: ドライヤー ===================
+  - id: "hair-dryer-ranking"
+    category_id: "beauty-appliances"
+    slug: "dryer-ranking"
+    enabled: true
+
+    # SEO設定
+    h1: "ヘアドライヤー おすすめ10選"
+    title: "【2026年最新】ヘアドライヤー おすすめ10選｜速乾・ヘアケア・コスパ最強を比較"
+    meta_description: "ヘアドライヤーのおすすめ10選を紹介。ナノケア、リファ、サロニアなど人気の速乾・ヘアケアモデルをレビュー数・評価でランキング形式で比較。"
+
+    # 記事本文
+    intro: |
+      毎日使うドライヤーだからこそ、仕上がりや乾く速さにこだわりたいですよね。
+      本記事では、楽天市場で実際に売れている人気ドライヤーの中から、
+      特に「髪に優しい」「時短になる」と評判の10機種を厳選しました。
+
+    selection_criteria:
+      - title: "風量と速乾性能で選ぶ"
+        body: "忙しい朝や疲れた夜には、大風量（1.5〜2.0㎥/分以上）のモデルがおすすめ。熱によるダメージを抑えつつ、短時間で髪を乾かすことができます。"
+      - title: "ヘアケア・イオン機能で選ぶ"
+        body: "マイナスイオンやナノイーなどの機能は、髪の水分バランスを整え、ツヤのある仕上がりに導きます。ダメージが気になる方は必須の機能です。"
+      - title: "重さと操作性で選ぶ"
+        body: "長い時間持つものなので、400〜600g程度の軽量モデルが使いやすいです。折りたたみ機能の有無も収納場所に合わせて確認しましょう。"
+
+    # 楽天API検索パラメータ
+    rakuten_params:
+      keyword: "ドライヤー 速乾 ナノケア"
+      # genre_id: "100063" # 新システムでエラーになるため一時コメントアウト
+      sort: "-reviewCount"
+      hits: 10
+      min_review_count: 100
+
+    # 内部リンク（関連記事のslugを指定）
+    related_article_ids:
+      - "hair-iron-ranking"
+
+  # =================== Phase 1: ヘアアイロン ===================
+  - id: "hair-iron-ranking"
+    category_id: "beauty-appliances"
+    slug: "iron-ranking"
+    enabled: true
+
+    h1: "ヘアアイロン おすすめ10選"
+    title: "【2026年最新】ヘアアイロン おすすめ10選｜痛まない・ストレート・カール用を厳選"
+    meta_description: "ヘアアイロンのおすすめ10選。髪が痛みにくいモデルや、初心者でも使いやすいストレート・カール兼用タイプをランキングで紹介。"
+
+    intro: |
+      スタイリングの質を左右するヘアアイロン。
+      温度調節の細かさやプレートの素材によって、髪へのダメージは大きく変わります。
+      ここでは、楽天市場で高評価を得ている最新の人気モデルを比較しました。
+
+    selection_criteria:
+      - title: "プレートの素材で選ぶ"
+        body: "摩擦の少ないセラミックやチタンコーティングは、髪へのダメージを抑えられます。滑りの良さがスタイリングのしやすさに直結します。"
+      - title: "温度調節機能で選ぶ"
+        body: "細かく温度設定（120〜200℃など）ができるモデルなら、髪質やコンディションに合わせて最適なスタイリングが可能です。"
+      - title: "形状と用途で選ぶ"
+        body: "ストレート専用、カール専用、両方使える2WAYタイプがあります。自分が一番よく使うスタイルに合わせて選びましょう。"
+
+    rakuten_params:
+      keyword: "ヘアアイロン 痛まない"
+      # genre_id: "100063"
+      sort: "-reviewCount"
+      hits: 10
+      min_review_count: 100
+
+    related_article_ids:
+      - "hair-dryer-ranking"

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <h1>{{ category.name }}の記事一覧</h1>
+    <p>{{ category.description }}</p>
+
+    <ul class="article-list">
+        {% for article in articles %}
+        <li>
+            <a href="{{ article.url }}">{{ article.conf.h1 }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}
