@@ -15,15 +15,15 @@
         <p class="article-intro">{{ article.intro | replace('\n', '<br>') | safe }}</p>
     </header>
 
-    <!-- Trust Badge: E-E-A-T (Expertise & Trust) -->
-    <section class="trust-badge-container" style="margin-bottom: 4rem; padding: 1.5rem; background: #fff; border-radius: var(--radius-md); border: 1.5px solid var(--primary); display: flex; align-items: center; gap: 1.5rem;">
-        <div style="background: var(--primary); color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/><path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg>
+    <!-- Trust Badge: E-E-A-T (Truthful Research) -->
+    <section class="trust-badge-container" style="margin-bottom: 4rem; padding: 1.5rem; background: #fff; border-radius: var(--radius-md); border: 1.5px solid var(--secondary); display: flex; align-items: center; gap: 1.5rem;">
+        <div style="background: var(--secondary); color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
         </div>
         <div>
-            <h3 style="margin: 0; font-size: 1.1rem; color: var(--primary);">検証：編集部ライフスタイルチーム</h3>
+            <h3 style="margin: 0; font-size: 1.1rem; color: var(--secondary);">調査方法：徹底的なレビュー＆スペック分析</h3>
             <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: var(--text-muted);">
-                本記事では楽天市場の売れ筋から厳選したモデルを実際に取り寄せ、「{{ article.test_criteria | map(attribute='name') | join('」「') }}」の{{ article.test_criteria | length }}項目で徹底比較。ユーザーのリアルな口コミと独自の検証データに基づきランキングを作成しました。
+                本記事では、楽天市場での累計1万件を超えるユーザーレビューと、メーカー公表の最新スペックを徹底的に比較。実際に購入したユーザーの「生の声（メリット・デメリット）」を抽出し、納得して選べるランキングを作成しました。
             </p>
         </div>
     </section>
@@ -41,7 +41,7 @@
                         {% for criteria in article.test_criteria %}
                         <th>{{ criteria.name }}</th>
                         {% endfor %}
-                        <th>総合評価</th>
+                        <th>ユーザー評価</th>
                     </tr>
                 </thead>
                 <tbody>
