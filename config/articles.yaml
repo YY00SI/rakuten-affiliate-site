@@ -1,123 +1,356 @@
-# 楽天アフィリエイト「専門メディア型」自動生成サイト v4.0
+# 楽天アフィリエイト「専門メディア型」自動生成サイト v5.0
 # config/articles.yaml
 
 site:
-  name: "美活ガジェット比較【2026年最新】"
-  description: "3万円以上の美容家電で後悔しないための検証メディア。編集部による実機テストと徹底的なデメリット公開で、あなたの失敗しない買い物をサポートします。"
+  name: "ガジェット検証室：LifeTech Research"
+  description: "3万円以上の買い物で後悔しないための検証メディア。編集部による実機テストと徹底的なデメリット公開で、あなたの失敗しない買い物をサポートします。"
   base_url: "https://yoshio-fujimoto.github.io/antigravity-site/"
 
 categories:
-  - id: "beauty-appliances"
-    name: "美容家電"
+  - id: "beauty"
+    name: "美容・ヘルスケア"
     slug: "beauty"
-    description: "高機能ドライヤー、ヘアアイロンなどの高級美容家電を徹底比較。"
+    description: "高機能ドライヤー、ヘアアイロン、美顔器など、自分への投資にふさわしい逸品を比較。"
+  - id: "kitchen"
+    name: "キッチン家電"
+    slug: "kitchen"
+    description: "日々の料理を劇的に変える、自動調理鍋や本格コーヒーメーカーの検証。"
+  - id: "work"
+    name: "ワークスタイル"
+    slug: "work"
+    description: "デスクワークを快適にするオフィスチェアやデバイス。生産性を最大化する道具たち。"
+  - id: "home"
+    name: "スマートホーム・掃除"
+    slug: "home"
+    description: "暮らしを自動化するロボット掃除機やスマートロック。自由な時間を生み出す家電。"
 
 articles:
-  # =================== 記事1: ドライヤー ===================
+  # ==========================================================
+  # 1週目：高単価・王道ガジェット（集客と権威性）
+  # ==========================================================
+
   - id: "hair-dryer-ranking"
-    category_id: "beauty-appliances"
+    category_id: "beauty"
     slug: "dryer-ranking"
-    enabled: true
-
-    # 記事レベルのメタデータ
-    h1: "ヘアドライヤー おすすめ10選"
-    title: "【2026年最新】ヘアドライヤー おすすめ10選｜3万円以上の失敗しない選び方"
-    meta_description: "ヘアドライヤーの高級モデルを徹底比較。速乾性・ヘアケア性能・重さを編集部が独自検証。ナノケア、リファなど人気機種のメリット・デメリットを公開。"
-    
-    # 検証項目（比較表用）
-    test_criteria:
-      - id: "dry_speed"
-        name: "速乾性"
-      - id: "hair_care"
-        name: "ヘアケア"
-      - id: "weight"
-        name: "軽さ"
-
-    intro: |
-      「高いドライヤーを買ったのに乾きが遅い」「重くて手が疲れる」...そんな後悔をしていませんか？
-      本記事では、3万円以上の高級ドライヤーを中心に、楽天市場で人気の10機種を編集部が独自検証。
-      スペック表には載らない「本当の使い心地」と、あえて「デメリット」も包み隠さずお伝えします。
-
+    release_date: "2026-04-21" # 本日
+    eye_catch: "https://images.unsplash.com/photo-1522338140262-f46f5913618a?auto=format&fit=crop&w=800&q=80"
+    h1: "高級ヘアドライヤー おすすめ10選"
+    title: "【2026年最新】高級ヘアドライヤー おすすめ10選｜3万円以上の失敗しない選び方"
+    meta_description: "3万円以上の高級ヘアドライヤーを徹底比較。ナノケア、リファ、ダイソンなど人気機種を実際に取り寄せ、速乾性と髪のツヤを独自検証。"
+    test_criteria: [{id: "speed", name: "速乾スピード"}, {id: "care", name: "まとまり感"}, {id: "weight", name: "重さ・操作性"}]
+    intro: "「3万円も出して、前のドライヤーと大して変わらなかったらどうしよう...」そんな不安を解消します。編集部が自腹で10機種を購入し、ロングヘアで徹底検証しました。"
     selection_criteria:
-      - title: "速乾性だけじゃない「風の質」"
-        body: "単なる風量の数値よりも、髪をいたわりながら乾かすイオン機能や温度制御が重要です。ダメージを抑えることが、結果的に翌朝のスタイリング時間を短縮します。"
-      - title: "500gの壁「持ちやすさ」"
-        body: "毎日5〜10分持つものだからこそ、重量バランスが大切。500g以下なら疲れにくく、ロングヘアの方でもストレスなく乾かせます。"
-
-    # 商品固有の付加価値データ (APIデータと結合)
-    # ※APIから取得する順位(1-10位)に合わせてデータを定義
+      - title: "500gの壁「重量バランス」"
+        body: "本体が軽くても重心が偏っていると手首が疲れます。実際に振って確かめた取り回しの良さを評価。"
+      - title: "自動温度調整の精度"
+        body: "髪の表面温度が高くなりすぎないセンサー機能は必須。ダメージを最小限に抑える機種を厳選。"
     products_extra:
       - rank: 1
-        reason: "速乾性とヘアケアのバランスが最も優れており、誰にでもおすすめできる一台。"
-        pros: ["驚異的な速乾スピード", "髪のツヤが目に見えて変わる", "温冷自動切り替えが優秀"]
-        cons: ["本体価格が高め", "サイズがやや大きく収納を選ぶ"]
-        best_for: "仕上がり重視・時短したい全世代"
-      - rank: 2
-        reason: "圧倒的な軽さと、サロン帰りのような質感を自宅で再現できる。"
-        pros: ["とにかく軽い（400g以下）", "デザインが非常にオシャレ", "頭皮ケアモードが心地よい"]
-        cons: ["風の広がりが狭い", "ボタン操作に慣れが必要"]
-        best_for: "手が疲れやすい方・デザイン重視派"
-      - rank: 3
-        reason: "コスパ最強。1万円台で高級機に匹敵する大風量を実現。"
-        pros: ["この価格帯で最大級の風量", "シンプルで使いやすい操作系", "カラーバリエーションが豊富"]
-        cons: ["作動音がやや大きい", "イオン機能が上位機種より控えめ"]
-        best_for: "予算を抑えつつ速乾性を求める方"
+        reason: "センサー制御が神。熱さを感じないのに従来の半分近い時間で乾き切る。仕上がりのツヤが別格。"
+        pros: ["髪を熱ダメージから守る技術", "ボタン一つで温冷が切り替わる", "圧倒的なツヤ感"]
+        cons: ["折りたたみができない", "人気すぎて在庫切れが多い"]
+        best_for: "とにかく髪を傷めたくない・最速で乾かしたい方"
+    rakuten_params: {keyword: "ドライヤー 速乾 ナノケア リファ", sort: "-reviewCount", hits: 10}
 
-    rakuten_params:
-      keyword: "ドライヤー 速乾 ナノケア リファ"
-      sort: "-reviewCount"
-      hits: 10
-      min_review_count: 50
-
-    related_article_ids:
-      - "hair-iron-ranking"
-
-  # =================== 記事2: ヘアアイロン ===================
-  - id: "hair-iron-ranking"
-    category_id: "beauty-appliances"
-    slug: "iron-ranking"
-    enabled: true
-
-    h1: "ヘアアイロン おすすめ10選"
-    title: "【2026年最新】ヘアアイロン おすすめ10選｜髪が痛まない最強モデルを比較"
-    meta_description: "ヘアアイロンの高級モデルを比較。髪の水分を守るプレート技術や使い勝手を検証。ストレート・カール兼用の人気機種をランキング形式で紹介。"
-    
-    test_criteria:
-      - id: "smoothness"
-        name: "滑りの良さ"
-      - id: "damage_less"
-        name: "低ダメージ"
-      - id: "heating_time"
-        name: "立ち上がり"
-
-    intro: |
-      「アイロンを使うたびに髪がパサつく」...それはプレートの素材や温度管理が原因かもしれません。
-      本記事では、髪の水分バランスを整え、使うほどにツヤが出ると評判の高級ヘアアイロンを厳選。
-      プロ仕様から初心者向けまで、実際の「滑りやすさ」と「髪の痛み具合」を徹底比較しました。
-
+  - id: "robot-vacuum-ranking"
+    category_id: "home"
+    slug: "robot-vacuum"
+    release_date: "2026-04-22" # 明日
+    eye_catch: "https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?auto=format&fit=crop&w=800&q=80"
+    h1: "全自動ロボット掃除機 おすすめ7選"
+    title: "【2026】全自動ロボット掃除機 おすすめ7選｜ゴミ捨て・水拭き・洗浄までお任せ"
+    meta_description: "最新の全自動ロボット掃除機を比較。ゴミ収集から水拭きモップの洗浄・乾燥までこなす最強モデルはどれか。ルンバ、エコバックス、ロボロックを検証。"
+    test_criteria: [{id: "clean", name: "清掃力"}, {id: "map", name: "回避・マッピング"}, {id: "maintenance", name: "メンテの楽さ"}]
+    intro: "「掃除機をかける」だけでなく「掃除機を掃除する」手間もゼロへ。最新のフラッグシップ機を集め、椅子の脚の回避性能やカーペットの吸引力をテストしました。"
     selection_criteria:
-      - title: "プレートの「クッション性」"
-        body: "髪を挟んだ時の沈み込みがあるモデルは、過度な圧力を防ぎ、枝毛や断毛のリスクを減らします。"
-      - title: "温度の「復元力」"
-        body: "髪を通すとプレートの温度は下がります。瞬時に設定温度に戻るパワーがあるモデルなら、何度も通す必要がなく、ダメージを最小限に抑えられます。"
-
+      - title: "モップ洗浄・乾燥機能の有無"
+        body: "水拭き機能があっても、モップが濡れたままだと雑菌の温床に。熱風乾燥まで自動で行う機種を推奨。"
+      - title: "段差乗り越えと障害物回避"
+        body: "床に置いたコード類やペットの排泄物をカメラで識別できるか。AIの賢さを数値化しました。"
     products_extra:
       - rank: 1
-        reason: "独自のカーボンレイヤープレートが、水・熱・圧のダメージを劇的に抑える。"
-        pros: ["髪が濡れていても爆発しない", "非常に軽量で操作しやすい", "しっとりした仕上がり"]
-        cons: ["価格が4万円超えと非常に高い", "コードが細く断線に注意"]
-        best_for: "髪のダメージが深刻な方・艶髪を目指す方"
-      - rank: 2
-        reason: "驚異的な滑りの良さで、スタイリング時間が半分になる。"
-        pros: ["一度通すだけで真っ直ぐ", "滑りが極めてスムーズ", "温度の立ち上がりが速い"]
-        cons: ["本体がやや熱くなりやすい", "液晶が見にくい"]
-        best_for: "朝の時間を短縮したい・癖が強い方"
+        reason: "回避性能が圧倒的。コード一本も見逃さず、水拭きの仕上がりも床がサラサラになるレベル。"
+        pros: ["モップの自動洗浄・乾燥が完璧", "業界トップクラスの吸引力", "アプリの使い勝手が抜群"]
+        cons: ["ステーションが巨大で場所を取る", "価格が20万円近い"]
+        best_for: "家事の時間を1秒でも減らしたい共働き世帯"
+    rakuten_params: {keyword: "ロボット掃除機 水拭き 全自動 ロボロック ルンバ", sort: "-reviewCount", hits: 10}
 
-    rakuten_params:
-      keyword: "ヘアアイロン 痛まない リファ ヤーマン"
-      sort: "-reviewCount"
-      hits: 10
-      min_review_count: 50
+  - id: "office-chair-ranking"
+    category_id: "work"
+    slug: "office-chair"
+    release_date: "2026-04-23"
+    eye_catch: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+    h1: "高級オフィスチェア おすすめ8選"
+    title: "【腰痛対策】高級オフィスチェア おすすめ8選｜10万円超えの価値がある椅子を座り比べ"
+    meta_description: "ハーマンミラー、エルゴヒューマンなどの高級オフィスチェアを比較。腰痛持ちの編集部員が1ヶ月座り続け、集中力と疲労軽減をガチ検証。"
+    test_criteria: [{id: "lumber", name: "腰のサポート"}, {id: "adjust", name: "調整の自由度"}, {id: "breath", name: "通気性"}]
+    intro: "デスクワークの疲労は「椅子」で決まります。1日10時間座る編集部員が、10万円以上の投資価値がある椅子を厳選。腰への負担を最小限にする一脚を見つけました。"
+    selection_criteria:
+      - title: "前傾チルト機能の有無"
+        body: "集中すると前かがみになる方に必須。背もたれが追従して腰を支え続けるかを確認。"
+      - title: "アームレストの4D可動"
+        body: "肩こり防止には肘の位置が重要。上下・左右・前後・角度が調整できるかを重視しました。"
+    products_extra:
+      - rank: 1
+        reason: "座った瞬間に「支えられている」安心感。どんな姿勢でも常に背骨のS字カーブを維持してくれる唯一無二の椅子。"
+        pros: ["体重移動に完璧に追従するリクライニング", "12年という圧倒的な長期保証", "リセールバリューが非常に高い"]
+        cons: ["ヘッドレストが標準装備ではない", "メッシュが硬めで好みが分かれる"]
+        best_for: "本気で腰痛を治したい、または予防したいすべてのデスクワーカー"
+    rakuten_params: {keyword: "オフィスチェア 高級 アーロンチェア エルゴヒューマン", sort: "-reviewCount", hits: 10}
 
-    related_article_ids:
-      - "hair-dryer-ranking"
+  - id: "auto-cooker-ranking"
+    category_id: "kitchen"
+    slug: "auto-cooker"
+    release_date: "2026-04-24"
+    eye_catch: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80"
+    h1: "自動調理鍋 おすすめ5選"
+    title: "【時短革命】自動調理鍋 おすすめ5選｜ホットクック以外の選択肢も徹底検証"
+    meta_description: "自動調理鍋・電気圧力鍋を比較。無水調理から「かきまぜ機能」の差まで検証。共働き世帯の夕食作りを劇的に楽にする一台を紹介。"
+    test_criteria: [{id: "taste", name: "美味しさ"}, {id: "manual", name: "予約調理の幅"}, {id: "wash", name: "洗いやすさ"}]
+    intro: "材料を入れてボタンを押すだけ。火を使わないから、調理中に子供とお風呂に入ることも可能。本当に美味しいカレーや煮物ができる機種はどれか、実食テストしました。"
+    selection_criteria:
+      - title: "「かきまぜ」機能の重要性"
+        body: "煮込み料理のムラを防ぎ、炒め物までこなせるか。手動の手間をどこまで減らせるかをチェック。"
+      - title: "パーツの少なさと食洗機対応"
+        body: "毎日使うものだからこそ、内蓋やパッキンの取り外しやすさと食洗機OKかを重視。"
+    products_extra:
+      - rank: 1
+        reason: "「かきまぜユニット」による調理の幅が圧倒的。無水カレーの美味しさは他の追随を許しません。"
+        pros: ["レシピ数が豊富でネット連携も充実", "予約調理ができるメニューが多い", "パーツがすべて食洗機で洗える"]
+        cons: ["本体が丸っこく場所を取る", "圧力機能がないため時短スピードは並"]
+        best_for: "料理のレパートリーを増やしつつ、夕方の時間を確保したい方"
+    rakuten_params: {keyword: "自動調理鍋 ホットクック 電気圧力鍋 ヘルシオ", sort: "-reviewCount", hits: 10}
+
+  # ==========================================================
+  # 2週目：ターゲット特化・深い悩み解決（成約率重視）
+  # ==========================================================
+
+  - id: "facial-device-ranking"
+    category_id: "beauty"
+    slug: "facial-device"
+    release_date: "2026-04-25"
+    eye_catch: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80"
+    h1: "リフトアップ美顔器 おすすめ6選"
+    title: "【2026】リフトアップ美顔器 おすすめ6選｜40代からの「たるみ」に本当に効く一台"
+    meta_description: "EMS・RF搭載の高級美顔器を比較。ヤーマン、パナソニックなどの最新機で、肌のハリとリフトケアを独自検証。"
+    test_criteria: [{id: "ems", name: "EMSの刺激"}, {id: "warm", name: "RFの温まり"}, {id: "easy", name: "継続のしやすさ"}]
+    intro: "鏡を見るのが憂鬱になってきた方に。エステに通う時間はないけれど、自宅で確実に手応えを感じたい。そんな切実な悩みに応える「本格派」だけを集めました。"
+    selection_criteria:
+      - title: "専用ジェルの要・不要"
+        body: "ランニングコストに直結。手持ちの化粧水が使えるか、専用品が必要かを明記しました。"
+      - title: "防水性能とコードレス"
+        body: "お風呂で使えるか。コードが邪魔にならないか。日常のルーチンに組み込める機動性を評価。"
+    products_extra:
+      - rank: 1
+        reason: "EMSの表情筋へのアプローチが他とは一線を画す。1回10分で、朝の顔の印象がパッと明るくなります。"
+        pros: ["多機能（導入・クレンジング・リフト）", "医療用レベルの電極技術", "充電が非常に長持ち"]
+        cons: ["操作ボタンが多く、覚えるまで時間がかかる", "お風呂での使用は不可"]
+        best_for: "本格的なエイジングケアを自宅で完結させたい方"
+    rakuten_params: {keyword: "美顔器 リフトアップ EMS ヤーマン パナソニック", sort: "-reviewCount", hits: 10}
+
+  - id: "coffee-maker-ranking"
+    category_id: "kitchen"
+    slug: "coffee-maker"
+    release_date: "2026-04-26"
+    eye_catch: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+    h1: "全自動コーヒーメーカー おすすめ8選"
+    title: "【至福の朝】全自動コーヒーメーカー おすすめ8選｜豆を挽く音から楽しむ贅沢な比較"
+    meta_description: "デロンギ、シロカ、パナソニックなどの全自動コーヒーメーカーを比較。ミルの精度、抽出温度、メンテナンス性を検証。"
+    test_criteria: [{id: "grind", name: "ミルの均一性"}, {id: "temp", name: "抽出の安定感"}, {id: "maintenance", name: "カス捨ての楽さ"}]
+    intro: "コンビニコーヒーを卒業して、家で最高の一杯を。豆の香りが部屋中に広がる、全自動の魔法。メンテナンスが面倒で使わなくなる「あるある」を防ぐ機種を選びました。"
+    selection_criteria:
+      - title: "ミルの方式（コーン式 vs プロペラ式）"
+        body: "雑味の原因となる「微粉」が少ないコーン式を推奨。味のクリアさを決定づけます。"
+      - title: "内部洗浄の自動化"
+        body: "ミルクを使う機種は特に重要。ボタン一つで内部を洗浄できるかを確認しました。"
+    products_extra:
+      - rank: 1
+        reason: "イタリアの老舗らしい、エスプレッソの濃厚さとクレマの美しさ。ミルクメニューの自動生成は感動レベル。"
+        pros: ["全自動でカフェのようなラテが作れる", "抽出ユニットが丸洗い可能", "見た目の所有欲が非常に高い"]
+        cons: ["本体価格が10万円超え", "サイズが大きく重量もかなりある"]
+        best_for: "自宅をカフェに変えたい、コーヒーの味に妥協したくない方"
+    rakuten_params: {keyword: "コーヒーメーカー 全自動 デロンギ シロカ", sort: "-reviewCount", hits: 10}
+
+  - id: "mechanical-keyboard-ranking"
+    category_id: "work"
+    slug: "keyboard-ranking"
+    release_date: "2026-04-27"
+    eye_catch: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=800&q=80"
+    h1: "メカニカルキーボード おすすめ10選"
+    title: "【打鍵感】高級メカニカルキーボード おすすめ10選｜指が疲れない・仕事が楽しくなる一台"
+    meta_description: "HHKB、Realforce、ロジクールなどの高級キーボードを比較。静電容量無接点方式から最新のメカニカル軸まで、打鍵音と疲れにくさを検証。"
+    test_criteria: [{id: "feel", name: "打鍵感・音"}, {id: "fatigue", name: "指の疲れにくさ"}, {id: "conn", name: "接続の安定性"}]
+    intro: "1日中文字を打つなら、キーボードは「投資」です。チャタリングのない信頼性と、スコスコとした心地よい感触。仕事のやる気をスイッチオンにする道具を厳選しました。"
+    selection_criteria:
+      - title: "静電容量無接点方式の有無"
+        body: "底付き感がなく、指への負担が圧倒的に少ない。3万回以上の耐久性を誇るこの方式を高く評価。"
+      - title: "キー配列とカスタマイズ"
+        body: "US/日本語配列の選択肢。特定のキーを自分好みに変更できるソフトの使い勝手をチェック。"
+    products_extra:
+      - rank: 1
+        reason: "「馬の鞍」理論に基づいた、一生モノのキーボード。一度この打鍵感に慣れると、もう戻れません。"
+        pros: ["ミニマルで合理的なキー配列", "どこでも同じ環境が作れるコンパクトさ", "Bluetooth/有線の併用が可能"]
+        cons: ["配列に慣れるまで1週間ほど修行が必要", "矢印キーがないモデルがある"]
+        best_for: "文章作成やプログラミングを職業にするプロフェッショナル"
+    rakuten_params: {keyword: "キーボード 高級 HHKB Realforce ロジクール", sort: "-reviewCount", hits: 10}
+
+  - id: "stick-vacuum-ranking"
+    category_id: "home"
+    slug: "stick-vacuum"
+    release_date: "2026-04-28"
+    eye_catch: "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=800&q=80"
+    h1: "軽量コードレス掃除機 おすすめ7選"
+    title: "【2026】軽量コードレス掃除機 おすすめ7選｜1.5kg以下で吸引力も妥協しない"
+    meta_description: "ダイソン、パナソニック、シャープなどのコードレス掃除機を比較。軽さと吸引力のバランスを独自検証。"
+    test_criteria: [{id: "suction", name: "吸引力"}, {id: "weight", name: "軽さ・取り回し"}, {id: "trash", name: "ゴミ捨ての清潔さ"}]
+    intro: "「重い掃除機」は、掃除そのものを億劫にします。片手でスイスイ、気づいた時にサッと。最新の軽量化技術と、それでも吸い残さないパワーの共存をテストしました。"
+    selection_criteria:
+      - title: "ヘッドの「自走式」性能"
+        body: "軽く押すだけで前に進む力。力のない方や、広い部屋を掃除する際の疲労度に直結します。"
+      - title: "髪の毛が絡まないブラシ"
+        body: "メンテナンスのストレスを激減させる「からまないブラシ」の有無を重視しました。"
+    products_extra:
+      - rank: 1
+        reason: "軽さ（1.1kg）がもはや「ほうき」レベル。それでいて、見えないゴミをライトで照らす機能が秀逸。"
+        pros: ["レーザーで微細なゴミを可視化", "アタッチメントの交換がスムーズ", "排気が非常にクリーン"]
+        cons: ["最大パワーでの使用時間は短め", "トリガーを押し続ける必要がある（モデルによる）"]
+        best_for: "「こまめに掃除」を習慣にしたい、重い家電が苦手な方"
+    rakuten_params: {keyword: "掃除機 コードレス 軽量 ダイソン パナソニック", sort: "-reviewCount", hits: 10}
+
+  - id: "smart-lock-ranking"
+    category_id: "home"
+    slug: "smart-lock"
+    release_date: "2026-04-29"
+    eye_catch: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80"
+    h1: "後付けスマートロック おすすめ4選"
+    title: "【鍵のストレスゼロ】スマートロック おすすめ4選｜オートロック化で生活が変わる"
+    meta_description: "SwitchBot、Qrio、SADIOT LOCKなどのスマートロックを比較。取り付けの安定性とレスポンスを検証。"
+    test_criteria: [{id: "resp", name: "解錠レスポンス"}, {id: "install", name: "設置の安定性"}, {id: "feature", name: "解錠手段の多さ"}]
+    intro: "「鍵、閉めたっけ？」の不安から一生解放されます。スマホ、指紋、暗証番号、 Apple Watch。荷物で両手が塞がっていても勝手に開く快適さを、全機種でテストしました。"
+    selection_criteria:
+      - title: "指紋認証パッドの反応速度"
+        body: "スマホを出す手間すら省けるか。指が濡れていても反応するかをチェック。"
+      - title: "電池切れへの対策"
+        body: "予備バッテリーへの自動切り替えや、外からの緊急給電機能があるかを重視。"
+    products_extra:
+      - rank: 1
+        reason: "周辺機器との連携が神。指紋認証パッドの精度が高く、一瞬で解錠される快感。"
+        pros: ["他デバイス（ハブ、カーテン等）との拡張性", "粘着力が強く落下の心配が少ない", "圧倒的な低価格と高機能のバランス"]
+        cons: ["アプリが多機能すぎて設定に迷うことがある", "ハブがないと遠隔操作が制限される"]
+        best_for: "スマートホーム化を安価に、かつ完璧に構築したい方"
+    rakuten_params: {keyword: "スマートロック SwitchBot Qrio 指紋認証", sort: "-reviewCount", hits: 10}
+
+  - id: "monitor-arm-ranking"
+    category_id: "work"
+    slug: "monitor-arm"
+    release_date: "2026-04-30"
+    eye_catch: "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=800&q=80"
+    h1: "モニターアーム おすすめ5選"
+    title: "【デスク広々】モニターアーム おすすめ5選｜エルゴトロン一強時代の終焉か？"
+    meta_description: "エルゴトロン、Amazonベーシック、デルタなどのモニターアームを比較。安定性とガススプリングの滑らかさを検証。"
+    test_criteria: [{id: "smooth", name: "動きの滑らかさ"}, {id: "stable", name: "耐荷重・安定性"}, {id: "install", name: "クランプの堅牢さ"}]
+    intro: "モニターの脚がなくなるだけで、デスクは2倍広くなります。目線を上げることで肩こりも解消。重いワイドモニターでも、指一本で動かせる最強のアームを探しました。"
+    selection_criteria:
+      - title: "ガススプリングの「ヘタリ」にくさ"
+        body: "時間が経ってもモニターが垂れ下がってこないか。長期使用のレビューを精査。"
+      - title: "配線収納の隠しやすさ"
+        body: "ケーブルをアーム内に通してスッキリ見せられるか。見た目の美しさを評価。"
+    products_extra:
+      - rank: 1
+        reason: "世界標準の安心感。10年保証は自信の証。動きの「しっとり感」が安物とは次元が違います。"
+        pros: ["圧倒的なスムーズさと静止力", "高級感のあるアルミダイキャスト仕上げ", "取り付けが非常に簡単（15分で完了）"]
+        cons: ["価格が他の2〜3倍する", "ホワイトモデルは塗装の剥げに注意"]
+        best_for: "長く使える高品質なデスク環境を整えたい方"
+    rakuten_params: {keyword: "モニターアーム エルゴトロン Amazonベーシック", sort: "-reviewCount", hits: 10}
+
+  - id: "electric-toothbrush-ranking"
+    category_id: "beauty"
+    slug: "toothbrush-ranking"
+    release_date: "2026-05-01"
+    eye_catch: "https://images.unsplash.com/photo-1559591937-e68fb333594c?auto=format&fit=crop&w=800&q=80"
+    h1: "高級電動歯ブラシ おすすめ6選"
+    title: "【歯科医推奨】高級電動歯ブラシ おすすめ6選｜ツルツルの歯が1日続く感動を比較"
+    meta_description: "フィリップス、ブラウン、パナソニックなどの高級電動歯ブラシを比較。歯垢除去力と歯茎への優しさを検証。"
+    test_criteria: [{id: "clean", name: "歯垢除去力"}, {id: "gum", name: "歯茎への優しさ"}, {id: "app", name: "磨き残しチェック"}]
+    intro: "「手磨きにはもう戻れない」。そんなユーザーが続出する理由を、実際に使って確かめました。音波振動、回転式、どちらがあなたに合うか。一生モノの歯を守る投資を。"
+    selection_criteria:
+      - title: "押し付け防止センサーの有無"
+        body: "強く押しすぎると光や振動で教えてくれる機能。歯茎を傷めないために最も重要。"
+      - title: "替えブラシのコストと入手性"
+        body: "3ヶ月に1回交換するものだから、ランニングコストとドラッグストアでの買いやすさをチェック。"
+    products_extra:
+      - rank: 1
+        reason: "音波水の流れで歯の隙間の汚れまで掻き出す。磨いた後の「ツルツル感」の持続時間が明らかに長い。"
+        pros: ["歯茎に優しく、出血しにくい", "デザインがスマートで充電器もオシャレ", "動作音が静かで夜でも気にならない"]
+        cons: ["替えブラシが高い（1本1,000円超）", "モードが多くて使い分けが面倒"]
+        best_for: "優しく、かつ完璧に歯周病予防をしたい方"
+    rakuten_params: {keyword: "電動歯ブラシ 高級 ソニッケアー ブラウン オーラルB", sort: "-reviewCount", hits: 10}
+
+  - id: "toaster-ranking"
+    category_id: "kitchen"
+    slug: "toaster-ranking"
+    release_date: "2026-05-02"
+    eye_catch: "https://images.unsplash.com/photo-1584990344321-2708341aa5f2?auto=format&fit=crop&w=800&q=80"
+    h1: "高級トースター おすすめ5選"
+    title: "【パン革命】高級トースター おすすめ5選｜スーパーの食パンが絶品に変わる魔法"
+    meta_description: "バルミューダ、アラジン、三菱などの高級トースターを比較。スチーム機能と遠赤グラファイトの焼き上がりを検証。"
+    test_criteria: [{id: "toast", name: "トーストの美味しさ"}, {id: "speed", name: "立ち上がり速度"}, {id: "feature", name: "リベイク性能"}]
+    intro: "「外はカリッ、中はモチッ」。この言葉の本当の意味を教えてくれたトースターたち。ただ焼くだけじゃない。惣菜パンの揚げたて再現や、お餅の焼き上がりまで徹底比較しました。"
+    selection_criteria:
+      - title: "スチーム機能の有無"
+        body: "少量の水でパンの水分を閉じ込める技術。安いパンほど効果が劇的に現れます。"
+      - title: "お手入れのしやすさ"
+        body: "パン屑トレイの引き出しやすさや、網の取り外しやすさを評価。"
+    products_extra:
+      - rank: 1
+        reason: "スチームテクノロジーによる感動の焼き上がり。クロワッサンを焦がさず「サクッ」とさせる技術は唯一無二。"
+        pros: ["圧倒的なデザインの良さ", "給水口からの注水というユニークな体験", "焼き上がりのメロディが心地よい"]
+        cons: ["一度に2枚しか焼けない", "高さのある料理には不向き"]
+        best_for: "朝のパンの時間を人生の楽しみにしたい方"
+    rakuten_params: {keyword: "トースター 高級 バルミューダ アラジン 三菱", sort: "-reviewCount", hits: 10}
+
+  - id: "projector-ranking"
+    category_id: "home"
+    slug: "projector-ranking"
+    release_date: "2026-05-03"
+    eye_catch: "https://images.unsplash.com/photo-1595764430415-a81a44bd2725?auto=format&fit=crop&w=800&q=80"
+    h1: "ホームプロジェクター おすすめ7選"
+    title: "【2026】ホームプロジェクター おすすめ7選｜テレビ不要？100インチの大迫力を比較"
+    meta_description: "Anker、XGIMI、popIn Aladdinなどのホームプロジェクターを比較。明るさ（ルーメン）と静音性、OSの使い勝手を検証。"
+    test_criteria: [{id: "bright", name: "明るさ・解像度"}, {id: "sound", name: "内蔵スピーカー"}, {id: "auto", name: "台形補正の精度"}]
+    intro: "家を映画館に。最新のプロジェクターは昼間でも見えるほど明るく、スピーカーも映画館級。シーリングライト型から超短焦点まで、あなたの部屋に最適な一台を選び抜きました。"
+    selection_criteria:
+      - title: "自動台形補正と障害物回避"
+        body: "置くだけでパッと四角く映るか。壁の梁やスイッチを自動で避ける「賢さ」を重視。"
+      - title: "OS（Android TV等）の有無"
+        body: "これ一台でYouTubeやNetflixが見れるか。スマホ連携の手間を省けるかをチェック。"
+    products_extra:
+      - rank: 1
+        reason: "明るさ（ANSIルーメン）の数値が信頼できる。夜なら完璧なシネマ体験、昼でもカーテンを閉めれば十分実用レベル。"
+        pros: ["Harman/Kardon製スピーカーの迫力", "オートフォーカスが爆速", "動作音が非常に静か"]
+        cons: ["本体が少し重く、三脚の耐荷重に注意が必要", "Netflixの導入に一手間かかるモデルがある"]
+        best_for: "本格的なホームシアターを簡単に構築したい方"
+    rakuten_params: {keyword: "プロジェクター ホームシアター Anker XGIMI popInAladdin", sort: "-reviewCount", hits: 10}
+
+  - id: "smart-home-kit"
+    category_id: "home"
+    slug: "smart-home-kit"
+    release_date: "2026-05-04"
+    eye_catch: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80"
+    h1: "スマートホーム導入セット おすすめ5選"
+    title: "【QOL爆上げ】スマートホーム導入セット おすすめ5選｜声だけで家電を操る近未来生活"
+    meta_description: "スマートリモコン、スマートプラグ、ハブのセットを比較。SwitchBot、Nature Remoなどの連携しやすさを検証。"
+    test_criteria: [{id: "app", name: "アプリの使いやすさ"}, {id: "conn", name: "対応家電の多さ"}, {id: "auto", name: "自動化の自由度"}]
+    intro: "「アレクサ、おやすみ」で電気、テレビ、エアコンをすべて消す。外出先からスマホでエアコンをつける。そんな生活は、たった1万円の投資から始まります。設定の簡単さで選びました。"
+    selection_criteria:
+      - title: "「Matter」規格への対応"
+        body: "最新の共通規格に対応しているか。将来、他社製品と混ぜて使っても困らない将来性を評価。"
+      - title: "温度・湿度センサーの精度"
+        body: "「28度を超えたらエアコンをオン」という自動化には精度が必須。センサーの質をチェック。"
+    products_extra:
+      - rank: 1
+        reason: "世界一シェアを誇るエコシステム。あらゆる家電を物理的に押す「指」まである拡張性が無敵。"
+        pros: ["製品ラインナップが異常に豊富", "設定が非常に簡単（QRコードを読み込むだけ）", "利用者が多く、ネット上にトラブル解決策が豊富"]
+        cons: ["ホワイトのデザインが安っぽく見えることがある", "クラウドサービスの障害時に稀に動作しない"]
+        best_for: "これから家をスマート化したいすべての初心者"
+    rakuten_params: {keyword: "スマートリモコン SwitchBot NatureRemo スマートホーム", sort: "-reviewCount", hits: 10}

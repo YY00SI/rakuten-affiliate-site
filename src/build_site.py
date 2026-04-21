@@ -25,12 +25,20 @@ def main():
     os.makedirs(output_base, exist_ok=True)
     
     data_dir = "data/products"
-    today = datetime.now().strftime("%Y年%m月%d日")
+    now = datetime.now()
+    today_str = now.strftime("%Y年%m月%d日")
+    today_iso = now.strftime("%Y-%m-%d") # 比較用の日付
     
     # 1. 記事ページの生成
     processed_articles = []
     for art_conf in articles:
         if not art_conf.get("enabled", True):
+            continue
+            
+        # 予約公開チェック: release_date が今日より後ならスキップ
+        release_date = art_conf.get("release_date", "2000-01-01")
+        if release_date > today_iso:
+            print(f"[SKIP] 予約公開待ち: {art_conf['id']} (公開予定: {release_date})")
             continue
             
         file_path = os.path.join(data_dir, f"{art_conf['id']}.json")
@@ -69,7 +77,7 @@ def main():
             article=art_conf,
             items=product_data['items'],
             related_articles=related_articles,
-            today=today
+            today=today_str
         )
         
         with open(os.path.join(article_dir, "index.html"), "w", encoding="utf-8") as f:
@@ -103,7 +111,7 @@ def main():
             site=site_config,
             category=cat,
             articles=cat_processed_articles,
-            today=today
+            today=today_str
         )
         
         with open(os.path.join(cat_dir, "index.html"), "w", encoding="utf-8") as f:
@@ -115,7 +123,7 @@ def main():
         site=site_config,
         categories=categories.values(),
         all_articles=processed_articles,
-        today=today
+        today=today_str
     )
     
     with open(os.path.join(output_base, "index.html"), "w", encoding="utf-8") as f:
