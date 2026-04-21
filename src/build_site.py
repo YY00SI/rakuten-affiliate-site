@@ -38,6 +38,7 @@ def main():
         # 予約公開チェック: release_date が今日より後ならスキップ
         release_date = art_conf.get("release_date", "2000-01-01")
         if release_date > today_iso:
+            # タイムゾーンのズレを考慮し、当日(today_iso)と一致する場合はスキップしない
             print(f"[SKIP] 予約公開待ち: {art_conf['id']} (公開予定: {release_date})")
             continue
             
