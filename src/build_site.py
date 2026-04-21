@@ -130,10 +130,11 @@ def main():
         f.write(html_content)
     print(f"[INFO] トップページ生成完了: index.html")
 
-    # 4. 固定ページの生成 (About, Privacy Policy)
+    # 4. 固定ページの生成 (About, Privacy Policy, How We Test)
     static_pages = [
         {"tpl": "about.html", "dir": "about"},
-        {"tpl": "privacy-policy.html", "dir": "privacy-policy"}
+        {"tpl": "privacy-policy.html", "dir": "privacy-policy"},
+        {"tpl": "how-we-test.html", "dir": "how-we-test"}
     ]
     
     for page in static_pages:

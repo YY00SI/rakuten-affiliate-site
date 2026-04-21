@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="article-content">
+    <header class="article-header">
+        <h1 class="article-title">当メディアの検証・評価基準について</h1>
+        <p class="article-intro">ライフテック・セレクトでは、読者の皆様が後悔しない「納得の買いもの」ができるよう、公平かつ厳格な基準に基づいて商品を調査・比較しています。</p>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">1. データの収集方法</h2>
+        <div style="line-height: 1.8; color: var(--text-main);">
+            <p>私たちは楽天市場のAPIを活用し、以下のデータをリアルタイムに近い形で収集しています：</p>
+            <ul>
+                <li><strong>累計レビュー件数</strong>：実際に購入し、使用したユーザーの母数を把握。</li>
+                <li><strong>平均評価（星の数）</strong>：製品の全体的な満足度を計測。</li>
+                <li><strong>最新の価格情報</strong>：コストパフォーマンスの正確な評価。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">2. 独自の評価スコアの算出</h2>
+        <div style="line-height: 1.8; color: var(--text-main);">
+            <p>単なる人気順ではなく、以下の3つの軸を重視した独自のアルゴリズムでスコアリングを行っています：</p>
+            <ol>
+                <li><strong>満足度の密度</strong>：レビュー数に対して、高評価がどれだけ集中しているか。</li>
+                <li><strong>「生の声」の分析</strong>：良い口コミだけでなく、「残念だった点」への言及をネガティブチェック。</li>
+                <li><strong>スペックの先進性</strong>：同価格帯の中で、最新技術や優れた機能が搭載されているか。</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">3. 広告と透明性について</h2>
+        <div style="line-height: 1.8; color: var(--text-main);">
+            <p>当サイトはアフィリエイトプログラムに参加しており、商品リンクを経由して購入が発生した場合に報酬を得ることがあります。しかし、<strong>報酬の有無がランキングの順位や評価内容に影響を与えることは一切ありません</strong>。読者の利益を最優先した「正直なレビュー」を徹底しています。</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">4. 免責事項</h2>
+        <div style="line-height: 1.8; color: var(--text-muted); font-size: 0.9rem;">
+            <p>本サイトで提供する情報は、可能な限り正確を期していますが、各商品の仕様や価格は随時変更される可能性があります。最終的な購入判断は、リンク先の楽天市場各ショップページにて最新の情報をご確認ください。</p>
+        </div>
+    </section>
+</article>
+{% endblock %}
