@@ -50,7 +50,7 @@ articles:
         pros: ["髪を熱ダメージから守る技術", "ボタン一つで温冷が切り替わる", "圧倒的なツヤ感"]
         cons: ["折りたたみができない", "人気すぎて在庫切れが多い"]
         best_for: "とにかく髪を傷めたくない・最速で乾かしたい方"
-    rakuten_params: {keyword: "ドライヤー 速乾 ナノケア リファ", sort: "-reviewCount", hits: 10}
+    rakuten_params: {keyword: "ドライヤー 速乾", sort: "-reviewCount", hits: 10, min_review_count: 5}
 
   - id: "robot-vacuum-ranking"
     category_id: "home"

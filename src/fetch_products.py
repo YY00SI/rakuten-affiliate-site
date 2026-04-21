@@ -119,7 +119,8 @@ def main():
     os.makedirs(data_dir, exist_ok=True)
 
     for article in config.get("articles", []):
-        if not article.get("enabled", False):
+        if not article.get("enabled", True): # デフォルトを True に
+            print(f"[SKIP] 無効化されている記事: {article['id']}")
             continue
 
         items = fetch_article_items(article)
@@ -134,6 +135,8 @@ def main():
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(output_data, f, ensure_ascii=False, indent=2)
             print(f"[INFO] {article['id']}: {len(items)}件保存完了")
+        else:
+            print(f"[ERROR] {article['id']}: 商品データが1件も取得できませんでした。APIの設定やキーワードを確認してください。")
 
 if __name__ == "__main__":
     main()
