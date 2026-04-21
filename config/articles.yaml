@@ -4,7 +4,7 @@
 site:
   name: "ライフテック・セレクト：LifeTech Select"
   description: "楽天市場の膨大なユーザーレビューとスペックを徹底分析。後悔しない「納得の買いもの」をサポートする調査メディアです。"
-  base_url: "https://yoshio-fujimoto.github.io/antigravity-site/"
+  base_url: "https://yy00si.github.io/rakuten-affiliate-site/"
 
 categories:
   - id: "beauty"

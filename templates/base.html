@@ -75,7 +75,7 @@
         a:hover { color: var(--primary-light); }
 
         /* Layout */
-        header {
+        .site-header {
             background-color: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border);
@@ -102,6 +102,7 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            text-decoration: none;
         }
 
         main {
@@ -450,9 +451,9 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="header-content">
-            <a href="./" class="logo">{{ site.name }}</a>
+            <a href="{{ site.base_url }}" class="logo">{{ site.name }}</a>
         </div>
     </header>
 
@@ -462,12 +463,12 @@
 
     <footer>
         <div class="footer-nav">
-            <a href="./">トップページ</a>
-            <a href="./about/">当サイトについて</a>
-            <a href="./privacy-policy/">プライバシーポリシー</a>
+            <a href="{{ site.base_url }}">トップページ</a>
+            <a href="{{ site.base_url }}about/">当サイトについて</a>
+            <a href="{{ site.base_url }}privacy-policy/">プライバシーポリシー</a>
         </div>
         <p>© 2026 {{ site.name }}</p>
-        <p style="font-size: 0.8rem; max-width: 600px; margin: 1rem auto;">
+        <p class="disclaimer">
             当サイトはアフィリエイト広告を利用しています。紹介している商品の最新価格や在庫状況、正確な仕様については、リンク先の楽天市場各ショップのページにて必ずご確認ください。
         </p>
     </footer>
