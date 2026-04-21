@@ -15,6 +15,20 @@
         <p class="article-intro">{{ article.intro | replace('\n', '<br>') | safe }}</p>
     </header>
 
+    {% if article.custom_sections %}
+    <!-- Custom Educational Sections -->
+    <section class="custom-sections" style="margin-bottom: 4rem;">
+        {% for section in article.custom_sections %}
+        <div class="custom-section-item" style="margin-bottom: 3rem; line-height: 1.8;">
+            <h2 style="font-size: 1.8rem; color: var(--secondary); border-left: 5px solid var(--primary); padding-left: 1rem; margin-bottom: 1.5rem;">{{ section.title }}</h2>
+            <div style="font-size: 1.1rem; color: var(--text-main); background: #fdfdfd; padding: 2rem; border-radius: var(--radius-md); border: 1px solid #eee;">
+                {{ section.content | replace('\n', '<br>') | safe }}
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+    {% endif %}
+
     <!-- Trust Badge: E-E-A-T (Truthful Research) -->
     <section class="trust-badge-container" style="margin-bottom: 4rem; padding: 1.5rem; background: #fff; border-radius: var(--radius-md); border: 1.5px solid var(--secondary); display: flex; align-items: center; gap: 1.5rem;">
         <div style="background: var(--secondary); color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
