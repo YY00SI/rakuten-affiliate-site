@@ -5,8 +5,10 @@ __pycache__/
 .venv/
 .env
 
-# Project Specific
-data/
+# Data
+data/*
+!data/products/
+!data/products/*.json
 output/site/
 output/logs/
 
