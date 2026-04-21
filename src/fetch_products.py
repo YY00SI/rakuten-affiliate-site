@@ -123,6 +123,10 @@ def main():
             print(f"[SKIP] 無効化されている記事: {article['id']}")
             continue
 
+        if not article.get("auto_fetch", True):
+            print(f"[SKIP] 自動取得オフ設定の記事 (手動データを維持): {article['id']}")
+            continue
+
         items = fetch_article_items(article)
         
         if items:
