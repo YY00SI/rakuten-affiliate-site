@@ -35,7 +35,7 @@ articles:
   - id: "ferrofluid-speaker"
     category_id: "trend"
     slug: "ferrofluid-speaker"
-    release_date: "2026-04-21" # 即時公開
+    release_date: "2026-04-20" # 確実に公開されるよう1日前に設定
     auto_fetch: false # 手動厳選データを使用するため、自動取得を無効化
     eye_catch: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80"
     h1: "【厳選】磁性流体スピーカー おすすめ3選"
