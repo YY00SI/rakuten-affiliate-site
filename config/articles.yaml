@@ -1,4 +1,4 @@
-# 楽天アフィリエイト「セレクトガイド型」自動生成サイト v6.0
+# 楽天アフィリエイト「セレクトガイド型」自動生成サイト v7.0
 # config/articles.yaml
 
 site:
@@ -23,8 +23,41 @@ categories:
     name: "スマートホーム・掃除"
     slug: "home"
     description: "暮らしを自動化するロボット掃除機やスマートロック。自由な時間を生み出す家電。"
+  - id: "trend"
+    name: "海外トレンド・新着"
+    slug: "trend"
+    description: "世界中のSNSやテックニュースで話題の、最先端ガジェットをいち早くリサーチ。"
 
 articles:
+  # ==========================================================
+  # 【本日公開：トレンド特攻枠】
+  # ==========================================================
+  - id: "ferrofluid-speaker"
+    category_id: "trend"
+    slug: "ferrofluid-speaker"
+    release_date: "2026-04-21" # 即時公開
+    eye_catch: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80"
+    h1: "磁性流体スピーカー おすすめ5選"
+    title: "【SNSで話題】磁性流体スピーカー おすすめ5選｜音に合わせて踊る「動くアート」が凄い"
+    meta_description: "TikTokや海外レビューで話題の「磁性流体スピーカー」をリサーチ。音楽に合わせて不思議な液体が踊る、次世代のデスクインテリア。日本で購入可能な人気モデルを紹介。"
+    test_criteria: [{id: "visual", name: "視覚的インパクト"}, {id: "audio", name: "音質"}, {id: "design", name: "インテリア性"}]
+    intro: "今、海外のデスクセットアップ愛好家の間で「生きているようなスピーカー」がバズっているのをご存知ですか？音楽のビートに合わせて黒い液体が変幻自在に動く『磁性流体スピーカー』。単なる音響機器を超えた、究極の癒やしガジェットを徹底調査しました。"
+    selection_criteria:
+      - title: "液体の「動きのキレ」"
+        body: "磁性流体が音楽の強弱にどこまで敏感に反応するか。YouTube等の実機レビューから、最もパフォーマンスの高いモデルを厳選。"
+      - title: "バックライトの演出効果"
+        body: "暗い部屋で液体をより美しく見せるLED機能の有無や、色のカスタマイズ性を評価。"
+    products_extra:
+      - rank: 1
+        reason: "液体の動きが最もダイナミックで、まるでSF映画のような体験が可能。バックライトの光り方も洗練されており、所有欲を最も満たしてくれる一台。"
+        pros: ["動きの解像度が高い", "高い質感のアルミボディ", "Bluetooth 5.0対応"]
+        cons: ["ACアダプターが必要", "人気のため価格が上昇傾向"]
+        best_for: "デスク周りをオシャレに彩りたい、未来感のあるインテリアを求めている方"
+    rakuten_params: {keyword: "磁性流体 スピーカー", sort: "-reviewCount", hits: 5, min_review_count: 0}
+
+  # ==========================================================
+  # 【1週目：資産予約枠】
+  # ==========================================================
   - id: "hair-dryer-ranking"
     category_id: "beauty"
     slug: "dryer-ranking"
@@ -111,6 +144,9 @@ articles:
         best_for: "料理の負担を減らしつつ美味しさも重視したい方"
     rakuten_params: {keyword: "自動調理鍋", sort: "-reviewCount", hits: 10, min_review_count: 0}
 
+  # ==========================================================
+  # 【2週目：資産予約枠】
+  # ==========================================================
   - id: "facial-device-ranking"
     category_id: "beauty"
     slug: "facial-device"
@@ -302,3 +338,29 @@ articles:
         cons: ["デザインがシンプル", "クラウド依存"]
         best_for: "これからスマートホーム化を始めたいすべての方"
     rakuten_params: {keyword: "スマートリモコン", sort: "-reviewCount", hits: 10, min_review_count: 0}
+
+  # ==========================================================
+  # 【3週目：資産予約枠の積み増し】
+  # ==========================================================
+  - id: "premium-rice-cooker"
+    category_id: "kitchen"
+    slug: "premium-rice-cooker"
+    release_date: "2026-05-05" # 予約追加分
+    eye_catch: "https://images.unsplash.com/photo-1585129049160-71f3c92170a7?auto=format&fit=crop&w=800&q=80"
+    h1: "高級炊飯器 おすすめ8選"
+    title: "【2026】高級炊飯器 おすすめ8選｜10万円超えの『極上の味』をレビューから分析"
+    meta_description: "象印、タイガー、パナソニック等のフラッグシップ炊飯器を調査。お米のプロや実際のユーザーが選んだ、本当に美味しい一台を紹介。"
+    test_criteria: [{id: "taste", name: "お米の甘み"}, {id: "texture", name: "粒立ち"}, {id: "clean", name: "手入れの楽さ"}]
+    intro: "毎日食べるご飯だからこそ、最高の一杯を。最近の10万円クラスの高級炊飯器は、まるで土鍋で炊いたような香ばしさと粒立ちを実現しています。各社の技術とユーザー満足度を徹底リサーチしました。"
+    selection_criteria:
+      - title: "内釜の素材と厚み"
+        body: "熱伝導率に直結する内釜。本物志向の「本炭釜」や「鉄釜」など、お米の芯まで熱を通すモデルを評価。"
+      - title: "保温後の美味しさ"
+        body: "「時間が経っても黄色くならない」「水分が逃げない」という保温性能への口コミを重視。"
+    products_extra:
+      - rank: 1
+        reason: "圧力IHのパイオニアらしい、圧倒的な甘みの引き出し方。ユーザーからも『冷めても美味しい』と絶賛されています。"
+        pros: ["粒立ちが完璧", "メニューが豊富", "内蓋の手入れが簡単"]
+        cons: ["本体が非常に重い", "炊飯時の音が少し大きめ"]
+        best_for: "とにかく『お米の味』にこだわりたい、食卓の質を上げたい方"
+    rakuten_params: {keyword: "炊飯器 高級 圧力IH", sort: "-reviewCount", hits: 10, min_review_count: 0}

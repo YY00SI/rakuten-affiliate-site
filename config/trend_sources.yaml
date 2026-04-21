@@ -1,0 +1,17 @@
+# 巡回対象のトレンドソースリスト
+sources:
+  - name: "Product Hunt"
+    url: "https://www.producthunt.com/topics/tech"
+    description: "最新のテック製品・ガジェットのローンチサイト"
+  - name: "Reddit r/gadgets"
+    url: "https://www.reddit.com/r/gadgets/top/?t=week"
+    description: "世界最大の掲示板のガジェット板（週刊トップ）"
+  - name: "The Verge - Reviews"
+    url: "https://www.theverge.com/reviews"
+    description: "世界的に権威のあるテックメディア"
+  - name: "TechCrunch"
+    url: "https://techcrunch.com/category/gadgets/"
+    description: "最新スタートアップ・デバイス情報"
+  - name: "Uncrate"
+    url: "https://uncrate.com/gear/"
+    description: "男性向け高級ガジェットのキュレーションサイト"
