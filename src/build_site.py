@@ -130,5 +130,25 @@ def main():
         f.write(html_content)
     print(f"[INFO] トップページ生成完了: index.html")
 
+    # 4. 固定ページの生成 (About, Privacy Policy)
+    static_pages = [
+        {"tpl": "about.html", "dir": "about"},
+        {"tpl": "privacy-policy.html", "dir": "privacy-policy"}
+    ]
+    
+    for page in static_pages:
+        template = env.get_template(page['tpl'])
+        page_dir = os.path.join(output_base, page['dir'])
+        os.makedirs(page_dir, exist_ok=True)
+        
+        html_content = template.render(
+            site=site_config,
+            today=today_str
+        )
+        
+        with open(os.path.join(page_dir, "index.html"), "w", encoding="utf-8") as f:
+            f.write(html_content)
+        print(f"[INFO] 固定ページ生成完了: {page['dir']}/index.html")
+
 if __name__ == "__main__":
     main()

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ライフテック・セレクト：LifeTech Select</title>
+    <meta name="description" content="楽天市場の膨大なユーザーレビューとスペックを徹底分析。後悔しない「納得の買いもの」をサポートする調査メディアです。">
+    
+    <!-- Google Fonts: Lato for numbers, Noto Sans JP for text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Palette: Logical & Emotional */
+            --primary: #B00020; /* Deep Crimson (Rakuten Red refined) */
+            --primary-light: #E53935;
+            --primary-dark: #7F0000;
+            --secondary: #1A202C; /* Navy for trust */
+            --accent: #F6AD55; /* Gold/Orange for high visibility */
+            
+            /* Backgrounds & Text */
+            --bg-body: #F9FAFB; /* Soft Off-White */
+            --bg-card: #FFFFFF;
+            --text-main: #2D3748; /* Darker grey for readability */
+            --text-muted: #718096;
+            --text-on-primary: #FFFFFF;
+            
+            /* Functional Colors */
+            --success: #38A169;
+            --error: #E53E3E;
+            --border: #EDF2F7;
+            
+            /* Shadows & Effects (Roomie-like) */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.05);
+            
+            /* Spacing & Sizing */
+            --radius-sm: 4px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --max-width: 800px; /* Optimized for reading */
+            --section-gap: 5rem;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+            letter-spacing: 0.01em;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--secondary);
+            margin-top: 0;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover { color: var(--primary-light); }
+
+        /* Layout */
+        .site-header {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: var(--max-width);
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Global Components (Logical Beauty) */
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            padding-bottom: 1.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Buttons (My-best style conversion power) */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            border-radius: var(--radius-lg);
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: var(--text-on-primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(176, 0, 32, 0.2);
+            filter: brightness(1.05);
+            color: var(--text-on-primary);
+        }
+
+        /* Badge (Logical Score) */
+        .score-badge {
+            font-family: 'Lato', sans-serif;
+            background: var(--primary);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.25rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: #CBD5E0;
+            padding: 5rem 2rem;
+            margin-top: var(--section-gap);
+            text-align: center;
+        }
+
+        .footer-nav {
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-nav a {
+            color: #CBD5E0;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .footer-nav a:hover { color: #fff; }
+
+        .disclaimer {
+            font-size: 0.8rem;
+            max-width: 700px;
+            margin: 2rem auto 0;
+            opacity: 0.7;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            :root { --max-width: 100%; --section-gap: 3.5rem; }
+            main { margin-top: 1.5rem; padding: 0 1rem; }
+            .section-title { font-size: 1.5rem; }
+            .header-content { padding: 0 1.25rem; }
+        }
+
+        /* Article Specific Components */
+        .updated-at {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            font-size: 2.4rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.25;
+            color: var(--secondary);
+        }
+
+        .article-intro {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 4rem;
+        }
+
+        /* Comparison Table (My-best style) */
+        .comparison-wrapper {
+            overflow-x: auto;
+            margin-bottom: 4rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            min-width: 600px;
+        }
+
+        .comparison-table th {
+            background: var(--secondary);
+            color: #fff;
+            padding: 1.25rem 1rem;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        .comparison-table td {
+            padding: 1.25rem 1rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        /* Ranking Card (Logical Beauty) */
+        .ranking-item {
+            margin-bottom: 6rem;
+            background: #fff;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .ranking-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border);
+            background: #fdfdfd;
+        }
+
+        .rank-badge {
+            font-family: 'Lato', sans-serif;
+            background: var(--secondary);
+            color: #fff;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+
+        .rank-badge.top-1 { background: var(--accent); color: var(--secondary); }
+        .rank-badge.top-2 { background: #CBD5E0; color: var(--secondary); }
+        .rank-badge.top-3 { background: #ED8936; color: #fff; }
+
+        .item-name {
+            font-size: 1.35rem;
+            margin: 0;
+            line-height: 1.4;
+            font-weight: 700;
+        }
+
+        .ranking-body {
+            padding: 2rem;
+        }
+
+        .ranking-grid {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 3rem;
+        }
+
+        .item-visual {
+            text-align: center;
+        }
+
+        .item-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--radius-md);
+            margin-bottom: 1.5rem;
+        }
+
+        .best-for-tag {
+            background: #FFF5F5;
+            color: var(--primary);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-align: left;
+            border-left: 4px solid var(--primary);
+        }
+
+        .price-row {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .price-tag {
+            font-family: 'Lato', sans-serif;
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .price-unit {
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .review-summary {
+            margin-left: auto;
+            text-align: right;
+        }
+
+        .star-rating {
+            color: #FF9900;
+            font-weight: 800;
+            font-size: 1.25rem;
+        }
+
+        .review-count {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .eval-section {
+            margin-bottom: 2rem;
+        }
+
+        .eval-title {
+            display: block;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-left: 4.5px solid var(--primary);
+            padding-left: 0.75rem;
+        }
+
+        /* Pros & Cons (Roomie-like soft colors) */
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .pc-box {
+            padding: 1.25rem;
+            border-radius: var(--radius-md);
+            font-size: 0.95rem;
+        }
+
+        .pc-box.pros { background: #F0FFF4; color: #276749; }
+        .pc-box.cons { background: #FFF5F5; color: #9B2C2C; }
+
+        .pc-title {
+            font-weight: 800;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pc-list {
+            margin: 0;
+            padding-left: 1.25rem;
+            line-height: 1.6;
+        }
+
+        .pc-list li { margin-bottom: 0.5rem; }
+
+        @media (max-width: 900px) {
+            .ranking-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .pros-cons { grid-template-columns: 1fr; }
+            .article-title { font-size: 1.8rem; }
+            .price-row { flex-wrap: wrap; }
+            .review-summary { text-align: left; margin-left: 0; width: 100%; margin-top: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="https://yy00si.github.io/rakuten-affiliate-site/" class="logo">ライフテック・セレクト：LifeTech Select</a>
+        </div>
+    </header>
+
+    <main>
+        
+<article class="static-page" style="max-width: 700px; margin: 0 auto; line-height: 2;">
+    <h1 class="section-title">プライバシーポリシー</h1>
+
+    <section style="margin-bottom: 3rem;">
+        <h2>1. 個人情報の収集について</h2>
+        <p>
+            当サイト（LifeTech Select）では、お問い合わせ時を除き、氏名やメールアドレスなどの個人情報を直接収集することはありません。
+        </p>
+    </section>
+
+    <section style="margin-bottom: 3rem;">
+        <h2>2. アクセス解析ツールについて</h2>
+        <p>
+            当サイトでは、サイトの利用状況を把握するために、Cookie（クッキー）を使用したアクセス解析を行う場合があります。これらは匿名で収集されており、個人を特定するものではありません。ブラウザの設定により、Cookieの受け入れを拒否することも可能です。
+        </p>
+    </section>
+
+    <section style="margin-bottom: 3rem;">
+        <h2>3. アフィリエイト広告について</h2>
+        <p>
+            当サイトは、楽天グループ株式会社が提供するアフィリエイトプログラム「楽天アフィリエイト」に参加しています。
+        </p>
+        <p>
+            第三者（楽天グループ等）が、ユーザーのブラウザにクッキーを設置したり、これを認識したりすることで、広告を表示するための情報を収集する場合があります。これらの情報の取り扱いについては、楽天のプライバシーポリシーをご確認ください。
+        </p>
+    </section>
+
+    <section style="margin-bottom: 3rem;">
+        <h2>4. 免責事項</h2>
+        <p>
+            当サイトに掲載している情報は、楽天市場のAPIより取得したデータおよび公開されているレビューに基づいています。情報の正確性には細心の注意を払っておりますが、最新の価格や在庫状況、製品仕様の詳細は、リンク先の楽天市場各ショップのページにて必ずご確認ください。
+        </p>
+        <p>
+            当サイトを利用したことによる、万が一の損害やトラブル等について、当サイトは一切の責任を負いかねますのであらかじめご了承ください。
+        </p>
+    </section>
+
+    <section>
+        <h2>5. 著作権について</h2>
+        <p>
+            当サイト内の文章、画像（APIより取得した商品画像を除く）、デザイン等の著作権は当サイト運営者に帰属します。無断転載・転用は固くお断りいたします。
+        </p>
+    </section>
+</article>
+
+    </main>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="https://yy00si.github.io/rakuten-affiliate-site/">トップページ</a>
+            <a href="https://yy00si.github.io/rakuten-affiliate-site/about/">当サイトについて</a>
+            <a href="https://yy00si.github.io/rakuten-affiliate-site/privacy-policy/">プライバシーポリシー</a>
+        </div>
+        <p>© 2026 ライフテック・セレクト：LifeTech Select</p>
+        <p class="disclaimer">
+            当サイトはアフィリエイト広告を利用しています。紹介している商品の最新価格や在庫状況、正確な仕様については、リンク先の楽天市場各ショップのページにて必ずご確認ください。
+        </p>
+    </footer>
+</body>
+</html>
