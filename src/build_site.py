@@ -36,11 +36,11 @@ def main():
             continue
             
         # 予約公開チェック: release_date が今日より後ならスキップ
-        release_date = art_conf.get("release_date", "2000-01-01")
-        if release_date > today_iso:
-            # タイムゾーンのズレを考慮し、当日(today_iso)と一致する場合はスキップしない
-            print(f"[SKIP] 予約公開待ち: {art_conf['id']} (公開予定: {release_date})")
+        release_date_str = str(art_conf.get("release_date", "2000-01-01")).strip()
+        if release_date_str > today_iso:
+            print(f"[SKIP] 予約公開待ち: {art_conf['id']} (公開予定: {release_date_str} / 今日: {today_iso})")
             continue
+        print(f"[DEBUG] 処理対象記事: {art_conf['id']} (公開日: {release_date_str})")
             
         file_path = os.path.join(data_dir, f"{art_conf['id']}.json")
         if not os.path.exists(file_path):
@@ -52,7 +52,10 @@ def main():
             
         category = categories.get(art_conf['category_id'])
         if not category:
+            print(f"[ERROR] カテゴリが見つかりません: {art_conf['category_id']} (記事ID: {art_conf['id']})")
             continue
+            
+        print(f"[DEBUG] カテゴリ一致: {category['id']} -> {category['name']}")
             
         # 出力先ディレクトリ作成
         article_dir = os.path.join(output_base, category['slug'], art_conf['slug'])
@@ -90,6 +93,10 @@ def main():
             "url": f"./{category['slug']}/{art_conf['slug']}/" # トップから見た相対パス
         })
         print(f"[INFO] 記事生成完了: {category['slug']}/{art_conf['slug']}/index.html")
+    
+    # 処理済み記事を日付順（降順）にソート
+    processed_articles.sort(key=lambda x: x['conf'].get('release_date', '2000-01-01'), reverse=True)
+    print(f"[DEBUG] トップページ用記事リスト: {[a['conf']['id'] for a in processed_articles]}")
 
     # 2. カテゴリ一覧ページの生成
     for cat_id, cat in categories.items():
