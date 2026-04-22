@@ -78,6 +78,35 @@ articles:
         best_for: "磁性流体スピーカーを初めて購入する方"
     rakuten_params: {keyword: "磁性流体 スピーカー", sort: "-reviewCount", hits: 3, min_review_count: 0}
 
+  - id: "ai-voice-recorder"
+    category_id: "trend"
+    slug: "ai-voice-recorder"
+    release_date: "2026-04-22"
+    eye_catch: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80"
+    h1: "【神ツール】AIボイスレコーダー おすすめ5選"
+    title: "【2026最新】AIボイスレコーダー おすすめ5選｜録音・文字起こし・要約までAIが完結"
+    meta_description: "Redditや海外レビューで絶賛。ChatGPT/Claude連携の最新AIボイスレコーダーを徹底比較。会議や通話録音の効率を劇的に変える1台はどれ？"
+    test_criteria: [{id: "transcribe", name: "文字起こし精度"}, {id: "summary", name: "要約の質"}, {id: "usability", name: "持ち運びやすさ"}]
+    intro: "もう、手書きで議事録を作る時代は終わりました。海外のテックエリートたちの間で今、最も熱い視線を浴びているのが「AIボイスレコーダー」です。録音した音声をAIが即座にテキスト化し、要約やマインドマップまで作成してくれる。仕事の生産性を10倍に跳ね上げる次世代ガジェットの最前線をレポートします。"
+    custom_sections:
+      - title: "「ただの録音」から「AIによる思考の整理」へ"
+        content: |
+          従来のボイスレコーダーとの決定的な違いは、**最新のLLM（大規模言語モデル）との連携**にあります。
+          単に言葉を拾うだけでなく、会話の「文脈」を理解し、重要な決定事項やToDoリストを自動で抽出します。
+          特に、iPhoneの背面にMagSafeで貼り付けて通話内容を録音できるモデルは、ビジネスパーンの必須アイテムとなりつつあります。
+    selection_criteria:
+      - title: "日本語への対応度と要約の賢さ"
+        body: "GPT-4oやClaude 3.5などの最新AIを搭載し、日本語特有の表現を正しく要約できるモデルを評価。"
+      - title: "運用コスト（AI利用料）"
+        body: "本体代金だけでなく、月々の文字起こし枠（無料枠の有無）など、長く使うためのコストパフォーマンスを重視。"
+    products_extra:
+      - rank: 1
+        reason: "ChatGPT連携による要約精度が極めて高く、薄さ2.9mmという携帯性も抜群。通話録音機能への満足度が圧倒的です。"
+        pros: ["カード型で財布に入る", "通話録音対応", "要約テンプレートが豊富"]
+        cons: ["大量に使う場合はサブスクが必要", "充電端子が専用設計"]
+        best_for: "会議が多い方、外回りでの通話が多いプロフェッショナル"
+    rakuten_params: {keyword: "PLAUD NOTE AI ボイスレコーダー", sort: "-reviewCount", hits: 5, min_review_count: 0}
+
   # ==========================================================
   # 【1週目：資産予約枠】
   # ==========================================================
