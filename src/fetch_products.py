@@ -27,20 +27,32 @@ MAJOR_BRANDS = [
     "MTG", "KINUJO", "リュミエリーナ", "Lumielina", "ヘアビューロン"
 ]
 
-# 徹底排除キーワード
-NEGATIVE_KEYWORDS = ["ふるさと納税", "返礼品", "中古", "訳あり", "ジャンク", "部品", "パーツ", "クリーニング", "修理"]
+# 徹底排除キーワード (これらが含まれる場合は即座にスキップ)
+NEGATIVE_KEYWORDS = [
+    "ふるさと納税", "返礼品", "中古", "訳あり", "ジャンク", "部品", "パーツ", "クリーニング", "修理",
+    "対応", "互換", "専用", "セット", "レンタル", "保証", "延長", "設置", "工事", "リサイクル",
+    "テーブル", "チェア", "椅子", "デスク", "マット", "カバー", "ケース", "フィルター", "ブラシ"
+]
 
-def fetch_items_for_keyword(keyword, params_config):
+def fetch_items_for_keyword(keyword, params_config, article_id):
     """特定のキーワードで商品を取得する内部関数"""
     min_price = params_config.get('min_price', 500)
     max_price = params_config.get('max_price', 9999999)
     
+    # 記事IDから主要キーワードを推測 (判定を少し柔軟に)
+    core_kws = []
+    if "dryer" in article_id: core_kws = ["ドライヤー", "dryer", "ヘア"]
+    elif "vacuum" in article_id: core_kws = ["掃除機", "ルンバ", "クリーナー"]
+    elif "chair" in article_id: core_kws = ["チェア", "椅子", "デスクチェア"]
+    elif "speaker" in article_id: core_kws = ["スピーカー"]
+    elif "recorder" in article_id: core_kws = ["レコーダー", "録音"]
+
     params = {
         "applicationId": RAKUTEN_APP_ID,
         "accessKey": RAKUTEN_ACCESS_KEY,
         "affiliateId": RAKUTEN_AFFILIATE_ID,
         "keyword": keyword,
-        "hits": 30, # フィルタリング用に多めに取得
+        "hits": 30, 
         "sort": params_config.get('sort', 'standard'),
         "imageFlag": 1,
         "minPrice": min_price,
@@ -55,10 +67,25 @@ def fetch_items_for_keyword(keyword, params_config):
         headers = {"Referer": "https://github.com", "Origin": "https://github.com"}
         response = requests.get(API_ENDPOINT, params=params, headers=headers, timeout=10)
         if response.status_code == 200:
-            return response.json().get("Items", [])
+            raw_items = response.json().get("Items", [])
+            valid_items = []
+            for item_raw in raw_items:
+                item = item_raw.get("Item", item_raw)
+                name = item.get("itemName", "")
+                
+                # 1. 徹底排除キーワードチェック (ここは厳格に維持)
+                if any(neg in name for neg in NEGATIVE_KEYWORDS):
+                    continue
+                
+                # 2. 記事のテーマが含まれているか (判定を緩和: 1つでも含まれていればOK)
+                if core_kws and not any(ck in name for ck in core_kws):
+                    continue
+
+                valid_items.append(item_raw)
+            return valid_items
         elif response.status_code == 429:
             time.sleep(2)
-            return fetch_items_for_keyword(keyword, params_config)
+            return fetch_items_for_keyword(keyword, params_config, article_id)
     except Exception as e:
         print(f"[ERROR] API Exception for {keyword}: {str(e)}")
     return []
@@ -74,7 +101,7 @@ def fetch_article_items(article):
     all_raw_items = []
     for kw in keywords:
         kw = kw.strip()
-        items = fetch_items_for_keyword(kw, params_config)
+        items = fetch_items_for_keyword(kw, params_config, article_id)
         all_raw_items.extend(items)
         time.sleep(0.5)
 
@@ -88,18 +115,14 @@ def fetch_article_items(article):
         
         item_name = item.get("itemName", "")
         
-        # 1. ネガティブフィルタリング (ふるさと納税等を排除)
-        if any(neg in item_name for neg in NEGATIVE_KEYWORDS):
-            continue
-
-        # 2. 主要メーカー判定
+        # 主要メーカー判定
         is_major = any(brand.lower() in item_name.lower() for brand in MAJOR_BRANDS)
         
-        # 3. 品質スコアの簡易計算 (レビュー平均 × レビュー数係数)
+        # 品質スコアリング
         rev_avg = float(item.get("reviewAverage", 0))
         rev_count = int(item.get("reviewCount", 0))
-        # 無名メーカーでも評価が高ければ拾えるよう、スコア化
-        quality_score = rev_avg * (1.0 + (min(rev_count, 1000) / 2000)) 
+        # 評価が高く、かつ主要メーカーであることを最優先
+        quality_score = rev_avg * (1.0 + (min(rev_count, 1000) / 1000)) 
 
         # 画像URL取得
         image_url = ""
@@ -119,14 +142,12 @@ def fetch_article_items(article):
             "reviewAverage": rev_avg,
             "quality_score": quality_score,
             "shopName": item.get("shopName"),
-            "caption": item.get("itemCaption", "")[:200],
+            "caption": item.get("itemCaption", "")[:300],
             "is_major": is_major
         })
         seen_urls.add(url)
 
-    # ソート順: 
-    # 1. 主要メーカーフラグ (1st)
-    # 2. クオリティスコア (2nd: 無名メーカーでもここが高ければ上位に食い込む)
+    # ソート順: 主要メーカーかつスコアが高いものを上位へ
     processed_items.sort(key=lambda x: (x['is_major'], x['quality_score']), reverse=True)
     
     final_items = processed_items[:max_total_hits]
