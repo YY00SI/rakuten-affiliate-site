@@ -35,48 +35,13 @@ articles:
   - id: "ferrofluid-speaker"
     category_id: "trend"
     slug: "ferrofluid-speaker"
-    release_date: "2026-04-21" # 本日の日付に設定
-    auto_fetch: false # 手動厳選データを使用するため、自動取得を無効化
+    release_date: "2026-04-21"
+    auto_fetch: false
     eye_catch: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80"
     h1: "【厳選】磁性流体スピーカー おすすめ3選"
     title: "【SNSで話題】磁性流体スピーカー おすすめ3選｜音に合わせて踊る「動くアート」が凄い"
-    meta_description: "TikTokや海外レビューで話題の「磁性流体スピーカー」を徹底解説。音楽に合わせて生き物のように動く不思議な液体の正体とは？日本で購入可能な厳選モデルを紹介。"
-    test_criteria: [{id: "visual", name: "視覚的インパクト"}, {id: "audio", name: "音質"}, {id: "design", name: "インテリア性"}]
-    intro: "今、海外のデスクセットアップ愛好家の間で「生きているようなスピーカー」が爆発的な人気を博しています。音楽のビートに合わせて、黒い液体が変幻自在に踊り狂う――。それは単なる音響機器ではなく、デスクの上に現れた『未来のアート』です。日本ではまだ手にする人が少ないこの次世代ガジェットを、どこよりも詳しく解説します。"
-    custom_sections:
-      - title: "そもそも「磁性流体」とは何なのか？"
-        content: |
-          磁性流体（フェロフルイド）は、もともと**1960年代にNASAが宇宙空間で燃料を輸送するために開発した**特殊な素材です。
-          微細な磁性粒子が液体中に均一に分散しており、磁石を近づけるとトゲのような形（スパイク現象）を作ったり、生き物のようにうごめいたりします。
-          この「磁力に反応する」性質を音楽信号と連動させ、ビートに合わせて液体を制御しているのが、磁性流体スピーカーの仕組みです。
-      - title: "なぜ海外のSNSでこれほどまでにバズっているのか？"
-        content: |
-          TikTokやInstagramでは「#DeskSetup」「#ZenTech」といったタグと共に、このスピーカーが頻繁に登場します。
-          人気の理由は、**「デジタル時代の究極の癒やし」**としての側面です。
-          焚き火を見つめるのと同じように、音に合わせて有機的に形を変える黒い液体を眺める体験は、高いリラックス効果を生みます。
-          特に、ライティングにこだわった暗い部屋での演出効果は抜群で、海外のテック系クリエイターたちの間で「必須アイテム」となっています。
-    selection_criteria:
-      - title: "液体の「動きの解像度」"
-        body: "磁性流体が音楽の強弱にどれだけ俊敏、かつ滑らかに反応するかを重視。安価な類似品は動きが鈍いことがあるため、実機の挙動が優れたモデルを厳選しました。"
-      - title: "デスクとの親和性（デザイン）"
-        body: "最新のデスクセットアップに馴染むよう、アルミボディや高品質なガラスを採用した、質感の高いモデルを優先しています。"
-    products_extra:
-      - rank: 1
-        reason: "レコードプレーヤーを模したレトロモダンなデザインと、最新テクノロジーの融合。液体の動きが最もダイナミックで、視覚的な楽しさがずば抜けています。"
-        pros: ["レコードが回るような情緒ある演出", "動きのキレが良い", "Bluetooth 5.0対応"]
-        cons: ["サイズが少し大きめ", "価格がやや高い"]
-        best_for: "デザインと体験、どちらも妥協したくない方"
-      - rank: 2
-        reason: "ミニマルなスクエアデザインで、どんなインテリアにも馴染みます。バックライトの演出が美しく、夜のリスニングタイムを最高のものにしてくれます。"
-        pros: ["洗練されたアルミ外装", "照明モードが豊富", "コンパクト"]
-        cons: ["音質は中音域重視", "指紋が目立ちやすい"]
-        best_for: "海外のようなスタイリッシュなデスクを作りたい方"
-      - rank: 3
-        reason: "機能を絞ることで手に入れやすい価格を実現したエントリーモデル。磁性流体の不思議な動きをまず体験してみたい方に最適です。"
-        pros: ["圧倒的なコスパ", "設置場所を選ばないサイズ", "USB給電で手軽"]
-        cons: ["プラスチック感が少しある", "大きな音量は苦手"]
-        best_for: "磁性流体スピーカーを初めて購入する方"
-    rakuten_params: {keyword: "磁性流体 スピーカー", sort: "-reviewCount", hits: 3, min_review_count: 0}
+    meta_description: "TikTokや海外レビューで話題の「磁性流体スピーカー」を徹底解説。日本で購入可能な厳選モデルを紹介。"
+    rakuten_params: {keyword: "磁性流体 スピーカー", sort: "-reviewCount", hits: 3}
 
   - id: "ai-voice-recorder"
     category_id: "trend"
@@ -85,30 +50,11 @@ articles:
     eye_catch: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80"
     h1: "【神ツール】AIボイスレコーダー おすすめ5選"
     title: "【2026最新】AIボイスレコーダー おすすめ5選｜録音・文字起こし・要約までAIが完結"
-    meta_description: "Redditや海外レビューで絶賛。ChatGPT/Claude連携の最新AIボイスレコーダーを徹底比較。会議や通話録音の効率を劇的に変える1台はどれ？"
-    test_criteria: [{id: "transcribe", name: "文字起こし精度"}, {id: "summary", name: "要約の質"}, {id: "usability", name: "持ち運びやすさ"}]
-    intro: "もう、手書きで議事録を作る時代は終わりました。海外のテックエリートたちの間で今、最も熱い視線を浴びているのが「AIボイスレコーダー」です。録音した音声をAIが即座にテキスト化し、要約やマインドマップまで作成してくれる。仕事の生産性を10倍に跳ね上げる次世代ガジェットの最前線をレポートします。"
-    custom_sections:
-      - title: "「ただの録音」から「AIによる思考の整理」へ"
-        content: |
-          従来のボイスレコーダーとの決定的な違いは、**最新のLLM（大規模言語モデル）との連携**にあります。
-          単に言葉を拾うだけでなく、会話の「文脈」を理解し、重要な決定事項やToDoリストを自動で抽出します。
-          特に、iPhoneの背面にMagSafeで貼り付けて通話内容を録音できるモデルは、ビジネスパーンの必須アイテムとなりつつあります。
-    selection_criteria:
-      - title: "日本語への対応度と要約の賢さ"
-        body: "GPT-4oやClaude 3.5などの最新AIを搭載し、日本語特有の表現を正しく要約できるモデルを評価。"
-      - title: "運用コスト（AI利用料）"
-        body: "本体代金だけでなく、月々の文字起こし枠（無料枠の有無）など、長く使うためのコストパフォーマンスを重視。"
-    products_extra:
-      - rank: 1
-        reason: "ChatGPT連携による要約精度が極めて高く、薄さ2.9mmという携帯性も抜群。通話録音機能への満足度が圧倒的です。"
-        pros: ["カード型で財布に入る", "通話録音対応", "要約テンプレートが豊富"]
-        cons: ["大量に使う場合はサブスクが必要", "充電端子が専用設計"]
-        best_for: "会議が多い方、外回りでの通話が多いプロフェッショナル"
-    rakuten_params: {keyword: "PLAUD NOTE AI ボイスレコーダー", sort: "-reviewCount", hits: 5, min_review_count: 0}
+    meta_description: "Redditや海外レビューで絶賛。ChatGPT/Claude連携の最新AIボイスレコーダーを徹底比較。"
+    rakuten_params: {keyword: "PLAUD NOTE, 録音 要約 AI", sort: "-reviewCount", hits: 5}
 
   # ==========================================================
-  # 【1週目：資産予約枠】
+  # 【資産予約枠】
   # ==========================================================
   - id: "hair-dryer-ranking"
     category_id: "beauty"
@@ -117,21 +63,8 @@ articles:
     eye_catch: "https://images.unsplash.com/photo-1522338140262-f46f5913618a?auto=format&fit=crop&w=800&q=80"
     h1: "高級ヘアドライヤー おすすめ10選"
     title: "【2026年最新】高級ヘアドライヤー おすすめ10選｜3万円以上の失敗しない選び方"
-    meta_description: "楽天市場の累計レビュー1万件を分析。ナノケア、リファ、ダイソンなど人気機種のメリット・デメリットを徹底比較。納得の1台が見つかります。"
-    test_criteria: [{id: "speed", name: "速乾性"}, {id: "care", name: "まとまり"}, {id: "weight", name: "軽さ"}]
-    intro: "「高いドライヤーを買って後悔したくない」そんな方のために、楽天市場の膨大な口コミと最新スペックを徹底調査。本当に評価の高い10機種を厳選しました。"
-    selection_criteria:
-      - title: "ユーザーが重視した「重量バランス」"
-        body: "実際の口コミでは、単なる軽さよりも「持ちやすさ」への言及が多数。高評価が集まったモデルをピックアップ。"
-      - title: "ダメージケアの実感値"
-        body: "「パサつきが抑えられた」という具体的な体験談が多い機種を高く評価しています。"
-    products_extra:
-      - rank: 1
-        reason: "自動温度調整への満足度が極めて高い。熱ダメージを抑えつつ時短を実現したという声が圧倒的。"
-        pros: ["髪を熱から守るセンサー", "温冷切り替えがスムーズ", "艶が出たという口コミ多数"]
-        cons: ["折りたたみ不可", "在庫切れになりやすい"]
-        best_for: "仕上がり重視・時短したい方"
-    rakuten_params: {keyword: "ドライヤー 速乾", sort: "-reviewCount", hits: 10, min_review_count: 0}
+    meta_description: "ナノケア、リファ、ダイソンなど人気機種を徹底比較。"
+    rakuten_params: {keyword: "パナソニック ドライヤー, ダイソン ドライヤー, リファ ドライヤー, ヤーマン ドライヤー", sort: "standard", hits: 10, min_price: 30000}
 
   - id: "robot-vacuum-ranking"
     category_id: "home"
@@ -140,19 +73,8 @@ articles:
     eye_catch: "https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?auto=format&fit=crop&w=800&q=80"
     h1: "全自動ロボット掃除機 おすすめ7選"
     title: "【2026】全自動ロボット掃除機 おすすめ7選｜ゴミ捨て・水拭き・洗浄までお任せ"
-    meta_description: "最新の全自動ロボット掃除機を比較。ルンバ、エコバックス、ロボロックのレビューを徹底分析し、本当の「手間のなさ」を検証。"
-    test_criteria: [{id: "clean", name: "清掃力"}, {id: "map", name: "AIの賢さ"}, {id: "maintenance", name: "メンテ性"}]
-    intro: "掃除だけでなく、ゴミ捨てもモップ洗浄も自動。そんな「真の自動化」を叶えるモデルを、実際のユーザー満足度に基づいてランキングしました。"
-    selection_criteria:
-      - title: "モップ乾燥機能の評価"
-        body: "「生乾きの臭いがしない」と評判の、熱風乾燥機能付きモデルを優先的に選出。"
-    products_extra:
-      - rank: 1
-        reason: "マッピングの正確さと水拭きの仕上がりに驚きの声が多数。ステーションの全自動化も完璧です。"
-        pros: ["全自動メンテナンス", "高い吸引力", "アプリが使いやすい"]
-        cons: ["サイズが大きい", "高価格"]
-        best_for: "家事を極限まで減らしたい共働き世帯"
-    rakuten_params: {keyword: "ロボット掃除機 水拭き", sort: "-reviewCount", hits: 10, min_review_count: 0}
+    meta_description: "ルンバ、エコバックス、ロボロックのレビューを徹底分析。"
+    rakuten_params: {keyword: "ルンバ, エコバックス, ロボロック", sort: "standard", hits: 10, min_price: 50000}
 
   - id: "office-chair-ranking"
     category_id: "work"
@@ -161,258 +83,5 @@ articles:
     eye_catch: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
     h1: "高級オフィスチェア おすすめ8選"
     title: "【腰痛対策】高級オフィスチェア おすすめ8選｜座り心地の口コミを徹底比較"
-    meta_description: "ハーマンミラー、エルゴヒューマンなどの高級チェアを分析。腰痛持ちのユーザーが「選んでよかった」と答えた8選。"
-    test_criteria: [{id: "lumber", name: "腰サポート"}, {id: "adjust", name: "調整自由度"}, {id: "breath", name: "通気性"}]
-    intro: "10万円を超える椅子には、それだけの理由があります。長時間のデスクワークでも疲れにくいと絶賛される名作を、スペックと評価から紐解きます。"
-    selection_criteria:
-      - title: "長期保証と耐久性"
-        body: "12年保証など、長く使える信頼性を重視。中古市場でも人気の高いモデルを厳選。"
-    products_extra:
-      - rank: 1
-        reason: "「座った瞬間に腰が楽になった」という声が絶えない名作。圧倒的な支持率を誇ります。"
-        pros: ["高い追従性", "長期保証", "高いリセールバリュー"]
-        cons: ["高価", "ヘッドレスト別売り"]
-        best_for: "本気で腰痛対策をしたいデスクワーカー"
-    rakuten_params: {keyword: "オフィスチェア 高級", sort: "-reviewCount", hits: 10, min_review_count: 0}
-
-  - id: "auto-cooker-ranking"
-    category_id: "kitchen"
-    slug: "auto-cooker"
-    release_date: "2026-04-24"
-    eye_catch: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80"
-    h1: "自動調理鍋 おすすめ5選"
-    title: "【時短革命】自動調理鍋 おすすめ5選｜実際の美味しさと予約機能を比較"
-    meta_description: "ホットクック等の自動調理鍋を徹底調査。「本当に美味しくできるか」に焦点を当てた、共働き世帯必見のランキング。"
-    test_criteria: [{id: "taste", name: "味の満足度"}, {id: "manual", name: "予約の幅"}, {id: "wash", name: "手入れ"}]
-    intro: "「材料を入れるだけ」の生活は、想像以上に快適です。実際の購入者が「手放せない」と答えた、本当の時短家電を選出しました。"
-    selection_criteria:
-      - title: "洗いやすさの実感"
-        body: "「パッキンの匂い移り」や「食洗機対応」など、日常の使い勝手を重視。"
-    products_extra:
-      - rank: 1
-        reason: "「無水調理」の美味しさに感動するユーザーが続出。かきまぜ機能も唯一無二の便利さです。"
-        pros: ["レシピが豊富", "予約調理が優秀", "パーツ食洗機OK"]
-        cons: ["場所を取る", "圧力機能なし"]
-        best_for: "料理の負担を減らしつつ美味しさも重視したい方"
-    rakuten_params: {keyword: "自動調理鍋", sort: "-reviewCount", hits: 10, min_review_count: 0}
-
-  # ==========================================================
-  # 【2週目：資産予約枠】
-  # ==========================================================
-  - id: "facial-device-ranking"
-    category_id: "beauty"
-    slug: "facial-device"
-    release_date: "2026-04-25"
-    eye_catch: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80"
-    h1: "本格美顔器 おすすめ6選"
-    title: "【2026】本格美顔器 おすすめ6選｜たるみ・ハリへの満足度を徹底リサーチ"
-    meta_description: "EMS・RF搭載の高級美顔器を比較。ヤーマン、パナソニック等、実際のユーザーが「変化を感じた」と答えた機種を紹介。"
-    test_criteria: [{id: "ems", name: "EMSの強さ"}, {id: "warm", name: "RFの温感"}, {id: "easy", name: "使いやすさ"}]
-    intro: "自宅でエステ級のケアを。口コミから「本当に手応えがあった」という意見が多い本格派美顔器を厳選しました。"
-    selection_criteria:
-      - title: "継続のしやすさ"
-        body: "「充電が持つか」「コードレスか」など、毎日続けられる機動性を評価。"
-    products_extra:
-      - rank: 1
-        reason: "1台で何役もこなす多機能性が、美意識の高いユーザーから絶賛されています。"
-        pros: ["多機能", "プロ仕様の技術", "高い満足度"]
-        cons: ["操作が複雑", "防水なし"]
-        best_for: "本格的なケアを自宅で完結させたい方"
-    rakuten_params: {keyword: "美顔器 EMS", sort: "-reviewCount", hits: 10, min_review_count: 0}
-
-  - id: "coffee-maker-ranking"
-    category_id: "kitchen"
-    slug: "coffee-maker"
-    release_date: "2026-04-26"
-    eye_catch: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
-    h1: "全自動コーヒーメーカー おすすめ8選"
-    title: "【至福の一杯】全自動コーヒーメーカー おすすめ8選｜味とメンテのしやすさを調査"
-    meta_description: "デロンギ、シロカ、パナなどの全自動機を調査。コーヒー好きが「香りが違う」と認めた8選。"
-    test_criteria: [{id: "grind", name: "豆の挽き具合"}, {id: "temp", name: "抽出温度"}, {id: "maintenance", name: "清掃性"}]
-    intro: "家がカフェになる贅沢。豆から挽く全自動コーヒーメーカーの、味と手入れのバランスを徹底的に調べました。"
-    selection_criteria:
-      - title: "ミルの方式と静音性"
-        body: "「朝、家族を起こさず使えるか」という観点から、動作音への口コミもチェック。"
-    products_extra:
-      - rank: 1
-        reason: "ラテメニューの自動生成が圧倒的に便利。手入れの簡単さも高く評価されています。"
-        pros: ["カフェのような味", "内部洗浄が自動", "高いデザイン性"]
-        cons: ["価格が高い", "サイズが大きい"]
-        best_for: "自宅で完璧なラテを飲みたい方"
-    rakuten_params: {keyword: "コーヒーメーカー 全自動", sort: "-reviewCount", hits: 10, min_review_count: 0}
-
-  - id: "keyboard-ranking"
-    category_id: "work"
-    slug: "keyboard-ranking"
-    release_date: "2026-04-27"
-    eye_catch: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=800&q=80"
-    h1: "高級キーボード おすすめ10選"
-    title: "【打鍵感】高級キーボード おすすめ10選｜疲れにくさと仕事の楽しさをリサーチ"
-    meta_description: "HHKB、Realforceなどの高級機を分析。ライターやエンジニアが「これ以外使えない」と答えた理由を調査。"
-    test_criteria: [{id: "feel", name: "打鍵の心地よさ"}, {id: "fatigue", name: "疲れにくさ"}, {id: "conn", name: "安定性"}]
-    intro: "キーボードは仕事道具への最大の投資。指が喜ぶ打鍵感と、一生モノの耐久性を備えたモデルを厳選しました。"
-    selection_criteria:
-      - title: "打鍵音の静かさ"
-        body: "「オフィスでも使えるか」という静音性へのニーズを反映して評価。"
-    products_extra:
-      - rank: 1
-        reason: "独自の配列と最高の打鍵感が、プロから圧倒的に支持されています。"
-        pros: ["ミニマル配列", "最高の打鍵感", "コンパクト"]
-        cons: ["配列に慣れが必要", "高価"]
-        best_for: "文章作成を極めたいプロフェッショナル"
-    rakuten_params: {keyword: "キーボード 高級", sort: "-reviewCount", hits: 10, min_review_count: 0}
-
-  - id: "stick-vacuum-ranking"
-    category_id: "home"
-    slug: "stick-vacuum"
-    release_date: "2026-04-28"
-    eye_catch: "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=800&q=80"
-    h1: "軽量コードレス掃除機 おすすめ7選"
-    title: "【2026】軽量コードレス掃除機 おすすめ7選｜軽さと吸引力のリアルな評価を分析"
-    meta_description: "ダイソン、パナ等のスティック掃除機を調査。1.5kg以下の「取り回しの良さ」で選んだ最新ランキング。"
-    test_criteria: [{id: "suction", name: "吸引力"}, {id: "weight", name: "軽さ"}, {id: "trash", name: "ゴミ捨て"}]
-    intro: "「掃除を楽にする」のは、何より軽さ。それでいて吸い残さない、ユーザー満足度の高い軽量モデルを比較しました。"
-    selection_criteria:
-      - title: "バッテリーの持ち"
-        body: "「一軒家をまるごと掃除できるか」という実用時間をチェック。"
-    products_extra:
-      - rank: 1
-        reason: "軽さとゴミの可視化機能が、掃除を楽しくしたというポジティブな評価が多数。"
-        pros: ["ゴミが見えるライト", "圧倒的軽さ", "クリーンな排気"]
-        cons: ["使用時間は短め", "価格が高い"]
-        best_for: "こまめに掃除をしたい、軽い家電が好きな方"
-    rakuten_params: {keyword: "掃除機 コードレス", sort: "-reviewCount", hits: 10, min_review_count: 0}
-
-  - id: "smart-lock-ranking"
-    category_id: "home"
-    slug: "smart-lock"
-    release_date: "2026-04-29"
-    eye_catch: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80"
-    h1: "後付けスマートロック おすすめ4選"
-    title: "【鍵のストレス解消】スマートロック おすすめ4選｜設置しやすさと安定性を調査"
-    meta_description: "SwitchBot、Qrioなどのスマートロックを分析。オートロック化の満足度を徹底リサーチ。"
-    test_criteria: [{id: "resp", name: "反応の速さ"}, {id: "install", name: "付けやすさ"}, {id: "feature", name: "解錠手段"}]
-    intro: "物理的な鍵から解放される生活。設置が簡単で、かつ落下の心配が少ないと評判のモデルを調査しました。"
-    products_extra:
-      - rank: 1
-        reason: "指紋認証の精度の高さが、多くのユーザーに支持されています。"
-        pros: ["高い拡張性", "強力な粘着", "コスパ抜群"]
-        cons: ["アプリ設定が多機能", "ハブが別売り"]
-        best_for: "安価にスマートホーム化を始めたい方"
-    rakuten_params: {keyword: "スマートロック", sort: "-reviewCount", hits: 10, min_review_count: 0}
-
-  - id: "monitor-arm-ranking"
-    category_id: "work"
-    slug: "monitor-arm"
-    release_date: "2026-04-30"
-    eye_catch: "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=800&q=80"
-    h1: "モニターアーム おすすめ5選"
-    title: "【デスク広々】モニターアーム おすすめ5選｜動きの滑らかさと安定性を比較"
-    meta_description: "エルゴトロン等の定番アームをリサーチ。デスク環境にこだわるユーザーが「選んで正解だった」と答えた逸品。"
-    test_criteria: [{id: "smooth", name: "滑らかさ"}, {id: "stable", name: "安定性"}, {id: "install", name: "設置性"}]
-    intro: "デスクのスペースを最大化する魔法。モニターが浮くことで作業効率が上がったという体験談の多いアームを選出。"
-    products_extra:
-      - rank: 1
-        reason: "「指一本で動く」という評価に偽りなし。一度使うと他のアームには戻れません。"
-        pros: ["最高の滑らかさ", "高い質感", "簡単設置"]
-        cons: ["高価", "重い"]
-        best_for: "一生モノのデスク環境を作りたい方"
-    rakuten_params: {keyword: "モニターアーム", sort: "-reviewCount", hits: 10, min_review_count: 0}
-
-  - id: "toothbrush-ranking"
-    category_id: "beauty"
-    slug: "toothbrush-ranking"
-    release_date: "2026-05-01"
-    eye_catch: "https://images.unsplash.com/photo-1559591937-e68fb333594c?auto=format&fit=crop&w=800&q=80"
-    h1: "高級電動歯ブラシ おすすめ6選"
-    title: "【歯科医も注目】高級電動歯ブラシ おすすめ6選｜ツルツル感への満足度を調査"
-    meta_description: "ソニッケアー、オーラルBなどの人気機を比較。手磨きより圧倒的に綺麗になると評判のモデル。"
-    test_criteria: [{id: "clean", name: "磨き心地"}, {id: "gum", name: "優しさ"}, {id: "app", name: "機能"}]
-    intro: "歯の健康への投資。歯科検診で褒められるようになったという声が多い、磨き上がりの質の高い電動歯ブラシをリサーチしました。"
-    products_extra:
-      - rank: 1
-        reason: "音波振動の優しさと、汚れ落ちの良さのバランスが絶賛されています。"
-        pros: ["歯茎に優しい", "高いデザイン性", "静か"]
-        cons: ["替えブラシが高価", "モードが多め"]
-        best_for: "優しく丁寧に歯の健康を守りたい方"
-    rakuten_params: {keyword: "電動歯ブラシ", sort: "-reviewCount", hits: 10, min_review_count: 0}
-
-  - id: "toaster-ranking"
-    category_id: "kitchen"
-    slug: "toaster-ranking"
-    release_date: "2026-05-02"
-    eye_catch: "https://images.unsplash.com/photo-1584990344321-2708341aa5f2?auto=format&fit=crop&w=800&q=80"
-    h1: "高級トースター おすすめ5選"
-    title: "【パン革命】高級トースター おすすめ5選｜朝の幸せ度が上がる焼き上がりを比較"
-    meta_description: "バルミューダ、アラジンなどの人気トースターを分析。「安い食パンが絶品になった」と驚きの声多数。"
-    test_criteria: [{id: "toast", name: "味の感動"}, {id: "speed", name: "焼き上がり速さ"}, {id: "feature", name: "性能"}]
-    intro: "トースターを変えるだけで、朝食が変わる。外カリ中ふわの感動を叶える、評価の高い5台を厳選しました。"
-    products_extra:
-      - rank: 1
-        reason: "スチーム機能による焼き上がりの質感が唯一無二と高く評価されています。"
-        pros: ["高いデザイン性", "ユニークな体験", "美味しい"]
-        cons: ["枚数制限", "高さ不足"]
-        best_for: "朝のトーストを至福の時間にしたい方"
-    rakuten_params: {keyword: "トースター 高級", sort: "-reviewCount", hits: 10, min_review_count: 0}
-
-  - id: "projector-ranking"
-    category_id: "home"
-    slug: "projector-ranking"
-    release_date: "2026-05-03"
-    eye_catch: "https://images.unsplash.com/photo-1595764430415-a81a44bd2725?auto=format&fit=crop&w=800&q=80"
-    h1: "ホームプロジェクター おすすめ7選"
-    title: "【2026】ホームプロジェクター おすすめ7選｜おうち映画館の満足度をリサーチ"
-    meta_description: "Anker、XGIMIなどの人気機を調査。明るさと静音性、設置のしやすさで選んだ最強の7選。"
-    test_criteria: [{id: "bright", name: "明るさ"}, {id: "sound", name: "音質"}, {id: "auto", name: "補正精度"}]
-    intro: "大画面のある暮らし。実際のユーザーが「買ってよかった」と満足している、機能バランスの優れたモデルを調査しました。"
-    products_extra:
-      - rank: 1
-        reason: "明るさと音質のバランスが秀逸。これ一台で完璧なシアターができると絶賛されています。"
-        pros: ["高音質スピーカー", "爆速オートフォーカス", "静か"]
-        cons: ["重い", "Netflixに一工夫必要"]
-        best_for: "手軽に本格シアターを構築したい方"
-    rakuten_params: {keyword: "プロジェクター", sort: "-reviewCount", hits: 10, min_review_count: 0}
-
-  - id: "smart-home-kit"
-    category_id: "home"
-    slug: "smart-home-kit"
-    release_date: "2026-05-04"
-    eye_catch: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80"
-    h1: "スマートホーム導入セット おすすめ5選"
-    title: "【QOL向上】スマートホーム導入セット おすすめ5選｜自動化の快適さを分析"
-    meta_description: "SwitchBot、Nature Remoなどの連携しやすさを調査。声だけで家電を操る便利さを体験したユーザーの声。"
-    test_criteria: [{id: "app", name: "アプリの質"}, {id: "conn", name: "連携幅"}, {id: "auto", name: "自由度"}]
-    intro: "暮らしを自動化して、自由な時間を。設定が簡単で、かつ拡張性が高いと評判のスターターキットを選出しました。"
-    products_extra:
-      - rank: 1
-        reason: "ラインナップの豊富さと、設定の簡単さが初心者から絶大に支持されています。"
-        pros: ["豊富な製品", "簡単設定", "高い信頼性"]
-        cons: ["デザインがシンプル", "クラウド依存"]
-        best_for: "これからスマートホーム化を始めたいすべての方"
-    rakuten_params: {keyword: "スマートリモコン", sort: "-reviewCount", hits: 10, min_review_count: 0}
-
-  # ==========================================================
-  # 【3週目：資産予約枠の積み増し】
-  # ==========================================================
-  - id: "premium-rice-cooker"
-    category_id: "kitchen"
-    slug: "premium-rice-cooker"
-    release_date: "2026-05-05" # 予約追加分
-    eye_catch: "https://images.unsplash.com/photo-1585129049160-71f3c92170a7?auto=format&fit=crop&w=800&q=80"
-    h1: "高級炊飯器 おすすめ8選"
-    title: "【2026】高級炊飯器 おすすめ8選｜10万円超えの『極上の味』をレビューから分析"
-    meta_description: "象印、タイガー、パナソニック等のフラッグシップ炊飯器を調査。お米のプロや実際のユーザーが選んだ、本当に美味しい一台を紹介。"
-    test_criteria: [{id: "taste", name: "お米の甘み"}, {id: "texture", name: "粒立ち"}, {id: "clean", name: "手入れの楽さ"}]
-    intro: "毎日食べるご飯だからこそ、最高の一杯を。最近の10万円クラスの高級炊飯器は、まるで土鍋で炊いたような香ばしさと粒立ちを実現しています。各社の技術とユーザー満足度を徹底リサーチしました。"
-    selection_criteria:
-      - title: "内釜の素材と厚み"
-        body: "熱伝導率に直結する内釜。本物志向の「本炭釜」や「鉄釜」など、お米の芯まで熱を通すモデルを評価。"
-      - title: "保温後の美味しさ"
-        body: "「時間が経っても黄色くならない」「水分が逃げない」という保温性能への口コミを重視。"
-    products_extra:
-      - rank: 1
-        reason: "圧力IHのパイオニアらしい、圧倒的な甘みの引き出し方。ユーザーからも『冷めても美味しい』と絶賛されています。"
-        pros: ["粒立ちが完璧", "メニューが豊富", "内蓋の手入れが簡単"]
-        cons: ["本体が非常に重い", "炊飯時の音が少し大きめ"]
-        best_for: "とにかく『お米の味』にこだわりたい、食卓の質を上げたい方"
-    rakuten_params: {keyword: "炊飯器 高級 圧力IH", sort: "-reviewCount", hits: 10, min_review_count: 0}
+    meta_description: "ハーマンミラー、エルゴヒューマンなどの高級チェアを分析。"
+    rakuten_params: {keyword: "ハーマンミラー, エルゴヒューマン, オカムラ", sort: "standard", hits: 10, min_price: 80000}

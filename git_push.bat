@@ -9,3 +9,4 @@ git push origin main
 
 echo.
 echo Process complete!
+pause

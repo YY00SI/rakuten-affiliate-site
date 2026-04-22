@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="hero-index" style="text-align: center; margin-bottom: 5rem; padding: 4rem 0; border-bottom: 1px solid var(--border);">
-    <h1 style="font-size: 2.8rem; margin-bottom: 1rem; color: var(--primary);">{{ site.name }}</h1>
-    <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 600px; margin: 0 auto;">{{ site.description }}</p>
+<section class="hero-index" style="text-align: center; margin-bottom: 5rem; padding: 4rem 1rem; border-bottom: 1px solid var(--border);">
+    <h1 style="font-size: 2.8rem; margin-bottom: 1.5rem; color: var(--primary); font-weight: 800; letter-spacing: -0.02em;">{{ site.name }}</h1>
+    <div class="hero-description" style="font-size: 1.25rem; line-height: 1.8; color: var(--text-muted); max-width: 800px; margin: 0 auto; font-weight: 500;">
+        <span class="desc-line">楽天市場の膨大なユーザーレビューとスペックを徹底分析。</span><br class="desktop-br">
+        <span class="desc-line">後悔しない「納得の買いもの」をサポートする調査メディアです。</span>
+    </div>
 </section>
 
-<div class="article-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 3rem;">
+<div class="article-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 3rem; padding: 0 1rem;">
     {% for article in all_articles %}
     <article class="card article-entry" style="display: flex; flex-direction: column;">
         <a href="{{ article.url }}" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
@@ -34,8 +37,11 @@
 
 <style>
     @media (max-width: 768px) {
-        .hero-index { padding: 2rem 0; margin-bottom: 3rem; }
-        .hero-index h1 { font-size: 2rem; }
+        .hero-index { padding: 3rem 1rem; margin-bottom: 3rem; }
+        .hero-index h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+        .hero-description { font-size: 1rem !important; line-height: 1.6 !important; }
+        .desktop-br { display: none; }
+        .desc-line { display: block; margin-bottom: 0.5rem; }
         .article-grid { grid-template-columns: 1fr; gap: 2rem; }
     }
 </style>
