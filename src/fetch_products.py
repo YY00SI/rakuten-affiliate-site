@@ -31,7 +31,8 @@ MAJOR_BRANDS = [
 NEGATIVE_KEYWORDS = [
     "ふるさと納税", "返礼品", "中古", "訳あり", "ジャンク", "部品", "パーツ", "クリーニング", "修理",
     "対応", "互換", "専用", "セット", "レンタル", "保証", "延長", "設置", "工事", "リサイクル",
-    "テーブル", "チェア", "椅子", "デスク", "マット", "カバー", "ケース", "フィルター", "ブラシ"
+    "目録", "景品", "カタログギフト", "パネル", "当選", "引換券",
+    "シェーバー", "髭剃り", "バリカン", "脱毛器", "電池", "充電池", "バッテリー"
 ]
 
 def fetch_items_for_keyword(keyword, params_config, article_id):
@@ -39,13 +40,23 @@ def fetch_items_for_keyword(keyword, params_config, article_id):
     min_price = params_config.get('min_price', 500)
     max_price = params_config.get('max_price', 9999999)
     
-    # 記事IDから主要キーワードを推測 (判定を少し柔軟に)
+    # 記事IDから主要キーワードを推測
     core_kws = []
+    category_neg_kws = ["テーブル", "デスク", "マット", "カバー", "ケース", "フィルター", "ブラシ"]
+    
     if "dryer" in article_id: core_kws = ["ドライヤー", "dryer", "ヘア"]
     elif "vacuum" in article_id: core_kws = ["掃除機", "ルンバ", "クリーナー"]
     elif "chair" in article_id: core_kws = ["チェア", "椅子", "デスクチェア"]
     elif "speaker" in article_id: core_kws = ["スピーカー"]
     elif "recorder" in article_id: core_kws = ["レコーダー", "録音"]
+    elif "lock" in article_id: core_kws = ["ロック", "スマートロック", "鍵"]
+    elif "coffee" in article_id: core_kws = ["コーヒー", "珈琲", "coffee"]
+
+    # 記事テーマに関連する単語は除外ワードから外す
+    final_neg_kws = NEGATIVE_KEYWORDS + category_neg_kws
+    for cw in core_kws:
+        if cw in final_neg_kws:
+            final_neg_kws.remove(cw)
 
     params = {
         "applicationId": RAKUTEN_APP_ID,
@@ -72,13 +83,20 @@ def fetch_items_for_keyword(keyword, params_config, article_id):
             for item_raw in raw_items:
                 item = item_raw.get("Item", item_raw)
                 name = item.get("itemName", "")
+                rev_count = int(item.get("reviewCount", 0))
                 
-                # 1. 徹底排除キーワードチェック (ここは厳格に維持)
-                if any(neg in name for neg in NEGATIVE_KEYWORDS):
+                # 1. 徹底排除キーワードチェック
+                if any(neg in name for neg in final_neg_kws):
                     continue
                 
-                # 2. 記事のテーマが含まれているか (判定を緩和: 1つでも含まれていればOK)
+                # 2. 記事のテーマが含まれているか
                 if core_kws and not any(ck in name for ck in core_kws):
+                    continue
+
+                # 3. 信頼性チェック (レビュー0件かつ高額な「景品ノイズ」を排除)
+                # ただし、発売直後の新製品（is_major）の可能性もあるため、主要ブランド以外はレビュー必須
+                is_major = any(brand.lower() in name.lower() for brand in MAJOR_BRANDS)
+                if not is_major and rev_count == 0:
                     continue
 
                 valid_items.append(item_raw)
@@ -90,8 +108,23 @@ def fetch_items_for_keyword(keyword, params_config, article_id):
         print(f"[ERROR] API Exception for {keyword}: {str(e)}")
     return []
 
+import re
+
+def normalize_item_name(name):
+    """商品名から装飾語を除去し、製品のコア名（型番等）を抽出する"""
+    # 除去する装飾語パターン
+    patterns = [
+        r"【[^】]+】", r"\[[^\]]+\]", r"送料無料", r"ポイント\d+倍", r"あす楽", 
+        r"公式", r"国内正規品", r"正規販売店", r"限定", r"最大\d+%Pバック"
+    ]
+    norm_name = name
+    for p in patterns:
+        norm_name = re.sub(p, "", norm_name)
+    # 空白除去と小文字化
+    return re.sub(r"\s+", "", norm_name).lower()
+
 def fetch_article_items(article):
-    """記事単位で商品を取得する (メーカー優先・不純物排除版)"""
+    """記事単位で商品を取得する (重複排除・最良オファー選定版)"""
     article_id = article['id']
     params_config = article['rakuten_params']
     
@@ -105,7 +138,8 @@ def fetch_article_items(article):
         all_raw_items.extend(items)
         time.sleep(0.5)
 
-    processed_items = []
+    # 同一製品の名寄せ用辞書 {正規化名: 最良の商品データ}
+    best_offers = {}
     seen_urls = set()
 
     for item_raw in all_raw_items:
@@ -113,45 +147,58 @@ def fetch_article_items(article):
         url = item.get("affiliateUrl") or item.get("itemUrl")
         if url in seen_urls: continue
         
-        item_name = item.get("itemName", "")
+        name = item.get("itemName", "")
+        norm_name = normalize_item_name(name)
         
         # 主要メーカー判定
-        is_major = any(brand.lower() in item_name.lower() for brand in MAJOR_BRANDS)
+        is_major = any(brand.lower() in name.lower() for brand in MAJOR_BRANDS)
         
-        # 品質スコアリング
+        # スコア計算 (レビュー数・評価・価格のバランス)
         rev_avg = float(item.get("reviewAverage", 0))
         rev_count = int(item.get("reviewCount", 0))
-        # 評価が高く、かつ主要メーカーであることを最優先
-        quality_score = rev_avg * (1.0 + (min(rev_count, 1000) / 1000)) 
+        price = int(item.get("itemPrice", 0))
+        
+        # 最良オファー判定用の内部スコア (レビュー数重視)
+        offer_score = rev_avg * (1.0 + (min(rev_count, 1000) / 500))
+        if "公式" in name or "official" in name.lower():
+            offer_score *= 1.2 # 公式ショップを優先
 
-        # 画像URL取得
-        image_url = ""
-        images = item.get("mediumImageUrls", [])
-        if images and isinstance(images[0], dict):
-            image_url = images[0].get("imageUrl", "").split("?")[0]
-        elif images and isinstance(images[0], str):
-            image_url = images[0].split("?")[0]
-
-        processed_items.append({
-            "name": item_name,
-            "price": item.get("itemPrice"),
+        item_data = {
+            "name": name,
+            "price": price,
             "url": url,
             "affiliateUrl": item.get("affiliateUrl"),
-            "image": image_url,
+            "image": "", # 後ほど取得
             "reviewCount": rev_count,
             "reviewAverage": rev_avg,
-            "quality_score": quality_score,
+            "quality_score": offer_score, # この製品自体の魅力度
+            "offer_score": offer_score,   # 同一製品内での優位性
             "shopName": item.get("shopName"),
             "caption": item.get("itemCaption", "")[:300],
             "is_major": is_major
-        })
+        }
+
+        # 画像URL取得
+        images = item.get("mediumImageUrls", [])
+        if images:
+            item_data["image"] = (images[0].get("imageUrl") if isinstance(images[0], dict) else images[0]).split("?")[0]
+
+        # 同一製品（正規化名が前方一致または酷似）の重複排除
+        # 簡易的に最初の15文字が一致すれば同一視（型番対応）
+        product_key = norm_name[:15]
+        if product_key not in best_offers or item_data["offer_score"] > best_offers[product_key]["offer_score"]:
+            best_offers[product_key] = item_data
+        
         seen_urls.add(url)
 
-    # ソート順: 主要メーカーかつスコアが高いものを上位へ
+    # 最終的なリスト作成
+    processed_items = list(best_offers.values())
+
+    # ランキング全体のソート: 主要メーカーかつ総合スコアが高い順
     processed_items.sort(key=lambda x: (x['is_major'], x['quality_score']), reverse=True)
     
     final_items = processed_items[:max_total_hits]
-    print(f"[INFO] {article_id}: 確定 {len(final_items)}件 (主要メーカー: {sum(1 for i in final_items if i['is_major'])})")
+    print(f"[INFO] {article_id}: 重複排除後 {len(final_items)}件 (全候補: {len(all_raw_items)})")
     return final_items
 
 def main():

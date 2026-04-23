@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ライフテック・セレクト：LifeTech Select</title>
-    <meta name="description" content="楽天市場の膨大なユーザーレビューとスペックを徹底分析。後悔しない「納得の買いもの」をサポートする調査メディアです。">
+    <meta name="description" content="楽天市場の膨大なユーザーレビューとスペックを独自解析。後悔しない「納得の買いもの」をサポートする調査メディアです。">
     
     <!-- Google Fonts: Lato for numbers, Noto Sans JP for text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,17 +14,17 @@
     <style>
         :root {
             /* Palette: Logical & Emotional */
-            --primary: #B00020; /* Deep Crimson (Rakuten Red refined) */
+            --primary: #B00020; 
             --primary-light: #E53935;
             --primary-dark: #7F0000;
-            --secondary: #1A202C; /* Navy for trust */
-            --accent: #F6AD55; /* Gold/Orange for high visibility */
+            --secondary: #1A202C;
+            --accent: #F6AD55;
             
             /* Backgrounds & Text */
-            --bg-body: #F9FAFB; /* Soft Off-White */
+            --bg-body: #F7F9FC;
             --bg-card: #FFFFFF;
-            --text-main: #2D3748; /* Darker grey for readability */
-            --text-muted: #718096;
+            --text-main: #2D3748;
+            --text-muted: #4A5568;
             --text-on-primary: #FFFFFF;
             
             /* Functional Colors */
@@ -32,30 +32,28 @@
             --error: #E53E3E;
             --border: #EDF2F7;
             
-            /* Shadows & Effects (Roomie-like) */
-            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.05);
+            /* Shadows & Effects */
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.05);
+            --shadow-soft: 0 10px 30px rgba(0,0,0,0.03);
             
             /* Spacing & Sizing */
             --radius-sm: 4px;
-            --radius-md: 12px;
-            --radius-lg: 20px;
-            --max-width: 800px; /* Optimized for reading */
-            --section-gap: 5rem;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --max-width: 1040px; /* 広げてゆとりを持たせる */
+            --section-gap: 4rem;
         }
 
         * { box-sizing: border-box; }
 
         body {
-            font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
             background-color: var(--bg-body);
             color: var(--text-main);
             margin: 0;
-            line-height: 1.8;
+            line-height: 1.7;
             -webkit-font-smoothing: antialiased;
-            letter-spacing: 0.01em;
         }
 
         /* Typography */
@@ -470,21 +468,43 @@
 <div class="article-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 3rem; padding: 0 1rem;">
     
     <article class="card article-entry" style="display: flex; flex-direction: column;">
-        <a href="./trend/ai-voice-recorder/" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
-            <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80" alt="【2026最新】AIボイスレコーダー おすすめ5選｜録音・文字起こし・要約までAIが完結" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <a href="./home/smart-lock/" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
+            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80" alt="【2026年最新】後付けスマートロック おすすめ5選｜Suica対応・指紋認証の利便性を徹底比較" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         </a>
         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                <span style="background: var(--secondary); color: #fff; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 700;">海外トレンド・新着</span>
-                <span style="font-size: 0.8rem; color: var(--text-muted);">2026年04月22日</span>
+                <span style="background: var(--secondary); color: #fff; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 700;">スマートホーム・掃除</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">2026年04月23日</span>
             </div>
             <h2 style="font-size: 1.25rem; margin-bottom: 1rem; line-height: 1.4;">
-                <a href="./trend/ai-voice-recorder/" style="color: var(--secondary); text-decoration: none;">【2026最新】AIボイスレコーダー おすすめ5選｜録音・文字起こし・要約までAIが完結</a>
+                <a href="./home/smart-lock/" style="color: var(--secondary); text-decoration: none;">【2026年最新】後付けスマートロック おすすめ5選｜Suica対応・指紋認証の利便性を徹底比較</a>
             </h2>
             <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">
-                Redditや海外レビューで絶賛。ChatGPT/Claude連携の最新AIボイスレコーダーを徹底比較。...
+                SwitchBot、Qrio Lockなど人気スマートロックを解析。楽天市場のレビュー1,000件から判明した「反応速度」と「設置の落とし穴」を公開。...
             </p>
-            <a href="./trend/ai-voice-recorder/" style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
+            <a href="./home/smart-lock/" style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
+                記事を読む
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+            </a>
+        </div>
+    </article>
+    
+    <article class="card article-entry" style="display: flex; flex-direction: column;">
+        <a href="./home/coffee-maker/" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="【2026年最新】コーヒーメーカー おすすめ10選｜「メンテナンス自動化」で選ぶ、失敗しない一台" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                <span style="background: var(--secondary); color: #fff; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 700;">スマートホーム・掃除</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">2026年04月23日</span>
+            </div>
+            <h2 style="font-size: 1.25rem; margin-bottom: 1rem; line-height: 1.4;">
+                <a href="./home/coffee-maker/" style="color: var(--secondary); text-decoration: none;">【2026年最新】コーヒーメーカー おすすめ10選｜「メンテナンス自動化」で選ぶ、失敗しない一台</a>
+            </h2>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">
+                パナソニック、デロンギ、UCC、sirocaなど人気メーカーを徹底比較。2026年のトレンドである『メンテナンスフリー』と『スマート抽出』を基準に、楽天市場の口...
+            </p>
+            <a href="./home/coffee-maker/" style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
                 記事を読む
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
             </a>
@@ -493,18 +513,18 @@
     
     <article class="card article-entry" style="display: flex; flex-direction: column;">
         <a href="./home/robot-vacuum/" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
-            <img src="https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?auto=format&fit=crop&w=800&q=80" alt="【2026】全自動ロボット掃除機 おすすめ7選｜ゴミ捨て・水拭き・洗浄までお任せ" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="https://images.unsplash.com/photo-1518133835878-5a93cc3f89e5?auto=format&fit=crop&w=800&q=80" alt="【2026年最新】自動ゴミ収集付きロボット掃除機 おすすめ10選｜市場を制したRoborock・Ecovacsを解析" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         </a>
         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
                 <span style="background: var(--secondary); color: #fff; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 700;">スマートホーム・掃除</span>
-                <span style="font-size: 0.8rem; color: var(--text-muted);">2026年04月22日</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">2026年04月23日</span>
             </div>
             <h2 style="font-size: 1.25rem; margin-bottom: 1rem; line-height: 1.4;">
-                <a href="./home/robot-vacuum/" style="color: var(--secondary); text-decoration: none;">【2026】全自動ロボット掃除機 おすすめ7選｜ゴミ捨て・水拭き・洗浄までお任せ</a>
+                <a href="./home/robot-vacuum/" style="color: var(--secondary); text-decoration: none;">【2026年最新】自動ゴミ収集付きロボット掃除機 おすすめ10選｜市場を制したRoborock・Ecovacsを解析</a>
             </h2>
             <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">
-                ルンバ、エコバックス、ロボロックのレビューを徹底分析。...
+                最新のロボット掃除機市場は、もはやルンバ一強ではありません。技術力で首位に立ったRoborock、Ecovacsを中心に、本音の口コミを徹底解析。...
             </p>
             <a href="./home/robot-vacuum/" style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
                 記事を読む
@@ -514,21 +534,43 @@
     </article>
     
     <article class="card article-entry" style="display: flex; flex-direction: column;">
-        <a href="./trend/ferrofluid-speaker/" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
-            <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80" alt="【SNSで話題】磁性流体スピーカー おすすめ3選｜音に合わせて踊る「動くアート」が凄い" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <a href="./trend/ai-voice-recorder/" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
+            <img src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd6a5?auto=format&fit=crop&w=800&q=80" alt="【仕事革命】AIボイスレコーダー おすすめ5選｜文字起こしの精度と「本音の口コミ」を解析" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         </a>
         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                <span style="background: var(--secondary); color: #fff; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 700;">海外トレンド・新着</span>
-                <span style="font-size: 0.8rem; color: var(--text-muted);">2026年04月22日</span>
+                <span style="background: var(--secondary); color: #fff; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 700;">海外トレンド・新到着</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">2026年04月23日</span>
             </div>
             <h2 style="font-size: 1.25rem; margin-bottom: 1rem; line-height: 1.4;">
-                <a href="./trend/ferrofluid-speaker/" style="color: var(--secondary); text-decoration: none;">【SNSで話題】磁性流体スピーカー おすすめ3選｜音に合わせて踊る「動くアート」が凄い</a>
+                <a href="./trend/ai-voice-recorder/" style="color: var(--secondary); text-decoration: none;">【仕事革命】AIボイスレコーダー おすすめ5選｜文字起こしの精度と「本音の口コミ」を解析</a>
             </h2>
             <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">
-                TikTokや海外レビューで話題の「磁性流体スピーカー」を徹底解説。日本で購入可能な厳選モデルを紹介。...
+                PLAUD NOTE、VOITERなど最新AIレコーダーを徹底比較。楽天市場のユーザーレビューから見えた実態を公開。...
             </p>
-            <a href="./trend/ferrofluid-speaker/" style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
+            <a href="./trend/ai-voice-recorder/" style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
+                記事を読む
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+            </a>
+        </div>
+    </article>
+    
+    <article class="card article-entry" style="display: flex; flex-direction: column;">
+        <a href="./work/office-chair/" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
+            <img src="https://images.unsplash.com/photo-1589384273441-c5bb2f638465?auto=format&fit=crop&w=800&q=80" alt="【腰痛対策】高級オフィスチェア おすすめ8選｜座り心地の口コミを徹底比較" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                <span style="background: var(--secondary); color: #fff; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 700;">ワークスタイル</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">2026年04月23日</span>
+            </div>
+            <h2 style="font-size: 1.25rem; margin-bottom: 1rem; line-height: 1.4;">
+                <a href="./work/office-chair/" style="color: var(--secondary); text-decoration: none;">【腰痛対策】高級オフィスチェア おすすめ8選｜座り心地の口コミを徹底比較</a>
+            </h2>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">
+                ハーマンミラー、エルゴヒューマンなどの高級チェアを分析。後悔しない投資のためのデータを公開。...
+            </p>
+            <a href="./work/office-chair/" style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
                 記事を読む
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
             </a>
@@ -542,15 +584,37 @@
         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
                 <span style="background: var(--secondary); color: #fff; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 700;">美容・ヘルスケア</span>
-                <span style="font-size: 0.8rem; color: var(--text-muted);">2026年04月22日</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">2026年04月23日</span>
             </div>
             <h2 style="font-size: 1.25rem; margin-bottom: 1rem; line-height: 1.4;">
                 <a href="./beauty/dryer-ranking/" style="color: var(--secondary); text-decoration: none;">【2026年最新】高級ヘアドライヤー おすすめ10選｜3万円以上の失敗しない選び方</a>
             </h2>
             <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">
-                ナノケア、リファ、ダイソンなど人気機種を徹底比較。楽天市場の口コミ1万件から抽出した「リアルな満足度」に基づき、失敗しない一台を提案。...
+                ナノケア、リファ最新機、ダイソンrなど人気機種を徹底解析。楽天市場の口コミ1万件から抽出した「リアルな満足度」に基づき、今買うべき一台を提案。...
             </p>
             <a href="./beauty/dryer-ranking/" style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
+                記事を読む
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+            </a>
+        </div>
+    </article>
+    
+    <article class="card article-entry" style="display: flex; flex-direction: column;">
+        <a href="./trend/ferrofluid-speaker/" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
+            <img src="https://images.unsplash.com/photo-1558428282-7489a263768e?auto=format&fit=crop&w=800&q=80" alt="【視覚で聴く】磁性流体スピーカー おすすめ3選｜踊る黒い液体の「癒やし」と音質を解析" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                <span style="background: var(--secondary); color: #fff; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 700;">海外トレンド・新到着</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">2026年04月23日</span>
+            </div>
+            <h2 style="font-size: 1.25rem; margin-bottom: 1rem; line-height: 1.4;">
+                <a href="./trend/ferrofluid-speaker/" style="color: var(--secondary); text-decoration: none;">【視覚で聴く】磁性流体スピーカー おすすめ3選｜踊る黒い液体の「癒やし」と音質を解析</a>
+            </h2>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">
+                SNSで話題の磁性流体スピーカーを徹底リサーチ。インテリアとしての美しさと、気になる音質の実態を解析。...
+            </p>
+            <a href="./trend/ferrofluid-speaker/" style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
                 記事を読む
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
             </a>
