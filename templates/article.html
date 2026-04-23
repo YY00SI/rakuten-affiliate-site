@@ -288,31 +288,43 @@
                         </div>
 
                         {% if extra_data %}
-                            <div class="eval-section">
-                                <strong class="eval-title">解析チームの選定理由</strong>
-                                <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">{{ extra_data.reason }}</p>
-                            </div>
-                            <div class="pros-cons">
-                                <div class="pc-box pros">
-                                    <div class="pc-title">ここが支持されている</div>
-                                    <ul class="pc-list">
-                                        {% for p in extra_data.pros %}<li>{{ p }}</li>{% endfor %}
-                                    </ul>
+                            <!-- Spec v8.0: Logic Beauty Analysis -->
+                            <div class="analysis-v8" style="margin-top: 1.5rem;">
+                                <div class="eval-section" style="margin-bottom: 1.5rem;">
+                                    <strong class="eval-title">解析チームの選定理由（The "Why"）</strong>
+                                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-main);">{{ extra_data.analysis_why }}</p>
                                 </div>
-                                <div class="pc-box cons">
-                                    <div class="pc-title">購入前に知っておきたいこと</div>
-                                    <ul class="pc-list">
-                                        {% for c in extra_data.cons %}<li>{{ c }}</li>{% endfor %}
-                                    </ul>
+
+                                <div class="pros-cons" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                                    <div class="pc-box pros" style="background: #F0FFF4; padding: 1rem; border-radius: 8px; border-left: 4px solid #38A169;">
+                                        <div style="font-weight: 800; font-size: 0.85rem; margin-bottom: 0.5rem; color: #276749;">ここが支持されている</div>
+                                        <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; line-height: 1.5;">
+                                            {% for p in extra_data.pros %}<li>{{ p }}</li>{% endfor %}
+                                        </ul>
+                                    </div>
+                                    <div class="pc-box cons" style="background: #FFF5F5; padding: 1rem; border-radius: 8px; border-left: 4px solid #E53E3E;">
+                                        <div style="font-weight: 800; font-size: 0.85rem; margin-bottom: 0.5rem; color: #9B2C2C;">不都合な真実（Critical Cons）</div>
+                                        <p style="margin: 0; font-size: 0.85rem; line-height: 1.5;">{{ extra_data.critical_cons }}</p>
+                                    </div>
+                                </div>
+
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                    <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; font-size: 0.85rem;">
+                                        <strong style="display: block; margin-bottom: 0.4rem; color: var(--secondary);">メンテナンスの現実</strong>
+                                        {{ extra_data.maintenance_reality }}
+                                    </div>
+                                    <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; font-size: 0.85rem;">
+                                        <strong style="display: block; margin-bottom: 0.4rem; color: var(--secondary);">コスパの正体</strong>
+                                        {{ extra_data.cost_performance }}
+                                    </div>
                                 </div>
                             </div>
                         {% else %}
                             <div class="eval-section" style="min-height: auto;">
-                                <strong class="eval-title">データ解析結果</strong>
-                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-main); line-height: 1.6;">
-                                    楽天市場での{{ "{:,}".format(item.reviewCount) }}件のユーザーフィードバックを集計。
-                                    平均{{ item.reviewAverage }}点というスコアは、同価格帯の中でも非常に高い水準にあります。
-                                    {% if item.reviewCount > 50 %}多くのユーザーが「期待通りの性能」と回答しており、信頼性の高い選択肢です。{% endif %}
+                                <strong class="eval-title">解析ステータス</strong>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                                    現在、楽天市場の{{ "{:,}".format(item.reviewCount) }}件のユーザーフィードバックを詳細解析中です。
+                                    平均{{ item.reviewAverage }}点というスコアに基づき、近日中に「本音のインサイト」を公開予定です。
                                 </p>
                             </div>
                         {% endif %}
