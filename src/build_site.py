@@ -36,11 +36,19 @@ def main():
             continue
             
         # 予約公開チェック: release_date が今日より後ならスキップ
-        release_date_str = str(art_conf.get("release_date", "2000-01-01")).strip()
-        if release_date_str > today_iso:
-            print(f"[SKIP] 予約公開待ち: {art_conf['id']} (公開予定: {release_date_str} / 今日: {today_iso})")
+        release_date_raw = str(art_conf.get("release_date", "2000-01-01")).strip()
+        if release_date_raw > today_iso:
+            print(f"[SKIP] 予約公開待ち: {art_conf['id']} (公開予定: {release_date_raw} / 今日: {today_iso})")
             continue
-        print(f"[DEBUG] 処理対象記事: {art_conf['id']} (公開日: {release_date_str})")
+        
+        # 表示用の日付フォーマット変換 (2026-04-23 -> 2026年04月23日)
+        try:
+            rd_dt = datetime.strptime(release_date_raw, "%Y-%m-%d")
+            art_conf['display_date'] = rd_dt.strftime("%Y年%m月%d日")
+        except:
+            art_conf['display_date'] = release_date_raw
+
+        print(f"[DEBUG] 処理対象記事: {art_conf['id']} (公開日: {art_conf['display_date']})")
             
         file_path = os.path.join(data_dir, f"{art_conf['id']}.json")
         if not os.path.exists(file_path):
