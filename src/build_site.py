@@ -81,7 +81,14 @@ def main():
                         "h1": rel_art['h1'],
                         "url": f"../../{rel_cat['slug']}/{rel_art['slug']}/"
                     })
-        
+        # LTS CEO Policy: 厳格な品質ゲート（Automated QA）
+        # 取得された製品の数と、用意された解析テキストの数が完全一致しない場合、ビルド自体を強制停止する
+        items = product_data.get('items', [])
+        products_extra = art_conf.get('products_extra', [])
+        if products_extra and len(items) != len(products_extra):
+            print(f"[CRITICAL ERROR] {art_conf['id']} のビルドを強制ブロックしました。取得製品数({len(items)})と独自解析数({len(products_extra)})が不一致です。不完全なページは公開できません。")
+            continue
+
         # HTML生成
         html_content = article_template.render(
             site=site_config,

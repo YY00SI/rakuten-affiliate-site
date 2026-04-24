@@ -235,12 +235,15 @@
                 </thead>
                 <tbody>
                     {% for item in items[:5] %}
-                    {% set extra_data = none %}
+                    {% set ns = namespace(data=none) %}
                     {% if article.products_extra %}
-                        {% for extra in article.products_extra if extra.rank == loop.index %}
-                            {% set extra_data = extra %}
+                        {% for extra in article.products_extra %}
+                            {% if extra.keyword and extra.keyword in item.name %}
+                                {% set ns.data = extra %}
+                            {% endif %}
                         {% endfor %}
                     {% endif %}
+                    {% set extra_data = ns.data %}
                     <tr>
                         <td style="font-weight: 700; font-family: 'Lato';">{{ loop.index }}位</td>
                         <td style="font-weight: 500;">{{ item.name[:25] }}...</td>
@@ -282,12 +285,15 @@
 
             <div class="ranking-body">
                 <div class="ranking-grid">
-                    {% set extra_data = none %}
+                    {% set ns = namespace(data=none) %}
                     {% if article.products_extra %}
-                        {% for extra in article.products_extra if extra.rank == loop.index %}
-                            {% set extra_data = extra %}
+                        {% for extra in article.products_extra %}
+                            {% if extra.keyword and extra.keyword in item.name %}
+                                {% set ns.data = extra %}
+                            {% endif %}
                         {% endfor %}
                     {% endif %}
+                    {% set extra_data = ns.data %}
 
                     <div class="item-visual">
                         <img src="{{ item.image }}" alt="{{ item.name }}" class="item-image" loading="lazy">

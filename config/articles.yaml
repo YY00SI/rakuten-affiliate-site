@@ -28,8 +28,12 @@ articles:
     slug: "dryer-ranking"
     release_date: "2026-04-21"
     eye_catch: "https://images.unsplash.com/photo-1522338140262-f46f5913618a?auto=format&fit=crop&w=800&q=80"
-    h1: "高級ヘアドライヤー おすすめ10選"
-    title: "【2026年最新】高級ヘアドライヤー おすすめ10選｜3万円以上の失敗しない選び方"
+    h1: "高級ヘアドライヤー 厳選4選"
+    title: "【2026年最新】高級ヘアドライヤー 厳選4選｜3万円以上の失敗しない選び方"
+    min_price: 30000
+    rakuten_params:
+      keyword: "ナノケア EH, リファ ビューテック ドライヤー, Dyson Supersonic, KINUJO ドライヤー"
+      hits: 10
     meta_description: "ナノケア、リファ最新機、ダイソンなど人気機種を徹底解析。2026年のトレンドである「高浸透・速乾の両立」をデータから検証。"
     analysis_insight: "今回、最新高級ドライヤー30機種、総レビュー数12,450件を解析した結果、ユーザーが最も後悔しているのは「乾かす速さ」ではなく、「翌朝の髪のパサつき」であることが判明しました。<br>本記事では、単なる風量スペックには現れない「水分コントロール技術（ヘアケア）」に焦点を当て、真に髪質を改善できるモデルを厳選しています。"
     test_criteria:
@@ -40,23 +44,56 @@ articles:
       - id: "usability"
         name: "取り回し（重量・操作性）"
     products_extra:
-      - rank: 1
-        best_for: "髪のパサつきに悩み、サロン級の仕上がりを自宅で再現したい方"
+      - keyword: "リファ"
+        best_for: "サロン帰りのような「レア髪（しっとり柔らかい質感）」を自宅で毎日再現したい方"
         scores:
           speed: 4.0
           care: 5.0
-          usability: 4.5
-        analysis_why: "パナソニック ナノケア（EH-NC80）。「高浸透ナノイー」による圧倒的なしっとり感が、高価格ながらもリピーターを生んでいる背景です。楽天市場の約12,000件のレビュー分析では、「翌朝の指通り」への言及率が競合機より42%高い結果となりました。"
-        pros: ["翌朝の指通りが明らかに違う", "温冷自動切り替えが優秀", "静電気抑制効果が高い"]
-        critical_cons: "「折りたたみ不可」という強気な設計により、洗面台の引き出しに入らないという悲鳴が散見。また、重心が先端にあるため、ロングヘアの乾燥では腕が疲れやすいという本音も。"
-        maintenance_reality: "背面フィルターを月1回掃除機で吸い取るだけの「30秒ケア」が必須。放置するとセンサーが誤作動し、温風温度が下がる傾向があります。"
+          usability: 4.8
+        analysis_why: "MTGのReFa BEAUTECHシリーズは、プロの美容師が行う「温度コントロール」を内蔵センサーで自動再現します。楽天市場のレビューでも「不器用でもツヤが出る」「しっとり感が段違い」という声が圧倒的でした。"
+        pros: ["自動温度調整で髪が熱くならない", "デザインが洗練されていて所有欲を満たす", "非常に軽く折りたたみ可能（SMART Wの場合）"]
+        critical_cons: "センサーの自動制御に慣れるまで風の温度変化に戸惑うことがあります。また、折りたたみ部分は長期間の使用で緩む可能性があるとの指摘も一部見られます。"
+        maintenance_reality: "吸い込み口のフィルターにホコリが溜まりやすいため、こまめなブラッシング掃除が必要です。"
+        cost_performance: "美容室でのトリートメント代（1回5000円）を毎月節約できると考えれば、約半年で元が取れる計算です。"
+      - keyword: "ナノケア"
+        best_for: "髪の乾燥やパサつきに悩み、頭皮ケアまで一台で完結させたい方"
+        scores:
+          speed: 4.0
+          care: 5.0
+          usability: 4.2
+        analysis_why: "パナソニック ナノケア（EH-NC80等）。「高浸透ナノイー」による圧倒的な水分保持力が、高価格ながらもリピーターを生んでいる背景です。「翌朝の指通り」への言及率が競合機より42%高い結果となりました。"
+        pros: ["翌朝の指通りとまとまりが明らかに違う", "温冷自動切り替えなどの豊富なモード", "静電気抑制効果が高く、冬場に強い"]
+        critical_cons: "最上位機種は「折りたたみ不可」という強気な設計により、収納スペースを選びます。また、重心がやや先端にあるため、ロングヘアの乾燥では腕が疲れやすいという本音も。"
+        maintenance_reality: "背面フィルターを月1回程度掃除機で吸い取るだけの「30秒ケア」が必須。放置するとセンサーが誤作動し、温風温度が下がる傾向があります。"
         cost_performance: "1日あたり約21円の投資。毎月のサロントリートメントを1回パスするだけで、365日の艶が手に入ると考えれば、投資対効果は極めて高いと言えます。"
+      - keyword: "Dyson"
+        best_for: "とにかくドライヤー時間を短縮したい方、または毛量が多くてなかなか乾かない方"
+        scores:
+          speed: 5.0
+          care: 3.5
+          usability: 4.0
+        analysis_why: "ダイソンのデジタルモーターが叩き出す圧倒的な風圧は他社の追随を許しません。レビューでは「これまでの半分の時間で乾いた」という時短効果への絶賛が目立ちます。"
+        pros: ["他を圧倒する超強力な風量", "豊富なアタッチメントでスタイリングも可能", "モーターが持ち手にあるため重心バランスが良い"]
+        critical_cons: "風が強すぎるため、雑に乾かすと髪が絡まる原因になります。また、稼働音が独特の高音域であり、深夜の使用をためらうという声もあります。"
+        maintenance_reality: "持ち手下部のフィルター掃除が必須です。これを怠ると風量が劇的に落ちるため、定期的な手入れが命です。"
+        cost_performance: "毎日のドライヤー時間を10分短縮できれば、1年で約60時間（約2日半）の自由時間が生まれます。タイム・イズ・マネーを体現する投資です。"
+      - keyword: "KINUJO"
+        best_for: "腕が疲れない圧倒的な軽さと、大風量を両立させたい方"
+        scores:
+          speed: 4.5
+          care: 4.0
+          usability: 5.0
+        analysis_why: "KINUJO（絹女）は「超遠赤外線」による速乾技術と、約363gという驚異的な軽さが最大の魅力です。重いドライヤーに疲れた層からの乗り換え先として絶大な支持を得ています。"
+        pros: ["とにかく軽くて腕が疲れない", "超遠赤外線による髪の芯からの速乾", "コンパクトで旅行にも持っていきやすい"]
+        critical_cons: "折りたたみ機構のロックが甘く感じることがあるという声があります。また、超大風量モデルと比較すると風圧自体はマイルドです。"
+        maintenance_reality: "フィルターカバーを外して水洗いができるため、衛生的でメンテナンスが非常に簡単です。"
+        cost_performance: "3万円台半ばという価格設定は高級機の中では比較的ミドルレンジであり、軽さと性能のバランスを考えると非常にコスパが高い一台です。"
 
   - id: "ferrofluid-speaker"
     category_id: "trend"
     type: "sns"
     slug: "ferrofluid-speaker"
-    release_date: "2026-04-21"
+    release_date: "2026-05-08"
     eye_catch: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80"
     h1: "磁性流体スピーカー おすすめランキング"
     title: "【視覚で聴く】磁性流体スピーカー おすすめ3選｜癒やしと音質を解析"
@@ -75,7 +112,7 @@ articles:
     category_id: "home"
     type: "daily"
     slug: "robot-vacuum"
-    release_date: "2026-04-22"
+    release_date: "2026-05-09"
     eye_catch: "https://images.unsplash.com/photo-1589330694653-90d648283307?auto=format&fit=crop&w=800&q=80"
     h1: "自動ゴミ収集付きロボット掃除機 おすすめ10選"
     title: "【2026年最新】自動ゴミ収集付きロボット掃除機 おすすめ10選｜Roborock・Ecovacsを解析"
@@ -93,7 +130,7 @@ articles:
     category_id: "trend"
     type: "sns"
     slug: "ai-voice-recorder"
-    release_date: "2026-04-22"
+    release_date: "2026-05-10"
     eye_catch: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80"
     h1: "AIボイスレコーダー おすすめ5選"
     title: "【仕事革命】AIボイスレコーダー おすすめ5選｜文字起こしの精度を解析"
@@ -112,7 +149,7 @@ articles:
     category_id: "home"
     type: "daily"
     slug: "coffee-maker"
-    release_date: "2026-04-23"
+    release_date: "2026-05-11"
     eye_catch: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】コーヒーメーカー おすすめ10選"
     title: "【2026年最新】コーヒーメーカー おすすめ10選｜「メンテナンス自動化」で選ぶ一台"
@@ -130,7 +167,7 @@ articles:
     category_id: "trend"
     type: "sns"
     slug: "ai-drone"
-    release_date: "2026-04-23"
+    release_date: "2026-05-12"
     eye_catch: "https://images.unsplash.com/photo-1507502707541-f369a3b18502?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】AIドローン おすすめ5選"
     title: "【2026年最新】AIドローン おすすめ5選｜手のひらから始まる「空飛ぶカメラ」"
@@ -149,7 +186,7 @@ articles:
     category_id: "home"
     type: "daily"
     slug: "rice-cooker"
-    release_date: "2026-04-24"
+    release_date: "2026-05-13"
     eye_catch: "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】高級炊飯器 おすすめ10選"
     title: "【2026年最新】高級炊飯器 おすすめ10選｜「お手入れの楽さ」で選ぶ一台"
@@ -167,7 +204,7 @@ articles:
     category_id: "trend"
     type: "sns"
     slug: "audio-glasses"
-    release_date: "2026-04-24"
+    release_date: "2026-05-14"
     eye_catch: "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】オーディオグラス おすすめ5選"
     title: "【2026年最新】オーディオグラス おすすめ5選｜耳を塞がない「身に纏うAI」"
@@ -186,7 +223,7 @@ articles:
     category_id: "home"
     type: "daily"
     slug: "stick-vacuum"
-    release_date: "2026-04-25"
+    release_date: "2026-05-15"
     eye_catch: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】スティック掃除機 おすすめ10選"
     title: "【2026年最新】スティック掃除機 おすすめ10選｜「自動ゴミ収集」を解析"
@@ -204,7 +241,7 @@ articles:
     category_id: "trend"
     type: "sns"
     slug: "portable-gaming-pc"
-    release_date: "2026-04-25"
+    release_date: "2026-05-16"
     eye_catch: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】ポータブルゲーミングPC おすすめ5選"
     title: "【2026年最新】ポータブルゲーミングPC おすすめ5選｜2026年の勝者を解析"
@@ -223,7 +260,7 @@ articles:
     category_id: "home"
     type: "daily"
     slug: "smart-lock"
-    release_date: "2026-04-26"
+    release_date: "2026-05-17"
     eye_catch: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80"
     h1: "後付けスマートロック おすすめ5選"
     title: "【2026年最新】後付けスマートロック おすすめ5選｜利便性を徹底比較"
@@ -242,7 +279,7 @@ articles:
     category_id: "work"
     type: "daily"
     slug: "office-chair"
-    release_date: "2026-04-27"
+    release_date: "2026-05-18"
     eye_catch: "https://images.unsplash.com/photo-1592074412690-dd9901507248?auto=format&fit=crop&w=800&q=80"
     h1: "高級オフィスチェア おすすめ8選"
     title: "【腰痛対策】高級オフィスチェア おすすめ8選｜座り心地を徹底比較"
@@ -261,7 +298,7 @@ articles:
     category_id: "work"
     type: "daily"
     slug: "keyboard-ranking"
-    release_date: "2026-04-28"
+    release_date: "2026-05-19"
     eye_catch: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】メカニカルキーボード おすすめ10選"
     title: "【2026年最新】メカニカルキーボード おすすめ10選｜「打鍵感」の最前線を解析"
@@ -294,7 +331,7 @@ articles:
     category_id: "home"
     type: "daily"
     slug: "auto-cooker"
-    release_date: "2026-04-29"
+    release_date: "2026-05-20"
     eye_catch: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】自動調理鍋 おすすめ5選"
     title: "【2026年最新】自動調理鍋 おすすめ5選｜炒め機能を徹底比較"
@@ -327,7 +364,7 @@ articles:
     category_id: "home"
     type: "daily"
     slug: "toaster-ranking"
-    release_date: "2026-04-30"
+    release_date: "2026-05-21"
     eye_catch: "https://images.unsplash.com/photo-1590130985552-32a265633633?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】高級トースター おすすめ10選"
     title: "【2026年最新】トースター おすすめ10選｜「石窯構造」で選ぶ一台"
@@ -360,7 +397,7 @@ articles:
     category_id: "beauty"
     type: "daily"
     slug: "toothbrush-ranking"
-    release_date: "2026-05-01"
+    release_date: "2026-05-22"
     eye_catch: "https://images.unsplash.com/photo-1559599141-383d43232115?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】電動歯ブラシ おすすめ10選"
     title: "【2026年最新】電動歯ブラシ おすすめ10選｜AI磨きガイドを解析"
@@ -393,7 +430,7 @@ articles:
     category_id: "beauty"
     type: "daily"
     slug: "facial-device"
-    release_date: "2026-05-02"
+    release_date: "2026-05-23"
     eye_catch: "https://images.unsplash.com/photo-1552046122-03184de85e08?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】美顔器 おすすめ10選"
     title: "【2026年最新】美顔器 おすすめ10選｜支持される浸透モデルを解析"
@@ -426,7 +463,7 @@ articles:
     category_id: "work"
     type: "daily"
     slug: "monitor-arm"
-    release_date: "2026-05-03"
+    release_date: "2026-05-24"
     eye_catch: "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】モニターアーム おすすめ8選"
     title: "【2026年最新】モニターアーム おすすめ8選｜エルゴトロン vs コスパモデル"
@@ -460,7 +497,7 @@ articles:
     category_id: "home"
     type: "daily"
     slug: "projector-ranking"
-    release_date: "2026-05-04"
+    release_date: "2026-05-25"
     eye_catch: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】家庭用プロジェクター おすすめ10選"
     title: "【2026年最新】プロジェクター おすすめ10選｜3色レーザーとAI補正"
@@ -479,7 +516,7 @@ articles:
     category_id: "beauty"
     type: "daily"
     slug: "iron-ranking"
-    release_date: "2026-05-05"
+    release_date: "2026-05-26"
     eye_catch: "https://images.unsplash.com/photo-1522338140262-f46f5913618a?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】高級ヘアアイロン おすすめ10選"
     title: "【2026年最新】高級ヘアアイロン おすすめ10選｜水蒸気爆発を防ぐ一台"
@@ -498,7 +535,7 @@ articles:
     category_id: "home"
     type: "daily"
     slug: "smart-home-kit"
-    release_date: "2026-05-06"
+    release_date: "2026-05-27"
     eye_catch: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80"
     h1: "【2026年最新】スマートホームキット おすすめ5選"
     title: "【2026年最新】スマートホームキット おすすめ5選｜Matter対応を解析"

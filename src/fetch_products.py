@@ -152,6 +152,10 @@ def fetch_article_items(article):
     # 同一製品の名寄せ用辞書 {正規化名: 最良の商品データ}
     best_offers = {}
     seen_urls = set()
+    
+    # LTS Framework: 記事設定で指定された「名機」キーワードを取得
+    products_extra = article.get('products_extra', [])
+    extra_keywords = [ex.get('keyword') for ex in products_extra if ex.get('keyword')]
 
     for item_raw in all_raw_items:
         item = item_raw.get("Item", item_raw)
@@ -159,6 +163,12 @@ def fetch_article_items(article):
         if url in seen_urls: continue
         
         name = item.get("itemName", "")
+        
+        # 悪質なノイズ商品を完全に排除
+        noise_keywords = ["在庫処分", "訳あり", "3in1", "中古", "アウトレット", "ジャンク"]
+        if any(kw in name for kw in noise_keywords):
+            continue
+
         norm_name = normalize_item_name(name)
         
         # 主要メーカー判定
@@ -168,6 +178,11 @@ def fetch_article_items(article):
         rev_avg = float(item.get("reviewAverage", 0))
         rev_count = int(item.get("reviewCount", 0))
         price = int(item.get("itemPrice", 0))
+        
+        # 取締役会からの指摘事項: 記事設定に基づく最低価格の足切りを実施
+        min_price = article.get("min_price", 0)
+        if min_price > 0 and price < min_price:
+            continue
         
         # 最良オファー判定用の内部スコア (レビュー数重視)
         offer_score = rev_avg * (1.0 + (min(rev_count, 1000) / 500))
@@ -195,15 +210,26 @@ def fetch_article_items(article):
             item_data["image"] = (images[0].get("imageUrl") if isinstance(images[0], dict) else images[0]).split("?")[0]
 
         # 同一製品（正規化名が前方一致または酷似）の重複排除
-        # 簡易的に最初の15文字が一致すれば同一視（型番対応）
         product_key = norm_name[:15]
+        
+        # LTS Framework: 指定された名機キーワードが含まれる場合、そのキーワード自体を絶対的な名寄せキーとする
+        for ekw in extra_keywords:
+            # 元の名前または正規化名でキーワード判定
+            if ekw.lower() in name.lower() or ekw.replace(" ", "").lower() in norm_name:
+                product_key = f"MASTERPIECE_{ekw}"
+                break
+                
         if product_key not in best_offers or item_data["offer_score"] > best_offers[product_key]["offer_score"]:
             best_offers[product_key] = item_data
         
         seen_urls.add(url)
 
     # 最終的なリスト作成
-    processed_items = list(best_offers.values())
+    if extra_keywords:
+        # LTS Framework: 名機として指定されたキーワードにマッチした製品のみを厳選出力（ノイズ0%保証）
+        processed_items = [v for k, v in best_offers.items() if str(k).startswith("MASTERPIECE_")]
+    else:
+        processed_items = list(best_offers.values())
 
     # ランキング全体のソート: 主要メーカーかつ総合スコアが高い順
     processed_items.sort(key=lambda x: (x['is_major'], x['quality_score']), reverse=True)
