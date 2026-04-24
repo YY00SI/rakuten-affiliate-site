@@ -126,8 +126,19 @@ def normalize_item_name(name):
 def fetch_article_items(article):
     """記事単位で商品を取得する (重複排除・最良オファー選定版)"""
     article_id = article['id']
-    params_config = article['rakuten_params']
+    params_config = article.get('rakuten_params')
     
+    if not params_config:
+        h1 = article.get('h1', '')
+        # おすすめ、ランキングなどの修飾語を取り除いてキーワード化
+        keyword = h1.split(' おすすめ')[0].replace('【2026年最新】', '').replace('【腰痛対策】', '').strip()
+        if not keyword:
+            keyword = article_id.replace('-', ' ')
+        params_config = {
+            'keyword': keyword,
+            'hits': 10
+        }
+        
     keywords = params_config['keyword'].split(',')
     max_total_hits = params_config.get('hits', 10)
     

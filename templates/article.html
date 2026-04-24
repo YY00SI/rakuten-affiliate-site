@@ -190,15 +190,24 @@
         <p class="article-intro">{{ article.intro | replace('\n', '<br>') | safe }}</p>
     </header>
 
-    <!-- Trust Badge -->
-    <section class="trust-badge-container" style="margin-bottom: 3rem; padding: 1.5rem; background: #fff; border-radius: var(--radius-md); border: 1.5px solid var(--secondary); display: flex; align-items: center; gap: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
-        <div style="flex-shrink: 0; position: relative;">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=120&q=80" alt="Editor" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary);">
+    <!-- Trust Badge & Analysis Insight -->
+    <section class="trust-badge-container" style="margin-bottom: 3rem; padding: 1.5rem; background: #fff; border-radius: var(--radius-md); border: 1.5px solid var(--secondary); box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px dashed var(--border);">
+            <div style="flex-shrink: 0; position: relative;">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=120&q=80" alt="Editor" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary);">
+            </div>
+            <div>
+                <h3 style="margin: 0; font-size: 1.1rem; color: var(--secondary);">LifeTech Select 解析チーム</h3>
+                <span style="font-size: 0.8rem; color: var(--primary); font-weight: 700; background: #E6FFFA; padding: 0.2rem 0.5rem; border-radius: 4px;">独自インサイトレポート</span>
+            </div>
         </div>
         <div>
-            <h3 style="margin: 0; font-size: 1.1rem; color: var(--secondary);">LifeTech Select 解析チーム</h3>
-            <p style="margin: 0.4rem 0 0; font-size: 0.9rem; color: var(--text-main); line-height: 1.6;">
-                楽天市場の数万件のデータを解析。<strong>「売れ筋の背景」と「実際のユーザーの本音」</strong>を抽出し、後悔しない選択をサポートします。
+            <p style="margin: 0; font-size: 0.95rem; color: var(--text-main); line-height: 1.7;">
+                {% if article.analysis_insight %}
+                    {{ article.analysis_insight | replace('\n', '<br>') | safe }}
+                {% else %}
+                    対象カテゴリの全製品およびユーザーレビューを解析し、<strong>「カタログスペックには現れない真実」</strong>を抽出。後悔しない製品選びの最適解を導き出します。
+                {% endif %}
             </p>
         </div>
     </section>
@@ -226,13 +235,25 @@
                 </thead>
                 <tbody>
                     {% for item in items[:5] %}
+                    {% set extra_data = none %}
+                    {% if article.products_extra %}
+                        {% for extra in article.products_extra if extra.rank == loop.index %}
+                            {% set extra_data = extra %}
+                        {% endfor %}
+                    {% endif %}
                     <tr>
                         <td style="font-weight: 700; font-family: 'Lato';">{{ loop.index }}位</td>
                         <td style="font-weight: 500;">{{ item.name[:25] }}...</td>
                         <td style="font-family: 'Lato'; font-weight: 700; color: var(--primary); white-space: nowrap;">{{ "{:,}".format(item.price) }}円〜</td>
                         {% if article.test_criteria %}
                             {% for criteria in article.test_criteria %}
-                            <td style="text-align: center; color: var(--primary); font-weight: 700;">★ {{ (item.reviewAverage - (loop.index0 * 0.12)) | round(1) }}</td>
+                            <td style="text-align: center; color: var(--primary); font-weight: 700;">
+                                {% if extra_data and extra_data.scores and extra_data.scores[criteria.id] %}
+                                    ★ {{ extra_data.scores[criteria.id] }}
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </td>
                             {% endfor %}
                         {% else %}
                             <td style="text-align: center; color: var(--primary); font-weight: 700;">★ {{ item.reviewAverage }}</td>
@@ -281,11 +302,26 @@
                     <div class="item-info">
                         <div class="price-row">
                             <span class="price-tag">{{ "{:,}".format(item.price) }}<span class="price-unit">円〜</span></span>
+                            {% if not article.test_criteria %}
                             <div class="review-summary">
                                 <div class="star-rating">★ {{ item.reviewAverage }}</div>
                                 <div class="review-count">({{ "{:,}".format(item.reviewCount) }}件のレビュー)</div>
                             </div>
+                            {% endif %}
                         </div>
+
+                        {% if article.test_criteria and extra_data and extra_data.scores %}
+                        <div class="custom-scores" style="display: flex; gap: 0.75rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                            {% for criteria in article.test_criteria %}
+                            <div style="background: #f8f9fa; border: 1px solid var(--border); padding: 0.5rem; border-radius: 8px; flex: 1; min-width: 100px; text-align: center;">
+                                <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.2rem;">{{ criteria.name }}</div>
+                                <div style="font-size: 1.1rem; font-weight: 800; color: var(--primary); font-family: 'Lato', sans-serif;">
+                                    ★ {{ extra_data.scores[criteria.id] if extra_data.scores[criteria.id] else '-' }}
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
 
                         {% if extra_data %}
                             <!-- Spec v8.0: Logic Beauty Analysis -->
