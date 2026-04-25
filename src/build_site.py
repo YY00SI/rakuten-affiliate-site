@@ -81,20 +81,38 @@ def main():
                         "h1": rel_art['h1'],
                         "url": f"../../{rel_cat['slug']}/{rel_art['slug']}/"
                     })
-        # LTS CEO Policy: 厳格な品質ゲート（Automated QA）
-        # 取得された製品の数と、用意された解析テキストの数が完全一致しない場合、ビルド自体を強制停止する
+        # Spec v8.2: Strict Product Filter & QA Gate
         items = product_data.get('items', [])
         products_extra = art_conf.get('products_extra', [])
-        if products_extra and len(items) != len(products_extra):
-            print(f"[CRITICAL ERROR] {art_conf['id']} のビルドを強制ブロックしました。取得製品数({len(items)})と独自解析数({len(products_extra)})が不一致です。不完全なページは公開できません。")
+        
+        # 解析データに紐付く製品のみを抽出
+        matched_items = []
+        if products_extra:
+            for ex in products_extra:
+                found_item = None
+                for item in items:
+                    if ex['keyword'].lower() in item['name'].lower():
+                        item['_extra'] = ex
+                        found_item = item
+                        break
+                
+                if found_item:
+                    matched_items.append(found_item)
+                else:
+                    print(f"[CRITICAL ERROR] {art_conf['id']} でキーワード '{ex['keyword']}' に合致する製品が見つかりません。")
+                    art_conf['_qa_failed'] = True
+
+        # 2. 全量一致チェック (LTS CEO Policy: 100% Data Integrity)
+        if art_conf.get('_qa_failed') or (products_extra and len(matched_items) != len(products_extra)):
+            print(f"[BLOCK] {art_conf['id']} のビルドを不完全なマッチングによりブロックしました。")
             continue
 
-        # HTML生成
+        # HTML生成 (matched_items のみを使用)
         html_content = article_template.render(
             site=site_config,
             category=category,
             article=art_conf,
-            items=product_data['items'],
+            items=matched_items,
             related_articles=related_articles,
             today=today_str
         )

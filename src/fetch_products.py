@@ -24,7 +24,7 @@ MAJOR_BRANDS = [
     "デロンギ", "DeLonghi", "ハーマンミラー", "Herman Miller", "エルゴヒューマン", "Ergohuman",
     "オカムラ", "OKAMURA", "Anker", "アンカー", "Apple", "アップル", "ロジクール", "Logicool", 
     "シロカ", "siroca", "ルンバ", "iRobot", "テスコム", "TESCOM", "コイズミ", "KOIZUMI", 
-    "MTG", "KINUJO", "リュミエリーナ", "Lumielina", "ヘアビューロン"
+    "MTG", "KINUJO", "リュミエリーナ", "Lumielina", "ヘアビューロン", "オーラルB"
 ]
 
 # 徹底排除キーワード (これらが含まれる場合は即座にスキップ)
@@ -179,11 +179,6 @@ def fetch_article_items(article):
         rev_count = int(item.get("reviewCount", 0))
         price = int(item.get("itemPrice", 0))
         
-        # 取締役会からの指摘事項: 記事設定に基づく最低価格の足切りを実施
-        min_price = article.get("min_price", 0)
-        if min_price > 0 and price < min_price:
-            continue
-        
         # 最良オファー判定用の内部スコア (レビュー数重視)
         offer_score = rev_avg * (1.0 + (min(rev_count, 1000) / 500))
         if "公式" in name or "official" in name.lower():
@@ -209,14 +204,19 @@ def fetch_article_items(article):
         if images:
             item_data["image"] = (images[0].get("imageUrl") if isinstance(images[0], dict) else images[0]).split("?")[0]
 
-        # 同一製品（正規化名が前方一致または酷似）の重複排除
+        # 同一製品の名寄せキー作成
         product_key = norm_name[:15]
         
-        # LTS Framework: 指定された名機キーワードが含まれる場合、そのキーワード自体を絶対的な名寄せキーとする
+        # MASTERPIECE マッチングロジック (柔軟な判定)
+        is_masterpiece = False
         for ekw in extra_keywords:
-            # 元の名前または正規化名でキーワード判定
-            if ekw.lower() in name.lower() or ekw.replace(" ", "").lower() in norm_name:
+            # 1. 記号を除去して比較 (HUAWEI Eyewear -> huaweieyewear)
+            clean_ekw = re.sub(r"[^a-zA-Z0-9ぁ-んァ-ン一-龥]", "", ekw).lower()
+            clean_name = re.sub(r"[^a-zA-Z0-9ぁ-んァ-ン一-龥]", "", name).lower()
+            
+            if clean_ekw in clean_name or ekw.lower() in name.lower():
                 product_key = f"MASTERPIECE_{ekw}"
+                is_masterpiece = True
                 break
                 
         if product_key not in best_offers or item_data["offer_score"] > best_offers[product_key]["offer_score"]:
@@ -226,16 +226,22 @@ def fetch_article_items(article):
 
     # 最終的なリスト作成
     if extra_keywords:
-        # LTS Framework: 名機として指定されたキーワードにマッチした製品のみを厳選出力（ノイズ0%保証）
-        processed_items = [v for k, v in best_offers.items() if str(k).startswith("MASTERPIECE_")]
+        # 期待される全キーワードが含まれているかチェック
+        processed_items = []
+        for ekw in extra_keywords:
+            m_key = f"MASTERPIECE_{ekw}"
+            if m_key in best_offers:
+                processed_items.append(best_offers[m_key])
+            else:
+                print(f"  [MISS] Keyword '{ekw}' not found in results.")
     else:
         processed_items = list(best_offers.values())
 
-    # ランキング全体のソート: 主要メーカーかつ総合スコアが高い順
+    # ランキング全体のソート
     processed_items.sort(key=lambda x: (x['is_major'], x['quality_score']), reverse=True)
     
     final_items = processed_items[:max_total_hits]
-    print(f"[INFO] {article_id}: 重複排除後 {len(final_items)}件 (全候補: {len(all_raw_items)})")
+    print(f"[INFO] {article_id}: Matched {len(final_items)}/{len(extra_keywords) if extra_keywords else 'ALL'} masterpieces.")
     return final_items
 
 def main():
