@@ -123,6 +123,7 @@ articles:
 
   # --- 4/22 ---
   - id: "robot-vacuum-ranking"
+    enabled: false
     category_id: "home"
     type: "daily"
     slug: "robot-vacuum"
@@ -191,6 +192,7 @@ articles:
         cost_performance: "他社の20万円クラスの機能を15万円前後で実現しており、純粋なスペック比でのコストパフォーマンスは現在最強クラスです。"
 
   - id: "ai-voice-recorder"
+    enabled: false
     category_id: "trend"
     type: "sns"
     slug: "ai-voice-recorder"
@@ -332,7 +334,7 @@ articles:
     type: "sns"
     slug: "ai-drone"
     release_date: "2026-04-18"
-    eye_catch: "https://images.unsplash.com/photo-1507502707541-f369a3b18502?auto=format&fit=crop&w=800&q=80"
+    eye_catch: "https://yy00si.github.io/rakuten-affiliate-site/images/ai-drone.png"
     h1: "【2026年最新】AIドローン 厳選2選"
     title: "【2026年最新】AIドローン 厳選2選｜手のひらから始まる「空飛ぶカメラ」"
     meta_description: "DJI Neo、HOVERAir X1など、コントローラー不要で自動追従する最新AIドローンを徹底解析。"
@@ -439,6 +441,7 @@ articles:
         cost_performance: "「しゃっきり派」にとっては他に代えがたい唯一無二の選択肢であり、好みに合致すれば10万円以上の価値を容易に提供します。"
 
   - id: "audio-glasses-ranking"
+    enabled: false
     category_id: "trend"
     type: "sns"
     slug: "audio-glasses"
@@ -482,6 +485,7 @@ articles:
 
   # --- 4/25 ---
   - id: "stick-vacuum-ranking"
+    enabled: false
     category_id: "home"
     type: "daily"
     slug: "stick-vacuum"
@@ -550,6 +554,7 @@ articles:
         cost_performance: "7万円前後。ダイソンの性能に自動収集機能が付いてこの価格、という非常に戦略的な値付けになっています。"
 
   - id: "portable-gaming-pc"
+    enabled: false
     category_id: "trend"
     type: "sns"
     slug: "portable-gaming-pc"

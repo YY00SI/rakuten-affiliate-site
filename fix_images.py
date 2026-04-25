@@ -28,6 +28,11 @@ image_mapping = {
         'src': r'C:\Users\yoshi\.gemini\antigravity\brain\ada7dff4-f0b3-492d-994c-1dad73c234bf\electric_toothbrush_eyecatch_1777081428022.png',
         'dest': 'toothbrush.png',
         'dead_url': 'https://images.unsplash.com/photo-1559599141-383d43232115?auto=format&fit=crop&w=800&q=80'
+    },
+    'ai-drone-ranking': {
+        'src': r'C:\Users\yoshi\.gemini\antigravity\brain\ada7dff4-f0b3-492d-994c-1dad73c234bf\ai_drone_eyecatch_1777082509704.png',
+        'dest': 'ai-drone.png',
+        'dead_url': 'https://images.unsplash.com/photo-1507502707541-f369a3b18502?auto=format&fit=crop&w=800&q=80'
     }
 }
 
