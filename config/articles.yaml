@@ -93,26 +93,40 @@ articles:
     category_id: "trend"
     type: "sns"
     slug: "ferrofluid-speaker"
-    release_date: "2026-05-08"
+    release_date: "2026-04-17"
     eye_catch: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80"
-    h1: "磁性流体スピーカー おすすめランキング"
-    title: "【視覚で聴く】磁性流体スピーカー おすすめ3選｜癒やしと音質を解析"
-    meta_description: "SNSで話題の磁性流体スピーカーを徹底リサーチ。"
+    h1: "磁性流体スピーカー 厳選1選"
+    title: "【視覚で聴く】磁性流体スピーカー 厳選1選｜癒やしと音質を解析"
+    meta_description: "SNSで話題の磁性流体スピーカー。視覚で音楽を楽しむ全く新しい体験をもたらす最高峰モデルを徹底リサーチ。"
+    min_price: 15000
+    rakuten_params:
+      keyword: "SOUL SIREN"
+      hits: 10
+      sort: "-reviewCount"
+    test_criteria:
+      - id: "visual"
+        name: "流体の滑らかさ"
+      - id: "sound"
+        name: "音質のクリアさ"
+    analysis_insight: "磁性流体スピーカーは音質よりも「視覚的な癒やし」に全振りした全く新しいジャンルです。粗悪なコピー品が多い中、流体の動きの滑らかさとデザイン性が突出しているモデルを1つだけ厳選しました。"
     products_extra:
-      - rank: 1
+      - keyword: "SOUL SIREN"
         best_for: "デスク周りのインテリアを格上げし、音楽を視覚でも楽しみたい方"
-        analysis_why: "「音を可視化する」という新しいリスニング体験。磁性流体の動きの滑らかさと、低音のレスポンスが良いモデルを選定。"
+        scores:
+          visual: 5.0
+          sound: 3.5
+        analysis_why: "「音を可視化する」という体験において群を抜く完成度。磁性流体の動きの滑らかさと、低音のレスポンスが極めて良い。"
         pros: ["唯一無二の視覚体験", "インテリアとしての完成度が高い", "意外にも中高音域がクリア"]
         critical_cons: "磁性流体自体が経年劣化や日光により変色する可能性あり。音質重視のスピーカーと比較すると、低音の深みには限界があります。"
-        maintenance_reality: "ガラス面の指紋を拭き取るのみ。ただし、磁性流体が分離しやすいため、極端に冷える場所での使用は厳禁。"
-        cost_performance: "スピーカーというより「動くアート」。この体験に2万円を投じられるかが分かれ目です。"
+        maintenance_reality: "ガラス面の指紋を拭き取るのみ。ただし、極端に冷える場所での使用は厳禁。"
+        cost_performance: "スピーカーというより「動くアート」。この体験に数万円を投じられるかが分かれ目です。"
 
   # --- 4/22 ---
   - id: "robot-vacuum-ranking"
     category_id: "home"
     type: "daily"
     slug: "robot-vacuum"
-    release_date: "2026-04-25"
+    release_date: "2026-04-22"
     eye_catch: "https://images.unsplash.com/photo-1589330694653-90d648283307?auto=format&fit=crop&w=800&q=80"
     h1: "高級ロボット掃除機 厳選4選"
     title: "【2026年最新】高級ロボット掃除機 厳選4選｜10万円以上の失敗しない選び方"
@@ -180,64 +194,188 @@ articles:
     category_id: "trend"
     type: "sns"
     slug: "ai-voice-recorder"
-    release_date: "2026-05-10"
+    release_date: "2026-04-25"
     eye_catch: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80"
-    h1: "AIボイスレコーダー おすすめ5選"
-    title: "【仕事革命】AIボイスレコーダー おすすめ5選｜文字起こしの精度を解析"
-    meta_description: "PLAUD NOTE、VOITERなど最新AIレコーダーを比較。"
+    h1: "AIボイスレコーダー 厳選4選"
+    title: "【仕事革命】AIボイスレコーダー 厳選4選｜文字起こしと要約の精度を解析"
+    meta_description: "PLAUD NOTE、VOITERなど、2026年のビジネス現場を劇的に変える最新AIボイスレコーダー4機種を徹底解析。"
+    min_price: 15000
+    rakuten_params:
+      keyword: "PLAUD NOTE, VOITER, ICD-TX660, WS-883"
+      hits: 20
+      sort: "-reviewCount"
+    test_criteria:
+      - id: "accuracy"
+        name: "要約・書き起こし精度"
+      - id: "portability"
+        name: "携帯性・薄さ"
+      - id: "call_recording"
+        name: "通話録音対応"
+    analysis_insight: "単に録音するだけの時代は終わりました。現在の最高峰モデルは『ChatGPT連携による自動要約』と『iPhoneの通話録音』が標準になりつつあります。本記事では、多忙なビジネスパーソンの時間を物理的に増やす、真のAIアシスタントのみを厳選しました。"
     products_extra:
-      - rank: 1
-        best_for: "iPhoneユーザーで、通話録音と即時の議事録作成を自動化したいビジネスパーソン。"
-        analysis_why: "PLAUD NOTE。MagSafe対応という物理的な利便性と、ChatGPT-4o連携による要約精度の高さが、多忙な層の支持を独占。"
-        pros: ["iPhoneの通話録音が可能", "超薄型で持ち運びやすい", "AI要約の精度が高い"]
-        critical_cons: "文字起こしには月額・年額のサブスクリプションが必須。本体価格だけでなく維持費がかかる点が、ライトユーザーには障壁。"
-        maintenance_reality: "専用アプリのアップデートを頻繁に行う必要あり。録音ファイルの容量管理もアプリ経由で行うのが基本。"
-        cost_performance: "会議の要約時間を8割削減できると考えれば、数回の会議で元が取れる計算です。"
+      - keyword: "PLAUD NOTE"
+        best_for: "iPhoneユーザーで、通話録音と会議要約を完全に自動化したいビジネスパーソン"
+        scores:
+          accuracy: 5.0
+          portability: 5.0
+          call_recording: 5.0
+        analysis_why: "現在、圧倒的な支持を得ているのがPLAUD NOTEです。MagSafeでiPhoneに貼り付け、スイッチ一つで通話録音を開始。ChatGPT-4o連携による要約の質は、もはや人間が修正する必要がないレベルに達しています。"
+        pros: ["iPhoneの通話録音が物理的に可能", "クレジットカードサイズの超薄型設計", "ChatGPTによる高度な要約機能"]
+        critical_cons: "文字起こし機能にはサブスクリプション費用（月額/年額）が発生します。無料枠を超えた際の手間とコストが、ライトユーザーには負担となる可能性があります。"
+        maintenance_reality: "専用アプリの更新が頻繁に行われます。録音データの同期にはWi-Fi環境が推奨され、スマホのストレージ管理も重要になります。"
+        cost_performance: "会議1件の要約に30分かかるとすれば、数回で本体価格の元が取れます。タイパ（タイムパフォーマンス）はガジェット界でも最高峰です。"
+      - keyword: "VOITER"
+        best_for: "騒がしい環境での会議や、オフライン環境での文字起こしを重視する方"
+        scores:
+          accuracy: 4.8
+          portability: 3.5
+          call_recording: 2.0
+        analysis_why: "iFLYTEKのVOITERシリーズ。大型の指向性マイクを搭載しており、数メートル先の声もクリアに拾い上げます。スタンドアロン（単体）で画面上で文字起こしを確認できる利便性は、スマホ連携なしで完結したい層に刺さっています。"
+        pros: ["集音能力が極めて高く、複数人の会議に強い", "本体ディスプレイで即座に内容を確認可能", "高度なノイズキャンセリング技術"]
+        critical_cons: "PLAUD NOTEのような薄さはないため、ポケットに入れると存在感があります。また、iPhoneの通話録音には対応していません。"
+        maintenance_reality: "内蔵ストレージが多めですが、定期的なPCへのデータ移行が推奨されます。物理ボタンが多く、操作性は極めて高いです。"
+        cost_performance: "法人利用やプロのライターなど、書き起こしの「量」が多い方にとっては、サブスク不要（モデルによる）のメリットが大きくなります。"
+      - keyword: "ICD-TX660"
+        best_for: "「絶対に録音ミスが許されない」重要な商談を抱える、信頼性重視の層"
+        scores:
+          accuracy: 3.0
+          portability: 4.8
+          call_recording: 2.0
+        analysis_why: "ソニーの傑作スティック型。厳密にはAI連携機能はスマホ側に依存しますが、マイク性能と電池持ち、そして『電源オフから即録音開始』できる信頼性は他社の追随を許しません。"
+        pros: ["ソニー品質の圧倒的なクリアサウンド", "クリップ付きで胸ポケットにスマートに固定", "ワンタッチ録音のレスポンスが極めて速い"]
+        critical_cons: "本体のみでのAI要約機能は持っていません。スマホアプリに転送してから外部サービスを使う手間があるため、スピード感では専用AI機に一歩譲ります。"
+        maintenance_reality: "USB Type-C充電に対応。故障が極めて少なく、10年使える堅牢さがソニー製品の真骨頂です。"
+        cost_performance: "価格が安定しており、数年使っても価値が落ちにくい。純粋な『録音機』としての完成度は間違いなく世界一です。"
+      - keyword: "WS-883"
+        best_for: "PCへのデータ転送を楽にしたい、実利を求める学生やビジネスマン"
+        scores:
+          accuracy: 2.5
+          portability: 3.5
+          call_recording: 1.0
+        analysis_why: "OM SYSTEM（旧オリンパス）の定番。USB端子が本体に内蔵されており、そのままPCに差し込める合理性が評価されています。授業の録音やメモ代わりの使用に最適です。"
+        pros: ["PCに直挿しできるスライド式USB端子", "直感的な日本語メニューと大型ボタン", "単4電池でも駆動するため電池切れの心配なし"]
+        critical_cons: "デザインが野暮ったく、お洒落なカフェでの使用などは浮いてしまいます。また、AI要約機能は別途PCソフト等を使う必要があります。"
+        maintenance_reality: "最も「普通のレコーダー」としての管理で済みます。液晶画面が大きく、設定変更が容易です。"
+        cost_performance: "1万円台前半で購入可能。AI機能を別途用意できるのであれば、マイク代わりとしてのコスパは非常に高いです。"
 
   # --- 4/23 ---
   - id: "coffee-maker-ranking"
     category_id: "home"
     type: "daily"
     slug: "coffee-maker"
-    release_date: "2026-05-11"
+    release_date: "2026-04-23"
     eye_catch: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
-    h1: "【2026年最新】コーヒーメーカー おすすめ10選"
-    title: "【2026年最新】コーヒーメーカー おすすめ10選｜「メンテナンス自動化」で選ぶ一台"
-    meta_description: "パナソニック、デロンギ、UCC、sirocaなど人気メーカーを徹底比較。"
+    h1: "コーヒーメーカー 厳選4選"
+    title: "【2026年最新】コーヒーメーカー 厳選4選｜メンテナンス自動化で選ぶ一台"
+    meta_description: "パナソニック、デロンギ、siroca、ツインバード。美味しいコーヒーを『毎日続けられる』手軽さと味を両立した最高峰の4機種を徹底解析。"
+    min_price: 15000
+    rakuten_params:
+      keyword: "NC-A58, マグニフィカS, カフェばこPRO, CM-D457B"
+      hits: 20
+      sort: "-reviewCount"
+    test_criteria:
+      - id: "maintenance"
+        name: "メンテナンスの楽さ"
+      - id: "taste"
+        name: "味の本格度"
+      - id: "design"
+        name: "デザイン・静音性"
+    analysis_insight: "コーヒーメーカー選びで最大の誤算は『洗うのが面倒で使わなくなる』ことです。本記事では、豆を挽くところからミルの洗浄まで自動化されている、あるいは構造が極めてシンプルで毎日使いやすい、真の『名機』のみを厳選しました。"
     products_extra:
-      - rank: 1
-        best_for: "「美味しいコーヒーは飲みたいが、後の掃除が死ぬほど嫌」という現実派。"
-        analysis_why: "パナソニック NC-A58-K。ロングセラーには理由があります。ミルまで自動洗浄される圧倒的な「楽さ」は、2026年の最新鋭機と比較しても依然としてトップクラス。"
-        pros: ["ミルの洗浄が不要", "デカフェ豆のコースが秀逸", "浄水フィルター内蔵"]
-        critical_cons: "デザインが10年前から変わらず無骨。また、ペーパーフィルターのセットだけは手動で行う必要があります。"
-        maintenance_reality: "1日の終わりにガラスサーバーを洗うだけ。月1回のクエン酸洗浄をすれば、10年は戦える頑丈さです。"
+      - keyword: "NC-A58"
+        best_for: "「美味しいコーヒーは飲みたいが、後の掃除が死ぬほど嫌」という現実派"
+        scores:
+          maintenance: 5.0
+          taste: 4.0
+          design: 3.0
+        analysis_why: "パナソニックの名機。最大の特徴は、ミルを自動洗浄する機能です。多くの全自動機でネックとなる『ミルの粉詰まり掃除』が不要なのは、2026年現在もこの機種の絶対的な強みです。"
+        pros: ["ミルまで自動洗浄される唯一無二の楽さ", "デカフェ豆専用コースが秀逸", "浄水フィルター内蔵で水道水でも美味しい"]
+        critical_cons: "デザインが10年以上変わっておらず、非常に無骨でプラスチック感が強いです。キッチンのインテリア性を重視する方には不向きです。"
+        maintenance_reality: "1日の終わりにガラスサーバーを洗うだけ。月1回のクエン酸洗浄をすれば10年は使えるほど頑丈です。"
         cost_performance: "2万円前後。コンビニコーヒー約150杯分で元が取れます。朝の5分を節約できる価値は計り知れません。"
+      - keyword: "マグニフィカS"
+        best_for: "ボタン一つで極上のエスプレッソとカプチーノを楽しみたい贅沢派"
+        scores:
+          maintenance: 4.5
+          taste: 5.0
+          design: 4.5
+        analysis_why: "デロンギの全自動マシン。イタリアの本格的なエスプレッソを、豆を挽くところから抽出まで完全に自動で行います。ミルクフロッサー付きで、カフェ顔負けの一杯が自宅で完成します。"
+        pros: ["世界中のカフェで採用されるデロンギの抽出技術", "起動・終了時に内部を自動洗浄する機能", "高級感のあるイタリアンデザイン"]
+        critical_cons: "本体サイズがかなり大きく、奥行きも必要です。また、抽出時の音がそれなりに大きいため、早朝や深夜の使用には配慮が必要です。"
+        maintenance_reality: "内部の「抽出ユニット」を週に一度水洗いするのみ。カス受けに溜まった豆カスを捨てる作業も非常にスムーズです。"
+        cost_performance: "初期投資は約6万円〜ですが、豆から挽く一杯あたりのコストは非常に低く、長く使うほど満足度が高まる投資です。"
+      - keyword: "カフェばこPRO"
+        best_for: "省スペースで、かつ豆の個性を引き出す『じっくり蒸らし』を求める方"
+        scores:
+          maintenance: 4.0
+          taste: 4.5
+          design: 5.0
+        analysis_why: "sirocaのフラッグシップ。独自の「プロのハンドドリップを再現する蒸らし工程」により、豆本来の香りを最大限に引き出します。非常にコンパクトな設計も日本の住宅事情にマッチしています。"
+        pros: ["横幅がスリムで置き場所を選ばない", "豆の計量から自動で行う完全全自動", "サーバーが真空ステンレスで煮詰まらない"]
+        critical_cons: "パナソニックに比べると、ミル部分に粉が残りやすいため、週に一度はブラシでの清掃が推奨されます。"
+        maintenance_reality: "パーツの取り外しが簡単で、丸洗い可能な箇所が多いです。デザインが洗練されており、キッチンが華やかになります。"
+        cost_performance: "3万円前後。機能とデザイン、味のバランスが最も取れた「中庸の名機」と言えます。"
+      - keyword: "CM-D457B"
+        best_for: "コーヒー界のレジェンドが監修した『究極の一杯』を自宅で再現したい求道者"
+        scores:
+          maintenance: 3.5
+          taste: 5.0
+          design: 5.0
+        analysis_why: "ツインバードが「カフェ・バッハ」店主・田口護氏と共同開発。6方向からのシャワードリップや、適切な温度管理など、抽出のプロセスが芸術的です。あえて『時間がかかる』ことが味に直結しています。"
+        pros: ["ハンドドリップの所作を完全に自動化", "低速臼式ミルで摩擦熱を抑え, 香りを守る", "マットブラックの圧倒的に美しい佇まい"]
+        critical_cons: "他社に比べると抽出に時間がかかります。忙しい朝に『今すぐ飲みたい』人よりは、休日の朝に『最高の一杯を待ちたい』人向けです。"
+        maintenance_reality: "構造上、ミル部分の掃除に手間がかかる箇所があります。味を追求するためのメンテナンスを厭わない人向けの一台です。"
+        cost_performance: "4万円前後。外の専門店で1杯800円のコーヒーを飲むのと同等の体験が毎日得られると考えれば、価格以上の価値があります。"
 
   - id: "ai-drone-ranking"
     category_id: "trend"
     type: "sns"
     slug: "ai-drone"
-    release_date: "2026-05-12"
+    release_date: "2026-04-18"
     eye_catch: "https://images.unsplash.com/photo-1507502707541-f369a3b18502?auto=format&fit=crop&w=800&q=80"
-    h1: "【2026年最新】AIドローン おすすめ5選"
-    title: "【2026年最新】AIドローン おすすめ5選｜手のひらから始まる「空飛ぶカメラ」"
-    meta_description: "DJI Neo、HOVERAirなど最新AIドローンを徹底解析。"
+    h1: "【2026年最新】AIドローン 厳選2選"
+    title: "【2026年最新】AIドローン 厳選2選｜手のひらから始まる「空飛ぶカメラ」"
+    meta_description: "DJI Neo、HOVERAir X1など、コントローラー不要で自動追従する最新AIドローンを徹底解析。"
+    min_price: 30000
+    rakuten_params:
+      keyword: "DJI Neo, HOVERAir X1"
+      hits: 20
+      sort: "-reviewCount"
+    test_criteria:
+      - id: "tracking"
+        name: "AI追従の精度"
+      - id: "ease"
+        name: "手軽さ（離着陸）"
+    analysis_insight: "ドローンは「操縦して楽しむもの」から「自動で自撮りをしてくれるカメラマン」へと進化しました。コントローラーを一切持たず、ポケットから出して数秒で録画が開始できる、AI搭載のフラッグシップ2機種を比較します。"
     products_extra:
-      - rank: 1
-        best_for: "SNS用の自撮りを最高画質で、かつノーコントローラーで撮りたいVlogger。"
-        analysis_why: "DJI Neo。コントローラー不要、手のひら離着陸、AI自動追従をこの価格で実現したのは革命。楽天市場での初動売上も過去最高レベル。"
-        pros: ["スマホすら出さずに録画開始", "手のひらに着陸する可愛さ", "AIの追従が驚くほどスムーズ"]
-        critical_cons: "プロペラガードが大きいため、風の影響を非常に受けやすい。また、ファンの音がかなり高音で、周囲の視線を集めてしまうデメリットも。"
-        maintenance_reality: "プロペラへの接触による傷に注意。砂場での着陸はジンバル故障の原因になるため、必ず「手のひら着陸」を守ること。"
-        cost_performance: "3万円台で「自分専用のカメラマン」を雇えると考えれば、驚異的な安さです。"
+      - keyword: "DJI Neo"
+        best_for: "SNS用の自撮りを最高画質で、かつノーコントローラーで撮りたいVlogger"
+        scores:
+          tracking: 4.8
+          ease: 5.0
+        analysis_why: "世界最大手DJIの革命的製品。手のひらからの離着陸とAI自動追従を低価格で実現。ドローンの民主化を完了させた歴史的モデルです。"
+        pros: ["スマホすら出さずに録画開始", "手のひらに着陸する安全性", "4K動画対応の高画質"]
+        critical_cons: "プロペラガードが大きいため、風の影響を非常に受けやすい。ファンの音が高音で周囲の視線を集めます。"
+        maintenance_reality: "砂場での着陸はジンバル故障の原因になるため、必ず「手のひら着陸」を守ること。"
+        cost_performance: "数万円で「自分専用のカメラマン」を雇える驚異的な安さ。"
+      - keyword: "HOVERAir X1"
+        best_for: "デザイン性とポケットへの収まりの良さを重視する方"
+        scores:
+          tracking: 4.5
+          ease: 4.5
+        analysis_why: "完全に折りたためる構造で、文字通りポケットに入る携帯性が最大の魅力。囲われたプロペラで安全性も極めて高いです。"
+        pros: ["折りたたみ機構で究極のコンパクトさ", "ケージ型プロペラで指が触れない安全性", "専用アプリのエフェクトが豊富"]
+        critical_cons: "DJI Neoに比べると画質面（特に暗所）で一歩劣ります。またバッテリー容量がやや少ないです。"
+        maintenance_reality: "折りたたみヒンジ部分に砂が噛まないように注意。充電はこまめに行う必要があります。"
+        cost_performance: "持ち歩きのストレスをゼロにしたいなら、価格以上の価値があります。"
 
   # --- 4/24 (今日) ---
   - id: "premium-rice-cooker"
     category_id: "home"
     type: "daily"
     slug: "rice-cooker"
-    release_date: "2026-04-25"
-    eye_catch: "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80"
+    release_date: "2026-04-24"
+    eye_catch: "https://images.unsplash.com/photo-1591333139264-28414270160d?auto=format&fit=crop&w=800&q=80"
     h1: "高級炊飯器 厳選4選"
     title: "【2026年最新】高級炊飯器 厳選4選｜10万円クラスの失敗しない選び方"
     meta_description: "象印、タイガー、パナソニック、三菱。お米の旨味を極限まで引き出す最高峰の高級炊飯器4機種を徹底解析。"
@@ -304,56 +442,154 @@ articles:
     category_id: "trend"
     type: "sns"
     slug: "audio-glasses"
-    release_date: "2026-05-14"
+    release_date: "2026-04-19"
     eye_catch: "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&w=800&q=80"
-    h1: "【2026年最新】オーディオグラス おすすめ5選"
-    title: "【2026年最新】オーディオグラス おすすめ5選｜耳を塞がない「身に纏うAI」"
-    meta_description: "HUAWEI Eyewear 2、Anker Soundcoreなど人気モデルを比較。"
+    h1: "【2026年最新】オーディオグラス 厳選2選"
+    title: "【2026年最新】オーディオグラス 厳選2選｜耳を塞がない「身に纏うAI」"
+    meta_description: "HUAWEI Eyewear 2、Soundcore Framesなど、見た目は普通のメガネなのに音が鳴る、最新オーディオグラスを徹底解析。"
+    min_price: 15000
+    rakuten_params:
+      keyword: "HUAWEI Eyewear 2, Soundcore Frames"
+      hits: 20
+      sort: "-reviewCount"
+    test_criteria:
+      - id: "design"
+        name: "メガネとしての自然さ"
+      - id: "sound_leak"
+        name: "音漏れの少なさ"
+    analysis_insight: "イヤホンを長時間つけることの疲労感から解放される「オーディオグラス」。現在の課題はいかに「普通のメガネに見えるか」と「音漏れを防ぐか」です。この2点を高次元でクリアしたトップモデルのみを比較します。"
     products_extra:
-      - rank: 1
-        best_for: "普通のメガネとして日常使いしつつ、通知の読み上げやBGMを楽しみたいミニマリスト。"
-        analysis_why: "HUAWEI Eyewear 2。最大の勝因は「普通のメガネに見える」こと。音質もこの薄さで驚異的ですが、何よりファッション性を損なわない点が、他社が勝てない壁となっています。"
+      - keyword: "HUAWEI Eyewear 2"
+        best_for: "普通のメガネとして日常使いしつつ、通知の読み上げやBGMを楽しみたいミニマリスト"
+        scores:
+          design: 5.0
+          sound_leak: 4.0
+        analysis_why: "最大の勝因は「普通のメガネに見える」こと。音質もこの薄さで驚異的ですが、何よりファッション性を損なわない点が他社を圧倒しています。"
         pros: ["圧倒的にメガネとして軽い", "バッテリー持ちが飛躍的に向上", "マルチポイント接続が便利"]
-        critical_cons: "静かな図書館や満員電車では、50%以上の音量で音漏れが発生します。また、専用の充電ケーブルを紛失すると代用が効かないため注意。"
-        maintenance_reality: "普通のメガネ同様、皮脂汚れの拭き取りのみ。ただし、ヒンジ部分のスピーカー孔を塞がないよう、時々エアダスターでの清掃を推奨。"
-        cost_performance: "3万円。高級フレームのメガネを買うのと同価格帯で、最新のワイヤレス体験が付いてくると考えれば割安です。"
+        critical_cons: "静かな図書館や満員電車では、50%以上の音量で音漏れが発生します。また専用充電ケーブルの紛失に注意。"
+        maintenance_reality: "普通のメガネ同様、皮脂汚れの拭き取りのみ。ヒンジ部分の清掃にはエアダスターを推奨。"
+        cost_performance: "高級フレームを買うのと同価格帯でスマート機能が付くため、極めて割安です。"
+      - keyword: "Soundcore Frames"
+        best_for: "価格を抑えつつ、カスタマイズ可能なフレームでファッションを楽しみたい方"
+        scores:
+          design: 4.0
+          sound_leak: 3.5
+        analysis_why: "Ankerのオーディオ技術を投入。フレーム部分を付け替えられる独自仕様で、度付きレンズへの交換対応もしやすいのが特徴。"
+        pros: ["Ankerならではの迫力あるサウンド", "フレームの交換が容易", "価格が手頃で入門に最適"]
+        critical_cons: "HUAWEIに比べるとテンプル（つる）の部分がやや太く、「ガジェット感」が少し出ます。"
+        maintenance_reality: "防水性能があり、雨の日でも安心。充電は独自マグネット式なのでケーブル管理が必要です。"
+        cost_performance: "スマートグラス入門機として、失敗しない価格設定です。"
 
   # --- 4/25 ---
   - id: "stick-vacuum-ranking"
     category_id: "home"
     type: "daily"
     slug: "stick-vacuum"
-    release_date: "2026-05-15"
+    release_date: "2026-04-25"
     eye_catch: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80"
-    h1: "【2026年最新】スティック掃除機 おすすめ10選"
-    title: "【2026年最新】スティック掃除機 おすすめ10選｜「自動ゴミ収集」を解析"
-    meta_description: "ダイソン、日立、パナソニック、シャークなど人気メーカーを徹底比較。"
+    h1: "スティック掃除機 厳選4選"
+    title: "【2026年最新】スティック掃除機 厳選4選｜吸引力と「ゴミ捨てゼロ」で選ぶ"
+    meta_description: "ダイソン、日立、パナソニック、シャーク。2026年の最先端である「自動ゴミ収集」と「圧倒的な軽さ」を両立したフラッグシップ4機種を徹底解析。"
+    min_price: 40000
+    rakuten_params:
+      keyword: "V12 Detect Slim, PV-BH900SL, MC-NS700, CleanSense IQ+"
+      hits: 20
+      sort: "-reviewCount"
+    test_criteria:
+      - id: "power_weight"
+        name: "吸引力×軽さ"
+      - id: "dust_bin"
+        name: "ゴミ捨ての楽さ"
+      - id: "hair_tangle"
+        name: "髪の毛の絡みにくさ"
+    analysis_insight: "スティック掃除機のトレンドは『吸引力の追求』から『ゴミ捨てとメンテナンスの自動化』へ完全に移行しました。本記事では、ただ吸うだけでなく、掃除後の『ダストカップを洗う』『髪の毛をハサミで切る』という不快な作業を最小限に抑えてくれる、現代の共働き世帯に必須の4台を厳選しています。"
     products_extra:
-      - rank: 1
-        best_for: "掃除の度にゴミを捨てるのがストレスな方、軽さと吸引力を両立したい方。"
-        analysis_why: "パナソニック MC-NX500。自動ゴミ収集ステーション付きの中で、本体重量と吸引バランスが最も優れている。レビューでは「掃除のハードルが下がった」という声が多数。"
-        pros: ["ゴミ捨ての手間が月1回に", "髪の毛が絡みにくいブラシ", "立てるだけで充電完了"]
-        critical_cons: "強モードでのバッテリー持続時間が約10分と短い。広大な家を一度に掃除するには不向き。"
-        maintenance_reality: "ステーションの紙パック交換のみ。本体のダストカップ洗浄も可能だが、自動収集のおかげで頻度は低くて済みます。"
-        cost_performance: "7万円。ダイソンの上位機種より安く、付加価値（自動収集）があるため、非常に競争力が高い一台です。"
+      - keyword: "V12 Detect Slim"
+        best_for: "「ゴミが可視化される」快感を味わい、微細なホコリまで徹底的に除去したい掃除マニア"
+        scores:
+          power_weight: 4.8
+          dust_bin: 3.5
+          hair_tangle: 4.5
+        analysis_why: "ダイソンの完成形。緑色のレーザーで肉眼では見えない微細なホコリを浮かび上がらせる機能は、一度体験すると他には戻れません。他モデルより一回り小型で、日本人の体格に最もフィットする重量バランスです。"
+        pros: ["レーザー照射でゴミの取り残しがゼロに", "吸ったゴミのサイズと量を液晶で証明", "絡みにくいスクリューツールが秀逸"]
+        critical_cons: "自動ゴミ収集ステーションがありません。毎回レバーでゴミを捨てる必要があるため、アレルギー体質の方やゴミ捨て自体を自動化したい方には不向きです。"
+        maintenance_reality: "フィルターは1ヶ月に一度水洗いするだけ。クリアビンも丸洗い可能で、衛生面は非常に高いレベルで維持できます。"
+        cost_performance: "8万円前後。ダイソンという信頼性と、目に見えて綺麗になる満足感を考えれば、最も所有欲を満たす投資になります。"
+      - keyword: "PV-BH900SL"
+        best_for: "「とにかく軽いこと」を最優先し、高い場所や階段を楽に掃除したい方"
+        scores:
+          power_weight: 5.0
+          dust_bin: 3.0
+          hair_tangle: 4.0
+        analysis_why: "日立の技術の結晶。1.1kgという驚異的な軽さながら、強力なモーターで絨毯の奥のゴミまで吸い出します。ヘッドが「ペタリンコ構造」で家具の下を掃除しやすいのも日本メーカーらしい配慮です。"
+        pros: ["業界トップクラスの軽さで腕が疲れない", "家具の下までヘッドが入るフラット設計", "豊富なアタッチメントが標準付属"]
+        critical_cons: "軽さを追求した分、バッテリー持続時間が標準モードで約40分、強モードだと約8分と短めです。広大な一軒家を一度に掃除するには不向きです。"
+        maintenance_reality: "ダストケースを外さずにゴミを圧縮して捨てられる機能付き。フィルターの目詰まりを抑える構造ですが、定期的な水洗いは必要です。"
+        cost_performance: "5万円前後。この軽さと機能のバランスは、特に女性や高齢の方にとって最高のコストパフォーマンスを発揮します。"
+      - keyword: "MC-NS700"
+        best_for: "掃除の後の「ゴミ捨て」と「ホコリが舞う」のが大嫌いな清潔志向の方"
+        scores:
+          power_weight: 3.5
+          dust_bin: 5.0
+          hair_tangle: 5.0
+        analysis_why: "パナソニックの意欲作。掃除機をスタンドに戻すだけで、本体のゴミをステーションが自動回収。ゴミ捨ては数ヶ月に一度、紙パックを捨てるだけという究極の『放置』を実現しました。"
+        pros: ["ゴミ捨ての手間が劇的に減る（数ヶ月に一度）", "紙パック式でホコリが一切舞わない", "ブラシに髪の毛がほとんど絡まない"]
+        critical_cons: "吸引力自体はダイソン等に比べるとマイルドです。また、自動収集時の音がかなり大きいため、夜間の使用には注意が必要です。"
+        maintenance_reality: "本体側のメンテナンスはほぼ不要。紙パックのランニングコストはかかりますが、掃除のハードルを最も下げてくれる一台です。"
+        cost_performance: "6万円前後。ゴミ捨てという不快なルーチンを人生から消せる価値を考えれば、極めて合理的な投資と言えます。"
+      - keyword: "CleanSense IQ+"
+        best_for: "床の汚れに合わせてパワーを自動調整してほしい、海外ブランドのパワーを求める方"
+        scores:
+          power_weight: 4.0
+          dust_bin: 4.5
+          hair_tangle: 4.8
+        analysis_why: "全米No.1シェアのShark。床の汚れを検知して吸引力とブラシ回転数をリアルタイムで調整するIQセンサーが非常に賢い。自動ゴミ収集ドックも付属し、非常に高機能です。"
+        pros: ["汚れに合わせた自動調整でバッテリーが長持ち", "パイプが曲がる『Flex』機能で腰をかがめず掃除可能", "ドックがコンパクトでリビングに馴染む"]
+        critical_cons: "海外ブランド特有の「ゴツさ」があり、日立などの超軽量モデルに慣れていると、取り回しが少し重く感じることがあります。"
+        maintenance_reality: "自動収集ドックは紙パック不要のタイプもあり、ランニングコストを抑えられます。HEPAフィルター搭載で排気も非常にクリーンです。"
+        cost_performance: "7万円前後。ダイソンの性能に自動収集機能が付いてこの価格、という非常に戦略的な値付けになっています。"
 
   - id: "portable-gaming-pc"
     category_id: "trend"
     type: "sns"
     slug: "portable-gaming-pc"
-    release_date: "2026-05-16"
+    release_date: "2026-04-20"
     eye_catch: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80"
-    h1: "【2026年最新】ポータブルゲーミングPC おすすめ5選"
-    title: "【2026年最新】ポータブルゲーミングPC おすすめ5選｜2026年の勝者を解析"
-    meta_description: "ROG Ally X、MSI Claw、Steam Deckなど最新UMPCを比較。"
+    h1: "【2026年最新】ポータブルゲーミングPC 厳選2選"
+    title: "【2026年最新】ポータブルゲーミングPC 厳選2選｜2026年の勝者を解析"
+    meta_description: "ROG Ally X、Steam Deck OLEDなど、場所を選ばずPCゲームができる最高峰のUMPCを徹底比較。"
+    min_price: 80000
+    rakuten_params:
+      keyword: "ROG Ally X, Steam Deck OLED"
+      hits: 15
+      sort: "-reviewCount"
+    test_criteria:
+      - id: "performance"
+        name: "ゲームの動作性能"
+      - id: "battery"
+        name: "バッテリー持続時間"
+    analysis_insight: "UMPC（超小型PC）市場は成熟期に入りました。初期モデルの「バッテリーが1時間しか持たない」という弱点を克服し、真の実用レベルに達したフラッグシップ2機種を厳選しました。"
     products_extra:
-      - rank: 1
-        best_for: "外出先でもPCゲームを一切の妥協なく、長時間楽しみたいガチ勢。"
-        analysis_why: "ASUS ROG Ally X。前作の弱点だったバッテリー容量を2倍にし、メモリも24GBへ増量。「これ一台で全て完結する」という安心感がユーザーの背中を押しています。"
+      - keyword: "ROG Ally X"
+        best_for: "外出先でもPCゲームを一切の妥協なく、高画質で長時間楽しみたいガチ勢"
+        scores:
+          performance: 5.0
+          battery: 4.5
+        analysis_why: "前作の弱点だったバッテリー容量を2倍にし、メモリも24GBへ増量。「これ一台で全て完結する」という安心感がユーザーの背中を押しています。"
         pros: ["80Whの圧倒的スタミナ", "24GBメモリで動作が安定", "グリップ感が格段に向上"]
-        critical_cons: "Windowsベースのため、起動や更新作業がコンソール機（Switchなど）に比べると煩雑。スリープからの復帰でバグることが時折あります。"
-        maintenance_reality: "排熱ファンに埃が溜まると性能が著しく落ちるため、半年〜1年ごとの内部清掃を推奨。OSのクリーンアップも定期的に必要。"
-        cost_performance: "13万円。ハイスペックなゲーミングノートPCを買うより安く、場所を選ばない自由が手に入ります。"
+        critical_cons: "Windowsベースのため、起動や更新作業がコンソール機に比べると煩雑。スリープからの復帰でバグることが時折あります。"
+        maintenance_reality: "排熱ファンに埃が溜まると性能が著しく落ちるため、半年ごとの内部清掃を推奨。OSのクリーンアップも必要。"
+        cost_performance: "ハイスペックなゲーミングノートPCを買うより安く、場所を選ばない自由が手に入ります。"
+      - keyword: "Steam Deck OLED"
+        best_for: "Windowsの煩雑さを嫌い、Steamのゲームを「スイッチ感覚」で手軽に遊びたい層"
+        scores:
+          performance: 4.0
+          battery: 5.0
+        analysis_why: "専用OSによるゲーム体験への没入感は他の追随を許しません。有機EL化により画面の美しさが劇的に向上し、発熱やバッテリーも改善。"
+        pros: ["スリープの復帰がゲーム機レベルで完璧", "有機ELの圧倒的な黒と色彩", "トラックパッドによる独自操作"]
+        critical_cons: "Steam以外のゲーム（Epic Gamesなど）を遊ぶには知識が必要です。また重量が比較的重いです。"
+        maintenance_reality: "本体が大きいため持ち運びには大きめのバッグが必要。ソフトの更新は自動でスムーズです。"
+        cost_performance: "PCゲームの入門機として、これほど価格と体験のバランスが取れた機材はありません。"
 
   # --- 4/26 ---
   - id: "smart-lock-ranking"
