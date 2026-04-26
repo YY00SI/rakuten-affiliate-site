@@ -133,7 +133,7 @@ articles:
     meta_description: "Roborock、Ecovacs、ルンバなど、本当に「掃除を忘れる」ことができる最高峰の全自動ロボット掃除機4機種を徹底解析。"
     min_price: 80000
     rakuten_params:
-      keyword: "Roborock S8 MaxV, DEEBOT X2, ルンバ j9, Dreame L20"
+      keyword: "ロボット掃除機"
       hits: 30
       sort: "-reviewCount"
     test_criteria:
@@ -145,7 +145,7 @@ articles:
         name: "メンテの手間"
     analysis_insight: "「自動ゴミ収集」はもはや当たり前。現在のハイエンドロボット掃除機の真の価値は、「床に物が落ちていても止まらない回避力」と「モップの自動洗浄・乾燥による完全放置」にあります。"
     products_extra:
-      - keyword: "S8 MaxV"
+      - keyword: "ECOVACS"
         best_for: "「絶対に止まらない」安心感と、完璧な水拭きを求める共働き世帯"
         scores:
           obstacle: 5.0
@@ -449,7 +449,7 @@ articles:
     meta_description: "HUAWEI、Soundcoreなど、見た目は普通のメガネなのに音が鳴る、最新オーディオグラスを徹底解析。"
     min_price: 10000
     rakuten_params:
-      keyword: "HUAWEI Eyewear, Soundcore Frames"
+      keyword: "スマートグラス"
       hits: 30
       sort: "-reviewCount"
     test_criteria:
@@ -459,7 +459,7 @@ articles:
         name: "音漏れの少なさ"
     analysis_insight: "イヤホンを長時間つけることの疲労感から解放される「オーディオグラス」。"
     products_extra:
-      - keyword: "HUAWEI"
+      - keyword: "スマートグラス"
         best_for: "普通のメガネとして日常使いしたいミニマリスト"
         scores:
           design: 5.0
@@ -593,7 +593,7 @@ articles:
     meta_description: "SwitchBot、Qrio Lockなど、鍵を出さない生活を実現する最高峰のスマートロックを徹底解析。"
     min_price: 10000
     rakuten_params:
-      keyword: "SwitchBot ロックPro, Qrio Lock"
+      keyword: "SwitchBot ロック, Qrio Lock"
       hits: 10
       sort: "-reviewCount"
     test_criteria:
@@ -603,7 +603,7 @@ articles:
         name: "設置のしやすさ"
     analysis_insight: "スマートロックの真髄は「スマホすら出さずに解錠できるか」にあります。Apple Watchや指紋認証パッドに対応し、1秒以内に反応するフラッグシップ2機種を厳選しました。"
     products_extra:
-      - keyword: "SwitchBot ロックPro"
+      - keyword: "SwitchBot"
         best_for: "指紋認証で爆速解錠したい、スマートホーム化を極めたい方"
         scores:
           speed: 5.0
@@ -613,7 +613,7 @@ articles:
         critical_cons: "強力な両面テープのため、賃貸のドアの材質によっては剥がす際にリスクあり。"
         maintenance_reality: "1年に一度の電池交換のみ。屋外のパッドは日光劣化に注意。"
         cost_performance: "毎日の数分のストレスが消えると考えれば極めて投資効率が良い。"
-      - keyword: "Qrio Lock"
+      - keyword: "Qrio"
         best_for: "日本の住環境に特化した、確実なハンズフリー解錠を求める方"
         scores:
           speed: 4.0
