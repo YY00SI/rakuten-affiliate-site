@@ -35,9 +35,12 @@ NEGATIVE_KEYWORDS = [
     "シェーバー", "髭剃り", "バリカン", "脱毛器", "電池", "充電池", "バッテリー"
 ]
 
-def fetch_items_for_keyword(keyword, params_config, article_id):
+def fetch_items_for_keyword(keyword, params_config, article_id, qa_config=None):
     """特定のキーワードで商品を取得する内部関数"""
-    min_price = params_config.get('min_price', 500)
+    qa_config = qa_config or {}
+    
+    # qa_config を優先、なければ params_config, それもなければデフォルト
+    min_price = qa_config.get('min_price') or params_config.get('min_price') or 500
     max_price = params_config.get('max_price', 9999999)
     
     # 記事IDから主要キーワードを推測
@@ -51,9 +54,16 @@ def fetch_items_for_keyword(keyword, params_config, article_id):
     elif "recorder" in article_id: core_kws = ["レコーダー", "録音"]
     elif "lock" in article_id: core_kws = ["ロック", "スマートロック", "鍵"]
     elif "coffee" in article_id: core_kws = ["コーヒー", "珈琲", "coffee"]
+    elif "rice-cooker" in article_id: core_kws = ["炊飯器", "炊飯ジャー"]
 
     # 記事テーマに関連する単語は除外ワードから外す
-    final_neg_kws = NEGATIVE_KEYWORDS + category_neg_kws
+    forbidden_words = qa_config.get('forbidden_words', [])
+    if forbidden_words:
+        # 重複を排除しつつリスト化
+        final_neg_kws = list(set(NEGATIVE_KEYWORDS + category_neg_kws + forbidden_words))
+    else:
+        final_neg_kws = NEGATIVE_KEYWORDS + category_neg_kws
+
     for cw in core_kws:
         if cw in final_neg_kws:
             final_neg_kws.remove(cw)
@@ -71,8 +81,9 @@ def fetch_items_for_keyword(keyword, params_config, article_id):
         "format": "json"
     }
     
-    if 'genre_id' in params_config and params_config['genre_id']:
-        params['genreId'] = params_config['genre_id']
+    genre_id = qa_config.get('genre_id') or params_config.get('genre_id')
+    if genre_id:
+        params['genreId'] = genre_id
 
     try:
         headers = {"Referer": "https://github.com", "Origin": "https://github.com"}
@@ -89,11 +100,16 @@ def fetch_items_for_keyword(keyword, params_config, article_id):
                 if any(neg in name for neg in final_neg_kws):
                     continue
                 
-                # 2. 記事のテーマが含まれているか
+                # 2. 必須キーワードチェック (qa_config.required_words)
+                required_words = qa_config.get('required_words', [])
+                if required_words and not all(rw in name for rw in required_words):
+                    continue
+
+                # 3. 記事のテーマが含まれているか
                 if core_kws and not any(ck in name for ck in core_kws):
                     continue
 
-                # 3. 信頼性チェック (レビュー0件かつ高額な「景品ノイズ」を排除)
+                # 4. 信頼性チェック (レビュー0件かつ高額な「景品ノイズ」を排除)
                 # ただし、発売直後の新製品（is_major）の可能性もあるため、主要ブランド以外はレビュー必須
                 is_major = any(brand.lower() in name.lower() for brand in MAJOR_BRANDS)
                 if not is_major and rev_count == 0:
@@ -103,7 +119,7 @@ def fetch_items_for_keyword(keyword, params_config, article_id):
             return valid_items
         elif response.status_code == 429:
             time.sleep(2)
-            return fetch_items_for_keyword(keyword, params_config, article_id)
+            return fetch_items_for_keyword(keyword, params_config, article_id, qa_config)
     except Exception as e:
         print(f"[ERROR] API Exception for {keyword}: {str(e)}")
     return []
@@ -127,6 +143,7 @@ def fetch_article_items(article):
     """記事単位で商品を取得する (重複排除・最良オファー選定版)"""
     article_id = article['id']
     params_config = article.get('rakuten_params')
+    qa_config = article.get('qa_config', {})
     
     if not params_config:
         h1 = article.get('h1', '')
@@ -145,7 +162,7 @@ def fetch_article_items(article):
     all_raw_items = []
     for kw in keywords:
         kw = kw.strip()
-        items = fetch_items_for_keyword(kw, params_config, article_id)
+        items = fetch_items_for_keyword(kw, params_config, article_id, qa_config=qa_config)
         all_raw_items.extend(items)
         time.sleep(0.5)
 
@@ -164,8 +181,11 @@ def fetch_article_items(article):
         
         name = item.get("itemName", "")
         
-        # 悪質なノイズ商品を完全に排除
-        noise_keywords = ["在庫処分", "訳あり", "3in1", "中古", "アウトレット", "ジャンク"]
+        # 悪質なノイズ商品を完全に排除 (qa_config.forbidden_words を優先)
+        noise_keywords = qa_config.get('forbidden_words')
+        if noise_keywords is None:
+            noise_keywords = ["在庫処分", "訳あり", "3in1", "中古", "アウトレット", "ジャンク"]
+        
         if any(kw in name for kw in noise_keywords):
             continue
 
