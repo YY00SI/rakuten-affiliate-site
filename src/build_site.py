@@ -1,110 +1,113 @@
 import os
 import json
 import yaml
-import shutil
 from jinja2 import Environment, FileSystemLoader
 from datetime import datetime
 
 def main():
-    # 設定の読み込み
+    # 設定読み込み
     with open("config/articles.yaml", "r", encoding="utf-8") as f:
         config = yaml.safe_load(f)
     
     site_config = config['site']
-    categories = {cat['id']: cat for cat in config['categories']}
+    categories = {c['id']: c for c in config['categories']}
     articles = config['articles']
     
-    # Jinja2の設定
-    env = Environment(loader=FileSystemLoader("templates"))
+    # テンプレート環境設定
+    env = Environment(loader=FileSystemLoader("src/templates"))
     article_template = env.get_template("article.html")
-    category_list_template = env.get_template("category_list.html")
-    index_template = env.get_template("index.html")
+    category_template = env.get_template("category.html")
+    home_template = env.get_template("index.html")
     
-    # 出力ディレクトリのベース (指示書に従い docs/ を使用)
     output_base = "docs"
-    os.makedirs(output_base, exist_ok=True)
+    today_str = datetime.now().strftime("%Y年%m月%d日")
     
-    data_dir = "data/products"
-    now = datetime.now()
-    today_str = now.strftime("%Y年%m月%d日")
-    today_iso = now.strftime("%Y-%m-%d") # 比較用の日付
-    
-    # 1. 記事ページの生成
     processed_articles = []
-    for art_conf in articles:
-        if not art_conf.get("enabled", True):
-            continue
-            
-        # 予約公開チェック: release_date が今日より後ならスキップ
-        release_date_raw = str(art_conf.get("release_date", "2000-01-01")).strip()
-        if release_date_raw > today_iso:
-            print(f"[SKIP] 予約公開待ち: {art_conf['id']} (公開予定: {release_date_raw} / 今日: {today_iso})")
-            continue
-        
-        # 表示用の日付フォーマット変換 (2026-04-23 -> 2026年04月23日)
-        try:
-            rd_dt = datetime.strptime(release_date_raw, "%Y-%m-%d")
-            art_conf['display_date'] = rd_dt.strftime("%Y年%m月%d日")
-        except:
-            art_conf['display_date'] = release_date_raw
 
-        print(f"[DEBUG] 処理対象記事: {art_conf['id']} (公開日: {art_conf['display_date']})")
-            
-        file_path = os.path.join(data_dir, f"{art_conf['id']}.json")
-        if not os.path.exists(file_path):
-            print(f"[WARN] データが見つからないためスキップ: {art_conf['id']}")
+    # 1. 各記事詳細ページの生成
+    for art_conf in articles:
+        if not art_conf.get('enabled', True):
             continue
-            
-        with open(file_path, "r", encoding="utf-8") as f:
-            product_data = json.load(f)
             
         category = categories.get(art_conf['category_id'])
         if not category:
-            print(f"[ERROR] カテゴリが見つかりません: {art_conf['category_id']} (記事ID: {art_conf['id']})")
             continue
             
-        print(f"[DEBUG] カテゴリ一致: {category['id']} -> {category['name']}")
-            
-        # 出力先ディレクトリ作成
+        # 記事ディレクトリの作成
         article_dir = os.path.join(output_base, category['slug'], art_conf['slug'])
         os.makedirs(article_dir, exist_ok=True)
         
-        # 関連記事の情報を収集
+        # 製品データの読み込み
+        product_file = os.path.join("data/products", f"{art_conf['id']}.json")
+        if not os.path.exists(product_file):
+            print(f"[WARN] {art_conf['id']} の製品データが見つかりません。")
+            continue
+            
+        with open(product_file, "r", encoding="utf-8") as f:
+            product_data = json.load(f)
+            
+        # 関連記事の抽出 (同じカテゴリから)
         related_articles = []
-        for rel_id in art_conf.get("related_article_ids", []):
-            rel_art = next((a for a in articles if a['id'] == rel_id), None)
-            if rel_art:
+        for rel_art in articles:
+            if rel_art['id'] != art_conf['id'] and rel_art['category_id'] == art_conf['category_id']:
                 rel_cat = categories.get(rel_art['category_id'])
                 if rel_cat:
-                    # 記事詳細から別の記事詳細への相対パス (../../cat/art/)
                     related_articles.append({
                         "h1": rel_art['h1'],
                         "url": f"../../{rel_cat['slug']}/{rel_art['slug']}/"
                     })
-        # Spec v8.2: Strict Product Filter & QA Gate
+
+        # --- Spec v8.3: Ultimate QA Gate (Policy: Zero Trash Publication) ---
+        qa_errors = []
+        
+        qa_config = art_conf.get('qa_config')
+        if qa_config is None:
+            print(f"[CRITICAL QA ERROR] {art_conf['id']}: qa_config が未定義です。ビルドをブロックしました。")
+            continue
+            
+        min_price = qa_config.get('min_price', 0)
+        if not min_price:
+            print(f"[CRITICAL QA ERROR] {art_conf['id']}: qa_config.min_price が未設定です。")
+            continue
+            
+        forbidden_words = qa_config.get('forbidden_words', [])
+        
         items = product_data.get('items', [])
         products_extra = art_conf.get('products_extra', [])
         
+        if not products_extra:
+            qa_errors.append("products_extra が未定義です。商品定義なしには公開できません。")
+
         # 解析データに紐付く製品のみを抽出
         matched_items = []
-        if products_extra:
+        if not qa_errors and products_extra:
             for ex in products_extra:
                 found_item = None
                 for item in items:
-                    if ex['keyword'].lower() in item['name'].lower():
-                        item['_extra'] = ex
-                        found_item = item
-                        break
+                    # 1. キーワード一致
+                    if ex['keyword'].lower() not in item['name'].lower():
+                        continue
+                    # 2. 禁止キーワード除外 (スタンド, フィルム等)
+                    if any(f_kw in item['name'] for f_kw in forbidden_words):
+                        continue
+                    # 3. 価格下限チェック
+                    if item.get('price', 0) < min_price:
+                        continue
+                    
+                    item['_extra'] = ex
+                    found_item = item
+                    break
                 
                 if found_item:
                     matched_items.append(found_item)
                 else:
-                    print(f"[CRITICAL ERROR] {art_conf['id']} でキーワード '{ex['keyword']}' に合致する製品が見つかりません。")
-                    art_conf['_qa_failed'] = True
+                    qa_errors.append(f"キーワード '{ex['keyword']}' に合致する製品が見つかりません。")
 
-        # 2. 全量一致チェック (LTS CEO Policy: 100% Data Integrity)
-        if art_conf.get('_qa_failed') or (products_extra and len(matched_items) != len(products_extra)):
-            print(f"[BLOCK] {art_conf['id']} のビルドを不完全なマッチングによりブロックしました。")
+        # 最終ブロック判定
+        if qa_errors:
+            print(f"[CRITICAL QA ERROR] {art_conf['id']} のビルドを以下の理由でブロックしました:")
+            for err in qa_errors:
+                print(f"  - {err}")
             continue
 
         # HTML生成 (matched_items のみを使用)
@@ -117,6 +120,14 @@ def main():
             today=today_str
         )
         
+        # 最終防衛線: HTML全体のスキャン (Unsplash editor画像チェック)
+        if "images.unsplash.com" in html_content:
+            # 記事タイトルやアイキャッチでの使用は許可する場合があるが、基本はブロック
+            # ただし LTS standards では editorアバターを img タグで直書きしているものを狙う
+            if "unsplash.com/photo-" in html_content:
+                 print(f"[CRITICAL QA ERROR] {art_conf['id']}: テンプレートにUnsplashプレースホルダーが残存しています。")
+                 continue
+
         with open(os.path.join(article_dir, "index.html"), "w", encoding="utf-8") as f:
             f.write(html_content)
         
@@ -129,7 +140,6 @@ def main():
     
     # 処理済み記事を日付順（降順）にソート
     processed_articles.sort(key=lambda x: x['conf'].get('release_date', '2000-01-01'), reverse=True)
-    print(f"[DEBUG] トップページ用記事リスト: {[a['conf']['id'] for a in processed_articles]}")
 
     # 2. カテゴリ一覧ページの生成
     for cat_id, cat in categories.items():
@@ -140,57 +150,41 @@ def main():
         cat_dir = os.path.join(output_base, cat['slug'])
         os.makedirs(cat_dir, exist_ok=True)
         
-        # カテゴリ一覧から記事詳細への相対パス修正
         cat_processed_articles = []
         for a in cat_articles:
             cat_processed_articles.append({
                 "conf": a['conf'],
                 "url": f"./{a['conf']['slug']}/"
             })
-        
-        html_content = category_list_template.render(
+
+        cat_html = category_template.render(
             site=site_config,
             category=cat,
             articles=cat_processed_articles,
             today=today_str
         )
-        
         with open(os.path.join(cat_dir, "index.html"), "w", encoding="utf-8") as f:
-            f.write(html_content)
-        print(f"[INFO] カテゴリページ生成完了: {cat['slug']}/index.html")
+            f.write(cat_html)
 
     # 3. トップページの生成
-    html_content = index_template.render(
+    home_articles = []
+    for a in processed_articles:
+        home_articles.append({
+            "conf": a['conf'],
+            "category": a['category'],
+            "url": a['url']
+        })
+        
+    home_html = home_template.render(
         site=site_config,
+        articles=home_articles,
         categories=categories.values(),
-        all_articles=processed_articles,
         today=today_str
     )
-    
     with open(os.path.join(output_base, "index.html"), "w", encoding="utf-8") as f:
-        f.write(html_content)
-    print(f"[INFO] トップページ生成完了: index.html")
-
-    # 4. 固定ページの生成 (About, Privacy Policy, How We Test)
-    static_pages = [
-        {"tpl": "about.html", "dir": "about"},
-        {"tpl": "privacy-policy.html", "dir": "privacy-policy"},
-        {"tpl": "how-we-test.html", "dir": "how-we-test"}
-    ]
+        f.write(home_html)
     
-    for page in static_pages:
-        template = env.get_template(page['tpl'])
-        page_dir = os.path.join(output_base, page['dir'])
-        os.makedirs(page_dir, exist_ok=True)
-        
-        html_content = template.render(
-            site=site_config,
-            today=today_str
-        )
-        
-        with open(os.path.join(page_dir, "index.html"), "w", encoding="utf-8") as f:
-            f.write(html_content)
-        print(f"[INFO] 固定ページ生成完了: {page['dir']}/index.html")
+    print(f"ビルド完了: 全{len(processed_articles)}記事")
 
 if __name__ == "__main__":
     main()

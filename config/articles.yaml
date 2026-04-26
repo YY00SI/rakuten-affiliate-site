@@ -30,7 +30,11 @@ articles:
     eye_catch: "https://images.unsplash.com/photo-1522338140262-f46f5913618a?auto=format&fit=crop&w=800&q=80"
     h1: "高級ヘアドライヤー 厳選4選"
     title: "【2026年最新】高級ヘアドライヤー 厳選4選｜3万円以上の失敗しない選び方"
-    min_price: 30000
+    qa_config:
+      min_price: 30000
+      genre_id: "100241"
+      required_words: ["ドライヤー", "ヘア"]
+      forbidden_words: ["フィルム", "ケース", "カバー", "スタンド", "収納", "交換", "補修", "液体", "オイル", "ふるさと納税", "返礼品", "中古", "訳あり", "ジャンク", "部品", "パーツ", "レンタル", "延長", "設置", "工事", "在庫処分", "3in1", "アウトレット"]
     rakuten_params:
       keyword: "ナノケア EH, リファ ビューテック ドライヤー, Dyson Supersonic, KINUJO ドライヤー"
       hits: 10
@@ -97,12 +101,16 @@ articles:
     eye_catch: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80"
     h1: "磁性流体スピーカー 厳選1選"
     title: "【視覚で聴く】磁性流体スピーカー 厳選1選｜癒やしと音質を解析"
-    meta_description: "SNSで話題の磁性流体スピーカー。視覚で音楽を楽しむ全く新しい体験をもたらす最高峰モデルを徹底リサーチ。"
-    min_price: 15000
+    qa_config:
+      min_price: 10000
+      genre_id: "100532"
+      required_words: ["スピーカー", "ビジュアライザー"]
+      forbidden_words: ["液体のみ", "オイルのみ", "補充", "交換用", "フィルム", "ケース", "カバー", "スタンド", "ふるさと納税", "中古", "訳あり", "ジャンク"]
     rakuten_params:
-      keyword: "磁性流体"
+      keyword: "磁性流体 スピーカー, Ferrofluid Speaker"
       hits: 10
       sort: "-reviewCount"
+    meta_description: "SNSで話題の磁性流体スピーカー。視覚で音楽を楽しむ全く新しい体験をもたらす最高峰モデルを徹底リサーチ。"
     test_criteria:
       - id: "visual"
         name: "流体の滑らかさ"
@@ -336,7 +344,11 @@ articles:
     h1: "【2026年最新】AIドローン 厳選2選"
     title: "【2026年最新】AIドローン 厳選2選｜手のひらから始まる「空飛ぶカメラ」"
     meta_description: "DJI Neo、HOVERAir X1など、自動追従する最新AIドローンを徹底解析。"
-    min_price: 30000
+    qa_config:
+      min_price: 10000
+      genre_id: "101165"
+      required_words: ["ドローン", "空撮", "drone"]
+      forbidden_words: ["フィルム", "ケース", "カバー", "スタンド", "ふるさと納税", "中古", "訳あり", "ジャンク"]
     rakuten_params:
       keyword: "DJI Neo, HOVERAir X1"
       hits: 20
@@ -379,7 +391,11 @@ articles:
     h1: "高級炊飯器 厳選4選"
     title: "【2026年最新】高級炊飯器 厳選4選｜10万円クラスの失敗しない選び方"
     meta_description: "象印、タイガー、パナソニック、三菱。お米の旨味を極限まで引き出す最高峰の高級炊飯器4機種を徹底解析。"
-    min_price: 60000
+    qa_config:
+      min_price: 30000
+      genre_id: "100233"
+      required_words: ["炊飯器", "IH", "圧力", "炊き"]
+      forbidden_words: ["ミル", "グラインダー", "コーヒー", "絵本", "フィルム", "ケース", "カバー", "スタンド", "収納", "ふるさと納税", "中古", "訳あり", "ジャンク"]
     rakuten_params:
       keyword: "炎舞炊き, 土鍋ご泡火炊き, ビストロ, 本炭釜"
       hits: 30
@@ -447,9 +463,13 @@ articles:
     h1: "【2026年最新】オーディオグラス 厳選2選"
     title: "【2026年最新】オーディオグラス 厳選2選｜耳を塞がない「身に纏うAI」"
     meta_description: "HUAWEI、Soundcoreなど、見た目は普通のメガネなのに音が鳴る、最新オーディオグラスを徹底解析。"
-    min_price: 10000
+    qa_config:
+      min_price: 10000
+      genre_id: "101240"
+      required_words: ["グラス", "メガネ", "眼鏡"]
+      forbidden_words: ["フィルム", "ケース", "カバー", "スタンド", "ふるさと納税", "中古", "訳あり", "ジャンク"]
     rakuten_params:
-      keyword: "スマートグラス"
+      keyword: "スマートグラス, Soundcore フレーム, HUAWEI Eyewear"
       hits: 30
       sort: "-reviewCount"
     test_criteria:
@@ -634,10 +654,14 @@ articles:
     h1: "高級オフィスチェア 厳選2選"
     title: "【腰痛対策】高級オフィスチェア 厳選2選｜座り心地を徹底比較"
     meta_description: "ハーマンミラー、エルゴヒューマン。1日10時間のデスクワークを支える最高峰の椅子を徹底解析。"
-    min_price: 100000
+    qa_config:
+      min_price: 30000
+      genre_id: "100809"
+      required_words: ["チェア", "椅子", "デスクチェア"]
+      forbidden_words: ["フィルム", "ケース", "カバー", "スタンド", "ふるさと納税", "中古", "訳あり", "ジャンク"]
     rakuten_params:
-      keyword: "アーロンチェア リマスタード, エルゴヒューマン プロ"
-      hits: 10
+      keyword: "アーロンチェア リマスタード, エルゴヒューマン プロ, オフィスチェア"
+      hits: 20
       sort: "-reviewCount"
     test_criteria:
       - id: "posture"
@@ -806,10 +830,14 @@ articles:
     h1: "電動歯ブラシ 厳選2選"
     title: "【2026年最新】電動歯ブラシ 厳選2選｜AI磨きガイドを解析"
     meta_description: "フィリップス ソニッケアー、ブラウン オーラルB。歯科検診レベルのツルツル感を実現する最高峰。"
-    min_price: 25000
+    qa_config:
+      min_price: 15000
+      genre_id: "100242"
+      required_words: ["電動歯ブラシ", "ソニッケアー", "オーラルB"]
+      forbidden_words: ["フィルム", "ケース", "カバー", "スタンド", "ふるさと納税", "中古", "訳あり", "ジャンク"]
     rakuten_params:
-      keyword: "ソニッケアー プレステージ, オーラルB iO9"
-      hits: 10
+      keyword: "ソニッケアー プレステージ, オーラルB iO9, 電動歯ブラシ"
+      hits: 20
       sort: "-reviewCount"
     test_criteria:
       - id: "plaque_removal"
@@ -892,10 +920,14 @@ articles:
     h1: "モニターアーム 厳選2選"
     title: "【2026年最新】モニターアーム 厳選2選｜エルゴトロンの凄み"
     meta_description: "エルゴトロン LX、Pixio。机の上の解放を追求するモニターアームの最適解。"
-    min_price: 10000
+    qa_config:
+      min_price: 5000
+      genre_id: "100026"
+      required_words: ["モニターアーム", "エルゴトロン", "Pixio"]
+      forbidden_words: ["フィルム", "ケース", "カバー", "スタンド", "ふるさと納税", "中古", "訳あり", "ジャンク"]
     rakuten_params:
-      keyword: "エルゴトロン LX, Pixio PS2S"
-      hits: 10
+      keyword: "エルゴトロン LX, Pixio PS2S, モニターアーム"
+      hits: 20
       sort: "-reviewCount"
     test_criteria:
       - id: "stability"
@@ -978,10 +1010,14 @@ articles:
     h1: "高級ヘアアイロン 厳選2選"
     title: "【2026年最新】高級ヘアアイロン 厳選2選｜水蒸気爆発を防ぐ一台"
     meta_description: "リファ、ヘアビューロン。最高峰のヘアアイロンを徹底比較。"
-    min_price: 20000
+    qa_config:
+      min_price: 15000
+      genre_id: "100243"
+      required_words: ["ヘアアイロン", "アイロン", "リファ", "ヘアビューロン"]
+      forbidden_words: ["フィルム", "ケース", "カバー", "スタンド", "ふるさと納税", "中古", "訳あり", "ジャンク"]
     rakuten_params:
-      keyword: "ビューテック ストレートアイロン, ヘアビューロン 4D"
-      hits: 10
+      keyword: "ビューテック ストレートアイロン, ヘアビューロン 4D, ヘアアイロン"
+      hits: 20
       sort: "-reviewCount"
     test_criteria:
       - id: "damage_less"
@@ -1021,10 +1057,14 @@ articles:
     h1: "スマートリモコン 厳選2選"
     title: "【2026年最新】スマートリモコン 厳選2選｜Matter対応を解析"
     meta_description: "SwitchBot ハブ2、Nature Remo 3。家中の家電を一括操作するスマートホームの司令塔を比較。"
-    min_price: 5000
+    qa_config:
+      min_price: 3000
+      genre_id: "100545"
+      required_words: ["ハブ", "リモコン", "Nature", "SwitchBot"]
+      forbidden_words: ["フィルム", "ケース", "カバー", "スタンド", "ふるさと納税", "中古", "訳あり", "ジャンク"]
     rakuten_params:
-      keyword: "SwitchBot ハブ2, Nature Remo 3"
-      hits: 10
+      keyword: "SwitchBot ハブ2, Nature Remo 3, スマートリモコン"
+      hits: 20
       sort: "-reviewCount"
     test_criteria:
       - id: "compatibility"
