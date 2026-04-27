@@ -140,6 +140,8 @@ articles:
     forbidden_words:
     - 液体のみ
     - オイルのみ
+    - マグオイル
+    - オイル
     - 補充
     - 交換用
     - フィルム
@@ -715,7 +717,7 @@ articles:
   title: 【2026年最新】ポータブルゲーミングPC 厳選2選｜2026年の勝者を解析
   meta_description: ROG Ally X、Steam Deck OLEDなど、最高峰のUMPCを徹底比較。
   rakuten_params:
-    keyword: ROG Ally, Steam Deck
+    keyword: ROG Ally 本体, Steam Deck, Legion Go 本体, MSI Claw 本体
     hits: 15
     sort: -reviewCount
   test_criteria:
@@ -753,6 +755,33 @@ articles:
     cost_performance: PCゲームの入門機として、価格と体験のバランスが最高です。
   qa_config:
     min_price: 80000
+    required_words:
+    - PC
+    - 本体
+    - Deck
+    - Ally
+    - Go
+    - Claw
+    forbidden_words:
+    - SSD
+    - microSD
+    - SDカード
+    - カード
+    - メモリ
+    - ストレージ
+    - ケース
+    - カバー
+    - フィルム
+    - スタンド
+    - 絵本
+    - バッグ
+    - ポーチ
+    - ドック
+    - 周辺機器
+    - アクセサリー
+    - 中古
+    - 訳あり
+    - ジャンク
 - id: smart-lock-ranking
   category_id: home
   type: daily
