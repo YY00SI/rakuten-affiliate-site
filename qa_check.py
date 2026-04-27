@@ -67,6 +67,7 @@ def run_full_audit():
                     continue
                 
                 found = True
+                print(f"    [MATCHED] {ex['keyword']} -> {item['name'][:40]}...")
                 break
             if found:
                 matched_count += 1

@@ -1,48 +1,23 @@
-# プロジェクト進捗状況 (2026-04-26)
+# プロジェクト進捗状況 (2026-04-27)
 
 ## 1. 全体概要
-楽天アフィリエイト「セレクトガイド型」サイトの品質向上作業中。
-`qa_check.py` による品質監査を行い、不合格記事の修正およびマスターピース（特定商品）の照合精度を改善している。
+楽天アフィリエイト「セレクトガイド型」サイトの品質向上作業が完了。
+楽天APIの新システム（UUID形式ID）への完全対応と、全記事のマスターピース照合精度 100% を達成。
 
 ## 2. 現在のステータス
-- **品質監査 (QA Check):** 12/21 記事が [PASS]
-- **サイト生成 (Build):** 実行済み
-- **デプロイ (Deploy):** 2026-04-26 22:30 初回デプロイ完了（OK記事のみ公開中）
-  - `audio-glasses-ranking` はマスターピース不一致によりビルドがブロックされた（仕様通り）。
-  - 未来の日付の記事はビルドから自動的にスキップされている。
+- **品質監査 (QA Check):** 21/21 記事が [PASS]
+- **サイト生成 (Build):** 実行可能（データ完全整合）
+- **デプロイ (Deploy):** 2026-04-27 全記事合格状態で公開準備完了
 
 ## 3. 合格記事 [PASS]
-1. hair-dryer-ranking
-2. ferrofluid-speaker
-3. robot-vacuum-ranking
-4. coffee-maker-ranking
-5. ai-drone-ranking
-6. smart-lock-ranking
-7. keyboard-ranking
-8. auto-cooker-ranking
-9. toaster-ranking
-10. facial-device-ranking
-11. hair-iron-ranking
-12. projector-ranking
+全21記事（ドライヤー、炊飯器、オーディオグラス、オフィスチェア、ロボット掃除機など全て）が合格。
 
-## 4. 解決すべき課題 (不合格記事)
-以下の記事でマスターピースのキーワード不一致、または価格・除外ワードによるエラーが発生中。
-※カッコ内は照合を目指すマスターピース名
+## 4. 解決済みの課題
+- **文字化け問題:** Pythonの `requests.json()` 起因のエンコーディング不整合を `response.content.decode('utf-8')` により解消。
+- **APIエラー (404/400):** 新システムで無効化された `genreId` の削除と、キーワードのクリーンアップにより解消。
+- **マスターピース不一致:** 検索キーワードの具体化（型番指定等）と、照合ロジックの改善により 100% 照合を達成。
 
-- **audio-glasses-ranking:** (HUAWEI Eyewear, Soundcore)
-- **office-chair-ranking:** (アーロンチェア, エルゴヒューマン)
-- **toothbrush-ranking:** (ソニッケアー, オーラルB)
-- **monitor-arm:** (エルゴトロン, Pixio)
-- **smart-home-kit:** (SwitchBot, Nature Remo)
-- **premium-rice-cooker:** (炎舞炊き, 土鍋ご泡火炊き, ビストロ, 本炭釜)
-- **ai-voice-recorder:** (PLAUD, VOITER) ※価格判定エラーあり
-
-## 5. 実施済みの重要な修正
-- `src/fetch_products.py` および `qa_check.py` を、各記事の `qa_config` (min_price, forbidden_words 等) を参照するように修正。
-- サイト生成プログラム `src/build_site.py` を、マスターピース不一致時にビルドを停止するように強化。
-
-## 6. 次の作業
-1. `config/articles.yaml` のキーワードを慎重に修正（文字化けに注意）。
-2. `python src/fetch_products.py` でデータを最新化。
-3. `python qa_check.py` で全パスを確認。
-4. `python src/build_site.py` で全記事を生成。
+## 5. 次の作業
+1. `python src/build_site.py` で最終ビルド。
+2. `git_push.bat` でデプロイ（必要に応じて）。
+3. 定期的なデータ更新の自動化（GitHub Actions）の監視。

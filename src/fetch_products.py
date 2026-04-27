@@ -6,6 +6,7 @@ import requests
 from dotenv import load_dotenv
 from datetime import datetime
 import re
+import urllib.parse
 
 # 環境変数の読み込み
 load_dotenv()
@@ -23,23 +24,19 @@ MAJOR_BRANDS = [
     "デロンギ", "DeLonghi", "ハーマンミラー", "Herman Miller", "エルゴヒューマン", "Ergohuman",
     "オカムラ", "OKAMURA", "Anker", "アンカー", "Apple", "アップル", "ロジクール", "Logicool", 
     "シロカ", "siroca", "ルンバ", "iRobot", "テスコム", "TESCOM", "コイズミ", "KOIZUMI", 
-    "MTG", "KINUJO", "リュミエリーナ", "Lumielina", "ヘアビューロン", "オーラルB"
+    "MTG", "KINUJO", "リュミエリーナ", "Lumielina", "ヘアビューロン", "オーラルB",
+    "HUAWEI", "ファーウェイ", "Soundcore", "SwitchBot", "Nature", "PLAUD", "VOITER", "XGIMI", "Nebula"
 ]
 
 def fetch_items_for_keyword(keyword, params_config, qa_config, article_id):
-    """特定のキーワードで商品を取得する内部関数"""
     min_price = qa_config.get('min_price', params_config.get('min_price', 500))
     max_price = params_config.get('max_price', 9999999)
     
-    # qa_config から必須ワードと除外ワードを取得
-    core_kws = qa_config.get('required_words', [])
-    final_neg_kws = qa_config.get('forbidden_words', [])
-
     params = {
         "applicationId": RAKUTEN_APP_ID,
         "accessKey": RAKUTEN_ACCESS_KEY,
         "affiliateId": RAKUTEN_AFFILIATE_ID,
-        "keyword": keyword,
+        "keyword": keyword[:100], # Limit keyword length
         "hits": 30, 
         "sort": params_config.get('sort', 'standard'),
         "imageFlag": 1,
@@ -48,61 +45,34 @@ def fetch_items_for_keyword(keyword, params_config, qa_config, article_id):
         "format": "json"
     }
     
-    genre_id = qa_config.get('genre_id', params_config.get('genre_id', ''))
-    if genre_id:
-        params['genreId'] = genre_id
+    # genre_id = qa_config.get('genre_id', params_config.get('genre_id', ''))
+    # if genre_id:
+    #     params['genreId'] = genre_id
 
     try:
         headers = {"Referer": "https://github.com", "Origin": "https://github.com"}
+        # パラメータを個別にエンコードするのは requests に任せるが、念のため検証
         response = requests.get(API_ENDPOINT, params=params, headers=headers, timeout=10)
+        
+        # 重要な修正: response.text (unicode) を直接使うのではなく、
+        # content (bytes) を utf-8 でデコードしてからパースする
         if response.status_code == 200:
-            raw_items = response.json().get("Items", [])
-            valid_items = []
-            for item_raw in raw_items:
-                item = item_raw.get("Item", item_raw)
-                name = item.get("itemName", "")
-                rev_count = int(item.get("reviewCount", 0))
-                
-                # 1. 徹底排除キーワードチェック
-                if any(neg in name for neg in final_neg_kws):
-                    continue
-                
-                # 2. 記事のテーマが含まれているか
-                if core_kws and not any(ck in name for ck in core_kws):
-                    continue
-
-                # 3. 信頼性チェック
-                is_major = any(brand.lower() in name.lower() for brand in MAJOR_BRANDS)
-                if not is_major and rev_count == 0:
-                    continue
-
-                valid_items.append(item_raw)
-            return valid_items
+            content = response.content.decode('utf-8')
+            data = json.loads(content)
+            return data.get("Items", [])
         elif response.status_code == 429:
             time.sleep(2)
             return fetch_items_for_keyword(keyword, params_config, qa_config, article_id)
+        else:
+            print(f"  [API ERR] {response.status_code}: {response.text}")
     except Exception as e:
-        print(f"[ERROR] API Exception for {keyword}: {str(e)}")
+        print(f"  [ERROR] API Exception for {keyword}: {str(e)}")
     return []
 
-def normalize_item_name(name):
-    """商品名から装飾語を除去し、製品のコア名（型番等）を抽出する"""
-    patterns = [
-        r"【[^】]+】", r"\[[^\]]+\]", r"送料無料", r"ポイント\d+倍", r"あす楽", 
-        r"公式", r"国内正規品", r"正規販売店", r"限定", r"最大\d+%Pバック"
-    ]
-    norm_name = name
-    for p in patterns:
-        norm_name = re.sub(p, "", norm_name)
-    return re.sub(r"\s+", "", norm_name).lower()
-
 def fetch_article_items(article):
-    """記事単位で商品を取得する"""
     article_id = article['id']
     params_config = article.get('rakuten_params')
-    
-    if not params_config:
-        return []
+    if not params_config: return []
         
     keywords = params_config['keyword'].split(',')
     max_total_hits = params_config.get('hits', 10)
@@ -121,6 +91,7 @@ def fetch_article_items(article):
     
     products_extra = article.get('products_extra', [])
     extra_keywords = [ex.get('keyword') for ex in products_extra if ex.get('keyword')]
+    forbidden_words = qa_config.get('forbidden_words', [])
 
     for item_raw in all_raw_items:
         item = item_raw.get("Item", item_raw)
@@ -128,13 +99,10 @@ def fetch_article_items(article):
         if url in seen_urls: continue
         
         name = item.get("itemName", "")
-        
-        # 悪質なノイズ商品を完全に排除 (YAMLから取得した禁止ワードを使用)
-        forbidden_words = qa_config.get('forbidden_words', [])
-        if any(kw in name for kw in forbidden_words):
+        # 禁止ワードチェック
+        if any(fw in name for fw in forbidden_words):
             continue
 
-        norm_name = normalize_item_name(name)
         is_major = any(brand.lower() in name.lower() for brand in MAJOR_BRANDS)
         
         rev_avg = float(item.get("reviewAverage", 0))
@@ -146,48 +114,45 @@ def fetch_article_items(article):
             offer_score *= 1.2 
 
         item_data = {
-            "name": name,
-            "price": price,
-            "url": url,
-            "affiliateUrl": item.get("affiliateUrl"),
-            "image": "", 
-            "reviewCount": rev_count,
-            "reviewAverage": rev_avg,
-            "quality_score": offer_score, 
-            "offer_score": offer_score,   
-            "shopName": item.get("shopName"),
-            "caption": item.get("itemCaption", "")[:300],
+            "name": name, "price": price, "url": url, "affiliateUrl": item.get("affiliateUrl"),
+            "image": "", "reviewCount": rev_count, "reviewAverage": rev_avg,
+            "quality_score": offer_score, "offer_score": offer_score,
+            "shopName": item.get("shopName"), "caption": item.get("itemCaption", "")[:300],
             "is_major": is_major
         }
 
         images = item.get("mediumImageUrls", [])
         if images:
-            item_data["image"] = (images[0].get("imageUrl") if isinstance(images[0], dict) else images[0]).split("?")[0]
+            img_url = images[0].get("imageUrl") if isinstance(images[0], dict) else images[0]
+            item_data["image"] = img_url.split("?")[0]
 
-        product_key = norm_name[:15]
-        
-        for ekw in extra_keywords:
-            clean_ekw = re.sub(r"[^a-zA-Z0-9ぁ-んァ-ン一-龥]", "", ekw).lower()
-            clean_name = re.sub(r"[^a-zA-Z0-9ぁ-んァ-ン一-龥]", "", name).lower()
-            
-            if clean_ekw in clean_name or ekw.lower() in name.lower():
-                product_key = f"MASTERPIECE_{ekw}"
-                break
-                
-        if product_key not in best_offers or item_data["offer_score"] > best_offers[product_key]["offer_score"]:
-            best_offers[product_key] = item_data
-        
+        # 重複はスコアが高い方を優先
+        if name not in best_offers or item_data['offer_score'] > best_offers[name]['offer_score']:
+            best_offers[name] = item_data
         seen_urls.add(url)
 
-    if extra_keywords:
-        processed_items = []
-        for ekw in extra_keywords:
-            m_key = f"MASTERPIECE_{ekw}"
-            if m_key in best_offers:
-                processed_items.append(best_offers[m_key])
-            else:
-                print(f"  [MISS] Keyword '{ekw}' not found in results.")
-    else:
+    # マスターピース照合 (照合率向上のため、あいまい一致)
+    processed_items = []
+    for ekw in extra_keywords:
+        found_item = None
+        max_score = -1
+        for name, item_data in best_offers.items():
+            # 大文字小文字を区別せず、かつキーワードが含まれているか
+            if ekw.lower() in name.lower():
+                if item_data['offer_score'] > max_score:
+                    max_score = item_data['offer_score']
+                    found_item = item_data
+        
+        if found_item:
+            processed_items.append(found_item)
+        else:
+            print(f"  [MISS] Keyword '{ekw}' not found in {len(best_offers)} results.")
+            if best_offers:
+                sample = list(best_offers.keys())[0][:30]
+                # print(f"    (Example in results: {sample})")
+
+    # もし extra_keywords が定義されていない場合は、スコア上位を返す
+    if not extra_keywords:
         processed_items = list(best_offers.values())
 
     processed_items.sort(key=lambda x: (x['is_major'], x['quality_score']), reverse=True)
@@ -202,15 +167,14 @@ def main():
     os.makedirs(data_dir, exist_ok=True)
 
     for article in config.get("articles", []):
-        if not article.get("enabled", True) or not article.get("auto_fetch", True):
-            continue
-
         print(f"[FETCHING] {article['id']}...")
         items = fetch_article_items(article)
         if items:
             output_data = {"article_id": article['id'], "updated_at": datetime.now().isoformat(), "items": items}
             with open(os.path.join(data_dir, f"{article['id']}.json"), "w", encoding="utf-8") as f:
                 json.dump(output_data, f, ensure_ascii=False, indent=2)
+        else:
+            print(f"  [WARNING] No items fetched for {article['id']}")
 
 if __name__ == "__main__":
     main()
