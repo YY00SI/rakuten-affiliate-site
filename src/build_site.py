@@ -20,7 +20,9 @@ def main():
     home_template = env.get_template("index.html")
     
     output_base = "docs"
-    today_str = datetime.now().strftime("%Y年%m月%d日")
+    now = datetime.now()
+    today_date = now.strftime("%Y-%m-%d")
+    today_str = now.strftime("%Y年%m月%d日")
     
     processed_articles = []
 
@@ -29,6 +31,12 @@ def main():
         if not art_conf.get('enabled', True):
             continue
             
+        # 未来日付のチェック
+        release_date = art_conf.get('release_date', '2000-01-01')
+        if release_date > today_date:
+            # print(f"[SKIP] 未来日付のためスキップ: {art_conf['id']} ({release_date})")
+            continue
+
         category = categories.get(art_conf['category_id'])
         if not category:
             continue
