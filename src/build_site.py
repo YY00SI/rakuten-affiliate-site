@@ -128,8 +128,16 @@ def main():
         with open(os.path.join(article_dir, "index.html"), "w", encoding="utf-8") as f:
             f.write(html_content)
         
+        # 日付のフォーマット
+        rel_date = art_conf.get('release_date', '2000-01-01')
+        try:
+            dt = datetime.strptime(rel_date, '%Y-%m-%d')
+            display_date = dt.strftime('%Y年%m月%d日')
+        except:
+            display_date = rel_date
+
         processed_articles.append({
-            "conf": art_conf,
+            "conf": {**art_conf, "display_date": display_date},
             "category": category,
             "url": f"./{category['slug']}/{art_conf['slug']}/" # トップから見た相対パス
         })
@@ -174,7 +182,7 @@ def main():
         
     home_html = home_template.render(
         site=site_config,
-        articles=home_articles,
+        all_articles=home_articles,
         categories=categories.values(),
         today=today_str
     )
