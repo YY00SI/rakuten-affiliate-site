@@ -673,16 +673,20 @@
 <style>
     /* Article Specific Components */
     .article-title {
-        font-size: 1.8rem;
-        margin-bottom: 1.25rem;
-        line-height: 1.3;
+        font-size: clamp(1.6rem, 4vw, 2.4rem);
+        margin-bottom: 1.5rem;
+        line-height: 1.35;
         color: var(--secondary);
+        font-weight: 800;
+        text-wrap: balance; /* ブラウザに改行のバランスを任せる */
     }
 
     .article-intro {
-        font-size: 1rem;
+        font-size: clamp(0.95rem, 2vw, 1.1rem);
         color: var(--text-muted);
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
+        line-height: 1.85;
+        text-wrap: pretty; /* 最後の行が短くなりすぎるのを防ぐ */
     }
 
     .updated-at {
@@ -691,16 +695,18 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.25rem;
     }
 
     /* Comparison Table (My-best style) */
     .comparison-wrapper {
         overflow-x: auto;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
         border-radius: var(--radius-md);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+        border: 1px solid var(--border);
     }
+... (省略されるが全体を置換するため適切なコンテキストを使用)
 
     .comparison-table {
         width: 100%;
