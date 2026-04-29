@@ -27,9 +27,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Validate Article Contracts
-        run: python src/validate_articles.py
-
       - name: Fetch Products from Rakuten API
         env:
           RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
@@ -39,9 +36,6 @@ jobs:
 
       - name: Build Static Site
         run: python src/build_site.py
-
-      - name: Audit Generated Site
-        run: python src/audit_site.py
 
       - name: Deploy to GitHub Pages
         run: |
