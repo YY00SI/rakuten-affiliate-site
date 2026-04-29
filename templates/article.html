@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% set is_single_pick = items|length == 1 %}
 <style>
     /* Article Specific Components */
     .article-title {
@@ -169,6 +170,35 @@
     .pc-title { font-weight: 800; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
     .pc-list { margin: 0; padding-left: 1.25rem; line-height: 1.5; }
 
+    .brand-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--secondary), var(--primary));
+        color: #fff;
+        font-size: 0.9rem;
+        font-weight: 800;
+        border: 2px solid var(--primary);
+    }
+
+    .rakuten-mark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.18);
+        color: #fff;
+        font-size: 0.78rem;
+        font-weight: 800;
+        margin-right: 0.55rem;
+        flex-shrink: 0;
+    }
+
     @media (max-width: 900px) {
         .ranking-grid { grid-template-columns: 1fr; gap: 1.5rem; }
         .pros-cons { grid-template-columns: 1fr; }
@@ -179,6 +209,13 @@
 
 <article class="article-content">
     <header class="article-header">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="{{ site.base_url }}">トップ</a>
+            <span>/</span>
+            <a href="{{ site.base_url }}{{ category.slug }}/">{{ category.name }}</a>
+            <span>/</span>
+            <span>{{ article.h1 or article.title }}</span>
+        </nav>
         <div class="updated-at">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
@@ -186,15 +223,45 @@
             </svg>
             公開日: {{ article.display_date }} / 最終更新日: {{ today }}
         </div>
-        <h1 class="article-title">{{ article.title }}</h1>
+        <h1 class="article-title">{{ article.h1 or article.title }}</h1>
         <p class="article-intro">{{ article.intro | replace('\n', '<br>') | safe }}</p>
+        <section class="subtle-panel" style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, 420px); gap: 1.5rem; padding: 1.5rem; margin-bottom: 3rem; align-items: center;">
+            <div>
+                <span class="eyebrow">Quick Summary</span>
+                <h2 style="font-size: 1.4rem; margin-bottom: 0.8rem;">{% if is_single_pick %}今見るべき本命モデルだけを、理由付きで絞り込みました。{% else %}比較の軸を先に見れば、選び方で迷いません。{% endif %}</h2>
+                <p style="margin: 0 0 1rem; color: var(--text-muted);">
+                    {% if article.test_criteria %}
+                        {% for criteria in article.test_criteria %}
+                            {% if not loop.first %} / {% endif %}{{ criteria.name }}
+                        {% endfor %}
+                    {% else %}
+                        レビュー評価と価格のバランス
+                    {% endif %}
+                    を基準に、{% if is_single_pick %}いま選ぶ価値がある1台に絞って解説しています。{% else %}買った後の満足度まで踏み込んで比較しています。{% endif %}
+                </p>
+                <div class="chip-row" style="margin-bottom: 1rem;">
+                    {% for criteria in article.test_criteria[:3] %}
+                    <span class="chip">{{ criteria.name }}</span>
+                    {% endfor %}
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                    <a href="#comparison" class="btn btn-primary" style="padding: 0.9rem 1.4rem; font-size: 1rem;">{% if is_single_pick %}選定理由を見る{% else %}比較表を見る{% endif %}</a>
+                    {% if items and items[0].affiliateUrl %}
+                    <a href="{{ items[0].affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" class="btn" style="padding: 0.9rem 1.4rem; font-size: 1rem; background: #fff; color: var(--secondary); border-color: var(--border);">{% if is_single_pick %}このモデルの価格を見る{% else %}1位の価格を見る{% endif %}</a>
+                    {% endif %}
+                </div>
+            </div>
+            <div>
+                <img src="{{ article.resolved_eye_catch or article.eye_catch }}" alt="{{ article.h1 or article.title }}" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-md); border: 1px solid var(--border);">
+            </div>
+        </section>
     </header>
 
     <!-- Trust Badge & Analysis Insight -->
     <section class="trust-badge-container" style="margin-bottom: 3rem; padding: 1.5rem; background: #fff; border-radius: var(--radius-md); border: 1.5px solid var(--secondary); box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px dashed var(--border);">
             <div style="flex-shrink: 0; position: relative;">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=120&q=80" alt="Editor" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary);">
+                <div class="brand-avatar" aria-hidden="true">LTS</div>
             </div>
             <div>
                 <h3 style="margin: 0; font-size: 1.1rem; color: var(--secondary);">LifeTech Select 解析チーム</h3>
@@ -213,13 +280,13 @@
     </section>
 
     <!-- Comparison Table -->
-    <section class="section">
-        <h2 class="section-title">主要モデルの比較</h2>
+    <section id="comparison" class="section">
+        <h2 class="section-title">{% if is_single_pick %}選定モデルの要点{% else %}主要モデルの比較{% endif %}</h2>
         <div class="comparison-wrapper">
             <table class="comparison-table">
                 <thead>
                     <tr>
-                        <th>順位</th>
+                        <th>{% if is_single_pick %}評価{% else %}順位{% endif %}</th>
                         <th>注目モデル</th>
                         <th>価格目安</th>
                         {% if article.test_criteria %}
@@ -245,7 +312,7 @@
                     {% endif %}
                     {% set extra_data = ns.data %}
                     <tr>
-                        <td style="font-weight: 700; font-family: 'Lato';">{{ loop.index }}位</td>
+                        <td style="font-weight: 700; font-family: 'Lato';">{% if is_single_pick %}推奨{% else %}{{ loop.index }}位{% endif %}</td>
                         <td style="font-weight: 500;">{{ item.name[:25] }}...</td>
                         <td style="font-family: 'Lato'; font-weight: 700; color: var(--primary); white-space: nowrap;">{{ "{:,}".format(item.price) }}円〜</td>
                         {% if article.test_criteria %}
@@ -263,7 +330,7 @@
                             <td style="text-align: center;">{{ item.reviewCount }}</td>
                         {% endif %}
                         <td>
-                            <a href="#rank-{{ loop.index }}" style="font-size: 0.75rem; background: var(--secondary); color: #fff; padding: 4px 8px; border-radius: 4px;">解析へ</a>
+                            <a href="#rank-{{ loop.index }}" style="font-size: 0.75rem; background: var(--secondary); color: #fff; padding: 4px 8px; border-radius: 4px;">詳細へ</a>
                         </td>
                     </tr>
                     {% endfor %}
@@ -274,12 +341,12 @@
 
     <!-- Ranking List -->
     <section id="ranking" class="section">
-        <h2 class="section-title">おすすめランキング詳細</h2>
+        <h2 class="section-title">{% if is_single_pick %}選定モデルの詳細{% else %}おすすめランキング詳細{% endif %}</h2>
         
         {% for item in items %}
         <div id="rank-{{ loop.index }}" class="ranking-item">
             <div class="ranking-header">
-                <span class="rank-badge {% if loop.index <= 3 %}top-{{ loop.index }}{% endif %}">{{ loop.index }}</span>
+                <span class="rank-badge {% if is_single_pick or loop.index <= 3 %}top-{{ loop.index if not is_single_pick else 1 }}{% endif %}">{{ "推" if is_single_pick else loop.index }}</span>
                 <h3 class="item-name">{{ item.name }}</h3>
             </div>
 
@@ -363,10 +430,13 @@
                             </div>
                         {% endif %}
                         <div class="buy-buttons" style="margin-top: 1.5rem;">
-                            <a href="{{ item.affiliateUrl }}" target="_blank" rel="noopener sponsored" class="btn btn-primary" style="width: 100%; background: #bf0000; border: none; padding: 1rem; font-size: 1rem;">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Rakuten_Global_Market_logo.svg" alt="Rakuten" style="height: 18px; filter: brightness(0) invert(1); margin-right: 8px;">
+                            <a href="{{ item.affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" class="btn btn-primary" style="width: 100%; background: #bf0000; border: none; padding: 1rem; font-size: 1rem;">
+                                <span class="rakuten-mark" aria-hidden="true">R</span>
                                 楽天市場で詳細を見る
                             </a>
+                            <p style="margin: 0.75rem 0 0; font-size: 0.78rem; color: var(--text-muted);">
+                                価格と在庫は変動するため、購入前に楽天市場の商品ページで最新情報をご確認ください。
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -381,6 +451,37 @@
             <h3 style="margin-top: 0; font-size: 1.1rem; color: var(--secondary);">本記事の評価基準について</h3>
             <p>当サイトでは、楽天市場の売れ筋データと実際のユーザーレビューに基づき、中立的な立場から解析を行っています。アフィリエイト報酬の有無がランキング順位に影響を与えることはありません。</p>
         </div>
+
+        {% if related_articles %}
+        <section style="margin-top: 3rem;">
+            <h2 class="section-title" style="margin-bottom: 2rem;">同じカテゴリの関連記事</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+                {% for rel in related_articles %}
+                <a href="{{ rel.url }}" class="subtle-panel" style="display: block; overflow: hidden; color: inherit; text-decoration: none;">
+                    {% if rel.eye_catch %}
+                    <img src="{{ rel.eye_catch }}" alt="{{ rel.title }}" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block;">
+                    {% endif %}
+                    <div style="padding: 1rem;">
+                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.4rem;">{{ category.name }}</div>
+                        <strong style="display: block; line-height: 1.5; color: var(--secondary);">{{ rel.title }}</strong>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
     </footer>
 </article>
+
+{% if items and items[0].affiliateUrl %}
+<div class="mobile-sticky-cta" style="position: fixed; left: 0; right: 0; bottom: 0; padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom)); background: rgba(247, 249, 252, 0.95); backdrop-filter: blur(10px); border-top: 1px solid var(--border); z-index: 1200; display: none;">
+    <a href="{{ items[0].affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" class="btn btn-primary" style="width: 100%; padding: 0.95rem 1rem; font-size: 0.98rem;">{% if is_single_pick %}このモデルを楽天で確認する{% else %}1位の商品を楽天で確認する{% endif %}</a>
+</div>
+<style>
+    @media (max-width: 768px) {
+        .mobile-sticky-cta { display: block !important; }
+        .article-footer { padding-bottom: 5rem; }
+    }
+</style>
+{% endif %}
 {% endblock %}

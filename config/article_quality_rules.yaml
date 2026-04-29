@@ -1,0 +1,99 @@
+schema_version: 1
+
+hard_rules:
+  article:
+    required_fields:
+      - id
+      - category_id
+      - type
+      - slug
+      - release_date
+      - h1
+      - title
+      - meta_description
+      - qa_config
+      - rakuten_params
+      - test_criteria
+      - products_extra
+    allowed_types:
+      - daily
+      - sns
+    unique_fields:
+      - id
+      - slug
+      - h1
+      - title
+    test_criteria:
+      min_items: 2
+      max_items: 4
+    products_extra:
+      min_items: 1
+      max_items: 5
+      required_fields:
+        - keyword
+        - best_for
+        - scores
+        - analysis_why
+        - pros
+        - critical_cons
+        - maintenance_reality
+        - cost_performance
+      pros_min_items: 2
+      pros_max_items: 5
+    qa_config:
+      required_fields:
+        - min_price
+      min_price_minimum: 1000
+    rakuten_params:
+      required_fields:
+        - keyword
+        - hits
+      hits_minimum: 1
+      hits_maximum: 30
+
+soft_rules:
+  article:
+    recommended_fields:
+      - intro
+      - eye_catch
+      - qa_config.forbidden_words
+    title:
+      min_length: 28
+      max_length: 70
+    meta_description:
+      min_length: 70
+      max_length: 140
+    analysis_insight:
+      min_length: 70
+      max_length: 220
+    intro:
+      min_length: 80
+      max_length: 220
+    eye_catch:
+      discouraged_hosts:
+        - images.unsplash.com
+      preferred_prefixes:
+        - https://yy00si.github.io/rakuten-affiliate-site/images/
+  site_asset_hygiene:
+    discouraged_embed_hosts:
+      - images.unsplash.com
+      - upload.wikimedia.org
+  keyword_hygiene:
+    discouraged_terms:
+      - おすすめ
+      - 人気
+      - ランキング
+      - 最新
+      - セール
+      - 安い
+  forbidden_product_terms:
+    - 中古
+    - 訳あり
+    - ジャンク
+    - ふるさと納税
+    - 返礼品
+    - レンタル
+    - 部品
+    - パーツ
+    - ケース
+    - カバー

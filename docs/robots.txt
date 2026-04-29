@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yy00si.github.io/rakuten-affiliate-site/sitemap.xml

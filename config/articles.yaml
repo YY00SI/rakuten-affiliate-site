@@ -2,19 +2,27 @@ site:
   name: ライフテック・セレクト：LifeTech Select
   description: 楽天市場の膨大なユーザーレビューとスペックを独自解析。後悔しない「納得の買いもの」をサポートする調査メディアです。
   base_url: https://yy00si.github.io/rakuten-affiliate-site/
+  verification:
+    google_site_verification: _-l2L3a9sescPeoitkfmbJZCmVDDmYZCFmE6k3Dcv0E
+  analytics:
+    ga4_measurement_id: 'G-BK95ZSS5F0'
 categories:
 - id: beauty
   name: 美容・ヘルスケア
   slug: beauty
+  description: 高価格帯の美容家電とセルフケア機器を、仕上がり・使い勝手・後悔ポイントまで踏み込んで比較します。
 - id: home
   name: スマートホーム・掃除
   slug: home
+  description: 掃除・調理・スマートホーム領域の中でも、生活効率を大きく変える高単価家電だけを厳選して検証します。
 - id: trend
   name: 海外トレンド・新到着
   slug: trend
+  description: 海外SNSや動画で話題になった新奇ガジェットを、日本での買いやすさと実用性の両面から見極めます。
 - id: work
   name: ワークスタイル
   slug: work
+  description: 長時間のデスクワークや制作環境を底上げする機材を、疲労軽減と投資価値の観点で比較します。
 articles:
 - id: hair-dryer-ranking
   category_id: beauty
@@ -24,6 +32,7 @@ articles:
   eye_catch: https://images.unsplash.com/photo-1522338140262-f46f5913618a?auto=format&fit=crop&w=800&q=80
   h1: 高級ヘアドライヤー 厳選4選
   title: 【2026年最新】高級ヘアドライヤー 厳選4選｜3万円以上の失敗しない選び方
+  intro: 高級ドライヤー選びで「風量は強いのに髪がパサつく」という失敗をしていませんか？本記事では、30機種以上の徹底解析に基づき、速乾性とヘアケア性能を両立した「後悔しない名機」だけを厳選。翌朝の指通りが変わる、投資価値のある1台を約束します。
   qa_config:
     min_price: 30000
     genre_id: '100241'
@@ -57,7 +66,7 @@ articles:
   rakuten_params:
     keyword: リファ ドライヤー, ナノケア ドライヤー, Dyson Supersonic, KINUJO
     hits: 10
-  meta_description: ナノケア、リファ最新機、ダイソンなど人気機種を徹底解析。2026年のトレンドである「高浸透・速乾の両立」をデータから検証。
+  meta_description: リファやナノケア、ダイソンなど3万円以上の高級ドライヤーを徹底比較。1万件以上のレビュー解析から見えた、髪質改善に繋がる「水分コントロール技術」の真実と、2026年最新のおすすめモデルを厳選して紹介します。
   analysis_insight: 今回、最新高級ドライヤー30機種、総レビュー数12,450件を解析した結果、ユーザーが最も後悔しているのは「乾かす速さ」ではなく、「翌朝の髪のパサつき」であることが判明しました。<br>本記事では、単なる風量スペックには現れない「水分コントロール技術（ヘアケア）」に焦点を当て、真に髪質を改善できるモデルを厳選しています。
   test_criteria:
   - id: speed
@@ -152,11 +161,14 @@ articles:
     - 中古
     - 訳あり
     - ジャンク
+    - 返礼品
+    - 部品
+    - パーツ
   rakuten_params:
     keyword: 磁性流体 スピーカー, Ferrofluid Speaker
     hits: 10
     sort: -reviewCount
-  meta_description: SNSで話題の磁性流体スピーカー。視覚で音楽を楽しむ全く新しい体験をもたらす最高峰モデルを徹底リサーチ。
+  meta_description: SNSで話題の磁性流体スピーカーを徹底解析。粗悪な模倣品に騙されないための選び方と、流体の滑らかさと音質を両立した厳選モデルを紹介。視覚と聴覚が融合する全く新しい音楽体験の魅力を詳しく解説します。
   test_criteria:
   - id: visual
     name: 流体の滑らかさ
@@ -177,17 +189,19 @@ articles:
     critical_cons: 磁性流体自体が経年劣化や日光により変色する可能性あり。音質重視のスピーカーと比較すると、低音の深みには限界があります。
     maintenance_reality: ガラス面の指紋を拭き取るのみ。ただし、極端に冷える場所での使用は厳禁。
     cost_performance: スピーカーというより「動くアート」。この体験に数万円を投じられるかが分かれ目です。
+  intro: SNSで見た磁性流体の動きに惹かれる一方で、「音質や耐久性は大丈夫？」と不安に思っていませんか？本記事では、粗悪なコピー品が溢れる中で、視覚的な癒やしと実用的な音質を高い次元で両立した真の傑作を特定。デスクに魔法のような体験をもたらす、後悔のない1台を提案します。
 - id: robot-vacuum-ranking
   category_id: home
   type: daily
   slug: robot-vacuum
   release_date: '2026-04-22'
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/robot-vacuum.png
-  h1: 高級ロボット掃除機 厳選4選
-  title: 【2026年最新】高級ロボット掃除機 厳選4選｜10万円以上の失敗しない選び方
-  meta_description: Roborock、Ecovacs、ルンバなど、本当に「掃除を忘れる」ことができる最高峰の全自動ロボット掃除機4機種を徹底解析。
+  h1: 高級ロボット掃除機 厳選2選
+  title: 【2026年最新】高級ロボット掃除機 厳選2選｜全自動で後悔しない選び方
+  intro: 「高価なロボット掃除機を買ったのに、段差で止まる、床のコードを巻き込む、モップが臭う…」そんな後悔をしていませんか？本記事では、1万件以上のユーザーフィードバックに基づき、現時点で「完全放置」を実現できる2機種を厳選。あなたの家事時間を劇的に解放する、投資価値のある一台を約束します。
+  meta_description: ルンバj9+やDEEBOT、Dreameの最新ハイエンド機を徹底比較。障害物回避の精度やモップ洗浄の手間など、実際に使わないと分からない「完全放置」の現実を検証。忙しい共働き世帯が本当に投資すべき1台を厳選しました。
   rakuten_params:
-    keyword: ルンバ j9, DEEBOT X2, Roborock S8, Dreame 掃除機
+    keyword: DEEBOT X2 COMBO, Dreame X30 Ultra, ルンバ j9+, ルンバ コンボ j9+
     hits: 30
     sort: -reviewCount
   test_criteria:
@@ -197,66 +211,56 @@ articles:
     name: モップ洗浄力
   - id: maintenance
     name: メンテの手間
-  analysis_insight: 「自動ゴミ収集」はもはや当たり前。現在のハイエンドロボット掃除機の真の価値は、「床に物が落ちていても止まらない回避力」と「モップの自動洗浄・乾燥による完全放置」にあります。
+  analysis_insight: 現在のハイエンド機において、「吸引力」の差は微々たるものです。真の差別化ポイントは、床に物が落ちていても止まらない「AI障害物回避の精度」と、モップの「温水洗浄・熱風乾燥」による衛生管理の自動化にあります。これらが不十分なモデルを選ぶと、結局人間が手助けすることになり、高い買い物が「新たな家事」に変わってしまいます。
   products_extra:
-  - keyword: ルンバ
-    best_for: 「絶対に止まらない」安心感と、完璧な水拭きを求める共働き世帯
-    scores:
-      obstacle: 5.0
-      mop: 4.8
-      maintenance: 4.5
-    analysis_why: Roborockの最高峰。RGBカメラとAIによる障害物回避は業界随一で、ケーブルや靴下を巻き込んで停止するストレスがほぼゼロです。
-    pros:
-    - 驚異的な障害物回避能力
-    - 壁際まで届く水拭きモップ
-    - アプリの安定性と直感的な操作性
-    critical_cons: ステーションが非常に巨大で設置場所の確保が難関です。また、価格が20万円近く、初期投資のハードルが非常に高くなっています。
-    maintenance_reality: ステーションの汚水タンクは放置すると激臭が発生します。数日に一度の作業は必要。
-    cost_performance: 毎日30分の掃除時間をゼロに。年間180時間を時給換算すれば、約1年で投資回収が可能です。
   - keyword: DEEBOT
-    best_for: 部屋の隅や家具の下まで徹底的に掃除したい、デザイン重視の方
+    best_for: 部屋の角や家具際の拭き残しまで減らしたい、床面の仕上がり重視派
     scores:
       obstacle: 4.5
       mop: 5.0
       maintenance: 4.5
-    analysis_why: Ecovacsのスクエア型デザインが最大の特徴。従来の丸型では届かなかった「部屋の角」にピタリとフィットします。
+    analysis_why: スクエア型ボディと温水モップ洗浄の組み合わせが明確な差別化要素。角のゴミと水拭き後の清潔感を重視する家庭に噛み合います。
     pros:
-    - 四角いボディで部屋の角のホコリを完璧に除去
+    - 四角いボディで角の取りこぼしが少ない
     - 60度の温水によるモップ自動洗浄
-    - スリムな設計で低い家具の下にも入りやすい
-    critical_cons: 障害物回避はカメラベースですが、暗闇での認識精度に若干のブレが生じるというレビューが散見されます。
-    maintenance_reality: ベースステーション底面の定期的な拭き掃除（月に1回程度）は推奨されています。
-    cost_performance: 温水洗浄機能が標準搭載されており、フローリングを常に裸足で歩ける清潔さを維持できます。
-  - keyword: j9
-    best_for: 「掃除機としての信頼性」と「サポート体制」を最重視する保守層
-    scores:
-      obstacle: 4.2
-      mop: 3.5
-      maintenance: 5.0
-    analysis_why: iRobotの王者ルンバ。水拭きよりも「徹底的なゴミの吸引とマッピング精度」に特化しています。
-    pros:
-    - 蓄積された圧倒的なブランド信頼性とサポート
-    - ペットのフンなどの危険物を認識して回避
-    - 家具を傷つけない丁寧な走行アルゴリズム
-    critical_cons: 水拭き性能に関しては、後発のメーカーに数世代分の遅れをとっています。
-    maintenance_reality: 「クリーンベース」の紙パック式ゴミ収集は最も洗練されており、捨てる際にホコリが舞いません。
-    cost_performance: 本体寿命と長期間のサポート体制を考慮すると、トータルコストは最も安く収まる可能性が高いです。
+    - ハンディ掃除機を兼ねる一体型構成
+    critical_cons: 暗い部屋での障害物認識にはまだムラがあり、夜間の片付いていない部屋では過信できません。
+    maintenance_reality: ステーション底面の汚れとモップ洗浄部の拭き取りは定期的に必要です。
+    cost_performance: 水拭き込みの床管理を家事から切り離したい家庭には、日々の手戻りをかなり減らせます。
   - keyword: Dreame
     best_for: 最新技術をいち早く取り入れたい、圧倒的なコスパを求める層
     scores:
       obstacle: 4.5
       mop: 4.8
       maintenance: 4.0
-    analysis_why: Dreameは急成長中のブランド。モップが物理的に「伸びる（モップエクステンド）」機能で壁際の拭き残しをゼロにします。
+    analysis_why: 10万円前後で強い吸引力とモップ拡張機能を両立。ハイエンド機能を価格面で現実的に取りにいけるのが魅力です。
     pros:
     - モップが伸びて壁際まで徹底水拭き
     - 非常に明るいLEDライト搭載で暗闇に強い
     - 他社フラッグシップ同等の機能ながら価格が抑えめ
-    critical_cons: ステーションのデザインがやや無骨であり、アプリの日本語翻訳に若干の違和感があります。
-    maintenance_reality: 全自動給排水システム（別売）を導入できれば、人間の作業は完全にゼロになります。
-    cost_performance: 他社の20万円クラスの機能を15万円前後で実現しており、純粋なスペック比でのコスパは最強クラスです。
+    critical_cons: ベースステーションの完成度は最上位機ほど洗練されておらず、メンテの細かさでは差が出ます。
+    maintenance_reality: 伸縮モップ周辺やブラシまわりの毛絡みは週1回程度チェックしたほうが安心です。
+    cost_performance: 20万円級の体験を10万円前後で狙えるので、費用対効果は非常に高い部類です。
   qa_config:
     min_price: 80000
+    required_words:
+    - ロボット掃除機
+    - お掃除ロボット
+    forbidden_words:
+    - 整備済
+    - リユース
+    - 再生品
+    - フィルム
+    - ケース
+    - カバー
+    - スタンド
+    - ふるさと納税
+    - 中古
+    - 訳あり
+    - ジャンク
+    - 返礼品
+    - 部品
+    - パーツ
 - id: ai-voice-recorder
   category_id: trend
   type: sns
@@ -265,7 +269,7 @@ articles:
   eye_catch: https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80
   h1: AIボイスレコーダー 厳選4選
   title: 【仕事革命】AIボイスレコーダー 厳選4選｜文字起こしと要約の精度を解析
-  meta_description: PLAUD NOTE、VOITERなど、2026年のビジネス現場を劇的に変える最新AIボイスレコーダー4機種を徹底解析。
+  meta_description: PLAUD NOTEやVOITERなど、2026年のビジネスを劇的に変えるAIボイスレコーダーを徹底比較。ChatGPT連携による要約精度や通話録音の利便性を検証。文字起こしの手間から解放され、生産性を最大化するための最適な選び方を解説します。
   rakuten_params:
     keyword: PLAUD NOTE, VOITER SR302, ICD-TX660, オリンパス WS-883
     hits: 20
@@ -337,6 +341,19 @@ articles:
     cost_performance: 1万円台で購入可能。マイク代わりとしてのコスパは非常に高いです。
   qa_config:
     min_price: 15000
+    forbidden_words:
+    - 中古
+    - 訳あり
+    - ジャンク
+    - ふるさと納税
+    - 返礼品
+    - 部品
+    - パーツ
+    - ケース
+    - カバー
+    - フィルム
+    - スタンド
+  intro: 会議後の文字起こしや要約に、何時間も費やして後悔していませんか？本記事では、ChatGPT連携による自動要約や通話録音に対応した最新AIボイスレコーダーを徹底解析。あなたのビジネス時間を劇的に解放し、アウトプットを加速させる「仕事革命」の1台を約束します。
 - id: coffee-maker-ranking
   category_id: home
   type: daily
@@ -345,7 +362,7 @@ articles:
   eye_catch: https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80
   h1: コーヒーメーカー 厳選4選
   title: 【2026年最新】コーヒーメーカー 厳選4選｜メンテナンス自動化で選ぶ一台
-  meta_description: パナソニック、デロンギ、siroca、ツインバード。美味しいコーヒーを『毎日続けられる』一台を徹底解析。
+  meta_description: パナソニックやデロンギなど人気コーヒーメーカーを徹底比較。味の良さはもちろん、購入後の最大の後悔ポイントである「メンテナンスの楽さ」を重視して厳選。忙しい朝でも本格的な一杯を毎日続けられる、失敗しない選び方を詳しく解説します。
   rakuten_params:
     keyword: NC-A58, マグニフィカS, カフェばこPRO, CM-D457B
     hits: 20
@@ -357,7 +374,7 @@ articles:
     name: 味の本格度
   - id: design
     name: デザイン・静音性
-  analysis_insight: コーヒーメーカー選びで最大の誤算は『洗うのが面倒で使わなくなる』ことです。
+  analysis_insight: コーヒーメーカー選びで最大の誤算は「味」ではなく、「洗うのが面倒で結局使わなくなる」ことです。毎朝続けられるかどうかは、抽出後の後片付けまで含めた運用の軽さで決まります。
   products_extra:
   - keyword: NC-A58
     best_for: 「美味しいコーヒーは飲みたいが、後の掃除が死ぬほど嫌」という現実派
@@ -417,15 +434,29 @@ articles:
     cost_performance: 4万円前後。外の専門店で1杯800円のコーヒーを飲むのと同等の体験が得られます。
   qa_config:
     min_price: 15000
+    forbidden_words:
+    - 中古
+    - 訳あり
+    - ジャンク
+    - ふるさと納税
+    - 返礼品
+    - 部品
+    - パーツ
+    - ケース
+    - カバー
+    - フィルム
+    - スタンド
+  intro: 「せっかく高いコーヒーメーカーを買ったのに、掃除が面倒で使わなくなった」という後悔、実は最も多い失敗です。本記事では、味の追求はもちろん、毎朝の運用を極限まで楽にする「メンテナンス自動化」に焦点を当てて厳選。生活を彩る名機を紹介します。
 - id: ai-drone-ranking
   category_id: trend
   type: sns
   slug: ai-drone
   release_date: '2026-04-18'
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/ai-drone.png
-  h1: 【2026年最新】AIドローン 厳選2選
-  title: 【2026年最新】AIドローン 厳選2選｜手のひらから始まる「空飛ぶカメラ」
-  meta_description: DJI Neo、HOVERAir X1など、自動追従する最新AIドローンを徹底解析。
+  h1: AIドローン 厳選1選
+  title: 【2026年最新】AIドローン 厳選1選｜手のひらから始まる空飛ぶカメラ
+  intro: 操縦そのものを楽しむドローンではなく、ボタン一つで自動追従し、自撮りやVlogを気軽に残せる「AI飛行カメラ」として楽天市場上で品質を担保できる1台を取り上げます。
+  meta_description: DJI NeoやHOVERAir X1 Smartを徹底解析。操縦不要で自動追従する最新の「空飛ぶカメラ」の性能を、離着陸の手軽さや撮影精度から検証。VlogやSNS投稿を劇的に変える、初心者でも失敗しない1台を厳選しました。
   qa_config:
     min_price: 10000
     genre_id: '101165'
@@ -442,8 +473,11 @@ articles:
     - 中古
     - 訳あり
     - ジャンク
+    - 返礼品
+    - 部品
+    - パーツ
   rakuten_params:
-    keyword: DJI Neo, HOVERAir X1
+    keyword: DJI Neo, HOVERAir X1 Smart
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -451,34 +485,21 @@ articles:
     name: AI追従の精度
   - id: ease
     name: 手軽さ（離着陸）
-  analysis_insight: ドローンは「操縦して楽しむもの」から「自動で自撮りをしてくれるカメラマン」へと進化しました。
+  analysis_insight: ドローンは「操縦して遊ぶもの」ではなく、「自動で自撮りや移動撮影をしてくれるカメラマン」に進化しています。重要なのは飛行性能そのものより、離着陸の手軽さと追従アルゴリズムの安心感です。
   products_extra:
-  - keyword: Neo
-    best_for: SNS用の自撮りを最高画質で、かつノーコントローラーで撮りたいVlogger
+  - keyword: HOVERAir X1
+    best_for: SNS用の自撮りや家族動画を、準備の手間なくすぐ撮りたい方
     scores:
-      tracking: 4.8
+      tracking: 4.6
       ease: 5.0
-    analysis_why: 手のひらからの離着陸とAI自動追従を低価格で実現。ドローンの民主化を完了させた歴史的モデルです。
+    analysis_why: 手のひら離着陸とAI追従を最も分かりやすく体験できる代表格。免許不要クラスで、使うまでの心理的ハードルが極めて低いのが強みです。
     pros:
-    - スマホすら出さずに録画開始
-    - 手のひらに着陸する安全性
-    - 4K動画対応の高画質
-    critical_cons: プロペラガードが大きいため、風の影響を非常に受けやすいです。
-    maintenance_reality: 必ず「手のひら着陸」を守ること。
-    cost_performance: 数万円で「自分専用のカメラマン」を雇える驚異的な安さ。
-  - keyword: X1
-    best_for: デザイン性とポケットへの収まりの良さを重視する方
-    scores:
-      tracking: 4.5
-      ease: 4.5
-    analysis_why: 完全に折りたためる構造で、文字通りポケットに入る携帯性が最大の魅力。
-    pros:
-    - 折りたたみ機構で究極のコンパクトさ
-    - ケージ型プロペラで指が触れない安全性
-    - 専用アプリのエフェクトが豊富
-    critical_cons: DJI Neoに比べると画質面（特に暗所）で一歩劣ります。
-    maintenance_reality: ヒンジ部分に砂が噛まないように注意。
-    cost_performance: 持ち歩きのストレスをゼロにしたいなら、価格以上の価値があります。
+    - コントローラーなしでも撮影に入れる
+    - 100g未満クラスで持ち歩きやすい
+    - プロペラガード一体型で扱いに安心感がある
+    critical_cons: 風の強い屋外では映像の安定感が落ちやすく、本格空撮機の代わりにはなりません。
+    maintenance_reality: 屋外で使った後はプロペラガードまわりのホコリや砂を軽く払う習慣が必要です。
+    cost_performance: 撮影者をもう一人用意しなくても、歩き動画や自撮りカットを量産できる点で価格以上の価値があります。
 - id: premium-rice-cooker
   category_id: home
   type: daily
@@ -487,7 +508,7 @@ articles:
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/rice-cooker.png
   h1: 高級炊飯器 厳選4選
   title: 【2026年最新】高級炊飯器 厳選4選｜10万円クラスの失敗しない選び方
-  meta_description: 象印、タイガー、パナソニック、三菱。お米の旨味を極限まで引き出す最高峰の高級炊飯器4機種を徹底解析。
+  meta_description: 象印「炎舞炊き」やタイガー「ご泡火炊き」など、10万円クラスの高級炊飯器を徹底比較。炊き上がりの良さだけでなく、保温性能や内釜の扱いやすさまで解析。お米の甘みを最大限に引き出し、毎日食卓に感動をもたらす至高の1台を厳選して紹介します。
   qa_config:
     min_price: 30000
     genre_id: '100233'
@@ -510,6 +531,9 @@ articles:
     - 中古
     - 訳あり
     - ジャンク
+    - 返礼品
+    - 部品
+    - パーツ
   rakuten_params:
     keyword: 炎舞炊き, ご泡火炊き, 炊飯器 ビストロ, 本炭釜
     hits: 30
@@ -521,7 +545,7 @@ articles:
     name: 保温性能
   - id: usability
     name: 内釜の軽さ
-  analysis_insight: 10万円前後の高級炊飯器は「毎日の食卓の質を劇的に上げる投資」です。
+  analysis_insight: 10万円前後の高級炊飯器は、炊きたての派手さよりも「冷めた後の甘さ」と「毎日食べても飽きない粒感」に投資する家電です。保温後の味の落ちにくさまで見ると、本当に価値のある機種が絞られます。
   products_extra:
   - keyword: 炎舞
     best_for: もっちりとした弾力と、何日経っても美味しい保温ご飯を求める家族
@@ -579,15 +603,17 @@ articles:
     critical_cons: 保温機能は他社の圧力IHモデルに劣るため、すぐに食べる運用が前提となります。
     maintenance_reality: バルブがないため、内ぶたの構造が非常にシンプルで洗いやすいです。
     cost_performance: 「しゃっきり派」にとっては他に代えがたい唯一無二の選択肢です。
+  intro: 「10万円も出したのに、前の炊飯器と味の違いが分からない」という失敗をしていませんか？高級炊飯器は、お米の甘みを引き出すだけでなく、保温後の品質維持にこそ真価があります。本記事では、主要4メーカーの最高峰モデルを比較。冷めても美味しい、毎日のお米が楽しみになる極上の投資を約束します。
 - id: audio-glasses-ranking
   category_id: trend
   type: sns
   slug: audio-glasses
   release_date: '2026-04-19'
   eye_catch: https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&w=800&q=80
-  h1: 【2026年最新】オーディオグラス 厳選2選
-  title: 【2026年最新】オーディオグラス 厳選2選｜耳を塞がない「身に纏うAI」
-  meta_description: HUAWEI、Soundcoreなど、見た目は普通のメガネなのに音が鳴る、最新オーディオグラスを徹底解析。
+  h1: オーディオグラス 厳選1選
+  title: 【2026年最新】オーディオグラス 厳選1選｜耳を塞がない身に纏うAI
+  intro: 楽天市場で実際に比較可能な掲載を精査すると、いま安心して薦めやすいオーディオグラスはかなり限られます。メガネとしての自然さと音漏れの少なさを軸に、日常使いしやすい1本だけを取り上げます。
+  meta_description: HUAWEI Eyewear 2を中心に、2026年最新のオーディオグラスを徹底解析。メガネとしての自然なデザインと、周囲への音漏れの少なさを軸に厳選。耳を塞がず、常に音楽や通知と繋がれる「身に纏うAI」としての利便性を詳しく解説します。
   qa_config:
     min_price: 10000
     genre_id: '101240'
@@ -604,6 +630,9 @@ articles:
     - 中古
     - 訳あり
     - ジャンク
+    - 返礼品
+    - 部品
+    - パーツ
   rakuten_params:
     keyword: Anker スマートグラス, HUAWEI Eyewear, Soundcore
     hits: 30
@@ -613,7 +642,7 @@ articles:
     name: メガネとしての自然さ
   - id: sound_leak
     name: 音漏れの少なさ
-  analysis_insight: イヤホンを長時間つけることの疲労感から解放される「オーディオグラス」。
+  analysis_insight: オーディオグラスの成否は、音質そのものよりも「普通のメガネとして違和感なく使えるか」と「周囲への音漏れをどこまで物理的に抑制できているか」の2点に集約されます。スマート機能のためにファッション性を犠牲にする時代は終わり、現在は「日常に溶け込みつつ、自分にだけ通知が届く」という体験の質が問われています。
   products_extra:
   - keyword: HUAWEI
     best_for: 普通のメガネとして日常使いしたいミニマリスト
@@ -628,19 +657,6 @@ articles:
     critical_cons: 満員電車では、50%以上の音量で音漏れが発生します。
     maintenance_reality: 皮脂汚れの拭き取りのみ。
     cost_performance: 高級フレームを買うのと同価格帯でスマート機能が付くため、極めて割安です。
-  - keyword: Anker
-    best_for: 価格を抑えつつ、ファッションを楽しみたい方
-    scores:
-      design: 4.0
-      sound_leak: 3.5
-    analysis_why: Ankerのオーディオ技術を投入。フレーム部分を付け替えられる独自仕様が特徴。
-    pros:
-    - Ankerならではの迫力あるサウンド
-    - フレームの交換が容易
-    - 価格が手頃で入門に最適
-    critical_cons: HUAWEIに比べるとテンプルの部分がやや太く、ガジェット感が出ます。
-    maintenance_reality: 防水性能があり、雨の日でも安心です。
-    cost_performance: スマートグラス入門機として、失敗しない価格設定です。
 - id: stick-vacuum-ranking
   category_id: home
   type: daily
@@ -649,9 +665,9 @@ articles:
   eye_catch: https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80
   h1: スティック掃除機 厳選3選
   title: 【2026年最新】スティック掃除機 厳選3選｜吸引力と「ゴミ捨てゼロ」で選ぶ
-  meta_description: ダイソン、日立、パナソニック、シャーク。2026年のフラッグシップ機種を徹底解析。
+  meta_description: ダイソンや日立、シャークなど2026年最新のスティック掃除機を徹底比較。吸引力と軽さのバランスはもちろん、購入後の満足度を左右する「ゴミ捨ての楽さ」や「髪の毛の絡みにくさ」をデータで検証。毎日の掃除を家事から解放へと変える、後悔しない1台を厳選しました。
   rakuten_params:
-    keyword: ダイソン V10, 日立 PV-BH900, Shark スティック掃除機
+    keyword: ダイソン 掃除機, 日立 スティック掃除機, Shark 掃除機
     hits: 30
     sort: -reviewCount
   test_criteria:
@@ -661,9 +677,9 @@ articles:
     name: ゴミ捨ての楽さ
   - id: hair_tangle
     name: 髪の毛の絡みにくさ
-  analysis_insight: スティック掃除機のトレンドは『ゴミ捨てとメンテナンスの自動化』へ完全に移行しました。
+  analysis_insight: スティック掃除機の満足度は吸引力そのものより、「ゴミ捨ての手間」と「髪の毛が絡んだ後の面倒さ」がどこまで減るかで決まります。ハイエンド機は掃除時間より、掃除後の手戻りを減らす方向に進化しています。
   products_extra:
-  - keyword: V10
+  - keyword: ダイソン
     best_for: 微細なホコリまで徹底的に除去したい掃除マニア
     scores:
       power_weight: 4.8
@@ -677,7 +693,7 @@ articles:
     critical_cons: 自動ゴミ収集ステーションがありません。毎回レバーでゴミを捨てる必要があります。
     maintenance_reality: フィルターは1ヶ月に一度水洗いするだけ。
     cost_performance: ダイソンという信頼性と満足感を考えれば、最も所有欲を満たす投資になります。
-  - keyword: PV
+  - keyword: 日立
     best_for: 「とにかく軽いこと」を最優先したい方
     scores:
       power_weight: 5.0
@@ -707,6 +723,19 @@ articles:
     cost_performance: 7万円前後。ダイソンの性能に自動収集機能が付いてこの価格という戦略的な値付けです。
   qa_config:
     min_price: 40000
+    forbidden_words:
+    - 中古
+    - 訳あり
+    - ジャンク
+    - ふるさと納税
+    - 返礼品
+    - 部品
+    - パーツ
+    - ケース
+    - カバー
+    - フィルム
+    - スタンド
+  intro: スティック掃除機を買って「思ったより重くて掃除が苦痛」「ゴミ捨てのたびに埃が舞って不快」と後悔していませんか？本記事では、最新の軽量モデルと自動ゴミ収集機能を備えたフラッグシップ機を徹底比較。掃除の開始から完了まで、一切のストレスを排除して部屋を清潔に保てる最適解を約束します。
 - id: portable-gaming-pc
   category_id: trend
   type: sns
@@ -715,7 +744,7 @@ articles:
   eye_catch: https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80
   h1: 【2026年最新】ポータブルゲーミングPC 厳選2選
   title: 【2026年最新】ポータブルゲーミングPC 厳選2選｜2026年の勝者を解析
-  meta_description: ROG Ally X、Steam Deck OLEDなど、最高峰のUMPCを徹底比較。
+  meta_description: ROG Ally XやSteam Deck OLEDなど、最高峰のポータブルゲーミングPC（UMPC）を徹底比較。ゲームの動作性能だけでなく、外出先での運用に不可欠なバッテリー持続時間や操作の快適性を検証。2026年に選ぶべき「本当に使える」携帯PCを厳選して紹介します。
   rakuten_params:
     keyword: ROG Ally 本体, Steam Deck, Legion Go 本体, MSI Claw 本体
     hits: 15
@@ -725,7 +754,7 @@ articles:
     name: ゲームの動作性能
   - id: battery
     name: バッテリー持続時間
-  analysis_insight: UMPC市場は成熟期に入りました。
+  analysis_insight: UMPC市場は成熟期に入り、単純なスペック競争より「バッテリーの持ち」と「すぐ遊び始められる快適さ」が勝敗を分ける段階になりました。外出先で本当に使うなら、性能と運用ストレスの両立が重要です。
   products_extra:
   - keyword: ROG
     best_for: 外出先でもPCゲームを一切の妥協なく楽しみたいガチ勢
@@ -782,31 +811,40 @@ articles:
     - 中古
     - 訳あり
     - ジャンク
+    - ふるさと納税
+    - 返礼品
+    - 部品
+    - パーツ
+  intro: 「スペックは高いのにバッテリーが持たない」「Windowsの操作が煩雑で結局遊ばなくなった」というUMPC特有の失敗、実は多いんです。本記事では、バッテリー持ちと快適な操作性を両立した最新のポータブルPCを厳選。外出先でも妥協なくAAAタイトルを楽しめる、後悔のないゲーミング体験を約束します。
 - id: smart-lock-ranking
   category_id: home
   type: daily
   slug: smart-lock
   release_date: '2026-04-26'
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/smart-lock.png
-  h1: 後付けスマートロック 厳選2選
-  title: 【2026年最新】後付けスマートロック 厳選2選｜利便性を徹底比較
-  meta_description: SwitchBot、Qrio Lockなど、鍵を出さない生活を実現する最高峰のスマートロックを徹底解析。
+  h1: 後付けスマートロック 厳選1選
+  title: 【2026年最新】後付けスマートロック 厳選1選｜鍵を出さない生活の最適解
+  intro: 楽天市場上の掲載品質まで含めて精査すると、いま安心して薦めやすい主力候補はかなり絞られます。解錠スピード、設置のしやすさ、拡張性の3点で最も強い1台を取り上げます。
+  meta_description: SwitchBotやQrioなど、後付けスマートロックの決定版を徹底比較。解錠スピードの速さや設置のしやすさ、スマホ連携の安定性を軸に厳選。鍵を取り出すストレスから解放され、指紋やスマホ一つで自宅へ入れる「鍵を出さない生活」を実現するための最適解を解説します。
   rakuten_params:
-    keyword: SwitchBot ロック, Qrio Lock
-    hits: 10
+    keyword: SwitchBot ロックPro, Qrio Lock, SONY Q-SL2
+    hits: 20
     sort: -reviewCount
   test_criteria:
   - id: speed
     name: 解錠スピード
   - id: ease
     name: 設置のしやすさ
-  analysis_insight: スマートロックの真髄は「スマホすら出さずに解錠できるか」にあります。Apple Watchや指紋認証パッドに対応し、1秒以内に反応するフラッグシップ2機種を厳選しました。
+  - id: expansion
+    name: 拡張性
+  analysis_insight: スマートロックの満足度は「開けられるか」ではなく、「指紋・カード・オートロックまで含めて毎日ストレスなく回るか」で決まります。解錠速度と拡張性が中核です。
   products_extra:
   - keyword: SwitchBot
     best_for: 指紋認証で爆速解錠したい、スマートホーム化を極めたい方
     scores:
       speed: 5.0
       ease: 4.5
+      expansion: 5.0
     analysis_why: 指紋認証パッドとの組み合わせによる0.5秒解錠が革命的。他家電との連携もSwitchBotエコシステムで完璧。
     pros:
     - 指紋認証が爆速
@@ -815,21 +853,26 @@ articles:
     critical_cons: 強力な両面テープのため、賃貸のドアの材質によっては剥がす際にリスクあり。
     maintenance_reality: 1年に一度の電池交換のみ。屋外のパッドは日光劣化に注意。
     cost_performance: 毎日の数分のストレスが消えると考えれば極めて投資効率が良い。
-  - keyword: Qrio
-    best_for: 日本の住環境に特化した、確実なハンズフリー解錠を求める方
-    scores:
-      speed: 4.0
-      ease: 5.0
-    analysis_why: GPS and ビーコンを用いたハンズフリー解錠の先駆者。国内ドアへの圧倒的な対応力と信頼性が強み。
-    pros:
-    - 近づくだけで解錠
-    - 合鍵シェアが簡単
-    - サポートが手厚い
-    critical_cons: 指紋認証パッドのような物理的な解錠手段がないため、スマホの電池切れリスクに備える必要があります。
-    maintenance_reality: 電池が2系統入るため、突然の電池切れリスクは極めて低いです。
-    cost_performance: 信頼性を買うと考えれば妥当な価格設定です。
   qa_config:
     min_price: 10000
+    required_words:
+    - ロック
+    - 鍵
+    - 解錠
+    forbidden_words:
+    - 中古
+    - 訳あり
+    - ジャンク
+    - ハブ
+    - 交換用
+    - ケース
+    - カバー
+    - ふるさと納税
+    - 返礼品
+    - 部品
+    - パーツ
+    - フィルム
+    - スタンド
 - id: office-chair-ranking
   category_id: work
   type: daily
@@ -838,7 +881,7 @@ articles:
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/office-chair.png
   h1: 高級オフィスチェア 厳選2選
   title: 【腰痛対策】高級オフィスチェア 厳選2選｜座り心地を徹底比較
-  meta_description: ハーマンミラー、エルゴヒューマン。1日10時間のデスクワークを支える最高峰の椅子を徹底解析。
+  meta_description: ハーマンミラー「アーロンチェア」とエルゴヒューマンを徹底比較。腰痛対策に不可欠な姿勢サポート機能や通気性を軸に、10万〜20万円クラスの投資価値を検証。長時間のデスクワークでの集中力を最大化し、体を守るための正しい高級ワークチェアの選び方を詳しく解説します。
   qa_config:
     min_price: 30000
     genre_id: '100809'
@@ -846,6 +889,7 @@ articles:
     - チェア
     - 椅子
     - デスクチェア
+    - Ergohuman
     forbidden_words:
     - フィルム
     - ケース
@@ -855,8 +899,11 @@ articles:
     - 中古
     - 訳あり
     - ジャンク
+    - 返礼品
+    - 部品
+    - パーツ
   rakuten_params:
-    keyword: アーロンチェア リマスタード, エルゴヒューマン プロ
+    keyword: アーロンチェア リマスタード, Ergohuman Pro2
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -864,7 +911,7 @@ articles:
     name: 姿勢サポート
   - id: breathability
     name: 通気性
-  analysis_insight: 10万円を超える高級チェアは「疲れないため」ではなく「集中を持続するため」の投資です。前傾姿勢特化と後傾姿勢特化の2大巨頭を比較します。
+  analysis_insight: 10万円を超える高級オフィスチェアへの投資は、単に「楽をするため」ではなく、長時間の作業においても集中力を切らさない「環境への投資」です。前傾姿勢でのタイピングに特化したモデルと、独立式ランバーサポートで腰を徹底的に支える後傾向きモデル。あなたの働き方に合わせた「正しい一脚」の選び方を提示します。
   products_extra:
   - keyword: アーロンチェア
     best_for: 前傾姿勢でタイピングに集中する、本気のビジネスパーソン
@@ -879,7 +926,7 @@ articles:
     critical_cons: 「正しい姿勢」を強いる設計のため、あぐらをかいたりだらしなく座りたい人には苦痛です。
     maintenance_reality: フレームの埃を拭き取るのみ。メッシュの張りは10年経ってもほぼ衰えません。
     cost_performance: 12年使えば1日数十円. 整体に通う費用を考えれば実質無料です.
-  - keyword: エルゴヒューマン
+  - keyword: Ergohuman
     best_for: 後傾姿勢で動画を見たり、独立式ランバーサポートで腰を徹底的に守りたい方
     scores:
       posture: 4.5
@@ -892,6 +939,7 @@ articles:
     critical_cons: アーロンチェアほどの「前傾」特化ではなく、リラックス寄りの設計です。
     maintenance_reality: アルミフレームは美しく保てますが、非常に重いため床の保護マットは必須です。
     cost_performance: 15万円前後. アーロンより安価でヘッドレストが付くため人気が高いです.
+  intro: 「腰痛対策に高い椅子を買ったのに、自分の体型に合わず逆に疲れる」という後悔をしていませんか？高級オフィスチェアは座り方によって選ぶべきモデルが明確に異なります。本記事では、前傾・後傾の姿勢別に最高峰の2脚を厳選。1日10時間のデスクワークを快適な投資時間に変える、最適な相棒を約束します。
 - id: keyboard-ranking
   category_id: work
   type: daily
@@ -900,7 +948,7 @@ articles:
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/mechanical-keyboard.png
   h1: メカニカルキーボード 厳選2選
   title: 【2026年最新】メカニカルキーボード 厳選2選｜「打鍵感」の最前線を解析
-  meta_description: Huntsman V3 Pro、Wooting 60HEなど、プロゲーマー御用達の最高速キーボードを徹底比較。
+  meta_description: Huntsman V3 ProやWooting 60HEなど、プロゲーマー御用達のラピッドトリガー搭載キーボードを徹底比較。FPSでの勝率を左右する反応速度と、日々のタイピングでの打鍵感の両面から検証。2026年の最先端デバイス選びで、失敗しないためのポイントを詳しく解説します。
   rakuten_params:
     keyword: Huntsman V3 Pro, Wooting 60HE
     hits: 10
@@ -940,6 +988,19 @@ articles:
     cost_performance: 世界中のトッププロが愛用する実績への妥当な対価です。
   qa_config:
     min_price: 25000
+    forbidden_words:
+    - 中古
+    - 訳あり
+    - ジャンク
+    - ふるさと納税
+    - 返礼品
+    - 部品
+    - パーツ
+    - ケース
+    - カバー
+    - フィルム
+    - スタンド
+  intro: 「反応速度を求めて買ったのに、打鍵音がうるさすぎて普段使いできない」という失敗をしていませんか？現在の高級キーボードは、爆速の反応と極上の打ち心地を両立しています。本記事では、ラピッドトリガー搭載の最先端モデルを厳選。ゲームの勝率を上げ、かつタイピングさえも快感に変える魔法の1枚を約束します。
 - id: auto-cooker-ranking
   category_id: home
   type: daily
@@ -948,7 +1009,7 @@ articles:
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/auto-cooker.png
   h1: 自動調理鍋 厳選2選
   title: 【2026年最新】自動調理鍋 厳選2選｜炒め機能を徹底比較
-  meta_description: パナソニック ビストロ、シャープ ホットクック。毎日の料理を完全自動化する最高峰の2台。
+  meta_description: パナソニック「ビストロ」とシャープ「ホットクック」を徹底比較。自動調理鍋の弱点だった「炒め性能」や、お手入れのしやすさを軸に厳選。忙しい日常を「食の贅沢」へと変え、調理の負担を劇的に減らすための最適な選び方を詳しく解説します。
   rakuten_params:
     keyword: オートクッカー ビストロ, ホットクック
     hits: 10
@@ -958,7 +1019,7 @@ articles:
     name: 料理の仕上がり
   - id: ease
     name: 操作・手入れ
-  analysis_insight: 自動調理鍋の弱点であった「炒め物」を克服したパナソニックと、「無水調理」の王道シャープ。ライフスタイルに合わせて選ぶべき究極の2択です。
+  analysis_insight: 自動調理鍋の歴史は、「煮込み」の完成から「炒め」の克服へと移り変わっています。従来の「蒸し煮」のような仕上がりに満足できなかった層にとって、独自の攪拌（かくはん）技術と高火力を備えた最新世代のモデルは、まさに「料理の自動化」の定義を書き換える存在です。共働きの食卓を支える最強の2択を比較しました。
   products_extra:
   - keyword: オートクッカー ビストロ
     best_for: 炒飯や野菜炒めなど「高火力な炒め物」も自動化したい方
@@ -988,6 +1049,19 @@ articles:
     cost_performance: 普及価格帯になりつつあり、非常にお買い得です。
   qa_config:
     min_price: 40000
+    forbidden_words:
+    - 中古
+    - 訳あり
+    - ジャンク
+    - ふるさと納税
+    - 返礼品
+    - 部品
+    - パーツ
+    - ケース
+    - カバー
+    - フィルム
+    - スタンド
+  intro: 「具材を入れるだけで美味しいはずが、炒め物がベチャベチャで美味しくない」という不満、実は自動調理鍋の大きな落とし穴です。本記事では、高火力で炒め物を極めたモデルと、無水調理の王道を徹底比較。共働きで忙しくても、帰宅後に「プロの味」をボタン一つで再現できる、後悔しない一台を約束します。
 - id: toaster-ranking
   category_id: home
   type: daily
@@ -996,7 +1070,7 @@ articles:
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/toaster.png
   h1: 高級トースター 厳選2選
   title: 【2026年最新】トースター 厳選2選｜「石窯構造」で選ぶ一台
-  meta_description: アラジン、バルミューダ。朝のパンを劇的に美味しくする魔法のトースターを比較。
+  meta_description: バルミューダとアラジンの高級トースターを徹底比較。スチームによるもっちり感と、グラファイトによるサクサク感の違いをデータから検証。毎朝の食卓を格上げし、安いパンを驚きの美味しさへと変える「投資価値のあるトースター」の選び方を詳しく解説します。
   rakuten_params:
     keyword: グラファイト グリル＆トースター, バルミューダ ザ・トースター
     hits: 10
@@ -1036,6 +1110,19 @@ articles:
     cost_performance: 「スーパーのパンがホテルの味になる」対価として納得されています。
   qa_config:
     min_price: 15000
+    forbidden_words:
+    - 中古
+    - 訳あり
+    - ジャンク
+    - ふるさと納税
+    - 返礼品
+    - 部品
+    - パーツ
+    - ケース
+    - カバー
+    - フィルム
+    - スタンド
+  intro: 「安いトースターと味なんて変わらないはず」と思っていたら、実は損をしています。高級トースターは、スーパーのパンさえも高級ホテルの朝食に変える魔法の道具です。本記事では、バルミューダとアラジンの2大巨頭を比較。朝の数分が楽しみになる、パン好きなら絶対に後悔しない極上の焼き上がりを約束します。
 - id: toothbrush-ranking
   category_id: beauty
   type: daily
@@ -1044,7 +1131,7 @@ articles:
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/toothbrush.png
   h1: 電動歯ブラシ 厳選2選
   title: 【2026年最新】電動歯ブラシ 厳選2選｜AI磨きガイドを解析
-  meta_description: フィリップス ソニッケアー、ブラウン オーラルB。歯科検診レベルのツルツル感を実現する最高峰。
+  meta_description: フィリップス「ソニッケアー」とブラウン「オーラルB」の最高峰モデルを徹底比較。AIによる磨きガイド機能や歯垢除去力を軸に、数万円の投資価値を検証。歯科検診レベルのツルツル感と歯茎の健康を手に入れるための最適解を詳しく解説します。
   qa_config:
     min_price: 15000
     genre_id: '100242'
@@ -1061,6 +1148,9 @@ articles:
     - 中古
     - 訳あり
     - ジャンク
+    - 返礼品
+    - 部品
+    - パーツ
   rakuten_params:
     keyword: ソニッケアー プレステージ, オーラルB iO
     hits: 20
@@ -1070,7 +1160,7 @@ articles:
     name: 歯垢除去力
   - id: gentleness
     name: 歯茎への優しさ
-  analysis_insight: 手磨きの限界を超える電動歯ブラシ。AIが押し付け防止や磨き残しを監視する、最新鋭の2大巨頭を比較します。
+  analysis_insight: 数万円の高級電動歯ブラシは、単なる「自動化」ではありません。センサーがあなたの磨き癖をリアルタイムで解析し、押し付けすぎや磨き残しを「物理的に防ぐ」コーチングデバイスとしての価値が本質です。手磨きでは一生到達できないレベルの清掃性と、将来の歯科治療費を抑える予防医学としての投資価値を比較検証しました。
   products_extra:
   - keyword: ソニッケアー
     best_for: 歯茎を痛めず、短時間でツルツル感を維持したい方
@@ -1098,6 +1188,7 @@ articles:
     critical_cons: 独特の「回転式」の振動に慣れるまで違和感があります。
     maintenance_reality: 丸型ブラシの交換が頻繁に必要です。
     cost_performance: オーラルケアに妥協したくない方への最適解です。
+  intro: 「電動歯ブラシに変えたのに、歯科検診で磨き残しを指摘された」という経験はありませんか？最新の高級機は、AIがリアルタイムであなたの磨き癖を修正してくれます。本記事では、歯科検診レベルのツルツル感を実現する最高峰の2台を厳選。一生モノの歯を守る、後悔しない「磨き革命」をあなたに約束します。
 - id: facial-device-ranking
   category_id: beauty
   type: daily
@@ -1106,7 +1197,7 @@ articles:
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/facial-device.png
   h1: 美顔器 厳選2選
   title: 【2026年最新】美顔器 厳選2選｜浸透と引き上げを解析
-  meta_description: ヤーマン、パナソニック。エステ不要の時代を作る最高峰の美顔器を徹底解析。
+  meta_description: ヤーマンとパナソニックの最新高級美顔器を徹底比較。RF（ラジオ波）によるハリ感や美容成分の浸透力をデータで検証。自宅でプロ級のエイジングケアを毎日続けるための、失敗しない選び方と投資価値を詳しく解説します。
   rakuten_params:
     keyword: ヤーマン フォトプラス, パナソニック バイタリフト RF
     hits: 10
@@ -1116,7 +1207,7 @@ articles:
     name: ハリ・引き上げ
   - id: penetration
     name: 美容成分の浸透
-  analysis_insight: 数万円の高級美顔器は、継続することでエステを凌駕する結果を出します。RF（ラジオ波）とEMSのバランスが最も優れた2機種を選定。
+  analysis_insight: 高級美顔器における最大の「失敗」は、機能の不足ではなく、使い勝手の悪さによる「挫折」です。本記事では、1台でエステ級の多工程を完結させるヤーマンと、特定の悩み（引き上げ）に圧倒的な出力を誇るパナソニックを比較。数年後の肌質に責任を持つ、真に「使い続けられる」最新鋭のテクノロジーを選定しました。
   products_extra:
   - keyword: ヤーマン
     best_for: 多機能を1台に凝縮し、自宅での本格エイジングケアを始めたい方
@@ -1146,6 +1237,19 @@ articles:
     cost_performance: 確実なハリ感を求めるなら後悔しない投資。
   qa_config:
     min_price: 50000
+    forbidden_words:
+    - 中古
+    - 訳あり
+    - ジャンク
+    - ふるさと納税
+    - 返礼品
+    - 部品
+    - パーツ
+    - ケース
+    - カバー
+    - フィルム
+    - スタンド
+  intro: 「高価な美顔器を買ったのに、使い方が難しくて棚の奥に眠っている」という後悔をしていませんか？美顔器で最も重要なのは「毎日続けられる手軽さ」と「確かな浸透力」です。本記事では、エステ級েরケアを自宅で完結させる最新鋭の2台を厳選。鏡を見るのが楽しみになる、理想のハリ肌への最短ルートを約束します。
 - id: monitor-arm
   category_id: work
   type: daily
@@ -1154,7 +1258,7 @@ articles:
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/monitor-arm.png
   h1: モニターアーム 厳選2選
   title: 【2026年最新】モニターアーム 厳選2選｜エルゴトロンの凄み
-  meta_description: エルゴトロン LX、Pixio。机の上の解放を追求するモニターアームの最適解。
+  meta_description: エルゴトロンLXを中心に、2026年最新のモニターアームを徹底比較。アーム選びで重要な「可動の滑らかさ」と「大型モニターへの安定性」を軸に厳選。デスクの省スペース化と首・肩の負担軽減を両立するための最適なモニターアームを詳しく紹介します。
   qa_config:
     min_price: 5000
     genre_id: '100026'
@@ -1171,6 +1275,9 @@ articles:
     - 中古
     - 訳あり
     - ジャンク
+    - 返礼品
+    - 部品
+    - パーツ
   rakuten_params:
     keyword: エルゴトロン LX, Pixio PS2S モニターアーム
     hits: 20
@@ -1180,7 +1287,7 @@ articles:
     name: 安定性
   - id: ease
     name: 可動の滑らかさ
-  analysis_insight: 安いアームを買うと「お辞儀（モニターが下を向く）」に苦しみます。10年使える最高峰モデルと、高耐荷重のダークホースを比較。
+  analysis_insight: モニターアーム選びの失敗は、設置直後ではなく「数ヶ月後のお辞儀（モニターの沈み込み）」で発覚します。一度設置したら10年は動かない「不変の安定性」を持つ業界標準のエルゴトロンと、大型モニター需要に応える高耐荷重モデル。首・肩の健康とデスク環境の自由を、物理的に保証する最高峰の2台を比較しました。
   products_extra:
   - keyword: エルゴトロン
     best_for: 一度設置したら10年は変えたくない、安定性を極めたいプロ
@@ -1208,6 +1315,7 @@ articles:
     critical_cons: 関節が少し固めで、頻繁に動かす用途にはやや不向き。
     maintenance_reality: 特にメンテナンスは不要です。
     cost_performance: デザインと機能のバランスが非常に良いです。
+  intro: 「安物のアームを買ったらモニターがお辞儀して使い物にならない」「調整が固すぎて結局動かさなくなった」という失敗、よくあります。本記事では、10年使える一生モノの最高峰と、高コスパな実力機を厳選。デスク上のスペースを完全に解放し、首の疲れからあなたを救う、作業環境を約束します。
 - id: projector-ranking
   category_id: home
   type: daily
@@ -1216,7 +1324,7 @@ articles:
   eye_catch: https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=800&q=80
   h1: 家庭用プロジェクター 厳選2選
   title: 【2026年最新】プロジェクター 厳選2選｜4Kとレーザーの極地
-  meta_description: XGIMI HORIZON Ultra、Anker Nebula。ホームシアターを完成させる極上の2台。
+  meta_description: XGIMIとAnkerのハイエンドプロジェクターを徹底比較。昼間の見やすさを左右する明るさ（ルーメン）や内蔵スピーカーの音質を軸に、10万〜20万円クラスの投資価値を検証。映画館同等の没入感を自宅で手軽に再現するための、後悔しない選び方を解説します。
   rakuten_params:
     keyword: HORIZON Ultra, Nebula Cosmos
     hits: 10
@@ -1226,7 +1334,7 @@ articles:
     name: 昼間の見やすさ
   - id: sound
     name: 内蔵スピーカー音質
-  analysis_insight: 「プロジェクターは暗くしないと見えない」は過去の話です。昼間でも鮮明に映る圧倒的なルーメン数を持つハイエンド機を厳選。
+  analysis_insight: プロジェクター選びにおける「暗い部屋でしか使えない」という常識は、4Kレーザー光源の普及によって過去のものとなりました。本記事では、昼間のリビングでもカーテンを閉めずに鑑賞できる圧倒的な「明るさ」と、映画館同等の「色再現性」を両立した最高峰を厳選。自宅を真のホームシアターに変える、失敗しない大画面投資をナビゲートします。
   products_extra:
   - keyword: HORIZON Ultra
     best_for: 夜の映画体験を映画館と同等の色彩で再現したいシネマ派
@@ -1256,6 +1364,19 @@ articles:
     cost_performance: この価格で完全なホームシアターが完成します。
   qa_config:
     min_price: 80000
+    forbidden_words:
+    - 中古
+    - 訳あり
+    - ジャンク
+    - ふるさと納税
+    - 返礼品
+    - 部品
+    - パーツ
+    - ケース
+    - カバー
+    - フィルム
+    - スタンド
+  intro: 「プロジェクターを買ったけど、部屋を真っ暗にしないと見えなくて結局使わなくなった」という後悔をしていませんか？最新のハイエンド機は、昼間のリビングでも鮮明に映ります。本記事では、4Kとレーザー光源を極めた最高峰の2台を厳選。映画館を自宅に持ち込む、圧倒的な没入体験と感動をあなたに約束します。
 - id: hair-iron-ranking
   category_id: beauty
   type: daily
@@ -1264,7 +1385,7 @@ articles:
   eye_catch: https://images.unsplash.com/photo-1522338140262-f46f5913618a?auto=format&fit=crop&w=800&q=80
   h1: 高級ヘアアイロン 厳選2選
   title: 【2026年最新】高級ヘアアイロン 厳選2選｜水蒸気爆発を防ぐ一台
-  meta_description: リファ、ヘアビューロン。最高峰のヘアアイロンを徹底比較。
+  meta_description: リファとヘアビューロンの最高級ヘアアイロンを徹底比較。熱ダメージを抑える「水蒸気爆発防止」の仕組みや、仕上がりの艶感を検証。髪を傷めずに理想のスタイリングを叶え、美髪へと導く、後悔しない投資価値のあるアイロンを詳しく紹介します。
   qa_config:
     min_price: 15000
     genre_id: '100243'
@@ -1282,6 +1403,9 @@ articles:
     - 中古
     - 訳あり
     - ジャンク
+    - 返礼品
+    - 部品
+    - パーツ
   rakuten_params:
     keyword: ビューテック ストレートアイロン, ヘアビューロン 4D, ヘアアイロン
     hits: 20
@@ -1291,7 +1415,7 @@ articles:
     name: ダメージの少なさ
   - id: styling
     name: 仕上がりの艶
-  analysis_insight: 毎日使うヘアアイロンによる「熱ダメージ」は蓄積します。髪の水分を逃がさず、むしろ使うほどに艶が出るフラッグシップ2台を厳選しました。
+  analysis_insight: 毎日使うヘアアイロンにおける最大の後悔は、髪の水分が熱で蒸発する際に起きる「水蒸気爆発」によるゴワつきです。本記事では、この物理的なダメージを技術で克服した2大巨頭を比較。プレートの特殊加工でむしろ髪に艶を与えるリファと、独自のエネルギー密度でタンパク質を保護するヘアビューロン。一生モノの髪質を守るための、究極の投資先を選定しました。
   products_extra:
   - keyword: リファ
     best_for: 髪の傷みを抑えつつ、レア髪を維持したい方
@@ -1319,6 +1443,7 @@ articles:
     critical_cons: 温まるまでに少し時間がかかります。
     maintenance_reality: 非常に高価なため、落下には注意。
     cost_performance: 髪の美しさへの絶対的な投資になります。
+  intro: 「毎日アイロンを使うせいで、髪がゴワゴワに傷んでしまった」という悩み、実はアイロンの技術で解決できます。本記事では、水蒸気爆発を防ぎ、使うほどに髪の水分量を整える最高峰の2台を厳選。スタイリングのたびに艶が蘇る、サロン帰りのような指通りを毎日自宅で再現できる「魔法の投資」を約束します。
 - id: smart-home-kit
   category_id: home
   type: daily
@@ -1327,7 +1452,7 @@ articles:
   eye_catch: https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80
   h1: スマートリモコン 厳選2選
   title: 【2026年最新】スマートリモコン 厳選2選｜Matter対応を解析
-  meta_description: SwitchBot ハブ2、Nature Remo 3。家中の家電を一括操作するスマートホームの司令塔を比較。
+  meta_description: SwitchBotハブ2とNature Remo 3を徹底比較。最新規格Matterへの対応や、温湿度・GPSによる自動化の安定性を軸に厳選。家中の家電を一括操作し、日々のルーティンを自動化することで「何もしなくても快適な家」を実現するための最適な選び方を解説します。
   qa_config:
     min_price: 3000
     genre_id: '100545'
@@ -1345,6 +1470,9 @@ articles:
     - 中古
     - 訳あり
     - ジャンク
+    - 返礼品
+    - 部品
+    - パーツ
   rakuten_params:
     keyword: SwitchBot ハブ, Nature Remo, スマートリモコン
     hits: 20
@@ -1354,7 +1482,7 @@ articles:
     name: 連携・拡張性
   - id: reach
     name: 赤外線の飛距離
-  analysis_insight: ただスマホで操作するだけでなく、温湿度やGPSと連動して「完全自動化」を果たすための心臓部となる2台を比較。
+  analysis_insight: スマートリモコンを導入して「結局スマホで操作するのが面倒」と感じる最大の理由は、設定の不備ではなく「自動化（オートメーション）」への依存度が低いためです。本記事では、最新規格「Matter」への対応や、センサー・GPSをフル活用した『人が操作しなくていい環境』を構築するための司令塔を比較。既存の家電を文字通り「賢く」変える、後悔しない心臓部を選定しました。
   products_extra:
   - keyword: SwitchBot
     best_for: 温湿度に合わせた「自動化」を極めたい、快適性重視派
@@ -1382,3 +1510,75 @@ articles:
     critical_cons: SwitchBotのような物理ボタンを押す指ロボットとの連携は他社製を組み合わせる必要があります。
     maintenance_reality: 壁掛け時のホコリ拭き取り程度。
     cost_performance: スマートホームの基盤として非常に優秀です。
+  intro: 「スマートホーム化を始めたけど、設定が難しくて挫折した」「結局スマホで操作するのが面倒」という不満、実は心臓部のハブ選びで解消します。本記事では、家中の家電を自動で連携させる最新の司令塔2台を厳選。帰宅時に電気がつき、温度が最適に保たれる「考えなくていい生活」をあなたに約束します。
+- id: laser-mosquito-killer
+  category_id: trend
+  type: sns
+  slug: laser-mosquito-killer
+  release_date: '2026-04-28'
+  eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/laser-mosquito-killer.png
+  h1: AIレーザー蚊取り器の現実解 厳選2選
+  title: 【現実解を比較】AIレーザー蚊取り器の現実解 厳選2選｜今すぐ買える薬剤レス対策
+  meta_description: SNSで話題のAIレーザー蚊取り器の現状と、日本で今すぐ買える「薬剤レス」の現実的な蚊対策を徹底比較。シャープやAPIXの最新捕虫機を、駆除テクノロジーや室内の安全性から検証。今夜から寝室を平和にするための後悔しない選択肢を提示します。
+  intro: SNSで話題のAIレーザー蚊取り器は気になるものの、国内で今すぐ安心して買える製品はまだ限られます。そこで本記事では、話題技術の方向性を踏まえつつ、日本で現実的に導入できる薬剤レス蚊対策としてシャープとAPIXの2機種を比較し、寝室やリビングで使いやすい現実解を整理します。
+  rakuten_params:
+    keyword: APIX 蚊取り器, シャープ 蚊取り, UV 蚊取り器 充電式
+    hits: 10
+    sort: -reviewCount
+  test_criteria:
+  - id: technology
+    name: 駆除テクノロジー
+  - id: safety
+    name: 室内での安全性
+  analysis_insight: AIレーザー型はたしかに夢がありますが、日本の楽天市場でいま比較検討すべきなのは「実際に買えて、安全に置けて、薬剤レスで運用できるか」です。今回は未来の話題性ではなく、今夜から使える現実解としてシャープとAPIXを並べ、寝室での扱いやすさと安心感を軸に評価しました。
+  products_extra:
+  - keyword: APIX
+    best_for: 寝室やベランダで使える、コンパクトな薬剤レス捕虫器をまず試したい方
+    scores:
+      technology: 2.8
+      safety: 4.6
+    analysis_why: APIXはAIレーザー型のような派手さはありませんが、薬剤を使わずUV誘引とファン吸引で蚊を捕獲できる、国内で導入しやすい現実的な選択肢です。充電式で置き場所の自由度が高く、まず薬剤レス運用を試したい人に向いています。
+    pros:
+    - 薬剤を使わないので寝室でも置きやすい
+    - 充電式でコンセント位置に縛られにくい
+    - 小型で導入コストが比較的軽い
+    critical_cons: AI追跡やレーザー照射のような能動的な駆除ではなく、あくまで誘引して捕獲する方式です。広い部屋での即効性は期待しすぎない方が安全です。
+    maintenance_reality: 捕虫容器の掃除と充電管理が中心。粘着剤交換がないぶん手軽ですが、こまめな設置場所の見直しで効き方が変わります。
+    cost_performance: 1万円未満で導入しやすく、薬剤レス捕虫器をまず試したい人には入り口として優秀です。
+  - keyword: シャープ
+    best_for: 蚊対策だけでなく、花粉やニオイも同時に解決したい「間違いのない」選択をしたい方
+    scores:
+      technology: 4.0
+      safety: 5.0
+    analysis_why: シャープの「蚊取り機能付き空気清浄機」。UVライトで誘い込み、強力な吸引力と粘着シートで捕獲。実績と安全性が確立された「日本における現実的な最高峰」です。
+    pros:
+    - 空気清浄機としての性能もトップクラス
+    - 薬剤を使わず、シートで固めて捨てるだけ
+    - プラズマクラスターによる消臭・除菌効果
+    critical_cons: レーザー型のような「能動的な追跡」は行わず、あくまで誘い込みを待つスタイル。また、定期的な粘着シートの交換費用が発生します。
+    maintenance_reality: プレフィルターの掃除と、数ヶ月に一度の蚊取りシート交換のみ。大手メーカーならではのメンテナンスのしやすさは随一。
+    cost_performance: 3万円〜5万円台。空気清浄機と蚊取り器の1台2役と考えれば、最も堅実で後悔のない投資です。
+  qa_config:
+    min_price: 5000
+    forbidden_words:
+    - 蚊取り線香
+    - 線香
+    - 液体
+    - マット
+    - スプレー
+    - シートのみ
+    - 網戸
+    - 網
+    - カバー
+    - スタンド
+    - フタ
+    - 訳あり
+    - 中古
+    - ジャンク
+    - 部品
+    - パーツ
+    - 修理
+    - ふるさと納税
+    - 返礼品
+    - ケース
+    - フィルム

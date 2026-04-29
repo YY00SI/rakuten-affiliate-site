@@ -13,15 +13,21 @@
 ## ディレクトリ構造
 
 - `config/articles.yaml`: 記事の構成、キーワード、検索条件を管理
+- `config/article_blueprint.template.yaml`: AI が埋める記事テンプレート
+- `config/article_quality_rules.yaml`: 機械検証用の品質ルール
 - `src/fetch_products.py`: 楽天APIからデータを取得し `data/` に保存
 - `src/build_site.py`: `templates/` を使用して `docs/` に静的サイトを生成
+- `src/validate_articles.py`: 記事設定の構造と品質を検証
 - `docs/`: 生成されたサイト（GitHub Pages 公開用）
+- `docs/ai/`: モデル非依存の執筆ルールとプロンプト
 - `templates/`: Jinja2 テンプレートファイル
 
 ## 運用方法
 
-1. `config/articles.yaml` に新しい記事の設定を追加する。
-2. GitHub にプッシュすると、GitHub Actions が自動的にデータを取得し、サイトを更新・デプロイします。
+1. `Rule.md` と `docs/ai/README.md` を読む。
+2. `config/article_blueprint.template.yaml` を使って `config/articles.yaml` に記事設定を追加する。
+3. `python src/validate_articles.py` を実行する。
+4. GitHub にプッシュすると、GitHub Actions が自動的にデータを取得し、サイトを更新・デプロイします。
 
 ## 免責事項
 当サイトはアフィリエイトリンクを含みます。商品情報は楽天市場のAPIより取得しており、最新の情報はリンク先の各ショップにてご確認ください。

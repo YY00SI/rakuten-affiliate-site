@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from datetime import datetime
 import re
 import urllib.parse
+from article_contract import merged_forbidden_words
 
 # 環境変数の読み込み
 load_dotenv()
@@ -91,7 +92,8 @@ def fetch_article_items(article):
     
     products_extra = article.get('products_extra', [])
     extra_keywords = [ex.get('keyword') for ex in products_extra if ex.get('keyword')]
-    forbidden_words = qa_config.get('forbidden_words', [])
+    forbidden_words = merged_forbidden_words(article)
+    required_words = qa_config.get('required_words', [])
 
     for item_raw in all_raw_items:
         item = item_raw.get("Item", item_raw)
@@ -99,9 +101,14 @@ def fetch_article_items(article):
         if url in seen_urls: continue
         
         name = item.get("itemName", "")
+        caption = item.get("itemCaption", "")
         # 禁止ワードチェック
-        if any(fw in name for fw in forbidden_words):
+        if any(fw.lower() in name.lower() for fw in forbidden_words):
             continue
+        if required_words:
+            haystack = f"{name} {caption}".lower()
+            if not any(req.lower() in haystack for req in required_words):
+                continue
 
         is_major = any(brand.lower() in name.lower() for brand in MAJOR_BRANDS)
         
@@ -117,7 +124,7 @@ def fetch_article_items(article):
             "name": name, "price": price, "url": url, "affiliateUrl": item.get("affiliateUrl"),
             "image": "", "reviewCount": rev_count, "reviewAverage": rev_avg,
             "quality_score": offer_score, "offer_score": offer_score,
-            "shopName": item.get("shopName"), "caption": item.get("itemCaption", "")[:300],
+            "shopName": item.get("shopName"), "caption": caption[:300],
             "is_major": is_major
         }
 
@@ -133,18 +140,23 @@ def fetch_article_items(article):
 
     # マスターピース照合 (照合率向上のため、あいまい一致)
     processed_items = []
+    selected_urls = set()
     for ekw in extra_keywords:
         found_item = None
         max_score = -1
         for name, item_data in best_offers.items():
+            haystack = f"{item_data.get('name', '')} {item_data.get('caption', '')}".lower()
             # 大文字小文字を区別せず、かつキーワードが含まれているか
-            if ekw.lower() in name.lower():
+            if ekw.lower() in haystack:
                 if item_data['offer_score'] > max_score:
                     max_score = item_data['offer_score']
                     found_item = item_data
         
         if found_item:
-            processed_items.append(found_item)
+            item_url = found_item.get("url")
+            if item_url not in selected_urls:
+                processed_items.append(found_item)
+                selected_urls.add(item_url)
         else:
             print(f"  [MISS] Keyword '{ekw}' not found in {len(best_offers)} results.")
             if best_offers:

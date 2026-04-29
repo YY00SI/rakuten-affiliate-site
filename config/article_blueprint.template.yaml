@@ -1,0 +1,59 @@
+# Copy one block into config/articles.yaml and replace every PLACEHOLDER_* value.
+# This template is intentionally verbose so lightweight models can fill it safely.
+
+- id: PLACEHOLDER_ID
+  category_id: PLACEHOLDER_CATEGORY_ID
+  type: daily
+  slug: PLACEHOLDER_SLUG
+  release_date: 'YYYY-MM-DD'
+  eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/PLACEHOLDER_IMAGE.png
+  h1: PLACEHOLDER_H1
+  title: PLACEHOLDER_TITLE
+  intro: >
+    PLACEHOLDER_INTRO
+  meta_description: PLACEHOLDER_META_DESCRIPTION
+  analysis_insight: >
+    PLACEHOLDER_ANALYSIS_INSIGHT
+  qa_config:
+    min_price: 30000
+    genre_id: 'PLACEHOLDER_GENRE_ID'
+    required_words:
+      - PLACEHOLDER_REQUIRED_WORD_1
+      - PLACEHOLDER_REQUIRED_WORD_2
+    forbidden_words:
+      - 中古
+      - 訳あり
+      - ジャンク
+      - ふるさと納税
+      - 返礼品
+      - ケース
+      - カバー
+      - スタンド
+      - 部品
+      - パーツ
+  rakuten_params:
+    keyword: ブランド名 型番A, ブランド名 型番B, ブランド名 型番C
+    hits: 20
+    sort: -reviewCount
+  test_criteria:
+    - id: performance
+      name: PLACEHOLDER_CRITERIA_1
+    - id: maintenance
+      name: PLACEHOLDER_CRITERIA_2
+    - id: emotion
+      name: PLACEHOLDER_CRITERIA_3
+  products_extra:
+    - keyword: PLACEHOLDER_PRODUCT_KEYWORD_1
+      best_for: PLACEHOLDER_BEST_FOR_1
+      scores:
+        performance: 4.8
+        maintenance: 4.4
+        emotion: 4.9
+      analysis_why: PLACEHOLDER_ANALYSIS_WHY_1
+      pros:
+        - PLACEHOLDER_PRO_1
+        - PLACEHOLDER_PRO_2
+        - PLACEHOLDER_PRO_3
+      critical_cons: PLACEHOLDER_CRITICAL_CONS_1
+      maintenance_reality: PLACEHOLDER_MAINTENANCE_REALITY_1
+      cost_performance: PLACEHOLDER_COST_PERFORMANCE_1

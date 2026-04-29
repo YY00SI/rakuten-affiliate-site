@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    {% set meta = page_meta if page_meta is defined else {} %}
+    {% set meta_title = meta.title if meta.title is defined else (article.title if article is defined else site.name) %}
+    {% set meta_description = meta.description if meta.description is defined else (article.meta_description if article is defined else site.description) %}
+    {% set meta_url = meta.url if meta.url is defined else site.base_url %}
+    {% set meta_image = meta.image if meta.image is defined else '' %}
+    {% set meta_type = meta.og_type if meta.og_type is defined else 'website' %}
+    {% set verification = site.verification if site.verification is defined else {} %}
+    {% set analytics = site.analytics if site.analytics is defined else {} %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if article %}{{ article.title }}{% elif category %}{{ category.name }} - {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
-    <meta name="description" content="{% if article %}{{ article.meta_description }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="google-site-verification" content="_-l2L3a9sescPeoitkfmbJZCmVDDmYZCFmE6k3Dcv0E" />
+    <title>{{ meta_title }}</title>
+    <meta name="description" content="{{ meta_description }}">
+    <link rel="canonical" href="{{ meta_url }}">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:type" content="{{ meta_type }}">
+    <meta property="og:title" content="{{ meta_title }}">
+    <meta property="og:description" content="{{ meta_description }}">
+    <meta property="og:url" content="{{ meta_url }}">
+    {% if meta_image %}
+    <meta property="og:image" content="{{ meta_image }}">
+    {% endif %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ meta_title }}">
+    <meta name="twitter:description" content="{{ meta_description }}">
+    {% if meta_image %}
+    <meta name="twitter:image" content="{{ meta_image }}">
+    {% endif %}
+    {% if page_schemas is defined %}
+        {% for schema in page_schemas %}
+    <script type="application/ld+json">{{ schema | tojson(indent=2) }}</script>
+        {% endfor %}
+    {% endif %}
+    {% if verification.google_site_verification is defined and verification.google_site_verification %}
+    <meta name="google-site-verification" content="{{ verification.google_site_verification }}">
+    {% endif %}
+    {% if analytics.ga4_measurement_id is defined and analytics.ga4_measurement_id %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ analytics.ga4_measurement_id }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ analytics.ga4_measurement_id }}');
+    </script>
+    {% endif %}
     
     <!-- Google Fonts: Lato for numbers, Noto Sans JP for text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,6 +131,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 1.5rem;
         }
 
         .logo {
@@ -102,6 +143,24 @@
             align-items: center;
             gap: 0.5rem;
             text-decoration: none;
+        }
+
+        .site-nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .site-nav a {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            font-weight: 600;
+        }
+
+        .site-nav a:hover {
+            color: var(--primary);
         }
 
         main {
@@ -190,6 +249,59 @@
             font-size: 1.25rem;
         }
 
+        .eyebrow {
+            display: inline-block;
+            font-size: 0.78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+
+        .breadcrumb a {
+            color: var(--text-muted);
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary);
+        }
+
+        .subtle-panel {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .chip-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.45rem 0.8rem;
+            border-radius: 999px;
+            background: #fff5f5;
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            border: 1px solid #fed7d7;
+        }
+
         /* Footer */
         footer {
             background: var(--secondary);
@@ -227,7 +339,8 @@
             :root { --max-width: 100%; --section-gap: 3.5rem; }
             main { margin-top: 1.5rem; padding: 0 1rem; }
             .section-title { font-size: 1.5rem; }
-            .header-content { padding: 0 1.25rem; }
+            .header-content { padding: 0 1.25rem; align-items: flex-start; flex-direction: column; }
+            .site-nav { gap: 0.75rem; justify-content: flex-start; }
         }
 
         /* Article Specific Components */
@@ -453,6 +566,13 @@
     <header class="site-header">
         <div class="header-content">
             <a href="{{ site.base_url }}" class="logo">{{ site.name }}</a>
+            <nav class="site-nav" aria-label="Global">
+                {% for nav_category in categories_list | default([]) %}
+                <a href="{{ site.base_url }}{{ nav_category.slug }}/">{{ nav_category.name }}</a>
+                {% endfor %}
+                <a href="{{ site.base_url }}how-we-test/">評価基準</a>
+                <a href="{{ site.base_url }}about/">運営方針</a>
+            </nav>
         </div>
     </header>
 
@@ -463,6 +583,7 @@
     <footer>
         <div class="footer-nav">
             <a href="{{ site.base_url }}">トップページ</a>
+            <a href="{{ site.base_url }}how-we-test/">評価基準</a>
             <a href="{{ site.base_url }}about/">当サイトについて</a>
             <a href="{{ site.base_url }}privacy-policy/">プライバシーポリシー</a>
         </div>

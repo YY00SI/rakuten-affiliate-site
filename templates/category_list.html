@@ -1,27 +1,32 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="category-header" style="margin-bottom: 5rem; border-bottom: 1px solid var(--border); padding-bottom: 2rem;">
-    <div style="font-size: 0.9rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Category</div>
-    <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">{{ category.name }} のおすすめ記事</h1>
-    <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 700px;">{{ category.description }}</p>
+<section class="category-header subtle-panel" style="margin-bottom: 4rem; padding: 2rem;">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ site.base_url }}">トップ</a>
+        <span>/</span>
+        <span>{{ category.name }}</span>
+    </nav>
+    <div class="eyebrow">Category</div>
+    <h1 style="font-size: 2.4rem; margin-bottom: 1rem;">{{ category.name }} のおすすめ記事</h1>
+    <p style="font-size: 1.05rem; color: var(--text-muted); max-width: 760px; margin: 0;">{{ category.description }}</p>
 </section>
 
 <div class="article-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 3rem;">
     {% for article in articles %}
     <article class="card article-entry" style="display: flex; flex-direction: column;">
-        <a href="{{ article.url }}" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
-            <img src="{{ article.conf.eye_catch }}" alt="{{ article.conf.title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <a href="{{ article.url }}" class="article-card-media" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
+            <img src="{{ article.conf.resolved_eye_catch or article.conf.eye_catch }}" alt="{{ article.conf.title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
         </a>
         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
                 <span style="font-size: 0.8rem; color: var(--text-muted);">{{ article.conf.display_date }}</span>
             </div>
             <h2 style="font-size: 1.25rem; margin-bottom: 1rem; line-height: 1.4;">
-                <a href="{{ article.url }}" style="color: var(--secondary); text-decoration: none;">{{ article.conf.title }}</a>
+                <a href="{{ article.url }}" style="color: var(--secondary); text-decoration: none;">{{ article.conf.h1 or article.conf.title }}</a>
             </h2>
             <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">
-                {{ article.conf.meta_description[:80] }}...
+                {{ article.conf.meta_description }}
             </p>
             <a href="{{ article.url }}" style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
                 記事を読む
@@ -33,6 +38,10 @@
 </div>
 
 <style>
+    .article-card-media:hover img {
+        transform: scale(1.05);
+    }
+
     @media (max-width: 768px) {
         .category-header h1 { font-size: 1.8rem; }
         .article-grid { grid-template-columns: 1fr; gap: 2rem; }
