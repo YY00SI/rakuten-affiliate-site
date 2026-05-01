@@ -889,7 +889,7 @@ articles:
     - チェア
     - 椅子
     - デスクチェア
-    - Ergohuman
+    - エルゴヒューマン
     forbidden_words:
     - フィルム
     - ケース
@@ -903,7 +903,7 @@ articles:
     - 部品
     - パーツ
   rakuten_params:
-    keyword: アーロンチェア リマスタード, Ergohuman Pro2
+    keyword: アーロンチェア, Ergohuman Pro2
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -1152,7 +1152,7 @@ articles:
     - 部品
     - パーツ
   rakuten_params:
-    keyword: ソニッケアー プレステージ, オーラルB iO
+    keyword: ソニッケアー 電動歯ブラシ, オーラルB iO
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -1279,7 +1279,7 @@ articles:
     - 部品
     - パーツ
   rakuten_params:
-    keyword: エルゴトロン LX, Pixio PS2S モニターアーム
+    keyword: エルゴトロン モニターアーム, Pixio PS2S モニターアーム
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -1474,7 +1474,7 @@ articles:
     - 部品
     - パーツ
   rakuten_params:
-    keyword: SwitchBot ハブ, Nature Remo, スマートリモコン
+    keyword: SwitchBot ハブ, Nature Remo
     hits: 20
     sort: -reviewCount
   test_criteria:

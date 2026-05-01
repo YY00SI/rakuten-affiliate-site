@@ -59,10 +59,14 @@ def run_full_audit():
                 # 1. キーワード一致
                 if ex['keyword'].lower() not in item['name'].lower():
                     continue
-                # 2. 禁止キーワード除外
-                if any(f_kw in item['name'] for f_kw in forbidden_words):
+                # 2. 必須キーワードチェック (どれか一つ含まれていればOK)
+                required_words = qa_config.get('required_words', [])
+                if required_words and not any(req.lower() in item['name'].lower() for req in required_words):
                     continue
-                # 3. 価格下限チェック
+                # 3. 禁止キーワード除外
+                if any(f_kw.lower() in item['name'].lower() for f_kw in forbidden_words):
+                    continue
+                # 4. 価格下限チェック
                 if item.get('price', 0) < min_price:
                     continue
                 
