@@ -7,8 +7,9 @@
 
 1. `Rule.md`
 2. `docs/ai/CONTENT_CONTRACT.md`
-3. `docs/ai/PROMPT_PACK.md`
-4. `config/article_blueprint.template.yaml`
+3. `docs/ai/QUALITY_GATE.md` ← 品質保証フレームワーク
+4. `docs/ai/PROMPT_PACK.md`
+5. `config/article_blueprint.template.yaml`
 
 ## 1. 収益最大化の PDCA
 
@@ -59,9 +60,12 @@
 ### Step 5: 機械検証
 公開前に必ず以下を順に実行する。
 
-1. `python src/validate_articles.py`
-2. `python src/fetch_products.py`
-3. `python src/build_site.py`
+1. `python src/validate_articles.py` → `errors=0` 必須
+2. `python src/fetch_products.py` → 取得件数 > 0
+3. `python src/build_site.py` → `[CRITICAL QA ERROR]` なし
+4. `python src/audit_site.py` → `errors=0` 必須
+
+> **軽量モデル使用時**: `docs/ai/QUALITY_GATE.md` の §3 セルフチェックリストを Step 4 と Step 5 の間に挟むこと。
 
 ## 3. 品質ゲート
 

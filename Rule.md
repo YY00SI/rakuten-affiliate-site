@@ -7,7 +7,8 @@
 1. `Rule.md`
 2. `workflow.md`
 3. `docs/ai/CONTENT_CONTRACT.md`
-4. `config/article_quality_rules.yaml`
+4. `docs/ai/QUALITY_GATE.md`
+5. `config/article_quality_rules.yaml`
 
 ## 絶対方針
 - 汎用的なアフィリエイト記事の量産は禁止。
@@ -26,5 +27,6 @@
 - `python src/validate_articles.py`
 - `python src/fetch_products.py`
 - `python src/build_site.py`
+- `python src/audit_site.py`
 
-この 3 つを通らない記事は公開不可とする。
+この 4 つを通らない記事は公開不可とする。
