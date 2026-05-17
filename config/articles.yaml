@@ -1864,7 +1864,7 @@ articles:
   title: 【2026年最新】4Kモニター 厳選3選｜27インチの生産性を解析
   meta_description: Dell U2723QE、LG 27UK850、BenQ PD2705Uを徹底比較。USB-Cによるケーブル1本運用と、色再現性の違いを軸に検証。テキストの視認性向上から動画編集まで、27インチ4Kモニターが日常の作業効率を劇的に変える理由を詳しく解説します。
   rakuten_params:
-    keyword: Dell U2723QE, LG 27 4K USB-C, BenQ PD2705U
+    keyword: U2723QE, 27UK850, PD2705U
     hits: 15
     sort: -reviewCount
   test_criteria:
@@ -1875,7 +1875,7 @@ articles:
   analysis_insight: >
     27インチ4Kモニターの後悔ポイントは「文字が小さすぎて目が疲れる」スケーリング問題と、「ケーブルが多すぎてデスクが汚い」配線問題です。USB-C 1本で映像・給電・データを同時に扱えるかどうかが、2026年の選定基準の中核です。
   products_extra:
-  - keyword: Dell
+  - keyword: U2723QE
     best_for: USB-C 1本でノートPCを接続し、デスク周りを完全にスッキリさせたい方
     scores:
       color: 5.0
@@ -1901,7 +1901,7 @@ articles:
     critical_cons: USB-C給電が60Wのため、高性能ノートPCでは充電が追いつかない場合があります。
     maintenance_reality: メンテナンスフリー。パネルの均一性は個体差があるため、初期チェック推奨。
     cost_performance: 5万円前後で4K＋広色域＋USB-C接続が手に入る、最もバランスの良いエントリーモデルです。
-  - keyword: BenQ PD2705U
+  - keyword: PD2705U
     best_for: MacとWindowsを併用し、正確な色再現と作業効率を求めるデザイナー
     scores:
       color: 5.0
@@ -1941,7 +1941,7 @@ articles:
   title: 【2026年最新】電動シェーバー 厳選3選｜深剃りと肌への優しさを両立
   meta_description: ブラウン、フィリップス、パナソニック ラムダッシュの最高峰電動シェーバーを徹底比較。深剃りの仕上がりと敏感肌への対応力を軸に検証。毎朝のシェービングを快適にし、カミソリ負けから解放されるための後悔しない選び方を詳しく解説します。
   rakuten_params:
-    keyword: ブラウン シリーズ9 Pro, フィリップス S9000 プレステージ, パナソニック ラムダッシュ PRO 6枚刃
+    keyword: ブラウン シリーズ9, フィリップス S9000, ラムダッシュ 6枚刃
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -1978,7 +1978,7 @@ articles:
     critical_cons: 往復式に比べると、ヒゲが非常に濃い方には深剃りが物足りなく感じる場合があります。
     maintenance_reality: ヘッドを外して水洗いが基本。替刃は1〜2年に一度の交換で済みます。
     cost_performance: カミソリ負けによる肌荒れ治療費を考えれば、肌への投資として最も合理的です。
-  - keyword: ラムダッシュ PRO
+  - keyword: ラムダッシュ
     best_for: 日本人の硬いヒゲを、肌を傷めずにスピーディーに剃り切りたい方
     scores:
       deep_shave: 4.8
@@ -2082,7 +2082,7 @@ articles:
   title: 【2026年最新】スマートウォッチ 厳選3選｜健康管理と決済の最適解
   meta_description: Apple Watch、Garmin、Pixel Watchを徹底比較。Suica決済の利便性と、バッテリー持ち・ヘルスケア精度の違いを検証。
   rakuten_params:
-    keyword: Apple Watch Series 9, Garmin Venu 3, Google Pixel Watch 2
+    keyword: Apple Watch, Garmin Venu, Pixel Watch
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -2095,7 +2095,7 @@ articles:
   analysis_insight: >
     スマートウォッチの後悔は「毎日充電するのが面倒で使わなくなった」と「自分のスマホで使えない機能があった」の2点です。OSとの相性と、充電頻度の許容度が選定のすべてです。
   products_extra:
-  - keyword: Apple Watch Series 9
+  - keyword: Apple Watch
     best_for: iPhoneユーザーで、SuicaやiD決済、通知の受け取りを最もスムーズに行いたい方
     scores:
       health: 4.5
@@ -2123,7 +2123,7 @@ articles:
     critical_cons: Suicaの定期券やオートチャージには非対応。スマートフォンの細かい通知返信などはApple Watchに劣ります。
     maintenance_reality: 充電は週に1〜2回で十分。睡眠中もバッテリーを気にせず装着できます。
     cost_performance: 「時計としての基本」であるバッテリー持ちを担保しつつ、高度な健康管理ができるため非常に実用的です。
-  - keyword: Pixel Watch 2
+  - keyword: Pixel Watch
     best_for: Androidユーザーで、Googleサービスとの連携やSuica決済を重視する方
     scores:
       health: 4.8
@@ -2160,7 +2160,7 @@ articles:
   title: 【2026年最新】ドラム式洗濯機 厳選3選｜乾燥機能とメンテの手間を比較
   meta_description: パナソニック、日立、東芝の最高峰ドラム式洗濯機を徹底比較。ヒートポンプ乾燥の仕上がりと、フィルター自動お掃除機能の違いを検証。
   rakuten_params:
-    keyword: パナソニック ドラム式洗濯機 LX, 日立 ビッグドラム, 東芝 ZABOON ドラム
+    keyword: パナソニック ドラム式洗濯乾燥機, 日立 ビッグドラム, 東芝 ZABOON
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -2171,7 +2171,7 @@ articles:
   analysis_insight: >
     ドラム式洗濯機の後悔は「乾燥フィルターの掃除が面倒すぎる」ことと「タオルがゴワゴワになる」ことです。洗剤自動投入はもはや標準、勝負は「乾燥方式」と「ホコリの自動清掃」の2点に絞られています。
   products_extra:
-  - keyword: パナソニック LX
+  - keyword: パナソニック
     best_for: 乾燥フィルターの掃除から解放されたい、とにかく手間を減らしたい共働き世帯
     scores:
       dry_quality: 4.8
@@ -2232,7 +2232,7 @@ articles:
   title: 【2026年最新】ノイキャンヘッドホン 厳選3選｜静寂と音質の最高峰
   meta_description: SONY WH-1000XM5、Bose QuietComfort Ultra、ゼンハイザー MOMENTUM 4を徹底比較。ノイズキャンセリングの強度と長時間装着の快適さを検証。
   rakuten_params:
-    keyword: WH-1000XM5, Bose QuietComfort Ultra Headphones, ゼンハイザー MOMENTUM 4
+    keyword: WH-1000XM5, QuietComfort Ultra, ゼンハイザー MOMENTUM
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -2309,7 +2309,7 @@ articles:
   title: 【2026年最新】アクションカメラ 厳選3選｜手ブレ補正と撮影の最適解
   meta_description: GoPro HERO12、DJI Osmo Action 4、Insta360 Ace Proを徹底比較。手ブレ補正の強さと、暗所撮影・バッテリー耐寒性の違いを検証。
   rakuten_params:
-    keyword: GoPro HERO12 Black, DJI Osmo Action 4, Insta360 Ace Pro
+    keyword: GoPro HERO12, DJI Osmo Action, Insta360 Ace Pro
     hits: 20
     sort: -reviewCount
   test_criteria:
