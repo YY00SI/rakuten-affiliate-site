@@ -3115,7 +3115,7 @@ articles:
       - スタンドのみ
       - レンタル
   rakuten_params:
-    keyword: U3425WE, 34WQ75C-B, EW3880R, MateView GT 34
+    keyword: Dell ウルトラワイドモニター, LG ウルトラワイドモニター, BenQ ウルトラワイドモニター, HUAWEI ウルトラワイドモニター
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -3126,7 +3126,7 @@ articles:
     - id: multimedia
       name: スピーカー・エンタメ
   products_extra:
-    - keyword: U3425WE
+    - keyword: Dell
       best_for: 複数台のPC（MacとWindowsなど）をシームレスに操作し、デスクの配線を極限まで減らしたいプロフェッショナル
       scores:
         workspace: 5.0
@@ -3140,7 +3140,7 @@ articles:
       critical_cons: 価格が10万円を優に超え、映画などのエンタメ用途よりも純粋な「仕事の生産性」に全振りした価格設定です。
       maintenance_reality: Dellの3年間プレミアム保証（ドット抜け1つでも無償交換）が強力で、長期間安心して使えます。
       cost_performance: 毎日8時間モニターを見るなら、目の疲労軽減と作業効率の向上で価格差は十分に回収できる投資です。
-    - keyword: 34WQ75C-B
+    - keyword: LG
       best_for: 7万円前後でUSB-C給電付きの曲面ウルトラワイドを探している、コスパ重視のテレワーカー
       scores:
         workspace: 4.5
@@ -3154,7 +3154,7 @@ articles:
       critical_cons: リフレッシュレートが60Hzのため、ゲーム用途や、極端に滑らかなスクロールを求める人には物足りません。
       maintenance_reality: スタンドの足がV字型で少しデスクの奥行きを取るため、モニターアームとの併用が推奨されます。
       cost_performance: 必要な機能（曲面・UWQHD・USB-C）を全て抑えつつ価格を抑えた、最も失敗しない「大衆の最適解」です。
-    - keyword: EW3880R
+    - keyword: BenQ
       best_for: 仕事だけでなく、プライベートで映画や動画コンテンツにどっぷり浸かりたいエンタメ派
       scores:
         workspace: 5.0
@@ -3168,7 +3168,7 @@ articles:
       critical_cons: デスクに置くとかなりの圧迫感があり、最低でも奥行き70cm以上のデスクが必要です。
       maintenance_reality: 重量が約13kgあるため、モニターアームを使う場合はエルゴトロンHXなどの耐荷重が強い高級モデルが必要です。
       cost_performance: 「高級スピーカー」と「巨大モニター」をセットで買うと考えれば、15万円台の価格にも納得のエンタメ体験が得られます。
-    - keyword: MateView
+    - keyword: HUAWEI
       best_for: デスク上にスピーカーを置きたくないが、音質とデザインにはこだわりたい方
       scores:
         workspace: 4.5
@@ -3404,7 +3404,7 @@ articles:
       - ケースのみ
       - レンタル
   rakuten_params:
-    keyword: Nebula Capsule 3 Laser, MoGo 2 Pro, BenQ GV31, Aladdin Vase
+    keyword: Anker プロジェクター, XGIMI プロジェクター, BenQ プロジェクター, Aladdin プロジェクター
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -3415,7 +3415,7 @@ articles:
     - id: usability
       name: 天井投影・設置のしやすさ
   products_extra:
-    - keyword: Nebula Capsule
+    - keyword: Anker
       best_for: キャンプや旅行先に気軽に持ち出し、どこでも最高画質の映画を楽しみたい方
       scores:
         brightness: 5.0
@@ -3429,7 +3429,7 @@ articles:
       critical_cons: 天井に投影するには別売りの三脚が必要となり、そのままでは真上を向けません。
       maintenance_reality: レンズ部分に指紋がつかないよう気をつける程度で、手入れは不要です。
       cost_performance: 「レーザー光源」をこのサイズと価格帯で持ち運べるのは革命的であり、アウトドア派には最高の投資です。
-    - keyword: MoGo 2 Pro
+    - keyword: XGIMI
       best_for: 毎回設置場所が変わるため、斜めからでも一瞬で完璧な長方形に自動補正してほしい方
       scores:
         brightness: 4.5
@@ -3443,7 +3443,7 @@ articles:
       critical_cons: 本体にバッテリーを内蔵していないため、モバイルとして使うには65W出力以上のモバイルバッテリーが別途必要です。
       maintenance_reality: バッテリー非搭載の代わりに本体が軽量化されており、バッテリー劣化の心配がありません。
       cost_performance: 「斜めに置いても勝手に真っ直ぐになる」快適さは凄まじく、設定のストレスをゼロにするタイパ最強機です。
-    - keyword: BenQ GV
+    - keyword: BenQ
       best_for: 三脚なしで「ベッドで仰向けになって天井で映画を見る」体験を極めたい方
       scores:
         brightness: 4.0
@@ -3457,7 +3457,7 @@ articles:
       critical_cons: 丸いデザインのため、カバンに入れて持ち運ぶには少々かさばります。家の中での移動（リビングから寝室）に向いています。
       maintenance_reality: 本体が丸いためホコリが溜まりにくく、マグネットベースの設置も簡単です。
       cost_performance: 「天井をスクリーンにする」というロマンを最もスマートに実現した名機であり、寝室用として非常に高い満足度を得られます。
-    - keyword: Aladdin Vase
+    - keyword: Aladdin
       best_for: 「いかにも家電」という機械的な見た目のプロジェクターを寝室に置きたくない方
       scores:
         brightness: 3.5
@@ -3500,7 +3500,7 @@ articles:
       - ケーブルのみ
       - 三脚のみ
   rakuten_params:
-    keyword: Insta360 Link, OBSBOT Tiny 2, Brio 500, Elgato Facecam
+    keyword: Insta360 ウェブカメラ, OBSBOT ウェブカメラ, ロジクール ウェブカメラ, Elgato ウェブカメラ
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -3511,7 +3511,7 @@ articles:
     - id: presentation
       name: プレゼン特化機能
   products_extra:
-    - keyword: Insta360 Link
+    - keyword: Insta360
       best_for: オンラインでホワイトボードを使ったプレゼンや、動きのあるセミナーを行う講師・営業マン
       scores:
         image_sensor: 4.8
@@ -3525,7 +3525,7 @@ articles:
       critical_cons: マイクの音質は専用のコンデンサーマイクには劣るため、通話品質を極めるなら別売りのマイクが必要です。
       maintenance_reality: 使用していない時はカメラが自動的に下（デスク側）を向くプライバシーモードがあり安心です。
       cost_performance: 「ホワイトボードの文字を綺麗に見せる」ためだけに数万円払う価値がある、プレゼンにおける最強の武器です。
-    - keyword: OBSBOT Tiny 2
+    - keyword: OBSBOT
       best_for: AIによる「爆速の顔追尾」と「声での操作」を駆使して、最先端のデスク環境を作りたい方
       scores:
         image_sensor: 5.0
@@ -3539,7 +3539,7 @@ articles:
       critical_cons: 専用ソフトの機能が多すぎて、最初は少し設定項目に戸惑うかもしれません。
       maintenance_reality: マグネット式のマウントが強力で、モニターの上にしっかりと固定できます。
       cost_performance: 一眼レフカメラをWebカメラ化する面倒なセッティング（数万円〜十数万円）を、これ1台で疑似体験できる神コスパ機です。
-    - keyword: Brio
+    - keyword: ロジクール
       best_for: ジンバルなどの物理的な動きは不要だが、広角で部屋全体を綺麗に映したいビジネスマン
       scores:
         image_sensor: 4.0
