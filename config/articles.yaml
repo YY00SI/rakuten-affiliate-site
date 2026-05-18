@@ -644,7 +644,7 @@ articles:
     name: 音漏れの少なさ
   analysis_insight: オーディオグラスの成否は、音質そのものよりも「普通のメガネとして違和感なく使えるか」と「周囲への音漏れをどこまで物理的に抑制できているか」の2点に集約されます。スマート機能のためにファッション性を犠牲にする時代は終わり、現在は「日常に溶け込みつつ、自分にだけ通知が届く」という体験の質が問われています。
   products_extra:
-  - keyword: MateView
+  - keyword: HUAWEI
     best_for: 普通のメガネとして日常使いしたいミニマリスト
     scores:
       design: 5.0
@@ -3099,13 +3099,12 @@ articles:
   analysis_insight: >
     ウルトラワイド選びの失敗は「画面が平ら（平面）で、端の方を見ると文字が遠くて疲れる」というケースです。34インチ以上の横幅なら、自分を包み込む「曲面（カーブ）ディスプレイ」を選ぶのが鉄則。さらに「USB-Cケーブル1本でPCの充電と映像出力が完了するか」が、デスクの美しさを決定づけます。
   qa_config:
-    min_price: 50000
+    min_price: 40000
     genre_id: '100026'
+    allow_used: true
     required_words:
-      - ワイド
       - モニター
     forbidden_words:
-      - 中古
       - 訳あり
       - ジャンク
       - ふるさと納税
@@ -3115,8 +3114,8 @@ articles:
       - スタンドのみ
       - レンタル
   rakuten_params:
-    keyword: Dell モニター, LG ウルトラワイド, BenQ モニター, HUAWEI モニター
-    hits: 20
+    keyword: ウルトラワイドモニター, Dell ウルトラワイド モニター, LG ウルトラワイド, HUAWEI MateView
+    hits: 30
     sort: -reviewCount
   test_criteria:
     - id: workspace
@@ -3168,7 +3167,7 @@ articles:
       critical_cons: デスクに置くとかなりの圧迫感があり、最低でも奥行き70cm以上のデスクが必要です。
       maintenance_reality: 重量が約13kgあるため、モニターアームを使う場合はエルゴトロンHXなどの耐荷重が強い高級モデルが必要です。
       cost_performance: 「高級スピーカー」と「巨大モニター」をセットで買うと考えれば、15万円台の価格にも納得のエンタメ体験が得られます。
-    - keyword: MateView
+    - keyword: HUAWEI
       best_for: デスク上にスピーカーを置きたくないが、音質とデザインにはこだわりたい方
       scores:
         workspace: 4.5

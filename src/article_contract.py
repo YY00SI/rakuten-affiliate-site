@@ -39,8 +39,13 @@ def get_discouraged_eye_catch_hosts():
 def merged_forbidden_words(article):
     qa_config = article.get("qa_config", {})
     article_terms = qa_config.get("forbidden_words", []) or []
+    global_terms = get_global_forbidden_terms()
+    
+    if qa_config.get("allow_used", False):
+        global_terms = [t for t in global_terms if t != "中古"]
+
     merged = []
-    for term in article_terms + get_global_forbidden_terms():
+    for term in article_terms + global_terms:
         if term and term not in merged:
             merged.append(term)
     return merged
