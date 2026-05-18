@@ -644,7 +644,7 @@ articles:
     name: 音漏れの少なさ
   analysis_insight: オーディオグラスの成否は、音質そのものよりも「普通のメガネとして違和感なく使えるか」と「周囲への音漏れをどこまで物理的に抑制できているか」の2点に集約されます。スマート機能のためにファッション性を犠牲にする時代は終わり、現在は「日常に溶け込みつつ、自分にだけ通知が届く」という体験の質が問われています。
   products_extra:
-  - keyword: HUAWEI
+  - keyword: MateView
     best_for: 普通のメガネとして日常使いしたいミニマリスト
     scores:
       design: 5.0
@@ -2160,7 +2160,7 @@ articles:
   title: 【2026年最新】ドラム式洗濯機 厳選3選｜乾燥機能とメンテの手間を比較
   meta_description: パナソニック、日立、東芝の最高峰ドラム式洗濯機を徹底比較。ヒートポンプ乾燥の仕上がりと、フィルター自動お掃除機能の違いを検証。
   rakuten_params:
-    keyword: パナソニック ドラム式洗濯乾燥機, 日立 ビッグドラム, 東芝 ZABOON
+    keyword: パナソニック ドラム式洗濯乾燥機, 日立 ドラム式洗濯機, 東芝 ZABOON
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -2184,7 +2184,7 @@ articles:
     critical_cons: 本体価格が約30万円と非常に高価です。また、サイズが大きく搬入経路の確認が必須です。
     maintenance_reality: 毎回必要だったフィルター清掃が、月1回糸くずフィルターを捨てるだけになり、劇的に楽です。
     cost_performance: 洗濯干しとフィルター掃除の時間をゼロにできるため、数年で元が取れる最強の時短家電です。
-  - keyword: 日立 ビッグドラム
+  - keyword: 日立
     best_for: アイロンがけの手間を極限まで減らしたい、シャツやシワになりやすい服が多い方
     scores:
       dry_quality: 5.0
@@ -2606,7 +2606,7 @@ articles:
       - 洗剤のみ
       - レンタル
   rakuten_params:
-    keyword: WINBOT, HOBOT-2S, HOBOT-388
+    keyword: WINBOT, HOBOT-2S, HOBOT
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -2645,7 +2645,7 @@ articles:
       critical_cons: 車の排気ガスなど、長期間放置された極端に頑固な油汚れには、事前の手拭きアシストが必要です。
       maintenance_reality: 洗剤は専用のものを使用。クロスの予備が複数枚入っているためローテーションが楽です。
       cost_performance: 専門メーカーの技術が詰まっており、日々の窓の透明度を保つ「タイパ」は非常に優秀です。
-    - keyword: HOBOT-388
+    - keyword: HOBOT
       best_for: 泥や花粉など、比較的頑固な汚れを円形パッドの摩擦でしっかり落としたい方
       critical_cons: パッドが丸いため、物理的に窓の四隅には数センチの拭き残しが発生します。
       maintenance_reality: 汚れたパッドの洗濯が必要です。円形なので手もみ洗いもしやすいです。
@@ -2759,7 +2759,7 @@ articles:
   title: 【2026年最新】電動昇降デスク 厳選3選｜腰痛と生産性を決める脚の選び方
   intro: >
     「安い昇降デスクを買ったら、タイピングのたびにモニターが揺れて酔いそうになった」という失敗談は後を絶ちません。昇降デスクの本質は「モーターの静音性」ではなく、高さを上げた時の「物理的な揺れの少なさ（剛性）」にあります。本記事では、実績十分のFlexiSpotの主力モデルと、天板の美しさにこだわるインテリア特化ブランドまで、長く使える3台を徹底比較します。
-  meta_description: FlexiSpot E7やKANADEMONOなど、テレワークの腰痛対策に必須の電動昇降デスクを徹底解析。モニターが揺れない「脚の剛性」や「障害物検知機能」、天板のカスタマイズ性を比較し、失敗しない仕事環境の構築をサポートします。
+  meta_description: FlexiSpot E7や山善 昇降デスクなど、テレワークの腰痛対策に必須の電動昇降デスクを徹底解析。モニターが揺れない「脚の剛性」や「障害物検知機能」、天板のカスタマイズ性を比較し、失敗しない仕事環境の構築をサポートします。
   analysis_insight: >
     昇降デスク選びで一番後悔するのは「脚の形状（コの字型かエの字型か）」と「耐荷重」を妥協した時です。モニターアームや重いPCを乗せた状態でスタンディングモード（高さ100cm以上）にすると、安価なシングルモーター機は信じられないほど揺れます。最低でもデュアルモーター、できれば支柱が太いモデルを選ぶのが鉄則です。
   qa_config:
@@ -2779,7 +2779,7 @@ articles:
       - キャスターのみ
       - マット
   rakuten_params:
-    keyword: FlexiSpot E7, FlexiSpot E8, KANADEMONO 昇降デスク
+    keyword: FlexiSpot E7, FlexiSpot E8, 山善 昇降デスク 昇降デスク
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -2818,7 +2818,7 @@ articles:
       critical_cons: 性能はE7とほぼ同じですが、デザイン料として数千円の価格差が上乗せされています。
       maintenance_reality: 支柱にホコリが乗りにくい（角がないため）という地味なメリットがあります。
       cost_performance: スペック重視ならE7ですが、部屋の景観（毎日見るもの）への投資としてE8を選ぶ人は非常に多いです。
-    - keyword: KANADEMONO
+    - keyword: 山善
       best_for: 「機能美」だけでなく、無垢材やリノリウムなどの「本物の素材」にこだわりたい方
       scores:
         stability: 4.5
@@ -2864,7 +2864,7 @@ articles:
       - パーツ
       - レンタル
   rakuten_params:
-    keyword: Tineco FLOOR ONE S5, Dreame H12 Pro, Roborock Dyad Pro
+    keyword: Tineco FLOOR ONE S5, Dreame H12 Pro, Roborock
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -2909,7 +2909,7 @@ articles:
         cleaning_power: 5.0
         edge_cleaning: 4.5
         self_cleaning: 4.8
-      analysis_why: Roborock Dyad Proは、3つのローラーが互いに逆回転する複雑な構造により、汚れを内側に巻き込んで強力に削り取ります。洗浄力は間違いなくNo.1です。
+      analysis_why: Roborockは、3つのローラーが互いに逆回転する複雑な構造により、汚れを内側に巻き込んで強力に削り取ります。洗浄力は間違いなくNo.1です。
       pros:
         - 3ローラーによる圧倒的な摩擦力と汚れ除去能力
         - 専用洗剤を本体にセットすれば自動投入される機能
@@ -3115,7 +3115,7 @@ articles:
       - スタンドのみ
       - レンタル
   rakuten_params:
-    keyword: Dell ウルトラワイドモニター, LG ウルトラワイドモニター, BenQ ウルトラワイドモニター, HUAWEI ウルトラワイドモニター
+    keyword: Dell ウルトラワイド, LG ウルトラワイド, BenQ ウルトラワイド, MateView GT
     hits: 20
     sort: -reviewCount
   test_criteria:
@@ -3168,7 +3168,7 @@ articles:
       critical_cons: デスクに置くとかなりの圧迫感があり、最低でも奥行き70cm以上のデスクが必要です。
       maintenance_reality: 重量が約13kgあるため、モニターアームを使う場合はエルゴトロンHXなどの耐荷重が強い高級モデルが必要です。
       cost_performance: 「高級スピーカー」と「巨大モニター」をセットで買うと考えれば、15万円台の価格にも納得のエンタメ体験が得られます。
-    - keyword: HUAWEI
+    - keyword: MateView
       best_for: デスク上にスピーカーを置きたくないが、音質とデザインにはこだわりたい方
       scores:
         workspace: 4.5
