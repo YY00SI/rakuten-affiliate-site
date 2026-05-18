@@ -3115,7 +3115,7 @@ articles:
       - スタンドのみ
       - レンタル
   rakuten_params:
-    keyword: Dell ウルトラワイド, LG ウルトラワイド, BenQ ウルトラワイド, MateView GT
+    keyword: Dell モニター, LG ウルトラワイド, BenQ モニター, HUAWEI モニター
     hits: 20
     sort: -reviewCount
   test_criteria:
