@@ -1,21 +1,7 @@
 {
   "article_id": "projector-ranking",
-  "updated_at": "2026-05-18T23:50:14.759080",
+  "updated_at": "2026-05-24T11:36:46.781502",
   "items": [
-    {
-      "name": "Anker Nebula Cosmos 4K SE (Dolby Vision、Google TV搭載 4Kスマート ホームプロジェクター) 【4K / 1800ANSI ルーメン 高輝度 高画質 Netflix対応 自動台形補正 最大200インチ 家庭用 最大24ヶ月保証 ネビュラ コスモス 4K SE】",
-      "price": 199900,
-      "url": "https://hb.afl.rakuten.co.jp/hgc/g00rr09n.1a2pr38f.g00rr09n.1a2ps726/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fd2342%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fanker%2Fi%2F10002115%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
-      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rr09n.1a2pr38f.g00rr09n.1a2ps726/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fd2342%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fanker%2Fi%2F10002115%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
-      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/11895093/d2342_normal.jpg",
-      "reviewCount": 10,
-      "reviewAverage": 4.5,
-      "quality_score": 4.59,
-      "offer_score": 4.59,
-      "shopName": "アンカー・ダイレクト楽天市場店",
-      "caption": "映像美を追求した4Kプロジェクターだからこそ実現する、憧れだったホームシアターを。 4Kの圧倒的な解像度 3840 × 2160画素の高解像度 まるで映画館にいるかのような体験を自宅で。 Dolby Visionで、ワンランク上の映像体験を 約40倍の明るさと約50倍のコントラストで (※) 優れた映像の再現性を持つDolby Vision対応のコンテンツを、映像本来の美しさでお楽しみいただけます。 ※SDR（スタンダードダイナミックレンジ）映像技術との比較 Nebula初ハイブリッド光源。より明るく、より鮮やかに レーザーとLED光源を組み合わせたハイブリッドビーム技術を採用。1800ANS",
-      "is_major": true
-    },
     {
       "name": "【ポイント10倍】 XGIMI プロジェクタ HORIZON Ultra [パネルタイプ：DLP パネル画素数：3840x2160 最大輝度：2300ルーメン] 【P10倍】",
       "price": 277640,
@@ -28,7 +14,58 @@
       "offer_score": 0.0,
       "shopName": "YOUPLAN",
       "caption": "★発送詳細★ご注文後に、確認のメールを送信致します。在庫状況により、お届までお時間をいただく場合がございます。大型商品（例：液晶テレビ47インチ以上など）の発送は代金引換便はお受けできません。大型商品は運送会社の都合等により発送・配達にお時間がかかる場合があります。大型商品・クリックポスト等　商品によっては　日時指定をお受けできない場合があります。予めご承知願います。お届け先が法人の場合、ご指定時間帯にお届けできない場合があります。予めご承知願います。★お支払★下記のお支払い方法が可能でございます。詳しくは、お支払方法のページをご覧下さい。銀行振込・代金引換・クレジットカードからお選びいただけ",
-      "is_major": true
+      "is_major": true,
+      "source_query": "HORIZON Ultra",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "HORIZON Ultra"
+    },
+    {
+      "name": "Anker Nebula Cosmos Laser 4K レーザー光源 4K（3840×2160）最大投影サイズ：150インチ Android TV 対応 HDR10対応 自動台形補正機能 オートフォーカス スクリーンフィット機能 Black+Gray D23505F2 [ブラック]",
+      "price": 249900,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00trgdn.1a2pr41e.g00trgdn.1a2psa4d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ficockaden%2Fd23505f2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ficockaden%2Fi%2F10006157%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00trgdn.1a2pr41e.g00trgdn.1a2psa4d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ficockaden%2Fd23505f2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ficockaden%2Fi%2F10006157%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/icockaden/cabinet/202603/imgrc0209798603.jpg",
+      "reviewCount": 0,
+      "reviewAverage": 0.0,
+      "quality_score": 0.0,
+      "offer_score": 0.0,
+      "shopName": "家電問屋 楽天市場店",
+      "caption": "商品情報商品状態◆新品アンカー Anker ホームプロジェクター Nebula Cosmos Laser 4K レーザー光源 4K（3840×2160） 2200ANSIルーメン 最大投影サイズ：150インチ Android TV 対応ドングル付属 HDR10対応 自動台形補正機能 オートフォーカス スクリーンフィット機能Nebula Cosmos Laser 4K D23505F2 [ブラック]レーザー光源の圧倒的な明るさ4Kの高クオリティ映像迫力のサウンド幅広い対応アプリと高い操作性配属品パッケージ内容Nebula Cosmos Laser 4K、Nebula 4K Streaming D",
+      "is_major": true,
+      "source_query": "Nebula Cosmos",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "Nebula Cosmos"
     }
-  ]
+  ],
+  "hidden_gem_candidates": [
+    {
+      "name": "【本日限定5倍+12000円OFF】 カベーニPRO2 2026モデル フルHD モバイル プロジェクター 小型 ワイヤレス 天井 ホームシアター 家庭用 コンパクト プロジェクター Bluetooth スマホ WiFi HDMI DVD ビジネス モバイルプロジェクター 小型プロジェクター ホームプロジェクター",
+      "price": 84800,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00t1d5n.1a2prab7.g00t1d5n.1a2ps594/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fueno-mono%2Fkabeni-pro2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fueno-mono%2Fi%2F10000046%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00t1d5n.1a2prab7.g00t1d5n.1a2ps594/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fueno-mono%2Fkabeni-pro2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fueno-mono%2Fi%2F10000046%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/ueno-mono/cabinet/09545219/09629925/imgrc0086021431.jpg",
+      "reviewCount": 689,
+      "reviewAverage": 4.68,
+      "quality_score": 11.12904,
+      "offer_score": 11.12904,
+      "shopName": "おしゃれx健康x時短家電 UENO-mono",
+      "caption": "【一人でも家族でも楽しめる】KAB&#274;NI(カベーニ)は「スマホの画面から目を解放する」をコンセプトに開発された商品です。いつもより少し視線を上げて、別世界をお楽しみください。 【持ち運べるプロジェクター】 手のひらサイズ・アプリ内蔵・バッテリー内蔵だから、お部屋間の持ち歩きはもちろん、外出先にも気軽に持っていけます。キャンプ、グランピング、友人宅、実家、推し活、プレゼンなど多方面で活躍中。 【YouTube好きにはたまらない】いつもスマートフォンで見ているYouTubeを、壁に投影するだけで特別感が生まれます。 【映画やアニメも】YouTubeの他 Netflixが最初からインストー",
+      "is_major": false,
+      "source_query": "家庭用プロジェクター",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "家庭用プロジェクター"
+    }
+  ],
+  "candidate_summary": {
+    "query_count": 3,
+    "raw_item_count": 67,
+    "candidate_count": 43,
+    "major_brand_count": 13,
+    "hidden_gem_count": 1,
+    "queries": [
+      "HORIZON Ultra",
+      "Nebula Cosmos",
+      "家庭用プロジェクター"
+    ]
+  }
 }

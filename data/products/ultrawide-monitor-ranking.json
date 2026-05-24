@@ -1,6 +1,6 @@
 {
   "article_id": "ultrawide-monitor-ranking",
-  "updated_at": "2026-05-18T23:51:42.703415",
+  "updated_at": "2026-05-24T11:38:47.170078",
   "items": [
     {
       "name": "【中古】（非常に良い）HUAWEI MateView 28.2インチ 4K+ ウルトラHD モニター 3年き ワイヤレス IPS液晶(視野角178°) 非光沢 HDR400 タッチ式OSD ミスティックシルバー",
@@ -14,35 +14,44 @@
       "offer_score": 0.0,
       "shopName": "IINEX",
       "caption": "【中古】（非常に良い）HUAWEI MateView 28.2インチ 4K+ ウルトラHD モニター 3年き ワイヤレス IPS液晶(視野角178°) 非光沢 HDR400 タッチ式OSD ミスティックシルバー「日本店」【メーカー名】【メーカー型番】【ブランド名】HUAWEI(ファーウェイ)【商品説明】HUAWEI MateView 28.2インチ 4K+ ウルトラHD モニター 3年き ワイヤレス IPS液晶(視野角178°) 非光沢 HDR400 タッチ式OSD ミスティックシルバー「日本店」こちらの商品は中古品となっております。 画像はイメージ写真ですので 商品のコンディション・付属品の",
-      "is_major": true
+      "is_major": true,
+      "source_query": "HUAWEI MateView",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "HUAWEI"
     },
     {
-      "name": "LGエレクトロニクス LG 34U530A-W LG UltraWide Monitor 34型 UWFHDウルトラワイドモニター 34U530AW",
-      "price": 42051,
-      "url": "https://hb.afl.rakuten.co.jp/hgc/g00pkshn.1a2pr2ed.g00pkshn.1a2psc9b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Febest%2F4989027030374%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Febest%2Fi%2F12849863%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
-      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00pkshn.1a2pr2ed.g00pkshn.1a2psc9b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Febest%2F4989027030374%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Febest%2Fi%2F12849863%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
-      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/ebest/cabinet/478/4989027030374.jpg",
+      "name": "数量限定【オフィス付き★送料無料!】超強力RTX5060★ゲーミングPC !！ 中古 デスクトップ 新品SSD メモリ16GB 新品グラフィックボード Windows11 ゲーミングモニターセット 原神 マインクラフト 影MOD対応 フォートナイト APEX FPS ゲーム 動画配信 中古ゲーミング セール",
+      "price": 149800,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00qjltn.1a2pr638.g00qjltn.1a2psaa9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fused-pcshop%2Frx-94-m22%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fused-pcshop%2Fi%2F10043148%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00qjltn.1a2pr638.g00qjltn.1a2psaa9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fused-pcshop%2Frx-94-m22%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fused-pcshop%2Fi%2F10043148%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/used-pcshop/cabinet/09728896/rtx5060_apex.jpg",
+      "reviewCount": 249,
+      "reviewAverage": 4.41,
+      "quality_score": 6.60618,
+      "offer_score": 6.60618,
+      "shopName": "中古パソコンのUSED-PC",
+      "caption": "★RTX4060よりさらに高性能★ RTX5060搭載！ 色んなゲームが快適動作！ ■大容量SSD・大容量メモリ！ ■動作確認済！30日保証付き！ 詳細スペック 機種 【メーカーやカラーは店長おまかせ】 LENOVO/DELL/HPなどの有名メーカーでお届け ※写真はイメージです。 ※ミドルタワー型/ミニタワー型などいずれか 共通スペック OS Windows11 (64bit) リカバリー（アップグレード)済みなのですぐにお使いいただけます。 （プロダクトシール付き、リカバリディスクはありません) ※インストールするゲームやアプリがOSに対応しているかご確認の上選択してください。 新品グラフ",
+      "is_major": false,
+      "source_query": "モニター",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "Dell"
+    },
+    {
+      "name": "LGエレクトロニクス(LG) 34WR55QK-B LG UltraWide 34型 UWQHDウルトラワイド曲面モニター",
+      "price": 54243,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00skfbn.1a2pr88c.g00skfbn.1a2psd06/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonesmart%2F4989027028739%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonesmart%2Fi%2F10175167%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00skfbn.1a2pr88c.g00skfbn.1a2psd06/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonesmart%2F4989027028739%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonesmart%2Fi%2F10175167%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/onesmart/cabinet/9103/4989027028739.jpg",
       "reviewCount": 1,
-      "reviewAverage": 1.0,
-      "quality_score": 1.002,
-      "offer_score": 1.002,
-      "shopName": "イーベストPC・家電館",
-      "caption": "↑↑↑正確な在庫状況は上記バナー「在庫状況を確認する」をクリックして頂き、必ずご確認ください。 長期保証をご希望のお客様は下記の表より「商品＋長期保証」のページへ移動してご注文ください。※長期保証は法人加入や業務使用、譲渡や再販はご利用いただけません。 ■通常のモニターの33%横長な画面と2560×1080の高解像度が効率的な作業性を提供。二つのソフトウェアを左右に並列処理させての作業や、Excelなどを全画面表示させて、多くの情報を表示させるなど、一般的な縦横比16:9のモニターよりも快適な作業空間を実現します。 ■アスペクト比21:9はシネスコサイズの映画とほぼ同じ縦横比です。16:9で表",
-      "is_major": false
-    },
-    {
-      "name": "【中古】「ほぼ新品」DELL デジタルハイエンドシリーズ 34インチ 曲面 ウルトラワイドモニタ U3415W",
-      "price": 690228,
-      "url": "https://hb.afl.rakuten.co.jp/hgc/g00tnhwn.1a2pr9da.g00tnhwn.1a2ps741/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fomatsuri-life2%2Fssb01hi98zzm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fomatsuri-life2%2Fi%2F10938685%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
-      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tnhwn.1a2pr9da.g00tnhwn.1a2ps741/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fomatsuri-life2%2Fssb01hi98zzm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fomatsuri-life2%2Fi%2F10938685%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
-      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/omatsuri-life2/cabinet/20200719-1/b01hi98zzm.jpg",
-      "reviewCount": 0,
-      "reviewAverage": 0.0,
-      "quality_score": 0.0,
-      "offer_score": 0.0,
-      "shopName": "オマツリライフ別館",
-      "caption": "【中古】DELL デジタルハイエンドシリーズ 34インチ 曲面 ウルトラワイドモニタ U3415W【メーカー名】【メーカー型番】【ブランド名】ノーブランド品【商品説明】この度は当商品をご覧いただき、誠にありがとうございます。商品状態について使用感がほとんどない良好なコンディションです。外観は非常にきれいな状態です。初期不良について当店では、商品到着後1週間以内にご連絡をいただいた初期不良につきましては、返品・交換・修理にて対応させていただいております。万が一不具合がございました場合は、お早めにご連絡ください。商品の色味についてお使いのモニター設定やお部屋の照明環境等により、実際の商品と色味が異",
-      "is_major": false
+      "reviewAverage": 4.0,
+      "quality_score": 4.008,
+      "offer_score": 4.008,
+      "shopName": "ワンズマート楽天市場店",
+      "caption": "▼サービスのご案内 長期保証をご希望のお客様は下記の表より「商品＋長期保証」のページへ移動してご注文ください。※長期保証は法人加入や業務使用、譲渡や再販はご利用いただけません。長期保証について家電は5年間の保証となります。 ▼長期保証について▼ ■21:9 WQHD(3440x1440)の大画面を1800Rの曲面で1箇所から見やすく■2台のPCやAV機器を一つの画面上に表示できるPBP(ピクチャーバイピクチャー)対応。一つのマウス、キーボードで2台のPCの操作も■最大65WのPDに対応したUSB Type-Cポート搭載。ノートパソコンとケーブル1本ですっきり接続■ご購入後のお問い合わせにつきま",
+      "is_major": false,
+      "source_query": "LG ウルトラワイド",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "LG"
     },
     {
       "name": "【中古】ベンキュージャパン BenQ MOBIUZ EX3415R ウルトラワイドモニター (34インチ/21:9/湾曲率1900R/IPS/3440x1440/144Hz/1ms/HDRi/HDR400/FreeSync P",
@@ -56,7 +65,111 @@
       "offer_score": 0.0,
       "shopName": "スカーレット2021",
       "caption": "【中古】ベンキュージャパン BenQ MOBIUZ EX3415R ウルトラワイドモニター (34インチ/21:9/湾曲率1900R/IPS/3440x1440/144Hz/1ms/HDRi/HDR400/FreeSync Premium/PIP/PBP 2.1ch treVoloスピーカー/高機能スタンド/リモコン付属/ゲームモード(FPS/RPG/レーシング)【メーカー名】【メーカー型番】【ブランド名】ベンキュージャパン ディスプレイ 【商品説明】ベンキュージャパン BenQ MOBIUZ EX3415R ウルトラワイドモニター (34インチ/21:9/湾曲率1900R/IPS/3440x",
-      "is_major": false
+      "is_major": false,
+      "source_query": "ウルトラワイドモニター",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "BenQ"
     }
-  ]
+  ],
+  "hidden_gem_candidates": [
+    {
+      "name": "【P10倍★豪華特典★正規ストア】 ベビーモニター CuboAi 第3世代 ベビーセンサー キューボai 見守りカメラ 赤ちゃん カメラ モニター スマホ 安全 寝返り 防止 センサー ベビーアラーム ベビーカメラ Cubo Ai キューボ エーアイ プラス",
+      "price": 45800,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00trwwn.1a2pra8d.g00trwwn.1a2ps9ec/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjustrich%2Fcubo-ai-plus%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjustrich%2Fi%2F10001404%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00trwwn.1a2pra8d.g00trwwn.1a2ps9ec/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjustrich%2Fcubo-ai-plus%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjustrich%2Fi%2F10001404%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/justrich/cabinet/cubo-ai-plus/imgrc0129603693.jpg",
+      "reviewCount": 496,
+      "reviewAverage": 4.51,
+      "quality_score": 8.98392,
+      "offer_score": 8.98392,
+      "shopName": "Colulu - コルル",
+      "caption": "限定クーポン公開中 【2026年最新モデル】エアラブ5 ベビーアラームと一緒に使ってより安全！ 商品情報 商品紹介 世界初のAI技術でお子様の睡眠・安全を共に守りながら 赤ちゃんの成長・ご家族の思い出に寄り添います。 商品詳細 【赤ちゃんの安全を見守る機能】 ・顔覆われアラート（ガーゼ・毛布などによる顔覆われ防止アラート）、寝返りアラート ・赤ちゃんが泣くとお知らせする泣き声アラート ・咳込みをお知らせする咳検出アラート ・専門家のアドバイスに基づく温度＆湿度センサー通知 ・ハイハイする赤ちゃんが危険エリアに入るとお知らせする危険エリア侵入アラート ・スマートホーム対応で、家のどこでも赤ちゃん",
+      "is_major": false,
+      "source_query": "モニター",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "モニター"
+    },
+    {
+      "name": "累計出荷台数1000台突破！ゲーミングPC デスクトップパソコン GeForce RTX2060 22型液晶モニター 第12世代 Intel Core i5 12400F Windows11 NVMe M.2 SSD256GB メモリ16GB ゲーミングパソコン",
+      "price": 99800,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00txpdn.1a2pr9a4.g00txpdn.1a2ps8f3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkrdirect%2Fgaming_blacktower_gtx1650_i3%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkrdirect%2Fi%2F10001694%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00txpdn.1a2pr9a4.g00txpdn.1a2ps8f3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkrdirect%2Fgaming_blacktower_gtx1650_i3%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkrdirect%2Fi%2F10001694%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/krdirect/cabinet/newpc/gaming/g_monitor_xx2026.jpg",
+      "reviewCount": 396,
+      "reviewAverage": 4.62,
+      "quality_score": 8.27904,
+      "offer_score": 8.27904,
+      "shopName": "KRダイレクト",
+      "caption": "型番 PASOUL 煌 GBK OS Windows11 CPU 【第12世代 Intel Core i5 12400F】 動作周波数：2.50GHz ターボ・ブースト利用時の最大周波数：4.40GHz 18M キャッシュ コア数：6コア スレッド数：12スレッド RAM 16GB 型番：DDR4-3200（PC4-25600) HDD/SSD NVMe M.2 SSD256GB 転送速度 2300 MB/S 光学ドライブ 無し 外付けマルチドライブ　（+4,000円） ネットワーク LANポート グラフィックボード 【nVIDIA GeForce RTX2060】 (整備済品) ブーストクロ",
+      "is_major": false,
+      "source_query": "モニター",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "モニター"
+    },
+    {
+      "name": "★楽天1位★ 防犯カメラ 屋外 野外 家庭用 家庭用屋外 最大 4K 800万画素 防犯カメラ屋外 防犯カメラセット 家庭用セット wifi Wi-Fi スマホ連動 モニター付き 録画機能付き 屋外用 屋内 監視カメラ 工事不要 4台 セット 防犯アラーム 熊よけ 【返金保証】【RE】 [ZXL0002]",
+      "price": 42800,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00u00qn.1a2prd05.g00u00qn.1a2psa79/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoyoryohin%2Fhiseeu-zxl0002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftoyoryohin%2Fi%2F10000025%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00u00qn.1a2prd05.g00u00qn.1a2psa79/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoyoryohin%2Fhiseeu-zxl0002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftoyoryohin%2Fi%2F10000025%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/toyoryohin/cabinet/thum/coupon/zxl0002.jpg",
+      "reviewCount": 350,
+      "reviewAverage": 4.42,
+      "quality_score": 7.513999999999999,
+      "offer_score": 7.513999999999999,
+      "shopName": "防犯カメラ専門店東洋良品",
+      "caption": "屋外家庭用防犯カメラセットのよくあるご質問 パソコンからでも、遠隔で映像を視聴することはできますか？ はい、専用アプリを使用し映像を視聴することができます。 ワイヤレスカメラを有線LANで接続することはできますか？ いいえ、ワイヤレスカメラを有線LANで繋ぐことはできません。 屋外家庭用防犯カメラセットはワイヤレス接続・簡単操作 ワイヤレスの防犯カメラですので、設置が簡単で配線工事が不要です。 IPカメラとレコーダーの電源を入れるだけで自動にコードをマッチングしますので、ローカル監視する場合、インタネット接続なしに監視や再生が可能です。 遠隔操作する場合はLANケーブルでNVRシステムとホーム",
+      "is_major": false,
+      "source_query": "モニター",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "モニター"
+    },
+    {
+      "name": "【完全無線 ソーラー防犯カメラ】防犯カメラ ワイヤレス 屋外 WiFi対応 工事不要 配線不要 モニター付き 防犯カメラセット 監視カメラ 双方向通話 AI人体検知 PIRセンサー 赤外線暗視 家庭用 防水 遠隔監視 スマホ対応 ソーラー充電",
+      "price": 46999,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00u59hn.1a2prdb4.g00u59hn.1a2psf00/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyusu21%2Fosx--jpi10-tyn4002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyusu21%2Fi%2F10000143%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00u59hn.1a2prdb4.g00u59hn.1a2psf00/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyusu21%2Fosx--jpi10-tyn4002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyusu21%2Fi%2F10000143%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yusu21/cabinet/11839756/11856613/11856623/imgrc0118208917.jpg",
+      "reviewCount": 232,
+      "reviewAverage": 4.64,
+      "quality_score": 6.792959999999999,
+      "offer_score": 6.792959999999999,
+      "shopName": "oossxx防犯カメラ楽天市場店",
+      "caption": "商品情報商品特徴【完全無線・工事不要のソーラー防犯カメラ】ソーラー充電対応の完全無線タイプ。面倒な配線工事は不要、屋外でも簡単に設置できます。電気代を気にせず、家庭・駐車場・店舗・倉庫など様々な場所で活躍します。【10インチモニター付きで初心者でも安心】IPS液晶搭載の10インチモニター付き。スマホだけでなく、大画面でも映像確認が可能です。HDMI出力にも対応しています。【400万画素高画質＆130°広角撮影】高画質400万画素カメラを採用。細部まで鮮明に録画でき、130°広角レンズで広範囲をしっかり監視します。【AI人体検知＆PIR二重検知】AI人体検知とPIRセンサー搭載。人の動きを検知す",
+      "is_major": false,
+      "source_query": "モニター",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "モニター"
+    },
+    {
+      "name": "【標準★2TB(1年半保証)】WTW 塚本無線 防犯カメラ ワイヤレス 屋外 セット wifi 無線 16インチ 12インチ 防犯カメラセット 家庭用 監視カメラセット 録画機 ネット環境 なし 不要 4台 ディスプレイ一体型工事不要 防水 Birdie モニター付き",
+      "price": 59998,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00qo77n.1a2pr5d5.g00qo77n.1a2ps6c1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwtw-cctv-camera%2Fwtw-par%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwtw-cctv-camera%2Fi%2F10001566%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00qo77n.1a2pr5d5.g00qo77n.1a2ps6c1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwtw-cctv-camera%2Fwtw-par%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwtw-cctv-camera%2Fi%2F10001566%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/wtw-cctv-camera/cabinet/birdie/imgrc0180815794.jpg",
+      "reviewCount": 242,
+      "reviewAverage": 4.41,
+      "quality_score": 6.54444,
+      "offer_score": 6.54444,
+      "shopName": "WTW 塚本無線",
+      "caption": "【ご注意】 ※CMSを利用したリアルタイム監視の際は、サーバーの混雑を防ぐため約10分で接続が自動的に切断する仕様となります。 モニター一体型録画機と無線カメラのセットPar/Birdie特集 無線で繋がる防犯カメラ&amp;モニターセット特集 無線接続で配線工事不要のカメラ＆録画機セット。 カメラは20種類以上のバリエーションから選択可能で、防犯灯・パンチルト・光学ズーム・寒冷地仕様など多彩なラインナップを揃えています。最大16台まで接続でき、大規模な監視システム構築にも対応。 録画機はモニター一体型で、12インチ・16インチから選択可能。無線接続のため設置が簡単で、中継機能を利用すれば最大",
+      "is_major": false,
+      "source_query": "モニター",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "モニター"
+    }
+  ],
+  "candidate_summary": {
+    "query_count": 5,
+    "raw_item_count": 113,
+    "candidate_count": 90,
+    "major_brand_count": 15,
+    "hidden_gem_count": 5,
+    "queries": [
+      "ウルトラワイドモニター",
+      "Dell ウルトラワイド モニター",
+      "LG ウルトラワイド",
+      "HUAWEI MateView",
+      "モニター"
+    ]
+  }
 }

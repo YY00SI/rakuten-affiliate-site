@@ -1,6 +1,6 @@
 {
   "article_id": "electric-shaver-ranking",
-  "updated_at": "2026-05-18T23:50:45.413463",
+  "updated_at": "2026-05-24T11:37:29.162758",
   "items": [
     {
       "name": "【公式店】パナソニック ラムダッシュPRO 6枚刃 クラフトブラック ES-L690U-K 無料ギフトラッピング お風呂でも剃れる 全自動洗浄充電器付 ラムダッシュAI＋ 密着5Dヘッド USB充電(Type-C) 肌に優しい 深剃り シェーバー 黒 髭剃り 濃い髭 日本製 送料無料",
@@ -14,7 +14,10 @@
       "offer_score": 6.023999999999999,
       "shopName": "Panasonic Store Plus 楽天市場店",
       "caption": "＊ギフト包装ありを選択した場合、金額が記載された書類は入りませんので、そのままギフトとしてお渡しください。 光が導くラムダッシュAI ナビ。※1 深剃りと肌へのやさしさの両立へ。 ※1 ヒゲの濃さや、シェーバーヘッド内部のヒゲクズによって、センサーが反応（駆動音や光の色の変化）しない場合がありますが、異常ではありません。 ラムダッシュAI ナビ※1 ラムダッシュAI+※2&ナビLED ヒゲの状態に合わせて、最適なパワーコントロール。ヒゲが濃いときはBOOSTでパワフルに。ヒゲが薄いときはSOFTでやさしく。 ※1 ヒゲの濃さや、シェーバーヘッド内部のヒゲクズによって、センサーが反応（駆動音や光",
-      "is_major": true
+      "is_major": true,
+      "source_query": "ラムダッシュ 6枚刃",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "ラムダッシュ"
     },
     {
       "name": "ブラウン(BRAUN) 9310s アトリエブラック ブラウン シリーズ9 Sport+ 電気シェーバー",
@@ -28,11 +31,14 @@
       "offer_score": 5.01,
       "shopName": "ワンズマート楽天市場店",
       "caption": "▼サービスのご案内 長期保証をご希望のお客様は下記の表より「商品＋長期保証」のページへ移動してご注文ください。※長期保証は法人加入や業務使用、譲渡や再販はご利用いただけません。長期保証について家電は5年間の保証となります。 ▼長期保証について▼ ■異なる5つのカットシステムが融合し、寝たヒゲやくせヒゲを確実に捉え、一度で剃りきる■刃がしっかり浮き沈みし、肌への押しつけを和らげ、しっかり肌の凹凸にも密着。また、ヘッドが前後40°に動くことで、顔のあらゆる凹凸にも密着します■毎分1万回の振動が肌を震わせ、一度により多くのヒゲを1ストロークでとらえることで肌に余分な負担をかけず、効率的に深剃りします",
-      "is_major": true
+      "is_major": true,
+      "source_query": "ブラウン シリーズ9",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "ブラウン シリーズ9"
     },
     {
       "name": "【送料無料】 PHILIPS フィリップス S9000プレステージシリーズ メンズ電気シェーバー SP9840/32 メンズシェーバー S9000 回転式 自動洗浄機付 お風呂剃り シェーバー 髭剃り",
-      "price": 23900,
+      "price": 21000,
       "url": "https://hb.afl.rakuten.co.jp/hgc/g00rwjtn.1a2pr227.g00rwjtn.1a2psb25/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnttxstore%2Fqzx0031408%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnttxstore%2Fi%2F10005027%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rwjtn.1a2pr227.g00rwjtn.1a2psb25/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnttxstore%2Fqzx0031408%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnttxstore%2Fi%2F10005027%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/nttxstore/cabinet/12563235/8720689018791_01.jpg",
@@ -42,7 +48,110 @@
       "offer_score": 5.01,
       "shopName": "OCNオンラインショップ 楽天市場店",
       "caption": "※OCNオンラインショップ楽天市場店でご注文をいただいた商品については荷元（送付主）が「NTTドコモ」で送付されます。",
-      "is_major": false
+      "is_major": false,
+      "source_query": "フィリップス S9000",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "フィリップス S9000"
     }
-  ]
+  ],
+  "hidden_gem_candidates": [
+    {
+      "name": "【40%OFFクーポン利用で59,520円】5/19(火) 20:00～5/28(木) 23:59まで｜業界最高峰パワー 脱毛器・光美容器を手掛けるブラウン シルクエキスパート PL-5157 電動ボディシェーバー付(シルクエピル LS5160R1)｜正規品 Braun フラッシュ メンズ 光 医療機関テスト済み 男女兼用",
+      "price": 94800,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00t4o9n.1a2prdc4.g00t4o9n.1a2ps620/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbraun%2Fsilk-expert-pl-p817pk%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbraun%2Fi%2F10000849%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00t4o9n.1a2prdc4.g00t4o9n.1a2ps620/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbraun%2Fsilk-expert-pl-p817pk%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbraun%2Fi%2F10000849%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/braun/cabinet/event/2605/0519/260519_5157pk.jpg",
+      "reviewCount": 1045,
+      "reviewAverage": 4.44,
+      "quality_score": 13.32,
+      "offer_score": 13.32,
+      "shopName": "ブラウンビューティー公式ストア",
+      "caption": "脱毛器・光美容器を手掛けるBRAUN ブラウン 広告文責：株式会社いつも(0120-823-049) メーカー名：P&Gジャパン合同会社 ブランド名：ブラウン 原産国：イギリス 商品区分：美容機器 内容：本体、アダプター、電源コード、コンパクト（部分用)ヘッド、ポーチ(ボックスタイプ)、ジレットヴィーナス女性用カミソリ、レディーシェーバー（シルク・エピル LS5500R1） 電源方式：交流式 電圧：本体AC100-240V（50/60Hz） 型番：PL-5157 (5014、5117、5137、5227、5243、5248、5267、5268、5347、5387と同様の最新モデルのシルクエキス",
+      "is_major": true,
+      "source_query": "電動シェーバー",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "電動シェーバー"
+    },
+    {
+      "name": "【在庫限り!!】ブラウン 替刃 シリーズ9 92S(F/C90S F/C92S) 網刃・内刃一体型カセット シルバー 純正品 並行輸入品",
+      "price": 16800,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00t4yen.1a2prb00.g00t4yen.1a2ps67d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fredhill3dep%2F92s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fredhill3dep%2Fi%2F10000000%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00t4yen.1a2prb00.g00t4yen.1a2ps67d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fredhill3dep%2F92s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fredhill3dep%2Fi%2F10000000%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/redhill3dep/cabinet/92s/92s.jpg",
+      "reviewCount": 105,
+      "reviewAverage": 4.44,
+      "quality_score": 5.372400000000001,
+      "offer_score": 5.372400000000001,
+      "shopName": "レッドヒルデパート",
+      "caption": "BRAUN シリーズ9 網刃 内刃 一体型 カセット(替刃) 92S シルバー 適応機種をご確認の上ご購入ください。 適応機種 9070cc 9090cc 9095cc 9295cc 9260s 9290ccE4 9291cc 9292cc 9293s 9296cc 9297cc 9299s カラーが異なりますが以下の機種でもお使い頂けます、 9030s 9040s 9050cc 9075cc 9240S 9242s 9250cc 9280cc ※旧型番 F/C90S カラー：シルバー 原産国:ドイツ 交換目安:約18ヶ月 宅急便レベルのスピードで、追跡可能なネコポスでお届けいたします。",
+      "is_major": true,
+      "source_query": "ブラウン シリーズ9",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "ブラウン シリーズ9"
+    },
+    {
+      "name": "髭剃り 電動シェーバー メンズ 電動 フィリップス S5000シリーズ 回転式 充電式 S5889/10 防水 お風呂剃り 丸洗い 純正品 正規品 オイル差し不要 コードレス Philips 電気シェーバー",
+      "price": 19800,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00te1kn.1a2pr38c.g00te1kn.1a2psa68/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fphilips-japan%2Fs5588-30%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fphilips-japan%2Fi%2F10000292%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00te1kn.1a2pr38c.g00te1kn.1a2psa68/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fphilips-japan%2Fs5588-30%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fphilips-japan%2Fi%2F10000292%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/philips-japan/cabinet/item3/s5588-30.jpg",
+      "reviewCount": 108,
+      "reviewAverage": 4.35,
+      "quality_score": 5.289599999999999,
+      "offer_score": 5.289599999999999,
+      "shopName": "フィリップス公式オンラインストア",
+      "caption": "本体カラーエレクトリックブルー本体サイズ(H×W×D)約176 x 70 x 65 mm本体重量約205g電源方式充電式（リチウムイオン電池）充電時間 / 使用時間約1時間 ／ 約60分対応電圧DC5V(USB)同梱品本体シェービングユニット取扱説明書グローバル保証書延長保証リーフレット充電ケーブルクリーニングブラシソフトポーチ保護キャップ※充電アダプターは同梱されません機能・SkinIQテクノロジー・360-Dフレックスヘッドで剃り残しを少なく・毎分90,000回カットする45枚刃で色々な方向に生えているヒゲを効率的に取り込み、しっかり深剃り。・スーパーリフト＆カットテクノロジーで優しく、し",
+      "is_major": false,
+      "source_query": "電動シェーバー",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "電動シェーバー"
+    },
+    {
+      "name": "髭剃り 電動シェーバー メンズ 電動 フィリップス S7000シリーズ 回転式 充電式 S7886/50 防水 お風呂剃り 丸洗い 純正品 正規品 洗浄器付き オイル差し不要 コードレス アプリ連動 Philips 電気シェーバー",
+      "price": 27000,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00te1kn.1a2pr38c.g00te1kn.1a2psa68/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fphilips-japan%2Fs7786-50%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fphilips-japan%2Fi%2F10000294%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00te1kn.1a2pr38c.g00te1kn.1a2psa68/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fphilips-japan%2Fs7786-50%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fphilips-japan%2Fi%2F10000294%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/philips-japan/cabinet/item3/s7786-50.jpg",
+      "reviewCount": 70,
+      "reviewAverage": 4.57,
+      "quality_score": 5.209800000000001,
+      "offer_score": 5.209800000000001,
+      "shopName": "フィリップス公式オンラインストア",
+      "caption": "本体カラーブラック本体サイズ(H×W×D)約180 x 65 x 67 mm本体重量約200g電源方式充電式（リチウムイオン電池）充電時間 / 使用時間約1時間 ／ 約60分対応電圧DC5V(USB)同梱品シェーバー本体＋シェービングユニット取扱説明書グローバル保証書延長保証リーフレット充電ケーブルクリーニングブラシ収納ケースクイッククリーンポッドクイッククリーンポッドカートリッジ※充電アダプターは同梱されません機能・SkinIQテクノロジー・パワフルな切れ味とやさしさの両立・スーパーリフト＆カットテクノロジーで優しく、しっかり深剃り・ヒゲ密度感知システムできれいに深剃り・360-D フレック",
+      "is_major": false,
+      "source_query": "電動シェーバー",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "電動シェーバー"
+    },
+    {
+      "name": "髭剃り 電動シェーバー メンズ 電動 フィリップス S5000シリーズ 回転式 充電式 S5889/60 QCP10/01 防水 お風呂剃り 丸洗い 洗浄器付き 純正品 正規品 オイル差し不要 コードレス Philips 電気シェーバー",
+      "price": 20800,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00te1kn.1a2pr38c.g00te1kn.1a2psa68/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fphilips-japan%2Fs5586-50%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fphilips-japan%2Fi%2F10000293%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00te1kn.1a2pr38c.g00te1kn.1a2psa68/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fphilips-japan%2Fs5586-50%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fphilips-japan%2Fi%2F10000293%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/philips-japan/cabinet/item3/s5586-50.jpg",
+      "reviewCount": 42,
+      "reviewAverage": 4.43,
+      "quality_score": 4.80212,
+      "offer_score": 4.80212,
+      "shopName": "フィリップス公式オンラインストア",
+      "caption": "本体カラーエレクトリックブルー本体サイズ(H×W×D)約176 x 70 x 65 mm本体重量約205g電源方式充電式（リチウムイオン電池）充電時間 / 使用時間約1時間 ／ 約60分対応電圧DC5V(USB)同梱品本体シェービングユニット取扱説明書グローバル保証書延長保証リーフレット充電ケーブルクリーニングブラシソフトポーチ保護キャップクイッククリーンポッドクイッククリーンポッドカートリッジ※充電アダプターは同梱されません機能・SkinIQテクノロジー・360-Dフレックスヘッドで剃り残しを少なく・毎分90,000回カットする45枚刃で色々な方向に生えているヒゲを効率的に取り込み、しっかり",
+      "is_major": false,
+      "source_query": "電動シェーバー",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "電動シェーバー"
+    }
+  ],
+  "candidate_summary": {
+    "query_count": 4,
+    "raw_item_count": 120,
+    "candidate_count": 89,
+    "major_brand_count": 59,
+    "hidden_gem_count": 5,
+    "queries": [
+      "ブラウン シリーズ9",
+      "フィリップス S9000",
+      "ラムダッシュ 6枚刃",
+      "電動シェーバー"
+    ]
+  }
 }

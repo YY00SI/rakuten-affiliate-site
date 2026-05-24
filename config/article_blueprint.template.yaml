@@ -33,6 +33,8 @@
       - パーツ
   rakuten_params:
     keyword: ブランド名 型番A, ブランド名 型番B, ブランド名 型番C
+    discovery_keywords:
+      - PLACEHOLDER_CATEGORY_DISCOVERY_KEYWORD
     hits: 20
     sort: -reviewCount
   test_criteria:

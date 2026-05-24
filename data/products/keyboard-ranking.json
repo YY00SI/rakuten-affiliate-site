@@ -1,6 +1,6 @@
 {
   "article_id": "keyboard-ranking",
-  "updated_at": "2026-05-18T23:49:59.544657",
+  "updated_at": "2026-05-24T11:36:23.766072",
   "items": [
     {
       "name": "【Razer公式】 Razer Huntsman V3 Pro JP 日本語配列 有線 アナログオプティカルスイッチ搭載 ゲーミングキーボード # RZ03-04971300-R3J1 レーザー (キーボード)",
@@ -14,7 +14,10 @@
       "offer_score": 6.012,
       "shopName": "GAMING CENTER by GRAPHT",
       "caption": "●気になる商品ラピッドトリガー対応、光学式オプティカルキーボードe スポーツゲーミングキーボードの最高峰、Razer Huntsman V3 Pro。究極の速さを実現するラピッドトリガーモード、最先端のアナログオプティカルスイッチを搭載し、あなたのゲームプレイを一瞬で次の次元へ引き上げます。単にキーを驚異的な速さで連打するだけでなく、アクチュエーションの微調整も可能。これこそ、本当に自分だけのパフォーマンスを引き出すためのカスタマイズ体験です。■ 第2世代 RAZERTM アナログオプティカルスイッチ超高速連打を可能にするラピッドトリガー、0.1~4.0 mmの範囲で調整可能なアクチュエーショ",
-      "is_major": false
+      "is_major": false,
+      "source_query": "Huntsman V3 Pro",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "Huntsman V3 Pro"
     },
     {
       "name": "Wooting 60HE+ ノートパソコン ゲーミング キーボード ARM ANSI-US PBT Lekker Linear 60% 60キー US配列 ラビットトリガー アナログ入力 ショートカット切り替え 輸入品",
@@ -28,7 +31,23 @@
       "offer_score": 5.17,
       "shopName": "KKPL楽天市場店",
       "caption": "Wooting 60HE+ ノートパソコン ゲーミング キーボード ARM ANSI-US PBT Lekker Linear 60% 60キー US配列 ラビットトリガー 60HE アナログ入力 ショートカット切り替え 輸入品 13時までのご注文確定で当日発送、送料無料！ 【Wooting 60HE+ US配列】圧倒的な応答性能と快適な打鍵感を誇る本格派ゲーミングキーボードWooting独自のLekkerスイッチを採用した60HE+は、アナログ入力とラピッドトリガーによる高速応答を実現。FPSや音ゲーなどシビアな操作を求められるゲームで圧倒的なパフォーマンスを発揮します。・ラピッドトリガー搭",
-      "is_major": false
+      "is_major": false,
+      "source_query": "Wooting 60HE",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "Wooting 60HE"
     }
-  ]
+  ],
+  "hidden_gem_candidates": [],
+  "candidate_summary": {
+    "query_count": 3,
+    "raw_item_count": 90,
+    "candidate_count": 51,
+    "major_brand_count": 5,
+    "hidden_gem_count": 0,
+    "queries": [
+      "Huntsman V3 Pro",
+      "Wooting 60HE",
+      "メカニカルキーボード"
+    ]
+  }
 }

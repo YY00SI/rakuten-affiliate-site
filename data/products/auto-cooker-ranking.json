@@ -1,20 +1,23 @@
 {
   "article_id": "auto-cooker-ranking",
-  "updated_at": "2026-05-18T23:50:01.846421",
+  "updated_at": "2026-05-24T11:36:26.648655",
   "items": [
     {
-      "name": "【購入者全員に「カーボンマットミニ10枚」プレゼント】 KN-HW16H (-W) (-B) シャープ ホットクック ヘルシオ 1.6L 電気調理器 // SHARP 便利家電 人気 売れ筋 正規品 新品 自動調理器 自動調理鍋 メーカー保証あり 1.6L 電",
-      "price": 49500,
+      "name": "5/23 20:00〜 当店限定P5倍 × マラソン ◆【購入者全員に「カーボンマットミニ10枚」プレゼント】 KN-HW16H (-W) (-B) シャープ ホットクック ヘルシオ 1.6L 電気調理器 // SHARP 便利家電 人気 売れ筋 正規品 新品 自動調理器 自動調理鍋 メーカー保証あり 1.6L 電",
+      "price": 48400,
       "url": "https://hb.afl.rakuten.co.jp/hgc/g00ptahn.1a2pr12b.g00ptahn.1a2ps94a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftno%2Fkn-hw16g%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftno%2Fi%2F10002319%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00ptahn.1a2pr12b.g00ptahn.1a2ps94a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftno%2Fkn-hw16g%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftno%2Fi%2F10002319%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
-      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/tno/cabinet/sharp/kn-hw16h_01.jpg",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/tno/cabinet/p5/kn-hw16h_01_p5.jpg",
       "reviewCount": 54,
       "reviewAverage": 4.7,
       "quality_score": 5.2076,
       "offer_score": 5.2076,
       "shopName": "LIFE LUCK",
       "caption": "KN-HW16H -W -B シャープ ホットクック ヘルシオ 電気調理器 SHARP 便利家電 人気 売れ筋 最短発送 安心保証 御祝い 快適 正規品 新品 メーカー保証あり1.6L 電気無水鍋 調理家電 お鍋 自動 スマート ほったらかし レシピ 低温調理 時短◆ 2024年新作ホットクック＆一人暮らしに便利な1.0L ◆ ホットクック KN-HW16H ホットクック KN-HW24H ホットクック KN-HW10G 商品仕様 品名 ヘルシオ ホットクック KN-HW16H サイズ 幅330mm×奥行282mm×高さ240mm 調理容量（満水容量） 1.6L（3.4L） 量の目安 2～4人",
-      "is_major": true
+      "is_major": true,
+      "source_query": "ホットクック",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "ホットクック"
     },
     {
       "name": "【無料延長保証】 Panasonic｜パナソニック NF-AC1000-K 自動調理鍋 オートクッカー ビストロ ブラック",
@@ -28,7 +31,23 @@
       "offer_score": 5.04,
       "shopName": "楽天ビック(ビックカメラ×楽天)",
       "caption": "■「鍋底かきまぜ× 高火力×圧力」でおまかせで本格の味・下からかきまぜる「鍋底かきまぜ」と業界最高※1「1285 W高火力」で、焦がさず煮詰めて濃厚・炒めもシャキッと！※1、 2022年12月7日現在。2023年2月1日発売予定。国内家庭用調理鍋市場において。調理時ヒーターの最大出力W数。（パナソニック調べ）■かたい魚の骨も柔らかく、高圧調理・業界最高クラス※2、約2気圧＋メニューに応じて最適な圧力を選択。※2、2022年12月7日現在。2023年2月1日発売予定。国内家庭用調理鍋市場において。調理時最大圧力。（パナソニック調べ）■キッチンポケットアプリ※でレシピを増やしてレパートリー広がる※",
-      "is_major": true
+      "is_major": true,
+      "source_query": "オートクッカー ビストロ",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "オートクッカー ビストロ"
     }
-  ]
+  ],
+  "hidden_gem_candidates": [],
+  "candidate_summary": {
+    "query_count": 3,
+    "raw_item_count": 90,
+    "candidate_count": 42,
+    "major_brand_count": 40,
+    "hidden_gem_count": 0,
+    "queries": [
+      "オートクッカー ビストロ",
+      "ホットクック",
+      "自動調理鍋"
+    ]
+  }
 }

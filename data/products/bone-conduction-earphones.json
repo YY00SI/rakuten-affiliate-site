@@ -1,6 +1,6 @@
 {
   "article_id": "bone-conduction-earphones",
-  "updated_at": "2026-05-18T23:51:22.300284",
+  "updated_at": "2026-05-24T11:38:14.529944",
   "items": [
     {
       "name": "Shokz OpenRun Pro/OpenRun Pro Mini 骨伝導イヤホン ワイヤレス 耳を塞がない オープンイヤー 強化された低音 急速充電 Bluetooth5.1 防塵防水 スポーツイヤホン 送料無料 あす楽 24ヶ月保証 公式ストア ショックス",
@@ -14,7 +14,10 @@
       "offer_score": 10.485408,
       "shopName": "Shokz Official Store",
       "caption": "",
-      "is_major": false
+      "is_major": false,
+      "source_query": "OpenRun Pro",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "OpenRun Pro"
     },
     {
       "name": "【公式】Shokz OpenComm2 ミュートボタンの追加 マグネット充電 Type-C充電 骨伝導ヘッドセット ワイヤレス ノイズキャンセリングイヤホン マイク付きイヤホン 通話 防塵防水 スレートグレイ ブラック 24ヶ月保証 送料無料公式ストア ショックス",
@@ -22,13 +25,16 @@
       "url": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000074%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000039%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000074%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000039%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/aftershokz-official/cabinet/09995294/imgrc0123071040.jpg",
-      "reviewCount": 132,
+      "reviewCount": 133,
       "reviewAverage": 4.53,
-      "quality_score": 6.871104,
-      "offer_score": 6.871104,
+      "quality_score": 6.881976,
+      "offer_score": 6.881976,
       "shopName": "Shokz Official Store",
       "caption": "",
-      "is_major": false
+      "is_major": false,
+      "source_query": "OpenComm",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "OpenComm"
     },
     {
       "name": "＼SNSでトレンド／nwm（ヌーム） オープンイヤー ワイヤレスイヤホン ヘッドホン ヘッドフォン イヤホン オーバーヘッド 骨伝導イヤホン 耳スピ 耳スピーカー 耳をふさがない nwm ONE MBH001 Bluetooth 5.3 最大20時間再生 iPhone/Android対応 軽量 ギフト ラッピング可",
@@ -36,27 +42,118 @@
       "url": "https://hb.afl.rakuten.co.jp/hgc/g00ugy1n.1a2pr8dd.g00ugy1n.1a2ps0ac/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnwm-official%2Fmbh001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnwm-official%2Fi%2F10000018%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00ugy1n.1a2pr8dd.g00ugy1n.1a2ps0ac/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnwm-official%2Fmbh001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnwm-official%2Fi%2F10000018%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/nwm-official/cabinet/item/mbh001_thum_02.jpg",
-      "reviewCount": 36,
-      "reviewAverage": 4.56,
-      "quality_score": 4.88832,
-      "offer_score": 4.88832,
+      "reviewCount": 38,
+      "reviewAverage": 4.58,
+      "quality_score": 4.9280800000000005,
+      "offer_score": 4.9280800000000005,
       "shopName": "nwm公式楽天市場店",
       "caption": "　 型式ダイナミック型 使用ユニットφ12mm＋φ35mm 再生周波数帯域40 Hz 〜 20 000 Hz Bluetooth® バージョンBluetooth® Ver.5.3 対応Bluetooth プロファイルA2DP,HFP,AVRCP,TMAP,PBP 対応コーデックSBC,AAC,LC3,CBSD,mSBC マイクロホンMEMS（無指向性）×2 電池持続時間 ※1最大20時間(音楽再生時) 充電時間 ※2約1.5時間 サイズ- 質量- 商品説明 【圧倒的な開放感が生む、新時代のサウンド体験】 オープンイヤーならではの広がりのある空間表現と軽い装着感でありながら、2wayドライバー搭",
-      "is_major": false
+      "is_major": false,
+      "source_query": "nwm ONE",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "nwm"
+    }
+  ],
+  "hidden_gem_candidates": [
+    {
+      "name": "【公式】Shokz OpenRun/OpenRun Mini 骨伝導イヤホン ワイヤレス 骨伝導ヘッドホン マグネット充電 USB-C 耳を塞がない オープンイヤー 急速充電対応 Bluetooth5.1 防水 高音質 スポーツイヤホン iPhone通話 24ヶ月保証 ショックス",
+      "price": 17880,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000013%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000018%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000013%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000018%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/aftershokz-official/cabinet/10208992/openrun.jpg",
+      "reviewCount": 1357,
+      "reviewAverage": 4.65,
+      "quality_score": 16.740000000000002,
+      "offer_score": 16.740000000000002,
+      "shopName": "Shokz Official Store",
+      "caption": "",
+      "is_major": false,
+      "source_query": "骨伝導 イヤホン",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "骨伝導 イヤホン"
     },
     {
-      "name": "boco 完全ワイヤレス骨伝導イヤホン PEACE SS-1 左右独立型 ブラック ホワイト ワイヤレス 骨伝導 完全ワイヤレスイヤホン Bluetooth 防滴 シンプル ランニング 読書 音楽 デザイン おしゃれ スポーツ イヤホンマイク フルワイヤレスイヤホン ボコ ノイズキャンセル",
-      "price": 18980,
-      "url": "https://hb.afl.rakuten.co.jp/hgc/g00ug78n.1a2pr97e.g00ug78n.1a2ps2d5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcocos-life%2F4589789171089%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcocos-life%2Fi%2F10000442%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
-      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00ug78n.1a2pr97e.g00ug78n.1a2ps2d5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcocos-life%2F4589789171089%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcocos-life%2Fi%2F10000442%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
-      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/cocos-life/cabinet/compass1738757412.jpg",
-      "reviewCount": 0,
-      "reviewAverage": 0.0,
-      "quality_score": 0.0,
-      "offer_score": 0.0,
-      "shopName": "COCO暮らしの楽天市場店",
-      "caption": "boco 完全ワイヤレス骨伝導イヤホン PEACE SS-1 左右独立型 ブラック ホワイト ワイヤレス 骨伝導 完全ワイヤレスイヤホン Bluetooth 防滴 シンプル ランニング 読書 音楽 デザイン おしゃれ スポーツ イヤホンマイク フルワイヤレスイヤホン ボコ ノイズキャンセル 高級 高価 運動 ギフト プレゼント ■より快適なつけ心地どんな耳の形にもフィットする独自のカーブ構造で落ちにくい■より高い耐久性振動子と本体をつなぐアーチ形能文が【チタン芯材】との一体形成構造で作られているため、より優れた耐久性を実現■よりクリアな通話品質Qualcomm3040チップを搭載することで、最",
-      "is_major": false
+      "name": "【公式】Shokz OpenRun Pro2/OpenRun Pro2 Mini 大迫傑モデル ショックス 骨伝導イヤホン ワイヤレス 耳を塞がない オープンイヤー 防塵防水 スポーツイヤホン 送料無料 あす楽 24ヶ月保証 公式ストア プレゼントおすすめ 延長保証購入可能",
+      "price": 27880,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000102%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000061%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000102%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000061%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/aftershokz-official/cabinet/10954793/imgrc0129001009.jpg",
+      "reviewCount": 197,
+      "reviewAverage": 4.61,
+      "quality_score": 7.711608,
+      "offer_score": 7.711608,
+      "shopName": "Shokz Official Store",
+      "caption": "",
+      "is_major": false,
+      "source_query": "OpenRun Pro",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "OpenRun Pro"
+    },
+    {
+      "name": "【アスリート用二刀流イヤホン】COMPBEAT ATHLETE 骨伝導イヤホン 骨伝導と気導音の二刀流 Bluetooth6.0 ワイヤレスイヤホン 完全防水 完全密閉構造 MP3プレーヤー スポーツ ランニング ウオーキング 水泳 自転車",
+      "price": 15800,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00ugjon.1a2pre2b.g00ugjon.1a2ps075/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvaluemarcket%2F003%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fvaluemarcket%2Fi%2F10000030%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00ugjon.1a2pre2b.g00ugjon.1a2ps075/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvaluemarcket%2F003%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fvaluemarcket%2Fi%2F10000030%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/valuemarcket/cabinet/09885535/11713254/imgrc0103591557.jpg",
+      "reviewCount": 197,
+      "reviewAverage": 4.58,
+      "quality_score": 6.384520000000001,
+      "offer_score": 6.384520000000001,
+      "shopName": "COMPBEAT公式ストア",
+      "caption": "【新発売！COMPBEAT ATHLETE（アスリート）】 大好評の“二刀流イヤホン”『COMPBEAT』に、待望のアスリートモデルが2025年6月新発売！ 【COMPBEAT ATHLETEとは？】 COMPBEAT ATHLETEは、「最も自由なイヤホンをつくる」というコンセプトのもと、オープンイヤーで周囲の音を聞きながら使う開放さと、オンイヤーで音の世界に浸る没入感という、相反する特徴をひとつに詰め込むことに成功した二刀流イヤホン『COMPBEATシリーズ』のアスリート用モデル。 【COMPBEAT ATHLETEの特徴】 オープンイヤーとオンイヤーの“二刀流”という唯一無二の利便性はそ",
+      "is_major": false,
+      "source_query": "骨伝導 イヤホン",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "骨伝導 イヤホン"
+    },
+    {
+      "name": "【公式】Shokz OpenSwim Pro 骨伝導イヤホン ワイヤレス 骨伝導ヘッドホン 耳を塞がない オープンイヤー 急速充電対応 Bluetooth5.4 防水 高音質 スポーツイヤホン iPhone通話 送料無料 24ヶ月保証 ショックス 公式ストア",
+      "price": 25880,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000093%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000057%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000093%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000057%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/aftershokz-official/cabinet/10599210/imgrc0123070255.jpg",
+      "reviewCount": 33,
+      "reviewAverage": 4.73,
+      "quality_score": 6.050616000000001,
+      "offer_score": 6.050616000000001,
+      "shopName": "Shokz Official Store",
+      "caption": "",
+      "is_major": false,
+      "source_query": "骨伝導 イヤホン",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "骨伝導 イヤホン"
+    },
+    {
+      "name": "【公式】Shokz OpenComm 2UC ミュートボタンの追加 マグネット充電 Type-C充電 骨伝導ヘッドセット Loop120 Bluetooth USB-A USB-C ノイズキャンセリングイヤホン マイク付きイヤホン 通話 防塵防水 24ヶ月保証 送料無料公式ストア ショックス",
+      "price": 27880,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000077%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000041%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000077%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000041%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/aftershokz-official/cabinet/10000223/imgrc0114519274.jpg",
+      "reviewCount": 55,
+      "reviewAverage": 4.51,
+      "quality_score": 6.00732,
+      "offer_score": 6.00732,
+      "shopName": "Shokz Official Store",
+      "caption": "",
+      "is_major": false,
+      "source_query": "OpenComm",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "OpenComm"
     }
-  ]
+  ],
+  "candidate_summary": {
+    "query_count": 6,
+    "raw_item_count": 136,
+    "candidate_count": 69,
+    "major_brand_count": 0,
+    "hidden_gem_count": 5,
+    "queries": [
+      "OpenRun Pro",
+      "OpenComm",
+      "BoCo PEACE",
+      "nwm ONE",
+      "骨伝導・オープンイヤーイヤホン",
+      "骨伝導 イヤホン"
+    ]
+  }
 }

@@ -282,6 +282,33 @@
                     対象カテゴリの全製品およびユーザーレビューを解析し、<strong>「カタログスペックには現れない真実」</strong>を抽出。後悔しない製品選びの最適解を導き出します。
                 {% endif %}
             </p>
+            {% if article.evidence_summary %}
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; margin-top: 1.25rem;">
+                <div style="background: #f8f9fa; border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem;">
+                    <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700;">掲載モデル</div>
+                    <div style="font-family: 'Lato', sans-serif; font-weight: 800; color: var(--secondary);">{{ article.evidence_summary.item_count }}件</div>
+                </div>
+                <div style="background: #f8f9fa; border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem;">
+                    <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700;">確認したレビュー母数</div>
+                    <div style="font-family: 'Lato', sans-serif; font-weight: 800; color: var(--secondary);">{{ "{:,}".format(article.evidence_summary.review_total) }}件</div>
+                </div>
+                {% if article.evidence_summary.weighted_average %}
+                <div style="background: #f8f9fa; border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem;">
+                    <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700;">加重平均評価</div>
+                    <div style="font-family: 'Lato', sans-serif; font-weight: 800; color: var(--secondary);">★ {{ article.evidence_summary.weighted_average }}</div>
+                </div>
+                {% endif %}
+                {% if article.evidence_summary.price_min %}
+                <div style="background: #f8f9fa; border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem;">
+                    <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700;">価格帯</div>
+                    <div style="font-family: 'Lato', sans-serif; font-weight: 800; color: var(--secondary);">{{ "{:,}".format(article.evidence_summary.price_min) }}〜{{ "{:,}".format(article.evidence_summary.price_max) }}円</div>
+                </div>
+                {% endif %}
+            </div>
+            <p style="margin: 0.9rem 0 0; font-size: 0.78rem; color: var(--text-muted); line-height: 1.6;">
+                根拠スコープ: {{ article.evidence_summary.source_types | join(' / ') }}。レビュー本文の断定引用ではなく、公開レビュー評価・件数・商品説明・仕様表記を横断して判断しています。
+            </p>
+            {% endif %}
         </div>
     </section>
 
@@ -405,6 +432,16 @@
                         {% if item._extra %}
                             <!-- Spec v8.1: Logic Beauty Analysis (Higgsfield Video Ready) -->
                             <div class="analysis-v8" style="margin-top: 1.5rem;">
+                                {% if item._evidence %}
+                                <div style="margin-bottom: 1rem; border: 1px solid var(--border); border-radius: 8px; background: #fff; padding: 0.9rem;">
+                                    <div style="font-size: 0.78rem; font-weight: 800; color: var(--primary); margin-bottom: 0.45rem;">根拠メモ｜{{ item._evidence.selection_label }}</div>
+                                    <p style="margin: 0 0 0.35rem; font-size: 0.82rem; line-height: 1.55; color: var(--text-main);">{{ item._evidence.review_basis }}</p>
+                                    <p style="margin: 0 0 0.35rem; font-size: 0.82rem; line-height: 1.55; color: var(--text-main);">{{ item._evidence.spec_basis }}</p>
+                                    {% if item._evidence.caption_excerpt %}
+                                    <p style="margin: 0; font-size: 0.75rem; line-height: 1.5; color: var(--text-muted);">商品説明抜粋: {{ item._evidence.caption_excerpt }}</p>
+                                    {% endif %}
+                                </div>
+                                {% endif %}
                                 <div class="eval-section" style="margin-bottom: 1.5rem;">
                                     <strong class="eval-title">解析チームの選定理由（The "Why"）</strong>
                                     <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-main);">{{ item._extra.analysis_why }}</p>
@@ -451,11 +488,42 @@
         {% endfor %}
     </section>
 
+    {% if article.hidden_gem_candidates %}
+    <section id="hidden-gems" class="section">
+        <h2 class="section-title">口コミ評価から拾った掘り出し物候補</h2>
+        <p style="margin: -0.5rem 0 1.5rem; color: var(--text-muted); line-height: 1.7; font-size: 0.92rem;">
+            メインの指名買い候補とは別に、楽天市場のレビュー評価・件数・価格条件から拾った比較候補です。主要メーカー品ほど情報が多くないため、保証条件と販売元を確認したうえで検討してください。
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
+            {% for gem in article.hidden_gem_candidates %}
+            <article style="background: #fff; border: 1px solid var(--border); border-radius: 8px; overflow: hidden;">
+                <img src="{{ gem.image }}" alt="{{ gem.name }}" loading="lazy" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block;">
+                <div style="padding: 1rem;">
+                    <h3 style="font-size: 1rem; line-height: 1.45; margin: 0 0 0.6rem; color: var(--secondary);">{{ gem.name[:58] }}{% if gem.name|length > 58 %}...{% endif %}</h3>
+                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: baseline; margin-bottom: 0.75rem;">
+                        <span style="font-family: 'Lato', sans-serif; color: var(--primary); font-weight: 800;">{{ "{:,}".format(gem.price) }}円〜</span>
+                        <span style="font-size: 0.82rem; color: var(--text-muted);">★ {{ gem.reviewAverage }} / {{ "{:,}".format(gem.reviewCount) }}件</span>
+                    </div>
+                    <p style="font-size: 0.84rem; line-height: 1.6; color: var(--text-main); margin: 0 0 0.75rem;">{{ gem._extra.analysis_why }}</p>
+                    {% if gem._evidence %}
+                    <p style="font-size: 0.76rem; line-height: 1.5; color: var(--text-muted); margin: 0 0 0.9rem;">{{ gem._evidence.spec_basis }}</p>
+                    {% endif %}
+                    <a href="{{ gem.affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" class="btn btn-primary" style="width: 100%; background: #bf0000; border: none; padding: 0.8rem; font-size: 0.92rem;">
+                        <span class="rakuten-mark" aria-hidden="true">R</span>
+                        楽天市場で詳細を見る
+                    </a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
     <!-- Disclosure -->
     <footer class="article-footer" style="margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--border);">
         <div style="background: #fff; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border); font-size: 0.85rem; color: var(--text-muted);">
             <h3 style="margin-top: 0; font-size: 1.1rem; color: var(--secondary);">本記事の評価基準について</h3>
-            <p>当サイトでは、楽天市場の売れ筋データと実際のユーザーレビューに基づき、中立的な立場から解析を行っています。アフィリエイト報酬の有無がランキング順位に影響を与えることはありません。</p>
+            <p>当サイトでは、楽天市場の商品情報、レビュー評価・件数、価格、商品説明内の仕様表記をもとに、購入後の満足点と後悔点を整理しています。アフィリエイト報酬の有無がランキング順位に影響を与えることはありません。価格・在庫・仕様は変動するため、購入前に販売ページの最新情報をご確認ください。</p>
         </div>
 
         {% if related_articles %}

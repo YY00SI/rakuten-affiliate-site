@@ -74,6 +74,7 @@ soft_rules:
         - images.unsplash.com
       preferred_prefixes:
         - https://yy00si.github.io/rakuten-affiliate-site/images/
+        - https://thumbnail.image.rakuten.co.jp/
   site_asset_hygiene:
     discouraged_embed_hosts:
       - images.unsplash.com

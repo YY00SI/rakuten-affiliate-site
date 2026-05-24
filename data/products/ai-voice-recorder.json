@@ -1,6 +1,6 @@
 {
   "article_id": "ai-voice-recorder",
-  "updated_at": "2026-05-18T23:49:22.025540",
+  "updated_at": "2026-05-24T11:35:34.403577",
   "items": [
     {
       "name": "【長友佑都選手のTV-CMでお馴染みのPLAUD】【公式店】 ボイスレコーダー PLAUD NOTE GPT連携AIボイスレコーダー 64GB プラウドノート 会議 議事録 インタビュー ボイスメモ 録音 文字起こし 要約",
@@ -8,13 +8,16 @@
       "url": "https://hb.afl.rakuten.co.jp/hgc/g00uqtbn.1a2pr31d.g00uqtbn.1a2ps1fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplaud%2F0659359808432%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplaud%2Fi%2F10000000%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00uqtbn.1a2pr31d.g00uqtbn.1a2ps1fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplaud%2F0659359808432%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplaud%2Fi%2F10000000%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/plaud/cabinet/12090111/12090112/12092582/imgrc0123410420.jpg",
-      "reviewCount": 340,
-      "reviewAverage": 4.64,
-      "quality_score": 9.35424,
-      "offer_score": 9.35424,
+      "reviewCount": 341,
+      "reviewAverage": 4.63,
+      "quality_score": 9.345191999999999,
+      "offer_score": 9.345191999999999,
       "shopName": "Plaud 楽天市場店",
       "caption": "文字起こし＆要約：GPTによる高効率な音声からテキストへの文字起こしと自動要約。 OpenAI Whisperを搭載したPLAUD NOTEの専用アプリは、録音された音声をタイムコード付きのテキストに正確に書き起こし、会話や内容を漏れなく正確に記録します。 ※画像はイメージです。 「関連ワード」 AI チャットGPT gpt連携 GPT-4o フォーオー ボイスレコーダー PLAUD NOTE gpt連携aiボイスレコーダー プラウドノート ビジネス 会議 議事録 インタビュー ボイスメモ 録音 文字起こし 要約 デュアルマイク OpenAI plaud note gpt連携aiボイスレコーダ",
-      "is_major": true
+      "is_major": true,
+      "source_query": "PLAUD NOTE",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "PLAUD"
     },
     {
       "name": "iFLYTEK VOITER SR302PRO AIライティングレコーダー オフラインモデル",
@@ -28,11 +31,14 @@
       "offer_score": 5.02,
       "shopName": "楽天スーパーショップ365",
       "caption": "【商品紹介】 ■ネットワーク接続不要 クラウドによるデータ漏洩を心配することなく、安全・安心に情報を記録。 文字起こしサービス利用料金不要。 ■非音声自動削除 笑い声や拍手の音など非音声部分を自動削除。 ■5言語対応 日本語・英語・中国語・韓国語・ロシア語 ※翻訳機能はございません。 ■6つのマイクと高度な雑音除去技術搭載 360°集音に対応した無指向性マイク4つ搭載。 発話距離最大5mに対応した指向性マイク2つ搭載。 音声認識の国際コンテストで世界No.1を獲得した雑音除去技術で不要なノイズを自動的に判断・除去。 ■AI技術による文字の自動修正 文脈により正確な単語を判断・修正。 商品名 i",
-      "is_major": true
+      "is_major": true,
+      "source_query": "VOITER SR302",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "VOITER"
     },
     {
       "name": "【在庫あります　即納可能】ステレオICレコーダー　ICD-TX660",
-      "price": 19780,
+      "price": 19800,
       "url": "https://hb.afl.rakuten.co.jp/hgc/g00q5vqn.1a2pr835.g00q5vqn.1a2ps510/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsound11%2Ficd-tx660%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsound11%2Fi%2F10009820%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00q5vqn.1a2pr835.g00q5vqn.1a2ps510/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsound11%2Ficd-tx660%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsound11%2Fi%2F10009820%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sound11/cabinet/00676424/imgrc0100621388.jpg",
@@ -42,7 +48,10 @@
       "offer_score": 5.02,
       "shopName": "ソニー特約店 サウンドイレブン",
       "caption": "小さくて軽い、薄さ7.4mm（＊）のスティック型デザイン。 さりげなく、スマートに録音できるICレコーダー ＊ 最大突起部を除く、本体最薄部 こちらの商品は店頭併売商品となります。 御注文のタイミングによっては生産完了や品切れのため 商品の手配が出来ない事もございますのでご了承下さい。 ●小さくて軽い、薄さ約7.4mmの「スティック型デザイン」 ●小型でもしっかり録音できる「高性能デジタルマイク」・「16GBの大容量メモリー」を内蔵 ●聞きたいところをすばやく探せる「タイムジャンプ」など便利な再生機能 ●録音機会を逃さない「ワンプッシュ録音」など充実の機能 主な仕様 【録音形式】 リニアPCM",
-      "is_major": false
+      "is_major": false,
+      "source_query": "ICD-TX660",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "ICD"
     },
     {
       "name": "オリンパス（OLYMPUS）　ICレコーダー　ブラック　【品番：WS-883 BLK】",
@@ -56,7 +65,77 @@
       "offer_score": 0.0,
       "shopName": "住設プロ 楽天市場店",
       "caption": "特長 ●高音質録音・充実の再生機能・使いやすさを追求した便利な機能・内蔵メモリ8GB・14言語対応しています。 ●多彩な録音機能を搭載し、マンツーマンレッスンの英会話教室でも聞き取りやすい音で録音できます。 ●ローノイズ指向性マイク2個を、90度外側を向けて配置し、臨場感の高いステレオ録音を可能にしました。 ●話者の方向や距離感までリアルにとらえて録音することができます。 ●録音時に300Hz以下の音(空調やプロジェクターのファンの音など)を自動的にカットし、屋外で風が強いときにも効果を発揮します。 ●録音と同時にカットするため、歪みが気にならない自然な音で再生することが可能です。 用途 ●語",
-      "is_major": false
+      "is_major": false,
+      "source_query": "オリンパス WS-883",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "WS-883"
     }
-  ]
+  ],
+  "hidden_gem_candidates": [
+    {
+      "name": "【長友佑都選手のTV-CMでお馴染みのPLAUD】【54冠達成】公式店 Plaud Note Pro AIボイスレコーダー 文字起こし 仕事効率化AIツール 通話/対面録音モード自動切替 AI活用 要約テンプレート ディスプレイ搭載 MEMSマイク 骨伝導 AI指向性収音 5m音声収音",
+      "price": 30800,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00uqtbn.1a2pr31d.g00uqtbn.1a2ps1fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplaud%2F0199284926073%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplaud%2Fi%2F10000013%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00uqtbn.1a2pr31d.g00uqtbn.1a2ps1fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplaud%2F0199284926073%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplaud%2Fi%2F10000013%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/plaud/cabinet/12090111/12542298/12699422/imgrc0138189333.jpg",
+      "reviewCount": 302,
+      "reviewAverage": 4.69,
+      "quality_score": 9.027312,
+      "offer_score": 9.027312,
+      "shopName": "Plaud 楽天市場店",
+      "caption": "【高音質・長時間録音】 高性能MEMSマイクを4個搭載。音声強化モードでは、5m先まで一言一句、正確かつクリアに捉えます（その際、連続録音時間は最大30時間）。長時間駆動モードでは、最大50時間まで連続録音でき、立て続けの会議や丸一日の業務も安心です。 【AIが実現するスマート録音】 デュアルモード録音が更に進化。AIが通話録音と対面録音を自動で切り替え、シームレスな記録を実現します。AI指向性収音技術とリアルタイム空間認識により、周囲の雑音が低減され、発言者の音声をはっきり聞こえるようになります。 【デザインと視認性】 超軽量30g、極薄2.98mmのクレジットカードサイズ。波状テクスチャ加",
+      "is_major": true,
+      "source_query": "PLAUD NOTE",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "PLAUD NOTE"
+    },
+    {
+      "name": "【公式店】 通常版 小型AIボイスレコーダー PLAUD NotePin ウェアラブル GPT連携 ボイスレコーダー 1年間メーカー保証 身に着けられる ボイスメモ 録音 文字起こし 要約 公式販売店 正規代理店",
+      "price": 27500,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00uqtbn.1a2pr31d.g00uqtbn.1a2ps1fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplaud%2F6977512610680%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplaud%2Fi%2F10000002%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00uqtbn.1a2pr31d.g00uqtbn.1a2ps1fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplaud%2F6977512610680%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplaud%2Fi%2F10000002%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/plaud/cabinet/12090111/12090114/imgrc0123407687.jpg",
+      "reviewCount": 239,
+      "reviewAverage": 4.49,
+      "quality_score": 7.963463999999999,
+      "offer_score": 7.963463999999999,
+      "shopName": "Plaud 楽天市場店",
+      "caption": "ウェアラブルAIメモリーカプセル PLAUD NotePinは、常に待機状態のAIビジネスパートナーデバイスです。時間とともにあなたを学習し理解することで、仕事の会議の前後のルーティンタスクを実行し、あな たがより創造的で価値の高い仕事に集中する時間を増やすことができます。 ※画像はイメージです。 「関連ワード」ウェアラブルAIデバイス 身に着けられる 軽量 コンパクト 小型ボイスレコーダー PLAUD NotePin AI チャットGPT フォーオー ボイスレコーダー chatgpt連携aiボイスレコーダー プラウドノートピン ビジネス 会議 議事録 インタビュー ボイスメモ 文字起こし 要",
+      "is_major": true,
+      "source_query": "PLAUD NOTE",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "PLAUD NOTE"
+    },
+    {
+      "name": "【長友佑都選手のTV-CMでお馴染みのPLAUD】【公式店】Plaud NotePin S AIボイスレコーダー ウェアラブル録音デバイス 文字起こし 仕事効率化AIツール 通話/対面録音モード自動切替 要約テンプレート ディスプレイ搭載 MEMSマイク 骨伝導 AI指向性収音 議事録/ボイスメモ",
+      "price": 28600,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00uqtbn.1a2pr31d.g00uqtbn.1a2ps1fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplaud%2F0199284031340%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplaud%2Fi%2F10000028%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00uqtbn.1a2pr31d.g00uqtbn.1a2ps1fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplaud%2F0199284031340%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplaud%2Fi%2F10000028%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/plaud/cabinet/12090111/13193056/13193080/thumb_notepins.jpg",
+      "reviewCount": 38,
+      "reviewAverage": 4.53,
+      "quality_score": 5.849136000000001,
+      "offer_score": 5.849136000000001,
+      "shopName": "Plaud 楽天市場店",
+      "caption": "一日中着用しても気にならないほどの軽さで、一言一句記録できるパワフルさを兼ね備えたPlaud NotePin Sは、直感的に操作できます。 ※画像はイメージです。 「関連ワード」 AIボイスレコーダー ウェアラブル録音デバイス AI議事録 自動作成 会議録音 AI 音声自動要約 デバイス ボイスメモ AI 商談録音 レコーダー ChatGPT連携 レコーダー 小型ボイスレコーダー 高性能 音声文字起こし AIデバイス 型番 CPSBK1GXXXXX01 CPSSI1GXXXXX01 CPSPU1GXXXXX01 カラー ブラック シルバーパープル JANコード 0199284031340 01",
+      "is_major": true,
+      "source_query": "PLAUD NOTE",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "PLAUD NOTE"
+    }
+  ],
+  "candidate_summary": {
+    "query_count": 5,
+    "raw_item_count": 124,
+    "candidate_count": 83,
+    "major_brand_count": 65,
+    "hidden_gem_count": 3,
+    "queries": [
+      "PLAUD NOTE",
+      "VOITER SR302",
+      "ICD-TX660",
+      "オリンパス WS-883",
+      "AIボイスレコーダー"
+    ]
+  }
 }

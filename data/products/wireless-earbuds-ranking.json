@@ -1,20 +1,23 @@
 {
   "article_id": "wireless-earbuds-ranking",
-  "updated_at": "2026-05-18T23:50:30.022904",
+  "updated_at": "2026-05-24T11:37:07.363196",
   "items": [
     {
-      "name": "AirPods Pro 3 Apple認定店 新品 国内正規品 アクセサリー MagSafe対応 ワイヤレスイヤホン アクティブノイズキャンセリング 楽天モバイル公式 エアポッズ 2025年販売 ヒアリング補助機能 USB-C",
+      "name": "Apple AirPods Pro 3",
       "price": 39800,
       "url": "https://hb.afl.rakuten.co.jp/hgc/g00tof9n.1a2prf4c.g00tof9n.1a2psb56/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakutenmobile-store%2Fapple-rm2509012%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frakutenmobile-store%2Fi%2F10001780%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tof9n.1a2prf4c.g00tof9n.1a2psb56/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakutenmobile-store%2Fapple-rm2509012%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frakutenmobile-store%2Fi%2F10001780%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
-      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakutenmobile-store/cabinet/item/apple-rm2509012/main.jpg",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakutenmobile-store/cabinet/item/apple-rm2509012/main_re.jpg",
       "reviewCount": 128,
       "reviewAverage": 4.64,
-      "quality_score": 6.993407999999999,
-      "offer_score": 6.993407999999999,
+      "quality_score": 5.827839999999999,
+      "offer_score": 5.827839999999999,
       "shopName": "楽天モバイル公式 楽天市場店",
       "caption": "",
-      "is_major": true
+      "is_major": true,
+      "source_query": "AirPods Pro",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "AirPods Pro"
     },
     {
       "name": "【新品】SONY ソニー ワイヤレスイヤホン WF-1000XM5B ブラック",
@@ -28,7 +31,10 @@
       "offer_score": 5.09804,
       "shopName": "電子問屋ワールドいち",
       "caption": "4548736143470【購入前のご注意】 ※一部商品を除き初期不良含む故障は全てメーカー対応となっております。当店での返品、交換や修理依頼等はお受け出来かねます。 ※複数サイトにて在庫共有しておりますのでご注文のタイミングによっては在庫切れになる場合がございます。 ※基本的に発送後のお客様都合でのキャンセルはお受け出来ません。 ※その他店舗規約等を必ずご確認いただきご購入くださいますようお願い致します。 ※メーカーの仕様変更により付属品やシステムOSなどのスペックが当ページ記載のものと異なる場合がございます。詳細のスペックはメーカー製品ページにてご確認頂ますようお願い致します。 ※掲載写真",
-      "is_major": true
+      "is_major": true,
+      "source_query": "WF-1000XM5",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "WF-1000XM5"
     },
     {
       "name": "Bose QuietComfort Ultra Earbuds 完全ワイヤレス ブラック 第一世代 第二世代 ノイズキャンセリング",
@@ -42,7 +48,110 @@
       "offer_score": 5.01,
       "shopName": "nico 25 SHOP【にこにこショップ】",
       "caption": "&#128313; 共通の特長（第1世代・第2世代 共通） Bose QuietComfort Ultra Earbuds は、 Boseが誇る世界最高クラスのノイズキャンセリングと、 CustomTuneテクノロジーによるパーソナライズサウンドを搭載した 完全ワイヤレスイヤホンです。 周囲の騒音を強力に低減するアクティブノイズキャンセリング 耳の形状を分析し、音質とノイズキャンセリングを自動最適化 立体感と臨場感を生み出す Bose イマーシブオーディオ クワイエット／アウェア／イマ―ジョンの3モード搭載 イヤーチップ＋スタビリティバンドによる快適で安定した装着感 最大6時間再生、急速充電対",
-      "is_major": false
+      "is_major": false,
+      "source_query": "Bose QuietComfort Ultra Earbuds",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "Bose QuietComfort Ultra"
     }
-  ]
+  ],
+  "hidden_gem_candidates": [
+    {
+      "name": "【公式】Shokz OpenDots ONE ワイヤレスイヤホン 耳を塞がない オープンイヤー イヤーカフ イヤホン パワフルな低音 急速充電 Bluetooth5.4 防塵防水 送料無料 あす楽 24ヶ月保証 公式ストア ショックス プレゼントおすすめ",
+      "price": 27880,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000173%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000071%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000173%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000071%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/aftershokz-official/cabinet/11695171/11751503/imgrc0129001093.jpg",
+      "reviewCount": 183,
+      "reviewAverage": 4.67,
+      "quality_score": 7.655063999999999,
+      "offer_score": 7.655063999999999,
+      "shopName": "Shokz Official Store",
+      "caption": "",
+      "is_major": false,
+      "source_query": "ワイヤレスイヤホン",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "ワイヤレスイヤホン"
+    },
+    {
+      "name": "★5/27AM9：59までポイントUP！【公式】JBL ワイヤレスイヤホン TOUR PRO 3 | イヤホン Bluetooth 5.3 ノイズキャンセリング 液晶付き タッチパネル 画面 LDAC ハイレゾ マルチポイント ANC 外音取り込み マイク付き ハンズフリー",
+      "price": 39600,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00tzaon.1a2pr866.g00tzaon.1a2ps557/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjblstore%2Ftour-pro3%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjblstore%2Fi%2F10000195%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tzaon.1a2pr866.g00tzaon.1a2ps557/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjblstore%2Ftour-pro3%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjblstore%2Fi%2F10000195%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/jblstore/cabinet/tws/tour-pro3/tour-pro3_v2.jpg",
+      "reviewCount": 150,
+      "reviewAverage": 4.67,
+      "quality_score": 7.2852,
+      "offer_score": 7.2852,
+      "shopName": "JBL・AKG公式ストア",
+      "caption": "メーカー希望小売価格はメーカーカタログに基づいて掲載しています 季節を問わずに使える完全ワイヤレスイヤホン お正月 御正月 お年賀 御年賀 御年始 春休み 夏休み 冬休み お盆 帰省 GW ゴールデンウィーク 大型連休 シルバーウィーク 残暑 クリスマス クリスマスプレゼント 春夏秋冬 年末 年始 年明け 完全ワイヤレスイヤホンはギフトにもおすすめです 誕生日 バースデー バレンタイン バレンタインデー ホワイトデー 母の日 マザーズデー 父の日 記念日 クリスマス クリスマスプレゼント お祝い アニバーサリー 就職祝い 合格祝い 退職記念 お父さん 父親 お母さん 母親 兄 弟 姉 妹 息子",
+      "is_major": false,
+      "source_query": "ワイヤレスイヤホン",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "ワイヤレスイヤホン"
+    },
+    {
+      "name": "【公式】Shokz OpenFit 2+ ワイヤレスイヤホン 耳を塞がない オープンイヤー 高音質 Dolby Audio搭載 パワフルな低音 急速充電 Bluetooth5.4 耳掛け 防塵防水 送料無料 あす楽 24ヶ月保証 公式ストア ショックス 1年延長保証購入可能",
+      "price": 27880,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000169%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000067%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tqoun.1a2pr186.g00tqoun.1a2ps3b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faftershokz-official%2Fskz-sp-000169%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faftershokz-official%2Fi%2F10000067%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/aftershokz-official/cabinet/12049295/12836900/12849733/imgrc0139235390.jpg",
+      "reviewCount": 113,
+      "reviewAverage": 4.7,
+      "quality_score": 6.9146399999999995,
+      "offer_score": 6.9146399999999995,
+      "shopName": "Shokz Official Store",
+      "caption": "",
+      "is_major": false,
+      "source_query": "ワイヤレスイヤホン",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "ワイヤレスイヤホン"
+    },
+    {
+      "name": "公式ストア限定 バッテリー強化モデル ゼンハイザー公式 Sennheiser ワイヤレスイヤホン MOMENTUM True Wireless 3 MTW3 V2 BLACK イヤフォン ノイキャン Bluetooth 5.2+Class1 Qi充電 IPX4 防滴",
+      "price": 38720,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7gzn.1a2pr1ee.g00u7gzn.1a2pscaa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsennheiser-hearing%2Fmtw3-v2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsennheiser-hearing%2Fi%2F10000113%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00u7gzn.1a2pr1ee.g00u7gzn.1a2pscaa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsennheiser-hearing%2Fmtw3-v2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsennheiser-hearing%2Fi%2F10000113%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sennheiser-hearing/cabinet/s/imgrc0104015337.jpg",
+      "reviewCount": 88,
+      "reviewAverage": 4.78,
+      "quality_score": 6.7455359999999995,
+      "offer_score": 6.7455359999999995,
+      "shopName": "ゼンハイザーヒアリング楽天市場店",
+      "caption": "商品詳細 メーカー Sennheiser(ゼンハイザー) 商品名 MOMENTUM True Wireless 3（モメンタムトゥルーワイヤレス3） 装着スタイル ワイヤレスステレオイヤホン　密閉型 ドライバー口径 7mm 対応機種 iphone（アイフォン）各種対応 アンドロイドスマートフォン各種対応 ipad、その他各種タブレット対応一度聴いたら、もう戻れない 楽天ランキング受賞 デイリーランキング 2023年4月7日(金)更新（集計日：4月6日） USER'S VOICE ユーザーコメント 有線でなくてもいいかな、と思わせてくれるような輪郭のわかる豊かな低域、明確な定位感、高域のシンバル",
+      "is_major": false,
+      "source_query": "ワイヤレスイヤホン",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "ワイヤレスイヤホン"
+    },
+    {
+      "name": "Marshall 公式ストア Motif II A.N.C. アクティブ ノイズキャンセリング ワイヤレス イヤホン マーシャル モチーフ2 国内正規品高級 高品質 高音質 防水 外音 ハイエンド bluetooth 5.3 LE ANC ブルートゥース 黒 マイク",
+      "price": 29800,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00u54tn.1a2prb35.g00u54tn.1a2pse4d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmarshall-official%2F7340055394840%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmarshall-official%2Fi%2F10000032%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00u54tn.1a2prb35.g00u54tn.1a2pse4d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmarshall-official%2F7340055394840%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmarshall-official%2Fi%2F10000032%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/marshall-official/cabinet/earphones/motif2anc/imgrc0101680176.jpg",
+      "reviewCount": 79,
+      "reviewAverage": 4.82,
+      "quality_score": 6.697871999999999,
+      "offer_score": 6.697871999999999,
+      "shopName": "Marshall公式ストア",
+      "caption": "品名：Motif II A.N.C. 形式 ダイナミック型 通信方式 Bluetooth 5.3 LE コーデック SBC, AAC, LC3 連続再生時間 ANCオン : 約6時間ANCオフ : 約9時間 充電ケース使用時 ANCオン : 約30時間ANCオフ : 約43時間 重量 イヤホン片側 : 約4.31 g充電ケース : 約47.1 g 防水仕様 イヤホン : IPX5充電ケース : IPX4 ドライバーサイズ 6mm ワイヤレスレンジ 約10m フル充電時間 イヤホン : 1.5時間充電ケース : 約1.5時間 再生周波数帯域 20Hz ~ 20kHz インピーダンス 16Ω 付属",
+      "is_major": false,
+      "source_query": "ワイヤレスイヤホン",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "ワイヤレスイヤホン"
+    }
+  ],
+  "candidate_summary": {
+    "query_count": 4,
+    "raw_item_count": 120,
+    "candidate_count": 97,
+    "major_brand_count": 47,
+    "hidden_gem_count": 5,
+    "queries": [
+      "AirPods Pro",
+      "WF-1000XM5",
+      "Bose QuietComfort Ultra Earbuds",
+      "ワイヤレスイヤホン"
+    ]
+  }
 }

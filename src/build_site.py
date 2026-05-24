@@ -2,6 +2,7 @@ import os
 import json
 import shutil
 import yaml
+import re
 from jinja2 import Environment, FileSystemLoader
 from datetime import datetime
 from article_contract import (
@@ -184,6 +185,144 @@ def load_product_data(article_id):
         return json.load(f)
 
 
+def compact_text(value, max_length=120):
+    text = re.sub(r"\s+", " ", str(value or "")).strip()
+    if len(text) <= max_length:
+        return text
+    return text[:max_length].rstrip() + "..."
+
+
+def build_spec_evidence(item):
+    caption = item.get("caption", "")
+    signal_terms = [
+        "重量",
+        "サイズ",
+        "容量",
+        "消費電力",
+        "保証",
+        "温度",
+        "風量",
+        "バッテリー",
+        "連続",
+        "給電",
+        "洗浄",
+        "自動",
+        "対応",
+        "ノイズ",
+        "静音",
+        "防水",
+        "解像度",
+        "周波数",
+        "センサー",
+        "フィルター",
+        "メンテナンス",
+    ]
+    hits = [term for term in signal_terms if term in caption]
+    return {
+        "signals": hits[:4],
+        "caption_excerpt": compact_text(caption, 140),
+    }
+
+
+def build_product_evidence(item, article_config):
+    review_count = int(item.get("reviewCount") or 0)
+    review_average = float(item.get("reviewAverage") or 0)
+    spec_evidence = build_spec_evidence(item)
+
+    if review_count >= 300:
+        review_strength = "レビュー母数が大きく、評価のブレを比較的読みやすい"
+    elif review_count >= 50:
+        review_strength = "一定数のレビューがあり、傾向把握に使える"
+    elif review_count > 0:
+        review_strength = "レビュー母数は少なめ。仕様と販売元の情報も併せて確認"
+    else:
+        review_strength = "レビュー情報が不足。仕様・価格・販売元を中心に確認"
+
+    selection_reason = item.get("selection_reason", "curated_masterpiece")
+    if selection_reason == "hidden_gem":
+        selection_label = "口コミ評価から拾った掘り出し物候補"
+    else:
+        selection_label = "指名買い候補として事前選定"
+
+    return {
+        "selection_label": selection_label,
+        "review_basis": f"楽天市場の公開レビュー評価 {review_average:.2f} / 件数 {review_count:,}件。{review_strength}。",
+        "spec_basis": "商品説明内の仕様シグナル: " + ("、".join(spec_evidence["signals"]) if spec_evidence["signals"] else "明確な仕様語は少なめ"),
+        "caption_excerpt": spec_evidence["caption_excerpt"],
+        "source_note": "レビュー本文の引用ではなく、楽天APIで取得できる評価・件数・商品説明・価格を根拠にしています。",
+    }
+
+
+def build_generated_hidden_extra(item, article_config):
+    return {
+        "keyword": item.get("match_keyword") or item.get("name", "")[:20],
+        "best_for": "有名ブランド以外も含め、レビュー評価と価格のバランスで候補を広げたい方",
+        "scores": {
+            criteria.get("id"): min(
+                5.0,
+                round(float(item.get("reviewAverage") or 0) + min(int(item.get("reviewCount") or 0), 300) / 1000, 1),
+            )
+            for criteria in article_config.get("test_criteria", [])
+            if criteria.get("id")
+        },
+        "analysis_why": "指名買い候補ではありませんが、楽天市場上のレビュー評価・件数・価格条件を満たしたため、掘り出し物候補として別枠で確認しています。",
+        "pros": [
+            "レビュー評価と価格のバランスが良い",
+            "主要候補より予算を抑えやすい",
+        ],
+        "critical_cons": "トップメーカー品ほど長期レビューや周辺情報が豊富ではないため、保証条件と販売元の信頼性を必ず確認してください。",
+        "maintenance_reality": "消耗品・交換部品・清掃方法が商品ページで明記されているかを購入前に確認する必要があります。",
+        "cost_performance": "価格差が明確な場合に限り有力ですが、保証やサポートを含めた総額で判断すべき候補です。",
+    }
+
+
+def build_hidden_gem_views(article_config, product_data, matched_items):
+    selected_urls = {item.get("affiliateUrl") or item.get("url") or item.get("name") for item in matched_items}
+    hidden_gems = []
+    for candidate in product_data.get("hidden_gem_candidates", []):
+        dedupe_key = candidate.get("affiliateUrl") or candidate.get("url") or candidate.get("name")
+        if not dedupe_key or dedupe_key in selected_urls:
+            continue
+        item = {
+            **candidate,
+            "_extra": build_generated_hidden_extra(candidate, article_config),
+            "selection_reason": "hidden_gem",
+        }
+        item["_evidence"] = build_product_evidence(item, article_config)
+        hidden_gems.append(item)
+        selected_urls.add(dedupe_key)
+        if len(hidden_gems) >= 3:
+            break
+    return hidden_gems
+
+
+def summarize_article_evidence(article_config, matched_items):
+    review_total = sum(int(item.get("reviewCount") or 0) for item in matched_items)
+    weighted_total = sum(float(item.get("reviewAverage") or 0) * int(item.get("reviewCount") or 0) for item in matched_items)
+    weighted_average = weighted_total / review_total if review_total else 0
+    prices = [int(item.get("price") or 0) for item in matched_items if item.get("price")]
+    curated_count = sum(1 for item in matched_items if item.get("selection_reason", "curated_masterpiece") != "hidden_gem")
+    hidden_count = sum(1 for item in matched_items if item.get("selection_reason") == "hidden_gem")
+    keywords = [extra.get("keyword") for extra in article_config.get("products_extra", []) if extra.get("keyword")]
+
+    return {
+        "item_count": len(matched_items),
+        "review_total": review_total,
+        "weighted_average": round(weighted_average, 2) if weighted_average else None,
+        "price_min": min(prices) if prices else None,
+        "price_max": max(prices) if prices else None,
+        "curated_count": curated_count,
+        "hidden_count": hidden_count,
+        "covered_keywords": keywords,
+        "source_types": [
+            "楽天市場の商品情報",
+            "レビュー評価・件数",
+            "商品説明内の仕様表記",
+            "編集部の購入後リスク評価",
+        ],
+    }
+
+
 def match_article_items(article_config, product_data):
     qa_errors = []
 
@@ -200,6 +339,11 @@ def match_article_items(article_config, product_data):
     forbidden_words = merged_forbidden_words(article_config)
     required_words = qa_config.get("required_words", [])
     items = product_data.get("items", [])
+    hidden_candidates = product_data.get("hidden_gem_candidates", [])
+    searchable_items = items + [
+        candidate for candidate in hidden_candidates
+        if candidate.get("url") not in {item.get("url") for item in items}
+    ]
     products_extra = article_config.get("products_extra", [])
 
     if not products_extra:
@@ -210,7 +354,7 @@ def match_article_items(article_config, product_data):
     for extra in products_extra:
         found_item = None
         keyword = extra.get("keyword", "").strip().lower()
-        for item in items:
+        for item in searchable_items:
             name = item.get("name", "")
             caption = item.get("caption", "")
             haystack = f"{name} {caption}".lower()
@@ -224,7 +368,11 @@ def match_article_items(article_config, product_data):
             if item.get("price", 0) < min_price:
                 continue
 
-            found_item = {**item, "_extra": extra}
+            found_item = {
+                **item,
+                "_extra": extra,
+                "selection_reason": item.get("selection_reason", "curated_masterpiece"),
+            }
             break
 
         if found_item:
@@ -241,15 +389,20 @@ def match_article_items(article_config, product_data):
         seen_urls.add(dedupe_key)
         deduped_items.append(item)
 
+    for item in deduped_items:
+        item["_evidence"] = build_product_evidence(item, article_config)
+
     return deduped_items, qa_errors
 
 
-def build_article_view(article_config, matched_items):
+def build_article_view(article_config, matched_items, product_data=None):
     return {
         **article_config,
         "intro": build_article_intro(article_config),
         "resolved_eye_catch": resolve_eye_catch(article_config, matched_items),
         "display_date": build_display_date(article_config.get("release_date", "2000-01-01")),
+        "evidence_summary": summarize_article_evidence(article_config, matched_items),
+        "hidden_gem_candidates": build_hidden_gem_views(article_config, product_data or {}, matched_items),
     }
 
 
@@ -277,7 +430,7 @@ def prepare_articles(articles, categories, today_date):
 
         prepared.append(
             {
-                "conf": build_article_view(article_config, matched_items),
+                "conf": build_article_view(article_config, matched_items, product_data),
                 "category": category,
                 "items": matched_items,
                 "path": f"{category['slug']}/{article_config['slug']}/",

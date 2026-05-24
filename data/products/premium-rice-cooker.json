@@ -1,6 +1,6 @@
 {
   "article_id": "premium-rice-cooker",
-  "updated_at": "2026-05-18T23:49:35.737779",
+  "updated_at": "2026-05-24T11:35:49.991575",
   "items": [
     {
       "name": "【タイガー魔法瓶 楽天市場店】 ご泡火炊き 圧力 IH 炊飯器 日本製 JPI-S10NK 遠赤 9層 土鍋 かまど コート釜 5.5合 ブラック ホワイト 土鍋コート 調理 内ぶた キャップ食洗機対応 炊きたて タイガー 圧力IH炊飯器 5. 5合",
@@ -14,7 +14,10 @@
       "offer_score": 9.79506,
       "shopName": "タイガー魔法瓶 楽天市場店",
       "caption": "※2024年9月（W柄）ホワイト追加発売 商品説明 タイガー圧力IHジャー炊飯器 おすすめポイント 1）土鍋の泡立ちと蓄熱性を再現 遠赤9層土鍋かまどコート釜～ご泡火仕上げ～ 内なべ外側には、「土鍋蓄熱コーティング＆かまどコーティング」を採用。上部には熱伝導性の高い銅素材、下部には蓄熱性の高い土鍋素材のコーティングを施し、土鍋の理想に近い蓄熱性を再現しました。 2）少量でもおいしく炊ける 「少量旨火炊き」メニュー搭載 通常の加熱では、少量をおいしく炊くことは難しいとされていましたが、少量に適した火力のコントロールでお米の甘みとハリを引き出す加熱を金属釡でも再現。「その日そのとき食べる分だけの炊",
-      "is_major": true
+      "is_major": true,
+      "source_query": "ご泡火炊き",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "土鍋"
     },
     {
       "name": "【公式店】パナソニック 可変圧力IHジャー炊飯器 選べる容量（5.5合/1升） 選べる2色 SR-X910D/X918D 食感炊き分け 銘柄炊き分け 高速 保温 予約タイマー ビストロ Wおどり炊き 炊飯器 送料無料",
@@ -28,25 +31,31 @@
       "offer_score": 5.752800000000001,
       "shopName": "Panasonic Store Plus 楽天市場店",
       "caption": "「おどり炊き」は、パナソニックがこだわり続けた独自の炊き技。 かまど炊きに学んだ的確な圧力コントロールでお米の甘みと旨みを芯から引き出します。 独自技術のWおどり炊きで旨み豊かな、ふっくら粒立ちのよいごはんが炊きあがります。 急減圧で爆発的な沸騰を起こし、お米をおどらせ、一粒一粒に熱を伝えます。芯までしっかり熱が伝わるから、粘り・甘みがアップします。 また、2つのIHを高速で切り替えることで激しい泡の対流が発生し、均一に加熱するので、ムラなくふっくら炊きあげます。 高温で追い炊きすることで、ハリ・つやのあるごはんに 加圧追い炊きポンプが最後までしっかり加熱して、余分な水分を飛ばすからハリ・つや",
-      "is_major": true
+      "is_major": true,
+      "source_query": "炊飯器 ビストロ",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "ビストロ"
     },
     {
-      "name": "象印【ZOJIRUSHI】5.5合炊き 圧力IH炊飯ジャー 白 炎舞炊き 炊飯器 NX-AA10-WZ【鉄（くろがね仕込み）豪炎かまど釜】",
-      "price": 114800,
-      "url": "https://hb.afl.rakuten.co.jp/hgc/g00q4jmn.1a2prf70.g00q4jmn.1a2psb50/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkaden-sakura%2F4974305230379%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkaden-sakura%2Fi%2F10178562%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
-      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00q4jmn.1a2prf70.g00q4jmn.1a2psb50/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkaden-sakura%2F4974305230379%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkaden-sakura%2Fi%2F10178562%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
-      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/kaden-sakura/cabinet/gazou66/nx-aa10-wz.jpg",
-      "reviewCount": 5,
+      "name": "★ZOJIRUSHI / 象印 炎舞炊き NW-FC10-WZ [絹白]【炊飯器】【送料無料】",
+      "price": 102530,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00rd00n.1a2pr217.g00rd00n.1a2ps2fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-cutestyle%2Fp000000874797%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-cutestyle%2Fi%2F19784032%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rd00n.1a2pr217.g00rd00n.1a2ps2fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-cutestyle%2Fp000000874797%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-cutestyle%2Fi%2F19784032%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/e-cutestyle/cabinet/img047/p000000874797_1.jpg",
+      "reviewCount": 6,
       "reviewAverage": 5.0,
-      "quality_score": 5.05,
-      "offer_score": 5.05,
-      "shopName": "家電のSAKURA 楽天市場店",
-      "caption": "◆舞え、炎。舞え、お米。「炎舞炊き」「炎舞炊き」はかまどの炎の激しいゆらぎを再現し、底IHヒーターを独立制御することで、部分的な集中加熱を可能にした象印独自の炊き方です。底IHヒーターは加熱範囲を6ブロックに分け、異なる2つのヒーターを同時加熱。縦だけでなく、横の対流を引き起こす3DローテーションIH構造を採用。象印史上最高の大火力※で釜内を激しい対流でかき混ぜ、ふっくらとした粒感と甘み成分（甘み成分の一つである還元糖）を引き出します。（炎のゆらぎ・・・部分的加熱の火力切り替えを行うことを炎のゆらぎと表現しています）※象印炊飯ジャー底IHヒーターの定格消費電力比較（2017年象印従来品NW-A",
-      "is_major": true
+      "quality_score": 5.0600000000000005,
+      "offer_score": 5.0600000000000005,
+      "shopName": "ディーライズ2号店",
+      "caption": "スペック情報 炊飯量5.5 合タイプ&nbsp;圧力IH炊飯器内釜豪炎かまど釜お手入れ機能内ふた丸洗い クリーニング機能保温時間極め保温：40時間まで 高め保温：12時間までその他機能遠赤外線 蒸気セーブ タッチパネル日本製○食感炊き○早炊き○エコ炊き○炊飯メニュー炊き込みごはん おかゆ おこげ 冷凍ごはん お弁当炊飯材料無洗米 玄米 雑穀米 麦ごはん最大消費電力1240 W年間電気代&nbsp;2192 円炊飯時消費電力量/回151 Wh保温時消費電力量/h16.5 Wh省エネ基準達成率105%(2008年度)幅x高さx奥行き260x235x330 mm重さ8 kgカラー絹白※上記スペック情",
+      "is_major": true,
+      "source_query": "炎舞炊き",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "炎舞"
     },
     {
       "name": "三菱電機 IHジャー炊飯器 本炭釜 紬(つむぎ) 炭漆黒 5.5合炊き かまど炊き 八重全面加熱 銘柄芳潤炊き 高火力 お手入れ簡単 NJ-BW10G-B",
-      "price": 61200,
+      "price": 60880,
       "url": "https://hb.afl.rakuten.co.jp/hgc/g00t2ngn.1a2pr2cd.g00t2ngn.1a2psff6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhikaritv%2F2010125340%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhikaritv%2Fi%2F10233325%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00t2ngn.1a2pr2cd.g00t2ngn.1a2psff6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhikaritv%2F2010125340%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhikaritv%2Fi%2F10233325%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/hikaritv/cabinet/plala/201/01253/2010125340_k.jpg",
@@ -56,7 +65,112 @@
       "offer_score": 5.03,
       "shopName": "ひかりTVショッピング 楽天市場店",
       "caption": "【延長補償3年】2,500円【延長補償5年】5,900円銘柄を炊き分けたい人へのプレミアムモデル。【商品の特徴】・本炭釜　電気と相性がいい「炭」が丸ごと発熱体となり、内釜全体が一気に発熱。　「炭」ならではの、粒立つ！「もち×あま」・かまど構造　強火を絶やさない、ふきこぼれるほどの大火力で炊き上げる「かまど」をお手本にした炊き方と構造。・銘柄芳醇炊き　全国のお米50銘柄それぞれの個性を引き出す専用モード・炊分け名人　その日のメニューや家族の好み合わせて、食感を炊き分ける。・低温調理　炊飯以外もできるようになりました！・多彩な炊飯メニュー　冷凍の専用モードや健康を気遣うメニューなど、多彩に炊き分け",
-      "is_major": false
+      "is_major": false,
+      "source_query": "本炭釜",
+      "selection_reason": "curated_masterpiece",
+      "match_keyword": "本炭釜"
     }
-  ]
+  ],
+  "hidden_gem_candidates": [
+    {
+      "name": "【特典付き】象印 炊飯器 5.5合炊き スタン IH 炊飯ジャー 保温 離乳食 無洗米 タイマー付き ご飯 ごはん 白米 炊飯 レシピ付き おかゆ 玄米 おしゃれ シンプル 黒 白 ブラック ホワイト かわいい キッチン家電 機能性 NW-SB10【送料無料】［ STAN. IH炊飯ジャー 5.5合 ］",
+      "price": 39600,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00qb0ln.1a2prbcf.g00qb0ln.1a2psf7a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Froomy%2Fzoj21dec20h01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Froomy%2Fi%2F10014989%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00qb0ln.1a2prbcf.g00qb0ln.1a2psf7a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Froomy%2Fzoj21dec20h01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Froomy%2Fi%2F10014989%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/roomy/cabinet/500cart_all/500cart_11g/5/zoj2006-oz010-1_gt01.jpg",
+      "reviewCount": 835,
+      "reviewAverage": 4.69,
+      "quality_score": 12.522300000000001,
+      "offer_score": 12.522300000000001,
+      "shopName": "インテリアショップ roomy",
+      "caption": "STAN.スタン IH炊飯ジャー NW-SB10 大人も赤ちゃんも大満足 みんなに優しいIH炊飯ジャー 忙しい毎日に寄り添う『 STAN. IH炊飯ジャー 』は、子育て世代の家族に嬉しい機能が揃った日本製の5.5合炊き炊飯器。炊き方が選べる「 白米炊き分け3コース 」のほか、離乳食作りに便利な「 ベビーごはん 」モードも搭載。強火で炊き続ける「 豪熱沸とうIH 」でお米の旨みを最大限に引き出し、ふっくらごはんに仕上がります。玄米や雑穀米、炊きこみ、米粉パンの発酵や焼き上げなど多彩なメニューにも対応。長く愛される「 象印 」のスタイリッシュで優しい家電シリーズです。 スペック 品名 STAN. ",
+      "is_major": true,
+      "source_query": "炊飯器",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "炊飯器"
+    },
+    {
+      "name": "【最強翌日配送 公式 発芽酵素玄米炊飯器】圧力名人最新モデル PremiumNew圧力名人SP 専用蒸し器＋レシピ本付き | 炊飯器 炊飯ジャー発芽酵素玄米炊飯器 酵素玄米炊飯器 発芽酵素玄米 酵素玄米 玄米 発芽玄米 酵素 圧力名人 圧力調理 低温調理 あま酒 ホワイト グレー 6合",
+      "price": 79750,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00r5mtn.1a2pr1dd.g00r5mtn.1a2ps706/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhealthymarche%2Fpnamsp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhealthymarche%2Fi%2F10000483%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00r5mtn.1a2pr1dd.g00r5mtn.1a2ps706/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhealthymarche%2Fpnamsp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhealthymarche%2Fi%2F10000483%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/healthymarche/cabinet/09764254/imgrc0096264519.jpg",
+      "reviewCount": 454,
+      "reviewAverage": 4.76,
+      "quality_score": 10.898496,
+      "offer_score": 10.898496,
+      "shopName": "ヘルシーマルシェ",
+      "caption": "▼セット商品はこちらから ▼単品購入はこちらから PremiumNew圧力名人がさらに進化！！New圧力名人シリーズ最新モデル PremiumNew圧力名人SP。 圧力と無圧2つの気圧でお米を炊き分けるツインプレッシャー機能搭載。圧力調理・低温調理で多彩な料理もこれ1台で！ 圧力鍋で玄米を炊いても美味しくならない。自分で発芽させるのは面倒。正確に発芽時間、温度を調整することは難しい・・・「PremiumNew圧力名人SP」はそんなあなたのお悩みを解決します。ボタン1つで「発芽」「炊飯」「保温」が全自動。忙しい毎日でもご自宅で簡単に美味しい発芽酵素玄米ごはんが食べられます。 【こんな方におすすめ",
+      "is_major": false,
+      "source_query": "炊飯器",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "炊飯器"
+    },
+    {
+      "name": "【タイガー魔法瓶 楽天市場店】 ご泡火炊き 圧力IH 遠赤9層特厚釡 炊飯器 日本製 5.5合 JPI-A100 土鍋 コーティング 炊飯ジャー 炊きたて 大麦 コンパクト おしゃれ オフ ブラック オフ ホワイト 食洗機 タイガー",
+      "price": 76780,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00rgmqn.1a2pr529.g00rgmqn.1a2ps5d1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftiger-online%2Fjpi-a100%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftiger-online%2Fi%2F10004382%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rgmqn.1a2pr529.g00rgmqn.1a2ps5d1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftiger-online%2Fjpi-a100%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftiger-online%2Fi%2F10004382%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/tiger-online/cabinet/jpi-a100_ra251210.jpg",
+      "reviewCount": 477,
+      "reviewAverage": 4.6,
+      "quality_score": 8.988399999999999,
+      "offer_score": 8.988399999999999,
+      "shopName": "タイガー魔法瓶 楽天市場店",
+      "caption": "商品説明 タイガー 圧力IH炊飯器 おすすめポイント 1）高火力が生み出す泡で包むお米の旨み「ご泡火炊き」 内なべは9層の多層鋼に、蓄熱性と熱伝導性のよい素材をコーティングした「遠赤9層土鍋かまどコート釜〜ご泡火仕上げ〜」を採用。土鍋のような細やかな泡立ちでお米一粒一粒を包み込み、遠赤効果を高めてお米のおいしさを引き出します。 2）ねばりと弾力を引き出す「可変W圧力炊き」 炊きあげ時に1.25気圧の圧力をかけてねばりともちもちした弾力を引き出し、炊きあげ後は1.05気圧の高温蒸らしによりごはん粒を炊きしめ、べたつきをおさえたしっかりとした炊きあがりに仕上げます。 3）少量でもしっかりおいしく「",
+      "is_major": true,
+      "source_query": "ご泡火炊き",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "ご泡火炊き"
+    },
+    {
+      "name": "公式 発芽酵素玄米炊飯器 【 圧力名人SP Premium New CUCKOO レシピ本&専用蒸し器付 ※3年保証 】 ロハスオリジナルレシピ集（PDF） 酵素玄米 炊飯器 酵素玄米炊飯器 発酵玄米炊飯器 玄米炊飯器 寝かせ玄米炊飯器 発芽玄米炊飯器 ロハス LOHAS",
+      "price": 79750,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00quv2n.1a2pr9ef.g00quv2n.1a2psf61/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frawfood%2Fatsuryoku-pmsp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frawfood%2Fi%2F10003004%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00quv2n.1a2pr9ef.g00quv2n.1a2psf61/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frawfood%2Fatsuryoku-pmsp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frawfood%2Fi%2F10003004%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rawfood/cabinet/kitchen/atsuryoku_pmsp/r_atsusp_th4.jpg",
+      "reviewCount": 215,
+      "reviewAverage": 4.72,
+      "quality_score": 8.099519999999998,
+      "offer_score": 8.099519999999998,
+      "shopName": "ローフード通販ショップLOHAS",
+      "caption": "▼ご一緒にいかがですか？まとめて買うならこちら ▼単品で買いたい方はこちら ■商品名：Premium New 圧力名人 CRP-ST0605F ■保温温度：69〜80℃ 調節可 ■電源：交流 100V 50-60Hz ■定格消費電力：炊飯時 880W ■最大炊飯容量：白米1.08L（6合） / 玄米0.72L（4合） ■調整装置の圧力 / 安全装置の圧力：78.4kPa / 117.6kPa ■外形寸法：幅261 x 奥行354 x 高さ265 mm、蓋を開けた高さ：503mm、電源コードの長さ：1.6m ■重量：5.9kg ■製造：韓国 ■保証：3年間（故意の故障でない場合に限る） ※納品書",
+      "is_major": false,
+      "source_query": "炊飯器",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "炊飯器"
+    },
+    {
+      "name": "炊飯器 5合 ZOJIRUSHI 象印 NW-JE10 NW-JC10-TA 圧力IH炊飯ジャー 大火力＆高圧力 5合炊き 5.5合炊き ごはん 白米 内釜3年保証 純正品 メーカー保証対応 エクプラ特選 【レビュー投稿で象印オリジナル貯金箱プレゼント】",
+      "price": 30980,
+      "url": "https://hb.afl.rakuten.co.jp/hgc/g00qn68n.1a2pr2c7.g00qn68n.1a2ps55e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fa-price%2F4974305220264%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fa-price%2Fi%2F10946436%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00qn68n.1a2pr2c7.g00qn68n.1a2ps55e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fa-price%2F4974305220264%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fa-price%2Fi%2F10946436%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
+      "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/a-price/cabinet/orj/17/0-4974305220264.jpg",
+      "reviewCount": 302,
+      "reviewAverage": 4.52,
+      "quality_score": 7.25008,
+      "offer_score": 7.25008,
+      "shopName": "XPRICE楽天市場店",
+      "caption": "商品説明★ お米は豪快に舞ったほうがおいしい「大火力&高圧力」中パッパから沸とう維持工程で一気に大火力を加え、激しい対流を起こします。甘み成分のひとつである還元糖を引き出し、沸とう維持工程で追い加圧として高圧力1.3気圧をかけ、水中に溶け出した還元糖をお米一粒一粒に染み込ませます。★ ごはんの甘み成分(還元糖)を引き出す 発熱効率を高めた「鉄器コートプラチナ厚釜」IH加熱と相性の良い鉄を釜外側にコーティング。発熱効率がアップし、炊きムラを抑えます。★ 49通りのわが家炊きメニューお米の銘柄や季節が変わっても、自分好みの食感に炊ける。★ 7通りの「炊き分け圧力IH」お好みの食感・メニューに合わせ",
+      "is_major": true,
+      "source_query": "炊飯器",
+      "selection_reason": "hidden_gem",
+      "match_keyword": "炊飯器"
+    }
+  ],
+  "candidate_summary": {
+    "query_count": 6,
+    "raw_item_count": 180,
+    "candidate_count": 102,
+    "major_brand_count": 77,
+    "hidden_gem_count": 5,
+    "queries": [
+      "炎舞炊き",
+      "ご泡火炊き",
+      "炊飯器 ビストロ",
+      "本炭釜",
+      "炊飯器",
+      "炊飯器 IH"
+    ]
+  }
 }
