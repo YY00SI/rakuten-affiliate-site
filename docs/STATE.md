@@ -26,6 +26,7 @@
 5. 2026-06-14以降のストック記事は `docs/ai/STOCK_ARTICLE_FACTORY.md` に従い、商品取得、未来日ビルド、監査まで通してから追加する。
 
 ## 判断ログ
+- 2026-05-24: ユーザー実行後の公開確認をブラウザで実施。公開側で `/work/ultrawide-monitor/` と `/work/gaming-monitor/` が404だった原因は、GitHubリモート最新の自動更新コミットが多数の記事HTMLを削除していたこと。ローカルの完全な生成済みサイトを正として `Recover generated site after remote auto-update` をpushし、公開後に全69 URLをブラウザで直接確認。404なし、商品記事のアフィリエイトリンク欠落なし。再発防止としてGitHub Actionsにページ減少ガード追加を試みたが、現在のPATにworkflow権限がなくpush不可のため未反映。
 - 2026-05-24: 6/14までのストック記事を追加。楽天APIの商品名表記ゆれで落ちた `premium-webcam-ranking` と `gaming-monitor-ranking` は required_words を補正して解消。`ultrawide-monitor-ranking` は過去に中古許可で通していたが、収益記事として不適切なため新品在庫に寄せて再設計した。
 - 2026-05-24: 収益化の前提となる信頼性強化として、独自インサイトの根拠表示、商品ごとの根拠メモ、掘り出し物候補の別枠表示を実装。楽天商品検索APIで取得できるレビュー情報はレビュー本文ではなく `reviewCount` / `reviewAverage` であるため、記事表現を「口コミ本文を読んだ断定」から「公開レビュー評価・件数・商品説明・仕様表記に基づく判断」へ寄せた。詳細は `docs/monetization_evidence_upgrade_2026-05-24.md`。
 - 2026-05-18: 楽天APIの[MISS]エラーおよびビルドゲートブロック問題の完全解消。特に `ultrawide-monitor-ranking` については、楽天API上で該当製品（Dell, LG, HUAWEI等）が中古在庫としてしか存在しないため、グローバルな「中古」除外制限に引っかかっていたのが根本原因と特定。`src/article_contract.py` を拡張して `allow_used: true` による個別許可オプションを実装し、製品情報を正常取得させた。全34記事が100%エラーフリーでビルド成功、GitHubへデプロイ完了。
