@@ -1,0 +1,1344 @@
+articles:
+  - id: portable-power-station-ranking
+    category_id: trend
+    type: daily
+    slug: portable-power-station
+    release_date: '2026-06-01'
+    h1: ポータブル電源 厳選4選
+    title: 【2026年最新】ポータブル電源 厳選4選｜停電と車中泊で後悔しない容量選び
+    intro: >
+      ポータブル電源は「容量が大きければ安心」と考えると、重すぎて運べない、充電が遅い、ソーラー運用が続かないという後悔につながります。本記事では、車中泊・防災・日常の節電まで想定し、容量、充電速度、安全性、持ち運びの現実を軸に、指名買い候補になる4機種を比較します。
+    meta_description: EcoFlow、Jackery、Anker、BLUETTIのポータブル電源を比較。容量、急速充電、安全性、持ち運びの現実から、停電・車中泊で後悔しない1台を選びます。
+    analysis_insight: >
+      ポータブル電源の後悔は、容量不足よりも「重さ」「充電時間」「使いたい家電の消費電力を超えられないこと」に出ます。公開レビュー評価・件数と商品説明の仕様表記を確認し、非常時にも普段にも使えるバランスを重視して選定します。
+    qa_config:
+      min_price: 50000
+      genre_id: '101758'
+      required_words:
+        - ポータブル電源
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - ソーラーパネルのみ
+        - ケーブル
+        - ケース
+        - カバー
+        - 部品
+        - パーツ
+    rakuten_params:
+      keyword: EcoFlow DELTA, Jackery 1000, Anker Solix, BLUETTI AC
+      discovery_keywords:
+        - ポータブル電源 大容量
+        - 防災 ポータブル電源
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: capacity
+        name: 容量と出力の余裕
+      - id: charge
+        name: 充電速度
+      - id: portability
+        name: 持ち運びの現実
+    products_extra:
+      - keyword: EcoFlow
+        best_for: 車中泊や停電対策で、短時間充電と高出力の両方を重視する家庭
+        scores:
+          capacity: 4.8
+          charge: 5.0
+          portability: 4.0
+        analysis_why: EcoFlow DELTA系は急速充電の訴求が明確で、使う前日に充電を忘れた場合でも立て直しやすいのが強みです。防災用品として倉庫に置くだけでなく、日常でも使い回したい人に向きます。
+        pros:
+          - AC急速充電の使い勝手が良い
+          - 高出力家電を動かしやすい
+          - アプリ連携で残量管理しやすい
+        critical_cons: 高出力モデルは本体重量が増えるため、階段移動や車への積み下ろしは想像以上に負担になります。
+        maintenance_reality: 長期保管する場合は満充電や空状態を避け、数か月ごとに残量確認する運用が必要です。
+        cost_performance: 防災専用品ではなくキャンプ・車中泊・節電にも使うほど、価格の高さを日常利用で回収しやすくなります。
+      - keyword: Jackery
+        best_for: 防災用として家族でも扱いやすい、実績重視の定番モデルを選びたい人
+        scores:
+          capacity: 4.5
+          charge: 4.2
+          portability: 4.4
+        analysis_why: Jackeryはポータブル電源の定番ブランドとして認知が高く、レビュー母数のある商品を見つけやすいのが安心材料です。操作の分かりやすさを優先する家庭向けです。
+        pros:
+          - 操作パネルが分かりやすい
+          - 防災用途で比較検討されやすい
+          - 容量別ラインアップが多い
+        critical_cons: 同容量帯で見ると、急速充電やアプリ機能は競合の新型に見劣りする場合があります。
+        maintenance_reality: 災害用に押し入れへ入れっぱなしにすると劣化や残量不足に気づきにくいため、定期点検日を決めるべきです。
+        cost_performance: 家族全員が迷わず使える安心感を買うモデルです。尖った性能より失敗しにくさに価値があります。
+      - keyword: Anker
+        best_for: バッテリー劣化を抑え、長期保証とサポートを重視して長く使いたい人
+        scores:
+          capacity: 4.4
+          charge: 4.5
+          portability: 4.3
+        analysis_why: Anker Solix系はリン酸鉄リチウム電池や長寿命を訴求するモデルが多く、数年単位で備える防災用途と相性が良い候補です。
+        pros:
+          - 長寿命バッテリー訴求が明確
+          - ガジェット周辺機器でのブランド信頼がある
+          - アプリ管理に対応するモデルが多い
+        critical_cons: 容量や出力のグレードが細かく、安いモデルを選ぶと使いたい家電に出力が足りない場合があります。
+        maintenance_reality: ファームウェア更新やアプリ設定を含め、家電というより大型ガジェットとして管理する意識が必要です。
+        cost_performance: 数年単位で使う前提なら、劣化しにくさとサポートを含めた総保有コストで判断しやすいモデルです。
+      - keyword: BLUETTI
+        best_for: 容量単価を重視し、予算内でできるだけ大きな電力余裕を持ちたい人
+        scores:
+          capacity: 4.7
+          charge: 4.1
+          portability: 3.8
+        analysis_why: BLUETTIは容量と価格のバランスで比較されやすく、大容量帯を狙う人の候補になります。定置寄りで使うなら魅力が出ます。
+        pros:
+          - 大容量モデルを選びやすい
+          - リン酸鉄リチウム電池採用モデルが多い
+          - 防災と車中泊の兼用に向く
+        critical_cons: 大容量モデルは重く、気軽に持ち出すより「置いて使う」前提になりやすいです。
+        maintenance_reality: 本体サイズが大きいため、収納場所、ケーブル、換気スペースまで含めて置き場所を決めておく必要があります。
+        cost_performance: 容量単価を重視するなら有力ですが、持ち運び頻度が高い人は軽量モデルとの比較が必須です。
+
+  - id: portable-air-conditioner-ranking
+    category_id: home
+    type: daily
+    slug: portable-air-conditioner
+    release_date: '2026-06-02'
+    h1: ポータブルクーラー 厳選4選
+    title: 【2026年最新】ポータブルクーラー 厳選4選｜工事不要冷房の落とし穴を比較
+    intro: >
+      ポータブルクーラーは工事不要で便利ですが、排熱ダクト、排水、運転音を甘く見ると「涼しいけれどうるさい」「窓まわりが面倒」という後悔が残ります。本記事では、寝室・ガレージ・賃貸・スポット冷房の現実を踏まえ、冷却力だけでなく設置と排熱のしやすさで比較します。
+    meta_description: コロナ、アイリスオーヤマ、ナカトミ、トヨトミのポータブルクーラーを比較。冷却力、排熱ダクト、排水、騒音の現実から工事不要冷房の失敗しない1台を選びます。
+    analysis_insight: >
+      工事不要冷房の後悔は本体性能よりも、熱を外へ逃がす設置条件で決まります。レビュー評価・件数と商品説明の排熱・排水・運転音の表記を確認し、買った後に使い続けられる現実性を重視します。
+    qa_config:
+      min_price: 25000
+      genre_id: '502823'
+      required_words:
+        - クーラー
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - 排熱ダクトのみ
+        - 窓パネルのみ
+        - フィルター
+        - 部品
+        - パーツ
+    rakuten_params:
+      keyword: コロナ どこでもクーラー, アイリスオーヤマ ポータブルクーラー, ナカトミ MAC-20, トヨトミ スポット冷暖エアコン
+      discovery_keywords:
+        - ポータブルクーラー
+        - スポットクーラー 家庭用
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: cooling
+        name: 冷却力
+      - id: exhaust
+        name: 排熱・設置のしやすさ
+      - id: noise
+        name: 運転音の許容度
+    products_extra:
+      - keyword: コロナ
+        best_for: 洗面所や部屋干しスペースなど、除湿と冷風を兼用したい家庭
+        scores:
+          cooling: 4.0
+          exhaust: 4.0
+          noise: 3.8
+        analysis_why: コロナのどこでもクーラー系は冷風だけでなく除湿用途でも検討しやすく、梅雨から夏まで使い道を広げやすいのが強みです。
+        pros:
+          - 除湿用途と兼用しやすい
+          - 家庭内のスポット冷房に使いやすい
+          - 国産家電メーカーとして比較しやすい
+        critical_cons: 部屋全体をエアコンのように冷やす用途ではなく、排熱を逃がせない場所では効果が落ちます。
+        maintenance_reality: 排水タンクやフィルターの確認が必要で、湿度が高い日は水捨ての頻度が増えます。
+        cost_performance: エアコン工事ができない場所を一時的に救う道具として見れば、工事費込みの代替として価値があります。
+      - keyword: アイリスオーヤマ
+        best_for: 賃貸の寝室や作業部屋で、窓パネル付きの分かりやすいセットを選びたい人
+        scores:
+          cooling: 4.2
+          exhaust: 4.5
+          noise: 3.5
+        analysis_why: アイリスオーヤマのポータブルクーラーはセット内容が分かりやすい商品が多く、初めて工事不要冷房を導入する人の候補になります。
+        pros:
+          - 窓パネル付きモデルを選びやすい
+          - 価格と機能のバランスが取りやすい
+          - 家庭向けサイズが多い
+        critical_cons: 排熱ダクトを窓まで伸ばすため、窓の形状によっては隙間対策が追加で必要です。
+        maintenance_reality: 窓パネルの固定、排水、フィルター清掃を夏の間ずっと続ける前提になります。
+        cost_performance: 賃貸で壁穴工事ができない場合、導入ハードルの低さが価格以上の価値になります。
+      - keyword: ナカトミ
+        best_for: ガレージや作業場など、広めの空間で強めのスポット冷房を使いたい人
+        scores:
+          cooling: 4.6
+          exhaust: 3.6
+          noise: 3.0
+        analysis_why: ナカトミは業務寄りのスポットクーラーで知られ、作業場の暑さ対策として検討しやすいブランドです。冷却力重視の候補です。
+        pros:
+          - 作業場向けの冷風力を期待しやすい
+          - シンプルな構造で扱いやすい
+          - ガレージ用途と相性が良い
+        critical_cons: 生活空間の寝室用としては運転音や見た目の存在感が気になる場合があります。
+        maintenance_reality: ホコリの多い作業場ではフィルター汚れが早く、定期清掃を怠ると冷却効率が落ちます。
+        cost_performance: 快適な作業時間を買う製品です。静音性より冷却力を優先するなら投資価値があります。
+      - keyword: トヨトミ
+        best_for: 夏だけでなく季節の変わり目まで、冷暖房の補助として使いたい人
+        scores:
+          cooling: 4.1
+          exhaust: 3.8
+          noise: 3.4
+        analysis_why: トヨトミのスポット冷暖系は、単なる夏の冷房だけでなく補助暖房も含めて検討できるのが特徴です。季節をまたいで使いたい家庭に向きます。
+        pros:
+          - 冷暖房補助として使えるモデルがある
+          - 家電メーカーとしての安心感がある
+          - 季節家電の収納効率を高めやすい
+        critical_cons: 冷房時の排熱処理は必須で、暖房用途と冷房用途では設置の面倒さが変わります。
+        maintenance_reality: 夏と冬で置き場所やダクト運用が変わるため、シーズン前に設置を見直す必要があります。
+        cost_performance: 1年のうち使える期間が長いほど価値が出ます。夏だけなら冷房専用機との比較が必要です。
+
+  - id: home-security-camera-ranking
+    category_id: home
+    type: daily
+    slug: home-security-camera
+    release_date: '2026-06-03'
+    h1: 家庭用防犯カメラ 厳選4選
+    title: 【2026年最新】家庭用防犯カメラ 厳選4選｜月額課金と電池切れの現実
+    intro: >
+      防犯カメラは画質だけで選ぶと、録画の月額課金、通知の多さ、電池切れ、夜間映像の粗さで使わなくなりがちです。本記事では、屋外設置、録画保存、通知精度、スマートホーム連携まで含め、家庭で本当に続けられる防犯カメラを比較します。
+    meta_description: eufyCam、SecuSTATION、TP-Link Tapo、SwitchBotの家庭用防犯カメラを比較。録画保存、通知、電池、夜間映像、月額課金の現実を整理します。
+    analysis_insight: >
+      家庭用防犯カメラの失敗は「映るか」より「録画を見返せるか」「通知がうるさすぎないか」「充電や配線を続けられるか」で起こります。公開レビュー評価・件数と商品説明の録画・防水・電源表記を確認して選定します。
+    qa_config:
+      min_price: 12000
+      genre_id: '501175'
+      required_words:
+        - カメラ
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - ケーブルのみ
+        - ブラケット
+        - ケース
+        - カバー
+        - 部品
+    rakuten_params:
+      keyword: eufyCam, SecuSTATION 防犯カメラ, Tapo C420S2, SwitchBot 防犯カメラ
+      discovery_keywords:
+        - 家庭用 防犯カメラ 屋外
+        - ワイヤレス 防犯カメラ
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: recording
+        name: 録画保存の自由度
+      - id: notification
+        name: 通知精度
+      - id: install
+        name: 設置と電源管理
+    products_extra:
+      - keyword: eufyCam
+        best_for: 月額課金を抑え、ローカル保存中心で家庭の防犯を始めたい人
+        scores:
+          recording: 4.8
+          notification: 4.3
+          install: 4.4
+        analysis_why: eufyCamはローカル保存の訴求が強く、月額費用を気にする家庭に向きます。Anker系のアプリ連携も含めて管理しやすい候補です。
+        pros:
+          - ローカル保存を選びやすい
+          - バッテリー式モデルが多い
+          - アプリ管理が分かりやすい
+        critical_cons: クラウド連携やAI機能はサービス仕様の変更に影響されるため、購入時点の条件確認が必要です。
+        maintenance_reality: バッテリー式は配線が楽な一方、設置場所が高いほど充電作業が面倒になります。
+        cost_performance: 月額課金を抑えられる構成なら、長期運用で本体価格の高さを回収しやすくなります。
+      - keyword: SecuSTATION
+        best_for: 国内サポートとモニター付き構成を重視し、家族で見守りたい人
+        scores:
+          recording: 4.4
+          notification: 4.1
+          install: 4.5
+        analysis_why: SecuSTATIONは国内家庭向けの防犯・見守りカメラとして比較しやすく、スマホだけでなく専用モニター付き構成を求める家庭に向きます。
+        pros:
+          - 国内向けの説明やサポートを確認しやすい
+          - モニター付きモデルを選びやすい
+          - ベビーモニターや見守り用途にも展開しやすい
+        critical_cons: クラウドAIや海外スマートホーム連携の洗練度では、専業グローバルブランドに劣る場合があります。
+        maintenance_reality: モニター、カメラ、スマホアプリを併用する場合は、通知先と録画先を最初に整理する必要があります。
+        cost_performance: 月額課金より買い切りの安心感を重視する家庭には価値があります。
+      - keyword: Tapo
+        best_for: 価格を抑えつつ、屋外カメラを複数台に増やしたい家庭
+        scores:
+          recording: 4.2
+          notification: 4.0
+          install: 4.3
+        analysis_why: TP-Link Tapoはコストを抑えながらスマートカメラを増やしやすく、玄関・駐車場・庭など複数箇所の見守りに向きます。
+        pros:
+          - 複数台導入しやすい価格帯
+          - TP-Link系アプリで管理しやすい
+          - 屋内外のラインアップが広い
+        critical_cons: 上位機ほどの高度な人物判定やクラウド機能を期待すると物足りない場合があります。
+        maintenance_reality: 複数台運用ではWi-Fi電波、録画保存先、通知範囲をカメラごとに調整する手間があります。
+        cost_performance: 高価な1台より、必要な場所に複数台置くことで防犯効果を高めたい人に向きます。
+      - keyword: SwitchBot
+        best_for: 鍵・照明・センサーなどSwitchBot製品と連携して防犯を自動化したい人
+        scores:
+          recording: 4.0
+          notification: 4.2
+          install: 4.5
+        analysis_why: SwitchBotはスマートロックやセンサーと組み合わせやすく、防犯カメラ単体より家全体の自動化で価値が出ます。
+        pros:
+          - SwitchBot製品との連携がしやすい
+          - スマートホーム初心者でも導入しやすい
+          - 屋内見守り用途にも広げやすい
+        critical_cons: カメラ単体の画質や録画機能だけで比較すると、専業ブランドに劣る場合があります。
+        maintenance_reality: 自動化ルールを増やしすぎると通知や動作条件が複雑になるため、最初は玄関など1箇所に絞るのが現実的です。
+        cost_performance: 防犯カメラとしてだけでなく、スマートロックやセンサーとの連携まで使う人ほど投資効果が高まります。
+
+  - id: nas-home-server-ranking
+    category_id: work
+    type: daily
+    slug: nas-home-server
+    release_date: '2026-06-04'
+    h1: 家庭用NAS 厳選3選
+    title: 【2026年最新】家庭用NAS 厳選3選｜写真と仕事データを失わないバックアップ設計
+    intro: >
+      NASは「大容量の外付けHDD」と考えると失敗します。大切なのは容量ではなく、RAID、バックアップ先、スマホ写真の自動保存、故障時の復旧しやすさです。本記事では、家庭と小規模オフィスで長く使えるNASを、初期設定と運用の現実まで含めて比較します。
+    meta_description: Synology、QNAP、ASUSTORの家庭用NASを比較。RAID、バックアップ、写真保存、初期設定、故障時の復旧まで考えた選び方を整理します。
+    analysis_insight: >
+      NASの後悔は「買ったのにバックアップ設計がない」「HDD故障時に何をすればいいか分からない」ことです。公開レビュー評価・件数と商品説明のベイ数・アプリ・拡張性を確認し、運用し続けられるモデルを選びます。
+    qa_config:
+      min_price: 30000
+      genre_id: '211741'
+      required_words:
+        - NAS
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - HDDのみ
+        - メモリ
+        - ケース
+        - ケーブル
+        - 部品
+    rakuten_params:
+      keyword: Synology DS224+, QNAP TS-264, ASUSTOR AS5402T
+      discovery_keywords:
+        - NAS 2ベイ
+        - 家庭用NAS
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: backup
+        name: バックアップ設計
+      - id: apps
+        name: アプリの使いやすさ
+      - id: expand
+        name: 拡張性
+    products_extra:
+      - keyword: Synology
+        best_for: 写真、仕事ファイル、家族データを分かりやすく自動保存したい家庭
+        scores:
+          backup: 4.8
+          apps: 5.0
+          expand: 4.2
+        analysis_why: Synologyは管理画面とアプリの分かりやすさで選ばれやすく、NAS初心者がバックアップ運用を始める候補として強いです。
+        pros:
+          - 管理画面が比較的分かりやすい
+          - 写真管理や同期アプリが充実
+          - 家庭から小規模オフィスまで使いやすい
+        critical_cons: 本体だけでは使えず、信頼できるNAS用HDDを別途選ぶ必要があります。
+        maintenance_reality: 初期設定後も、HDD健康状態、バックアップログ、アップデートを定期的に見る運用が必要です。
+        cost_performance: データ復旧サービスの費用や写真喪失の損失を考えると、予防投資として価値があります。
+      - keyword: QNAP
+        best_for: 仮想化や高速ネットワークなど、NASを小型サーバーとして使いたい人
+        scores:
+          backup: 4.5
+          apps: 4.2
+          expand: 5.0
+        analysis_why: QNAPは拡張性や高機能性で選びやすく、単なる保存先以上に動画、仮想化、業務データ共有まで使いたい人に向きます。
+        pros:
+          - 高機能なモデルを選びやすい
+          - ネットワークや拡張カード対応が豊富
+          - 小規模業務にも使いやすい
+        critical_cons: 機能が多い分、初期設定やセキュリティ設定を理解しないまま外部公開するとリスクがあります。
+        maintenance_reality: アップデート、ユーザー権限、外部アクセス設定を定期的に見直す必要があります。
+        cost_performance: サーバー用途まで使うなら高い投資効率がありますが、単純な写真保存だけなら過剰になりがちです。
+      - keyword: ASUSTOR
+        best_for: 価格を抑えつつ、2.5GbEやM.2など新しめの拡張性を狙いたい人
+        scores:
+          backup: 4.2
+          apps: 4.0
+          expand: 4.8
+        analysis_why: ASUSTORは価格とスペックのバランスで比較しやすく、ネットワーク速度や拡張性を重視する中級者向けの候補です。
+        pros:
+          - 価格に対して拡張性を得やすい
+          - 2.5GbE対応モデルを選びやすい
+          - 動画保存や家庭内共有と相性が良い
+        critical_cons: Synologyほど情報量や初心者向け解説が多くないため、設定で詰まった時に調べる力が必要です。
+        maintenance_reality: NAS本体よりHDD選定とバックアップ先の設計が重要で、二重保存を前提に運用すべきです。
+        cost_performance: 自分で設定できる人には割安ですが、完全初心者はサポート情報の多いブランドも比較すべきです。
+
+  - id: gaming-monitor-ranking
+    category_id: work
+    type: daily
+    slug: gaming-monitor
+    release_date: '2026-06-05'
+    h1: 高級ゲーミングモニター 厳選3選
+    title: 【2026年最新】高級ゲーミングモニター 厳選3選｜勝率より先に確認すべき遅延と視認性
+    intro: >
+      ゲーミングモニターはリフレッシュレートだけで選ぶと、画面サイズ、応答速度、黒つぶれ、スタンドの自由度で後悔します。本記事では、FPS、映像美、家庭用ゲーム機、作業兼用の視点から、長く使える高級ゲーミングモニターを比較します。
+    meta_description: BenQ ZOWIE、LG UltraGear、Pixioのゲーミングモニターを比較。応答速度、視認性、解像度、作業兼用の現実を整理します。
+    analysis_insight: >
+      高級ゲーミングモニターの後悔は、スペック表のHzではなく「自分のゲームと作業に合うサイズ・解像度か」で起こります。レビュー評価・件数と商品説明のパネル・応答速度・端子表記を確認し、用途別に選定します。
+    qa_config:
+      min_price: 30000
+      genre_id: '110105'
+      required_words:
+        - モニター
+        - ディスプレイ
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - アーム
+        - スタンドのみ
+        - ケーブル
+        - フィルム
+        - 部品
+    rakuten_params:
+      keyword: BenQ ZOWIE, LG UltraGear, Pixio ゲーミングモニター
+      discovery_keywords:
+        - ゲーミングモニター 240Hz
+        - ゲーミングモニター 4K
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: response
+        name: 応答速度と遅延
+      - id: visibility
+        name: 視認性
+      - id: versatility
+        name: 作業兼用のしやすさ
+    products_extra:
+      - keyword: ZOWIE
+        best_for: FPSで視認性と勝ちやすさを最優先し、映像美より競技性を重視する人
+        scores:
+          response: 5.0
+          visibility: 4.7
+          versatility: 3.4
+        analysis_why: BenQ ZOWIEは競技FPS向けとして比較されやすく、黒挿入や視認性重視の調整を求める人に向きます。
+        pros:
+          - FPS向けの視認性調整がしやすい
+          - 競技用途の定番として情報が多い
+          - スタンド調整の自由度が高いモデルがある
+        critical_cons: 映画や写真編集の色表現を重視する用途では、映像美重視のモニターに見劣りする場合があります。
+        maintenance_reality: 最初にゲーム別の画質設定を詰めないと、買っただけでは強みを活かせません。
+        cost_performance: FPSに集中するなら有力ですが、作業や映像鑑賞も兼ねるなら用途を割り切る必要があります。
+      - keyword: UltraGear
+        best_for: ゲームだけでなく、動画視聴や作業まで1台で済ませたい人
+        scores:
+          response: 4.5
+          visibility: 4.5
+          versatility: 4.8
+        analysis_why: LG UltraGearはゲーミング性能と画面品質のバランスで比較しやすく、仕事兼用のメインモニターにしやすい候補です。
+        pros:
+          - 解像度とサイズの選択肢が豊富
+          - 作業兼用でも使いやすいモデルが多い
+          - 映像鑑賞にも寄せやすい
+        critical_cons: 競技FPSだけを見ると、専用機ほど尖った視認性調整ではありません。
+        maintenance_reality: 大画面モデルはデスク奥行きとモニターアーム耐荷重を事前に確認する必要があります。
+        cost_performance: ゲーム、仕事、映像を1台にまとめるなら価格を回収しやすい選択肢です。
+      - keyword: Pixio
+        best_for: 予算を抑えながら高リフレッシュレート環境に移行したい人
+        scores:
+          response: 4.3
+          visibility: 4.0
+          versatility: 4.0
+        analysis_why: Pixioは価格を抑えたゲーミングモニター候補として比較しやすく、初めて高Hz環境へ移行する人に向きます。
+        pros:
+          - 高Hzモデルを比較的安く選びやすい
+          - シンプルなデザインで作業机にも置きやすい
+          - 入門から中級まで幅広い
+        critical_cons: スタンド調整やスピーカーなど周辺機能は上位ブランドより割り切られている場合があります。
+        maintenance_reality: 付属スタンドの調整幅が足りない場合、別途モニターアームを検討する必要があります。
+        cost_performance: 価格を抑えてフレームレートの恩恵を得たい人には有力ですが、全部入りを期待しない方が安全です。
+
+  - id: smart-ring-ranking
+    category_id: beauty
+    type: daily
+    slug: smart-ring
+    release_date: '2026-06-06'
+    h1: スマートリング 厳選3選
+    title: 【2026年最新】スマートリング 厳選3選｜睡眠計測で後悔しないサイズと月額費用
+    intro: >
+      スマートリングは小さくて便利ですが、サイズ選び、月額アプリ、充電頻度、国内サポートを見落とすと続きません。本記事では、睡眠・回復・活動量の記録を腕時計なしで続けたい人に向けて、購入前に確認すべき現実を整理します。
+    meta_description: Oura Ring、RingConn、Galaxy Ringなどスマートリングを比較。睡眠計測、サイズ選び、充電、月額費用、国内サポートの現実を整理します。
+    analysis_insight: >
+      スマートリングの後悔は、センサー性能よりも「指に合うサイズか」「毎日着けられるか」「アプリ課金を許容できるか」です。レビュー評価・件数と商品説明の対応アプリ・サイズ・電池表記を確認して選定します。
+    qa_config:
+      min_price: 25000
+      genre_id: '564895'
+      required_words:
+        - リング
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - サイズキットのみ
+        - 充電器のみ
+        - ケース
+        - カバー
+        - 部品
+    rakuten_params:
+      keyword: Oura Ring, RingConn, Galaxy Ring
+      discovery_keywords:
+        - スマートリング
+        - 睡眠 スマートリング
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: sleep
+        name: 睡眠・回復計測
+      - id: comfort
+        name: 装着感
+      - id: cost
+        name: 月額費用の納得感
+    products_extra:
+      - keyword: Oura
+        best_for: 睡眠と回復の傾向を深く見たい、健康管理を習慣化したい人
+        scores:
+          sleep: 5.0
+          comfort: 4.4
+          cost: 3.5
+        analysis_why: Oura Ringは睡眠・回復指標で知られ、健康管理目的のスマートリングとして指名買いされやすい候補です。
+        pros:
+          - 睡眠と回復の見える化に強い
+          - 腕時計より睡眠時に邪魔になりにくい
+          - 長期トレンドを追いやすい
+        critical_cons: アプリの月額費用や国内サポート条件を確認せず買うと、本体代以外の負担で後悔します。
+        maintenance_reality: 指輪型はサイズが合わないと毎日着けられません。購入前のサイズ確認が最重要です。
+        cost_performance: 睡眠改善や体調管理に毎日使うなら価値がありますが、歩数計代わりならスマートウォッチの方が安く済みます。
+      - keyword: RingConn
+        best_for: 月額費用を抑えながら、睡眠と活動量の記録を続けたい人
+        scores:
+          sleep: 4.4
+          comfort: 4.5
+          cost: 4.7
+        analysis_why: RingConnは月額課金を抑えやすい候補として比較されやすく、スマートリングを初めて試す人に向きます。
+        pros:
+          - 月額費用を抑えやすい
+          - 薄型で日常装着しやすい
+          - 睡眠と活動量の基本記録に向く
+        critical_cons: 医療機器ではないため、数値を診断として扱うのは危険です。あくまで傾向管理の道具です。
+        maintenance_reality: 充電ケースやアプリ同期を含め、指輪というより小型ガジェットとして管理する必要があります。
+        cost_performance: 月額を避けたい人には有力ですが、分析の深さを求めるなら上位サービスと比較すべきです。
+      - keyword: Galaxy Ring
+        best_for: GalaxyスマホやSamsung Healthを中心に健康データをまとめたい人
+        scores:
+          sleep: 4.5
+          comfort: 4.4
+          cost: 4.2
+        analysis_why: Galaxy RingはSamsung Healthとの連携を前提に価値が出る候補です。スマホ側のエコシステムを揃えている人に向きます。
+        pros:
+          - Samsung Healthと連携しやすい
+          - スマートウォッチなしで睡眠を測りやすい
+          - Galaxyユーザーには管理がまとまりやすい
+        critical_cons: Galaxy以外のスマホでは機能や使い勝手が制限される可能性があります。
+        maintenance_reality: スマホ連携、サイズ、充電周期を事前に確認しないと、使い始めてから面倒に感じます。
+        cost_performance: Galaxy環境を使っている人には価値が出ますが、単体で選ぶなら対応端末と機能制限の確認が必須です。
+
+  - id: laser-printer-ranking
+    category_id: work
+    type: daily
+    slug: laser-printer
+    release_date: '2026-06-07'
+    h1: 家庭・小規模オフィス向けレーザープリンター 厳選4選
+    title: 【2026年最新】レーザープリンター 厳選4選｜インク詰まりから解放される仕事道具
+    intro: >
+      たまにしか印刷しない家庭や小規模オフィスほど、インクジェットの目詰まりやインク代で後悔しがちです。レーザープリンターは本体が大きく、トナーも高く見えますが、文書印刷の安定性では強い選択肢です。本記事では、印刷量、設置場所、カラー要否、ランニングコストで比較します。
+    meta_description: Brother、Canon Satera、EPSON、HPのレーザープリンターを比較。印刷速度、トナー代、カラー要否、設置サイズから仕事用の1台を選びます。
+    analysis_insight: >
+      レーザープリンターの後悔は、印刷速度より「置き場所」「トナー代」「カラーが本当に必要か」で起こります。レビュー評価・件数と商品説明の対応用紙、無線LAN、両面印刷、トナー表記を確認します。
+    qa_config:
+      min_price: 15000
+      genre_id: '110080'
+      required_words:
+        - プリンター
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - トナーのみ
+        - ドラムのみ
+        - インク
+        - ケーブル
+        - 部品
+    rakuten_params:
+      keyword: Brother レーザープリンター, Canon Satera, EPSON レーザープリンター, HP LaserJet
+      discovery_keywords:
+        - レーザープリンター A4
+        - カラーレーザープリンター
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: running
+        name: ランニングコスト
+      - id: speed
+        name: 印刷速度
+      - id: footprint
+        name: 設置性
+    products_extra:
+      - keyword: Brother
+        best_for: モノクロ文書を安定して印刷したい在宅ワーカーや小規模事務所
+        scores:
+          running: 4.8
+          speed: 4.5
+          footprint: 4.4
+        analysis_why: Brotherのレーザープリンターは文書印刷向けの定番で、モノクロ中心ならランニングコストと安定性を両立しやすい候補です。
+        pros:
+          - モノクロ文書印刷に強い
+          - 両面印刷や無線LAN対応機を選びやすい
+          - 消耗品情報が探しやすい
+        critical_cons: 写真やカラー資料の見栄えはインクジェットや上位カラー機に劣ります。
+        maintenance_reality: トナー交換頻度は少ない一方、本体内部の紙粉や設置場所のホコリ対策は必要です。
+        cost_performance: 文字中心で印刷するなら、インク詰まりのストレスを減らせる仕事道具として価値があります。
+      - keyword: Satera
+        best_for: Canonブランドの安心感と法人向けの使い勝手を重視する人
+        scores:
+          running: 4.4
+          speed: 4.6
+          footprint: 4.0
+        analysis_why: Canon Sateraはビジネス文書向けに比較しやすく、オフィス用途の信頼性を重視する人に向きます。
+        pros:
+          - 法人向け機能を選びやすい
+          - 印刷品質が安定しやすい
+          - 複合機モデルも検討できる
+        critical_cons: 機能を盛るほど本体サイズと価格が上がり、家庭用デスクには置きにくくなります。
+        maintenance_reality: トナーやドラムの型番を間違えないよう、購入時から消耗品を確認しておくべきです。
+        cost_performance: 業務文書の失敗を減らす安心感に価値があります。家庭用ならサイズを最優先で確認してください。
+      - keyword: EPSON
+        best_for: カラー資料や図表も含め、仕事用の印刷品質を重視したい人
+        scores:
+          running: 4.0
+          speed: 4.4
+          footprint: 4.0
+        analysis_why: EPSONはプリンター全般で認知が高く、カラー印刷を含めた仕事用候補として比較しやすいブランドです。
+        pros:
+          - カラー資料用途も検討しやすい
+          - 日本語のサポート情報を探しやすい
+          - 複合機選択肢がある
+        critical_cons: カラーレーザーは本体も消耗品も高く、カラー印刷頻度が低いと過剰投資になります。
+        maintenance_reality: トナーが複数色になると在庫管理と交換費用が増えます。
+        cost_performance: カラー資料を頻繁に印刷する事業者向けです。請求書や文書だけならモノクロ機の方が合理的です。
+      - keyword: LaserJet
+        best_for: コンパクトな仕事用レーザーを探し、クラウド印刷や海外ブランドにも抵抗がない人
+        scores:
+          running: 4.0
+          speed: 4.2
+          footprint: 4.5
+        analysis_why: HP LaserJetは省スペースモデルを探す人の候補になります。家庭のワークスペースにも置きやすいモデルが見つかります。
+        pros:
+          - コンパクトモデルを選びやすい
+          - 無線印刷に対応するモデルが多い
+          - 海外ブランドの選択肢として比較できる
+        critical_cons: 消耗品価格やアプリ仕様を確認しないと、本体価格だけでは総額を判断できません。
+        maintenance_reality: アプリ連携やドライバー更新を含め、PC環境との相性確認が必要です。
+        cost_performance: 省スペースを重視する在宅ワーカーには有力ですが、消耗品の入手性を先に確認すべきです。
+
+  - id: document-scanner-ranking
+    category_id: work
+    type: daily
+    slug: document-scanner
+    release_date: '2026-06-08'
+    h1: ドキュメントスキャナー 厳選4選
+    title: 【2026年最新】ドキュメントスキャナー 厳選4選｜紙の山をなくす速度と補正力
+    intro: >
+      書類を減らすためにスキャナーを買っても、紙詰まり、傾き補正、名刺やレシートの読み取り、保存先設定が面倒だと続きません。本記事では、家庭の書類整理から小規模オフィスの電子帳簿保存まで、紙を本当に減らせるスキャナーを比較します。
+    meta_description: ScanSnap、Canon、Brother、EPSONのドキュメントスキャナーを比較。読み取り速度、紙詰まり、補正、保存先設定、電子化運用の現実を整理します。
+    analysis_insight: >
+      スキャナーの後悔は画質ではなく「取り込むまでの面倒さ」で起こります。公開レビュー評価・件数と商品説明のADF、両面読取、補正、クラウド連携を確認し、紙を減らす運用に向くモデルを選びます。
+    qa_config:
+      min_price: 25000
+      genre_id: '110080'
+      required_words:
+        - スキャナー
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - ローラーのみ
+        - パッドのみ
+        - ケーブル
+        - ケース
+        - 部品
+    rakuten_params:
+      keyword: ScanSnap iX1600, Canon DR, Brother ADS, EPSON DS
+      discovery_keywords:
+        - ドキュメントスキャナー ADF
+        - 書類 スキャナー
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: speed
+        name: 読み取り速度
+      - id: correction
+        name: 補正とOCR
+      - id: workflow
+        name: 保存ワークフロー
+    products_extra:
+      - keyword: ScanSnap
+        best_for: 家庭の書類、領収書、名刺をまとめてデジタル化したい人
+        scores:
+          speed: 4.8
+          correction: 4.8
+          workflow: 5.0
+        analysis_why: ScanSnapは家庭・個人事業主の書類電子化で指名買いされやすく、ボタン一つで保存先へ流す運用を作りやすい候補です。
+        pros:
+          - 書類電子化の定番として情報が多い
+          - 両面読み取りと補正機能を使いやすい
+          - クラウド保存の導線を作りやすい
+        critical_cons: 価格は高めで、たまに数枚だけスキャンする用途では過剰投資になります。
+        maintenance_reality: 紙粉でローラーが汚れるため、定期清掃しないと重送や紙詰まりが増えます。
+        cost_performance: 紙の保管スペースと探す時間を減らせるため、書類が多い家庭や個人事業主ほど回収しやすい投資です。
+      - keyword: Canon
+        best_for: 業務文書を安定して取り込み、法人寄りの信頼性を重視する人
+        scores:
+          speed: 4.6
+          correction: 4.5
+          workflow: 4.2
+        analysis_why: Canonのドキュメントスキャナーは業務用途で比較しやすく、大量文書を安定して処理したい人に向きます。
+        pros:
+          - 業務向けラインアップがある
+          - ADF搭載モデルを選びやすい
+          - 紙文書処理に強いブランド
+        critical_cons: 法人寄りのモデルは家庭用としては大きく、操作画面やソフトも堅めに感じる場合があります。
+        maintenance_reality: 消耗ローラーやパッドの交換時期を把握し、紙詰まりの前に手入れする必要があります。
+        cost_performance: 業務で大量スキャンするなら安定性に価値がありますが、家庭用なら設置サイズを優先して確認すべきです。
+      - keyword: Brother
+        best_for: 価格と機能のバランスを見ながら、事務作業用に導入したい小規模事業者
+        scores:
+          speed: 4.3
+          correction: 4.0
+          workflow: 4.1
+        analysis_why: Brother ADS系は事務機器として比較しやすく、スキャン頻度が中程度の小規模事業者に向きます。
+        pros:
+          - 事務作業向けの価格帯を選びやすい
+          - ネットワーク対応モデルを検討できる
+          - 複合的な業務機器として扱いやすい
+        critical_cons: 補正やアプリの快適さではScanSnapのような個人向け定番機に劣る場合があります。
+        maintenance_reality: スキャン先フォルダやクラウド連携を最初に決めないと、ファイルが散らばります。
+        cost_performance: 紙処理を事務フローに組み込むなら有力ですが、個人の書類整理だけなら使い勝手を重視して比較すべきです。
+      - keyword: EPSON
+        best_for: 写真や薄い紙も含め、幅広い原稿を電子化したい人
+        scores:
+          speed: 4.2
+          correction: 4.4
+          workflow: 4.0
+        analysis_why: EPSONのスキャナーは書類だけでなく画像寄りの用途も検討しやすく、原稿の種類が多い人の候補になります。
+        pros:
+          - 原稿種別に応じた選択肢がある
+          - 写真や画像用途も検討しやすい
+          - 日本語サポート情報を探しやすい
+        critical_cons: 書類を高速で流す用途と写真を丁寧に読む用途では最適機種が変わります。
+        maintenance_reality: ガラス面や搬送部の汚れがスキャン品質に直結するため、清掃を習慣にする必要があります。
+        cost_performance: 書類と写真を兼用するなら価値がありますが、帳票だけならADF特化機との比較が必要です。
+
+  - id: dashcam-ranking
+    category_id: trend
+    type: daily
+    slug: dashcam
+    release_date: '2026-06-09'
+    h1: ドライブレコーダー 厳選4選
+    title: 【2026年最新】ドライブレコーダー 厳選4選｜夜間映像と駐車監視で選ぶ安心
+    intro: >
+      ドライブレコーダーは「前後2カメラ」だけで選ぶと、夜間のナンバー読み取り、駐車監視、配線、SDカード管理で後悔します。本記事では、事故時の証拠能力と普段の運用を重視し、信頼性の高い候補を比較します。
+    meta_description: コムテック、ユピテル、ケンウッド、パイオニアのドライブレコーダーを比較。夜間映像、駐車監視、配線、SDカード管理の現実から安心できる1台を選びます。
+    analysis_insight: >
+      ドライブレコーダーの後悔は、撮れているつもりで肝心な場面が白飛び・黒つぶれ・上書きされていることです。レビュー評価・件数と商品説明のSTARVIS、駐車監視、前後カメラ表記を確認して選定します。
+    qa_config:
+      min_price: 15000
+      genre_id: '101126'
+      required_words:
+        - ドライブレコーダー
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - SDカードのみ
+        - ケーブルのみ
+        - ステー
+        - 部品
+    rakuten_params:
+      keyword: コムテック ZDR, ユピテル ドライブレコーダー, ケンウッド DRV, パイオニア VREC
+      discovery_keywords:
+        - ドライブレコーダー 前後
+        - ドライブレコーダー 駐車監視
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: night
+        name: 夜間映像
+      - id: parking
+        name: 駐車監視
+      - id: reliability
+        name: 録画の安定性
+    products_extra:
+      - keyword: コムテック
+        best_for: 国内メーカーの定番から、前後2カメラを安心して選びたい人
+        scores:
+          night: 4.4
+          parking: 4.5
+          reliability: 4.8
+        analysis_why: コムテックはドラレコの定番として比較されやすく、国内向けの情報量とサポート重視の人に向きます。
+        pros:
+          - 国内向け情報が多い
+          - 前後2カメラモデルを選びやすい
+          - 取り付け事例を調べやすい
+        critical_cons: 駐車監視を本格運用するには、別売りケーブルやバッテリー上がり対策が必要な場合があります。
+        maintenance_reality: SDカードは消耗品です。定期フォーマットや交換を怠ると、肝心な録画が残らないリスクがあります。
+        cost_performance: 事故時の証拠を残す保険として考えると、本体価格以上の安心を得やすい候補です。
+      - keyword: ユピテル
+        best_for: レーダー探知機や車載機器と合わせて、車内機器をまとめたい人
+        scores:
+          night: 4.3
+          parking: 4.2
+          reliability: 4.5
+        analysis_why: ユピテルは車載機器の選択肢が広く、ドラレコ以外の機器との相性も含めて検討しやすいブランドです。
+        pros:
+          - 車載機器としての実績がある
+          - 多機能モデルを選びやすい
+          - 取り付け店でも扱われやすい
+        critical_cons: モデル数が多く、型番ごとの違いを確認しないと必要な機能を外す可能性があります。
+        maintenance_reality: GPSデータや設定更新があるモデルは、購入後の更新作業も運用に含める必要があります。
+        cost_performance: 車載機器をまとめて考える人には価値がありますが、シンプル録画だけなら価格差を比較すべきです。
+      - keyword: ケンウッド
+        best_for: 映像の見やすさと車内機器としての堅実さを重視する人
+        scores:
+          night: 4.5
+          parking: 4.0
+          reliability: 4.4
+        analysis_why: ケンウッドは映像機器としての安心感があり、夜間や逆光時の見やすさを重視する人の候補になります。
+        pros:
+          - 映像品質を重視しやすい
+          - 国内ブランドとして比較しやすい
+          - ナビ連携を検討できる場合がある
+        critical_cons: 駐車監視やクラウド機能まで求めると、モデル選びが限定されます。
+        maintenance_reality: カメラ位置が悪いとワイパー範囲外の雨粒や映り込みで画質が落ちます。設置位置が重要です。
+        cost_performance: 事故時の映像確認を重視するなら価値があります。多機能より基本画質を優先する人向けです。
+      - keyword: パイオニア
+        best_for: カーナビやオーディオと合わせて車内環境を統一したい人
+        scores:
+          night: 4.2
+          parking: 4.0
+          reliability: 4.3
+        analysis_why: パイオニアは車載AV機器との親和性を含めて検討しやすく、車内機器を同系統で揃えたい人に向きます。
+        pros:
+          - 車載機器メーカーとして比較しやすい
+          - ナビ連携を検討しやすい
+          - デザインを車内に馴染ませやすい
+        critical_cons: ドラレコ単体の価格だけで見ると、専業ブランドの方が割安な場合があります。
+        maintenance_reality: ナビ連携を使う場合は対応機種と配線条件を事前確認する必要があります。
+        cost_performance: 既存の車内機器と連携できるなら価値が出ます。単体購入なら画質と価格を冷静に比較してください。
+
+  - id: mesh-wifi-router-ranking
+    category_id: work
+    type: daily
+    slug: mesh-wifi-router
+    release_date: '2026-06-10'
+    h1: メッシュWi-Fiルーター 厳選4選
+    title: 【2026年最新】メッシュWi-Fi 厳選4選｜在宅ワークを止めない家中通信
+    intro: >
+      Wi-Fiルーターは最大速度だけで選ぶと、壁越しの弱さ、家族同時接続、設定アプリ、買い替え後の置き場所で後悔します。本記事では、戸建て・マンション・在宅会議・スマートホームの同時接続を前提に、メッシュWi-Fiを比較します。
+    meta_description: TP-Link Deco、ASUS ZenWiFi、バッファロー、NEC AtermのメッシュWi-Fiを比較。通信範囲、同時接続、設定、置き場所の現実を整理します。
+    analysis_insight: >
+      メッシュWi-Fiの後悔は、スペック上の速度ではなく「置き場所」と「中継ノード間の通信」で決まります。レビュー評価・件数と商品説明のWi-Fi規格、対応面積、アプリ管理、バックホール表記を確認します。
+    qa_config:
+      min_price: 15000
+      genre_id: '506591'
+      required_words:
+        - Wi-Fi
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - LANケーブル
+        - 中継器のみ
+        - アンテナ
+        - 部品
+    rakuten_params:
+      keyword: Deco Wi-Fi, ASUS ZenWiFi, バッファロー メッシュWi-Fi, NEC Aterm メッシュ
+      discovery_keywords:
+        - メッシュWi-Fi
+        - Wi-Fi 7 ルーター
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: coverage
+        name: 家中のカバー範囲
+      - id: stability
+        name: 同時接続の安定性
+      - id: setup
+        name: 設定のしやすさ
+    products_extra:
+      - keyword: Deco
+        best_for: アプリで簡単に家中Wi-Fiを作りたい、設定が苦手な家庭
+        scores:
+          coverage: 4.8
+          stability: 4.4
+          setup: 5.0
+        analysis_why: TP-Link DecoはメッシュWi-Fiの定番として比較されやすく、アプリ主導でセットアップしやすいのが強みです。
+        pros:
+          - セット品を選びやすい
+          - アプリ設定が分かりやすい
+          - 家庭用メッシュの情報が多い
+        critical_cons: 高度なネットワーク設定を細かく触りたい人には、アプリ中心の設計が物足りない場合があります。
+        maintenance_reality: ノードの置き場所を変えるだけで通信品質が変わるため、設置後に速度確認と位置調整が必要です。
+        cost_performance: 家族の会議・動画・ゲームが安定するなら、回線契約を変える前の投資として効果が出やすいです。
+      - keyword: ZenWiFi
+        best_for: 高性能ルーターを使い、ゲームやNASまで安定させたい中級者
+        scores:
+          coverage: 4.7
+          stability: 4.8
+          setup: 4.0
+        analysis_why: ASUS ZenWiFiは高性能ルーター寄りのメッシュ候補で、速度や設定自由度を重視する人に向きます。
+        pros:
+          - 高性能モデルを選びやすい
+          - ゲームやNAS用途とも相性が良い
+          - 設定の自由度が比較的高い
+        critical_cons: 初心者には設定項目が多く、機能を使いこなすまで時間がかかります。
+        maintenance_reality: ファームウェア更新、SSID設計、ゲストネットワークなどを定期的に見直すと安定します。
+        cost_performance: ネットワーク機器として長く使える性能を求める人には価値がありますが、簡単さ重視ならDecoも比較すべきです。
+      - keyword: バッファロー
+        best_for: 国内サポートと量販店での入手性を重視する家庭
+        scores:
+          coverage: 4.3
+          stability: 4.2
+          setup: 4.4
+        analysis_why: バッファローは国内家庭向けルーターの定番で、日本語情報と入手性を重視する人に向きます。
+        pros:
+          - 国内で情報を探しやすい
+          - 量販店でも選びやすい
+          - AOSSなど家庭向け機能を使いやすい
+        critical_cons: 型番が多く、Wi-Fi 6/6E/7やメッシュ対応範囲を確認しないと旧世代を選ぶ可能性があります。
+        maintenance_reality: 回線機器との相性、設置場所、ファーム更新で安定性が変わります。
+        cost_performance: 困った時に調べやすい安心感を重視する家庭には価値があります。
+      - keyword: Aterm
+        best_for: 安定性重視で、派手な機能より堅実な国産ルーターを選びたい人
+        scores:
+          coverage: 4.2
+          stability: 4.5
+          setup: 4.1
+        analysis_why: NEC Atermは堅実な家庭用ルーターとして比較されやすく、安定重視の家庭に向きます。
+        pros:
+          - 安定性重視で選びやすい
+          - 国内メーカーとして安心感がある
+          - 家庭用回線との組み合わせを調べやすい
+        critical_cons: アプリの華やかさや高度なゲーミング機能では海外高性能機に劣る場合があります。
+        maintenance_reality: 設定変更後は実測速度だけでなく、会議中の切断やスマホ移動時の切り替わりも確認すべきです。
+        cost_performance: 家族全員が安定して使えることに価値を置くなら、堅実な選択肢です。
+
+  - id: electric-cooler-box-ranking
+    category_id: trend
+    type: daily
+    slug: electric-cooler-box
+    release_date: '2026-06-11'
+    h1: ポータブル冷蔵庫 厳選4選
+    title: 【2026年最新】ポータブル冷蔵庫 厳選4選｜車中泊と買い出しで失敗しない冷却力
+    intro: >
+      ポータブル冷蔵庫は容量だけで選ぶと、車内で場所を取りすぎる、電源が足りない、設定温度まで冷えないという後悔が起きます。本記事では、車中泊、キャンプ、買い出し、防災備蓄の4用途で、冷却力と運用の現実を比較します。
+    meta_description: Makita、Dometic、アイリスオーヤマ、BougeRVのポータブル冷蔵庫を比較。冷却力、容量、車載電源、持ち運びの現実を整理します。
+    analysis_insight: >
+      ポータブル冷蔵庫の後悔は「冷えるか」だけでなく、車への積載、消費電力、フタの開閉、持ち運びで起こります。レビュー評価・件数と商品説明の容量、温度、電源方式を確認して選定します。
+    qa_config:
+      min_price: 25000
+      genre_id: '101758'
+      required_words:
+        - 冷蔵庫
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - バッグ
+        - 保冷剤
+        - ケーブルのみ
+        - カバー
+        - 部品
+    rakuten_params:
+      keyword: マキタ 充電式保冷温庫, Dometic ポータブル冷蔵庫, アイリスオーヤマ ポータブル冷蔵庫, BougeRV 車載冷蔵庫
+      discovery_keywords:
+        - 車載冷蔵庫
+        - ポータブル冷蔵庫
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: cooling
+        name: 冷却力
+      - id: power
+        name: 電源運用
+      - id: carry
+        name: 積載と持ち運び
+    products_extra:
+      - keyword: マキタ
+        best_for: マキタバッテリーを持っていて、現場や車内で冷温庫を使いたい人
+        scores:
+          cooling: 4.5
+          power: 4.8
+          carry: 4.0
+        analysis_why: マキタの充電式保冷温庫は工具バッテリー資産を活かせるのが強みです。現場作業やアウトドアで使う人に向きます。
+        pros:
+          - マキタバッテリーと相性が良い
+          - 冷温両方で使えるモデルがある
+          - 現場用途に強い
+        critical_cons: バッテリーを持っていない人は、本体以外の初期費用が大きくなります。
+        maintenance_reality: 車載後は庫内の結露や汚れを拭き取り、ニオイ残りを防ぐ必要があります。
+        cost_performance: 既にマキタ環境がある人には価値が高く、ゼロから揃える場合は総額確認が必須です。
+      - keyword: Dometic
+        best_for: 車中泊やキャンピングカーで、冷却性能と信頼性を重視する人
+        scores:
+          cooling: 4.8
+          power: 4.4
+          carry: 3.8
+        analysis_why: Dometicは車載・アウトドア冷蔵庫で知られ、長時間移動や車中泊用途の候補として比較しやすいブランドです。
+        pros:
+          - 車載冷蔵庫として比較しやすい
+          - 冷却性能重視のモデルを選べる
+          - キャンピング用途と相性が良い
+        critical_cons: 価格が高く、日帰り買い出し用途だけなら過剰になりがちです。
+        maintenance_reality: 車内固定、電源ケーブルの取り回し、排熱スペースを確保しないと性能を活かせません。
+        cost_performance: 車中泊の食事管理や飲み物の買い足しを減らせるなら、旅の質を上げる投資になります。
+      - keyword: アイリスオーヤマ
+        best_for: 家庭の買い出し、停電対策、短期アウトドアを兼用したい人
+        scores:
+          cooling: 4.1
+          power: 4.0
+          carry: 4.2
+        analysis_why: アイリスオーヤマは家庭向けに比較しやすく、価格と使い勝手のバランスでポータブル冷蔵庫を選びたい人に向きます。
+        pros:
+          - 家庭向け価格帯を選びやすい
+          - 買い出しや防災用途に使いやすい
+          - 国内で情報を探しやすい
+        critical_cons: 本格的な長期車中泊では、冷却力や耐久性で上位専業ブランドに劣る可能性があります。
+        maintenance_reality: 食材を入れるため、庫内清掃と乾燥を怠るとニオイが残ります。
+        cost_performance: 日常の買い出しと夏場の車載を兼用できるなら、使用回数で価格を回収しやすい候補です。
+      - keyword: BougeRV
+        best_for: 価格を抑えつつ、車載冷蔵庫らしい冷却機能を試したい人
+        scores:
+          cooling: 4.2
+          power: 4.0
+          carry: 4.1
+        analysis_why: BougeRVは車載冷蔵庫を比較的手頃に導入したい人の候補になります。容量と価格のバランスで検討しやすいブランドです。
+        pros:
+          - 価格と容量のバランスを取りやすい
+          - 車載用途の選択肢がある
+          - 初めてのポータブル冷蔵庫にしやすい
+        critical_cons: サポートや長期耐久性は、購入店や保証条件をよく確認する必要があります。
+        maintenance_reality: 電源設定や温度管理を自分で見ながら使う必要があり、放置運用には向きません。
+        cost_performance: 初期費用を抑えたい人には有力ですが、毎週使うなら保証と耐久性も含めて比較してください。
+
+  - id: digital-piano-ranking
+    category_id: home
+    type: daily
+    slug: digital-piano
+    release_date: '2026-06-12'
+    h1: 電子ピアノ 厳選4選
+    title: 【2026年最新】電子ピアノ 厳選4選｜子どもが続く鍵盤タッチと設置の現実
+    intro: >
+      電子ピアノは安さだけで選ぶと、鍵盤の軽さ、ペダルの違和感、スピーカー音、椅子や設置スペースで後悔します。本記事では、子どもの練習、大人の再開、マンションでの静音、長く続ける所有感を軸に、定番ブランドを比較します。
+    meta_description: ヤマハ、Roland、KAWAI、CASIOの電子ピアノを比較。鍵盤タッチ、音、ペダル、ヘッドホン練習、設置スペースの現実から続けやすい1台を選びます。
+    analysis_insight: >
+      電子ピアノの後悔は音色よりも「鍵盤タッチが軽すぎて練習にならない」「大きくて置けない」「移動できない」で起こります。レビュー評価・件数と商品説明の鍵盤構造・スピーカー・サイズ表記を確認します。
+    qa_config:
+      min_price: 40000
+      genre_id: '112493'
+      required_words:
+        - 電子ピアノ
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - スタンドのみ
+        - 椅子のみ
+        - ヘッドホンのみ
+        - カバー
+        - 部品
+    rakuten_params:
+      keyword: ヤマハ 電子ピアノ, Roland 電子ピアノ, KAWAI 電子ピアノ, CASIO Privia
+      discovery_keywords:
+        - 電子ピアノ 88鍵
+        - 子供 電子ピアノ
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: touch
+        name: 鍵盤タッチ
+      - id: sound
+        name: 音とスピーカー
+      - id: space
+        name: 設置性
+    products_extra:
+      - keyword: ヤマハ
+        best_for: 子どもの初めての練習用に、定番ブランドの安心感を重視する家庭
+        scores:
+          touch: 4.5
+          sound: 4.6
+          space: 4.0
+        analysis_why: ヤマハはピアノブランドとして認知が高く、初めての電子ピアノで失敗しにくい定番候補です。
+        pros:
+          - ピアノらしい音色を期待しやすい
+          - 教室や先生からも候補にされやすい
+          - 情報量とサポートを探しやすい
+        critical_cons: 人気モデルは価格が高く、付属品込みの総額が想定より上がる場合があります。
+        maintenance_reality: 調律は不要ですが、椅子、ヘッドホン、床の防振、ホコリ対策を含めて置き場を作る必要があります。
+        cost_performance: 子どもが数年続ける前提なら、買い替えリスクを減らす安心感に価値があります。
+      - keyword: Roland
+        best_for: ヘッドホン練習やデジタル機能も重視し、夜でも練習したい人
+        scores:
+          touch: 4.6
+          sound: 4.5
+          space: 4.1
+        analysis_why: Rolandは電子楽器としての機能性が強く、ヘッドホン練習やアプリ連携を重視する家庭に向きます。
+        pros:
+          - デジタル機能を活かしやすい
+          - ヘッドホン練習と相性が良い
+          - デザイン性の高いモデルがある
+        critical_cons: 生ピアノに近い感覚だけを求める場合、音源や鍵盤の好みが分かれます。
+        maintenance_reality: アプリやBluetooth機能を使うなら、接続設定とアップデートも運用に含める必要があります。
+        cost_performance: 夜間練習や録音機能まで使う人ほど、本体価格の価値を引き出せます。
+      - keyword: KAWAI
+        best_for: 鍵盤タッチを重視し、できるだけアコースティックピアノに近い練習感を求める人
+        scores:
+          touch: 4.9
+          sound: 4.5
+          space: 3.8
+        analysis_why: KAWAIは鍵盤タッチ重視で比較されやすく、練習機としての弾き心地を優先したい人の候補になります。
+        pros:
+          - 鍵盤タッチ重視で選びやすい
+          - 練習用として納得感が高い
+          - ピアノメーカーとしての安心感がある
+        critical_cons: タッチ重視のモデルほど本体が重く、設置と移動のハードルが上がります。
+        maintenance_reality: 一度置くと動かしにくいため、搬入経路と床の耐荷重、防音マットを事前に確認してください。
+        cost_performance: 練習の質を重視するなら価値がありますが、気軽な趣味用途では軽量モデルも比較すべきです。
+      - keyword: Privia
+        best_for: 省スペースで88鍵を置きたい、マンション住まいの大人の再開組
+        scores:
+          touch: 4.1
+          sound: 4.0
+          space: 4.8
+        analysis_why: CASIO Priviaは省スペース性と価格のバランスで比較しやすく、部屋に置きやすい電子ピアノを探す人に向きます。
+        pros:
+          - 薄型・軽量モデルを選びやすい
+          - 価格を抑えて88鍵を導入しやすい
+          - 大人の趣味再開に向く
+        critical_cons: 本格的なピアノ練習では、上位機の鍵盤タッチやペダル感に差を感じる場合があります。
+        maintenance_reality: 軽量モデルでもスタンドや椅子を含めると設置面積が増えます。
+        cost_performance: まず習慣を作る1台として有力です。将来続いたら上位機へ買い替える前提でも選びやすい価格です。
+
+  - id: electric-bicycle-ranking
+    category_id: trend
+    type: daily
+    slug: electric-bicycle
+    release_date: '2026-06-13'
+    h1: 電動アシスト自転車 厳選3選
+    title: 【2026年最新】電動アシスト自転車 厳選3選｜子乗せと通勤で後悔しない選び方
+    intro: >
+      電動アシスト自転車は価格が高いだけに、バッテリー容量、子乗せの安定感、駐輪場サイズ、盗難対策を見落とすと後悔が大きい買い物です。本記事では、子育て、通勤、買い物の3用途に絞り、毎日使える現実的な候補を比較します。
+    meta_description: パナソニック、ヤマハ、ブリヂストンの電動アシスト自転車を比較。子乗せ、通勤、バッテリー、駐輪場、盗難対策の現実から毎日使える1台を選びます。
+    analysis_insight: >
+      電動アシスト自転車の後悔は走行性能よりも「重さ」「駐輪場に入るか」「子どもを乗せた時の安定感」で起こります。レビュー評価・件数と商品説明のバッテリー、タイヤ径、チャイルドシート表記を確認します。
+    qa_config:
+      min_price: 80000
+      genre_id: '302202'
+      required_words:
+        - 電動
+        - 自転車
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - バッテリーのみ
+        - 充電器のみ
+        - チャイルドシートのみ
+        - カバー
+        - 部品
+    rakuten_params:
+      keyword: パナソニック ギュット, ヤマハ PAS, ブリヂストン bikke
+      discovery_keywords:
+        - 電動アシスト自転車 子乗せ
+        - 電動自転車 通勤
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: stability
+        name: 安定性
+      - id: battery
+        name: バッテリー余裕
+      - id: daily
+        name: 毎日の扱いやすさ
+    products_extra:
+      - keyword: ギュット
+        best_for: 子どもの送迎を毎日行い、低重心で安定した子乗せ電動を選びたい家庭
+        scores:
+          stability: 4.9
+          battery: 4.5
+          daily: 4.6
+        analysis_why: パナソニックのギュット系は子乗せ電動の定番として比較されやすく、安定感と家族用途の使いやすさを重視する人に向きます。
+        pros:
+          - 子乗せ用途で情報が多い
+          - 低重心モデルを選びやすい
+          - バッテリー容量の選択肢がある
+        critical_cons: 本体が重く、狭い駐輪場や段差の多い場所では取り回しが大変です。
+        maintenance_reality: タイヤ空気圧、ブレーキ、チャイルドシート固定、バッテリー劣化を定期的に確認する必要があります。
+        cost_performance: 毎日の送迎時間と坂道の負担を減らす道具として使うほど、価格の高さを回収できます。
+      - keyword: PAS
+        best_for: 通勤や買い物で、自然なアシスト感と扱いやすさを重視する人
+        scores:
+          stability: 4.5
+          battery: 4.6
+          daily: 4.7
+        analysis_why: ヤマハ PASは電動アシスト自転車の定番で、通勤・買い物・子乗せまで用途別に選びやすい候補です。
+        pros:
+          - 用途別モデルが豊富
+          - アシスト感が自然なモデルを選びやすい
+          - 国内でサポート情報を探しやすい
+        critical_cons: 型番ごとの違いが細かく、安さだけで選ぶとバッテリー容量や装備が不足します。
+        maintenance_reality: バッテリーは消耗品です。長く乗るなら数年後の交換費用も見込んでおく必要があります。
+        cost_performance: 坂道や荷物の多い生活で毎日使うなら、移動ストレスを減らす投資として合理的です。
+      - keyword: bikke
+        best_for: 子乗せでもデザインを妥協せず、街乗りになじむ電動自転車を選びたい人
+        scores:
+          stability: 4.6
+          battery: 4.4
+          daily: 4.5
+        analysis_why: ブリヂストン bikkeは子乗せ用途とデザイン性を両立しやすく、毎日使う乗り物として見た目も重視する家庭に向きます。
+        pros:
+          - デザイン性と実用性を両立しやすい
+          - 子乗せモデルとして比較しやすい
+          - タイヤや車体の安心感がある
+        critical_cons: 人気色や上位モデルは価格が上がりやすく、納期や在庫確認が必要です。
+        maintenance_reality: 屋外保管ではサビ、盗難、バッテリーの温度管理が課題になります。
+        cost_performance: 毎日目にする道具として気に入って使えるなら、所有満足度まで含めた投資価値があります。
+
+  - id: smart-doorbell-ranking
+    category_id: home
+    type: daily
+    slug: smart-doorbell
+    release_date: '2026-06-14'
+    h1: スマートドアベル 厳選4選
+    title: 【2026年最新】スマートドアベル 厳選4選｜置き配と来客対応を変える玄関DX
+    intro: >
+      スマートドアベルは便利ですが、電源工事、Wi-Fi電波、録画保存、宅配通知の遅延を見落とすと「普通のインターホンの方が楽だった」と感じます。本記事では、置き配、来客対応、防犯、スマートホーム連携を軸に、玄関で使い続けられる候補を比較します。
+    meta_description: Ring、Google Nest Doorbell、Eufy Video Doorbell、Aqaraのスマートドアベルを比較。録画、通知、電源、月額費用、設置の現実を整理します。
+    analysis_insight: >
+      スマートドアベルの後悔は画質より「通知が間に合うか」「電源とWi-Fiが安定するか」「録画保存に月額が必要か」で決まります。レビュー評価・件数と商品説明の電源方式、防水、保存方式を確認します。
+    qa_config:
+      min_price: 10000
+      genre_id: '501175'
+      required_words:
+        - ドアベル
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - カバーのみ
+        - 取付金具
+        - ケーブルのみ
+        - 部品
+    rakuten_params:
+      keyword: Ring Video Doorbell, Google Nest Doorbell, Eufy Video Doorbell, Aqara Doorbell
+      discovery_keywords:
+        - スマートドアベル
+        - ビデオドアベル
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: notification
+        name: 通知の速さ
+      - id: recording
+        name: 録画保存
+      - id: install
+        name: 設置と電源
+    products_extra:
+      - keyword: Ring
+        best_for: Alexa連携や置き配確認を重視し、玄関通知をスマート化したい人
+        scores:
+          notification: 4.6
+          recording: 4.2
+          install: 4.0
+        analysis_why: Ring Video Doorbellはスマートドアベルの代表格として比較されやすく、Alexa連携や玄関の見守りを重視する人に向きます。
+        pros:
+          - スマートドアベルとして情報が多い
+          - Alexa連携を使いやすい
+          - 置き配確認と相性が良い
+        critical_cons: 録画保存や一部機能はサブスクリプション前提になる場合があり、月額費用の確認が必須です。
+        maintenance_reality: バッテリー式は充電、配線式は設置条件と既存インターホンとの相性確認が必要です。
+        cost_performance: 宅配や来客が多い家庭ほど価値が出ます。月額費用込みの総額で判断してください。
+      - keyword: Nest Doorbell
+        best_for: Google Home中心のスマートホームで、来客通知をまとめたい人
+        scores:
+          notification: 4.4
+          recording: 4.2
+          install: 4.0
+        analysis_why: Google Nest DoorbellはGoogle Home環境との連携を重視する人に向きます。スマートディスプレイで玄関確認したい家庭に合います。
+        pros:
+          - Google Homeと連携しやすい
+          - スマートディスプレイで確認しやすい
+          - デザインが玄関になじみやすい
+        critical_cons: 日本での販売形態や保証、対応機能は購入前に確認が必要です。
+        maintenance_reality: Wi-Fi電波が弱い玄関では通知遅延が起きやすく、中継器やメッシュWi-Fiの設置が必要になる場合があります。
+        cost_performance: Google環境で統一している家庭なら価値が高いですが、単体利用では他候補も比較すべきです。
+      - keyword: Eufy
+        best_for: できるだけ月額課金を抑え、ローカル録画中心で使いたい家庭
+        scores:
+          notification: 4.2
+          recording: 4.8
+          install: 4.4
+        analysis_why: Eufy Video Doorbellはローカル保存を選びやすい点が魅力で、毎月の費用を抑えたい人に向きます。
+        pros:
+          - ローカル録画を選びやすい
+          - Anker系アプリで管理しやすい
+          - バッテリー式モデルを選べる
+        critical_cons: クラウドAI機能や通知精度はサービス仕様の影響を受けるため、購入時点の条件確認が必要です。
+        maintenance_reality: バッテリー残量と録画容量を定期的に見る運用が必要です。
+        cost_performance: 月額費用を抑えられるなら長期運用で本体価格を回収しやすい候補です。
+      - keyword: Aqara
+        best_for: HomeKitやスマートホーム連携を細かく組みたいガジェット好き
+        scores:
+          notification: 4.2
+          recording: 4.1
+          install: 4.3
+        analysis_why: Aqaraはスマートホーム連携の自由度を重視する人の候補です。センサーや自動化と組み合わせて玄関DXを作りたい人に向きます。
+        pros:
+          - スマートホーム連携を作りやすい
+          - HomeKit系の候補として比較できる
+          - センサー連携まで広げやすい
+        critical_cons: 設定自由度が高い分、初心者にはアプリやハブ構成が分かりにくい場合があります。
+        maintenance_reality: ハブ、Wi-Fi、通知条件、自動化ルールを一体で管理する必要があります。
+        cost_performance: 玄関カメラ単体ではなく、家全体のスマートホーム化に使うほど投資価値が高まります。

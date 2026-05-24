@@ -6,6 +6,7 @@ from datetime import datetime
 
 import yaml
 from article_contract import is_published_article, merged_forbidden_words
+from config_loader import load_config
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -59,6 +60,9 @@ def validate_date(article_id, value, report):
 
 def validate_url_host(article_id, url, discouraged_hosts, preferred_prefixes, report):
     if not url:
+        product_file = ROOT / "data" / "products" / f"{article_id}.json"
+        if product_file.exists():
+            return
         report.warn(article_id, "eye_catch is missing")
         return
     host = urlparse(url).netloc
@@ -94,7 +98,7 @@ def validate_site_config(config, report):
 
 
 def main():
-    config = load_yaml(ARTICLES_PATH)
+    config = load_config()
     rules = load_yaml(RULES_PATH)
     report = ValidationReport()
     validate_site_config(config, report)
@@ -247,6 +251,8 @@ def main():
         preferred_fields = set(soft_article["recommended_fields"])
         for field in preferred_fields:
             if not is_live:
+                continue
+            if field == "eye_catch" and (ROOT / "data" / "products" / f"{article_id}.json").exists():
                 continue
             current = article
             for part in field.split("."):

@@ -11,6 +11,7 @@ from article_contract import (
     merged_forbidden_words,
     resolve_eye_catch,
 )
+from config_loader import load_config
 
 
 CATEGORY_DESCRIPTIONS = {
@@ -476,8 +477,7 @@ def generate_sitemap_and_robots(site_config, output_base, today_date):
 
 def main():
     # 設定読み込み
-    with open("config/articles.yaml", "r", encoding="utf-8") as f:
-        config = yaml.safe_load(f)
+    config = load_config()
     
     site_config = config['site']
     categories = {c['id']: category_view(c) for c in config['categories']}
@@ -491,7 +491,8 @@ def main():
     home_template = env.get_template("index.html")
     
     output_base = "docs"
-    now = datetime.now()
+    override_today = os.getenv("LTS_TODAY", "").strip()
+    now = datetime.strptime(override_today, "%Y-%m-%d") if override_today else datetime.now()
     today_date = now.strftime("%Y-%m-%d")
     today_str = now.strftime("%Y年%m月%d日")
 

@@ -8,6 +8,7 @@ from datetime import datetime
 import re
 import urllib.parse
 from article_contract import merged_forbidden_words
+from config_loader import load_config
 
 # 環境変数の読み込み
 load_dotenv()
@@ -250,14 +251,20 @@ def fetch_article_items(article):
     }
 
 def main():
-    config_path = os.path.join("config", "articles.yaml")
-    with open(config_path, "r", encoding="utf-8") as f:
-        config = yaml.safe_load(f)
+    config = load_config()
 
     data_dir = os.path.join("data", "products")
     os.makedirs(data_dir, exist_ok=True)
 
+    filter_ids = {
+        item.strip()
+        for item in os.getenv("LTS_ARTICLE_IDS", "").split(",")
+        if item.strip()
+    }
+
     for article in config.get("articles", []):
+        if filter_ids and article["id"] not in filter_ids:
+            continue
         print(f"[FETCHING] {article['id']}...")
         result = fetch_article_items(article)
         items = result.get("items", []) if isinstance(result, dict) else result
