@@ -253,7 +253,7 @@
                 <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
                     <a href="#comparison" class="btn btn-primary" style="padding: 0.9rem 1.4rem; font-size: 1rem;">{% if is_single_pick %}選定理由を見る{% else %}比較表を見る{% endif %}</a>
                     {% if items and items[0].affiliateUrl %}
-                    <a href="{{ items[0].affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" class="btn" style="padding: 0.9rem 1.4rem; font-size: 1rem; background: #fff; color: var(--secondary); border-color: var(--border);">{% if is_single_pick %}このモデルの価格を見る{% else %}1位の価格を見る{% endif %}</a>
+                    <a href="{{ items[0].affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" data-affiliate-click data-affiliate-placement="summary" data-affiliate-item="{{ items[0].name | e }}" class="btn" style="padding: 0.9rem 1.4rem; font-size: 1rem; background: #fff; color: var(--secondary); border-color: var(--border);">{% if is_single_pick %}このモデルの価格を見る{% else %}1位の価格を見る{% endif %}</a>
                     {% endif %}
                 </div>
             </div>
@@ -370,6 +370,18 @@
                 </tbody>
             </table>
         </div>
+        {% if items and items[0].affiliateUrl %}
+        <div class="subtle-panel" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: center; padding: 1.25rem; margin: -2.5rem 0 3rem;">
+            <div>
+                <strong style="display: block; color: var(--secondary); margin-bottom: 0.25rem;">比較表で迷ったら、まず1位モデルの価格と在庫を確認</strong>
+                <p style="margin: 0; color: var(--text-muted); font-size: 0.88rem; line-height: 1.6;">楽天市場では価格・在庫・ポイント還元が変動します。候補を絞ったら、購入前に最新条件を確認してください。</p>
+            </div>
+            <a href="{{ items[0].affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" data-affiliate-click data-affiliate-placement="after_comparison" data-affiliate-item="{{ items[0].name | e }}" class="btn btn-primary" style="background: #bf0000; border: none; padding: 0.9rem 1.2rem; font-size: 0.95rem;">
+                <span class="rakuten-mark" aria-hidden="true">R</span>
+                1位の価格を見る
+            </a>
+        </div>
+        {% endif %}
     </section>
 
     <!-- Ranking List -->
@@ -473,7 +485,7 @@
                             </div>
                         {% endif %}
                         <div class="buy-buttons" style="margin-top: 1.5rem;">
-                            <a href="{{ item.affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" class="btn btn-primary" style="width: 100%; background: #bf0000; border: none; padding: 1rem; font-size: 1rem;">
+                            <a href="{{ item.affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" data-affiliate-click data-affiliate-placement="ranking_card" data-affiliate-item="{{ item.name | e }}" class="btn btn-primary" style="width: 100%; background: #bf0000; border: none; padding: 1rem; font-size: 1rem;">
                                 <span class="rakuten-mark" aria-hidden="true">R</span>
                                 楽天市場で詳細を見る
                             </a>
@@ -508,7 +520,7 @@
                     {% if gem._evidence %}
                     <p style="font-size: 0.76rem; line-height: 1.5; color: var(--text-muted); margin: 0 0 0.9rem;">{{ gem._evidence.spec_basis }}</p>
                     {% endif %}
-                    <a href="{{ gem.affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" class="btn btn-primary" style="width: 100%; background: #bf0000; border: none; padding: 0.8rem; font-size: 0.92rem;">
+                    <a href="{{ gem.affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" data-affiliate-click data-affiliate-placement="hidden_gem" data-affiliate-item="{{ gem.name | e }}" class="btn btn-primary" style="width: 100%; background: #bf0000; border: none; padding: 0.8rem; font-size: 0.92rem;">
                         <span class="rakuten-mark" aria-hidden="true">R</span>
                         楽天市場で詳細を見る
                     </a>
@@ -549,7 +561,7 @@
 
 {% if items and items[0].affiliateUrl %}
 <div class="mobile-sticky-cta" style="position: fixed; left: 0; right: 0; bottom: 0; padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom)); background: rgba(247, 249, 252, 0.95); backdrop-filter: blur(10px); border-top: 1px solid var(--border); z-index: 1200; display: none;">
-    <a href="{{ items[0].affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" class="btn btn-primary" style="width: 100%; padding: 0.95rem 1rem; font-size: 0.98rem;">{% if is_single_pick %}このモデルを楽天で確認する{% else %}1位の商品を楽天で確認する{% endif %}</a>
+    <a href="{{ items[0].affiliateUrl }}" target="_blank" rel="nofollow noopener sponsored" data-affiliate-click data-affiliate-placement="mobile_sticky" data-affiliate-item="{{ items[0].name | e }}" class="btn btn-primary" style="width: 100%; padding: 0.95rem 1rem; font-size: 0.98rem;">{% if is_single_pick %}このモデルを楽天で確認する{% else %}1位の商品を楽天で確認する{% endif %}</a>
 </div>
 <style>
     @media (max-width: 768px) {

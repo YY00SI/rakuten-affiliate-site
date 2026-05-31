@@ -3,6 +3,7 @@ import json
 import shutil
 import yaml
 import re
+import time
 from jinja2 import Environment, FileSystemLoader
 from datetime import datetime
 from article_contract import (
@@ -13,6 +14,8 @@ from article_contract import (
 )
 from config_loader import load_config
 
+
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 CATEGORY_DESCRIPTIONS = {
     "beauty": "高価格帯の美容家電とセルフケア機器を、仕上がり・使い勝手・後悔ポイントまで踏み込んで比較します。",
@@ -165,8 +168,18 @@ def category_view(category):
 
 def write_text_file(path, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(content)
+    last_error = None
+    for _ in range(5):
+        try:
+            if os.path.exists(path):
+                os.chmod(path, 0o666)
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(content)
+            return
+        except PermissionError as exc:
+            last_error = exc
+            time.sleep(0.25)
+    raise last_error
 
 
 def build_display_date(release_date):
@@ -178,7 +191,7 @@ def build_display_date(release_date):
 
 
 def load_product_data(article_id):
-    product_file = os.path.join("data/products", f"{article_id}.json")
+    product_file = os.path.join(PROJECT_ROOT, "data", "products", f"{article_id}.json")
     if not os.path.exists(product_file):
         print(f"[WARN] {article_id} の製品データが見つかりません。")
         return None
@@ -485,12 +498,12 @@ def main():
     categories_list = list(categories.values())
     
     # テンプレート環境設定
-    env = Environment(loader=FileSystemLoader("templates"))
+    env = Environment(loader=FileSystemLoader(os.path.join(PROJECT_ROOT, "templates")))
     article_template = env.get_template("article.html")
     category_template = env.get_template("category_list.html")
     home_template = env.get_template("index.html")
     
-    output_base = "docs"
+    output_base = os.path.join(PROJECT_ROOT, "docs")
     override_today = os.getenv("LTS_TODAY", "").strip()
     now = datetime.strptime(override_today, "%Y-%m-%d") if override_today else datetime.now()
     today_date = now.strftime("%Y-%m-%d")
@@ -498,6 +511,16 @@ def main():
 
     prune_stale_article_dirs(output_base, categories, articles, today_date)
     processed_articles = prepare_articles(articles, categories, today_date)
+    target_ids = {
+        item.strip()
+        for item in os.getenv("LTS_ARTICLE_IDS", "").split(",")
+        if item.strip()
+    }
+    if target_ids:
+        processed_articles = [
+            entry for entry in processed_articles
+            if entry["conf"].get("id") in target_ids
+        ]
 
     # 1. 各記事詳細ページの生成
     for article_entry in processed_articles:
@@ -556,9 +579,12 @@ def main():
             today=today_str
         )
 
-        with open(os.path.join(article_dir, "index.html"), "w", encoding="utf-8") as f:
-            f.write(html_content)
+        write_text_file(os.path.join(article_dir, "index.html"), html_content)
         print(f"[INFO] 記事生成完了: {category['slug']}/{article_view['slug']}/index.html")
+
+    if target_ids:
+        print(f"[INFO] 対象記事のみ生成完了: {', '.join(sorted(target_ids))}")
+        return
 
     # 2. カテゴリ一覧ページの生成
     for cat_id, cat in categories.items():
@@ -607,8 +633,7 @@ def main():
             ],
             today=today_str
         )
-        with open(os.path.join(cat_dir, "index.html"), "w", encoding="utf-8") as f:
-            f.write(cat_html)
+        write_text_file(os.path.join(cat_dir, "index.html"), cat_html)
 
     # 3. トップページの生成
     home_articles = []
@@ -635,8 +660,7 @@ def main():
         page_schemas=[website_schema(site_config), collection_schema(site_config, site_config["name"], site_config["description"], "")],
         today=today_str
     )
-    with open(os.path.join(output_base, "index.html"), "w", encoding="utf-8") as f:
-        f.write(home_html)
+    write_text_file(os.path.join(output_base, "index.html"), home_html)
 
     # 4. 静的ページの再生成
     for page in STATIC_PAGES:

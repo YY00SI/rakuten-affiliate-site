@@ -592,5 +592,20 @@
             当サイトはアフィリエイト広告を利用しています。紹介している商品の最新価格や在庫状況、正確な仕様については、リンク先の楽天市場各ショップのページにて必ずご確認ください。
         </p>
     </footer>
+    {% if analytics.ga4_measurement_id is defined and analytics.ga4_measurement_id %}
+    <script>
+        document.addEventListener('click', function(event) {
+            var link = event.target.closest('a[data-affiliate-click]');
+            if (!link || typeof gtag !== 'function') return;
+            gtag('event', 'rakuten_affiliate_click', {
+                affiliate_network: 'rakuten',
+                link_url: link.href,
+                link_text: link.textContent.trim().slice(0, 80),
+                placement: link.dataset.affiliatePlacement || 'article',
+                item_name: link.dataset.affiliateItem || ''
+            });
+        });
+    </script>
+    {% endif %}
 </body>
 </html>
