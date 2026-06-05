@@ -1342,3 +1342,1598 @@ articles:
         critical_cons: 設定自由度が高い分、初心者にはアプリやハブ構成が分かりにくい場合があります。
         maintenance_reality: ハブ、Wi-Fi、通知条件、自動化ルールを一体で管理する必要があります。
         cost_performance: 玄関カメラ単体ではなく、家全体のスマートホーム化に使うほど投資価値が高まります。
+
+  - id: premium-gaming-laptop-ranking
+    category_id: work
+    type: daily
+    slug: premium-gaming-laptop
+    release_date: '2026-06-15'
+    h1: 高級ゲーミングノートPC 厳選4選
+    title: 【2026年最新】高級ゲーミングノートPC 厳選4選｜発熱と重量で後悔しない選び方
+    intro: >
+      ゲーミングノートPCはGPU名だけで選ぶと、発熱、騒音、重量、ACアダプターの大きさで持ち出さなくなります。本記事では、据え置き中心か外出先でも使うかを分け、冷却設計、画面、携帯性、長期運用の現実から指名買い候補を比較します。
+    meta_description: ROG、Legion、MSI、GALLERIAの高級ゲーミングノートPCを比較。GPU、冷却、画面、重量、騒音、ACアダプターまで購入後の現実で選びます。
+    analysis_insight: >
+      高級ゲーミングノートの後悔はベンチマークより「熱で性能が落ちる」「重くて動かせない」「ファン音で仕事に使いにくい」で起こります。公開レビュー評価・件数と商品説明のGPU、冷却、重量表記を確認します。
+    qa_config:
+      min_price: 120000
+      genre_id: '100040'
+      required_words:
+        - ノート
+        - パソコン
+        - ゲーミング
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - メモリのみ
+        - SSDのみ
+        - ACアダプターのみ
+        - 部品
+        - パーツ
+    rakuten_params:
+      keyword: ASUS ROG ノート, Lenovo Legion ノート, MSI ゲーミングノート, GALLERIA ゲーミングノート
+      discovery_keywords:
+        - ゲーミングノートPC RTX
+        - 高性能 ゲーミングノート
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: thermal
+        name: 冷却と騒音
+      - id: display
+        name: 画面品質
+      - id: mobility
+        name: 持ち運びの現実
+    products_extra:
+      - keyword: ROG
+        best_for: ゲーム性能と所有感を両立し、据え置き中心でも満足できる1台を選びたい人
+        scores:
+          thermal: 4.6
+          display: 4.7
+          mobility: 3.8
+        analysis_why: ROGはゲーミングノートの上位候補として比較しやすく、GPU性能だけでなく冷却やディスプレイへの投資感が強いブランドです。
+        pros:
+          - 上位GPU搭載モデルを選びやすい
+          - ゲーム向け画面仕様を確認しやすい
+          - 所有感のあるデザインが多い
+        critical_cons: 高性能モデルほど本体とACアダプターが重く、毎日持ち歩くPCとしては負担が大きくなります。
+        maintenance_reality: 吸排気口にホコリが溜まると性能低下や騒音増加につながるため、設置場所と清掃を定期的に見直す必要があります。
+        cost_performance: デスクトップを置けない環境でゲームと制作を兼用するなら、価格の高さを1台集約の価値で回収しやすい候補です。
+      - keyword: Legion
+        best_for: ゲームだけでなく動画編集や仕事にも使う、落ち着いた外観の高性能ノートが欲しい人
+        scores:
+          thermal: 4.5
+          display: 4.5
+          mobility: 4.0
+        analysis_why: Legionはゲーミング性能と仕事道具らしい外観のバランスで検討しやすく、派手すぎるデザインを避けたい人に向きます。
+        pros:
+          - 仕事場にも置きやすいデザインを選べる
+          - 高リフレッシュレート画面の候補がある
+          - キーボードや端子構成を比較しやすい
+        critical_cons: 型番ごとの差が大きく、安い構成を選ぶとGPUや画面品質で妥協が出ます。
+        maintenance_reality: 外部モニターやドックと組み合わせる場合、排熱スペースとケーブルの逃がし方を先に決める必要があります。
+        cost_performance: ゲーム、編集、仕事を1台で済ませる使い方なら、周辺機器込みでも投資理由を作りやすいモデルです。
+      - keyword: MSI
+        best_for: eスポーツ寄りの画面と冷却を重視し、競技ゲームを高fpsで遊びたい人
+        scores:
+          thermal: 4.4
+          display: 4.6
+          mobility: 3.7
+        analysis_why: MSIはゲーミングPC色が強く、画面リフレッシュレートや冷却訴求を軸に比較しやすいブランドです。
+        pros:
+          - 高リフレッシュレート画面を選びやすい
+          - ゲーミング用途の訴求が明確
+          - 構成の選択肢が広い
+        critical_cons: 上位モデルはファン音や本体サイズが大きく、静かな部屋での作業用途には合わない場合があります。
+        maintenance_reality: 長時間ゲームでは底面の吸気を塞がないスタンド運用が現実的です。
+        cost_performance: 外付けキーボードや冷却台も含めて競技環境を作る人には価値があります。
+      - keyword: GALLERIA
+        best_for: 国内サポートとBTOの分かりやすさを重視し、初めて高級ゲーミングノートを買う人
+        scores:
+          thermal: 4.2
+          display: 4.2
+          mobility: 3.9
+        analysis_why: GALLERIAは国内で情報を探しやすく、構成とサポートを確認しながら選びたい人に向きます。
+        pros:
+          - 国内サポートを確認しやすい
+          - BTO構成を比較しやすい
+          - ゲーム推奨モデルを探しやすい
+        critical_cons: ブランドの所有感や筐体の薄さでは海外上位機に見劣りする場合があります。
+        maintenance_reality: 保証、修理窓口、配送時の梱包条件まで購入前に確認すると安心です。
+        cost_performance: 初期設定やサポートの安心感まで含めたい人には、多少の価格差を納得しやすい選択です。
+
+  - id: mini-pc-ranking
+    category_id: work
+    type: daily
+    slug: mini-pc
+    release_date: '2026-06-16'
+    h1: 高性能ミニPC 厳選4選
+    title: 【2026年最新】高性能ミニPC 厳選4選｜小ささより発熱と拡張性で選ぶ
+    intro: >
+      ミニPCは省スペースで魅力的ですが、小ささだけで選ぶと発熱、ファン音、端子不足、メモリやSSDの交換性で後悔します。本記事では、在宅ワーク、動画視聴、軽い制作、常時稼働の現実を踏まえ、机上に置ける高性能機を比較します。
+    meta_description: MINISFORUM、GMKtec、ASUS NUC、Beelinkの高性能ミニPCを比較。発熱、静音性、端子、メモリ、SSD拡張まで実用目線で選びます。
+    analysis_insight: >
+      ミニPCの後悔はCPU性能より「熱がこもる」「USBや映像端子が足りない」「保証条件が分かりにくい」で起こります。公開レビュー評価・件数と商品説明のCPU、端子、メモリ構成を確認します。
+    qa_config:
+      min_price: 50000
+      genre_id: '100040'
+      required_words:
+        - ミニPC
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - ベアボーンのみ
+        - メモリのみ
+        - SSDのみ
+        - 部品
+    rakuten_params:
+      keyword: MINISFORUM ミニPC, GMKtec ミニPC, ASUS NUC, Beelink ミニPC
+      discovery_keywords:
+        - 高性能 ミニPC
+        - Ryzen ミニPC
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: thermal
+        name: 発熱と静音性
+      - id: ports
+        name: 端子と拡張性
+      - id: support
+        name: 保証と扱いやすさ
+    products_extra:
+      - keyword: MINISFORUM
+        best_for: 省スペースでもCPU性能を妥協せず、机上のメインPCにしたい人
+        scores:
+          thermal: 4.3
+          ports: 4.6
+          support: 3.8
+        analysis_why: MINISFORUMは高性能ミニPCの選択肢が多く、Ryzen系の処理性能とコンパクトさを両立したい人に向きます。
+        pros:
+          - 高性能CPU搭載モデルを探しやすい
+          - 省スペース環境を作りやすい
+          - 複数画面出力の候補がある
+        critical_cons: 小型筐体ゆえに高負荷時のファン音や熱は避けにくく、静音デスクトップの代替にはなりません。
+        maintenance_reality: 吸気口まわりのホコリ、設置面の熱、BIOSやドライバ更新を自分で管理する必要があります。
+        cost_performance: 机を広く使いながらメインPC性能を確保したい人には、サイズ削減効果まで含めて価値があります。
+      - keyword: GMKtec
+        best_for: 価格を抑えながら、在宅ワークと軽い制作に使えるミニPCを選びたい人
+        scores:
+          thermal: 4.0
+          ports: 4.2
+          support: 3.6
+        analysis_why: GMKtecは比較的手に取りやすい価格帯の高性能ミニPCを見つけやすく、サブ機からメイン機まで用途を広げやすい候補です。
+        pros:
+          - 価格と性能のバランスを取りやすい
+          - 小型で置き場所を選びにくい
+          - メモリ容量の多い構成を探しやすい
+        critical_cons: 長期保証や国内サポートの条件は販売店ごとに差が出やすいため、価格だけで判断しない方が安全です。
+        maintenance_reality: 常時稼働させるなら放熱スペースと電源設定を確認し、熱がこもる棚内設置は避けるべきです。
+        cost_performance: ノートPCを閉じたまま使うより安定した据え置き環境を作りたい人には合理的です。
+      - keyword: NUC
+        best_for: 小型PCでもブランドの安心感と業務利用のしやすさを重視する人
+        scores:
+          thermal: 4.2
+          ports: 4.4
+          support: 4.2
+        analysis_why: NUC系は小型PCの代表格として比較しやすく、サポートや情報量を重視する業務寄りの用途に向きます。
+        pros:
+          - 小型PCとして情報を探しやすい
+          - ビジネス用途でも検討しやすい
+          - 端子構成を確認しやすい
+        critical_cons: 同スペック帯の新興ブランド品と比べると、価格が高めになる場合があります。
+        maintenance_reality: ベアボーン構成と完成品構成の違いを確認し、OSやメモリの有無を購入前に見てください。
+        cost_performance: 仕事で長く使う前提なら、情報量とサポートの安心感を価格差として見込みやすい候補です。
+      - keyword: Beelink
+        best_for: リビングPCやサブデスク用に、小型で扱いやすいWindows機を増やしたい人
+        scores:
+          thermal: 4.0
+          ports: 4.1
+          support: 3.5
+        analysis_why: Beelinkは小型Windows PCを導入しやすいブランドとして比較されやすく、テレビ横やサブデスクで使う用途に合います。
+        pros:
+          - 設置自由度が高い
+          - リビングPC用途に使いやすい
+          - 価格帯の選択肢が広い
+        critical_cons: 高負荷作業を長時間続けるメイン機としては、冷却と保証条件を慎重に見る必要があります。
+        maintenance_reality: HDMIやUSB機器を多くつなぐ場合、ケーブルの重みで本体が動きやすい点に注意が必要です。
+        cost_performance: 低消費電力のサブPCとして毎日使うなら、電気代と省スペースの両面で価値が出ます。
+
+  - id: oled-tv-ranking
+    category_id: home
+    type: daily
+    slug: oled-tv
+    release_date: '2026-06-17'
+    h1: 有機ELテレビ 厳選4選
+    title: 【2026年最新】有機ELテレビ 厳選4選｜映画とゲームで後悔しない暗部表現
+    intro: >
+      有機ELテレビは黒の美しさだけで選ぶと、明るい部屋での見え方、焼き付き対策、ゲーム入力遅延、設置サイズで後悔します。本記事では、映画、スポーツ、ゲーム、リビング視聴の使い方を分け、長く満足できる候補を比較します。
+    meta_description: BRAVIA、VIERA、LG OLED、REGZAの有機ELテレビを比較。暗部表現、明るさ、ゲーム性能、焼き付き対策、設置の現実を整理します。
+    analysis_insight: >
+      有機ELテレビの後悔は画質の第一印象より「昼間に暗く見える」「ゲーム設定が面倒」「大画面を置けない」で起こります。公開レビュー評価・件数と商品説明の画面サイズ、ゲーム機能、HDR表記を確認します。
+    qa_config:
+      min_price: 100000
+      genre_id: '563843'
+      required_words:
+        - テレビ
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - 壁掛け金具
+        - リモコンのみ
+        - スタンドのみ
+        - 部品
+    rakuten_params:
+      keyword: BRAVIA 有機EL, VIERA 有機EL, LG OLED テレビ, REGZA 有機EL
+      discovery_keywords:
+        - 有機ELテレビ 55型
+        - 有機ELテレビ 65型
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: picture
+        name: 暗部と明るさ
+      - id: gaming
+        name: ゲーム機能
+      - id: living
+        name: 設置と日常性
+    products_extra:
+      - keyword: BRAVIA
+        best_for: 映画や配信作品を中心に、自然な画作りと音響連携を重視する人
+        scores:
+          picture: 4.8
+          gaming: 4.4
+          living: 4.3
+        analysis_why: BRAVIAの有機ELは映像処理や配信視聴との相性で比較しやすく、映画視聴を主目的にする家庭に向きます。
+        pros:
+          - 映画向けの画作りを期待しやすい
+          - Google TV系の操作に慣れやすい
+          - 音響機器との連携を検討しやすい
+        critical_cons: 上位モデルは価格が高く、明るいリビングでは液晶上位機との比較も必要です。
+        maintenance_reality: 直射日光、長時間の固定表示、壁掛け時の放熱スペースに注意して設置する必要があります。
+        cost_performance: 配信映画やライブ映像を日常的に見る家庭なら、視聴時間で価格を回収しやすい候補です。
+      - keyword: VIERA
+        best_for: 地上波、映画、ゲームをバランスよく見て、家族全員で使いやすいテレビが欲しい人
+        scores:
+          picture: 4.6
+          gaming: 4.3
+          living: 4.5
+        analysis_why: VIERAは国内家庭向けの使いやすさと画質のバランスで比較しやすく、家族共有テレビとして選びやすい候補です。
+        pros:
+          - 国内向け機能を確認しやすい
+          - 番組視聴と配信の両方に使いやすい
+          - サイズ展開を選びやすい
+        critical_cons: 尖ったゲーム機能や海外配信アプリの挙動はモデルごとに確認が必要です。
+        maintenance_reality: 録画用HDD、サウンドバー、ゲーム機の配線まで含めると背面スペースが必要になります。
+        cost_performance: 家族全員が毎日使う中心家電として考えると、安さより失敗しにくさに価値があります。
+      - keyword: LG OLED
+        best_for: PS5やPCゲームも重視し、入力遅延とHDMI機能を細かく見たい人
+        scores:
+          picture: 4.7
+          gaming: 4.8
+          living: 4.2
+        analysis_why: LG OLEDはゲーム機能やHDMI仕様で比較されやすく、映画だけでなくゲーム用大画面として使いたい人に向きます。
+        pros:
+          - ゲーム向け機能を確認しやすい
+          - 有機ELの選択肢が豊富
+          - PC接続用途でも検討しやすい
+        critical_cons: 国内メーカーの番組録画やチューナー周りに慣れている人は操作感を確認すべきです。
+        maintenance_reality: ゲームの固定UIを長時間表示するなら、焼き付き軽減機能と休止運用を意識する必要があります。
+        cost_performance: 映画とゲームを1台で本気で使うなら、ディスプレイ兼用として投資価値が出ます。
+      - keyword: REGZA
+        best_for: 地上波やスポーツも多く、録画と映像処理を重視する家庭
+        scores:
+          picture: 4.5
+          gaming: 4.4
+          living: 4.6
+        analysis_why: REGZAは番組視聴や録画周りの使い勝手で比較しやすく、テレビらしい日常用途を重視する家庭に合います。
+        pros:
+          - 地上波視聴に向いた機能を探しやすい
+          - 録画運用を組みやすい
+          - 国内レビュー情報を確認しやすい
+        critical_cons: 最上位の映画体験だけで選ぶなら、他ブランドの画作りも実機で比較した方が安全です。
+        maintenance_reality: 録画用ストレージとネットワーク接続を安定させるため、テレビ周辺の配線整理が必要です。
+        cost_performance: 番組、スポーツ、配信を幅広く見る家庭では、毎日の使いやすさで価格を納得しやすい候補です。
+
+  - id: soundbar-ranking
+    category_id: home
+    type: daily
+    slug: soundbar
+    release_date: '2026-06-18'
+    h1: 高級サウンドバー 厳選4選
+    title: 【2026年最新】高級サウンドバー 厳選4選｜テレビ音質を変える設置と低音の現実
+    intro: >
+      サウンドバーは出力やチャンネル数だけで選ぶと、テレビ台に収まらない、低音が響きすぎる、音声が聞き取りにくいという後悔につながります。本記事では、映画、ニュース、ゲーム、集合住宅での使いやすさを軸に比較します。
+    meta_description: Sonos、Bose、Sony、JBLの高級サウンドバーを比較。低音、音声の聞き取りやすさ、設置サイズ、サブウーファー、テレビ連携を整理します。
+    analysis_insight: >
+      サウンドバーの失敗は迫力不足より「低音が近所迷惑になる」「テレビ前を塞ぐ」「接続切替が面倒」で起こります。レビュー評価・件数と商品説明のサイズ、HDMI、サブウーファー表記を確認します。
+    qa_config:
+      min_price: 30000
+      genre_id: '204199'
+      required_words:
+        - サウンドバー
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - ブラケットのみ
+        - ケーブルのみ
+        - リモコンのみ
+        - 部品
+    rakuten_params:
+      keyword: Sonos Arc, Bose Smart Soundbar, Sony HT-A, JBL BAR
+      discovery_keywords:
+        - サウンドバー Dolby Atmos
+        - テレビ サウンドバー 高級
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: clarity
+        name: セリフの聞き取りやすさ
+      - id: bass
+        name: 低音と迫力
+      - id: install
+        name: 設置と連携
+    products_extra:
+      - keyword: Sonos
+        best_for: 配信映画と音楽をどちらも楽しみ、部屋全体の音響を整えたい人
+        scores:
+          clarity: 4.6
+          bass: 4.5
+          install: 4.4
+        analysis_why: Sonosはサウンドバー単体だけでなくマルチルームや追加スピーカーまで広げやすく、映画と音楽を兼用したい人に向きます。
+        pros:
+          - 音楽再生との相性が良い
+          - 追加スピーカーで拡張しやすい
+          - デザインがテレビ周りになじみやすい
+        critical_cons: 入力端子やBluetooth対応など、一般的なサウンドバー感覚で買うと仕様差に戸惑う場合があります。
+        maintenance_reality: アプリ設定、Wi-Fi、テレビのHDMI ARC/eARC設定を安定させる必要があります。
+        cost_performance: 映画だけでなく日常の音楽再生にも使うなら、稼働時間で価格を回収しやすい候補です。
+      - keyword: Bose
+        best_for: セリフの明瞭さと低音のまとまりを重視し、テレビ音声を上品に強化したい人
+        scores:
+          clarity: 4.7
+          bass: 4.3
+          install: 4.5
+        analysis_why: Boseはテレビ音声の聞き取りやすさと低音のまとまりで比較しやすく、派手さより安定した音作りを求める人に向きます。
+        pros:
+          - セリフを聞き取りやすくしやすい
+          - 省スペースに置きやすいモデルがある
+          - ブランドの安心感がある
+        critical_cons: サラウンド感を最大化するには追加スピーカーやサブウーファーが欲しくなり、総額が上がります。
+        maintenance_reality: テレビ側の音声出力設定を誤ると本来の音質が出ないため、初期設定を丁寧に行う必要があります。
+        cost_performance: ニュースやドラマを毎日見る家庭なら、聞き取りやすさの改善が価格以上の満足につながります。
+      - keyword: Sony
+        best_for: BRAVIAやPS5と組み合わせ、映画とゲームの両方を強化したい人
+        scores:
+          clarity: 4.5
+          bass: 4.6
+          install: 4.6
+        analysis_why: SonyのHT系はテレビやゲーム機との連携を重視する人に向きます。映像機器を同一ブランドでまとめたい家庭に合います。
+        pros:
+          - BRAVIAやPS5との連携を検討しやすい
+          - Dolby Atmos対応モデルを選びやすい
+          - サブウーファー構成を選べる
+        critical_cons: 機能が多い分、テレビ側設定や音場モードを理解しないと使い切れない場合があります。
+        maintenance_reality: サブウーファーを置く場合は床振動とコンセント位置を事前に確認してください。
+        cost_performance: テレビ、ゲーム、映画をまとめて使う家庭ほど、連携価値を引き出しやすい候補です。
+      - keyword: JBL
+        best_for: 映画やライブ映像で、低音と迫力を分かりやすく楽しみたい人
+        scores:
+          clarity: 4.2
+          bass: 4.8
+          install: 4.1
+        analysis_why: JBL BAR系は迫力ある低音やサラウンド訴求で比較しやすく、映画館らしさを自宅で求める人に向きます。
+        pros:
+          - 低音の迫力を出しやすい
+          - サブウーファー付き構成を選びやすい
+          - 映画やライブ映像と相性が良い
+        critical_cons: 集合住宅では低音が響きやすく、夜間の音量管理が必要です。
+        maintenance_reality: サブウーファーの置き場所で音の印象が変わるため、壁際や床材との相性を試す必要があります。
+        cost_performance: 音量を出せる環境なら満足度が高く、制限の多い部屋では過剰投資になりやすい候補です。
+
+  - id: mirrorless-camera-ranking
+    category_id: trend
+    type: daily
+    slug: mirrorless-camera
+    release_date: '2026-06-19'
+    h1: ミラーレス一眼カメラ 厳選4選
+    title: 【2026年最新】ミラーレス一眼カメラ 厳選4選｜レンズ沼で後悔しない本体選び
+    intro: >
+      ミラーレス一眼は画素数だけで選ぶと、レンズ総額、手ブレ補正、動画の熱停止、重さで後悔します。本記事では、家族写真、旅行、動画、作品撮りの用途を分け、本体価格だけでなく長く続けられるシステムとして比較します。
+    meta_description: SONY α、Canon EOS R、Nikon Z、FUJIFILM Xのミラーレス一眼を比較。レンズ総額、手ブレ、動画、重さまで購入後の現実で選びます。
+    analysis_insight: >
+      ミラーレスの後悔は本体性能より「欲しいレンズが高い」「持ち出すには重い」「動画撮影で熱やバッテリーが不安」で起こります。公開レビュー評価・件数と商品説明のマウント、手ブレ補正、動画仕様を確認します。
+    qa_config:
+      min_price: 90000
+      genre_id: '100212'
+      required_words:
+        - ミラーレス
+        - カメラ
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - レンズのみ
+        - バッテリーのみ
+        - ケース
+        - ストラップ
+        - 部品
+    rakuten_params:
+      keyword: SONY α7 ミラーレス, Canon EOS R ミラーレス, Nikon Z ミラーレス, FUJIFILM X-T5
+      discovery_keywords:
+        - ミラーレス一眼 フルサイズ
+        - ミラーレス一眼 カメラ
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: lens
+        name: レンズ資産
+      - id: video
+        name: 写真と動画の両立
+      - id: carry
+        name: 持ち出しやすさ
+    products_extra:
+      - keyword: α7
+        best_for: フルサイズ画質とレンズ選択肢を重視し、長く写真趣味を続けたい人
+        scores:
+          lens: 4.9
+          video: 4.6
+          carry: 4.0
+        analysis_why: SONY α7系はフルサイズミラーレスの定番としてレンズ選択肢が多く、写真と動画を両方伸ばしたい人に向きます。
+        pros:
+          - レンズ選択肢が豊富
+          - フルサイズ機の情報量が多い
+          - 写真と動画を両立しやすい
+        critical_cons: 本体を買った後にレンズ、予備バッテリー、記録メディアで総額が大きく膨らみます。
+        maintenance_reality: センサー清掃、レンズ保管、防湿庫、ファームウェア更新まで趣味の運用に含まれます。
+        cost_performance: レンズ資産を積み上げて数年使う前提なら、本体価格だけでなくシステム全体で価値を見やすい候補です。
+      - keyword: EOS R
+        best_for: 家族写真や旅行で、肌色と操作の分かりやすさを重視する人
+        scores:
+          lens: 4.4
+          video: 4.4
+          carry: 4.1
+        analysis_why: Canon EOS R系は色作りや操作感で選ばれやすく、初めての本格カメラでも扱いやすい候補です。
+        pros:
+          - 人物撮影で比較しやすい
+          - 操作体系に慣れやすい
+          - 国内情報を探しやすい
+        critical_cons: RFレンズは価格が高いものも多く、安い本体だけで完結しにくい場合があります。
+        maintenance_reality: 子ども撮影や旅行では軽いレンズ選びとストラップ運用が満足度を左右します。
+        cost_performance: 家族の記録を長期で残す道具として使うなら、スマホでは代替しにくい価値があります。
+      - keyword: Nikon Z
+        best_for: 風景や静物を丁寧に撮り、堅実な画作りと本体の質感を重視する人
+        scores:
+          lens: 4.3
+          video: 4.2
+          carry: 4.0
+        analysis_why: Nikon Z系は写真機としての質感や描写を重視する人に向きます。風景や静物をじっくり撮る使い方と相性があります。
+        pros:
+          - 静止画重視で比較しやすい
+          - 本体の作り込みを評価しやすい
+          - 風景やポートレートに向く候補がある
+        critical_cons: 動画機能やAFの好みはモデル差が大きく、撮影対象に合わせた確認が必要です。
+        maintenance_reality: 撮影頻度が少ないとバッテリー劣化や防湿管理を忘れがちです。
+        cost_performance: 作品づくりを目的に使う人には価値がありますが、旅行記録だけなら小型機も比較すべきです。
+      - keyword: X-T5
+        best_for: 写真の色味と持ち出しやすさを重視し、毎週使いたくなるカメラが欲しい人
+        scores:
+          lens: 4.4
+          video: 4.1
+          carry: 4.6
+        analysis_why: FUJIFILM X系は色作りとAPS-Cのサイズ感で比較しやすく、持ち出す回数を増やしたい人に向きます。
+        pros:
+          - 色味の個性を楽しみやすい
+          - フルサイズより軽い構成を組みやすい
+          - 操作ダイヤルの所有感がある
+        critical_cons: 暗所性能やボケ量を最優先するなら、フルサイズ機との比較が必要です。
+        maintenance_reality: クラシックな操作系は楽しい一方、初心者は設定項目を覚える時間が必要です。
+        cost_performance: 持ち出す頻度が高い人ほど価値が出ます。机に置いたままなら高価な趣味道具で終わります。
+
+  - id: room-air-conditioner-ranking
+    category_id: home
+    type: daily
+    slug: room-air-conditioner
+    release_date: '2026-06-20'
+    h1: ルームエアコン 厳選4選
+    title: 【2026年最新】ルームエアコン 厳選4選｜省エネと掃除で後悔しない主力機
+    intro: >
+      エアコンは畳数と価格だけで選ぶと、電気代、フィルター掃除、室外機の置き場、暖房の弱さで後悔します。本記事では、リビング、寝室、在宅ワーク部屋での使い方を分け、省エネ性とメンテナンスの現実から比較します。
+    meta_description: ダイキン、三菱霧ヶ峰、パナソニックエオリア、日立白くまくんのエアコンを比較。省エネ、掃除、暖房、室外機、設置費、部屋別の選び方まで整理します。
+    analysis_insight: >
+      エアコンの後悔は冷えるかどうかより「電気代が読めない」「掃除が面倒」「部屋の形に合わない」で起こります。公開レビュー評価・件数と商品説明の畳数、省エネ、清掃機能、室外機表記を確認します。
+    qa_config:
+      min_price: 70000
+      genre_id: '100183'
+      required_words:
+        - エアコン
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - 室外機のみ
+        - リモコンのみ
+        - フィルターのみ
+        - 部品
+    rakuten_params:
+      keyword: ダイキン エアコン, 三菱 霧ヶ峰 エアコン, パナソニック エオリア, 日立 白くまくん
+      discovery_keywords:
+        - ルームエアコン 省エネ
+        - エアコン 14畳
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: energy
+        name: 省エネ性
+      - id: cleaning
+        name: 掃除のしやすさ
+      - id: comfort
+        name: 冷暖房の快適性
+    products_extra:
+      - keyword: ダイキン
+        best_for: 冷暖房の安定感を重視し、リビングの主力機として長く使いたい家庭
+        scores:
+          energy: 4.6
+          cleaning: 4.3
+          comfort: 4.8
+        analysis_why: ダイキンは空調専業として比較されやすく、冷暖房の安定感を優先するリビング用途に向きます。
+        pros:
+          - 空調専業ブランドとして検討しやすい
+          - リビング向け上位機を選びやすい
+          - 暖房性能も確認しやすい
+        critical_cons: 上位機は初期費用が高く、設置工事費込みの総額で予算を超えやすいです。
+        maintenance_reality: 自動掃除機能があってもフィルター、ダストボックス、室外機まわりの点検は必要です。
+        cost_performance: 夏冬とも長時間使う部屋なら、省エネ性と快適性で価格差を回収しやすい候補です。
+      - keyword: 霧ヶ峰
+        best_for: 人のいる場所に合わせた空調を重視し、家族の体感差を減らしたい人
+        scores:
+          energy: 4.5
+          cleaning: 4.4
+          comfort: 4.7
+        analysis_why: 霧ヶ峰はセンサー空調の訴求が分かりやすく、家族の座る位置や部屋のムラが気になる家庭に向きます。
+        pros:
+          - センサー空調を比較しやすい
+          - 国内家庭向けの情報が多い
+          - 掃除機能付きモデルを選びやすい
+        critical_cons: センサー機能は部屋の間取りや家具配置に左右されるため、期待しすぎると不満が残ります。
+        maintenance_reality: 風向き設定、家具配置、カーテンの遮熱まで含めて調整すると快適性が上がります。
+        cost_performance: 家族が集まるリビングで使うなら、体感差を減らす価値を価格に含めやすい候補です。
+      - keyword: エオリア
+        best_for: 空気清浄やスマホ連携も含め、家電としての扱いやすさを重視する人
+        scores:
+          energy: 4.4
+          cleaning: 4.5
+          comfort: 4.5
+        analysis_why: エオリアは清潔機能やアプリ連携を含めて比較しやすく、空調と空気ケアをまとめたい家庭に合います。
+        pros:
+          - 清潔機能を比較しやすい
+          - スマホ操作に対応するモデルがある
+          - 家電としての情報を探しやすい
+        critical_cons: 機能が多いほど価格が上がり、寝室用には過剰装備になる場合があります。
+        maintenance_reality: アプリ設定、無線LAN接続、フィルター清掃を家族で共有できる状態にしておく必要があります。
+        cost_performance: 空気清浄機能や遠隔操作まで使うなら、単なる冷暖房機以上の価値があります。
+      - keyword: 白くまくん
+        best_for: 凍結洗浄など内部清潔機能を重視し、掃除の負担を減らしたい家庭
+        scores:
+          energy: 4.3
+          cleaning: 4.7
+          comfort: 4.4
+        analysis_why: 白くまくんは内部清掃機能の訴求で比較しやすく、カビやニオイの管理を重視する人に向きます。
+        pros:
+          - 内部清潔機能を確認しやすい
+          - 国内で情報が多い
+          - 寝室からリビングまで選びやすい
+        critical_cons: 自動洗浄があっても完全に掃除不要ではなく、環境によっては専門清掃が必要です。
+        maintenance_reality: 室内機だけでなく室外機周辺の風通しを確保し、効率低下を防ぐ必要があります。
+        cost_performance: 掃除頻度を減らしたい家庭には価値がありますが、清掃機能だけで選ばず冷暖房能力も確認してください。
+
+  - id: premium-mattress-ranking
+    category_id: beauty
+    type: daily
+    slug: premium-mattress
+    release_date: '2026-06-21'
+    h1: 高級マットレス 厳選4選
+    title: 【2026年最新】高級マットレス 厳選4選｜腰と寝返りで後悔しない寝具投資
+    intro: >
+      高級マットレスは寝心地の第一印象だけで選ぶと、硬さ、通気性、搬入、返品条件で後悔します。本記事では、腰の支え、寝返り、夏の蒸れ、家族とのサイズ選びを軸に、毎晩使い続けられる候補を比較します。
+    meta_description: エアウィーヴ、テンピュール、西川AiR、コアラマットレスを比較。硬さ、寝返り、通気性、搬入、返品条件、処分、湿気、腰まわりの支えも整理します。
+    analysis_insight: >
+      マットレスの後悔は価格より「硬さが合わない」「夏に蒸れる」「搬入や処分が大変」で起こります。公開レビュー評価・件数と商品説明の素材、厚み、サイズ、保証条件を確認します。
+    qa_config:
+      min_price: 50000
+      genre_id: '508183'
+      required_words:
+        - マットレス
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - カバーのみ
+        - パッドのみ
+        - シーツ
+        - 枕
+    rakuten_params:
+      keyword: エアウィーヴ マットレス, テンピュール マットレス, 西川 AiR マットレス, コアラマットレス
+      discovery_keywords:
+        - 高級マットレス
+        - 腰 マットレス
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: support
+        name: 体の支え方
+      - id: breathability
+        name: 通気性
+      - id: logistics
+        name: 搬入と返品条件
+    products_extra:
+      - keyword: エアウィーヴ
+        best_for: 寝返りのしやすさと通気性を重視し、蒸れにくい寝具を選びたい人
+        scores:
+          support: 4.5
+          breathability: 4.8
+          logistics: 4.2
+        analysis_why: エアウィーヴは反発性と通気性の訴求が明確で、寝返りや夏の蒸れが気になる人の候補になります。
+        pros:
+          - 寝返りしやすい反発感を期待しやすい
+          - 通気性を重視して選びやすい
+          - 水洗い可能な構成を確認しやすい
+        critical_cons: 柔らかく包まれる寝心地を求める人には硬く感じる場合があります。
+        maintenance_reality: 分割構造やカバー洗濯の手間があり、清潔に使うには定期的な乾燥と向きの確認が必要です。
+        cost_performance: 睡眠時間が長く、毎日の寝返りや蒸れ対策に価値を感じる人には投資理由があります。
+      - keyword: テンピュール
+        best_for: 体を包み込むフィット感を重視し、横向き寝の圧迫を減らしたい人
+        scores:
+          support: 4.7
+          breathability: 3.8
+          logistics: 4.0
+        analysis_why: テンピュールは低反発系の代表として比較しやすく、体圧分散を重視する人に向きます。
+        pros:
+          - 包み込む寝心地を期待しやすい
+          - 体圧分散で比較しやすい
+          - ブランドの安心感がある
+        critical_cons: 夏場の蒸れや寝返りの重さを感じる人もいるため、暑がりの人は慎重に選ぶ必要があります。
+        maintenance_reality: 厚みと重量があるため、搬入、ローテーション、シーツ交換の負担を見込んでください。
+        cost_performance: フィット感が体に合えば満足度は高いですが、合わない場合の返品条件確認が価格以上に重要です。
+      - keyword: AiR
+        best_for: 腰まわりの支えと寝姿勢を重視し、硬めの寝具で整えたい人
+        scores:
+          support: 4.6
+          breathability: 4.2
+          logistics: 4.1
+        analysis_why: 西川AiRは点で支える構造の訴求が分かりやすく、腰まわりの支えを重視する人に向きます。
+        pros:
+          - 腰の支えを意識して選びやすい
+          - 国内寝具ブランドとして情報が多い
+          - 厚み別に選択肢がある
+        critical_cons: 凹凸感や硬さの好みが分かれやすく、柔らかい寝心地を求める人には合わない場合があります。
+        maintenance_reality: 凹凸構造はホコリが溜まりやすいため、カバー洗濯と陰干しを定期的に行う必要があります。
+        cost_performance: 腰の違和感で寝具を何度も買い替えている人には、基準を作る投資になります。
+      - keyword: コアラマットレス
+        best_for: ネット購入でも返品条件を重視し、まず自宅で寝心地を試したい人
+        scores:
+          support: 4.2
+          breathability: 4.0
+          logistics: 4.7
+        analysis_why: コアラマットレスはオンライン購入と返品条件の分かりやすさで比較しやすく、店舗で決めきれない人に向きます。
+        pros:
+          - 自宅で試しやすい販売設計を確認できる
+          - サイズ展開を選びやすい
+          - 家族用にも導入しやすい
+        critical_cons: 返品条件や対象商品は購入経路で変わるため、楽天内の販売条件を必ず確認する必要があります。
+        maintenance_reality: 圧縮配送後は復元時間が必要で、設置当日に完全な寝心地を判断しない方が安全です。
+        cost_performance: 店舗で短時間試すより、自宅で寝返りや暑さを確認したい人には合理的な選択です。
+
+  - id: 3d-printer-ranking
+    category_id: work
+    type: daily
+    slug: 3d-printer
+    release_date: '2026-06-22'
+    h1: 家庭用3Dプリンター 厳選4選
+    title: 【2026年最新】家庭用3Dプリンター 厳選4選｜失敗造形を減らす自動化の差
+    intro: >
+      3Dプリンターは造形サイズだけで選ぶと、初期調整、失敗造形、騒音、フィラメント管理で挫折します。本記事では、趣味制作、試作品、小物修理、子どもの工作まで想定し、初心者が続けられる自動化と保守性で比較します。
+    meta_description: Bambu Lab、Creality、Prusa、FLASHFORGEの家庭用3Dプリンターを比較。自動調整、速度、失敗造形、騒音、材料管理を整理します。
+    analysis_insight: >
+      3Dプリンターの後悔はスペックより「最初の1個が成功しない」「材料が湿気る」「置き場所がうるさい」で起こります。公開レビュー評価・件数と商品説明の自動調整、対応材料、造形サイズを確認します。
+    qa_config:
+      min_price: 50000
+      genre_id: '110080'
+      required_words:
+        - 3Dプリンター
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - フィラメントのみ
+        - ノズルのみ
+        - 部品
+        - パーツ
+    rakuten_params:
+      keyword: Bambu Lab 3Dプリンター, Creality 3Dプリンター, Prusa 3Dプリンター, FLASHFORGE 3Dプリンター
+      discovery_keywords:
+        - 家庭用 3Dプリンター
+        - 高速 3Dプリンター
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: automation
+        name: 自動調整
+      - id: reliability
+        name: 造形安定性
+      - id: operation
+        name: 材料と騒音管理
+    products_extra:
+      - keyword: Bambu
+        best_for: 初期調整の手間を減らし、届いた日から成功率を高めたい人
+        scores:
+          automation: 4.9
+          reliability: 4.7
+          operation: 4.4
+        analysis_why: Bambu Labは自動化と高速造形の訴求が強く、調整より制作に時間を使いたい人の候補になります。
+        pros:
+          - 自動調整機能を期待しやすい
+          - 高速造形の候補として比較しやすい
+          - マルチカラー構成も検討できる
+        critical_cons: 独自エコシステムや消耗品の管理を理解しないと、維持費が想定より高くなります。
+        maintenance_reality: ノズル、ビルドプレート、フィラメント湿気、ファームウェア更新を継続管理する必要があります。
+        cost_performance: 失敗造形の時間と材料を減らせるなら、本体価格の高さを制作効率で回収しやすい候補です。
+      - keyword: Creality
+        best_for: 価格を抑えつつ、情報量の多い定番機で3Dプリントを始めたい人
+        scores:
+          automation: 4.0
+          reliability: 4.1
+          operation: 4.0
+        analysis_why: Crealityは家庭用3Dプリンターの定番として情報が多く、調整も含めて楽しみたい人に向きます。
+        pros:
+          - 価格帯の選択肢が広い
+          - ユーザー情報を探しやすい
+          - 改造や調整の余地がある
+        critical_cons: 自動化が少ない構成では、初期調整に時間を取られやすく初心者が挫折する原因になります。
+        maintenance_reality: ベッドレベリング、ノズル詰まり、ベルト張りなど機械調整も趣味の一部として受け入れる必要があります。
+        cost_performance: 学びながら使う人には安価で有力ですが、完成品をすぐ作りたい人は上位自動化機も比較すべきです。
+      - keyword: Prusa
+        best_for: 安定性とコミュニティ情報を重視し、長く使う道具として選びたい人
+        scores:
+          automation: 4.4
+          reliability: 4.7
+          operation: 4.2
+        analysis_why: Prusaは安定性とオープンな情報量で比較されやすく、長く育てる工作機械として選びたい人に向きます。
+        pros:
+          - 安定性重視で比較しやすい
+          - コミュニティ情報が豊富
+          - 部品や設定情報を調べやすい
+        critical_cons: 国内在庫や価格は購入時期で差が出やすく、すぐ欲しい人には入手性が課題になる場合があります。
+        maintenance_reality: 長く使うほど消耗部品の交換とキャリブレーションの知識が必要になります。
+        cost_performance: 数年単位で使う工作道具として考えるなら、信頼性と情報量に投資する意味があります。
+      - keyword: FLASHFORGE
+        best_for: 教育用途や家庭内利用で、安全性と筐体の扱いやすさを重視する人
+        scores:
+          automation: 4.2
+          reliability: 4.3
+          operation: 4.5
+        analysis_why: FLASHFORGEは家庭や教育用途で比較しやすく、囲われた筐体や扱いやすさを重視する人に向きます。
+        pros:
+          - 家庭内に置きやすいモデルを選べる
+          - 教育用途で検討しやすい
+          - 筐体付き構成を探しやすい
+        critical_cons: 造形サイズや速度だけで見ると、最新高速機に見劣りする場合があります。
+        maintenance_reality: 筐体付きでも換気、ニオイ、設置音、材料保管は別途考える必要があります。
+        cost_performance: 家族で安全に使うことを重視するなら、速度より扱いやすさに価値があります。
+
+  - id: espresso-machine-ranking
+    category_id: home
+    type: daily
+    slug: espresso-machine
+    release_date: '2026-06-23'
+    h1: 家庭用エスプレッソマシン 厳選4選
+    title: 【2026年最新】家庭用エスプレッソマシン 厳選4選｜掃除と豆管理で後悔しない
+    intro: >
+      エスプレッソマシンは抽出圧や見た目だけで選ぶと、豆の挽き目、ミルク洗浄、置き場所、毎日の掃除で使わなくなります。本記事では、全自動、半自動、ラテ重視、手入れ重視の違いから、自宅で続く候補を比較します。
+    meta_description: デロンギ、ソリス、GAGGIA、JURAの家庭用エスプレッソマシンを比較。全自動、ミルク洗浄、豆管理、設置、掃除、維持費、毎朝の手間を整理します。
+    analysis_insight: >
+      エスプレッソマシンの後悔は味より「掃除が面倒」「豆と水の管理が続かない」「想像より大きい」で起こります。公開レビュー評価・件数と商品説明の洗浄方式、ミル、タンク容量を確認します。
+    qa_config:
+      min_price: 40000
+      genre_id: '100227'
+      required_words:
+        - エスプレッソ
+        - コーヒー
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - フィルターのみ
+        - タンパーのみ
+        - ミルクジャグのみ
+        - 部品
+    rakuten_params:
+      keyword: デロンギ エスプレッソマシン, ソリス エスプレッソマシン, GAGGIA エスプレッソマシン, JURA コーヒーマシン
+      discovery_keywords:
+        - 全自動 エスプレッソマシン
+        - 家庭用 エスプレッソマシン
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: extraction
+        name: 抽出の安定性
+      - id: milk
+        name: ミルク運用
+      - id: cleaning
+        name: 掃除の続けやすさ
+    products_extra:
+      - keyword: デロンギ
+        best_for: 全自動で毎朝のカフェラテを作り、掃除もできるだけ簡単にしたい人
+        scores:
+          extraction: 4.6
+          milk: 4.5
+          cleaning: 4.4
+        analysis_why: デロンギは全自動エスプレッソマシンの定番として比較しやすく、豆からカップまでを手軽にしたい家庭に向きます。
+        pros:
+          - 全自動モデルを選びやすい
+          - ミル付き構成を比較しやすい
+          - 国内情報を探しやすい
+        critical_cons: ミルクメニューを使うほど洗浄の手間が増え、掃除を怠ると味と衛生面に影響します。
+        maintenance_reality: 水タンク、豆ホッパー、抽出ユニット、ミルク経路を毎日から週次で管理する必要があります。
+        cost_performance: 毎日カフェドリンクを買う習慣がある人なら、使用回数で価格を回収しやすい候補です。
+      - keyword: ソリス
+        best_for: 半自動で抽出の手触りを楽しみ、自分で味を調整したい人
+        scores:
+          extraction: 4.4
+          milk: 4.2
+          cleaning: 4.0
+        analysis_why: ソリスは家庭用の本格寄りエスプレッソを楽しみたい人に向き、豆や挽き目を調整する余地があります。
+        pros:
+          - 半自動の楽しさを味わいやすい
+          - ラテアート練習にも使いやすい
+          - キッチンに置きやすいサイズを選べる
+        critical_cons: 味を安定させるにはミル、タンピング、豆管理の知識が必要で、全自動の楽さはありません。
+        maintenance_reality: 使用後のポルタフィルター洗浄、スチームノズル清掃、定期的な湯垢対策が必要です。
+        cost_performance: 趣味として抽出を楽しむ人には価値がありますが、時短目的なら全自動も比較してください。
+      - keyword: GAGGIA
+        best_for: 伝統的なエスプレッソらしさと家庭用の扱いやすさを両立したい人
+        scores:
+          extraction: 4.5
+          milk: 4.1
+          cleaning: 3.9
+        analysis_why: GAGGIAはエスプレッソらしい抽出を求める人に比較されやすく、道具として楽しみたい家庭に合います。
+        pros:
+          - エスプレッソらしい操作感を楽しめる
+          - 本格志向の候補として比較できる
+          - 金属感のある所有感がある
+        critical_cons: 手軽さより儀式性が強く、忙しい朝だけ使う人には負担になる場合があります。
+        maintenance_reality: 抽出前後の予熱、清掃、豆の鮮度管理を習慣化できるかが満足度を左右します。
+        cost_performance: 外で飲む味を自分で再現する趣味として使うなら、価格以上の体験価値があります。
+      - keyword: JURA
+        best_for: 価格より完成度を重視し、来客にも出せる全自動コーヒー環境を作りたい人
+        scores:
+          extraction: 4.8
+          milk: 4.6
+          cleaning: 4.4
+        analysis_why: JURAは高級全自動コーヒーマシンとして比較しやすく、手軽さと味の安定を高水準で求める人に向きます。
+        pros:
+          - 高級全自動機として比較しやすい
+          - 操作と仕上がりの安定を期待しやすい
+          - 来客用にも使いやすい
+        critical_cons: 本体価格とメンテナンス用品が高く、毎日使わない家庭では過剰投資になりやすいです。
+        maintenance_reality: 専用クリーナーやフィルター交換など、ランニングコストも購入前に確認すべきです。
+        cost_performance: 毎日複数杯を飲む家庭や小規模オフィスなら、品質と時短で投資理由を作れます。
+
+  - id: automatic-cat-toilet-ranking
+    category_id: home
+    type: daily
+    slug: automatic-cat-toilet
+    release_date: '2026-06-24'
+    h1: 自動猫トイレ 厳選4選
+    title: 【2026年最新】自動猫トイレ 厳選4選｜安全性と掃除負担で後悔しない
+    intro: >
+      自動猫トイレは掃除が楽になる一方、猫が使わない、安全センサーが不安、砂の相性が悪い、設置場所が大きいという後悔もあります。本記事では、多頭飼い、一人暮らし、ニオイ対策、アプリ管理の現実から候補を比較します。
+    meta_description: PETKIT、CATLINK、Litter-Robot、Homerunpetの自動猫トイレを比較。安全センサー、砂、ニオイ、掃除、アプリ管理を整理します。
+    analysis_insight: >
+      自動猫トイレの後悔は便利さより「猫が入らない」「事故が怖い」「専用消耗品が高い」で起こります。公開レビュー評価・件数と商品説明の安全センサー、対応砂、サイズ表記を確認します。
+    qa_config:
+      min_price: 30000
+      genre_id: '112115'
+      required_words:
+        - トイレ
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - 砂のみ
+        - シートのみ
+        - マットのみ
+        - 部品
+    rakuten_params:
+      keyword: PETKIT 自動猫トイレ, CATLINK 自動猫トイレ, トレッタ 猫トイレ, Homerunpet 自動猫トイレ
+      discovery_keywords:
+        - 自動猫トイレ
+        - 猫 トイレ 自動
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: safety
+        name: 安全センサー
+      - id: cleaning
+        name: 掃除とニオイ管理
+      - id: acceptance
+        name: 猫の慣れやすさ
+    products_extra:
+      - keyword: PETKIT
+        best_for: アプリ管理とニオイ対策を重視し、外出中も排泄状況を見たい人
+        scores:
+          safety: 4.5
+          cleaning: 4.6
+          acceptance: 4.1
+        analysis_why: PETKITはスマートペット家電として比較しやすく、アプリ管理やニオイ対策を重視する家庭に向きます。
+        pros:
+          - アプリ連携を確認しやすい
+          - ニオイ対策機能を比較しやすい
+          - 多頭飼いの管理に使いやすい
+        critical_cons: 猫が警戒して使わない可能性があり、導入直後に従来トイレを撤去するのは危険です。
+        maintenance_reality: 固まった砂、ダストボックス、センサー部の汚れを定期的に確認する必要があります。
+        cost_performance: 掃除頻度が高い多頭飼いでは価値が出ますが、1匹だけなら導入費と消耗品代を慎重に見てください。
+      - keyword: CATLINK
+        best_for: 排泄データを見ながら、体調変化の気づきを増やしたい多頭飼い家庭
+        scores:
+          safety: 4.4
+          cleaning: 4.5
+          acceptance: 4.0
+        analysis_why: CATLINKはアプリで排泄記録を見たい人に比較されやすく、掃除だけでなく健康管理の補助として使いたい家庭に合います。
+        pros:
+          - 排泄データを管理しやすい
+          - 多頭飼い向けに検討しやすい
+          - 掃除回数を減らしやすい
+        critical_cons: 体重識別や記録精度は環境に左右されるため、医療判断の代替にはなりません。
+        maintenance_reality: アプリ設定、Wi-Fi、猫ごとの識別、砂の補充を継続管理する必要があります。
+        cost_performance: トイレ掃除と排泄記録を一体化したい家庭には、時間削減の価値があります。
+      - keyword: トレッタ
+        best_for: 体重・排泄回数を自動記録し、猫の体調変化をデータで管理したい人
+        scores:
+          safety: 4.5
+          cleaning: 4.6
+          acceptance: 4.2
+        analysis_why: トレッタは排泄量と体重を自動で記録できる国産スマート猫トイレとして比較しやすく、健康管理を重視する家庭に向きます。
+        pros:
+          - 排泄データと体重を自動で記録できる
+          - 国内ブランドとして情報やサポートを確認しやすい
+          - 猫の体調変化の気づきに使いやすい
+        critical_cons: データ機能を使わない場合、価格に対する費用対効果が出にくい面があります。
+        maintenance_reality: 本体内のゴミ受けと砂の補充を定期的に行い、アプリ通知を活用する運用が必要です。
+        cost_performance: 複数頭や高齢猫を飼う家庭では、体調管理の安心感で価格を納得しやすい候補です。
+      - keyword: Homerunpet
+        best_for: 猫家電を一式スマート化し、給餌器や給水器と合わせて管理したい人
+        scores:
+          safety: 4.2
+          cleaning: 4.2
+          acceptance: 4.1
+        analysis_why: Homerunpetはスマートペット家電の候補として比較でき、トイレ以外の家電連携も見たい人に向きます。
+        pros:
+          - ペット家電の統一感を作りやすい
+          - アプリ管理を検討しやすい
+          - デザイン性のあるモデルを探しやすい
+        critical_cons: 販売店や保証条件で安心感が変わるため、安さだけで選ぶとサポート面で不安が残ります。
+        maintenance_reality: 消臭パーツや専用袋などの入手性を確認し、切らさない運用が必要です。
+        cost_performance: トイレ単体よりペット家電全体で使うほど、管理の一体化に価値が出ます。
+
+  - id: vr-headset-ranking
+    category_id: trend
+    type: daily
+    slug: vr-headset
+    release_date: '2026-06-25'
+    h1: VRヘッドセット 厳選4選
+    title: 【2026年最新】VRヘッドセット 厳選4選｜酔いと装着感で後悔しない没入体験
+    intro: >
+      VRヘッドセットは解像度だけで選ぶと、重さ、酔い、対応ソフト、メガネとの相性、保管場所で使わなくなります。本記事では、ゲーム、フィットネス、映画、PC VRの用途別に、続けられる装着感と運用の現実で比較します。
+    meta_description: Meta Quest、PlayStation VR2、PICO、VIVEのVRヘッドセットを比較。装着感、酔い、対応ソフト、PC接続、保管まで整理します。
+    analysis_insight: >
+      VRの後悔は映像の鮮明さより「首が疲れる」「酔う」「遊びたいソフトがない」で起こります。公開レビュー評価・件数と商品説明の重量、対応プラットフォーム、視野角表記を確認します。
+    qa_config:
+      min_price: 40000
+      genre_id: '566886'
+      required_words:
+        - VR
+        - Quest
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - ストラップのみ
+        - フェイスカバー
+        - ケース
+        - 部品
+    rakuten_params:
+      keyword: Meta Quest, PlayStation VR2, PICO VR, VIVE VR
+      discovery_keywords:
+        - VRヘッドセット
+        - VRゴーグル
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: comfort
+        name: 装着感
+      - id: content
+        name: 対応コンテンツ
+      - id: setup
+        name: 初期設定と保管
+    products_extra:
+      - keyword: Quest
+        best_for: 単体でVRゲームやフィットネスを始め、PCなしで使いたい人
+        scores:
+          comfort: 4.3
+          content: 4.8
+          setup: 4.7
+        analysis_why: Meta Questは単体VRの定番として対応コンテンツが多く、初めてVRを買う人に向きます。
+        pros:
+          - 単体で使いやすい
+          - 対応コンテンツが多い
+          - PC VRにも広げやすい
+        critical_cons: 長時間装着では前後バランスや顔への圧迫が気になり、追加ストラップが欲しくなる場合があります。
+        maintenance_reality: レンズの保護、汗対策、充電、プレイエリア確保を毎回行う必要があります。
+        cost_performance: ゲーム、運動、動画視聴まで使うなら稼働時間が増え、本体価格を納得しやすい候補です。
+      - keyword: PlayStation VR2
+        best_for: PS5の対応タイトルを大画面没入で遊びたい、家庭用ゲーム機中心の人
+        scores:
+          comfort: 4.2
+          content: 4.1
+          setup: 4.4
+        analysis_why: PlayStation VR2はPS5ユーザー向けに分かりやすく、対応タイトルが目的に合う人には導入しやすい候補です。
+        pros:
+          - PS5との連携が分かりやすい
+          - 家庭用ゲーム機らしい導入のしやすさがある
+          - 専用タイトルで没入感を楽しめる
+        critical_cons: PS5前提のため、対応ソフトが好みに合わないと使用頻度が伸びません。
+        maintenance_reality: ケーブル接続、コントローラー充電、プレイ空間の確保を毎回整える必要があります。
+        cost_performance: 遊びたい専用タイトルが明確なら価値があります。汎用性だけなら単体VRも比較してください。
+      - keyword: PICO
+        best_for: 単体VRを比較し、価格や軽さを重視して選びたい人
+        scores:
+          comfort: 4.4
+          content: 3.8
+          setup: 4.4
+        analysis_why: PICOは単体VRの代替候補として比較しやすく、装着感や価格を見ながら選びたい人に向きます。
+        pros:
+          - 単体VRとして比較できる
+          - 軽さや価格を確認しやすい
+          - 動画視聴用途にも検討しやすい
+        critical_cons: 対応コンテンツやストアの充実度はQuest系と差が出る場合があります。
+        maintenance_reality: アカウント、ストア、アプリ互換性を購入前に確認し、使いたいサービスがあるか見てください。
+        cost_performance: 目的が動画や軽いVR体験なら有力ですが、ゲーム本数重視ならコンテンツ差も価格に含めて判断すべきです。
+      - keyword: VIVE
+        best_for: PC VRや業務利用も視野に入れ、トラッキング精度を重視する人
+        scores:
+          comfort: 4.1
+          content: 4.4
+          setup: 3.8
+        analysis_why: VIVEはPC VRや業務寄りの選択肢として比較しやすく、環境構築まで含めて高品質を求める人に向きます。
+        pros:
+          - PC VR用途で検討しやすい
+          - トラッキング重視の構成を選べる
+          - 業務利用にも広げやすい
+        critical_cons: セットアップが複雑になりやすく、PC性能や設置スペースの条件が厳しくなります。
+        maintenance_reality: ベースステーション、ケーブル、PCドライバ、プレイエリアを一体で管理する必要があります。
+        cost_performance: 趣味を超えて制作や業務にも使うなら価値がありますが、ライトユーザーには過剰になりやすい候補です。
+
+  - id: golf-watch-ranking
+    category_id: trend
+    type: daily
+    slug: golf-watch
+    release_date: '2026-06-26'
+    h1: ゴルフGPSウォッチ 厳選4選
+    title: 【2026年最新】ゴルフGPSウォッチ 厳選4選｜距離計測と電池で後悔しない
+    intro: >
+      ゴルフGPSウォッチはコース対応数だけで選ぶと、距離表示の見やすさ、電池持ち、ショット記録、普段使いの重さで後悔します。本記事では、競技志向、初心者、健康管理兼用、シンプル操作の用途に分けて比較します。
+    meta_description: Garmin、Shot Navi、EAGLE VISION、Voice CaddieのゴルフGPSウォッチを比較。距離計測、電池、画面、ショット記録を整理します。
+    analysis_insight: >
+      ゴルフGPSウォッチの後悔は精度だけでなく「ラウンド途中で電池が切れる」「画面が読みにくい」「機能が多すぎる」で起こります。公開レビュー評価・件数と商品説明の連続使用時間、コース対応、表示方式を確認します。
+    qa_config:
+      min_price: 25000
+      genre_id: '101077'
+      required_words:
+        - GPS
+        - ゴルフ
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - ベルトのみ
+        - 充電器のみ
+        - 保護フィルム
+        - 部品
+    rakuten_params:
+      keyword: Garmin Approach, Shot Navi GPS, EAGLE VISION watch, Voice Caddie GPS
+      discovery_keywords:
+        - ゴルフ GPS ウォッチ
+        - ゴルフ 距離計 腕時計
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: distance
+        name: 距離表示
+      - id: battery
+        name: 電池持ち
+      - id: daily
+        name: 普段使い
+    products_extra:
+      - keyword: Garmin
+        best_for: ゴルフだけでなく健康管理やスマートウォッチ機能も兼用したい人
+        scores:
+          distance: 4.7
+          battery: 4.5
+          daily: 4.8
+        analysis_why: Garmin Approach系はゴルフ機能と普段使いの両立で比較しやすく、ラウンド以外でも使いたい人に向きます。
+        pros:
+          - ゴルフと健康管理を兼用しやすい
+          - 画面とアプリ連携を確認しやすい
+          - ブランドの情報量が多い
+        critical_cons: 多機能なぶん価格が高く、距離だけ分かればよい人には過剰です。
+        maintenance_reality: コースデータ更新、充電、スマホ連携、ラウンド後の記録整理を習慣化する必要があります。
+        cost_performance: ゴルフ以外の運動や睡眠管理にも使うほど、時計としての稼働時間で価格を回収できます。
+      - keyword: Shot Navi
+        best_for: 国内コースでの使いやすさと、ゴルフ専用機らしい分かりやすさを重視する人
+        scores:
+          distance: 4.6
+          battery: 4.4
+          daily: 4.0
+        analysis_why: Shot Naviは国内ゴルファー向けの距離計測機として比較しやすく、ゴルフ専用の分かりやすさを求める人に合います。
+        pros:
+          - 国内コース情報を確認しやすい
+          - ゴルフ専用機として使いやすい
+          - 機能と価格のバランスを取りやすい
+        critical_cons: 普段使いのスマートウォッチとしては、Garminなどに比べて魅力が限られる場合があります。
+        maintenance_reality: ラウンド前に充電とコースデータを確認し、現地で慌てない運用が必要です。
+        cost_performance: ゴルフの日だけ使う専用機として割り切るなら、価格と機能のバランスを取りやすい候補です。
+      - keyword: EAGLE VISION
+        best_for: シンプルな距離確認を重視し、操作に迷わないゴルフウォッチが欲しい人
+        scores:
+          distance: 4.4
+          battery: 4.3
+          daily: 3.8
+        analysis_why: EAGLE VISIONはゴルフ距離計測の専用性で比較しやすく、複雑なスマート機能より見やすさを重視する人に向きます。
+        pros:
+          - 距離確認に集中しやすい
+          - ゴルフ専用機として比較できる
+          - 操作を覚えやすいモデルを探しやすい
+        critical_cons: 高度な分析機能や普段使いの時計機能を求める人には物足りない場合があります。
+        maintenance_reality: 使わない期間が長いと充電忘れが起きやすく、前日準備をルーティン化する必要があります。
+        cost_performance: スコア管理より距離確認が目的なら、必要機能に絞った投資として合理的です。
+      - keyword: Voice Caddie
+        best_for: 画面表示の見やすさや先進機能を重視し、ラウンドを細かく管理したい人
+        scores:
+          distance: 4.5
+          battery: 4.2
+          daily: 4.0
+        analysis_why: Voice Caddieは高機能ゴルフウォッチの候補として比較しやすく、ラウンド中の情報量を重視する人に向きます。
+        pros:
+          - 画面情報を多く見られるモデルがある
+          - 高機能ゴルフウォッチとして比較できる
+          - 距離以外の補助機能も検討しやすい
+        critical_cons: 情報量が多いほど操作を覚える必要があり、プレー中に迷うと集中を削ぎます。
+        maintenance_reality: 表示設定と通知設定を事前に整え、ラウンド中に触る項目を絞るのが現実的です。
+        cost_performance: 練習やスコア改善にデータを使う人ほど、単なる距離計以上の価値があります。
+
+  - id: clothes-dryer-ranking
+    category_id: home
+    type: daily
+    slug: clothes-dryer
+    release_date: '2026-06-27'
+    h1: 衣類乾燥機 厳選4選
+    title: 【2026年最新】衣類乾燥機 厳選4選｜梅雨と共働きで後悔しない乾燥力
+    intro: >
+      衣類乾燥機は容量だけで選ぶと、設置台、排湿、電気代、縮み、フィルター掃除で後悔します。本記事では、共働き家庭、部屋干し対策、マンション、少人数世帯の使い方を分け、洗濯動線まで含めて比較します。
+    meta_description: パナソニック、日立、LG、Morusの衣類乾燥機を比較。乾燥力、設置、排湿、電気代、フィルター掃除、縮み、容量、賃貸での置きやすさを整理します。
+    analysis_insight: >
+      衣類乾燥機の後悔は乾くかより「置けない」「排湿で部屋が暑い」「毎回フィルター掃除が面倒」で起こります。公開レビュー評価・件数と商品説明の容量、方式、設置条件を確認します。
+    qa_config:
+      min_price: 50000
+      genre_id: '204200'
+      required_words:
+        - 乾燥機
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - スタンドのみ
+        - フィルターのみ
+        - カバー
+        - 部品
+    rakuten_params:
+      keyword: パナソニック 衣類乾燥機, 日立 衣類乾燥機, LG 乾燥機, 東芝 衣類乾燥機
+      discovery_keywords:
+        - 衣類乾燥機 家庭用
+        - 小型衣類乾燥機
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: drying
+        name: 乾燥力
+      - id: install
+        name: 設置条件
+      - id: upkeep
+        name: 掃除と電気代
+    products_extra:
+      - keyword: パナソニック
+        best_for: 家族分の洗濯物を毎日乾かし、国内定番機の安心感を重視する家庭
+        scores:
+          drying: 4.6
+          install: 4.0
+          upkeep: 4.2
+        analysis_why: パナソニックの衣類乾燥機は国内家庭向けの定番として比較しやすく、洗濯動線を改善したい家庭に向きます。
+        pros:
+          - 国内定番機として情報が多い
+          - 家族向け容量を選びやすい
+          - 設置台との組み合わせを確認しやすい
+        critical_cons: 設置台や排湿条件を見落とすと、洗面所が狭くなり使い勝手が落ちます。
+        maintenance_reality: 毎回のフィルター掃除と定期的なホコリ除去が乾燥効率を左右します。
+        cost_performance: 部屋干し時間と天候ストレスを減らせるなら、共働き家庭では価格以上の時短効果があります。
+      - keyword: 日立
+        best_for: しっかり乾燥と国内サポートを重視し、長く使う家電として選びたい人
+        scores:
+          drying: 4.5
+          install: 4.0
+          upkeep: 4.1
+        analysis_why: 日立は白物家電としての安心感があり、乾燥機を長く使う前提で比較したい家庭に合います。
+        pros:
+          - 国内サポートを確認しやすい
+          - 家庭用乾燥機として比較しやすい
+          - 設置情報を探しやすい
+        critical_cons: 乾燥機単体は洗濯機との高さや動線が合わないと、出し入れが負担になります。
+        maintenance_reality: 洗濯機上に置く場合は耐荷重、固定、地震対策を確認してください。
+        cost_performance: 毎日の家事時間を減らす目的なら、洗濯機買い替えより低コストで効果を出せる場合があります。
+      - keyword: LG
+        best_for: 大容量やヒートポンプ系の省エネ乾燥を重視し、設置スペースに余裕がある家庭
+        scores:
+          drying: 4.6
+          install: 3.8
+          upkeep: 4.4
+        analysis_why: LGは大容量や省エネ方式の選択肢で比較しやすく、海外式の乾燥機を検討する家庭に向きます。
+        pros:
+          - 大容量モデルを検討しやすい
+          - 省エネ方式を確認しやすい
+          - デザイン性のあるモデルがある
+        critical_cons: 本体サイズが大きく、搬入経路や設置場所を事前に確認しないと置けない可能性があります。
+        maintenance_reality: 排水、排湿、コンセント条件を確認し、国内住宅の洗面所に合うか見る必要があります。
+        cost_performance: まとめ洗いが多い家庭では大容量の価値が出ますが、少人数なら小型機も比較すべきです。
+      - keyword: 東芝
+        best_for: 定番国内ブランドで安定した乾燥性能と保証を重視し、長く使いたい家庭
+        scores:
+          drying: 4.4
+          install: 4.1
+          upkeep: 4.2
+        analysis_why: 東芝の衣類乾燥機は白物家電の定番として比較しやすく、国内サポートと耐久性を重視する家庭に向きます。
+        pros:
+          - 国内定番ブランドとして安心感がある
+          - 設置情報や消耗品を確認しやすい
+          - 乾燥力と耐久性のバランスが取りやすい
+        critical_cons: 最新ヒートポンプ技術の採用状況は機種によって異なるため、省エネ性を重視する場合は仕様確認が必要です。
+        maintenance_reality: フィルター清掃と定期的なホコリ除去を怠ると乾燥効率が落ちるため、毎回の清掃を習慣化してください。
+        cost_performance: 家電量販での取り扱いが多く、配送設置や長期保証込みで比較しやすい候補です。
+
+  - id: premium-blender-ranking
+    category_id: home
+    type: daily
+    slug: premium-blender
+    release_date: '2026-06-28'
+    h1: 高級ブレンダー 厳選4選
+    title: 【2026年最新】高級ブレンダー 厳選4選｜スムージーと洗浄で後悔しない
+    intro: >
+      高級ブレンダーは回転数だけで選ぶと、洗いにくさ、騒音、置き場所、氷や冷凍食材の仕上がりで後悔します。本記事では、スムージー、スープ、プロテイン、料理下ごしらえを想定し、毎日使える候補を比較します。
+    meta_description: Vitamix、Blendtec、Ninja、KitchenAidの高級ブレンダーを比較。粉砕力、騒音、洗浄、設置、冷凍食材の仕上がりを整理します。
+    analysis_insight: >
+      高級ブレンダーの後悔はパワー不足より「洗うのが面倒」「音が大きい」「重くて出しっぱなしになる」で起こります。公開レビュー評価・件数と商品説明の容量、刃、洗浄方法、サイズを確認します。
+    qa_config:
+      min_price: 30000
+      genre_id: '100227'
+      required_words:
+        - ブレンダー
+        - ミキサー
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - ボトルのみ
+        - 替刃
+        - カップのみ
+        - 部品
+    rakuten_params:
+      keyword: Vitamix ブレンダー, Blendtec ブレンダー, Ninja ブレンダー, KitchenAid ブレンダー
+      discovery_keywords:
+        - 高級ブレンダー
+        - パワーブレンダー
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: power
+        name: 粉砕力
+      - id: cleaning
+        name: 洗浄のしやすさ
+      - id: noise
+        name: 騒音と設置
+    products_extra:
+      - keyword: Vitamix
+        best_for: 毎朝のスムージーや冷凍食材をなめらかに仕上げたい人
+        scores:
+          power: 4.9
+          cleaning: 4.2
+          noise: 3.8
+        analysis_why: Vitamixは高級ブレンダーの代表格として粉砕力で比較しやすく、毎日使う前提の人に向きます。
+        pros:
+          - 粉砕力を重視して選びやすい
+          - スムージー用途で情報が多い
+          - 長期使用を前提に比較しやすい
+        critical_cons: 音が大きく、本体も重いため、早朝や集合住宅では使う時間帯を選びます。
+        maintenance_reality: 使用後すぐに洗浄しないと汚れが固まり、毎日使うほど置き場所と洗い場の動線が重要になります。
+        cost_performance: 外でスムージーを買う習慣を置き換え、毎日使うなら価格の高さを回収しやすい候補です。
+      - keyword: Blendtec
+        best_for: パワーとシンプルな操作を重視し、スープや氷もまとめて処理したい人
+        scores:
+          power: 4.8
+          cleaning: 4.3
+          noise: 3.7
+        analysis_why: Blendtecは高出力ブレンダーとして比較しやすく、氷や冷凍食材を力強く処理したい人に向きます。
+        pros:
+          - 高出力モデルとして比較できる
+          - 操作をシンプルにしやすい
+          - スープや冷凍食材にも使いやすい
+        critical_cons: 国内流通や保証条件は販売店ごとに確認が必要で、安さだけで選ぶと不安が残ります。
+        maintenance_reality: コンテナの曇りやニオイ移りを防ぐため、洗浄と乾燥を丁寧に行う必要があります。
+        cost_performance: 料理下ごしらえにも使う家庭なら、時短家電として価格を納得しやすくなります。
+      - keyword: Ninja
+        best_for: スムージー、プロテイン、砕氷を手軽に試し、価格も抑えたい人
+        scores:
+          power: 4.4
+          cleaning: 4.4
+          noise: 3.9
+        analysis_why: Ninjaは価格とパワーのバランスで比較しやすく、初めて高めのブレンダーを選ぶ人に向きます。
+        pros:
+          - 価格と機能のバランスを取りやすい
+          - ボトル型構成を選びやすい
+          - プロテインやスムージーに使いやすい
+        critical_cons: 業務級の滑らかさや長期耐久性を期待すると上位専業ブランドとの差を感じる場合があります。
+        maintenance_reality: パーツ点数が多い構成では、洗浄と乾燥の手間を購入前に確認してください。
+        cost_performance: 毎日使うか不明な段階では、価格を抑えて習慣化を試しやすい候補です。
+      - keyword: KitchenAid
+        best_for: キッチンの見た目も重視し、調理家電として出しっぱなしにしたい人
+        scores:
+          power: 4.2
+          cleaning: 4.1
+          noise: 4.0
+        analysis_why: KitchenAidはデザインと調理家電としての所有感で比較しやすく、キッチンに置く道具として選びたい人に向きます。
+        pros:
+          - デザイン性を重視して選べる
+          - 調理家電との統一感を作りやすい
+          - 出しっぱなしにしやすい
+        critical_cons: 粉砕力だけで選ぶなら、専業パワーブレンダーに劣る場合があります。
+        maintenance_reality: 見た目を保つには本体の汚れ拭き取りとコンテナの乾燥を習慣化する必要があります。
+        cost_performance: 使うたびに片付けるより、見える場所に置いて使用頻度を上げる人に価値があります。
+
+  - id: electric-recliner-ranking
+    category_id: home
+    type: daily
+    slug: electric-recliner
+    release_date: '2026-06-29'
+    h1: 電動リクライニングチェア 厳選4選
+    title: 【2026年最新】電動リクライニングチェア 厳選4選｜置き場所と搬入で後悔しない
+    intro: >
+      電動リクライニングチェアは座り心地だけで選ぶと、搬入できない、壁から離せない、合皮が劣化する、掃除しにくいという後悔が出ます。本記事では、映画鑑賞、在宅休憩、介護前の備え、リビング設置の現実で比較します。
+    meta_description: ニトリ、関家具、LOWYA、ヤマダの電動リクライニングチェアを比較。座り心地、搬入、壁との距離、素材、掃除、保証、リビング設置を整理します。
+    analysis_insight: >
+      電動リクライニングチェアの後悔は座った瞬間より「部屋に入らない」「倒すと壁に当たる」「重くて掃除できない」で起こります。公開レビュー評価・件数と商品説明のサイズ、素材、リクライニング方式を確認します。
+    qa_config:
+      min_price: 50000
+      genre_id: '100804'
+      required_words:
+        - リクライニング
+        - チェア
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - カバーのみ
+        - オットマンのみ
+        - 部品
+        - パーツ
+    rakuten_params:
+      keyword: ニトリ 電動リクライニング, 関家具 電動リクライニング, カリモク リクライニングチェア, ヤマダ 電動リクライニング
+      discovery_keywords:
+        - 電動リクライニングチェア
+        - リクライニングチェア 電動
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: comfort
+        name: 座り心地
+      - id: install
+        name: 搬入と設置
+      - id: upkeep
+        name: 素材と掃除
+    products_extra:
+      - keyword: ニトリ
+        best_for: 実店舗で座り心地を確認し、リビングに合う定番チェアを選びたい人
+        scores:
+          comfort: 4.4
+          install: 4.2
+          upkeep: 4.1
+        analysis_why: ニトリは店舗で座り心地を確認しやすく、家具としての導入ハードルを下げたい人に向きます。
+        pros:
+          - 実物確認しやすい
+          - 家具として情報を探しやすい
+          - 配送や設置条件を確認しやすい
+        critical_cons: 人気モデルはサイズが大きく、賃貸や狭いリビングでは圧迫感が出ます。
+        maintenance_reality: 合皮や布地の汚れ、リクライニング部の隙間、床との接地跡を定期的に確認する必要があります。
+        cost_performance: 毎日座る定位置として使うなら、ソファ買い替え以上の満足につながります。
+      - keyword: 関家具
+        best_for: 1人用のくつろぎ席を上質に作り、映画や読書の時間を重視する人
+        scores:
+          comfort: 4.6
+          install: 4.0
+          upkeep: 4.1
+        analysis_why: 関家具は家具ブランドとして比較しやすく、座り心地や素材感も含めて選びたい人に向きます。
+        pros:
+          - 家具としての質感を確認しやすい
+          - リビングに置きやすいデザインを探せる
+          - くつろぎ用途と相性が良い
+        critical_cons: 上位モデルは高価で、電動機構の修理や保証条件も購入前に見る必要があります。
+        maintenance_reality: 背面を倒すスペースとコンセント位置を確認し、コードが動線を邪魔しない配置にしてください。
+        cost_performance: 長時間座る趣味時間がある人ほど、体を預けられる家具として価格を納得しやすくなります。
+      - keyword: カリモク
+        best_for: 国内高級家具ブランドの耐久素材と座り心地を重視し、長期使用を前提に選びたい人
+        scores:
+          comfort: 4.7
+          install: 3.8
+          upkeep: 4.5
+        analysis_why: カリモクは国内高級家具ブランドとして比較しやすく、座り心地と「長く使える」ことを重視する人に向きます。
+        pros:
+          - 国内高級家具ブランドとして耐久素材を選びやすい
+          - 座り心地・素材感が上質で店舗展示も確認しやすい
+          - 長期アフターサービスを期待しやすい
+        critical_cons: 本体価格は高めで、電動機構の修理・保証条件は購入前に確認が必要です。
+        maintenance_reality: 天然木部のケアと電動部不具合時の問い合わせ先を購入時に確認しておくと安心です。
+        cost_performance: 10年以上使う前提で選ぶなら、素材と品質の考え方において経済的な候補になります。
+      - keyword: ヤマダ
+        best_for: 家電量販店系の配送設置や保証を重視し、電動家具を安心して買いたい人
+        scores:
+          comfort: 4.1
+          install: 4.4
+          upkeep: 4.0
+        analysis_why: ヤマダ系の電動リクライニングは配送設置や保証を確認しやすく、電動機構の安心感を重視する人に向きます。
+        pros:
+          - 配送設置条件を確認しやすい
+          - 家電的な保証を見やすい
+          - 店舗確認できる場合がある
+        critical_cons: デザインや素材の選択肢は家具専門ブランドほど広くない場合があります。
+        maintenance_reality: 電源コード、リモコン、モーター部の故障時対応を購入前に確認してください。
+        cost_performance: 電動機構の安心感を重視するなら、配送と保証込みで比較する価値があります。
+
+  - id: car-navigation-ranking
+    category_id: trend
+    type: daily
+    slug: car-navigation
+    release_date: '2026-06-30'
+    h1: カーナビ 厳選4選
+    title: 【2026年最新】カーナビ 厳選4選｜地図更新と取付費で後悔しない車内DX
+    intro: >
+      カーナビは画面サイズだけで選ぶと、取付費、車種適合、地図更新、スマホ連携、バックカメラ連動で後悔します。本記事では、家族車、長距離ドライブ、通勤、カーオーディオ重視の使い方に分けて比較します。
+    meta_description: パナソニック ストラーダ、ケンウッド彩速、パイオニア楽ナビ、アルパインBIG Xを比較。取付、地図更新、スマホ連携、車種適合、工賃まで整理します。
+    analysis_insight: >
+      カーナビの後悔は画面の大きさより「車に付かない」「地図更新が高い」「スマホ連携の方が使いやすい」で起こります。公開レビュー評価・件数と商品説明の車種適合、地図更新、入出力端子を確認します。
+    qa_config:
+      min_price: 50000
+      genre_id: '101126'
+      required_words:
+        - カーナビ
+        - ナビ
+      forbidden_words:
+        - 中古
+        - 訳あり
+        - ジャンク
+        - ふるさと納税
+        - 返礼品
+        - 地図データのみ
+        - フィルムアンテナのみ
+        - 取付キットのみ
+        - 部品
+    rakuten_params:
+      keyword: パナソニック ストラーダ, ケンウッド 彩速ナビ, パイオニア 楽ナビ, アルパイン BIG X
+      discovery_keywords:
+        - カーナビ 9インチ
+        - フローティング カーナビ
+      hits: 20
+      sort: -reviewCount
+    test_criteria:
+      - id: navigation
+        name: 地図と案内
+      - id: connect
+        name: スマホ・音響連携
+      - id: install
+        name: 取付と車種適合
+    products_extra:
+      - keyword: ストラーダ
+        best_for: 家族車でテレビ、録画、ナビをまとめて使い、国内定番機を選びたい人
+        scores:
+          navigation: 4.5
+          connect: 4.4
+          install: 4.3
+        analysis_why: パナソニック ストラーダは国内カーナビの定番として比較しやすく、家族車の中心機器として選びたい人に向きます。
+        pros:
+          - 国内定番機として情報が多い
+          - 大画面モデルを選びやすい
+          - AV機能も比較しやすい
+        critical_cons: 車種適合と取付キットを誤ると、本体価格以外の工賃や部材で予算が膨らみます。
+        maintenance_reality: 地図更新、テレビアンテナ、バックカメラ、ETC連動まで含めて取付店と確認してください。
+        cost_performance: 長く乗る車に付けるなら、スマホ単体では難しい車載連携で価格を回収できます。
+      - keyword: 彩速ナビ
+        best_for: 画面の反応とオーディオ機能を重視し、運転中の操作ストレスを減らしたい人
+        scores:
+          navigation: 4.4
+          connect: 4.6
+          install: 4.2
+        analysis_why: ケンウッド彩速ナビは操作レスポンスや音響機能で比較しやすく、車内エンタメも重視する人に向きます。
+        pros:
+          - 操作レスポンスを重視して選べる
+          - オーディオ機能を比較しやすい
+          - スマホ連携を確認しやすい
+        critical_cons: ナビ機能だけで見れば、スマホ地図で十分な人には高価に感じやすいです。
+        maintenance_reality: 音響設定やスマホ接続を使いこなすには、初期設定に時間をかける必要があります。
+        cost_performance: 音楽、ナビ、バックカメラをまとめて快適にしたい人には、車内時間の質で価値が出ます。
+      - keyword: 楽ナビ
+        best_for: 操作の分かりやすさを重視し、家族の誰でも使えるカーナビを選びたい人
+        scores:
+          navigation: 4.6
+          connect: 4.2
+          install: 4.3
+        analysis_why: パイオニア楽ナビは名称通り分かりやすい操作を重視する人に比較されやすく、家族共有車に向きます。
+        pros:
+          - 操作が分かりやすい候補として比較できる
+          - 国内情報を探しやすい
+          - 車種別取付情報を確認しやすい
+        critical_cons: 上位サイバーナビ級の音質や高度機能を期待すると物足りない場合があります。
+        maintenance_reality: 地図更新期限と費用、バックカメラ連動の有無を購入前に確認してください。
+        cost_performance: 迷わず使えることを重視する家庭には、多機能上位機より失敗しにくい投資です。
+      - keyword: BIG X
+        best_for: ミニバンやSUVに大画面を入れ、車種専用感を重視したい人
+        scores:
+          navigation: 4.5
+          connect: 4.4
+          install: 4.7
+        analysis_why: アルパインBIG Xは大画面と車種専用設計で比較しやすく、ミニバンやSUVの満足度を高めたい人に向きます。
+        pros:
+          - 大画面ナビを選びやすい
+          - 車種専用設計を確認しやすい
+          - 後席モニター連携も検討できる
+        critical_cons: 車種適合が狭く、乗り換え時の流用性は低くなります。
+        maintenance_reality: 取付は専門店前提で考え、パネル、配線、カメラ、ステアリングリモコン連動を一括確認してください。
+        cost_performance: 長く乗るファミリーカーなら、大画面と専用感が毎日の満足に直結します。
