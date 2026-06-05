@@ -4,7 +4,7 @@
 運用・インデックス促進・SEO戦略転換フェーズ
 
 ## 完了済み
-- 2026-06-05: 6/15〜6/30の16本ストック記事を `config/articles_stock.yaml` に追加し、全品質ゲートを通過。楽天API取得で楽天在庫がなかった Litter-Robot（自動猫トイレ）→トレッタ、Morus Zero（衣類乾燥機）→東芝、LOWYA（電動リクライニング）をカリモクへ代替ブランドに差し替え再取得し、全16本 items=4 を確認。`validate_articles.py` errors=0/warnings=0、`LTS_TODAY=2026-06-30` の未来日込みビルドは全77記事生成、`audit_site.py` errors=0/warnings=0 を確認。
+- 2026-06-05: 6/15〜6/30の16本ストック記事を `config/articles_stock.yaml` に追加し、全品質ゲートを通過。楽天APIでの代替ブランド差し替え（Litter-Robot→トレッタ、Morus Zero→東芝、LOWYA→カリモク）を行い全16記事で4アイテム構成を確保。全77記事のビルド・監査に成功し、GitHub Pages へのデプロイ（git push）を完了。
 - 2026-05-31: 月末PDCAのAct実装を完了。比較表直後に楽天「価格を見る」CTAを追加し、全楽天リンクに `data-affiliate-click` を付与、GA4へ `rakuten_affiliate_click` を送信する計測を追加。`ロボット掃除機 高級`、`ai ドローン`、`高級 トースター` の露出クエリに合わせてtitle/metaを調整。`build_site.py` はプロジェクトルート基準 of 絶対パス出力へ修正し、`validate_articles.py` errors=0/warnings=0、未来日込み全61記事ビルド、`audit_site.py` errors=0/warnings=0を確認。楽天API取得は外部ネットワークで一部タイムアウトしたため、商品キャッシュは既存データを維持。
 - 2026-05-31: ログイン後に未取得だった月末PDCA数値を再取得し、`docs/monthly_pdca_2026_05.md` に追記。楽天アフィリエイトは今月クリック1、未確定売上0円、未確定成果報酬0円、売上件数0。Google Search Consoleは合計クリック8、合計表示369、平均CTR 2.2%、平均掲載順位17.1（画面表示期間 2026/04/23-2026/05/29）。GA4 LifeTech Selectは過去7日間のアクティブユーザー16、イベント211、表示回数162、キーイベント0を確認。公開トップと `/work/ultrawide-monitor/` の表示、canonical、楽天リンク、`sponsored` 属性も再確認済み。
 - 2026-05-29: 5月末PDCAを実施し、`docs/monthly_pdca_2026_05.md` を作成。`validate_articles.py` は errors=0/warnings=0、`LTS_TODAY=2026-06-14` の未来日込みビルドは全61記事生成、`audit_site.py` は errors=0/warnings=0。公開トップと代表記事 `/work/ultrawide-monitor/` をブラウザで確認し、canonicalと楽天アフィリエイトリンクの `sponsored` 属性を確認。月末Actionとして、サイト説明・高級ヘアドライヤー記事・ロボット掃除機記事に残っていた未検証の数量表現を、公開レビュー評価・件数、価格、仕様表記に基づく表現へ修正。
@@ -25,12 +25,11 @@
 - 楽天アフィリエイトの商品別クリック・商品別成果の詳細取得
 
 ## 次のアクション
-1. **6/30分まで作成済みストック記事をデプロイ**: `git_push.bat` で生成済みHTMLをGitHub Pagesへ反映する。
-2. **7月分ストック記事の準備**: `docs/ai/STOCK_ARTICLE_FACTORY.md` に従い、7月分テーマを選定・追加する。
-3. **6月分析の開始**: 次回起動時、`docs/current_status.md` で提起された問題点（全記事のインデックス登録確認、CTAクリック効果検証）を起点に分析と施策を開始する。
-4. Search Consoleでクリックが出た `ポータブルゲーミングPC 2026`、`umpc ゲーミング 2026` 周辺の関連記事または既存記事内リンクを追加する。
-5. 楽天アフィリエイトで商品別クリック・商品別成果が見える画面を確認し、クリック1の流入先商品を特定する。
-6. GA4の `rakuten_affiliate_click` が受信されているか確認し、キーイベント化する。
+1. **7月分ストック記事の準備**: `docs/ai/STOCK_ARTICLE_FACTORY.md` に従い、7月分テーマを選定・追加する。
+2. **6月分析の開始**: 次回起動時、`docs/current_status.md` で提起された問題点（全記事のインデックス登録確認、CTAクリック効果検証）を起点に分析と施策を開始する。
+3. Search Consoleでクリックが出た `ポータブルゲーミングPC 2026`、`umpc ゲーミング 2026` 周辺の関連記事または既存記事内リンクを追加する。
+4. 楽天アフィリエイトで商品別クリック・商品別成果が見える画面を確認し、クリック1の流入先商品を特定する。
+5. GA4の `rakuten_affiliate_click` が受信されているか確認し、キーイベント化する。
 
 ## 判断ログ
 - 2026-05-31: 月末PDCAの未取得情報を再取得。Search Consoleではクリック8・表示369まで伸び、特にポータブルゲーミングPC/UMPC系クエリでクリックが発生している一方、楽天成果はクリック1・売上0に留まる。GA4はOrganic Search 15、Direct 3で、検索流入は発生済みだがキーイベント0のため、次の課題は「露出のある記事のCTR改善」と「楽天リンククリック計測・導線改善」。Search Consoleの `site:github.io` 系クエリはノイズとして施策対象外。
