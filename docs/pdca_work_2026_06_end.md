@@ -480,3 +480,24 @@
 - 2026-06-29: GitHubの自動更新コミットにローカルを追従後、監査開始時点でローカルHEADとGitHub HEADが `f2fd3965274b9c3994c1f4447ef0a4c2167b4278` で一致していることを確認した。
 
 監査合格。追加修正なし。
+
+## 緊急改善追補 2026-06-29
+
+### 実装内容
+- `robot-vacuum-ranking` の title / meta を、`ロボット掃除機 高級` の表示クエリに寄せて再調整した。
+- `ai-drone-ranking` の title / meta を、`ai ドローン` の表示クエリに対して自然な検索文脈になるよう再調整した。
+- `portable-gaming-pc` の title / meta に `UMPC` と `外で後悔しない` の文脈を追加し、勝ち筋クエリへの適合を強めた。
+- 記事上部に関連記事導線を追加し、クロールと回遊の両方で内部リンクが先に見える構成へ変更した。
+- `RELATED_ARTICLE_OVERRIDES` を拡張し、`keyboard-ranking` / `office-chair-ranking` / `monitor-arm` / `premium-webcam-ranking` から `portable-gaming-pc` 周辺へ寄せた。
+- `rakuten_affiliate_click` は `pointerup` も拾うよう補強し、通常クリック前後の取りこぼしを減らした。
+
+### 品質ゲート
+- `validate_articles.py`: `errors=0`, `warnings=0`
+- `fetch_products.py`: `portable-gaming-pc`, `robot-vacuum-ranking`, `ai-drone-ranking` を再取得完了
+- `build_site.py`: 全76記事ビルド完了
+- `audit_site.py`: `errors=0`, `warnings=0`
+- 補足: `build_site.py` の stale ディレクトリ削除警告は継続するが、今回も生成結果と監査結果には影響しなかった。
+
+### 未解消事項
+- 未インデックスURL 15件そのものは外部のインデックス状態なので、今回のリポジトリ変更だけでは即時解消できない。
+- 次回は GSC 側で URL 検査と再クロール判断を行い、今回の内部リンク強化後に改善したかを確認する。

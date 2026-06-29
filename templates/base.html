@@ -629,6 +629,11 @@
                 trackAffiliateClick(resolveAffiliateLink(event.target));
             }, true);
 
+            document.addEventListener('pointerup', function(event) {
+                if (event.button !== 0) return;
+                trackAffiliateClick(resolveAffiliateLink(event.target));
+            }, true);
+
             document.addEventListener('auxclick', function(event) {
                 if (event.button !== 1) return;
                 trackAffiliateClick(resolveAffiliateLink(event.target));

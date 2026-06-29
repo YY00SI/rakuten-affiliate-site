@@ -927,6 +927,36 @@
         </section>
     </header>
 
+    
+    <section class="subtle-panel" style="margin-bottom: 3rem; padding: 1.25rem 1.5rem;">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.9rem; margin-bottom: 0.9rem;">
+            <div>
+                <span class="eyebrow" style="margin-bottom: 0.35rem;">Next Comparison</span>
+                <h2 style="margin: 0; font-size: 1.15rem;">比較候補を広げるなら、この関連記事から先に確認してください。</h2>
+            </div>
+            <a href="#comparison" style="font-size: 0.9rem; font-weight: 700;">まずはこの比較表を見る</a>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.8rem;">
+            
+            <a href="../../work/3d-printer/" style="display: block; padding: 0.95rem 1rem; border: 1px solid var(--border); border-radius: 10px; background: #fff; color: inherit; text-decoration: none;">
+                <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.35rem;">ワークスタイル</div>
+                <strong style="display: block; line-height: 1.55; color: var(--secondary);">【2026年最新】家庭用3Dプリンター 厳選4選｜失敗造形を減らす自動化の差</strong>
+            </a>
+            
+            <a href="../../work/mini-pc/" style="display: block; padding: 0.95rem 1rem; border: 1px solid var(--border); border-radius: 10px; background: #fff; color: inherit; text-decoration: none;">
+                <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.35rem;">ワークスタイル</div>
+                <strong style="display: block; line-height: 1.55; color: var(--secondary);">【2026年最新】高性能ミニPC 厳選4選｜小ささより発熱と拡張性で選ぶ</strong>
+            </a>
+            
+            <a href="../../work/premium-gaming-laptop/" style="display: block; padding: 0.95rem 1rem; border: 1px solid var(--border); border-radius: 10px; background: #fff; color: inherit; text-decoration: none;">
+                <div style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.35rem;">ワークスタイル</div>
+                <strong style="display: block; line-height: 1.55; color: var(--secondary);">【2026年最新】高級ゲーミングノートPC 厳選4選｜発熱と重量で後悔しない選び方</strong>
+            </a>
+            
+        </div>
+    </section>
+    
+
     <!-- Trust Badge & Analysis Insight -->
     <section class="trust-badge-container" style="margin-bottom: 3rem; padding: 1.5rem; background: #fff; border-radius: var(--radius-md); border: 1.5px solid var(--secondary); box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px dashed var(--border);">
@@ -1651,6 +1681,11 @@
             }
 
             document.addEventListener('click', function(event) {
+                trackAffiliateClick(resolveAffiliateLink(event.target));
+            }, true);
+
+            document.addEventListener('pointerup', function(event) {
+                if (event.button !== 0) return;
                 trackAffiliateClick(resolveAffiliateLink(event.target));
             }, true);
 

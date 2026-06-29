@@ -784,7 +784,7 @@
     
     <article class="card article-entry" style="display: flex; flex-direction: column;">
         <a href="./oled-tv/" class="article-card-media" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/koreda/cabinet/itemrobot/kaden/004/k77xr80.jpg" alt="【2026年最新】有機ELテレビ 厳選4選｜映画とゲームで後悔しない暗部表現" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kaden-sakura/cabinet/gazou52/k-77xr80.jpg" alt="【2026年最新】有機ELテレビ 厳選4選｜映画とゲームで後悔しない暗部表現" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
         </a>
         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
@@ -952,7 +952,7 @@
     
     <article class="card article-entry" style="display: flex; flex-direction: column;">
         <a href="./window-cleaning-robot/" class="article-card-media" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/winbot/mini/thumb_emblem.jpg" alt="【2026年最新】窓拭きロボット 厳選3選｜高所の危険と手作業から解放" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/store-ecovacs-japan/cabinet/campaign/260618/wg841-01.jpg" alt="【2026年最新】窓拭きロボット 厳選3選｜高所の危険と手作業から解放" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
         </a>
         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
@@ -1225,7 +1225,7 @@
     
     <article class="card article-entry" style="display: flex; flex-direction: column;">
         <a href="./robot-vacuum/" class="article-card-media" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
-            <img src="https://yy00si.github.io/rakuten-affiliate-site/images/robot-vacuum.png" alt="【2026年最新】ロボット掃除機 高級モデル厳選2選｜放置運用で後悔しない選び方" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+            <img src="https://yy00si.github.io/rakuten-affiliate-site/images/robot-vacuum.png" alt="【2026年最新】ロボット掃除機 高級2選｜障害物回避と自動洗浄で後悔しない選び方" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
         </a>
         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
@@ -1235,7 +1235,7 @@
                 <a href="./robot-vacuum/" style="color: var(--secondary); text-decoration: none;">高級ロボット掃除機 厳選2選</a>
             </h2>
             <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">
-                ロボット掃除機の高級モデルで後悔したくない方向けに、DEEBOTやDreame、ルンバ級の放置運用力を比較。障害物回避、モップ洗浄、メンテの現実から、価格に見合う1台を絞り込みます。
+                ロボット掃除機の高級モデルで失敗したくない方向けに、DEEBOTやDreame級の放置運用力を比較。障害物回避、モップ自動洗浄、メンテの現実から価格に見合う1台を絞り込みます。
             </p>
             <a href="./robot-vacuum/" style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
                 記事を読む
@@ -1305,6 +1305,11 @@
             }
 
             document.addEventListener('click', function(event) {
+                trackAffiliateClick(resolveAffiliateLink(event.target));
+            }, true);
+
+            document.addEventListener('pointerup', function(event) {
+                if (event.button !== 0) return;
                 trackAffiliateClick(resolveAffiliateLink(event.target));
             }, true);
 
