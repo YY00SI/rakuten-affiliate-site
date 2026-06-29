@@ -4,6 +4,7 @@
 運用・インデックス促進・SEO戦略転換フェーズ
 
 ## 完了済み
+- 2026-06-29: ブラウザ追補を実施。Google Search Console の `未登録 15` は `2026-06-12` 時点の古い集計で、可視10URLを個別URL検査した結果 `audio-glasses` は登録済み、残る `action-camera` / `facial-device` / `auto-cooker` / `ai-drone` / `massage-gun` / `electric-shaver` / `home/` / `beauty/` / `work/` は未登録を確認し、URL 検査から優先クロールキューへ追加した。楽天管理画面はログイン済みで今月クリック5・成果0を再確認した一方、現行UIでは `商品別クリック` 導線を特定できず再取得不能。GA4 は公開記事から楽天リンク実クリック後も `rakuten_affiliate_click` が 0 のままだったため、`templates/base.html` を修正し `window.gtag` の明示束縛と `sendBeacon` フォールバックを追加。`validate_articles.py` は errors=0/warnings=0、`build_site.py` は全76記事ビルド完了、`audit_site.py` は errors=0/warnings=0。
 - 2026-06-29: 緊急改善追補を公開反映完了。未インデックス15件そのものは外部状態のため即時解消できないが、`portable-gaming-pc` を含む勝ち筋導線を記事上部の関連記事導線と `RELATED_ARTICLE_OVERRIDES` 拡張で補強し、`robot-vacuum-ranking` / `ai-drone-ranking` / `portable-gaming-pc` の title/meta を再調整、`rakuten_affiliate_click` は `pointerup` も拾うよう補強した。`validate_articles.py` は errors=0/warnings=0、対象3記事の `fetch_products.py` 再取得完了、`build_site.py` は 全76記事ビルド完了、`audit_site.py` は errors=0/warnings=0。stale ディレクトリ削除警告は継続するが非致命。
 - 2026-06-29: GitHub同期: 月末PDCA関連のソース、生成物、`monthly_pdca_2026_06.md`、`pdca_work_2026_06_end.md` を `main` へ同期済み。同期後にローカルHEADとGitHub HEADの一致を確認した。
 - 2026-06-29: Git remote設定: サニタイズ済み。
@@ -29,16 +30,19 @@
 - サイト全体のインデックス促進
 - ビッグキーワードからロングテールキーワードへの戦略転換準備
 - 外部ブログ・専門レビュー記事を根拠データとして扱うパイプラインの設計
-- 楽天アフィリエイトの商品別クリック・商品別成果の詳細取得
-- GA4 `rakuten_affiliate_click` の管理画面確認とキーイベント化
+- GSC の優先クロールキュー投入後のインデックス反映待ち
+- GA4 `rakuten_affiliate_click` 修正反映後の再計測確認
 
 ## 次のアクション
-1. GA4 の `rakuten_affiliate_click` イベント発生件数を管理画面で確認し、キーイベント化する。
-2. 楽天管理画面で `商品別クリック` を再取得し、商品単位の判断材料を補完する。
-3. 未インデックスURL 15件を個別URL検査し、今回追加した内部リンク導線の反映後に再クロール対象を切り分ける。
+1. 公開反映後に GA4 管理画面で `rakuten_affiliate_click` の再発火を確認し、必要ならキーイベント化する。
+2. GSC で優先クロールキューへ追加した 9 URL の再判定結果を確認する。
+3. 楽天管理画面の現行UIで `商品別クリック` が取れない前提で、当面は注文詳細・ショップ別・GA4・GSC を代替根拠に使う。
 4. 2026-07中旬時点で `portable-gaming-pc` 周辺のクリック推移を確認し、型番別・悩み別記事追加の可否を判断する。
 
 ## 判断ログ
+- 2026-06-29: GSC の `未登録 15` はページレポート更新日が `2026-06-12` で止まっていたため、個別 URL 検査で実態を優先した。少なくとも `audio-glasses` はすでに登録済みで、可視9URLは `インデックス登録をリクエスト済み` まで進めたため、次は集計画面ではなく URL 検査結果の反映待ちとして扱う。
+- 2026-06-29: 楽天アフィリエイト管理画面はログイン済みでも、現行UIでは `商品別クリック` の取得導線を確認できなかった。したがって、次回PDCAまでは `商品別クリック` を必須入力から外さず未取得扱いのまま残し、商品単位の判断は保留する。
+- 2026-06-29: GA4 は公開記事からの実クリック後も `rakuten_affiliate_click` が 0 のままで、ブラウザ実行状態でも `window.gtag` / `window.dataLayer` が不在だった。テンプレート出力自体は存在していたため、初期化を `window.gtag` 明示束縛へ変更し、さらに `sendBeacon` で直接 `g/collect` へ送るフォールバックを追加して、クライアント側の取りこぼしを減らす方針とした。
 - 2026-06-29: 緊急改善追補では、未インデックス15件をリポジトリ側だけで即時解消することはできないため、クロールと回遊の両方に効く内部リンク強化を優先した。`portable-gaming-pc` / `gaming-monitor-ranking` / `ultrawide-monitor-ranking` 周辺に加え、`keyboard-ranking` / `office-chair-ranking` / `monitor-arm` / `premium-webcam-ranking` からも勝ち筋へ寄せる構成に変更した。加えて、記事上部にも関連記事導線を追加し、`rakuten_affiliate_click` は `click` / `auxclick` / `keydown` に加えて `pointerup` も取得するよう補強した。公開前品質ゲートは validate/fetch/build/audit で再確認済み。
 - 2026-06-29: GitHub未同期の是正として、月末PDCA関連のコミットを `origin/main` へ push し、同期後にローカルHEADとGitHub HEADの一致を確認した。`config/articles_stock.yaml` と未追跡のストック下書き群は今回PDCAの同期対象から外し、ローカル作業中変更として保持した。
 - 2026-06-29: Git remote設定: サニタイズ済み。
