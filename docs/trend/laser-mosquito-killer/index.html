@@ -114,9 +114,14 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BK95ZSS5F0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-BK95ZSS5F0');
+        window.gtag = window.gtag || function() {
+            window.dataLayer.push(arguments);
+        };
+        window.gtag('js', new Date());
+        window.gtag('config', 'G-BK95ZSS5F0', {
+            send_page_view: true,
+            transport_type: 'beacon'
+        });
     </script>
     
     
@@ -1414,8 +1419,49 @@
     
     <script>
         (function() {
+            var measurementId = 'G-BK95ZSS5F0';
+
             function resolveAffiliateLink(target) {
                 return target && target.closest ? target.closest('a[data-affiliate-click]') : null;
+            }
+
+            function getClientId() {
+                var storageKey = 'lts_ga4_client_id';
+                try {
+                    var saved = window.localStorage.getItem(storageKey);
+                    if (saved) return saved;
+                } catch (error) {
+                    // Ignore storage access failures and fall back to in-memory generation.
+                }
+
+                var clientId = String(Date.now()) + '.' + String(Math.floor(Math.random() * 1000000000));
+                try {
+                    window.localStorage.setItem(storageKey, clientId);
+                } catch (error) {
+                    // Ignore storage access failures.
+                }
+                return clientId;
+            }
+
+            function sendBeaconFallback(eventName, payload) {
+                if (typeof navigator.sendBeacon !== 'function') return false;
+
+                var params = new URLSearchParams();
+                params.set('v', '2');
+                params.set('tid', measurementId);
+                params.set('cid', getClientId());
+                params.set('en', eventName);
+                params.set('dl', window.location.href);
+                params.set('dt', document.title);
+                params.set('ul', navigator.language || 'ja');
+
+                Object.keys(payload).forEach(function(key) {
+                    var value = payload[key];
+                    if (value === undefined || value === null || value === '') return;
+                    params.set('ep.' + key, String(value));
+                });
+
+                return navigator.sendBeacon('https://www.google-analytics.com/g/collect', params);
             }
 
             function trackAffiliateClick(link) {
@@ -1432,16 +1478,17 @@
                     placement: link.dataset.affiliatePlacement || 'article',
                     item_name: link.dataset.affiliateItem || '',
                     transport_type: 'beacon',
-                    send_to: 'G-BK95ZSS5F0'
+                    send_to: measurementId
                 };
 
-                if (typeof gtag === 'function') {
-                    gtag('event', 'rakuten_affiliate_click', payload);
+                if (typeof window.gtag === 'function') {
+                    window.gtag('event', 'rakuten_affiliate_click', payload);
                     return;
                 }
 
                 window.dataLayer = window.dataLayer || [];
                 window.dataLayer.push(Object.assign({ event: 'rakuten_affiliate_click' }, payload));
+                sendBeaconFallback('rakuten_affiliate_click', payload);
             }
 
             document.addEventListener('click', function(event) {
