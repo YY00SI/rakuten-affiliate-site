@@ -452,11 +452,11 @@
 
 ### GitHub状態確認
 - ローカルブランチ: `main`
-- ローカルHEAD: `40f8e195770cf56d92b6f0c4878bb2867f44e4f7`
-- GitHub HEAD: `845482c82d90db05d29f109b7ef34a12a2a39455`
-- 判定: ローカルHEADとGitHub HEADが一致していない。
-- 作業ツリー: `config/articles.yaml`、`templates/base.html`、`templates/article.html`、`src/build_site.py`、`docs/STATE.md`、`docs/monthly_pdca_2026_06.md`、`docs/pdca_work_2026_06_end.md`、生成済みHTML、商品キャッシュなど多数の未コミット変更あり。
-- 注意: ローカルの `origin` URL にGitHub認証トークンが含まれている。値は記録しない。
+- ローカルHEAD: `498357bdf2547b015303e75f311c1e9a1a89fd1f`
+- GitHub HEAD: `498357bdf2547b015303e75f311c1e9a1a89fd1f`
+- 判定: ローカルHEADとGitHub HEADは一致している。
+- 補足: GitHub上では `chore: auto-update 2026-06-29 01:59 UTC` が入っていたため、ローカルを fast-forward で追従させて一致を確認した。
+- 注意: `origin` は `https://github.com/YY00SI/rakuten-affiliate-site.git` にサニタイズ済みで、認証情報はPDCAドキュメントに記録していない。
 
 ### 監査結果
 | 観点 | 判定 | 監査メモ |
@@ -465,23 +465,18 @@
 | `Plan`、`Do`、`Check`、`Act` の欠落 | 可 | `monthly_pdca_2026_06.md` に4要素は揃っている。 |
 | 取得値と判断の矛盾 | 可 | 楽天クリック5・成果0、GSC表示528・CTR1.9%、GA4 PV1・イベント0に基づく判断は整合している。商品別クリックは未取得として扱われている。 |
 | 未取得値の推測補完 | 可 | `商品別クリック` は未取得のまま扱い、ショップ別クリックは代替観測値として分離されている。成果商品は注文明細なしに基づき `なし` と記録されている。 |
-| ID/PW/ログイン情報の記録 | 要修正 | PDCAドキュメント内にパスワードや認証情報そのものは見当たらない。一方で、ローカルGitの `origin` URLにGitHub認証トークンが含まれているため、リポジトリ運用状態として是正が必要。 |
+| ID/PW/ログイン情報の記録 | 可 | PDCAドキュメント内にパスワード、ID、ログイン認証情報の記録は見当たらない。Git remote設定もサニタイズ済み。 |
 | Step 4の診断とStep 5のActの対応 | 可 | 主ボトルネック `楽天クリックあり成果0` に対して、購入直前不安解消、CTA文脈改善、計測補強が対応している。副ボトルネックの `表示ありクリック0` に対して、`robot-vacuum-ranking` / `ai-drone-ranking` の title/meta 改善が対応している。 |
-| 実装済みActとSTATEの記録一致 | 要修正 | 最新のSTATE先頭記録はStep 6/7実装と一致するが、同じ2026-06-29の古いStep 7記録が残っており、GA4 PV3・旧対象記事 `gaming-monitor-ranking` / `hair-dryer-ranking` が混在している。 |
-| 品質ゲートの実行または不要判断 | 要修正 | 作業ログStep 7とSTATEでは品質ゲート4本の完了が記録されている。一方、`monthly_pdca_2026_06.md` では `品質ゲートはこのStepでは未実施`、`Step 7で実行予定` のまま残っており、最終状態と不一致。 |
+| 実装済みActとSTATEの記録一致 | 可 | `STATE.md` の最新記録は Step 6/7 の最終実装内容と一致しており、旧記録は `旧記録・更新済み` / `旧判断・更新済み` として整理済み。 |
+| 品質ゲートの実行または不要判断 | 可 | `monthly_pdca_2026_06.md`、作業ログStep 7、`STATE.md` のいずれも、品質ゲート4本の完了、全76記事ビルド完了、`audit_site.py errors=0/warnings=0`、staleディレクトリ警告は非致命である点が一致している。 |
 | 次回取得テンプレート | 可 | `monthly_pdca_2026_06.md` に次回取得テンプレートが残っている。 |
-| GitHub上の状態 | 要修正 | GitHub HEADとローカルHEADが一致せず、未コミット変更も多数あるため、GitHub上の `YY00SI/rakuten-affiliate-site` は今回のPDCA実装・品質ゲート結果をまだ反映していない。 |
+| GitHub上の状態 | 可 | GitHub上の `YY00SI/rakuten-affiliate-site` は月末PDCAの同期後状態を反映済みで、ローカルHEADと一致している。 |
 
-### 監査修正キュー
-| 順番 | 優先度 | 不具合 | 修正担当モデル | ユーザーが次に投入するプロンプト | 修正後に再実行するStep |
-|:---|:---|:---|:---|:---|:---|
-| 1 | 非常に高い | ローカルGitの `origin` URLにGitHub認証トークンが含まれている。値は作業ログに記録しないが、ローカル設定として認証情報が残っている。 | Claude Opus 4.6(Thinking) または GPT-5.5（非常に高い） | `rakuten-affiliate-site のGit remote設定から認証トークンを除去してください。origin を https://github.com/YY00SI/rakuten-affiliate-site.git に差し替え、認証情報を作業ログに記録せず、STATEと作業ログに「サニタイズ済み」とだけ追記してください。` | Step 8 |
-| 2 | 高 | GitHub HEAD `845482c82d90db05d29f109b7ef34a12a2a39455` とローカルHEAD `40f8e195770cf56d92b6f0c4878bb2867f44e4f7` が一致せず、未コミット変更が多数ある。GitHub上の `YY00SI/rakuten-affiliate-site` に今回のStep 6/7成果が反映されていない。 | Gemini 3.5 Flash(High) または GPT-5.4（中） | `rakuten-affiliate-site のGitHub未同期を解消してください。git statusを確認し、今回PDCAで必要な変更を整理してコミット・pushし、GitHub HEADとローカルHEADの一致を確認して、STATEと作業ログに同期結果を追記してください。` | Step 8 |
-| 3 | 中 | `monthly_pdca_2026_06.md` に `品質ゲートはこのStepでは未実施`、`Step 7で実行予定` が残っており、Step 7完了済みの作業ログ・STATEと不一致。 | Gemini 3.5 Flash(High) または GPT-5.4（中） | `monthly_pdca_2026_06.md をStep 7完了後の状態へ補修してください。品質ゲート4本の最終結果、全76記事ビルド完了、audit_site.py errors=0/warnings=0、staleディレクトリ警告は非致命であることを反映し、Step 7実行予定の記述を削除してください。` | Step 8 |
-| 4 | 中 | `STATE.md` に同じ2026-06-29月末PDCA Step 7の古い記録が残り、GA4 PV3・アクティブユーザー3、旧対象記事 `gaming-monitor-ranking` / `hair-dryer-ranking`、旧品質ゲート残課題が最新記録と矛盾している。 | Gemini 3.5 Flash(High) または GPT-5.4（中） | `STATE.md の2026-06-29月末PDCA記録を整理してください。最新のStep 7記録を正とし、古い重複記録は「旧記録・更新済み」扱いにするか削除せず注記して、GA4値と実装済みActの矛盾が残らないよう補修してください。` | Step 8 |
-
-### 監査修正キュー対応
+### 監査対応ログ
 - 2026-06-29: Git remote設定: サニタイズ済み。
 - 2026-06-29: `monthly_pdca_2026_06.md` の品質ゲート記述を Step 7 完了後の状態へ補修済み。
 - 2026-06-29: `STATE.md` の 2026-06-29 月末PDCA旧記録を `旧記録・更新済み` / `旧判断・更新済み` として整理済み。
 - 2026-06-29: GitHub未同期を解消。月末PDCA関連のソース、生成物、月次PDCA、作業ログを `origin/main` へ push し、同期後にローカルHEADとGitHub HEADの一致を確認した。`config/articles_stock.yaml` と未追跡のストック下書き群は今回同期対象から除外した。
+- 2026-06-29: GitHubの自動更新コミット `498357bdf2547b015303e75f311c1e9a1a89fd1f` にローカルを追従し、再度ローカルHEADとGitHub HEADの一致を確認した。
+
+監査合格。追加修正なし。
