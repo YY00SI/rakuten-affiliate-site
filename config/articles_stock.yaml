@@ -576,6 +576,7 @@ articles:
       genre_id: '110080'
       required_words:
         - プリンター
+        - レーザー
       forbidden_words:
         - 中古
         - 訳あり

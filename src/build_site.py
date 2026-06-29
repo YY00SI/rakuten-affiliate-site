@@ -66,6 +66,26 @@ RELATED_ARTICLE_OVERRIDES = {
         "gaming-monitor-ranking",
         "ultrawide-monitor-ranking",
     ],
+    "keyboard-ranking": [
+        "portable-gaming-pc",
+        "gaming-monitor-ranking",
+        "ultrawide-monitor-ranking",
+    ],
+    "office-chair-ranking": [
+        "portable-gaming-pc",
+        "gaming-monitor-ranking",
+        "keyboard-ranking",
+    ],
+    "monitor-arm": [
+        "portable-gaming-pc",
+        "gaming-monitor-ranking",
+        "ultrawide-monitor-ranking",
+    ],
+    "premium-webcam-ranking": [
+        "portable-gaming-pc",
+        "gaming-monitor-ranking",
+        "keyboard-ranking",
+    ],
 }
 
 

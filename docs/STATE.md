@@ -4,6 +4,7 @@
 運用・インデックス促進・SEO戦略転換フェーズ
 
 ## 完了済み
+- 2026-06-29: 緊急改善追補を公開反映完了。未インデックス15件そのものは外部状態のため即時解消できないが、`portable-gaming-pc` を含む勝ち筋導線を記事上部の関連記事導線と `RELATED_ARTICLE_OVERRIDES` 拡張で補強し、`robot-vacuum-ranking` / `ai-drone-ranking` / `portable-gaming-pc` の title/meta を再調整、`rakuten_affiliate_click` は `pointerup` も拾うよう補強した。`validate_articles.py` は errors=0/warnings=0、対象3記事の `fetch_products.py` 再取得完了、`build_site.py` は 全76記事ビルド完了、`audit_site.py` は errors=0/warnings=0。stale ディレクトリ削除警告は継続するが非致命。
 - 2026-06-29: GitHub同期: 月末PDCA関連のソース、生成物、`monthly_pdca_2026_06.md`、`pdca_work_2026_06_end.md` を `main` へ同期済み。同期後にローカルHEADとGitHub HEADの一致を確認した。
 - 2026-06-29: Git remote設定: サニタイズ済み。
 - 2026-06-29: 6月月末PDCA Step 7 を更新完了。主要数値は楽天クリック5・成果0・売上0円・報酬0円、GSCクリック10・表示528・CTR 1.9%・平均順位16.0、GA4 PV1・アクティブユーザー1・`rakuten_affiliate_click` 0。実装済みActとして、`portable-gaming-pc` の購入直前不安解消補強、CTA文脈改善、`robot-vacuum-ranking` / `ai-drone-ranking` の title/meta 更新、`portable-gaming-pc` 中心の内部リンク補強、`rakuten_affiliate_click` 発火ロジック補強を反映。`validate_articles.py` は errors=0/warnings=0、変更記事3本の `fetch_products.py` は再取得完了、全件 `build_site.py` は 76記事ビルド完了、`audit_site.py` は errors=0/warnings=0。OneDrive 配下の stale ディレクトリ削除警告は継続するが、生成結果と監査結果には影響しない。
@@ -34,10 +35,11 @@
 ## 次のアクション
 1. GA4 の `rakuten_affiliate_click` イベント発生件数を管理画面で確認し、キーイベント化する。
 2. 楽天管理画面で `商品別クリック` を再取得し、商品単位の判断材料を補完する。
-3. 未インデックスURL 15件を個別URL検査し、再クロール対象を切り分ける。
+3. 未インデックスURL 15件を個別URL検査し、今回追加した内部リンク導線の反映後に再クロール対象を切り分ける。
 4. 2026-07中旬時点で `portable-gaming-pc` 周辺のクリック推移を確認し、型番別・悩み別記事追加の可否を判断する。
 
 ## 判断ログ
+- 2026-06-29: 緊急改善追補では、未インデックス15件をリポジトリ側だけで即時解消することはできないため、クロールと回遊の両方に効く内部リンク強化を優先した。`portable-gaming-pc` / `gaming-monitor-ranking` / `ultrawide-monitor-ranking` 周辺に加え、`keyboard-ranking` / `office-chair-ranking` / `monitor-arm` / `premium-webcam-ranking` からも勝ち筋へ寄せる構成に変更した。加えて、記事上部にも関連記事導線を追加し、`rakuten_affiliate_click` は `click` / `auxclick` / `keydown` に加えて `pointerup` も取得するよう補強した。公開前品質ゲートは validate/fetch/build/audit で再確認済み。
 - 2026-06-29: GitHub未同期の是正として、月末PDCA関連のコミットを `origin/main` へ push し、同期後にローカルHEADとGitHub HEADの一致を確認した。`config/articles_stock.yaml` と未追跡のストック下書き群は今回PDCAの同期対象から外し、ローカル作業中変更として保持した。
 - 2026-06-29: Git remote設定: サニタイズ済み。
 - 2026-06-29: Step 7 として `validate_articles.py`、変更記事3本の `fetch_products.py`、全件 `build_site.py`、`audit_site.py` を実行。`fetch_products.py` は最初の実行でネットワーク制約、`build_site.py` は `docs/home/wine-cellar/index.html` の権限で止まったため、いずれも権限外で再実行して完走した。最終結果は validate/audit ともに `errors=0, warnings=0`、全76記事ビルド完了。したがって、今回の実装変更は品質ゲート通過と判断する。OneDrive 配下の stale ディレクトリ削除警告は残るが、生成結果と監査結果には影響しない。
