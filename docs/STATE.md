@@ -4,6 +4,11 @@
 運用・インデックス促進・SEO戦略転換フェーズ
 
 ## 完了済み
+- 2026-06-29: Git remote設定: サニタイズ済み。
+- 2026-06-29: 6月月末PDCA Step 7 を更新完了。主要数値は楽天クリック5・成果0・売上0円・報酬0円、GSCクリック10・表示528・CTR 1.9%・平均順位16.0、GA4 PV1・アクティブユーザー1・`rakuten_affiliate_click` 0。実装済みActとして、`portable-gaming-pc` の購入直前不安解消補強、CTA文脈改善、`robot-vacuum-ranking` / `ai-drone-ranking` の title/meta 更新、`portable-gaming-pc` 中心の内部リンク補強、`rakuten_affiliate_click` 発火ロジック補強を反映。`validate_articles.py` は errors=0/warnings=0、変更記事3本の `fetch_products.py` は再取得完了、全件 `build_site.py` は 76記事ビルド完了、`audit_site.py` は errors=0/warnings=0。OneDrive 配下の stale ディレクトリ削除警告は継続するが、生成結果と監査結果には影響しない。
+- 2026-06-29: 品質ゲート残課題の追補を完了。`projector-ranking` は `XGIMI` 軸へ、`laser-printer-ranking` は `Canon レーザープリンター` と `required_words: レーザー` 追加で楽天商品一致条件を補正し、両記事の不一致を解消。`validate_articles.py` は errors=0/warnings=0、対象2記事の `fetch_products.py` 再取得完了、全件 `build_site.py` は 76記事ビルド完了、`audit_site.py` は errors=0/warnings=0。これで全件ビルド時の `[CRITICAL QA ERROR]` は解消した。
+- 2026-06-29: 旧記録・更新済み。初回の6月月末PDCA Step 7記録では GA4 PV3・アクティブユーザー3、`gaming-monitor-ranking` / `hair-dryer-ranking` 更新、`projector-ranking` / `laser-printer-ranking` の商品一致エラー残存を記録していたが、その後の再取得と品質ゲート残課題解消を反映した正本は上記の「6月月末PDCA Step 7 を更新完了」を参照する。
+- 2026-06-21: 6月月央PDCAを実施。楽天アフィリエイト直近30日クリック5・売上0、GSC合計クリック10・表示510・CTR 2%・平均順位16.3（期間2026/04/23-2026/06/19）、GA4過去7日アクティブユーザー1。ストック記事は8/7まで確保済みで追加不要。`docs/monthly_pdca_2026_06_mid.md` を作成。
 - 2026-06-05: 6/15〜6/30の16本ストック記事を `config/articles_stock.yaml` に追加し、全品質ゲートを通過。楽天APIでの代替ブランド差し替え（Litter-Robot→トレッタ、Morus Zero→東芝、LOWYA→カリモク）を行い全16記事で4アイテム構成を確保。全77記事のビルド・監査に成功し、GitHub Pages へのデプロイ（git push）を完了。
 - 2026-05-31: 月末PDCAのAct実装を完了。比較表直後に楽天「価格を見る」CTAを追加し、全楽天リンクに `data-affiliate-click` を付与、GA4へ `rakuten_affiliate_click` を送信する計測を追加。`ロボット掃除機 高級`、`ai ドローン`、`高級 トースター` の露出クエリに合わせてtitle/metaを調整。`build_site.py` はプロジェクトルート基準 of 絶対パス出力へ修正し、`validate_articles.py` errors=0/warnings=0、未来日込み全61記事ビルド、`audit_site.py` errors=0/warnings=0を確認。楽天API取得は外部ネットワークで一部タイムアウトしたため、商品キャッシュは既存データを維持。
 - 2026-05-31: ログイン後に未取得だった月末PDCA数値を再取得し、`docs/monthly_pdca_2026_05.md` に追記。楽天アフィリエイトは今月クリック1、未確定売上0円、未確定成果報酬0円、売上件数0。Google Search Consoleは合計クリック8、合計表示369、平均CTR 2.2%、平均掲載順位17.1（画面表示期間 2026/04/23-2026/05/29）。GA4 LifeTech Selectは過去7日間のアクティブユーザー16、イベント211、表示回数162、キーイベント0を確認。公開トップと `/work/ultrawide-monitor/` の表示、canonical、楽天リンク、`sponsored` 属性も再確認済み。
@@ -23,15 +28,19 @@
 - ビッグキーワードからロングテールキーワードへの戦略転換準備
 - 外部ブログ・専門レビュー記事を根拠データとして扱うパイプラインの設計
 - 楽天アフィリエイトの商品別クリック・商品別成果の詳細取得
+- GA4 `rakuten_affiliate_click` の管理画面確認とキーイベント化
 
 ## 次のアクション
-1. **7月分ストック記事の準備**: `docs/ai/STOCK_ARTICLE_FACTORY.md` に従い、7月分テーマを選定・追加する。
-2. **6月分析の開始**: 次回起動時、`docs/current_status.md` で提起された問題点（全記事のインデックス登録確認、CTAクリック効果検証）を起点に分析と施策を開始する。
-3. Search Consoleでクリックが出た `ポータブルゲーミングPC 2026`、`umpc ゲーミング 2026` 周辺の関連記事または既存記事内リンクを追加する。
-4. 楽天アフィリエイトで商品別クリック・商品別成果が見える画面を確認し、クリック1の流入先商品を特定する。
-5. GA4の `rakuten_affiliate_click` が受信されているか確認し、キーイベント化する。
+1. GA4 の `rakuten_affiliate_click` イベント発生件数を管理画面で確認し、キーイベント化する。
+2. 楽天管理画面で `商品別クリック` を再取得し、商品単位の判断材料を補完する。
+3. 未インデックスURL 15件を個別URL検査し、再クロール対象を切り分ける。
+4. 2026-07中旬時点で `portable-gaming-pc` 周辺のクリック推移を確認し、型番別・悩み別記事追加の可否を判断する。
 
 ## 判断ログ
+- 2026-06-29: Git remote設定: サニタイズ済み。
+- 2026-06-29: Step 7 として `validate_articles.py`、変更記事3本の `fetch_products.py`、全件 `build_site.py`、`audit_site.py` を実行。`fetch_products.py` は最初の実行でネットワーク制約、`build_site.py` は `docs/home/wine-cellar/index.html` の権限で止まったため、いずれも権限外で再実行して完走した。最終結果は validate/audit ともに `errors=0, warnings=0`、全76記事ビルド完了。したがって、今回の実装変更は品質ゲート通過と判断する。OneDrive 配下の stale ディレクトリ削除警告は残るが、生成結果と監査結果には影響しない。
+- 2026-06-29: 品質ゲート残課題として分離していた `projector-ranking` と `laser-printer-ranking` の楽天商品一致条件を補正し、対象2記事の再取得後に全件 `build_site.py` と `audit_site.py` を再実行した。`build_site.py` は OneDrive 配下の stale ディレクトリ削除警告を出すがビルド完了し、`audit_site.py` は errors=0/warnings=0。したがって、リポジトリ全体の公開前品質ゲートは `[CRITICAL QA ERROR]` なしへ復帰した。残課題は計測確認と未取得運用データに移る。
+- 2026-06-29: 旧判断・更新済み。月末PDCAのStep 5/6直後は `projector-ranking` と `laser-printer-ranking` に商品一致エラーが残っていたが、その後の補修と再実行により `build_site.py` / `audit_site.py` の全体品質ゲートは通過済み。最終判断は上位の 2026-06-29 記録を正とする。
 - 2026-05-31: 月末PDCAの未取得情報を再取得。Search Consoleではクリック8・表示369まで伸び、特にポータブルゲーミングPC/UMPC系クエリでクリックが発生している一方、楽天成果はクリック1・売上0に留まる。GA4はOrganic Search 15、Direct 3で、検索流入は発生済みだがキーイベント0のため、次の課題は「露出のある記事のCTR改善」と「楽天リンククリック計測・導線改善」。Search Consoleの `site:github.io` 系クエリはノイズとして施策対象外。
 - 2026-05-29: 月末PDCAでは、楽天アフィリエイトは未ログイン、Search Consoleは案内ページ、GA4はGoogleアカウント側の本人確認待ち表示で止まり、認証後の数値は未取得。公開ページとローカル品質ゲートは通過済み。Google検索の `site:` 確認では一部ページのインデックスを確認できたが、検索スニペットに修正前表現が残る可能性があるため、公開反映後にURL検査と再クロール促進が必要。
 - 2026-05-24: ユーザー実行後の公開確認をブラウザで実施。公開側で `/work/ultrawide-monitor/` と `/work/gaming-monitor/` が404だった原因は、GitHubリモート最新の自動更新コミットが多数の記事HTMLを削除していたこと。ローカルの完全な生成済みサイトを正として `Recover generated site after remote auto-update` をpushし、公開後に全69 URLをブラウザで直接確認。404なし、商品記事のアフィリエイトリンク欠落なし。再発防止としてGitHub Actionsにページ減少ガード追加を試みたが、現在のPATにworkflow権限がなくpush不可のため未反映。

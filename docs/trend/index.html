@@ -679,7 +679,7 @@
     
     <article class="card article-entry" style="display: flex; flex-direction: column;">
         <a href="./mirrorless-camera/" class="article-card-media" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
-            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/camera-no-ohbayashi/cabinet/sony/camera/12475851/imgrc0137426790.jpg" alt="【2026年最新】ミラーレス一眼カメラ 厳選4選｜レンズ沼で後悔しない本体選び" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+            <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/emedama/cabinet/9717/4548736079717_1.jpg" alt="【2026年最新】ミラーレス一眼カメラ 厳選4選｜レンズ沼で後悔しない本体選び" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
         </a>
         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
@@ -973,7 +973,7 @@
     
     <article class="card article-entry" style="display: flex; flex-direction: column;">
         <a href="./ai-drone/" class="article-card-media" style="display: block; overflow: hidden; aspect-ratio: 16/9;">
-            <img src="https://yy00si.github.io/rakuten-affiliate-site/images/ai-drone.png" alt="【2026年最新】AIドローン 厳選1選｜自動追従で選ぶ空飛ぶカメラ" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+            <img src="https://yy00si.github.io/rakuten-affiliate-site/images/ai-drone.png" alt="【2026年最新】AIドローン厳選1選｜自動追従で失敗しない空飛ぶカメラ" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
         </a>
         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
@@ -983,7 +983,7 @@
                 <a href="./ai-drone/" style="color: var(--secondary); text-decoration: none;">AIドローン 厳選1選</a>
             </h2>
             <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">
-                AIドローンを初めて選ぶ方向けに、DJI NeoやHOVERAir X1 Smartを比較。操縦不要で自動追従する空飛ぶカメラの性能を、離着陸の手軽さや撮影精度から検証します。
+                AIドローンを初めて選ぶ方向けに、DJI NeoやHOVERAir X1系の自動追従性能を比較。操縦不要で撮れる空飛ぶカメラとして、離着陸の手軽さと撮影失敗の少なさを軸に絞り込みます。
             </p>
             <a href="./ai-drone/" style="font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
                 記事を読む
@@ -1042,17 +1042,51 @@
     </footer>
     
     <script>
-        document.addEventListener('click', function(event) {
-            var link = event.target.closest('a[data-affiliate-click]');
-            if (!link || typeof gtag !== 'function') return;
-            gtag('event', 'rakuten_affiliate_click', {
-                affiliate_network: 'rakuten',
-                link_url: link.href,
-                link_text: link.textContent.trim().slice(0, 80),
-                placement: link.dataset.affiliatePlacement || 'article',
-                item_name: link.dataset.affiliateItem || ''
-            });
-        });
+        (function() {
+            function resolveAffiliateLink(target) {
+                return target && target.closest ? target.closest('a[data-affiliate-click]') : null;
+            }
+
+            function trackAffiliateClick(link) {
+                if (!link) return;
+                var now = Date.now();
+                var lastTrackedAt = parseInt(link.dataset.affiliateTrackedAt || '0', 10);
+                if (now - lastTrackedAt < 1000) return;
+                link.dataset.affiliateTrackedAt = String(now);
+
+                var payload = {
+                    affiliate_network: 'rakuten',
+                    link_url: link.href,
+                    link_text: link.textContent.trim().slice(0, 80),
+                    placement: link.dataset.affiliatePlacement || 'article',
+                    item_name: link.dataset.affiliateItem || '',
+                    transport_type: 'beacon',
+                    send_to: 'G-BK95ZSS5F0'
+                };
+
+                if (typeof gtag === 'function') {
+                    gtag('event', 'rakuten_affiliate_click', payload);
+                    return;
+                }
+
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push(Object.assign({ event: 'rakuten_affiliate_click' }, payload));
+            }
+
+            document.addEventListener('click', function(event) {
+                trackAffiliateClick(resolveAffiliateLink(event.target));
+            }, true);
+
+            document.addEventListener('auxclick', function(event) {
+                if (event.button !== 1) return;
+                trackAffiliateClick(resolveAffiliateLink(event.target));
+            }, true);
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key !== 'Enter' && event.key !== ' ') return;
+                trackAffiliateClick(resolveAffiliateLink(event.target));
+            }, true);
+        })();
     </script>
     
 </body>

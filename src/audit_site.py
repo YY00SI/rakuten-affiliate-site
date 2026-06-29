@@ -129,7 +129,11 @@ def main():
             if 'id="comparison"' not in html:
                 report.warn(label, "comparison anchor is missing")
             category_slug = path.relative_to(DOCS_DIR).parts[0]
-            if category_article_counts.get(category_slug, 0) > 1 and "同じカテゴリの関連記事" not in html:
+            has_related_section = (
+                "同じカテゴリの関連記事" in html
+                or "あわせて読みたい関連記事" in html
+            )
+            if category_article_counts.get(category_slug, 0) > 1 and not has_related_section:
                 report.warn(label, "related articles section is missing")
 
             if count_rendered_items(html) == 1:

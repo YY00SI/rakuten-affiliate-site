@@ -594,17 +594,51 @@
     </footer>
     {% if analytics.ga4_measurement_id is defined and analytics.ga4_measurement_id %}
     <script>
-        document.addEventListener('click', function(event) {
-            var link = event.target.closest('a[data-affiliate-click]');
-            if (!link || typeof gtag !== 'function') return;
-            gtag('event', 'rakuten_affiliate_click', {
-                affiliate_network: 'rakuten',
-                link_url: link.href,
-                link_text: link.textContent.trim().slice(0, 80),
-                placement: link.dataset.affiliatePlacement || 'article',
-                item_name: link.dataset.affiliateItem || ''
-            });
-        });
+        (function() {
+            function resolveAffiliateLink(target) {
+                return target && target.closest ? target.closest('a[data-affiliate-click]') : null;
+            }
+
+            function trackAffiliateClick(link) {
+                if (!link) return;
+                var now = Date.now();
+                var lastTrackedAt = parseInt(link.dataset.affiliateTrackedAt || '0', 10);
+                if (now - lastTrackedAt < 1000) return;
+                link.dataset.affiliateTrackedAt = String(now);
+
+                var payload = {
+                    affiliate_network: 'rakuten',
+                    link_url: link.href,
+                    link_text: link.textContent.trim().slice(0, 80),
+                    placement: link.dataset.affiliatePlacement || 'article',
+                    item_name: link.dataset.affiliateItem || '',
+                    transport_type: 'beacon',
+                    send_to: '{{ analytics.ga4_measurement_id }}'
+                };
+
+                if (typeof gtag === 'function') {
+                    gtag('event', 'rakuten_affiliate_click', payload);
+                    return;
+                }
+
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push(Object.assign({ event: 'rakuten_affiliate_click' }, payload));
+            }
+
+            document.addEventListener('click', function(event) {
+                trackAffiliateClick(resolveAffiliateLink(event.target));
+            }, true);
+
+            document.addEventListener('auxclick', function(event) {
+                if (event.button !== 1) return;
+                trackAffiliateClick(resolveAffiliateLink(event.target));
+            }, true);
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key !== 'Enter' && event.key !== ' ') return;
+                trackAffiliateClick(resolveAffiliateLink(event.target));
+            }, true);
+        })();
     </script>
     {% endif %}
 </body>

@@ -66,7 +66,7 @@ articles:
   rakuten_params:
     keyword: リファ ドライヤー, ナノケア ドライヤー, Dyson Supersonic, KINUJO
     hits: 10
-  meta_description: リファやナノケア、ダイソンなど3万円以上の高級ドライヤーを比較。公開レビュー評価・件数、仕様表記、価格から、速乾性と扱いやすさの違いを整理します。
+  meta_description: 高級ドライヤーを探している人向けに、リファ・ナノケア・ダイソン・KINUJOを比較。公開レビュー評価・件数、重さ、収納性、価格差を踏まえ、失敗しない選び方を整理します。
   analysis_insight: 楽天市場で取得できるレビュー評価・件数、商品説明、仕様表記を照合すると、高級ドライヤーの後悔は「乾く速さ」だけではなく、翌朝のまとまり・本体重量・収納性に集中します。風量だけでなく、水分コントロールと毎日の扱いやすさを重視して選定しています。
   test_criteria:
   - id: speed
@@ -197,9 +197,9 @@ articles:
   release_date: '2026-04-22'
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/robot-vacuum.png
   h1: 高級ロボット掃除機 厳選2選
-  title: 【2026年最新】ロボット掃除機 高級モデル厳選2選｜全自動で後悔しない選び方
+  title: 【2026年最新】ロボット掃除機 高級モデル厳選2選｜放置運用で後悔しない選び方
   intro: 「高価なロボット掃除機を買ったのに、段差で止まる、床のコードを巻き込む、モップが臭う…」そんな後悔をしていませんか？本記事では、公開レビュー評価・件数、仕様表記、価格をもとに、現時点で放置運用に寄せやすい2機種を比較します。
-  meta_description: ロボット掃除機の高級モデルを探す方向けに、ルンバj9+やDEEBOT、Dreameの最新ハイエンド機を比較。障害物回避の精度、モップ洗浄の手間、完全放置の現実から投資価値のある1台を厳選しました。
+  meta_description: ロボット掃除機の高級モデルで後悔したくない方向けに、DEEBOTやDreame、ルンバ級の放置運用力を比較。障害物回避、モップ洗浄、メンテの現実から、価格に見合う1台を絞り込みます。
   rakuten_params:
     keyword: DEEBOT X2 COMBO, Dreame X30 Ultra, ルンバ j9+, ルンバ コンボ j9+
     hits: 30
@@ -454,9 +454,9 @@ articles:
   release_date: '2026-04-18'
   eye_catch: https://yy00si.github.io/rakuten-affiliate-site/images/ai-drone.png
   h1: AIドローン 厳選1選
-  title: 【2026年最新】AIドローン 厳選1選｜自動追従で選ぶ空飛ぶカメラ
+  title: 【2026年最新】AIドローン厳選1選｜自動追従で失敗しない空飛ぶカメラ
   intro: 操縦そのものを楽しむドローンではなく、ボタン一つで自動追従し、自撮りやVlogを気軽に残せる「AI飛行カメラ」として楽天市場上で品質を担保できる1台を取り上げます。
-  meta_description: AIドローンを初めて選ぶ方向けに、DJI NeoやHOVERAir X1 Smartを比較。操縦不要で自動追従する空飛ぶカメラの性能を、離着陸の手軽さや撮影精度から検証します。
+  meta_description: AIドローンを初めて選ぶ方向けに、DJI NeoやHOVERAir X1系の自動追従性能を比較。操縦不要で撮れる空飛ぶカメラとして、離着陸の手軽さと撮影失敗の少なさを軸に絞り込みます。
   qa_config:
     min_price: 10000
     genre_id: '101165'
@@ -754,10 +754,10 @@ articles:
     name: ゲームの動作性能
   - id: battery
     name: バッテリー持続時間
-  analysis_insight: UMPC市場は成熟期に入り、単純なスペック競争より「バッテリーの持ち」と「すぐ遊び始められる快適さ」が勝敗を分ける段階になりました。外出先で本当に使うなら、性能と運用ストレスの両立が重要です。
+  analysis_insight: UMPC選びで後悔しやすいのは、ベンチ結果より「遊びたいタイトルが素直に動くか」「充電器込みで持ち歩けるか」「買った初週に更新や設定で止まらないか」です。外出先で本当に使うなら、性能だけでなく、互換性、バッテリー、初期設定、携帯時の負担まで含めて見ないと高額機でも放置されます。
   products_extra:
   - keyword: ROG
-    best_for: 外出先でもPCゲームを一切の妥協なく楽しみたいガチ勢
+    best_for: 外出先でもAAAタイトルを妥協せず遊びたいが、バッテリー切れや初期設定の面倒さで高額機を持て余したくない人
     scores:
       performance: 5.0
       battery: 4.5
@@ -766,11 +766,11 @@ articles:
     - 80Whの圧倒的スタミナ
     - 24GBメモリで動作が安定
     - グリップ感が格段に向上
-    critical_cons: Windowsベースのため、起動や更新作業がコンソール機に比べると煩雑です。
-    maintenance_reality: 半年ごとの内部清掃を推奨。
-    cost_performance: ハイスペックなゲーミングノートPCを買うより安く、自由が手に入ります。
+    critical_cons: Windowsベースのため、初回セットアップ、ランチャーごとの更新、スリープ復帰、ゲームごとの最適化を面倒に感じる人だと「性能は高いのに結局触らない」状態になりやすいです。遊びたいタイトルがアンチチートやランチャー事情で素直に動くかも事前確認が必要です。
+    maintenance_reality: Windows Update、GPUドライバ、Armoury Crate、ゲームランチャーの更新を自分で回す前提です。SSD空き容量、発熱、純正充電器の大きさまで含めてバッグ運用を想像しておくと、購入後のギャップを減らせます。
+    cost_performance: 携帯機と小型Windows PCを1台で兼ねられるので、移動用ノートと自宅ゲーム機を分けるより荷物と設定の手戻りを減らせます。外出先で本格ゲーム時間を確保したい人ほど、価格より運用効率で回収しやすいです。
   - keyword: Deck
-    best_for: Steamのゲームを「スイッチ感覚」で手軽に遊びたい層
+    best_for: Steam中心で遊び、Windowsの設定よりも「すぐ再開できる気楽さ」と失敗しにくさを優先したい人
     scores:
       performance: 4.0
       battery: 5.0
@@ -779,9 +779,9 @@ articles:
     - スリープの復帰が完璧
     - 有機ELの圧倒的な黒と色彩
     - トラックパッドによる独自操作
-    critical_cons: Steam以外のゲームを遊ぶには知識が必要です。
-    maintenance_reality: 本体が大きいため持ち運びには大きめのバッグが必要。
-    cost_performance: PCゲームの入門機として、価格と体験のバランスが最高です。
+    critical_cons: Steam以外のランチャーや一部の対戦ゲームは追加設定や非対応の可能性があり、遊びたいタイトルが決まっている人ほど互換性確認を怠ると後悔します。性能より「何が動かないか」を先に受け入れられるかが分かれ目です。
+    maintenance_reality: ストレージ容量、Shader Cache、互換性設定の確認は必要です。本体サイズも大きめなので、毎日の通勤バッグ運用より「家の中と旅行で使う」前提のほうが無理がありません。購入前に遊ぶタイトルがSteam中心かを整理しておくと失敗が減ります。
+    cost_performance: Steamライブラリ中心なら、スリープ復帰の速さと省電力で試行錯誤の時間を減らせます。設定に時間を使いたくない人にとっては、単純な安さより「買ってすぐ遊べる失敗の少なさ」に価値があります。
   qa_config:
     min_price: 80000
     required_words:
@@ -1326,7 +1326,7 @@ articles:
   title: 【2026年最新】プロジェクター 厳選2選｜4Kとレーザーの極地
   meta_description: XGIMIとAnkerのハイエンドプロジェクターを徹底比較。昼間の見やすさを左右する明るさ（ルーメン）や内蔵スピーカーの音質を軸に、10万〜20万円クラスの投資価値を検証。映画館同等の没入感を自宅で手軽に再現するための、後悔しない選び方を解説します。
   rakuten_params:
-    keyword: HORIZON Ultra, Nebula Cosmos
+    keyword: XGIMI プロジェクター, Nebula Cosmos プロジェクター
     hits: 10
     sort: -reviewCount
   test_criteria:
@@ -1336,7 +1336,7 @@ articles:
     name: 内蔵スピーカー音質
   analysis_insight: プロジェクター選びにおける「暗い部屋でしか使えない」という常識は、4Kレーザー光源の普及によって過去のものとなりました。本記事では、昼間のリビングでもカーテンを閉めずに鑑賞できる圧倒的な「明るさ」と、映画館同等の「色再現性」を両立した最高峰を厳選。自宅を真のホームシアターに変える、失敗しない大画面投資をナビゲートします。
   products_extra:
-  - keyword: HORIZON Ultra
+  - keyword: XGIMI
     best_for: 夜の映画体験を映画館と同等の色彩で再現したいシネマ派
     scores:
       brightness: 5.0

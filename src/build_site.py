@@ -45,6 +45,29 @@ STATIC_PAGES = [
     },
 ]
 
+RELATED_ARTICLE_OVERRIDES = {
+    "portable-gaming-pc": [
+        "gaming-monitor-ranking",
+        "ultrawide-monitor-ranking",
+        "4k-monitor-ranking",
+    ],
+    "gaming-monitor-ranking": [
+        "portable-gaming-pc",
+        "ultrawide-monitor-ranking",
+        "4k-monitor-ranking",
+    ],
+    "ultrawide-monitor-ranking": [
+        "portable-gaming-pc",
+        "gaming-monitor-ranking",
+        "4k-monitor-ranking",
+    ],
+    "4k-monitor-ranking": [
+        "portable-gaming-pc",
+        "gaming-monitor-ranking",
+        "ultrawide-monitor-ranking",
+    ],
+}
+
 
 def prune_stale_article_dirs(output_base, categories, articles, today_date):
     active_dirs = set()
@@ -67,8 +90,11 @@ def prune_stale_article_dirs(output_base, categories, articles, today_date):
             if not entry.is_dir():
                 continue
             if entry.path not in active_dirs:
-                shutil.rmtree(entry.path)
-                print(f"[CLEAN] Removed stale article directory: {entry.path}")
+                try:
+                    shutil.rmtree(entry.path)
+                    print(f"[CLEAN] Removed stale article directory: {entry.path}")
+                except PermissionError:
+                    print(f"[WARN] Could not remove stale article directory: {entry.path}")
 
 
 def absolute_url(site_config, path=""):
@@ -509,18 +535,24 @@ def main():
     today_date = now.strftime("%Y-%m-%d")
     today_str = now.strftime("%Y年%m月%d日")
 
-    prune_stale_article_dirs(output_base, categories, articles, today_date)
-    processed_articles = prepare_articles(articles, categories, today_date)
     target_ids = {
         item.strip()
         for item in os.getenv("LTS_ARTICLE_IDS", "").split(",")
         if item.strip()
     }
-    if target_ids:
-        processed_articles = [
-            entry for entry in processed_articles
-            if entry["conf"].get("id") in target_ids
-        ]
+    build_articles = (
+        [article for article in articles if article.get("id") in target_ids]
+        if target_ids
+        else articles
+    )
+
+    prune_stale_article_dirs(output_base, categories, articles, today_date)
+    processed_articles = prepare_articles(build_articles, categories, today_date)
+
+    article_lookup = {
+        entry["conf"]["id"]: entry
+        for entry in processed_articles
+    }
 
     # 1. 各記事詳細ページの生成
     for article_entry in processed_articles:
@@ -532,21 +564,45 @@ def main():
         os.makedirs(article_dir, exist_ok=True)
 
         related_articles = []
-        for related_entry in processed_articles:
-            if related_entry["conf"]["id"] == article_view["id"]:
-                continue
-            if related_entry["category"]["id"] != category["id"]:
-                continue
+        related_ids = set()
+
+        def add_related_article(related_entry):
+            related_conf = related_entry["conf"]
+            if related_conf["id"] == article_view["id"]:
+                return False
+            if related_conf["id"] in related_ids:
+                return False
+
+            related_ids.add(related_conf["id"])
             related_articles.append(
                 {
-                    "h1": related_entry["conf"]["h1"],
-                    "title": related_entry["conf"]["title"],
-                    "eye_catch": related_entry["conf"].get("resolved_eye_catch")
-                    or related_entry["conf"].get("eye_catch", ""),
-                    "url": f"../../{related_entry['category']['slug']}/{related_entry['conf']['slug']}/",
+                    "id": related_conf["id"],
+                    "h1": related_conf["h1"],
+                    "title": related_conf["title"],
+                    "category_name": related_entry["category"]["name"],
+                    "eye_catch": related_conf.get("resolved_eye_catch")
+                    or related_conf.get("eye_catch", ""),
+                    "url": f"../../{related_entry['category']['slug']}/{related_conf['slug']}/",
                 }
             )
-        related_articles = related_articles[:3]
+            return True
+
+        # Explicit overrides should win; otherwise they are truncated away by the per-page limit.
+        for related_id in RELATED_ARTICLE_OVERRIDES.get(article_view["id"], []):
+            related_entry = article_lookup.get(related_id)
+            if not related_entry:
+                continue
+            add_related_article(related_entry)
+            if len(related_articles) >= 3:
+                break
+
+        if len(related_articles) < 3:
+            for related_entry in processed_articles:
+                if related_entry["category"]["id"] != category["id"]:
+                    continue
+                add_related_article(related_entry)
+                if len(related_articles) >= 3:
+                    break
 
         html_content = article_template.render(
             site=site_config,

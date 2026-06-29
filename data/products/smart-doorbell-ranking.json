@@ -1,10 +1,10 @@
 {
   "article_id": "smart-doorbell-ranking",
-  "updated_at": "2026-05-24T16:22:50.247273",
+  "updated_at": "2026-06-29T08:50:06.116494",
   "items": [
     {
       "name": "Anker Eufy (ユーフィ) Video Doorbell E340 (スマホ連動ドアホン) 【インターホン / ドアベル / スマートドアホン / デュアルカメラ / 工事不要 / 顔認識 / 荷物認識 / 8GB内蔵ストレージ / 盗難防止 / 月額料金不要】",
-      "price": 16990,
+      "price": 19990,
       "url": "https://hb.afl.rakuten.co.jp/hgc/g00rr09n.1a2pr38f.g00rr09n.1a2ps726/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Ft8214%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fanker%2Fi%2F10002568%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00rr09n.1a2pr38f.g00rr09n.1a2ps726/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Ft8214%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fanker%2Fi%2F10002568%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/listing/tmb/t8214/t8214_normal.jpg",
@@ -54,7 +54,7 @@
       "match_keyword": "Nest Doorbell"
     },
     {
-      "name": "Aqara スマートビデオドアベルG4 高画質 カメラ付き AI 顔認識 スマートロック オートロック 玄関 遠隔 取付簡単 工事不要 鍵 開錠 防犯 インターホン 音声変更 アレクサ スマホ操作 セキュリティ スマートホーム ワイヤレスインターホン ドアホン",
+      "name": "Aqara スマートビデオドアベルG4 ドアベル カメラ付き AI顔認識 玄関 インターホン ワイヤレス 工事不要 遠隔操作 スマホ通知 Alexa対応 防犯 セキュリティ",
       "price": 15840,
       "url": "https://hb.afl.rakuten.co.jp/hgc/g00unkjn.1a2pr40b.g00unkjn.1a2ps2fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faqara%2Fsmart_video_doorbell_g4%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faqara%2Fi%2F10000002%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00unkjn.1a2pr40b.g00unkjn.1a2ps2fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faqara%2Fsmart_video_doorbell_g4%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faqara%2Fi%2F10000002%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
@@ -66,7 +66,7 @@
       "shopName": "Aqara公式楽天市場店",
       "caption": "防犯対策の助成金について 防犯対策をご検討中の方は、自治体が実施している助成制度の活用をおすすめします。 防犯対策助成金とは、地域住民や事業者が防犯カメラやセンサーライトなど、犯罪抑止を目的とした設備を導入する際に、費用の一部を補助する制度です。 助成の内容や対象設備、申請手続きの詳細は自治体によって異なりますので、申請予定の市区町村の公式ホームページにて最新情報をご確認ください。",
       "is_major": false,
-      "source_query": "ビデオドアベル",
+      "source_query": "Aqara Doorbell",
       "selection_reason": "curated_masterpiece",
       "match_keyword": "Aqara"
     }
@@ -109,8 +109,8 @@
   ],
   "candidate_summary": {
     "query_count": 7,
-    "raw_item_count": 115,
-    "candidate_count": 63,
+    "raw_item_count": 126,
+    "candidate_count": 72,
     "major_brand_count": 2,
     "hidden_gem_count": 2,
     "queries": [

@@ -21,13 +21,13 @@
     <meta property="og:description" content="LifeTech Select における個人情報とアフィリエイト広告の取り扱いについて説明します。">
     <meta property="og:url" content="https://yy00si.github.io/rakuten-affiliate-site/privacy-policy/">
     
-    <meta property="og:image" content="https://thumbnail.image.rakuten.co.jp/@0_mall/vitamix/cabinet/vitamix/item/imgrc0102515274.jpg">
+    <meta property="og:image" content="https://thumbnail.image.rakuten.co.jp/@0_mall/nitori/cabinet/0300030/2190300030147s01.jpg">
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="プライバシーポリシー | ライフテック・セレクト：LifeTech Select">
     <meta name="twitter:description" content="LifeTech Select における個人情報とアフィリエイト広告の取り扱いについて説明します。">
     
-    <meta name="twitter:image" content="https://thumbnail.image.rakuten.co.jp/@0_mall/vitamix/cabinet/vitamix/item/imgrc0102515274.jpg">
+    <meta name="twitter:image" content="https://thumbnail.image.rakuten.co.jp/@0_mall/nitori/cabinet/0300030/2190300030147s01.jpg">
     
     
         
@@ -683,17 +683,51 @@
     </footer>
     
     <script>
-        document.addEventListener('click', function(event) {
-            var link = event.target.closest('a[data-affiliate-click]');
-            if (!link || typeof gtag !== 'function') return;
-            gtag('event', 'rakuten_affiliate_click', {
-                affiliate_network: 'rakuten',
-                link_url: link.href,
-                link_text: link.textContent.trim().slice(0, 80),
-                placement: link.dataset.affiliatePlacement || 'article',
-                item_name: link.dataset.affiliateItem || ''
-            });
-        });
+        (function() {
+            function resolveAffiliateLink(target) {
+                return target && target.closest ? target.closest('a[data-affiliate-click]') : null;
+            }
+
+            function trackAffiliateClick(link) {
+                if (!link) return;
+                var now = Date.now();
+                var lastTrackedAt = parseInt(link.dataset.affiliateTrackedAt || '0', 10);
+                if (now - lastTrackedAt < 1000) return;
+                link.dataset.affiliateTrackedAt = String(now);
+
+                var payload = {
+                    affiliate_network: 'rakuten',
+                    link_url: link.href,
+                    link_text: link.textContent.trim().slice(0, 80),
+                    placement: link.dataset.affiliatePlacement || 'article',
+                    item_name: link.dataset.affiliateItem || '',
+                    transport_type: 'beacon',
+                    send_to: 'G-BK95ZSS5F0'
+                };
+
+                if (typeof gtag === 'function') {
+                    gtag('event', 'rakuten_affiliate_click', payload);
+                    return;
+                }
+
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push(Object.assign({ event: 'rakuten_affiliate_click' }, payload));
+            }
+
+            document.addEventListener('click', function(event) {
+                trackAffiliateClick(resolveAffiliateLink(event.target));
+            }, true);
+
+            document.addEventListener('auxclick', function(event) {
+                if (event.button !== 1) return;
+                trackAffiliateClick(resolveAffiliateLink(event.target));
+            }, true);
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key !== 'Enter' && event.key !== ' ') return;
+                trackAffiliateClick(resolveAffiliateLink(event.target));
+            }, true);
+        })();
     </script>
     
 </body>
