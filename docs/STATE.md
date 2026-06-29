@@ -4,6 +4,7 @@
 運用・インデックス促進・SEO戦略転換フェーズ
 
 ## 完了済み
+- 2026-06-29: GitHub同期: 月末PDCA関連のソース、生成物、`monthly_pdca_2026_06.md`、`pdca_work_2026_06_end.md` を `main` へ同期済み。同期後にローカルHEADとGitHub HEADの一致を確認した。
 - 2026-06-29: Git remote設定: サニタイズ済み。
 - 2026-06-29: 6月月末PDCA Step 7 を更新完了。主要数値は楽天クリック5・成果0・売上0円・報酬0円、GSCクリック10・表示528・CTR 1.9%・平均順位16.0、GA4 PV1・アクティブユーザー1・`rakuten_affiliate_click` 0。実装済みActとして、`portable-gaming-pc` の購入直前不安解消補強、CTA文脈改善、`robot-vacuum-ranking` / `ai-drone-ranking` の title/meta 更新、`portable-gaming-pc` 中心の内部リンク補強、`rakuten_affiliate_click` 発火ロジック補強を反映。`validate_articles.py` は errors=0/warnings=0、変更記事3本の `fetch_products.py` は再取得完了、全件 `build_site.py` は 76記事ビルド完了、`audit_site.py` は errors=0/warnings=0。OneDrive 配下の stale ディレクトリ削除警告は継続するが、生成結果と監査結果には影響しない。
 - 2026-06-29: 品質ゲート残課題の追補を完了。`projector-ranking` は `XGIMI` 軸へ、`laser-printer-ranking` は `Canon レーザープリンター` と `required_words: レーザー` 追加で楽天商品一致条件を補正し、両記事の不一致を解消。`validate_articles.py` は errors=0/warnings=0、対象2記事の `fetch_products.py` 再取得完了、全件 `build_site.py` は 76記事ビルド完了、`audit_site.py` は errors=0/warnings=0。これで全件ビルド時の `[CRITICAL QA ERROR]` は解消した。
@@ -37,6 +38,7 @@
 4. 2026-07中旬時点で `portable-gaming-pc` 周辺のクリック推移を確認し、型番別・悩み別記事追加の可否を判断する。
 
 ## 判断ログ
+- 2026-06-29: GitHub未同期の是正として、月末PDCA関連のコミットを `origin/main` へ push し、同期後にローカルHEADとGitHub HEADの一致を確認した。`config/articles_stock.yaml` と未追跡のストック下書き群は今回PDCAの同期対象から外し、ローカル作業中変更として保持した。
 - 2026-06-29: Git remote設定: サニタイズ済み。
 - 2026-06-29: Step 7 として `validate_articles.py`、変更記事3本の `fetch_products.py`、全件 `build_site.py`、`audit_site.py` を実行。`fetch_products.py` は最初の実行でネットワーク制約、`build_site.py` は `docs/home/wine-cellar/index.html` の権限で止まったため、いずれも権限外で再実行して完走した。最終結果は validate/audit ともに `errors=0, warnings=0`、全76記事ビルド完了。したがって、今回の実装変更は品質ゲート通過と判断する。OneDrive 配下の stale ディレクトリ削除警告は残るが、生成結果と監査結果には影響しない。
 - 2026-06-29: 品質ゲート残課題として分離していた `projector-ranking` と `laser-printer-ranking` の楽天商品一致条件を補正し、対象2記事の再取得後に全件 `build_site.py` と `audit_site.py` を再実行した。`build_site.py` は OneDrive 配下の stale ディレクトリ削除警告を出すがビルド完了し、`audit_site.py` は errors=0/warnings=0。したがって、リポジトリ全体の公開前品質ゲートは `[CRITICAL QA ERROR]` なしへ復帰した。残課題は計測確認と未取得運用データに移る。
