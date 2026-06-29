@@ -452,10 +452,10 @@
 
 ### GitHub状態確認
 - ローカルブランチ: `main`
-- ローカルHEAD: `498357bdf2547b015303e75f311c1e9a1a89fd1f`
-- GitHub HEAD: `498357bdf2547b015303e75f311c1e9a1a89fd1f`
-- 判定: ローカルHEADとGitHub HEADは一致している。
-- 補足: GitHub上では `chore: auto-update 2026-06-29 01:59 UTC` が入っていたため、ローカルを fast-forward で追従させて一致を確認した。
+- 監査開始時点のローカルHEAD: `f2fd3965274b9c3994c1f4447ef0a4c2167b4278`
+- 監査開始時点のGitHub HEAD: `f2fd3965274b9c3994c1f4447ef0a4c2167b4278`
+- 判定: 監査開始時点でローカルHEADとGitHub HEADは一致している。
+- 補足: ローカル作業ツリーには `config/articles_stock.yaml` とストック下書き系の未追跡ファイルが残っているが、今回の6月月末PDCA監査対象からは除外する。
 - 注意: `origin` は `https://github.com/YY00SI/rakuten-affiliate-site.git` にサニタイズ済みで、認証情報はPDCAドキュメントに記録していない。
 
 ### 監査結果
@@ -470,13 +470,13 @@
 | 実装済みActとSTATEの記録一致 | 可 | `STATE.md` の最新記録は Step 6/7 の最終実装内容と一致しており、旧記録は `旧記録・更新済み` / `旧判断・更新済み` として整理済み。 |
 | 品質ゲートの実行または不要判断 | 可 | `monthly_pdca_2026_06.md`、作業ログStep 7、`STATE.md` のいずれも、品質ゲート4本の完了、全76記事ビルド完了、`audit_site.py errors=0/warnings=0`、staleディレクトリ警告は非致命である点が一致している。 |
 | 次回取得テンプレート | 可 | `monthly_pdca_2026_06.md` に次回取得テンプレートが残っている。 |
-| GitHub上の状態 | 可 | GitHub上の `YY00SI/rakuten-affiliate-site` は月末PDCAの同期後状態を反映済みで、ローカルHEADと一致している。 |
+| GitHub上の状態 | 可 | 監査開始時点でGitHub上の `YY00SI/rakuten-affiliate-site` は月末PDCAの同期後状態を反映済みで、ローカルHEADと一致している。 |
 
 ### 監査対応ログ
 - 2026-06-29: Git remote設定: サニタイズ済み。
 - 2026-06-29: `monthly_pdca_2026_06.md` の品質ゲート記述を Step 7 完了後の状態へ補修済み。
 - 2026-06-29: `STATE.md` の 2026-06-29 月末PDCA旧記録を `旧記録・更新済み` / `旧判断・更新済み` として整理済み。
 - 2026-06-29: GitHub未同期を解消。月末PDCA関連のソース、生成物、月次PDCA、作業ログを `origin/main` へ push し、同期後にローカルHEADとGitHub HEADの一致を確認した。`config/articles_stock.yaml` と未追跡のストック下書き群は今回同期対象から除外した。
-- 2026-06-29: GitHubの自動更新コミット `498357bdf2547b015303e75f311c1e9a1a89fd1f` にローカルを追従し、再度ローカルHEADとGitHub HEADの一致を確認した。
+- 2026-06-29: GitHubの自動更新コミットにローカルを追従後、監査開始時点でローカルHEADとGitHub HEADが `f2fd3965274b9c3994c1f4447ef0a4c2167b4278` で一致していることを確認した。
 
 監査合格。追加修正なし。
