@@ -22,7 +22,7 @@
 
 1. 価格が高く、楽天アフィリエイトの成果単価が見込める商品
 2. 購入後の後悔ポイントが明確な商品
-3. トップメーカーを3から4社並べられる商品
+3. 指名買い候補を1〜5機種確認でき、数合わせをせずに比較価値を説明できる商品
 4. 楽天市場で新品在庫があり、商品名と商品説明からQA条件を満たせる商品
 5. レビュー評価・件数が取れる、または仕様差だけでも比較価値がある商品
 
@@ -44,7 +44,7 @@
 - `test_criteria`
 - `products_extra`
 
-`products_extra` は各商品ごとに以下を必須にする。
+`products_extra` は各商品ごとに以下を必須にする。候補数は先に固定せず、楽天市場で新品本体を確認できた候補だけを残す。
 
 - `keyword`
 - `best_for`
@@ -100,9 +100,9 @@
 新規ストック記事だけ取得する場合:
 
 ```powershell
-$env:PYTHONPATH='D:\嘉秋\Antigravity\projects\rakuten-affiliate-site\.codex_python_deps;D:\嘉秋\Antigravity\projects\rakuten-affiliate-site\src'
-$env:LTS_ARTICLE_IDS='article-id-1,article-id-2'
-& 'C:\Users\yoshi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' 'src/fetch_products.py'
+$env:PYTHONPATH = ".\.codex_python_deps;.\src"
+$env:LTS_ARTICLE_IDS = "article-id-1,article-id-2"
+python src/fetch_products.py
 ```
 
 取得後、`[MISS]` が出た商品は公開しない。次のいずれかで直す。
@@ -117,11 +117,11 @@ $env:LTS_ARTICLE_IDS='article-id-1,article-id-2'
 未来日を指定して全公開予定をシミュレーションする。
 
 ```powershell
-$env:PYTHONPATH='D:\嘉秋\Antigravity\projects\rakuten-affiliate-site\.codex_python_deps;D:\嘉秋\Antigravity\projects\rakuten-affiliate-site\src'
-& 'C:\Users\yoshi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' 'src/validate_articles.py'
-$env:LTS_TODAY='2026-06-14'
-& 'C:\Users\yoshi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' 'src/build_site.py'
-& 'C:\Users\yoshi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' 'src/audit_site.py'
+$env:PYTHONPATH = ".\.codex_python_deps;.\src"
+python src/validate_articles.py
+$env:LTS_TODAY = "2026-06-14"
+python src/build_site.py
+python src/audit_site.py
 ```
 
 合格条件:

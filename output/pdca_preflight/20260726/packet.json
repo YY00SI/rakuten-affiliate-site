@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "project": "rakuten-affiliate-site",
+  "cycle": "end",
+  "analysis_date": "2026-07-26",
+  "comparison_windows": {
+    "current_to_date": {
+      "start": "2026-07-01",
+      "end": "2026-07-25"
+    },
+    "previous_equal_length": {
+      "start": "2026-06-06",
+      "end": "2026-06-30"
+    },
+    "previous_full_month": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    }
+  },
+  "metrics": [
+    {
+      "id": "gsc_clicks",
+      "value": "未取得",
+      "unit": "count",
+      "source": "Google Search Console",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-25",
+      "fetched_at": "2026-07-26",
+      "reliability": "unreliable",
+      "missing_reason": "Codex内ブラウザがWindows ACLエラーで起動できず、認証済み画面へ到達不能"
+    },
+    {
+      "id": "gsc_impressions",
+      "value": "未取得",
+      "unit": "count",
+      "source": "Google Search Console",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-25",
+      "fetched_at": "2026-07-26",
+      "reliability": "unreliable",
+      "missing_reason": "Codex内ブラウザがWindows ACLエラーで起動できず、認証済み画面へ到達不能"
+    },
+    {
+      "id": "gsc_ctr",
+      "value": "未取得",
+      "unit": "percent",
+      "source": "Google Search Console",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-25",
+      "fetched_at": "2026-07-26",
+      "reliability": "unreliable",
+      "missing_reason": "Codex内ブラウザがWindows ACLエラーで起動できず、認証済み画面へ到達不能"
+    },
+    {
+      "id": "gsc_average_position",
+      "value": "未取得",
+      "unit": "position",
+      "source": "Google Search Console",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-25",
+      "fetched_at": "2026-07-26",
+      "reliability": "unreliable",
+      "missing_reason": "Codex内ブラウザがWindows ACLエラーで起動できず、認証済み画面へ到達不能"
+    },
+    {
+      "id": "ga4_active_users",
+      "value": "未取得",
+      "unit": "count",
+      "source": "GA4: LifeTech Select",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-25",
+      "fetched_at": "2026-07-26",
+      "reliability": "unreliable",
+      "missing_reason": "Codex内ブラウザがWindows ACLエラーで起動できず、認証済み画面へ到達不能"
+    },
+    {
+      "id": "ga4_page_views",
+      "value": "未取得",
+      "unit": "count",
+      "source": "GA4: LifeTech Select",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-25",
+      "fetched_at": "2026-07-26",
+      "reliability": "unreliable",
+      "missing_reason": "Codex内ブラウザがWindows ACLエラーで起動できず、認証済み画面へ到達不能"
+    },
+    {
+      "id": "rakuten_affiliate_click_event",
+      "value": "未取得",
+      "unit": "count",
+      "source": "GA4: LifeTech Select / rakuten_affiliate_click",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-25",
+      "fetched_at": "2026-07-26",
+      "reliability": "unreliable",
+      "missing_reason": "Codex内ブラウザがWindows ACLエラーで起動できず、イベント計測画面へ到達不能"
+    },
+    {
+      "id": "rakuten_affiliate_clicks",
+      "value": "未取得",
+      "unit": "count",
+      "source": "楽天アフィリエイト管理画面",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-25",
+      "fetched_at": "2026-07-26",
+      "reliability": "unreliable",
+      "missing_reason": "Codex内ブラウザがWindows ACLエラーで起動できず、認証済み管理画面へ到達不能"
+    },
+    {
+      "id": "rakuten_conversions",
+      "value": "未取得",
+      "unit": "count",
+      "source": "楽天アフィリエイト管理画面",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-25",
+      "fetched_at": "2026-07-26",
+      "reliability": "unreliable",
+      "missing_reason": "Codex内ブラウザがWindows ACLエラーで起動できず、認証済み管理画面へ到達不能"
+    },
+    {
+      "id": "rakuten_sales",
+      "value": "未取得",
+      "unit": "JPY",
+      "source": "楽天アフィリエイト管理画面",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-25",
+      "fetched_at": "2026-07-26",
+      "reliability": "unreliable",
+      "missing_reason": "Codex内ブラウザがWindows ACLエラーで起動できず、認証済み管理画面へ到達不能"
+    },
+    {
+      "id": "rakuten_rewards",
+      "value": "未取得",
+      "unit": "JPY",
+      "source": "楽天アフィリエイト管理画面",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-25",
+      "fetched_at": "2026-07-26",
+      "reliability": "unreliable",
+      "missing_reason": "Codex内ブラウザがWindows ACLエラーで起動できず、認証済み管理画面へ到達不能"
+    },
+    {
+      "id": "august_scheduled_articles",
+      "value": 31,
+      "unit": "articles",
+      "source": "config/articles_stock.yaml",
+      "period_start": "2026-08-01",
+      "period_end": "2026-08-31",
+      "fetched_at": "2026-07-26",
+      "reliability": "verified",
+      "definition": "8月1日から31日まで1日1本の公開予定記事数"
+    },
+    {
+      "id": "configured_articles_total",
+      "value": 139,
+      "unit": "articles",
+      "source": "validate_articles.py / build_site.py",
+      "period_start": "2026-04-16",
+      "period_end": "2026-08-31",
+      "fetched_at": "2026-07-26",
+      "reliability": "verified",
+      "definition": "LTS_TODAY=2026-08-31で品質ゲートを通過し生成された記事数"
+    }
+  ],
+  "quality_gates": [
+    {
+      "id": "article_contract",
+      "status": "pass",
+      "result": "errors=0, warnings=0"
+    },
+    {
+      "id": "future_build",
+      "status": "pass",
+      "result": "LTS_TODAY=2026-08-31, 139 articles generated"
+    },
+    {
+      "id": "site_audit",
+      "status": "pass",
+      "result": "errors=0, warnings=0"
+    },
+    {
+      "id": "august_product_match",
+      "status": "pass",
+      "result": "31/31 articles have API product cache and image; candidate distribution 1 item=14, 2 items=10, 3 items=7"
+    },
+    {
+      "id": "authenticated_metrics",
+      "status": "blocked",
+      "result": "in-app browser failed with Windows ACL error; values recorded as 未取得, not 0"
+    }
+  ],
+  "experiments": [
+    {
+      "id": "exp_2026_08_cap_adjusted_intent_stock",
+      "status": "pending",
+      "hypothesis": "楽天の通常料率4%ジャンルを中心に、約2.5万円以上かつ購入意図の強いロングテール記事を公開すると、新規記事1本あたりの楽天アフィリエイトクリックが従来ストックより増える",
+      "target": "2026-08-01から2026-08-31公開予定の31記事",
+      "primary_metric": "rakuten_affiliate_clicks_per_published_article",
+      "baseline_window": {
+        "start": "2026-07-01",
+        "end": "2026-07-31"
+      },
+      "evaluation_window": {
+        "start": "2026-08-01",
+        "end": "2026-08-31"
+      },
+      "expected_direction": "increase",
+      "guardrail": "GSC表示が100未満または楽天クリックが20未満なら勝敗を確定せずinsufficient_sampleを継続する",
+      "change_summary": "候補数を固定せず、楽天APIで適合する実商品1〜3件だけを掲載。4%ジャンルと購入直前の比較意図を優先した31記事を準備",
+      "result": "pending"
+    }
+  ],
+  "notes": [
+    "2026-06-29に確認済みの履歴値は楽天クリック5・成果0・売上0円・報酬0円、GSCクリック10・表示528・CTR1.9%・平均順位16.0、GA4 PV1・ユーザー1・affiliate click event 0。現行値ではないため今回のmetricsへ転記しない。",
+    "楽天公式ルールで通常料率はジャンル別2〜4%、1商品1個あたり成果報酬上限1000円、同一ユーザー月間上限3000円（料率アップ商品を除く）を確認。",
+    "現行KPI未取得のためファネル診断はinsufficient_sample。記事追加は収益構造と実商品適合性に基づく次月実験として扱う。"
+  ]
+}

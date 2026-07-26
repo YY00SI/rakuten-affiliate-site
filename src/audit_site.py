@@ -2,7 +2,8 @@ import re
 import sys
 from pathlib import Path
 
-from article_contract import get_discouraged_embed_hosts, get_global_forbidden_terms
+from article_contract import get_discouraged_embed_hosts, get_global_forbidden_terms, is_published_article
+from config_loader import load_config
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -77,6 +78,17 @@ def count_rendered_items(html):
     return len(re.findall(r'<div id="rank-\d+" class="ranking-item">', html))
 
 
+def expected_article_paths():
+    config = load_config()
+    categories = {category["id"]: category["slug"] for category in config.get("categories", [])}
+    expected = set()
+    for article in config.get("articles", []):
+        category_slug = categories.get(article.get("category_id"))
+        if category_slug and is_published_article(article):
+            expected.add(f"{category_slug}/{article['slug']}/index.html")
+    return expected
+
+
 def main():
     report = AuditReport()
     pages = find_index_pages()
@@ -93,6 +105,15 @@ def main():
         report.error("docs", "No generated index.html files found")
         report.print()
         sys.exit(1)
+
+    rendered_article_paths = {
+        str(path.relative_to(DOCS_DIR)).replace("\\", "/")
+        for path in pages
+        if page_kind(path) == "article"
+    }
+    missing_article_paths = expected_article_paths() - rendered_article_paths
+    for path in sorted(missing_article_paths):
+        report.error("docs", f"Expected published article page is missing: {path}")
 
     for path in pages:
         html = path.read_text(encoding="utf-8")

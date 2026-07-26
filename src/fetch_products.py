@@ -52,8 +52,10 @@ def build_discovery_keywords(article):
 
     h1 = article.get("h1", "")
     theme = re.sub(r"[【】\[\]0-9０-９年月日年最新]+", " ", h1)
+    theme = theme.replace("で選ぶ", " ").replace("選ぶ", " ")
     for term in GENERIC_THEME_TERMS:
         theme = theme.replace(term, " ")
+    theme = re.sub(r"[^\w\s-]", " ", theme, flags=re.UNICODE)
     theme = re.sub(r"\s+", " ", theme).strip()
 
     required = article.get("qa_config", {}).get("required_words", [])

@@ -1,0 +1,12 @@
+{
+  "metrics": [
+    {"id":"gsc_clicks","value":"未取得","unit":"count","source":"Google Search Console","period_start":"YYYY-MM-DD","period_end":"YYYY-MM-DD","fetched_at":"YYYY-MM-DD","reliability":"verified","missing_reason":"未入力"},
+    {"id":"gsc_impressions","value":"未取得","unit":"count","source":"Google Search Console","period_start":"YYYY-MM-DD","period_end":"YYYY-MM-DD","fetched_at":"YYYY-MM-DD","reliability":"verified","missing_reason":"未入力"},
+    {"id":"ga4_active_users","value":"未取得","unit":"count","source":"GA4: LifeTech Select","period_start":"YYYY-MM-DD","period_end":"YYYY-MM-DD","fetched_at":"YYYY-MM-DD","reliability":"partial","missing_reason":"未入力"},
+    {"id":"rakuten_affiliate_clicks","value":"未取得","unit":"count","source":"楽天アフィリエイト管理画面","period_start":"YYYY-MM-DD","period_end":"YYYY-MM-DD","fetched_at":"YYYY-MM-DD","reliability":"verified","missing_reason":"未入力"},
+    {"id":"rakuten_conversions","value":"未取得","unit":"count","source":"楽天アフィリエイト管理画面","period_start":"YYYY-MM-DD","period_end":"YYYY-MM-DD","fetched_at":"YYYY-MM-DD","reliability":"verified","missing_reason":"未入力"}
+  ],
+  "quality_gates": [],
+  "experiments": [],
+  "notes": []
+}

@@ -1,14 +1,14 @@
 # プロジェクト概要
 楽天アフィリエイトを活用した高単価特化型の厳選メディア `LifeTech Select (LTS)` のプロジェクトです。
 
-## 最優先ルール
-このプロジェクトを扱う AI は、作業前に必ず以下をこの順で確認すること。
+## 作業開始時
 
-1. `Rule.md`
-2. `workflow.md`
-3. `docs/ai/CONTENT_CONTRACT.md`
-4. `docs/ai/QUALITY_GATE.md`
-5. `config/article_quality_rules.yaml`
+すべての作業で `Rule.md` と `docs/STATE.md` を読む。
+
+- PDCA、収益分析、開始票、レポート: `$monetization-pdca` と `docs/pdca_profile.md` を読む。記事仕様はActが記事・商品・生成物を変更する場合だけ読む。
+- 記事・商品・生成サイトを変更する作業: `workflow.md`、`docs/ai/CONTENT_CONTRACT.md`、`docs/ai/QUALITY_GATE.md`、`config/article_quality_rules.yaml` を読む。
+
+これ以外の巨大な履歴、原本、品質文書は、preflightまたは必要な疑義がある場合だけ読む。
 
 ## 絶対方針
 - 汎用的なアフィリエイト記事の量産は禁止。

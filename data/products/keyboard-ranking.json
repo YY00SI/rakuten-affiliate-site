@@ -1,17 +1,17 @@
 {
   "article_id": "keyboard-ranking",
-  "updated_at": "2026-06-29T08:44:50.016951",
+  "updated_at": "2026-07-26T23:48:20.687837",
   "items": [
     {
-      "name": "【Razer公式】 Razer Huntsman V3 Pro Tenkeyless JP 日本語配列 有線 アナログオプティカルスイッチ搭載 ゲーミングキーボード White Edition # RZ03-04981800-R3J1 レーザー (キーボード)",
+      "name": "Razer Huntsman V3 Pro Tenkeyless JP 日本語配列 有線 アナログオプティカルスイッチ搭載 ゲーミングキーボード White Edition # RZ03-04981800-R3J1 レーザー (キーボード)",
       "price": 34980,
       "url": "https://hb.afl.rakuten.co.jp/hgc/g00tys6n.1a2prbd6.g00tys6n.1a2ps420/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgcgr%2F525983%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgcgr%2Fi%2F10000870%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00tys6n.1a2prbd6.g00tys6n.1a2ps420/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgcgr%2F525983%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgcgr%2Fi%2F10000870%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/gcgr/cabinet/item/5/p-390626.jpg",
       "reviewCount": 1,
       "reviewAverage": 5.0,
-      "quality_score": 6.012,
-      "offer_score": 6.012,
+      "quality_score": 5.01,
+      "offer_score": 5.01,
       "shopName": "GAMING CENTER by GRAPHT",
       "caption": "●気になる商品ラピッドトリガー対応、光学式オプティカルキーボードRazer Huntsman V3 Pro Tenkeyless で新水準のスピードを体験。対戦にもシームレスに活用できるこのスリムなTKLキーボードは、調整可能なアクチュエーション、超高速連打を可能にするラピッドトリガーモードを備えたRazer最新のアナログオプティカルスイッチを搭載し、e スポーツに最適な武器となります。■ 第2世代 RAZERTM アナログオプティカルスイッチ超高速連打を可能にするラピッドトリガー、0.1~4.0 mmの範囲で調整可能なアクチュエーション、1億回のキーストローク寿命を備えたRazerの最も高度",
       "is_major": false,
@@ -21,7 +21,7 @@
     },
     {
       "name": "Wooting 60HE+ ゲーミングキーボード 0.1mmアクチュエーションラピッドトリガー カスタマイズ自在なアナログスイッチ ARM ANSI-US PBT Lekker Linear60 US配列 60％サイズ プロ仕様",
-      "price": 36800,
+      "price": 37800,
       "url": "https://hb.afl.rakuten.co.jp/hgc/g00s94cn.1a2pr39a.g00s94cn.1a2ps49c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Finterprime%2Fcompass1742901062%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Finterprime%2Fi%2F10000520%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00s94cn.1a2pr39a.g00s94cn.1a2ps49c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Finterprime%2Fcompass1742901062%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Finterprime%2Fi%2F10000520%2F&rafcid=wsc_i_is_c682bfd9-5e25-4ec2-9f1c-e7a5057cf06f",
       "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/interprime/cabinet/compass1742900926.jpg",
@@ -41,8 +41,8 @@
   "candidate_summary": {
     "query_count": 3,
     "raw_item_count": 90,
-    "candidate_count": 55,
-    "major_brand_count": 2,
+    "candidate_count": 54,
+    "major_brand_count": 3,
     "hidden_gem_count": 0,
     "queries": [
       "Huntsman V3 Pro",

@@ -81,8 +81,8 @@ def block(text):
 def article_text(theme):
     date, article_id, category, slug, topic, required, min_price, keywords, discovery, products = theme
     product_names = "、".join(products)
-    h1 = f"{topic} 厳選2選"
-    title = f"【2026年最新】{topic} 厳選2選｜買ってから困る設置と維持費を比較"
+    h1 = f"{topic}比較｜設置と維持費で後悔しない選び方"
+    title = f"【2026年】{topic}比較｜買ってから困る設置と維持費を確認"
     intro = (
         f"{topic}は価格やスペックだけで選ぶと、設置場所、メンテナンス、消耗品、保証条件で後悔しやすい商品です。"
         f"本記事では{product_names}を候補に、使い始めてから負担になりやすい点まで比較します。"

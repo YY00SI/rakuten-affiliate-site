@@ -3,6 +3,23 @@
 ## 現在のフェーズ
 運用・インデックス促進・SEO戦略転換フェーズ
 
+## 2026-07-26の月末PDCA・8月ストック
+
+- 7月月末PDCAは `insufficient_sample`。2026-07-01〜2026-07-25のGSC・GA4・楽天管理画面はCodex内ブラウザのWindows ACLエラーで取得できず、0へ置換せず「未取得」として `output/pdca_preflight/20260726/packet.json` に記録した。2026-06-29の確認値は履歴参考値に限定する。
+- 収益最優先の次月方針を「高額品の一律優先」から「楽天の料率・1商品上限を加味した期待報酬 × 購入意図」へ補正。通常料率4%のスポーツ・アウトドア、ペット、DIY・ガーデン等を中心に、購入条件が明確なテーマを優先した。
+- 2026-08-01〜2026-08-31の31記事を作成し、全記事で楽天APIの商品キャッシュと画像を確認。候補数は固定せず、実商品一致結果に応じて1件14記事、2件10記事、3件7記事とした。
+- 全記事のh1/titleから固定の「厳選N選」表記213件を撤廃。候補数の水増しや、取得不能・不適合商品の掲載を禁止する契約・品質ゲート・生成手順へ更新した。
+- `LTS_TODAY=2026-08-31` で全139記事を生成。`validate_articles.py` と `audit_site.py` は errors=0 / warnings=0、ビルド時の `CRITICAL QA ERROR` も0。
+- 実験 `exp_2026_08_cap_adjusted_intent_stock` を `pending` で開始。主要指標は公開記事1本あたり楽天アフィリエイトクリック、評価期間は2026-08-01〜2026-08-31。
+- 公開状態: `main` 同期とGitHub Actions完了確認待ち。公開後はトップ、当日記事、sitemap、楽天リンクを確認する。
+
+## 2026-07-11の運用更新
+
+- PDCAは `$monetization-pdca` と `docs/pdca_profile.md` を正本とし、`tmp/rakuten_affiliate_pdca_start.md` から開始する。数値はpreflight packetへ集約し、記事仕様は記事を変更するActでだけ読む。
+- GitHub Actionsは記事契約検証、商品取得、ビルド、公開監査をすべて通過した場合だけ生成物を同期する。
+- 公開対象のページ回帰監査を追加。2026-07-11時点で全88記事の契約検証・ビルド・監査は errors=0 / warnings=0。
+- `water-purifier-ranking` は楽天APIで確認できない候補を局所的に除き、東レ トレビーノ ブランチの単一候補記事へ再設計した。全体ルールの緩和はしていない。
+
 ## 完了済み
 - 2026-06-29: ブラウザ追補を実施。Google Search Console の `未登録 15` は `2026-06-12` 時点の古い集計で、可視10URLを個別URL検査した結果 `audio-glasses` は登録済み、残る `action-camera` / `facial-device` / `auto-cooker` / `ai-drone` / `massage-gun` / `electric-shaver` / `home/` / `beauty/` / `work/` は未登録を確認し、URL 検査から優先クロールキューへ追加した。楽天管理画面はログイン済みで今月クリック5・成果0を再確認した一方、現行UIでは `商品別クリック` 導線を特定できず再取得不能。GA4 は公開記事から楽天リンク実クリック後も `rakuten_affiliate_click` が 0 のままだったため、`templates/base.html` を修正し `window.gtag` の明示束縛と `sendBeacon` フォールバックを追加。`validate_articles.py` は errors=0/warnings=0、`build_site.py` は全76記事ビルド完了、`audit_site.py` は errors=0/warnings=0。
 - 2026-06-29: 緊急改善追補を公開反映完了。未インデックス15件そのものは外部状態のため即時解消できないが、`portable-gaming-pc` を含む勝ち筋導線を記事上部の関連記事導線と `RELATED_ARTICLE_OVERRIDES` 拡張で補強し、`robot-vacuum-ranking` / `ai-drone-ranking` / `portable-gaming-pc` の title/meta を再調整、`rakuten_affiliate_click` は `pointerup` も拾うよう補強した。`validate_articles.py` は errors=0/warnings=0、対象3記事の `fetch_products.py` 再取得完了、`build_site.py` は 全76記事ビルド完了、`audit_site.py` は errors=0/warnings=0。stale ディレクトリ削除警告は継続するが非致命。

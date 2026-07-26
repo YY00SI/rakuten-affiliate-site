@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-07-26",
+  "experiments": [
+    {
+      "id": "exp_2026_08_cap_adjusted_intent_stock",
+      "status": "pending",
+      "hypothesis": "楽天の通常料率4%ジャンルを中心に、約2.5万円以上かつ購入意図の強いロングテール記事を公開すると、新規記事1本あたりの楽天アフィリエイトクリックが従来ストックより増える",
+      "target": "2026-08-01から2026-08-31公開予定の31記事",
+      "primary_metric": "rakuten_affiliate_clicks_per_published_article",
+      "baseline_window": {"start": "2026-07-01", "end": "2026-07-31"},
+      "evaluation_window": {"start": "2026-08-01", "end": "2026-08-31"},
+      "expected_direction": "increase",
+      "guardrail": "GSC表示が100未満または楽天クリックが20未満なら勝敗を確定せずinsufficient_sampleを継続する",
+      "change_summary": "候補数を固定せず、楽天APIで適合する実商品1〜3件だけを掲載。4%ジャンルと購入直前の比較意図を優先した31記事を準備",
+      "result": "pending"
+    }
+  ]
+}
