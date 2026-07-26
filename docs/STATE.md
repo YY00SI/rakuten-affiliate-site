@@ -11,7 +11,7 @@
 - 全記事のh1/titleから固定の「厳選N選」表記213件を撤廃。候補数の水増しや、取得不能・不適合商品の掲載を禁止する契約・品質ゲート・生成手順へ更新した。
 - `LTS_TODAY=2026-08-31` で全139記事を生成。`validate_articles.py` と `audit_site.py` は errors=0 / warnings=0、ビルド時の `CRITICAL QA ERROR` も0。
 - 実験 `exp_2026_08_cap_adjusted_intent_stock` を `pending` で開始。主要指標は公開記事1本あたり楽天アフィリエイトクリック、評価期間は2026-08-01〜2026-08-31。
-- 公開状態: `main` 同期とGitHub Actions完了確認待ち。公開後はトップ、当日記事、sitemap、楽天リンクを確認する。
+- 公開状態: `b406b2d1` を `main` へ同期し、GitHub Actions run `30207529498` と Pages run `30208092454` はともに success。自動生成コミットは `73bd9239`。本番トップと当日公開記事は200、楽天リンク・`sponsored` 属性あり、8月未来日記事は404、sitemapにも未来日URLなしを確認した。
 
 ## 2026-07-11の運用更新
 
