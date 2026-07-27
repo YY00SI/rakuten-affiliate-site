@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-26",
+  "updated_at": "2026-07-27",
   "experiments": [
     {
       "id": "exp_2026_08_cap_adjusted_intent_stock",
@@ -12,7 +12,20 @@
       "evaluation_window": {"start": "2026-08-01", "end": "2026-08-31"},
       "expected_direction": "increase",
       "guardrail": "GSC表示が100未満または楽天クリックが20未満なら勝敗を確定せずinsufficient_sampleを継続する",
-      "change_summary": "候補数を固定せず、楽天APIで適合する実商品1〜3件だけを掲載。4%ジャンルと購入直前の比較意図を優先した31記事を準備",
+      "change_summary": "候補数を固定せず、楽天APIで適合する実商品だけを掲載。期待報酬と購入直前の比較意図を優先した31記事を準備",
+      "result": "pending"
+    },
+    {
+      "id": "exp_2026_08_observed_traffic_revenue_path",
+      "status": "pending",
+      "hypothesis": "実際に閲覧された商用記事から同じ購入目的の記事へ回遊させ、ブランド・型番が一致しない任意商品を除外すると、楽天リンククリックが増える",
+      "target": "portable-power-station-ranking, action-camera-ranking, hair-dryer-ranking, premium-rice-cooker と関連記事導線",
+      "primary_metric": "ga4_rakuten_affiliate_click",
+      "baseline_window": {"start": "2026-06-29", "end": "2026-07-26"},
+      "evaluation_window": {"start": "2026-08-01", "end": "2026-08-14"},
+      "expected_direction": "increase",
+      "guardrail": "GA4イベント一覧で計測健全性を確認できるまで勝敗を確定しない。楽天クリック20未満ではCVR判断をしない",
+      "change_summary": "閲覧確認4記事の内部リンクを購入目的別に固定し、任意候補へブランド・型番、商品名必須語、価格、除外語の一致ゲートを追加",
       "result": "pending"
     }
   ]

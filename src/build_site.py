@@ -86,6 +86,52 @@ RELATED_ARTICLE_OVERRIDES = {
         "gaming-monitor-ranking",
         "keyboard-ranking",
     ],
+    # July PDCA: send the first observed traffic to closely related purchase-intent pages.
+    "portable-power-station-ranking": [
+        "electric-cooler-box-ranking",
+        "portable-air-conditioner-ranking",
+        "portable-solar-panel-ranking",
+    ],
+    "action-camera-ranking": [
+        "360-camera-ranking",
+        "camera-gimbal-ranking",
+        "mirrorless-camera-ranking",
+    ],
+    "360-camera-ranking": [
+        "action-camera-ranking",
+        "camera-gimbal-ranking",
+        "mirrorless-camera-ranking",
+    ],
+    "hair-dryer-ranking": [
+        "hair-iron-ranking",
+        "facial-device-ranking",
+        "shower-head-ranking",
+    ],
+    "hair-iron-ranking": [
+        "hair-dryer-ranking",
+        "facial-device-ranking",
+        "shower-head-ranking",
+    ],
+    "facial-device-ranking": [
+        "hair-dryer-ranking",
+        "hair-iron-ranking",
+        "shower-head-ranking",
+    ],
+    "shower-head-ranking": [
+        "hair-dryer-ranking",
+        "facial-device-ranking",
+        "hair-iron-ranking",
+    ],
+    "premium-rice-cooker": [
+        "toaster-ranking",
+        "coffee-maker-ranking",
+        "dishwasher-ranking",
+    ],
+    "coffee-maker-ranking": [
+        "toaster-ranking",
+        "premium-rice-cooker",
+        "dishwasher-ranking",
+    ],
 }
 
 
@@ -336,12 +382,54 @@ def build_generated_hidden_extra(item, article_config):
     }
 
 
+def hidden_gem_matches_article(candidate, article_config):
+    """Keep optional candidates only when the product name proves topical relevance."""
+    qa_config = article_config.get("qa_config") or {}
+    required_words = [
+        str(word).strip().lower()
+        for word in qa_config.get("required_words", [])
+        if str(word).strip()
+    ]
+    if not required_words:
+        return False
+
+    identity_sources = [str(article_config.get("rakuten_params", {}).get("keyword") or "")]
+    identity_sources.extend(
+        str(item.get("keyword") or "")
+        for item in article_config.get("products_extra", [])
+    )
+    identity_terms = {
+        term.lower()
+        for source in identity_sources
+        for term in re.split(r"[,、\s]+", source)
+        if len(term.strip()) >= 3
+        and term.strip().lower() not in {"おすすめ", "人気", "最新", "比較", "ランキング"}
+    }
+    if not identity_terms:
+        return False
+
+    name = str(candidate.get("name") or "")
+    name_lower = name.lower()
+    if not any(term in name_lower for term in identity_terms):
+        return False
+    forbidden_words = merged_forbidden_words(article_config)
+    if any(str(term).lower() in name_lower for term in forbidden_words):
+        return False
+    if not any(word in name_lower for word in required_words):
+        return False
+    if int(candidate.get("price") or 0) < int(qa_config.get("min_price") or 0):
+        return False
+    return True
+
+
 def build_hidden_gem_views(article_config, product_data, matched_items):
     selected_urls = {item.get("affiliateUrl") or item.get("url") or item.get("name") for item in matched_items}
     hidden_gems = []
     for candidate in product_data.get("hidden_gem_candidates", []):
         dedupe_key = candidate.get("affiliateUrl") or candidate.get("url") or candidate.get("name")
         if not dedupe_key or dedupe_key in selected_urls:
+            continue
+        if not hidden_gem_matches_article(candidate, article_config):
             continue
         item = {
             **candidate,
@@ -537,18 +625,18 @@ def generate_sitemap_and_robots(site_config, output_base, today_date):
 def main():
     # 設定読み込み
     config = load_config()
-    
+
     site_config = config['site']
     categories = {c['id']: category_view(c) for c in config['categories']}
     articles = config['articles']
     categories_list = list(categories.values())
-    
+
     # テンプレート環境設定
     env = Environment(loader=FileSystemLoader(os.path.join(PROJECT_ROOT, "templates")))
     article_template = env.get_template("article.html")
     category_template = env.get_template("category_list.html")
     home_template = env.get_template("index.html")
-    
+
     output_base = os.path.join(PROJECT_ROOT, "docs")
     override_today = os.getenv("LTS_TODAY", "").strip()
     now = datetime.strptime(override_today, "%Y-%m-%d") if override_today else datetime.now()
@@ -667,10 +755,10 @@ def main():
         cat_articles = [a for a in processed_articles if a['category']['id'] == cat_id]
         if not cat_articles:
             continue
-            
+
         cat_dir = os.path.join(output_base, cat['slug'])
         os.makedirs(cat_dir, exist_ok=True)
-        
+
         cat_processed_articles = []
         for a in cat_articles:
             cat_processed_articles.append({
@@ -719,7 +807,7 @@ def main():
             "category": a['category'],
             "url": a['url']
         })
-        
+
     home_html = home_template.render(
         site=site_config,
         all_articles=home_articles,
@@ -768,7 +856,7 @@ def main():
         write_text_file(output_path, html)
 
     generate_sitemap_and_robots(site_config, output_base, today_date)
-    
+
     print(f"ビルド完了: 全{len(processed_articles)}記事")
 
 if __name__ == "__main__":
